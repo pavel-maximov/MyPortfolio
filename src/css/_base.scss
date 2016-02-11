@@ -8,16 +8,20 @@ html {
 }
 
 body  {
-  background-color: black;
   height: 100%;
   padding: 0;
   margin: 0;
+  background-image: url("/img/main-background-1920x1080.jpg");
+  background-position: center;
 }
 
 .main-container {
-  width: 25vw;
-  min-height: 100%;
-  background-color: $color-lightest;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 970px;
+  height: 710px;
+  @include transform(translateX(-50%) translateY(-50%));
 }
 
 

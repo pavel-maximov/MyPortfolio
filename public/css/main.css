@@ -4,12 +4,20 @@ html {
   margin: 0; }
 
 body {
-  background-color: black;
   height: 100%;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  background-image: url("/img/main-background-1920x1080.jpg");
+  background-position: center; }
 
 .main-container {
-  width: 25vw;
-  min-height: 100%;
-  background-color: white; }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 970px;
+  height: 710px;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%); }
