@@ -1,4 +1,10 @@
-@import "./node_modules/bourbon/app/assets/stylesheets/_bourbon.scss";
+@import "vendors/bourbon";
+@import "vendors/normalize";
 
-@import "_variables.scss";
+@import "variables";
+@import "fonts";
+@import "typography";
+@import "responsive";
+@import "layout";
+
 @import "_base.scss";
