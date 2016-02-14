@@ -8,6 +8,7 @@
     "gulp-sass": "~2.1.0"
   },
   "devDependencies": {
+    "bootstrap": "twbs/bootstrap#v4-dev",
     "bourbon": "^4.2.6",
     "eyeglass": "^0.7.1",
     "gulp": "^3.9.0",

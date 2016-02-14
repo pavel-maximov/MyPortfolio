@@ -1,3 +1,31 @@
+@font-face {
+  font-family: 'portmanteau';
+  src:  url('/fonts/portmanteau_regular-webfont.woff2') format('woff2'),
+  url('/fonts/portmanteau_regular-webfont.woff') format('woff'),
+  url('/fonts/portmanteau_regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'oldnewspapertypes';
+  src:  url('/fonts/oldnewspapertypes-webfont.woff2') format('woff2'),
+  url('/fonts/oldnewspapertypes-webfont.woff') format('woff'),
+  url('/fonts/oldnewspapertypes-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'amatic_sc';
+  src:  url('/fonts/amaticsc-regular-webfont.woff2') format('woff2'),
+  url('/fonts/amaticsc-regular-webfont.woff') format('woff'),
+  url('/fonts/amaticsc-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 @mixin font-family-title () {
   font-family: 'portmanteau', Sans-Serif;
@@ -9,7 +37,6 @@
 
 @mixin heading () {
   @include font-family-title();
-  line-height: 0.85;
 }
 
 h1, .h1 {

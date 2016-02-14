@@ -1,10 +1,8 @@
 @import "vendors/bourbon";
-@import "vendors/normalize";
+@import "vendors/bootstrap-flex";
 
 @import "variables";
-@import "fonts";
 @import "typography";
-@import "responsive";
 @import "layout";
 
 @import "_base.scss";
