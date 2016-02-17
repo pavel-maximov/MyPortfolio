@@ -13,24 +13,28 @@ html {
   padding: 0;
   margin: 0;
   font-size: 10px;
+  @include media-breakpoint-up(md) {
+    background: black url("/img/main-background-desktop.jpg") no-repeat center;
+    display: flex;
+    height: 100%;
+  }
 }
 
 
 body  {
-  height: 100%;
   padding: 0;
   margin: 0;
   font-size: 1.4rem;
   @include font-family-text();
-  background: black url("/img/main-background.jpg") no-repeat center;
-  display: flex;
-
-
+  @include media-breakpoint-up(md) {
+    background: black url("/img/main-background-desktop.jpg") no-repeat center;
+    display: flex;
+    height: 100%;
+  }
 }
 
 .main-container {
   margin: auto;
-  border: 1px solid grey;
   min-width: 600px;
   position: relative;
 }
