@@ -10,7 +10,7 @@ var maxHeight;
 var minWidth;
 var minHeight;
 var naturalBackgroundSize;
-var tabletBreakpoint = 768;
+var tabletBreakpoint = 992;
 
 
 function getNewSize (options) {
@@ -134,3 +134,15 @@ $(document).ready(function () {
     resizer();
 });
 
+
+$(document).ready(function () {
+    $('[data-toggle="offcanvas"]').click(function () {
+        $('.row-offcanvas').toggleClass('active')
+    });
+});
+
+$(window).on('scroll', function () {
+    $('.nav-top').toggleClass('scrolling', $(window).scrollTop() > 30);
+});
+
+//TODO add js-... notation to classes

@@ -13,11 +13,6 @@ html {
   padding: 0;
   margin: 0;
   font-size: 10px;
-  @include media-breakpoint-up(md) {
-    background: black url("/img/main-background-desktop.jpg") no-repeat center;
-    display: flex;
-    height: 100%;
-  }
 }
 
 
@@ -25,24 +20,126 @@ body  {
   padding: 0;
   margin: 0;
   font-size: 1.4rem;
+  min-height: 100%;
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+  @include media-breakpoint-down(md) {
+    background: #F4F3F1 url('/img/center-background-mobile-tablet.jpg');
+  }
   @include font-family-text();
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     background: black url("/img/main-background-desktop.jpg") no-repeat center;
     display: flex;
-    height: 100%;
   }
 }
 
 .main-container {
-  margin: auto;
-  min-width: 600px;
-  position: relative;
+  @include media-breakpoint-down(md) {
+    min-height: 100%;
+  }
+  @include media-breakpoint-up(lg) {
+    margin: auto;
+    min-width: 600px;
+    position: relative;
+  }
 }
 
 .page-content {
+  @include media-breakpoint-down(md) {
+    min-height: 100%;
+  }
+  @include media-breakpoint-up(lg) {
+    position: absolute;
+    left: 7%;
+    right: 11%;
+    top: 9%;
+    bottom: 8%;
+  }
+}
+
+.nav-top {
+  position: fixed !important;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 40px;
+  background: #F4F3F1 url('/img/center-background-mobile-tablet.jpg');
+  z-index: 1;
+}
+
+.mobile-nav-side {
+  min-height: 100%;
+  background-repeat: repeat-y;
+  position: relative;
+
+  @include media-breakpoint-down(md) {
+    //TODO refactor replacing magic numbers with variables
+    width: 125px;
+    background-image: url('/img/side-background-mobile.jpg');
+  }
+  @include media-breakpoint-up(lg) {
+    position: absolute;
+    right: -80px;
+  }
+}
+
+.mobile-nav__links-wrapper {
+  background-repeat: no-repeat;
+  @include media-breakpoint-down(md) {
+    background-image: url('/img/main-background-mobile.jpg');
+    height: 471px;
+  }
+}
+
+
+.nav-top__title {
+  display: none;
+}
+.scrolling .nav-top__title {
+  display: block;
+}
+
+.nav-top__menu-button {
   position: absolute;
-  left: 7%;
-  right: 11%;
-  top: 9%;
-  bottom: 8%;
+  right: 0;
+  top: 0;
+}
+
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+//TODO refactor this with proper media mixing
+@media screen and (max-width: 992px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+    -o-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-right.active {
+    @include media-breakpoint-down(md) {
+      right: 125px;
+    }
+  }
+
+  .row-offcanvas-left.active {
+    @include media-breakpoint-down(md) {
+      left: 125px;
+    }
+  }
+
+  .sidebar-offcanvas {
+    position: fixed;
+    top: 0;
+  }
 }

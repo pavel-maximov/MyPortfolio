@@ -31,30 +31,30 @@ $enable-flex: true;
 @import "./node_modules/bootstrap/scss/_buttons.scss";
 
 // Components
-//@import "./node_modules/bootstrap/scss/_animation.scss";
-//@import "./node_modules/bootstrap/scss/_dropdown.scss";
-//@import "./node_modules/bootstrap/scss/_button-group.scss";
-//@import "./node_modules/bootstrap/scss/_input-group.scss";
-//@import "./node_modules/bootstrap/scss/_custom-forms.scss";
-//@import "./node_modules/bootstrap/scss/_nav.scss";
-//@import "./node_modules/bootstrap/scss/_navbar.scss";
-//@import "./node_modules/bootstrap/scss/_card.scss";
-//@import "./node_modules/bootstrap/scss/_breadcrumb.scss";
-//@import "./node_modules/bootstrap/scss/_pagination.scss";
+@import "./node_modules/bootstrap/scss/_animation.scss";
+@import "./node_modules/bootstrap/scss/_dropdown.scss";
+@import "./node_modules/bootstrap/scss/_button-group.scss";
+@import "./node_modules/bootstrap/scss/_input-group.scss";
+@import "./node_modules/bootstrap/scss/_custom-forms.scss";
+@import "./node_modules/bootstrap/scss/_nav.scss";
+@import "./node_modules/bootstrap/scss/_navbar.scss";
+@import "./node_modules/bootstrap/scss/_card.scss";
+@import "./node_modules/bootstrap/scss/_breadcrumb.scss";
+@import "./node_modules/bootstrap/scss/_pagination.scss";
 //@import "./node_modules/bootstrap/scss/_labels.scss";
-//@import "./node_modules/bootstrap/scss/_jumbotron.scss";
-//@import "./node_modules/bootstrap/scss/_alert.scss";
-//@import "./node_modules/bootstrap/scss/_progress.scss";
-//@import "./node_modules/bootstrap/scss/_media.scss";
-//@import "./node_modules/bootstrap/scss/_list-group.scss";
-//@import "./node_modules/bootstrap/scss/_responsive-embed.scss";
-//@import "./node_modules/bootstrap/scss/_close.scss";
+@import "./node_modules/bootstrap/scss/_jumbotron.scss";
+@import "./node_modules/bootstrap/scss/_alert.scss";
+@import "./node_modules/bootstrap/scss/_progress.scss";
+@import "./node_modules/bootstrap/scss/_media.scss";
+@import "./node_modules/bootstrap/scss/_list-group.scss";
+@import "./node_modules/bootstrap/scss/_responsive-embed.scss";
+@import "./node_modules/bootstrap/scss/_close.scss";
 
 // Components w/ JavaScript
-//@import "./node_modules/bootstrap/scss/_modal.scss";
+@import "./node_modules/bootstrap/scss/_modal.scss";
 //@import "./node_modules/bootstrap/scss/_tooltip.scss";
-//@import "./node_modules/bootstrap/scss/_popover.scss";
-//@import "./node_modules/bootstrap/scss/_carousel.scss";
+@import "./node_modules/bootstrap/scss/_popover.scss";
+@import "./node_modules/bootstrap/scss/_carousel.scss";
 
 // Utility classes
 @import "./node_modules/bootstrap/scss/_utilities.scss";
