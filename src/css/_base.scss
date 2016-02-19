@@ -8,6 +8,8 @@
 }
 
 
+$nav-top-height: 50px;
+
 html {
   height: 100%;
   padding: 0;
@@ -27,7 +29,7 @@ body  {
   }
   @include font-family-text();
   @include media-breakpoint-up(lg) {
-    background: black url("/img/main-background-desktop.jpg") no-repeat center;
+    background: #100403 url("/img/main-background-desktop.jpg") no-repeat center;
     display: flex;
   }
 }
@@ -35,11 +37,15 @@ body  {
 .main-container {
   @include media-breakpoint-down(md) {
     min-height: 100%;
+    padding-top: $nav-top-height;
   }
   @include media-breakpoint-up(lg) {
+    padding: 0 !important;
     margin: auto;
     min-width: 600px;
     position: relative;
+    width: 1200px;
+    height: 820px;
   }
 }
 
@@ -49,10 +55,10 @@ body  {
   }
   @include media-breakpoint-up(lg) {
     position: absolute;
-    left: 7%;
-    right: 11%;
-    top: 9%;
-    bottom: 8%;
+    left: 8%;
+    right: 14%;
+    top: 10%;
+    bottom: 9%;
   }
 }
 
@@ -61,16 +67,26 @@ body  {
   top: 0;
   right: 0;
   width: 100%;
-  height: 40px;
-  background: #F4F3F1 url('/img/center-background-mobile-tablet.jpg');
+  height: $nav-top-height;
   z-index: 1;
+  text-align: center;
+  @include media-breakpoint-only(xs) {
+    text-align: left;
+  }
+}
+.scrolling.nav-top {
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.33);
+  background-image: url('/img/top-navbar-background.jpg');
+}
+
+.nav-top__title {
+  font-size: 1.2rem;
 }
 
 .mobile-nav-side {
   min-height: 100%;
   background-repeat: repeat-y;
   position: relative;
-
   @include media-breakpoint-down(md) {
     //TODO refactor replacing magic numbers with variables
     width: 125px;
@@ -78,15 +94,18 @@ body  {
   }
   @include media-breakpoint-up(lg) {
     position: absolute;
-    right: -80px;
   }
 }
 
 .mobile-nav__links-wrapper {
-  background-repeat: no-repeat;
+  position: relative;
   @include media-breakpoint-down(md) {
+    background-repeat: no-repeat;
     background-image: url('/img/main-background-mobile.jpg');
     height: 471px;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 130px;
   }
 }
 
@@ -104,6 +123,77 @@ body  {
   top: 0;
 }
 
+
+.nav-top__menu-button .icon-menu {
+  display: block;
+}
+.active .nav-top__menu-button .icon-menu {
+  display: none;
+}
+
+.nav-top__menu-button .icon-x {
+  display: none;
+}
+
+.active .nav-top__menu-button .icon-x {
+  display: block;
+}
+
+
+.btn {
+  @include font-family-link();
+  font-size: 2.2rem;
+}
+
+.btn-portfolio {
+  position: absolute;
+  top: 2.4rem;
+  left: 1.6rem;
+  @include media-breakpoint-down(md) {
+    top: 53px;
+    left: 0;
+  }
+}
+
+.btn-skills {
+  position: absolute;
+  top: 7.8rem;
+  left: 1.8rem;
+  @include media-breakpoint-down(md) {
+    top: 112px;
+    left: 3px;
+  }
+}
+
+.btn-experience {
+  position: absolute;
+  top: 12.9rem;
+  left: 1.9rem;
+  @include media-breakpoint-down(md) {
+    top: 166px;
+    left: 5px;
+  }
+}
+
+.btn-about {
+  position: absolute;
+  top: 18rem;
+  left: 2rem;
+  @include media-breakpoint-down(md) {
+    top: 221px;
+    left: 6px;
+  }
+}
+
+.btn-contact {
+  position: absolute;
+  top: 26.5rem;
+  left: 2.1rem;
+  @include media-breakpoint-down(md) {
+    top: 304px;
+    left: 8px;
+  }
+}
 
 /*
  * Off Canvas

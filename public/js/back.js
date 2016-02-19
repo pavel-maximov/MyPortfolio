@@ -1,15 +1,17 @@
 //
-var $target;
-var $body;
-var $html;
-var baseFontSize;
-var $window;
-var minDistance;
-var maxWidth;
-var maxHeight;
-var minWidth;
-var minHeight;
-var naturalBackgroundSize;
+var $document = $(document);
+var $window = $(window);
+var $body = $('body');
+var $html = $('html');
+var $target = $('#main');
+var $navTop = $('.nav-top');
+var baseFontSize = parseInt($html.css('font-size'));
+var maxWidth = 1200;
+var maxHeight = 820;
+var minWidth = 768;
+var minHeight = 600;
+var naturalBackgroundSize = 2129;
+var backgroundToMainContainer = 1.6;
 var tabletBreakpoint = 992;
 
 
@@ -18,131 +20,105 @@ function getNewSize (options) {
         windowHeight = options.$window.outerHeight(),
         targetWidth = options.$target.outerWidth(),
         targetHeight = options.$target.outerHeight(),
-        verticalDifference = (windowHeight + options.minDistance - targetHeight) / 2,
-        horizontalDifference = (windowWidth + options.minDistance - targetWidth) / 2,
+        verticalDifference = (windowHeight - targetHeight) / 2,
+        horizontalDifference = (windowWidth - targetWidth) / 2,
         widthToHeightRatio = options.maxWidth / options.maxHeight,
         heightToWidthRatio = options.maxHeight / options.maxWidth,
         isVerticalEdgeCloser = verticalDifference < horizontalDifference,
-        newWidth,
-        newHeight,
         isChanged = false,
-        returnedValues = {};
+        newWidth,
+        newHeight;
 
     //TODO check if you can return only width
     // resizing window in and close enough to target
-    if (verticalDifference < options.minDistance || horizontalDifference < options.minDistance) {
+    if (verticalDifference < 0 || horizontalDifference < 0) {
         isChanged = true;
         if (isVerticalEdgeCloser) {
-            newHeight = windowHeight - options.minDistance;
+            newHeight = windowHeight;
+            newHeight = newHeight > options.minHeight ? newHeight : options.minHeight;
             newWidth = newHeight * widthToHeightRatio;
         } else {
-            newWidth = windowWidth - options.minDistance;
+            newWidth = windowWidth;
+            newWidth = newWidth > options.minWidth ? newWidth : options.minWidth;
             newHeight = newWidth  * heightToWidthRatio;
         }
-
     // resizing window out and not resized target back full size yet
     } else if (targetWidth < options.maxWidth || targetHeight < options.maxHeight) {
         isChanged = true;
         if (isVerticalEdgeCloser) {
-            newHeight = windowHeight - options.minDistance;
+            newHeight = windowHeight;
+            newHeight = newHeight < options.maxHeight ? newHeight : options.maxHeight;
             newWidth = newHeight * widthToHeightRatio;
-
         } else {
-            newWidth = windowWidth - options.minDistance;
-            newHeight = newWidth  * heightToWidthRatio;
+            newWidth = windowWidth;
+            newWidth = newWidth < options.maxWidth ? newWidth : options.maxWidth;
+            newHeight = newWidth * heightToWidthRatio;
         }
     }
-
     if (isChanged) {
-        newWidth = newWidth > options.minWidth ? newWidth : options.minWidth;
-        newWidth = newWidth < options.maxWidth ? newWidth : options.maxWidth;
-
-        newHeight = newHeight > options.minHeight ? newHeight : options.minHeight;
-        newHeight = newHeight < options.maxHeight ? newHeight : options.maxHeight;
-
-        returnedValues.newWidth = Math.floor(newWidth);
-        returnedValues.newHeight = Math.floor(newHeight);
-
-        return returnedValues;
-
+        return {
+            newWidth: newWidth,
+            newHeight: newHeight
+        };
     }
-
-    return null;
 }
 
 
 function resizer () {
-    if ($window.outerWidth() < tabletBreakpoint) {
-        reseResizing();
+    var newSize;
 
-        return;
-    }
-
-    var newSize = getNewSize({
-        $target: $target,
-        $window: $window,
-        minDistance: minDistance,
-        minHeight: minHeight,
-        minWidth: minWidth,
-        maxWidth: maxWidth,
-        maxHeight: maxHeight
-    });
-
-    if (newSize) {
-        $target.outerWidth(newSize.newWidth);
-        $target.outerHeight(newSize.newHeight);
-
-        backResizer(newSize);
-        fontResizer(newSize);
+    if ($window.outerWidth() > tabletBreakpoint) {
+        newSize = getNewSize({
+            $target: $target,
+            $window: $window,
+            minHeight: minHeight,
+            minWidth: minWidth,
+            maxWidth: maxWidth,
+            maxHeight: maxHeight
+        });
+        if (newSize) {
+            $target.outerWidth(newSize.newWidth);
+            $target.outerHeight(newSize.newHeight);
+            backResizer(newSize);
+            fontResizer(newSize);
+        }
+    } else {
+        reserResizing();
     }
 }
 
 function backResizer (newSize) {
-    var newBackgroundSize = Math.floor(newSize.newWidth * 1.9);
+    var newBackgroundSize = newSize.newWidth * backgroundToMainContainer;
 
     newBackgroundSize = newBackgroundSize < naturalBackgroundSize ? newBackgroundSize : naturalBackgroundSize;
     $body.css('background-size', newBackgroundSize + 'px');
 }
 
 function fontResizer (newSize) {
-    var proportion = Math.round((newSize.newWidth / maxWidth) * 100) / 100;
+    var proportion = newSize.newWidth / maxWidth;
 
     $html.css('font-size', (baseFontSize * proportion) + 'px');
 }
 
-function reseResizing () {
+function reserResizing () {
     $html.css('font-size', '');
     $body.css('background-size', '');
     $target.css('width', '');
     $target.css('height', '');
 }
 
-$(document).ready(function () {
-    $window = $(window);
-    $target = $('#main');
-    $body = $('body');
-    $html = $('html');
-    baseFontSize = parseInt($html.css('font-size'));
-    minDistance = 20;
-    maxWidth = 1200;
-    maxHeight = 850;
-    minWidth = 768;
-    minHeight = Math.ceil(minWidth * 0.7);
-    naturalBackgroundSize = 2222;
 
+$document.ready(function () {
     $window.on('resize', resizer);
     resizer();
-});
 
-
-$(document).ready(function () {
     $('[data-toggle="offcanvas"]').click(function () {
-        $('.row-offcanvas').toggleClass('active')
+        $('.row-offcanvas').toggleClass('active');
     });
 });
 
-$(window).on('scroll', function () {
-    $('.nav-top').toggleClass('scrolling', $(window).scrollTop() > 30);
+$window.on('scroll', function () {
+    $navTop.toggleClass('scrolling', $window.scrollTop() > 1);
 });
 
 //TODO add js-... notation to classes

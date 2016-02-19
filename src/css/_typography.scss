@@ -28,11 +28,15 @@
 
 
 @mixin font-family-title () {
-  font-family: 'portmanteau', Sans-Serif;
+  font-family: 'portmanteau', Serif;
 }
 
 @mixin font-family-text () {
   font-family: 'oldnewspapertypes', Serif;
+}
+
+@mixin font-family-link () {
+  font-family: 'amatic_sc', Serif;
 }
 
 @mixin heading () {
