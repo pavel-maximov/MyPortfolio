@@ -19,39 +19,39 @@ html {
 
 
 body  {
+  min-height: 100%;
   padding: 0;
   margin: 0;
-  min-height: 100%;
   overflow-x: hidden; /* Prevent scroll on narrow devices */
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(sm) {
     background: $gray-lightest url('/img/center-background-mobile-tablet.jpg');
   }
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(md) {
     background: $gray-dark url("/img/main-background-desktop.jpg") no-repeat center;
     display: flex;
   }
 }
 
 .main-container {
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(sm) {
     min-height: 100%;
     padding-top: $nav-top-height;
   }
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(md) {
+    position: relative;
     padding: 0 !important;
     margin: auto;
     min-width: 600px;
-    position: relative;
     width: 1200px;
     height: 820px;
   }
 }
 
-.page-content {
-  @include media-breakpoint-down(md) {
+.main-container__content {
+  @include media-breakpoint-down(sm) {
     min-height: 100%;
   }
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(md) {
     position: absolute;
     left: 8%;
     right: 14%;
@@ -85,25 +85,24 @@ body  {
   min-height: 100%;
   background-repeat: repeat-y;
   position: relative;
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(sm) {
     //TODO refactor replacing magic numbers with variables
     width: 125px;
     background-image: url('/img/side-background-mobile.jpg');
-    //background-position: 0px 483px;
   }
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(md) {
     position: absolute;
   }
 }
 
 .mobile-nav__links-wrapper {
   position: relative;
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(sm) {
     background-repeat: no-repeat;
     background-image: url('/img/main-background-mobile.jpg');
     height: 483px;
   }
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(md) {
     width: 130px;
   }
 }
@@ -140,70 +139,78 @@ body  {
 
 .btn {
   font-family: $font-family-amatic;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   outline: none !important;
 }
 
 .btn-portfolio {
   position: absolute;
-  top: 2.4rem;
+  top: 2.2rem;
   left: 1.6rem;
-  @include media-breakpoint-down(md) {
-    top: 63px;
+  @include media-breakpoint-only(md) {
+    top: 2.3rem;
+    left: 1.1rem;
+  }
+  @include media-breakpoint-down(sm) {
+    top: 60px;
     left: 0;
   }
 }
 
 .btn-skills {
   position: absolute;
-  top: 7.8rem;
+  top: 7.6rem;
   left: 1.8rem;
-  @include media-breakpoint-down(md) {
-    top: 122px;
+  @include media-breakpoint-only(md) {
+    top: 7.7rem;
+    left: 1.3rem;
+  }
+  @include media-breakpoint-down(sm) {
+    top: 119px;
     left: 3px;
   }
 }
 
 .btn-experience {
   position: absolute;
-  top: 12.9rem;
+  top: 12.6rem;
   left: 1.9rem;
-  @include media-breakpoint-down(md) {
-    top: 176px;
-    left: 5px;
+  @include media-breakpoint-only(md) {
+    top: 12.7rem;
+    left: 1.4rem;
+  }
+  @include media-breakpoint-down(sm) {
+    top: 173px;
+    left: 2px;
   }
 }
 
-.btn-about {
+.btn-resume {
   position: absolute;
-  top: 18rem;
+  top: 17.7rem;
   left: 2rem;
-  @include media-breakpoint-down(md) {
-    top: 231px;
-    left: 6px;
+  @include media-breakpoint-only(md) {
+    left: 1.5rem;
+    top: 17.8rem;
+  }
+  @include media-breakpoint-down(sm) {
+    top: 228px;
+    left: 3px;
   }
 }
 
 .btn-contact {
   position: absolute;
-  top: 26.5rem;
+  top: 26.3rem;
   left: 2.1rem;
-  @include media-breakpoint-down(md) {
-    top: 314px;
-    left: 8px;
+  @include media-breakpoint-only(md) {
+    top: 26.4rem;
+    left: 1.6rem;
   }
-}
-
-.home_head-img-wrapper {
-  padding: 0 40px;
-  @include make-col-offset(3)
-}
-
-.home_head-img {
-  max-width: 400px;
-  width: 100%;
-  margin-top: 60px;
-  display: inline-block;
+  @include media-breakpoint-down(sm) {
+    top: 312px;
+    left: 4px;
+  }
 }
 
 .icon-pin {
@@ -211,13 +218,64 @@ body  {
   top: 4px;
 }
 
+.home-head {
+  display: block;
+  max-width: 400px;
+  width: 90%;
+  margin: auto;
+  @include media-breakpoint-up(md) {
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    width: 42%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.hire-me {
+  margin: 50px auto;
+  @include media-breakpoint-up(md) {
+    background-image: url('/img/badge.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20%;
+    max-width: 190px;
+    height: auto;
+    padding-top: 19%;
+  }
+}
+
+.hire-me-button-wrapper {
+  @include media-breakpoint-down(sm) {
+    font-size: 3rem;
+  }
+  @include media-breakpoint-up(md) {
+    display: block;
+    position: absolute;
+    top: 2.3rem;
+    left: 10%;
+    right: 23%;
+  }
+}
+
+.hire-me-text {
+  @include media-breakpoint-up(md) {
+    position: absolute;
+    top: 6.3rem;
+    left: 7%;
+    right: 25%;
+  }
+}
 
 /*
  * Off Canvas
  * --------------------------------------------------
  */
 //TODO refactor this with proper media mixing
-@media screen and (max-width: 992px) {
+@media screen and (max-width: map_get($grid-breakpoints, md)) {
   .row-offcanvas {
     position: relative;
     -webkit-transition: all .25s ease-out;

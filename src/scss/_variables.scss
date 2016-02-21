@@ -132,13 +132,13 @@ $link-hover-decoration:   none !default;
 //// Define the minimum dimensions at which your layout will change,
 //// adapting to different screen sizes, for use in media queries.
 //
-//$grid-breakpoints: (
-//        xs: 0,
-//        sm: 544px,
-//        md: 768px,
-//        lg: 992px,
-//        xl: 1200px
-//) !default;
+$grid-breakpoints: (
+        xs: 0,
+        sm: 480px,
+        md: 801px,
+        lg: 1024px,
+        xl: 1280px
+);
 //@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
 //
 //
@@ -146,12 +146,12 @@ $link-hover-decoration:   none !default;
 ////
 //// Define the maximum width of `.container` for different screen sizes.
 //
-//$container-max-widths: (
-//        sm: 576px,
-//        md: 720px,
-//        lg: 940px,
-//        xl: 1140px
-//) !default;
+$container-max-widths: (
+        sm: map_get($grid-breakpoints, sm),
+        md: map_get($grid-breakpoints, md),
+        lg: map_get($grid-breakpoints, lg),
+        xl: 1220px
+);
 //@include _assert-ascending($container-max-widths, "$container-max-widths");
 //
 //
@@ -187,7 +187,7 @@ $font-size-xs:   1rem;
 //
 //$line-height-base: 1.5 !default;
 //
-$font-size-h1: 3.4rem;
+$font-size-h1: 3.2rem;
 $font-size-h2: 2.4rem;
 $font-size-h3: 2.1rem;
 $font-size-h4: 1.8rem;

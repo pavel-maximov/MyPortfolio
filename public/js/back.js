@@ -12,7 +12,7 @@ var minWidth = 768;
 var minHeight = 600;
 var naturalBackgroundSize = 2129;
 var backgroundToMainContainer = 1.6;
-var tabletBreakpoint = 992;
+var tabletBreakpoint = 801;
 
 
 function getNewSize (options) {
@@ -87,6 +87,12 @@ function resizer () {
     }
 }
 
+function resizerHandler() {
+    //TODO solve this
+    resizer();
+    resizer();
+}
+
 function backResizer (newSize) {
     var newBackgroundSize = newSize.newWidth * backgroundToMainContainer;
 
@@ -109,8 +115,8 @@ function reserResizing () {
 
 
 $document.ready(function () {
-    $window.on('resize', resizer);
-    resizer();
+    $window.on('resize', resizerHandler);
+    resizerHandler();
 
     $('[data-toggle="offcanvas"]').click(function () {
         $('.row-offcanvas').toggleClass('active');
