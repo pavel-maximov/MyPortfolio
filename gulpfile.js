@@ -6,7 +6,7 @@ var livereload = require('gulp-livereload');
 var sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('sass', function () {
-    gulp.src('./src/css/**/*.scss')
+    gulp.src('./src/scss/**/*.scss')
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(sourcemaps.write('./maps'))
@@ -16,6 +16,6 @@ gulp.task('sass', function () {
 
 gulp.task('default', function () {
     livereload.listen();
-    gulp.watch('./src/css/**/*.scss', ['sass']);
+    gulp.watch('./src/scss/**/*.scss', ['sass']);
     gulp.watch('./public/**/*.html', livereload.reload);
 });

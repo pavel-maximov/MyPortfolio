@@ -21,15 +21,13 @@ html {
 body  {
   padding: 0;
   margin: 0;
-  font-size: 1.4rem;
   min-height: 100%;
   overflow-x: hidden; /* Prevent scroll on narrow devices */
   @include media-breakpoint-down(md) {
-    background: #F4F3F1 url('/img/center-background-mobile-tablet.jpg');
+    background: $gray-lightest url('/img/center-background-mobile-tablet.jpg');
   }
-  @include font-family-text();
   @include media-breakpoint-up(lg) {
-    background: #100403 url("/img/main-background-desktop.jpg") no-repeat center;
+    background: $gray-dark url("/img/main-background-desktop.jpg") no-repeat center;
     display: flex;
   }
 }
@@ -91,6 +89,7 @@ body  {
     //TODO refactor replacing magic numbers with variables
     width: 125px;
     background-image: url('/img/side-background-mobile.jpg');
+    //background-position: 0px 483px;
   }
   @include media-breakpoint-up(lg) {
     position: absolute;
@@ -102,7 +101,7 @@ body  {
   @include media-breakpoint-down(md) {
     background-repeat: no-repeat;
     background-image: url('/img/main-background-mobile.jpg');
-    height: 471px;
+    height: 483px;
   }
   @include media-breakpoint-up(lg) {
     width: 130px;
@@ -139,10 +138,10 @@ body  {
   display: block;
 }
 
-
 .btn {
-  @include font-family-link();
+  font-family: $font-family-amatic;
   font-size: 2.2rem;
+  outline: none !important;
 }
 
 .btn-portfolio {
@@ -150,7 +149,7 @@ body  {
   top: 2.4rem;
   left: 1.6rem;
   @include media-breakpoint-down(md) {
-    top: 53px;
+    top: 63px;
     left: 0;
   }
 }
@@ -160,7 +159,7 @@ body  {
   top: 7.8rem;
   left: 1.8rem;
   @include media-breakpoint-down(md) {
-    top: 112px;
+    top: 122px;
     left: 3px;
   }
 }
@@ -170,7 +169,7 @@ body  {
   top: 12.9rem;
   left: 1.9rem;
   @include media-breakpoint-down(md) {
-    top: 166px;
+    top: 176px;
     left: 5px;
   }
 }
@@ -180,7 +179,7 @@ body  {
   top: 18rem;
   left: 2rem;
   @include media-breakpoint-down(md) {
-    top: 221px;
+    top: 231px;
     left: 6px;
   }
 }
@@ -190,10 +189,28 @@ body  {
   top: 26.5rem;
   left: 2.1rem;
   @include media-breakpoint-down(md) {
-    top: 304px;
+    top: 314px;
     left: 8px;
   }
 }
+
+.home_head-img-wrapper {
+  padding: 0 40px;
+  @include make-col-offset(3)
+}
+
+.home_head-img {
+  max-width: 400px;
+  width: 100%;
+  margin-top: 60px;
+  display: inline-block;
+}
+
+.icon-pin {
+  position: relative;
+  top: 4px;
+}
+
 
 /*
  * Off Canvas
