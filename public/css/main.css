@@ -5030,7 +5030,8 @@ body {
   background-image: url("/img/top-navbar-background.jpg"); }
 
 .nav-top__title {
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  margin-bottom: 6px; }
 
 .mobile-nav-side {
   min-height: 100%;
@@ -5125,33 +5126,47 @@ body {
       top: 173px;
       left: 2px; } }
 
-.btn-resume {
+.btn-contact {
   position: absolute;
   top: 17.7rem;
   left: 2rem; }
 
 @media (min-width: 801px) and (max-width: 1023px) {
-  .btn-resume {
-    left: 1.5rem;
-    top: 17.8rem; } }
+  .btn-contact {
+    top: 17.8rem;
+    left: 1.5rem; } }
   @media (max-width: 800px) {
-    .btn-resume {
+    .btn-contact {
       top: 228px;
       left: 3px; } }
 
-.btn-contact {
+.btn-resume {
   position: absolute;
   top: 26.3rem;
-  left: 2.1rem; }
+  left: 2.2rem; }
 
 @media (min-width: 801px) and (max-width: 1023px) {
-  .btn-contact {
-    top: 26.4rem;
-    left: 1.6rem; } }
+  .btn-resume {
+    top: 26.5rem;
+    left: 1.9rem; } }
   @media (max-width: 800px) {
-    .btn-contact {
+    .btn-resume {
       top: 312px;
-      left: 4px; } }
+      left: 7px; } }
+
+.btn-code {
+  position: absolute;
+  top: 31.5rem;
+  left: 2.3rem; }
+
+@media (min-width: 801px) and (max-width: 1023px) {
+  .btn-code {
+    top: 31.4rem;
+    left: 1.7rem; } }
+  @media (max-width: 800px) {
+    .btn-code {
+      top: 367px;
+      left: 9px; } }
 
 .icon-pin {
   position: relative;
@@ -5170,24 +5185,18 @@ body {
       width: 42%;
       transform: translate(-50%, -50%); } }
 
-.hire-me {
-  margin: 50px auto; }
-  @media (min-width: 801px) {
-    .hire-me {
-      background-image: url("/img/badge.png");
-      background-repeat: no-repeat;
-      background-size: 100%;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      width: 20%;
-      max-width: 190px;
-      height: auto;
-      padding-top: 19%; } }
-
-@media (max-width: 800px) {
-  .hire-me-button-wrapper {
-    font-size: 3rem; } }
+@media (min-width: 801px) {
+  .hire-me {
+    background-image: url("/img/badge.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20%;
+    max-width: 190px;
+    height: auto;
+    padding-top: 19%; } }
 
 @media (min-width: 801px) {
   .hire-me-button-wrapper {
@@ -5203,6 +5212,16 @@ body {
     top: 6.3rem;
     left: 7%;
     right: 25%; } }
+
+@media (min-width: 801px) and (max-width: 1023px) {
+  .btn-code-icon {
+    width: 15px;
+    height: 15px; } }
+
+@media (min-width: 801px) and (max-width: 1023px) {
+  .btn-resume-icon {
+    width: 12px;
+    height: 14px; } }
 
 /*
  * Off Canvas

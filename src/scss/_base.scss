@@ -79,6 +79,7 @@ body  {
 
 .nav-top__title {
   font-size: 1.2rem;
+  margin-bottom: 6px;
 }
 
 .mobile-nav-side {
@@ -185,13 +186,13 @@ body  {
   }
 }
 
-.btn-resume {
+.btn-contact {
   position: absolute;
   top: 17.7rem;
   left: 2rem;
   @include media-breakpoint-only(md) {
-    left: 1.5rem;
     top: 17.8rem;
+    left: 1.5rem;
   }
   @include media-breakpoint-down(sm) {
     top: 228px;
@@ -199,17 +200,31 @@ body  {
   }
 }
 
-.btn-contact {
+.btn-resume {
   position: absolute;
   top: 26.3rem;
-  left: 2.1rem;
+  left: 2.2rem;
   @include media-breakpoint-only(md) {
-    top: 26.4rem;
-    left: 1.6rem;
+    top: 26.5rem;
+    left: 1.9rem;
   }
   @include media-breakpoint-down(sm) {
     top: 312px;
-    left: 4px;
+    left: 7px;
+  }
+}
+
+.btn-code {
+  position: absolute;
+  top: 31.5rem;
+  left: 2.3rem;
+  @include media-breakpoint-only(md) {
+    top: 31.4rem;
+    left: 1.7rem;
+  }
+  @include media-breakpoint-down(sm) {
+    top: 367px;
+    left: 9px;
   }
 }
 
@@ -233,7 +248,6 @@ body  {
 }
 
 .hire-me {
-  margin: 50px auto;
   @include media-breakpoint-up(md) {
     background-image: url('/img/badge.png');
     background-repeat: no-repeat;
@@ -250,7 +264,7 @@ body  {
 
 .hire-me-button-wrapper {
   @include media-breakpoint-down(sm) {
-    font-size: 3rem;
+    //font-size: 3rem;
   }
   @include media-breakpoint-up(md) {
     display: block;
@@ -267,6 +281,20 @@ body  {
     top: 6.3rem;
     left: 7%;
     right: 25%;
+  }
+}
+
+.btn-code-icon {
+  @include media-breakpoint-only(md) {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.btn-resume-icon {
+  @include media-breakpoint-only(md) {
+    width: 12px;
+    height: 14px;
   }
 }
 
