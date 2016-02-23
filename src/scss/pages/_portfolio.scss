@@ -1,0 +1,67 @@
+.portfolio {
+  flex-direction: column;
+}
+
+.portfolio__wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+%portfolio__content {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+
+.portfolio__content--frontend {
+  @extend %portfolio__content;
+}
+
+.portfolio__content--design {
+  @extend %portfolio__content;
+}
+
+
+.portfolio__projects {
+  width: 67%;
+
+}
+
+.portfolio__header__img-wrapper {
+  height: 33rem;
+}
+
+.portfolio__header {
+  width: 30%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.portfolio__nav__button {
+  @include make-button();
+}
+
+
+.portfolio__header__img--frontend {
+  width: 100%;
+  max-width: 280px;
+}
+
+.portfolio__header__img--design {
+  width: 100%;
+  max-width: 300px;
+}
+
+
+
+
+
+// bootstrap overrides
+
+.tab-content > .active {
+  display: flex;
+}

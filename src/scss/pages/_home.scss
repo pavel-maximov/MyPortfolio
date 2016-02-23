@@ -1,0 +1,101 @@
+
+// homepage --------------------------------
+.home-wrapper {
+  width: 100%;
+}
+
+.home__header {
+  margin-bottom: 8vw;
+  text-align: center;
+}
+
+.home__title-name {
+  @include media-breakpoint-down(sm) {
+    margin-top: 6vw;
+  }
+  @include media-breakpoint-up(md) {
+    margin-top: 4rem;
+  }
+}
+
+.home__title-role {
+  color: $brand-secondary;
+}
+
+.home__icon-pin {
+  position: relative;
+  top: 0.2rem;
+  width: 1.5rem;
+  @include media-breakpoint-only(md) {
+    top: 0.5rem;
+  }
+}
+
+.home__icon-pin__fill {
+  fill: $brand-primary;
+}
+
+.home__head-img {
+  max-width: 400px;
+  text-align: center;
+  @include media-breakpoint-down(sm) {
+    width: 92%;
+    margin: auto;
+  }
+  @include media-breakpoint-up(md) {
+    position: absolute;
+    top: 56%;
+    left: 46%;
+    width: 34%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.home__head-img__img {
+  width: 100%;
+  @include media-breakpoint-up(md) {
+    @include crisp-image();
+  }
+}
+
+.home__hire-me {
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+  @include media-breakpoint-up(md) {
+    display: block;
+    background-image: url('/img/badge.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    @include crisp-image();
+    position: absolute;
+    bottom: 7%;
+    right: 12%;
+    width: 16%;
+    max-width: 190px;
+    padding-top: 19%;
+    text-align: center;
+  }
+}
+
+.home__hire-me__button {
+  @include make-button();
+  width: 100%;
+}
+
+.home__hire-me__text {
+  position: absolute;
+  top: 2rem;
+  left: 7%;
+  right: 25%;
+  line-height: 1.2;
+}
+
+.home__hire-me__text__date {
+  font-size: 1.8rem;
+  display: inline-block;
+  line-height: 1.4;
+}
+
+
+// homepage end --------------------------------

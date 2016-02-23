@@ -1,0 +1,355 @@
+
+// mixin --------------------------------
+
+@mixin crisp-image () {
+  image-rendering: -moz-crisp-edges;         /* Firefox */
+  image-rendering:   -o-crisp-edges;         /* Opera */
+  image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+}
+
+@mixin make-button () {
+  border: 0;
+  padding: 5px 10px;
+  background: transparent;
+  color: $brand-primary;
+  font-size: 2.4rem;
+  font-family: $font-family-amatic;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $gray;
+    outline: none;
+  }
+}
+
+// mixin --------------------------------
+
+
+
+// fonts --------------------------------
+
+@font-face {
+  font-family: 'portmanteau';
+  src:  url('/fonts/portmanteau_regular-webfont.woff2') format('woff2'),
+        url('/fonts/portmanteau_regular-webfont.woff') format('woff'),
+        url('/fonts/portmanteau_regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'oldnewspapertypes';
+  src:  url('/fonts/oldnewspapertypes-webfont.woff2') format('woff2'),
+        url('/fonts/oldnewspapertypes-webfont.woff') format('woff'),
+        url('/fonts/oldnewspapertypes-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'amatic_sc';
+  src:  url('/fonts/amaticsc-regular-webfont.woff2') format('woff2'),
+        url('/fonts/amaticsc-regular-webfont.woff') format('woff'),
+        url('/fonts/amaticsc-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// fonts end --------------------------------
+
+
+
+// base styles --------------------------------
+
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+}
+
+body  {
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+  @include media-breakpoint-down(sm) {
+    background: $gray-lightest url('/img/center-background-mobile-tablet.jpg');
+    @include crisp-image();
+  }
+  @include media-breakpoint-up(md) {
+    background: $gray-dark url("/img/main-background-desktop.jpg") no-repeat center;
+    @include crisp-image();
+    display: flex;
+  }
+}
+
+// base styles end --------------------------------
+
+
+
+// top nav  --------------------------------
+
+.nav-top {
+  @include media-breakpoint-down(sm) {
+    @include make-offcanvas-content();
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    height: $nav-top-height;
+    z-index: 1;
+    text-align: center;
+    padding-top: 9px;
+    padding-left: 9px;
+  }
+  @include media-breakpoint-only(xs) {
+    text-align: left;
+  }
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+  &.nav-top--scrolled {
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,0.33);
+    background-image: url('/img/top-navbar-background.jpg');
+  }
+}
+
+.nav-top__title {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+  display: none;
+  .nav-top--scrolled & {
+    display: block;
+  }
+}
+
+.nav-top__menu-button {
+  @include make-button();
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.nav-top__icon-menu {
+  display: block;
+  .offcanvas-active & {
+    display: none;
+  }
+}
+
+.nav-top__icon-menu__fill {
+  fill: $brand-primary;
+}
+
+.nav-top__icon-x {
+  display: none;
+  .offcanvas-active & {
+    display: block;
+  }
+}
+
+.nav-top__icon-x__fill {
+  fill: $brand-primary;
+  .nav-top__icon-x:hover & {
+    fill: $gray;
+  }
+}
+
+.nav-top__icon-menu__fill {
+  fill: $brand-primary;
+  .nav-top__icon-menu:hover & {
+    fill: $gray;
+  }
+}
+
+// top nav end --------------------------------
+
+
+
+// main container --------------------------------
+
+.main-container {
+  display: flex;
+  @include media-breakpoint-down(sm) {
+    min-height: 100%;
+    @include make-offcanvas-content();
+    padding-top: $nav-top-height;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  @include media-breakpoint-up(md) {
+    position: relative;
+    margin: auto;
+    min-width: 600px;
+    width: 1200px;
+    height: 820px;
+    padding-left: 10rem;
+    padding-right: 16rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+  & > section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+}
+
+
+// main container end --------------------------------
+
+
+
+// footer --------------------------------
+
+.footer {
+  @include media-breakpoint-down(sm) {
+    margin-top: 9vw;
+    text-align: center;
+  }
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+}
+
+.footer__title {
+  color: $brand-secondary;
+}
+
+.footer__date {
+  display: block;
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+
+.footer__nav {
+  padding-top: 2vw;
+}
+
+.footer__nav__button {
+  @include make-button();
+}
+
+// footer end --------------------------------
+
+
+
+// side bar --------------------------------
+
+.side-bar {
+  @include media-breakpoint-down(sm) {
+    @include make-offcanvas-menu();
+    width: $off-canvas-menu-width;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    background-image: url('/img/side-background-mobile.jpg');
+    background-repeat: repeat-y;
+  }
+  @include media-breakpoint-up(md) {
+    position: absolute;
+    width: 14.6rem;
+    top: 8.3rem;
+    right: 0;
+    bottom: 30rem;
+  }
+  @include media-breakpoint-only(md) {
+    width: 15rem;
+    top: 8.1rem;
+  }
+}
+
+.side-bar__nav {
+  position: relative;
+  @include media-breakpoint-down(sm) {
+    background-repeat: no-repeat;
+    background-image: url('/img/main-background-mobile.jpg');
+    height: 483px;
+  }
+  @include media-breakpoint-up(md) {
+    width: 130px;
+  }
+}
+
+%side-bar__nav-button {
+  position: absolute;
+  @include make-button();
+}
+
+.side-bar__nav__button--portfolio {
+  @extend %side-bar__nav-button;
+  @include media-breakpoint-up(md) {
+    top: 2.2rem;
+    left: 1.6rem;
+  }
+  @include media-breakpoint-down(sm) {
+    top: 60px;
+    left: 0;
+  }
+}
+
+.side-bar__nav__button--skills {
+  @extend %side-bar__nav-button;
+  @include media-breakpoint-up(md) {
+    top: 7.6rem;
+    left: 1.8rem;
+  }
+  @include media-breakpoint-down(sm) {
+    top: 119px;
+    left: 3px;
+  }
+}
+
+.side-bar__nav__button--experience {
+  @extend %side-bar__nav-button;
+  @include media-breakpoint-up(md) {
+    top: 12.6rem;
+    left: 1.9rem;
+  }
+  @include media-breakpoint-down(sm) {
+    top: 173px;
+    left: 2px;
+  }
+}
+
+.side-bar__nav__button--contact {
+  @extend %side-bar__nav-button;
+  @include media-breakpoint-up(md) {
+    top: 17.7rem;
+    left: 2rem;
+  }
+  @include media-breakpoint-down(sm) {
+    top: 228px;
+    left: 3px;
+  }
+}
+
+.side-bar__nav__button--resume {
+  @extend %side-bar__nav-button;
+  @include media-breakpoint-up(md) {
+    top: 26.3rem;
+    left: 2.2rem;
+  }
+  @include media-breakpoint-down(sm) {
+    top: 312px;
+    left: 7px;
+  }
+}
+
+.side-bar__nav__button--code {
+  @extend %side-bar__nav-button;
+  @include media-breakpoint-up(md) {
+    top: 31.5rem;
+    left: 2.3rem;
+  }
+  @include media-breakpoint-down(sm) {
+    top: 367px;
+    left: 9px;
+  }
+}
+
+// side bar end --------------------------------

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,94 +10,96 @@
 </head>
 <body>
 
-<nav class="nav-top hidden-md-up row-offcanvas row-offcanvas-right p-t-1 p-l-1">
-    <h5 class="nav-top__title">Pavel Maximov</h5>
-    <h5 class="nav-top__title">Front-end Developer</h5>
-    <button type="button" class="nav-top__menu-button btn btn-link pull-xs-right p-a-0" data-toggle="offcanvas">
-        <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" height="50"><defs><style>.cls-1{fill:#343642;}</style></defs><title>icon-menu</title><path class="cls-1" d="M16.07,16.25l0.07,0S16.13,16.26,16.07,16.25Z"/><path class="cls-1" d="M34.13,16.23h0Z"/><path class="cls-1" d="M18.85,17.82h0Z"/><path class="cls-1" d="M15.21,17.69c3.63,0.21,6.77-.23,9.71-0.28s11.43,1.84,14.8-.09c0.67-.38-6.71-1.05-7.09-1a41.75,41.75,0,0,1-4.74-.37c-1.35-1-8.13.12-10.79,0.53,0-.05-4.38-0.74-5,0.9-0.37.95,3.1,0.35,3.14,0.35C16.16,17.75,14.12,17.78,15.21,17.69Z"/><path class="cls-1" d="M35.93,25.58l-0.07,0S35.87,25.58,35.93,25.58Z"/><path class="cls-1" d="M17.87,25.6h0Z"/><path class="cls-1" d="M33.15,24h0Z"/><path class="cls-1" d="M36.79,24.14c-3.63-.21-6.77.23-9.71,0.28s-11.43-1.84-14.8.09c-0.67.38,6.71,1.05,7.09,1a41.75,41.75,0,0,1,4.74.37c1.35,1,8.13-.12,10.79-0.53,0,0.05,4.38.74,5-.9,0.37-.95-3.1-0.35-3.14-0.35C35.84,24.08,37.88,24.05,36.79,24.14Z"/><path class="cls-1" d="M16.07,32.59l0.07,0S16.13,32.59,16.07,32.59Z"/><path class="cls-1" d="M34.13,32.57h0Z"/><path class="cls-1" d="M18.85,34.15h0Z"/><path class="cls-1" d="M15.21,34c3.63,0.21,6.77-.23,9.71-0.28s11.43,1.84,14.8-.09c0.67-.38-6.71-1.05-7.09-1a41.75,41.75,0,0,1-4.74-.37c-1.35-1-8.13.12-10.79,0.53,0-.05-4.38-0.74-5,0.9-0.37.95,3.1,0.35,3.14,0.35C16.16,34.08,14.12,34.11,15.21,34Z"/></svg>
-        <svg class="icon-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" height="50"><defs><style>.cls-1{fill:#343642;}</style></defs><title>icon-x</title><path class="cls-1" d="M17.43,31.13l0.08,0S17.47,31.1,17.43,31.13Z"/><path class="cls-1" d="M30.18,18.35v0A0,0,0,0,0,30.18,18.35Z"/><path class="cls-1" d="M20.5,30.28h0Z"/><path class="cls-1" d="M17.84,32.76c2.72-2.42,4.63-4.95,6.67-7.07s9.38-6.78,10.4-10.53c0.2-.74-5.49,4-5.75,4.27a41.75,41.75,0,0,1-3.62,3.09c-1.64.27-5.67,5.83-7.25,8-0.06,0-3.62,2.58-2.92,4.19,0.41,0.93,2.44-1.94,2.47-2C18.55,32.13,17.13,33.59,17.84,32.76Z"/><path class="cls-1" d="M31.13,32.57l0-.08S31.1,32.53,31.13,32.57Z"/><path class="cls-1" d="M18.35,19.82h0Z"/><path class="cls-1" d="M30.28,29.5h0Z"/><path class="cls-1" d="M32.76,32.16c-2.42-2.72-4.95-4.63-7.07-6.67s-6.78-9.38-10.53-10.4c-0.74-.2,4,5.49,4.27,5.75a41.75,41.75,0,0,1,3.09,3.62c0.27,1.64,5.83,5.67,8,7.25,0,0.06,2.58,3.62,4.19,2.92,0.93-.41-1.94-2.44-2-2.47C32.13,31.45,33.59,32.87,32.76,32.16Z"/></svg>
-    </button>
-</nav>
-<div class="main-container container-fluid" id="main">
-    <div class="main-container__content row row-offcanvas row-offcanvas-right">
-        <div class="col-xs-12">
 
+<main class="main-container" id="main" data-offcanvas="content">
+    <section class="portfolio">
+        <nav class="nav-top" data-offcanvas="content">
+            <h5 class="nav-top__title">Pavel Maximov</h5>
+            <h5 class="nav-top__title">Front-end Developer</h5>
+            <button class="nav-top__menu-button" type="button" data-toggle="offcanvas">
+                <svg class="nav-top__icon-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" height="50"><title>icon-menu</title><path class="nav-top__icon-menu__fill" d="M16.07,16.25l0.07,0S16.13,16.26,16.07,16.25Z"/><path class="nav-top__icon-menu__fill" d="M34.13,16.23h0Z"/><path class="nav-top__icon-menu__fill" d="M18.85,17.82h0Z"/><path class="nav-top__icon-menu__fill" d="M15.21,17.69c3.63,0.21,6.77-.23,9.71-0.28s11.43,1.84,14.8-.09c0.67-.38-6.71-1.05-7.09-1a41.75,41.75,0,0,1-4.74-.37c-1.35-1-8.13.12-10.79,0.53,0-.05-4.38-0.74-5,0.9-0.37.95,3.1,0.35,3.14,0.35C16.16,17.75,14.12,17.78,15.21,17.69Z"/><path class="nav-top__icon-menu__fill" d="M35.93,25.58l-0.07,0S35.87,25.58,35.93,25.58Z"/><path class="nav-top__icon-menu__fill" d="M17.87,25.6h0Z"/><path class="nav-top__icon-menu__fill" d="M33.15,24h0Z"/><path class="nav-top__icon-menu__fill" d="M36.79,24.14c-3.63-.21-6.77.23-9.71,0.28s-11.43-1.84-14.8.09c-0.67.38,6.71,1.05,7.09,1a41.75,41.75,0,0,1,4.74.37c1.35,1,8.13-.12,10.79-0.53,0,0.05,4.38.74,5-.9,0.37-.95-3.1-0.35-3.14-0.35C35.84,24.08,37.88,24.05,36.79,24.14Z"/><path class="nav-top__icon-menu__fill" d="M16.07,32.59l0.07,0S16.13,32.59,16.07,32.59Z"/><path class="nav-top__icon-menu__fill" d="M34.13,32.57h0Z"/><path class="nav-top__icon-menu__fill" d="M18.85,34.15h0Z"/><path class="nav-top__icon-menu__fill" d="M15.21,34c3.63,0.21,6.77-.23,9.71-0.28s11.43,1.84,14.8-.09c0.67-.38-6.71-1.05-7.09-1a41.75,41.75,0,0,1-4.74-.37c-1.35-1-8.13.12-10.79,0.53,0-.05-4.38-0.74-5,0.9-0.37.95,3.1,0.35,3.14,0.35C16.16,34.08,14.12,34.11,15.21,34Z"/></svg>
+                <svg class="nav-top__icon-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" height="50"><title>icon-x</title><path class="nav-top__icon-x__fill" d="M17.43,31.13l0.08,0S17.47,31.1,17.43,31.13Z"/><path class="nav-top__icon-x__fill" d="M30.18,18.35v0A0,0,0,0,0,30.18,18.35Z"/><path class="nav-top__icon-x__fill" d="M20.5,30.28h0Z"/><path class="nav-top__icon-x__fill" d="M17.84,32.76c2.72-2.42,4.63-4.95,6.67-7.07s9.38-6.78,10.4-10.53c0.2-.74-5.49,4-5.75,4.27a41.75,41.75,0,0,1-3.62,3.09c-1.64.27-5.67,5.83-7.25,8-0.06,0-3.62,2.58-2.92,4.19,0.41,0.93,2.44-1.94,2.47-2C18.55,32.13,17.13,33.59,17.84,32.76Z"/><path class="nav-top__icon-x__fill" d="M31.13,32.57l0-.08S31.1,32.53,31.13,32.57Z"/><path class="nav-top__icon-x__fill" d="M18.35,19.82h0Z"/><path class="nav-top__icon-x__fill" d="M30.28,29.5h0Z"/><path class="nav-top__icon-x__fill" d="M32.76,32.16c-2.42-2.72-4.95-4.63-7.07-6.67s-6.78-9.38-10.53-10.4c-0.74-.2,4,5.49,4.27,5.75a41.75,41.75,0,0,1,3.09,3.62c0.27,1.64,5.83,5.67,8,7.25,0,0.06,2.58,3.62,4.19,2.92,0.93-.41-1.94-2.44-2-2.47C32.13,31.45,33.59,32.87,32.76,32.16Z"/></svg>
+            </button>
+        </nav>
 
+        <!-- Nav tabs -->
 
-            <div class="row">
-                    <!-- Nav tabs -->
-                    <ul class="col-md-12 nav nav-tabs" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#home" role="tab">Front-end portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#profile" role="tab">Design portfolio</a>
-                        </li>
-                    </ul>
+        <nav class="portfolio__nav">
+            <ul class="portfolio__nav-wrapper nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="portfolio__nav__button nav-link active" data-toggle="tab" href="#home" role="tab">Front-end portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="portfolio__nav__button nav-link" data-toggle="tab" href="#profile" role="tab">Design portfolio</a>
+                </li>
+            </ul>
+        </nav>
 
-                    <!-- Tab panes -->
-                    <div class="col-md-12 tab-content">
-                        <div class="tab-pane active" id="home" role="tabpanel">
-                            <div class="row">
-                                <div class="col-md-8">
-                                    ciao ciao
-                                </div>
-                                <div class="col-md-4 p-a-0 p-t-3">
-                                    <h4 class="text-xs-center col-xs-12 m-t-6">Pavel Maximov</h4>
-                                    <h4 class="text-xs-center col-xs-12">Front-end developer</h4>
-                                    <h1 class="text-xs-center color-secondary col-xs-12">Portfolio</h1>
-
-                                    <img class="m-t-3" src="img/portfolio.png">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="profile" role="tabpanel">
-                            <div class="row">
-                                <div class="col-md-8">
-                                    ciao ciao
-                                </div>
-                                <div class="col-md-4 p-a-0 p-t-3">
-                                    <h4 class="text-xs-center col-xs-12 m-t-6">Pavel Maximov</h4>
-                                    <h4 class="text-xs-center col-xs-12">Front-end developer</h4>
-                                    <h1 class="text-xs-center color-secondary col-xs-12">Portfolio</h1>
-
-                                    <img class="m-t-3" src="img/portfolio-design.png">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-            </div>
-            <div class="hidden-md-up m-t-4 m-b-3">
-                <div class="hire-me">
-                    <h3 class="hire-me-button-wrapper color-secondary m-b-1">Hire me!</h3>
-                    <p class="hire-me-text text-xs-center m-b-0">Next availability for contract: April 2016</p>
+        <!-- Tab panes -->
+        <div class="portfolio__wrapper tab-content">
+            <article class="portfolio__content--frontend tab-pane active" id="home" role="tabpanel">
+                <div class="portfolio__projects">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
                 </div>
-                <button href="#" class="btn btn-link active" onClick="location.href='portfolio.html'">Portfolio</button>
-                <button href="#" class="btn btn-link" onClick="location.href='skills.html'">Skills</button>
-                <button href="#" class="btn btn-link" onClick="location.href='experience.html'">Experience</button>
-                <button href="#" class="btn btn-link" onClick="location.href='contact.html'">Contact</button>
-                <button href="#" class="btn btn-link" onclick="window.open('resume-pavel-maximov.pdf', '_blank')">Resume</button>
-                <button href="#" class="btn btn-lg btn-link" onclick="window.open('https://github.com/pavelmaximov', '_blank')">Code</button>
-            </div>
+                <header class="portfolio__header">
+                    <h4 class="portfolio__header__name">Pavel Maximov</h4>
+                    <h1 class="portfolio__header__title">Front-end Portfolio</h1>
+                    <figure class="portfolio__header__img-wrapper">
+                        <img class="portfolio__header__img--frontend" src="img/portfolio.png">
+                    </figure>
+                </header>
+            </article>
+            <article class="portfolio__content--design tab-pane" id="profile" role="tabpanel">
+                <div class="portfolio__projects">
+                    But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it?
+                </div>
+                <header class="portfolio__header">
+                    <h4 class="portfolio__header__name">Pavel Maximov</h4>
+                    <h1 class="portfolio__header__title">Front-end Portfolio</h1>
+                    <figure class="portfolio__header__img-wrapper">
+                        <img class="portfolio__header__img--design" src="img/portfolio-design.png">
+                    </figure>
+                </header>
+            </article>
         </div>
-        <div class="mobile-nav-side sidebar-offcanvas" id="sidebar">
-            <div class="mobile-nav__links-wrapper">
-                <button href="#" class="btn-portfolio btn btn-lg btn-link active" onClick="location.href='portfolio.html'">Portfolio</button>
-                <button href="#" class="btn-skills btn btn-lg btn-link" onClick="location.href='skills.html'">Skills</button>
-                <button href="#" class="btn-experience btn btn-lg btn-link" onClick="location.href='experience.html'">Experience</button>
-                <button href="#" class="btn-contact btn btn-lg btn-link" onClick="location.href='contact.html'">Contact</button>
-                <button href="#" class="btn-resume btn btn-lg btn-link" onclick="window.open('resume-pavel-maximov.pdf', '_blank')">Resume</button>
-                <button href="#" class="btn-code btn btn-lg btn-link" onclick="window.open('https://github.com/pavelmaximov', '_blank')">Code</button>
-            </div>
-        </div>
-    </div>
-</div>
+
+        <footer class="footer">
+            <h3 class="footer__title">Hire me!</h3>
+            <p class="footer__subtitle">Next availability for contract:
+                <span class="footer__date">April 2016</span></p>
+            <nav class="footer__nav">
+                <button class="footer__nav__button" onClick="location.href='portfolio.html'">Portfolio</button>
+                <button class="footer__nav__button" onClick="location.href='skills.html'">Skills</button>
+                <button class="footer__nav__button" onClick="location.href='experience.html'">Experience</button>
+                <button class="footer__nav__button" onClick="location.href='contact.html'">Contact</button>
+                <button class="footer__nav__button" onclick="window.open('resume-pavel-maximov.pdf', '_blank')">Resume</button>
+                <button class="footer__nav__button" onclick="window.open('https://github.com/pavelmaximov', '_blank')">Code</button>
+            </nav>
+        </footer>
+    </section>
+    <aside class="side-bar" id="sidebar">
+        <nav class="side-bar__nav">
+            <button class="side-bar__nav__button--portfolio" onClick="location.href='portfolio.html'">Portfolio</button>
+            <button class="side-bar__nav__button--skills" onClick="location.href='skills.html'">Skills</button>
+            <button class="side-bar__nav__button--experience" onClick="location.href='experience.html'">Experience</button>
+            <button class="side-bar__nav__button--contact" onClick="location.href='contact.html'">Contact</button>
+            <button class="side-bar__nav__button--resume" onclick="window.open('resume-pavel-maximov.pdf', '_blank')">Resume</button>
+            <button class="side-bar__nav__button--code" onclick="window.open('https://github.com/pavelmaximov', '_blank')">Code</button>
+        </nav>
+    </aside>
+</main>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/tether/1.2.0/tether.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
 <script src="/js/back.js" ></script>
 
 </body>
 </html>
+
+
+
+
+
+
+

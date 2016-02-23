@@ -119,12 +119,12 @@ $document.ready(function () {
     resizerHandler();
 
     $('[data-toggle="offcanvas"]').click(function () {
-        $('.row-offcanvas').toggleClass('active');
+        $('[data-offcanvas="content"]').toggleClass('offcanvas-active');
     });
 });
 
 $window.on('scroll', function () {
-    $navTop.toggleClass('scrolling', $window.scrollTop() > 1);
+    $navTop.toggleClass('nav-top--scrolled', $window.scrollTop() > 1);
 });
 
 //TODO add js-... notation to classes

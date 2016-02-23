@@ -1,0 +1,20 @@
+// Off canvas right menu
+
+@mixin make-offcanvas-content () {
+  position: relative;
+  transition: all .25s ease-out;
+  right: 0;
+
+  &.offcanvas-active {
+    right: $off-canvas-menu-width;
+  }
+}
+
+@mixin make-offcanvas-menu () {
+  transition: all .25s ease-out;
+  right: -$off-canvas-menu-width;
+
+  .offcanvas-active & {
+    right: 0;
+  }
+}

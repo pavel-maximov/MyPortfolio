@@ -1,5 +1,10 @@
+// Custom variables
 
-//// Variables
+$off-canvas-menu-width: 125px;
+$nav-top-height: 50px;
+
+
+//// Bootstrap Variables
 ////
 //// Copy settings from this file into the provided `_custom.scss` to override
 //// the Bootstrap defaults without modifying key, versioned files.
@@ -76,36 +81,24 @@ $enable-rounded:              false;
 $spacer:   1rem;
 $spacer-x: $spacer;
 $spacer-y: $spacer;
-$spacers: (
-        0: (
-                x: 0,
-                y: 0
-        ),
-        1: (
-                x: $spacer-x,
-                y: $spacer-y
-        ),
-        2: (
-                x: ($spacer-x * 1.5),
-                y: ($spacer-y * 1.5)
-        ),
-        3: (
-                x: ($spacer-x * 3),
-                y: ($spacer-y * 3)
-        ),
-        4: (
-                x: ($spacer-x * 4),
-                y: ($spacer-y * 4)
-        ),
-        5: (
-                x: ($spacer-x * 5),
-                y: ($spacer-y * 5)
-        ),
-        6: (
-                x: ($spacer-x * 6),
-                y: ($spacer-y * 6)
-        )
-) !default;
+//$spacers: (
+//        0: (
+//                x: 0,
+//                y: 0
+//        ),
+//        1: (
+//                x: $spacer-x,
+//                y: $spacer-y
+//        ),
+//        2: (
+//                x: ($spacer-x * 1.5),
+//                y: ($spacer-y * 1.5)
+//        ),
+//        3: (
+//                x: ($spacer-x * 3),
+//                y: ($spacer-y * 3)
+//        )
+//) !default;
 //$border-width: 1px !default;
 //
 //
