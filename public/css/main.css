@@ -4877,9 +4877,24 @@ body {
   position: absolute;
   right: 0;
   top: 0; }
-  .nav-top__menu-button:hover, .nav-top__menu-button:focus, .nav-top__menu-button:active {
-    color: #8b9090;
+  .nav-top__menu-button:before {
+    content: '*';
+    position: relative;
+    top: 0.3rem;
+    font-size: 2rem;
+    height: 2rem;
+    display: inline-block;
+    width: 1.5rem; }
+  .nav-top__menu-button:hover, .nav-top__menu-button.hover, .nav-top__menu-button:focus, .nav-top__menu-button.focus, .nav-top__menu-button:active, .nav-top__menu-button.active, .nav-top__menu-button:active {
+    color: #8a2e3f;
     outline: none; }
+    .nav-top__menu-button:hover:before, .nav-top__menu-button.hover:before, .nav-top__menu-button:focus:before, .nav-top__menu-button.focus:before, .nav-top__menu-button:active:before, .nav-top__menu-button.active:before, .nav-top__menu-button:active:before {
+      top: -0.2rem;
+      content: '>>';
+      font-size: 1.6rem;
+      height: 1.8rem; }
+  .nav-top__menu-button:before {
+    display: none; }
 
 .nav-top__icon-menu {
   display: block; }
@@ -4961,9 +4976,22 @@ body {
   color: #343642;
   font-size: 2.4rem;
   font-family: "amatic_sc", Serif; }
-  .footer__nav__button:hover, .footer__nav__button:focus, .footer__nav__button:active {
-    color: #8b9090;
+  .footer__nav__button:before {
+    content: '*';
+    position: relative;
+    top: 0.3rem;
+    font-size: 2rem;
+    height: 2rem;
+    display: inline-block;
+    width: 1.5rem; }
+  .footer__nav__button:hover, .footer__nav__button.hover, .footer__nav__button:focus, .footer__nav__button.focus, .footer__nav__button:active, .footer__nav__button.active, .footer__nav__button:active {
+    color: #8a2e3f;
     outline: none; }
+    .footer__nav__button:hover:before, .footer__nav__button.hover:before, .footer__nav__button:focus:before, .footer__nav__button.focus:before, .footer__nav__button:active:before, .footer__nav__button.active:before, .footer__nav__button:active:before {
+      top: -0.2rem;
+      content: '>>';
+      font-size: 1.6rem;
+      height: 1.8rem; }
 
 @media (max-width: 800px) {
   .side-bar {
@@ -4992,7 +5020,8 @@ body {
     top: 8.1rem; } }
 
 .side-bar__nav {
-  position: relative; }
+  position: relative;
+  height: 100%; }
   @media (max-width: 800px) {
     .side-bar__nav {
       background-repeat: no-repeat;
@@ -5010,14 +5039,27 @@ body {
   color: #343642;
   font-size: 2.4rem;
   font-family: "amatic_sc", Serif; }
-  .side-bar__nav__button--portfolio:hover, .side-bar__nav__button--skills:hover, .side-bar__nav__button--experience:hover, .side-bar__nav__button--contact:hover, .side-bar__nav__button--resume:hover, .side-bar__nav__button--code:hover, .side-bar__nav__button--portfolio:focus, .side-bar__nav__button--skills:focus, .side-bar__nav__button--experience:focus, .side-bar__nav__button--contact:focus, .side-bar__nav__button--resume:focus, .side-bar__nav__button--code:focus, .side-bar__nav__button--portfolio:active, .side-bar__nav__button--skills:active, .side-bar__nav__button--experience:active, .side-bar__nav__button--contact:active, .side-bar__nav__button--resume:active, .side-bar__nav__button--code:active {
-    color: #8b9090;
+  .side-bar__nav__button--portfolio:before, .side-bar__nav__button--skills:before, .side-bar__nav__button--experience:before, .side-bar__nav__button--contact:before, .side-bar__nav__button--resume:before, .side-bar__nav__button--code:before {
+    content: '*';
+    position: relative;
+    top: 0.3rem;
+    font-size: 2rem;
+    height: 2rem;
+    display: inline-block;
+    width: 1.5rem; }
+  .side-bar__nav__button--portfolio:hover, .side-bar__nav__button--skills:hover, .side-bar__nav__button--experience:hover, .side-bar__nav__button--contact:hover, .side-bar__nav__button--resume:hover, .side-bar__nav__button--code:hover, .hover.side-bar__nav__button--portfolio, .hover.side-bar__nav__button--skills, .hover.side-bar__nav__button--experience, .hover.side-bar__nav__button--contact, .hover.side-bar__nav__button--resume, .hover.side-bar__nav__button--code, .side-bar__nav__button--portfolio:focus, .side-bar__nav__button--skills:focus, .side-bar__nav__button--experience:focus, .side-bar__nav__button--contact:focus, .side-bar__nav__button--resume:focus, .side-bar__nav__button--code:focus, .focus.side-bar__nav__button--portfolio, .focus.side-bar__nav__button--skills, .focus.side-bar__nav__button--experience, .focus.side-bar__nav__button--contact, .focus.side-bar__nav__button--resume, .focus.side-bar__nav__button--code, .side-bar__nav__button--portfolio:active, .side-bar__nav__button--skills:active, .side-bar__nav__button--experience:active, .side-bar__nav__button--contact:active, .side-bar__nav__button--resume:active, .side-bar__nav__button--code:active, .active.side-bar__nav__button--portfolio, .active.side-bar__nav__button--skills, .active.side-bar__nav__button--experience, .active.side-bar__nav__button--contact, .active.side-bar__nav__button--resume, .active.side-bar__nav__button--code, .side-bar__nav__button--portfolio:active, .side-bar__nav__button--skills:active, .side-bar__nav__button--experience:active, .side-bar__nav__button--contact:active, .side-bar__nav__button--resume:active, .side-bar__nav__button--code:active {
+    color: #8a2e3f;
     outline: none; }
+    .side-bar__nav__button--portfolio:hover:before, .side-bar__nav__button--skills:hover:before, .side-bar__nav__button--experience:hover:before, .side-bar__nav__button--contact:hover:before, .side-bar__nav__button--resume:hover:before, .side-bar__nav__button--code:hover:before, .hover.side-bar__nav__button--portfolio:before, .hover.side-bar__nav__button--skills:before, .hover.side-bar__nav__button--experience:before, .hover.side-bar__nav__button--contact:before, .hover.side-bar__nav__button--resume:before, .hover.side-bar__nav__button--code:before, .side-bar__nav__button--portfolio:focus:before, .side-bar__nav__button--skills:focus:before, .side-bar__nav__button--experience:focus:before, .side-bar__nav__button--contact:focus:before, .side-bar__nav__button--resume:focus:before, .side-bar__nav__button--code:focus:before, .focus.side-bar__nav__button--portfolio:before, .focus.side-bar__nav__button--skills:before, .focus.side-bar__nav__button--experience:before, .focus.side-bar__nav__button--contact:before, .focus.side-bar__nav__button--resume:before, .focus.side-bar__nav__button--code:before, .side-bar__nav__button--portfolio:active:before, .side-bar__nav__button--skills:active:before, .side-bar__nav__button--experience:active:before, .side-bar__nav__button--contact:active:before, .side-bar__nav__button--resume:active:before, .side-bar__nav__button--code:active:before, .active.side-bar__nav__button--portfolio:before, .active.side-bar__nav__button--skills:before, .active.side-bar__nav__button--experience:before, .active.side-bar__nav__button--contact:before, .active.side-bar__nav__button--resume:before, .active.side-bar__nav__button--code:before, .side-bar__nav__button--portfolio:active:before, .side-bar__nav__button--skills:active:before, .side-bar__nav__button--experience:active:before, .side-bar__nav__button--contact:active:before, .side-bar__nav__button--resume:active:before, .side-bar__nav__button--code:active:before {
+      top: -0.2rem;
+      content: '>>';
+      font-size: 1.6rem;
+      height: 1.8rem; }
 
 @media (min-width: 801px) {
   .side-bar__nav__button--portfolio {
     top: 2.2rem;
-    left: 1.6rem; } }
+    left: 1.2rem; } }
 
 @media (max-width: 800px) {
   .side-bar__nav__button--portfolio {
@@ -5027,7 +5069,7 @@ body {
 @media (min-width: 801px) {
   .side-bar__nav__button--skills {
     top: 7.6rem;
-    left: 1.8rem; } }
+    left: 1.4rem; } }
 
 @media (max-width: 800px) {
   .side-bar__nav__button--skills {
@@ -5037,7 +5079,7 @@ body {
 @media (min-width: 801px) {
   .side-bar__nav__button--experience {
     top: 12.6rem;
-    left: 1.9rem; } }
+    left: 1.5rem; } }
 
 @media (max-width: 800px) {
   .side-bar__nav__button--experience {
@@ -5047,7 +5089,7 @@ body {
 @media (min-width: 801px) {
   .side-bar__nav__button--contact {
     top: 17.7rem;
-    left: 2rem; } }
+    left: 1.6rem; } }
 
 @media (max-width: 800px) {
   .side-bar__nav__button--contact {
@@ -5057,7 +5099,7 @@ body {
 @media (min-width: 801px) {
   .side-bar__nav__button--resume {
     top: 26.3rem;
-    left: 2.2rem; } }
+    left: 1.8rem; } }
 
 @media (max-width: 800px) {
   .side-bar__nav__button--resume {
@@ -5067,12 +5109,15 @@ body {
 @media (min-width: 801px) {
   .side-bar__nav__button--code {
     top: 31.5rem;
-    left: 2.3rem; } }
+    left: 1.9rem; } }
 
 @media (max-width: 800px) {
   .side-bar__nav__button--code {
     top: 367px;
     left: 9px; } }
+
+.home {
+  flex-direction: column; }
 
 .home-wrapper {
   width: 100%; }
@@ -5168,9 +5213,22 @@ body {
   font-size: 2.4rem;
   font-family: "amatic_sc", Serif;
   width: 100%; }
-  .home__hire-me__button:hover, .home__hire-me__button:focus, .home__hire-me__button:active {
-    color: #8b9090;
+  .home__hire-me__button:before {
+    content: '*';
+    position: relative;
+    top: 0.3rem;
+    font-size: 2rem;
+    height: 2rem;
+    display: inline-block;
+    width: 1.5rem; }
+  .home__hire-me__button:hover, .home__hire-me__button.hover, .home__hire-me__button:focus, .home__hire-me__button.focus, .home__hire-me__button:active, .home__hire-me__button.active, .home__hire-me__button:active {
+    color: #8a2e3f;
     outline: none; }
+    .home__hire-me__button:hover:before, .home__hire-me__button.hover:before, .home__hire-me__button:focus:before, .home__hire-me__button.focus:before, .home__hire-me__button:active:before, .home__hire-me__button.active:before, .home__hire-me__button:active:before {
+      top: -0.2rem;
+      content: '>>';
+      font-size: 1.6rem;
+      height: 1.8rem; }
 
 .home__hire-me__text {
   position: absolute;
@@ -5198,8 +5256,55 @@ body {
   justify-content: space-between;
   padding-top: 2rem; }
 
-.portfolio__projects {
-  width: 67%; }
+.portfolio__list {
+  width: 67%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: flex-start; }
+
+.portfolio__content__title {
+  width: 100%;
+  padding-bottom: 1rem; }
+
+.portfolio__list__project {
+  border: none;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+  width: 49%;
+  padding: 14% 0 0 0;
+  background: white;
+  margin-bottom: 2%;
+  position: relative; }
+  .portfolio__list__project:hover {
+    border: 1px solid #8a2e3f; }
+
+.portfolio__list__project--small {
+  border: none;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+  width: 32%;
+  padding: 8% 0 0 0;
+  background: white;
+  margin-bottom: 2%;
+  position: relative; }
+  .portfolio__list__project--small:hover {
+    border: 1px solid #8a2e3f; }
+
+.portfolio__list__project-name {
+  position: absolute;
+  bottom: 2.1rem;
+  left: 4%; }
+
+.portfolio__list__project-type {
+  position: absolute;
+  bottom: 0.4rem;
+  left: 4%;
+  color: #8b9090; }
+
+.portfolio__list__project-img {
+  position: absolute;
+  left: 4%;
+  right: 4%;
+  top: 4%; }
 
 .portfolio__header__img-wrapper {
   height: 33rem; }
@@ -5218,19 +5323,51 @@ body {
   color: #343642;
   font-size: 2.4rem;
   font-family: "amatic_sc", Serif; }
-  .portfolio__nav__button:hover, .portfolio__nav__button:focus, .portfolio__nav__button:active {
-    color: #8b9090;
+  .portfolio__nav__button:before {
+    content: '*';
+    position: relative;
+    top: 0.3rem;
+    font-size: 2rem;
+    height: 2rem;
+    display: inline-block;
+    width: 1.5rem; }
+  .portfolio__nav__button:hover, .portfolio__nav__button.hover, .portfolio__nav__button:focus, .portfolio__nav__button.focus, .portfolio__nav__button:active, .portfolio__nav__button.active, .portfolio__nav__button:active {
+    color: #8a2e3f;
     outline: none; }
+    .portfolio__nav__button:hover:before, .portfolio__nav__button.hover:before, .portfolio__nav__button:focus:before, .portfolio__nav__button.focus:before, .portfolio__nav__button:active:before, .portfolio__nav__button.active:before, .portfolio__nav__button:active:before {
+      top: -0.2rem;
+      content: '>>';
+      font-size: 1.6rem;
+      height: 1.8rem; }
+
+.portfolio__header__img--frontend, .portfolio__header__img--design {
+  width: 100%;
+  margin-top: 2rem; }
 
 .portfolio__header__img--frontend {
-  width: 100%;
   max-width: 280px; }
 
 .portfolio__header__img--design {
-  width: 100%;
   max-width: 300px; }
+
+.portfolio__header__title {
+  color: #8a2e3f; }
 
 .tab-content > .active {
   display: flex; }
+
+.nav-tabs {
+  border-bottom: 1px solid #343642; }
+
+.nav-tabs .nav-link {
+  padding: 0.5rem 2.6rem;
+  border: none !important; }
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-link.active:focus, .nav-tabs .nav-link.active:hover, .nav-tabs .nav-item.open .nav-link, .nav-tabs .nav-item.open .nav-link:focus, .nav-tabs .nav-item.open .nav-link:hover {
+  color: #8a2e3f;
+  background-color: transparent; }
+
+.nav-tabs .nav-item + .nav-item {
+  margin-left: 0; }
 
 /*# sourceMappingURL=maps/main.css.map */

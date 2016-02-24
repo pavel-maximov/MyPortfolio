@@ -24,9 +24,63 @@
 }
 
 
-.portfolio__projects {
+.portfolio__list {
   width: 67%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
 
+.portfolio__content__title {
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.portfolio__list__project {
+  border: none;
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.10);
+  width: 49%;
+  padding: 14% 0 0 0;
+  background: white;
+  margin-bottom: 2%;
+  position: relative;
+  &:hover {
+    border: 1px solid $brand-secondary;
+  }
+}
+
+.portfolio__list__project--small {
+  border: none;
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.10);
+  width: 32%;
+  padding: 8% 0 0 0;
+  background: white;
+  margin-bottom: 2%;
+  position: relative;
+  &:hover {
+    border: 1px solid $brand-secondary;
+  }
+}
+
+.portfolio__list__project-name {
+  position: absolute;
+  bottom: 2.1rem;
+  left: 4%;
+}
+
+.portfolio__list__project-type {
+  position: absolute;
+  bottom: 0.4rem;
+  left: 4%;
+  color: $gray;
+}
+
+.portfolio__list__project-img {
+  position: absolute;
+  left: 4%;
+  right: 4%;
+  top: 4%;
 }
 
 .portfolio__header__img-wrapper {
@@ -46,22 +100,45 @@
 }
 
 
-.portfolio__header__img--frontend {
+%portfolio__header__img {
   width: 100%;
+  margin-top: 2rem;
+}
+
+.portfolio__header__img--frontend {
+  @extend %portfolio__header__img;
   max-width: 280px;
 }
 
 .portfolio__header__img--design {
-  width: 100%;
+  @extend %portfolio__header__img;
   max-width: 300px;
 }
 
-
-
-
+.portfolio__header__title {
+  color: $brand-secondary;
+}
 
 // bootstrap overrides
 
 .tab-content > .active {
   display: flex;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid $brand-primary;
+}
+
+.nav-tabs .nav-link {
+  padding: 0.5rem 2.6rem;
+  border: none !important;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-link.active:focus, .nav-tabs .nav-link.active:hover, .nav-tabs .nav-item.open .nav-link, .nav-tabs .nav-item.open .nav-link:focus, .nav-tabs .nav-item.open .nav-link:hover {
+  color: $brand-secondary;
+  background-color: transparent;
+}
+
+.nav-tabs .nav-item + .nav-item {
+  margin-left: 0;
 }
