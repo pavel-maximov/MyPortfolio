@@ -1,13 +1,19 @@
 
 // mixin --------------------------------
 
-@mixin crisp-image () {
+@mixin make-crisp-image () {
   image-rendering: -moz-crisp-edges;         /* Firefox */
   image-rendering:   -o-crisp-edges;         /* Opera */
   image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
   image-rendering: crisp-edges;
   -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
 }
+
+@mixin disable-crisp-image () {
+  image-rendering: auto;         /* Firefox */
+  -ms-interpolation-mode: default;  /* IE (non-standard property) */
+}
+
 
 @mixin make-button () {
   border: 0;
@@ -16,6 +22,7 @@
   color: $brand-primary;
   font-size: 2.4rem;
   font-family: $font-family-amatic;
+  cursor: pointer;
   &:before {
     content: '*';
     position: relative;
@@ -33,7 +40,7 @@
   &.active,
   &:active {
     color: $brand-secondary;
-    outline: none;
+    outline: 0;
     &:before {
       top: -0.2rem;
       content: '>>';
@@ -94,13 +101,12 @@ body  {
   padding: 0;
   margin: 0;
   overflow-x: hidden; /* Prevent scroll on narrow devices */
+  @include make-crisp-image();
   @include media-breakpoint-down(sm) {
     background: $gray-lightest url('/img/center-background-mobile-tablet.jpg');
-    @include crisp-image();
   }
   @include media-breakpoint-up(md) {
     background: $gray-dark url("/img/main-background-desktop.jpg") no-repeat center;
-    @include crisp-image();
     display: flex;
   }
 }
@@ -200,8 +206,8 @@ body  {
     @include make-offcanvas-content();
     padding-top: $nav-top-height;
     padding-bottom: 4rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
   }
   @include media-breakpoint-up(md) {
     position: relative;
@@ -209,10 +215,10 @@ body  {
     min-width: 600px;
     width: 1200px;
     height: 820px;
-    padding-left: 10rem;
+    padding-left: 11rem;
     padding-right: 16rem;
-    padding-top: 7rem;
-    padding-bottom: 7rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
   & > section {
     width: 100%;
@@ -230,7 +236,7 @@ body  {
 
 .footer {
   @include media-breakpoint-down(sm) {
-    margin-top: 9vw;
+    margin-top: 12vw;
     text-align: center;
   }
   @include media-breakpoint-up(md) {

@@ -57,9 +57,7 @@
 
 .home__head-img__img {
   width: 100%;
-  @include media-breakpoint-up(md) {
-    @include crisp-image();
-  }
+  @include disable-crisp-image();
 }
 
 .home__hire-me {
@@ -71,7 +69,7 @@
     background-image: url('/img/badge.png');
     background-repeat: no-repeat;
     background-size: 100%;
-    @include crisp-image();
+    @include disable-crisp-image();
     position: absolute;
     bottom: 7%;
     right: 12%;

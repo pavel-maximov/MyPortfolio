@@ -53,6 +53,7 @@ $gray-lightest:               #F4F3F1;
 
 $brand-primary:               #343642;
 $brand-secondary:             #8a2e3f;
+$brand-secondary-op9:          rgba(138, 46, 63, 0.9);
 //$brand-success:             #5cb85c !default;
 //$brand-info:                #5bc0de !default;
 //$brand-warning:             #f0ad4e !default;
@@ -166,9 +167,10 @@ $container-max-widths: (
 //$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 //$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 //$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-$font-family-portmanteau:  'portmanteau', Serif;
-$font-family-old-newspaper:  'oldnewspapertypes', Serif;
-$font-family-amatic:  'amatic_sc', Serif;
+$font-family-portmanteau:  'portmanteau', serif;
+$font-family-old-newspaper:  'oldnewspapertypes', serif;
+$font-family-amatic:  'amatic_sc', serif;
+$font-family-arial:  Arial, 'Helvetica Neue', Helvetica, sans-serif;
 $font-family-base:       $font-family-old-newspaper;
 //
 //// Pixel value used to responsively scale all typography. Applied to the `<html>` element.
