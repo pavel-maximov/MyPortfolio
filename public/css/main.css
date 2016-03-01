@@ -4832,14 +4832,18 @@ body {
 .article-title-img-wrapper {
   max-width: 350px; }
 
-#intro .article-header {
-  z-index: 1; }
-
-#intro .article-body {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  right: -28%; }
+#intro {
+  background-color: transparent; }
+  #intro .article-header {
+    z-index: 1; }
+  #intro .article-body {
+    position: absolute;
+    height: 100%;
+    width: 100%; }
+  #intro .article-header {
+    position: absolute;
+    left: 25%;
+    background-color: transparent; }
 
 #skills .article-header {
   background-color: #eee; }

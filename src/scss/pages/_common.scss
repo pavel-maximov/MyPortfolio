@@ -139,6 +139,7 @@ body  {
 
 #intro {
   @extend %article-wrapper;
+  background-color: transparent;
 
   & .article-header {
     z-index: 1;
@@ -148,7 +149,13 @@ body  {
     position: absolute;
     height: 100%;
     width: 100%;
-    right: -28%;
+
+  }
+
+  .article-header {
+    position: absolute;
+    left: 25%;
+    background-color: transparent;
   }
 }
 
