@@ -386,19 +386,19 @@ output {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 1rem;
-  font-family: "portmanteau", serif;
+  font-family: "amatic_sc", serif;
   font-weight: normal;
   line-height: 1.1;
   color: inherit; }
 
 h1, .h1 {
-  font-size: 2.1rem; }
+  font-size: 2.4rem; }
 
 h2, .h2 {
-  font-size: 1.8rem; }
+  font-size: 2rem; }
 
 h3, .h3 {
-  font-size: 1.4rem; }
+  font-size: 1.8rem; }
 
 h4, .h4 {
   font-size: 1.4rem; }
@@ -4826,39 +4826,39 @@ body {
   margin: auto;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  width: 32%; }
 
 .article-title-img {
   width: 100%;
   margin-bottom: 30px; }
 
 .article-title-img-wrapper {
-  max-width: 350px;
-  width: 70%; }
+  width: 100%;
+  max-width: 300px; }
 
 #intro {
   background-color: transparent; }
   #intro .article-header {
     z-index: 1;
     position: absolute;
-    background-color: transparent; }
+    background-color: white; }
   #intro .article-body {
     position: absolute;
     height: 100%;
     width: 100%; }
+  #intro .article-title-wrapper {
+    width: 37%; }
+  #intro .article-title-img-wrapper {
+    max-width: 350px; }
 
-#intro-video-overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: transparent; }
+#intro-code {
+  z-index: 1; }
 
 #intro-video {
   position: fixed;
   top: 50%;
-  left: 50%;
+  left: 76%;
   min-width: 100%;
   min-height: 100%;
   width: auto;
@@ -4868,35 +4868,23 @@ body {
   background: url("/img/intro.jpg") no-repeat;
   background-size: cover; }
 
-#intro-video-overlay {
+#intro-code {
   position: absolute;
   top: 0;
   right: 0;
   left: 50%;
-  font-family: Arial;
   font-size: 36px;
   color: white;
   text-align: left;
   line-height: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 40px; }
+  padding: 40px;
+  background: linear-gradient(to bottom, black 0%, transparent 100%); }
 
 #skills .article-header {
   background-color: #eee; }
 
-#skills .article-title-img-wrapper {
-  max-width: 300px; }
-
-#portfolio .article-title-img-wrapper {
-  max-width: 300px; }
-
 #experience .article-header {
   background-color: #eee; }
-
-#experience .article-title-img-wrapper {
-  max-width: 300px; }
 
 #experience .article-title-img {
   position: relative;
@@ -4904,6 +4892,9 @@ body {
 
 #contact .article-title-img-wrapper {
   max-width: 350px; }
+
+#contact .article-title-wrapper {
+  width: 37%; }
 
 .footer__title {
   color: #8a2e3f; }
@@ -4921,8 +4912,7 @@ body {
   padding: 5px 10px;
   background: transparent;
   color: #343642;
-  font-size: 2.4rem;
-  font-family: "amatic_sc", serif;
+  font-family: "oldnewspapertypes", serif;
   cursor: pointer; }
   .footer__nav__button:hover, .footer__nav__button.hover, .footer__nav__button:focus, .footer__nav__button.focus, .footer__nav__button:active, .footer__nav__button.active, .footer__nav__button:active {
     color: #8a2e3f;
@@ -4933,8 +4923,7 @@ body {
   padding: 5px 10px;
   background: transparent;
   color: #343642;
-  font-size: 2.4rem;
-  font-family: "amatic_sc", serif;
+  font-family: "oldnewspapertypes", serif;
   cursor: pointer; }
   .article-header__nav__button:hover, .article-header__nav__button.hover, .article-header__nav__button:focus, .article-header__nav__button.focus, .article-header__nav__button:active, .article-header__nav__button.active, .article-header__nav__button:active {
     color: #8a2e3f;
@@ -4984,8 +4973,7 @@ body {
   padding: 5px 10px;
   background: transparent;
   color: #343642;
-  font-size: 2.4rem;
-  font-family: "amatic_sc", serif;
+  font-family: "oldnewspapertypes", serif;
   cursor: pointer; }
   .side-bar__nav__button--portfolio:hover, .side-bar__nav__button--skills:hover, .side-bar__nav__button--experience:hover, .side-bar__nav__button--contact:hover, .side-bar__nav__button--resume:hover, .side-bar__nav__button--code:hover, .hover.side-bar__nav__button--portfolio, .hover.side-bar__nav__button--skills, .hover.side-bar__nav__button--experience, .hover.side-bar__nav__button--contact, .hover.side-bar__nav__button--resume, .hover.side-bar__nav__button--code, .side-bar__nav__button--portfolio:focus, .side-bar__nav__button--skills:focus, .side-bar__nav__button--experience:focus, .side-bar__nav__button--contact:focus, .side-bar__nav__button--resume:focus, .side-bar__nav__button--code:focus, .focus.side-bar__nav__button--portfolio, .focus.side-bar__nav__button--skills, .focus.side-bar__nav__button--experience, .focus.side-bar__nav__button--contact, .focus.side-bar__nav__button--resume, .focus.side-bar__nav__button--code, .side-bar__nav__button--portfolio:active, .side-bar__nav__button--skills:active, .side-bar__nav__button--experience:active, .side-bar__nav__button--contact:active, .side-bar__nav__button--resume:active, .side-bar__nav__button--code:active, .active.side-bar__nav__button--portfolio, .active.side-bar__nav__button--skills, .active.side-bar__nav__button--experience, .active.side-bar__nav__button--contact, .active.side-bar__nav__button--resume, .active.side-bar__nav__button--code, .side-bar__nav__button--portfolio:active, .side-bar__nav__button--skills:active, .side-bar__nav__button--experience:active, .side-bar__nav__button--contact:active, .side-bar__nav__button--resume:active, .side-bar__nav__button--code:active {
     color: #8a2e3f;

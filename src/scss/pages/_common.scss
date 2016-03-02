@@ -20,8 +20,7 @@
   padding: 5px 10px;
   background: transparent;
   color: $brand-primary;
-  font-size: 2.4rem;
-  font-family: $font-family-amatic;
+  font-family: $font-family-old-newspaper;
   cursor: pointer;
   &:hover,
   &.hover,
@@ -124,6 +123,7 @@ body  {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 32%;
 }
 
 .article-nav {
@@ -134,12 +134,11 @@ body  {
   margin-bottom: 30px;
 }
 
+
 .article-title-img-wrapper {
-  max-width: 350px;
-  width: 70%;
+  width: 100%;
+  max-width: 300px;
 }
-
-
 
 #intro {
   @extend %article-wrapper;
@@ -148,7 +147,7 @@ body  {
   & .article-header {
     z-index: 1;
     position: absolute;
-    background-color: transparent;
+    background-color: white;
   }
 
   & .article-body {
@@ -157,21 +156,23 @@ body  {
     width: 100%;
   }
 
+  & .article-title-wrapper {
+    width: 37%;
+  }
+
+  & .article-title-img-wrapper {
+    max-width: 350px;
+  }
 }
 
-#intro-video-overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: transparent;
+#intro-code {
+  z-index: 1;
 }
 
 #intro-video {
   position: fixed;
   top: 50%;
-  left: 50%;
+  left: 76%;
   min-width: 100%;
   min-height: 100%;
   width: auto;
@@ -182,21 +183,17 @@ body  {
   background-size: cover;
 }
 
-#intro-video-overlay {
+#intro-code {
   position: absolute;
   top: 0;
   right: 0;
   left: 50%;
-  font-family: Arial;
   font-size: 36px;
   color: white;
   text-align: left;
   line-height: 1;
-  //background-color: rgba(0,0,0,0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 40px;
+  background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
 }
 
 #skills {
@@ -205,19 +202,11 @@ body  {
   & .article-header {
     background-color: #eee;
   }
-
-  & .article-title-img-wrapper {
-    max-width: 300px;
-  }
 }
 
 
 #portfolio {
   @extend %article-wrapper;
-
-  & .article-title-img-wrapper {
-    max-width: 300px;
-  }
 }
 
 
@@ -226,10 +215,6 @@ body  {
 
   & .article-header {
     background-color: #eee;
-  }
-
-  & .article-title-img-wrapper {
-    max-width: 300px;
   }
 
   & .article-title-img {
@@ -244,6 +229,10 @@ body  {
 
   & .article-title-img-wrapper {
     max-width: 350px;
+  }
+
+  & .article-title-wrapper {
+    width: 37%;
   }
 }
 
