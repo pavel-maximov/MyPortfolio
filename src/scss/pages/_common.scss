@@ -121,6 +121,9 @@ body  {
 .article-title-wrapper {
   text-align: center;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .article-nav {
@@ -133,6 +136,7 @@ body  {
 
 .article-title-img-wrapper {
   max-width: 350px;
+  width: 70%;
 }
 
 
@@ -143,25 +147,57 @@ body  {
 
   & .article-header {
     z-index: 1;
+    position: absolute;
+    background-color: transparent;
   }
 
   & .article-body {
     position: absolute;
     height: 100%;
     width: 100%;
-
   }
 
-  .article-header {
-    position: absolute;
-    left: 25%;
-    background-color: transparent;
-  }
+}
+
+#intro-video-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
 }
 
 #intro-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translateY(-50%) translateX(-50%);
+  background: url('/img/intro.jpg') no-repeat;
+  background-size: cover;
 }
 
+#intro-video-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 50%;
+  font-family: Arial;
+  font-size: 36px;
+  color: white;
+  text-align: left;
+  line-height: 1;
+  //background-color: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
 
 #skills {
   @extend %article-wrapper;

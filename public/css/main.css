@@ -4823,27 +4823,65 @@ body {
 
 .article-title-wrapper {
   text-align: center;
-  margin: auto; }
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .article-title-img {
   width: 100%;
   margin-bottom: 30px; }
 
 .article-title-img-wrapper {
-  max-width: 350px; }
+  max-width: 350px;
+  width: 70%; }
 
 #intro {
   background-color: transparent; }
   #intro .article-header {
-    z-index: 1; }
+    z-index: 1;
+    position: absolute;
+    background-color: transparent; }
   #intro .article-body {
     position: absolute;
     height: 100%;
     width: 100%; }
-  #intro .article-header {
-    position: absolute;
-    left: 25%;
-    background-color: transparent; }
+
+#intro-video-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent; }
+
+#intro-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translateY(-50%) translateX(-50%);
+  background: url("/img/intro.jpg") no-repeat;
+  background-size: cover; }
+
+#intro-video-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 50%;
+  font-family: Arial;
+  font-size: 36px;
+  color: white;
+  text-align: left;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px; }
 
 #skills .article-header {
   background-color: #eee; }
