@@ -244,7 +244,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "oldnewspapertypes", serif;
+  font-family: "worksans-light", sans-serif;
   font-size: 1.4rem;
   line-height: 1.5;
   color: #343642;
@@ -386,19 +386,19 @@ output {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 1rem;
-  font-family: "amatic_sc", serif;
+  font-family: "worksans-thin", sans-serif;
   font-weight: normal;
   line-height: 1.1;
   color: inherit; }
 
 h1, .h1 {
-  font-size: 2.4rem; }
+  font-size: 3.6rem; }
 
 h2, .h2 {
-  font-size: 2rem; }
+  font-size: 3.6rem; }
 
 h3, .h3 {
-  font-size: 1.8rem; }
+  font-size: 2.1rem; }
 
 h4, .h4 {
   font-size: 1.4rem; }
@@ -3787,7 +3787,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "oldnewspapertypes", serif;
+  font-family: "worksans-light", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -3865,7 +3865,7 @@ button.close {
   display: block;
   max-width: 276px;
   padding: 1px;
-  font-family: "oldnewspapertypes", serif;
+  font-family: "worksans-light", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -4776,20 +4776,20 @@ a.text-danger:focus, a.text-danger:hover {
     justify-content: space-between; } }
 
 @font-face {
-  font-family: 'portmanteau';
-  src: url("/fonts/portmanteau_regular-webfont.woff2") format("woff2"), url("/fonts/portmanteau_regular-webfont.woff") format("woff"), url("/fonts/portmanteau_regular-webfont.ttf") format("truetype");
+  font-family: 'worksans-thin';
+  src: url("/fonts/worksans-thin.woff2") format("woff2"), url("/fonts/worksans-thin.woff") format("woff"), url("/fonts/worksans-thin.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'oldnewspapertypes';
-  src: url("/fonts/oldnewspapertypes-webfont.woff2") format("woff2"), url("/fonts/oldnewspapertypes-webfont.woff") format("woff"), url("/fonts/oldnewspapertypes-webfont.ttf") format("truetype");
+  font-family: 'worksans-light';
+  src: url("/fonts/worksans-light.woff2") format("woff2"), url("/fonts/worksans-light.woff") format("woff"), url("/fonts/worksans-light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'amatic_sc';
-  src: url("/fonts/amaticsc-regular-webfont.woff2") format("woff2"), url("/fonts/amaticsc-regular-webfont.woff") format("woff"), url("/fonts/amaticsc-regular-webfont.ttf") format("truetype");
+  font-family: 'she-always-walks-alone';
+  src: url("/fonts/she-always-walks-alone.woff2") format("woff2"), url("/fonts/she-always-walks-alone.woff") format("woff"), url("/fonts/she-always-walks-alone.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
@@ -4803,6 +4803,10 @@ body {
   margin: 0;
   overflow-x: hidden;
   /* Prevent scroll on narrow devices */ }
+
+h1, .h1 {
+  font-family: "she-always-walks-alone", serif;
+  margin-bottom: 0; }
 
 #intro, #skills, #portfolio, #experience, #contact {
   height: 100vh;
@@ -4842,7 +4846,9 @@ body {
   #intro .article-header {
     z-index: 1;
     position: absolute;
-    background-color: white; }
+    background-color: transparent;
+    width: 100%;
+    right: 0; }
   #intro .article-body {
     position: absolute;
     height: 100%;
@@ -4852,13 +4858,10 @@ body {
   #intro .article-title-img-wrapper {
     max-width: 350px; }
 
-#intro-code {
-  z-index: 1; }
-
 #intro-video {
   position: fixed;
   top: 50%;
-  left: 76%;
+  left: 50%;
   min-width: 100%;
   min-height: 100%;
   width: auto;
@@ -4869,16 +4872,16 @@ body {
   background-size: cover; }
 
 #intro-code {
+  z-index: 1;
   position: absolute;
   top: 0;
-  right: 0;
-  left: 50%;
-  font-size: 36px;
-  color: white;
+  left: 0;
+  width: 50%;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.5);
   text-align: left;
   line-height: 1;
-  padding: 40px;
-  background: linear-gradient(to bottom, black 0%, transparent 100%); }
+  padding: 40px; }
 
 #skills .article-header {
   background-color: #eee; }
@@ -4912,7 +4915,6 @@ body {
   padding: 5px 10px;
   background: transparent;
   color: #343642;
-  font-family: "oldnewspapertypes", serif;
   cursor: pointer; }
   .footer__nav__button:hover, .footer__nav__button.hover, .footer__nav__button:focus, .footer__nav__button.focus, .footer__nav__button:active, .footer__nav__button.active, .footer__nav__button:active {
     color: #8a2e3f;
@@ -4923,7 +4925,6 @@ body {
   padding: 5px 10px;
   background: transparent;
   color: #343642;
-  font-family: "oldnewspapertypes", serif;
   cursor: pointer; }
   .article-header__nav__button:hover, .article-header__nav__button.hover, .article-header__nav__button:focus, .article-header__nav__button.focus, .article-header__nav__button:active, .article-header__nav__button.active, .article-header__nav__button:active {
     color: #8a2e3f;
@@ -4973,7 +4974,6 @@ body {
   padding: 5px 10px;
   background: transparent;
   color: #343642;
-  font-family: "oldnewspapertypes", serif;
   cursor: pointer; }
   .side-bar__nav__button--portfolio:hover, .side-bar__nav__button--skills:hover, .side-bar__nav__button--experience:hover, .side-bar__nav__button--contact:hover, .side-bar__nav__button--resume:hover, .side-bar__nav__button--code:hover, .hover.side-bar__nav__button--portfolio, .hover.side-bar__nav__button--skills, .hover.side-bar__nav__button--experience, .hover.side-bar__nav__button--contact, .hover.side-bar__nav__button--resume, .hover.side-bar__nav__button--code, .side-bar__nav__button--portfolio:focus, .side-bar__nav__button--skills:focus, .side-bar__nav__button--experience:focus, .side-bar__nav__button--contact:focus, .side-bar__nav__button--resume:focus, .side-bar__nav__button--code:focus, .focus.side-bar__nav__button--portfolio, .focus.side-bar__nav__button--skills, .focus.side-bar__nav__button--experience, .focus.side-bar__nav__button--contact, .focus.side-bar__nav__button--resume, .focus.side-bar__nav__button--code, .side-bar__nav__button--portfolio:active, .side-bar__nav__button--skills:active, .side-bar__nav__button--experience:active, .side-bar__nav__button--contact:active, .side-bar__nav__button--resume:active, .side-bar__nav__button--code:active, .active.side-bar__nav__button--portfolio, .active.side-bar__nav__button--skills, .active.side-bar__nav__button--experience, .active.side-bar__nav__button--contact, .active.side-bar__nav__button--resume, .active.side-bar__nav__button--code, .side-bar__nav__button--portfolio:active, .side-bar__nav__button--skills:active, .side-bar__nav__button--experience:active, .side-bar__nav__button--contact:active, .side-bar__nav__button--resume:active, .side-bar__nav__button--code:active {
     color: #8a2e3f;

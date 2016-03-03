@@ -20,7 +20,6 @@
   padding: 5px 10px;
   background: transparent;
   color: $brand-primary;
-  font-family: $font-family-old-newspaper;
   cursor: pointer;
   &:hover,
   &.hover,
@@ -41,28 +40,28 @@
 // fonts --------------------------------
 
 @font-face {
-  font-family: 'portmanteau';
-  src:  url('/fonts/portmanteau_regular-webfont.woff2') format('woff2'),
-        url('/fonts/portmanteau_regular-webfont.woff') format('woff'),
-        url('/fonts/portmanteau_regular-webfont.ttf') format('truetype');
+  font-family: 'worksans-thin';
+  src:  url('/fonts/worksans-thin.woff2') format('woff2'),
+        url('/fonts/worksans-thin.woff') format('woff'),
+        url('/fonts/worksans-thin.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'oldnewspapertypes';
-  src:  url('/fonts/oldnewspapertypes-webfont.woff2') format('woff2'),
-        url('/fonts/oldnewspapertypes-webfont.woff') format('woff'),
-        url('/fonts/oldnewspapertypes-webfont.ttf') format('truetype');
+  font-family: 'worksans-light';
+  src:  url('/fonts/worksans-light.woff2') format('woff2'),
+        url('/fonts/worksans-light.woff') format('woff'),
+        url('/fonts/worksans-light.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'amatic_sc';
-  src:  url('/fonts/amaticsc-regular-webfont.woff2') format('woff2'),
-        url('/fonts/amaticsc-regular-webfont.woff') format('woff'),
-        url('/fonts/amaticsc-regular-webfont.ttf') format('truetype');
+  font-family: 'she-always-walks-alone';
+  src:  url('/fonts/she-always-walks-alone.woff2') format('woff2'),
+        url('/fonts/she-always-walks-alone.woff') format('woff'),
+        url('/fonts/she-always-walks-alone.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -83,6 +82,11 @@ body  {
   padding: 0;
   margin: 0;
   overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+
+h1, .h1 {
+  font-family: $font-family-she-always-walks-alone;
+  margin-bottom: 0;
 }
 
 // base styles end --------------------------------
@@ -147,7 +151,10 @@ body  {
   & .article-header {
     z-index: 1;
     position: absolute;
-    background-color: white;
+    //background-color: rgba(255,255,255,0.5);
+    background-color: transparent;
+    width: 100%;
+    right: 0;
   }
 
   & .article-body {
@@ -165,14 +172,10 @@ body  {
   }
 }
 
-#intro-code {
-  z-index: 1;
-}
-
 #intro-video {
   position: fixed;
   top: 50%;
-  left: 76%;
+  left: 50%;
   min-width: 100%;
   min-height: 100%;
   width: auto;
@@ -184,16 +187,16 @@ body  {
 }
 
 #intro-code {
+  z-index: 1;
   position: absolute;
   top: 0;
-  right: 0;
-  left: 50%;
-  font-size: 36px;
-  color: white;
+  left: 0;
+  width: 50%;
+  font-size: 24px;
+  color: rgba(255,255,255,0.5);
   text-align: left;
   line-height: 1;
   padding: 40px;
-  background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
 }
 
 #skills {

@@ -19,7 +19,7 @@ function scrollToElement(selector){
     $htmlBody.animate({scrollTop: $(selector).offset().top},'fast');
 }
 
-var code = '<article id="intro"><header class="article-header"><div class="article-title-wrapper"><figure class="article-title-img-wrapper">    </figure><h1>Pavel Maximov</h1><h1>Front-end Developer</h1><h2>London, UK</h2></div> </header></article>';
+var code = '<article id="intro"><header class="article-header"><div class="article-title-wrapper"><figure class="article-title-img-wrapper"><img class="article-title-img" src="/img/head.png"></figure><h1>Pavel Maximov</h1><h2>Front-end Developer</h2><h3>London, UK</h3></div><nav class="article-nav"></nav></header><div class="article-body"><video id="intro-video" height="100%" width="100%" autoplay loop><source src="/video/intro.mp4" type="video/mp4"></video><div id="intro-code"></div></div></article>';
 var printedChar = 0;
 
 
@@ -53,6 +53,6 @@ $document.ready(function () {
         $('[data-offcanvas="content"]').toggleClass('offcanvas-active');
     });
 
-    typeInterval = setInterval(printChar, 10);
+    //typeInterval = setInterval(printChar, 40);
 });
 

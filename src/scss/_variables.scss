@@ -167,11 +167,10 @@ $container-max-widths: (
 //$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 //$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 //$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-$font-family-portmanteau:  'portmanteau', serif;
-$font-family-old-newspaper:  'oldnewspapertypes', serif;
-$font-family-amatic:  'amatic_sc', serif;
-$font-family-arial:  Arial, 'Helvetica Neue', Helvetica, sans-serif;
-$font-family-base:       $font-family-old-newspaper;
+$font-family-work-sans-thin:  'worksans-thin', sans-serif;
+$font-family-work-sans-light:  'worksans-light', sans-serif;
+$font-family-she-always-walks-alone:  'she-always-walks-alone', serif;
+$font-family-base:       $font-family-work-sans-light;
 //
 //// Pixel value used to responsively scale all typography. Applied to the `<html>` element.
 //$font-size-root: 16px !default;
@@ -183,9 +182,9 @@ $font-size-xs:   1rem;
 //
 //$line-height-base: 1.5 !default;
 //
-$font-size-h1: 2.4rem;
-$font-size-h2: 2rem;
-$font-size-h3: 1.8rem;
+$font-size-h1: 3.6rem;
+$font-size-h2: 3.6rem;
+$font-size-h3: 2.1rem;
 $font-size-h4: 1.4rem;
 $font-size-h5: 1.4rem;
 $font-size-h6: 1.4rem;
@@ -201,7 +200,7 @@ $font-size-h6: 1.4rem;
 //$display4-weight: 300 !default;
 //
 $headings-margin-bottom: $spacer;
-$headings-font-family:   $font-family-amatic;
+$headings-font-family:   $font-family-work-sans-thin;
 $headings-font-weight:   normal;
 //$headings-line-height:   1.1 !default;
 //$headings-color:         inherit !default;
@@ -252,6 +251,7 @@ $headings-font-weight:   normal;
 //
 //
 //// Tables
+
 ////
 //// Customizes the `.table` component with basic values, each used across all table variations.
 //
