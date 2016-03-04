@@ -151,8 +151,7 @@ h1, .h1 {
   & .article-header {
     z-index: 1;
     position: absolute;
-    //background-color: rgba(255,255,255,0.5);
-    background-color: transparent;
+    background: radial-gradient(closest-side at 50% 50%, #eeece6, transparent);
     width: 100%;
     right: 0;
   }

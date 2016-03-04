@@ -395,7 +395,7 @@ h1, .h1 {
   font-size: 3.6rem; }
 
 h2, .h2 {
-  font-size: 3.6rem; }
+  font-size: 3.3rem; }
 
 h3, .h3 {
   font-size: 2.1rem; }
@@ -4846,7 +4846,7 @@ h1, .h1 {
   #intro .article-header {
     z-index: 1;
     position: absolute;
-    background-color: transparent;
+    background: radial-gradient(closest-side at 50% 50%, #eeece6, transparent);
     width: 100%;
     right: 0; }
   #intro .article-body {
