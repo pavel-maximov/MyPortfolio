@@ -7,6 +7,8 @@ var $introCode = $('#intro-code');
 var typeInterval;
 var currentOpenTags = 0;
 var currentTag;
+var $skills = $('#skills');
+var $intro = $('#intro');
 
 function reserResizing () {
     $html.css('font-size', '');
@@ -46,6 +48,27 @@ function printChar() {
         clearInterval(typeInterval);
     }
 }
+
+
+function onScrollIntro () {
+    var scrollTop = $window.scrollTop();
+    var windowHeight = $window.height();
+
+    if (scrollTop < windowHeight) {
+        $intro.css('opacity', (1 - ((100 * (scrollTop / windowHeight)) / 100) * 2))
+    }
+}
+
+
+function onScrollSkills () {
+    var scrollTop = $window.scrollTop();
+    var windowHeight = $window.height();
+
+    if (scrollTop < windowHeight) {
+        $skills.css('opacity', ((100 * (scrollTop / windowHeight)) / 100))
+    }
+}
+
 
 
 $document.ready(function () {

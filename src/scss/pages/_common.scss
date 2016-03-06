@@ -103,7 +103,6 @@ h1, .h1 {
 // main container end --------------------------------
 %article-wrapper {
   height: 100vh;
-  background: grey;
   display: flex;
 }
 
@@ -119,6 +118,7 @@ h1, .h1 {
 .article-body {
   width: 50%;
   height: 100%;
+  background-color: white;
 }
 
 .article-title-wrapper {
@@ -146,7 +146,6 @@ h1, .h1 {
 
 #intro {
   @extend %article-wrapper;
-  background-color: transparent;
 
   & .article-header {
     z-index: 1;
@@ -156,10 +155,8 @@ h1, .h1 {
     right: 0;
   }
 
-  & .article-body {
-    position: absolute;
-    height: 100%;
-    width: 100%;
+  & .article-title-wrapper {
+    width: 37%;
   }
 
   & .article-title-wrapper {
@@ -204,13 +201,40 @@ h1, .h1 {
   & .article-header {
     background-color: #eee;
   }
+
+  & .article-body {
+    background-color: rgba(0,0,0,0.80);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: $font-family-work-sans-thin;
+  }
+
+  & figure {
+    margin-bottom: 5rem;
+  }
+
+
+  & span {
+    color: rgba(255,255,255,0.3);
+  }
+
+  & p {
+    margin-bottom: 0;
+  }
+
 }
 
+#skills-list-img {
+  width: 100%;
+  max-width: 450px;
+}
 
 #portfolio {
   @extend %article-wrapper;
 }
-
 
 #experience {
   @extend %article-wrapper;

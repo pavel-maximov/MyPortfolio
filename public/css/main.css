@@ -4810,7 +4810,6 @@ h1, .h1 {
 
 #intro, #skills, #portfolio, #experience, #contact {
   height: 100vh;
-  background: grey;
   display: flex; }
 
 .article-header {
@@ -4823,7 +4822,8 @@ h1, .h1 {
 
 .article-body {
   width: 50%;
-  height: 100%; }
+  height: 100%;
+  background-color: white; }
 
 .article-title-wrapper {
   text-align: center;
@@ -4841,22 +4841,21 @@ h1, .h1 {
   width: 100%;
   max-width: 300px; }
 
-#intro {
-  background-color: transparent; }
-  #intro .article-header {
-    z-index: 1;
-    position: absolute;
-    background: radial-gradient(closest-side at 50% 50%, #eeece6, transparent);
-    width: 100%;
-    right: 0; }
-  #intro .article-body {
-    position: absolute;
-    height: 100%;
-    width: 100%; }
-  #intro .article-title-wrapper {
-    width: 37%; }
-  #intro .article-title-img-wrapper {
-    max-width: 350px; }
+#intro .article-header {
+  z-index: 1;
+  position: absolute;
+  background: radial-gradient(closest-side at 50% 50%, #eeece6, transparent);
+  width: 100%;
+  right: 0; }
+
+#intro .article-title-wrapper {
+  width: 37%; }
+
+#intro .article-title-wrapper {
+  width: 37%; }
+
+#intro .article-title-img-wrapper {
+  max-width: 350px; }
 
 #intro-video {
   position: fixed;
@@ -4885,6 +4884,28 @@ h1, .h1 {
 
 #skills .article-header {
   background-color: #eee; }
+
+#skills .article-body {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "worksans-thin", sans-serif; }
+
+#skills figure {
+  margin-bottom: 5rem; }
+
+#skills span {
+  color: rgba(255, 255, 255, 0.3); }
+
+#skills p {
+  margin-bottom: 0; }
+
+#skills-list-img {
+  width: 100%;
+  max-width: 450px; }
 
 #experience .article-header {
   background-color: #eee; }
