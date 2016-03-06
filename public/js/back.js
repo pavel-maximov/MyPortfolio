@@ -55,7 +55,7 @@ function onScrollIntro () {
     var windowHeight = $window.height();
 
     if (scrollTop < windowHeight) {
-        $intro.css('opacity', (1 - ((100 * (scrollTop / windowHeight)) / 100) * 2))
+        $intro.css('opacity', (1 - ((100 * (scrollTop / windowHeight)) / 100) * 1.5));
     }
 }
 
@@ -70,11 +70,37 @@ function onScrollSkills () {
 }
 
 
+var mX, mY, distance,
+    cogwheelsInitialSpeeds = {},
+    $element  = $('#skills-cogwheels');
+
+
+function calculateDistance(elem, mouseX, mouseY) {
+    return Math.floor(Math.sqrt(Math.pow(mouseX - (elem.offset().left+(elem.width()/2)), 2) + Math.pow(mouseY - (elem.offset().top+(elem.height()/2)), 2)));
+}
+
+function getRandomArbitrary(min, max) {
+    return Math.random() * (max - min) + min;
+}
+
 
 $document.ready(function () {
     $('[data-toggle="offcanvas"]').click(function () {
         $('[data-offcanvas="content"]').toggleClass('offcanvas-active');
     });
+
+    $.each($element.find('path'), function (number, element) {
+        $(element).css('animation',  'rotating ' + getRandomArbitrary(2, 60) + 's linear infinite');
+    });
+
+
+    $(window).on('scroll', onScrollIntro);
+
+    //$('#skills').mousemove(function(e) {
+    //    mX = e.pageX;
+    //    mY = e.pageY;
+    //    distance = calculateDistance($element, mX, mY);
+    //});
 
     //typeInterval = setInterval(printChar, 40);
 });
