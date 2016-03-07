@@ -8,7 +8,8 @@ var typeInterval;
 var currentOpenTags = 0;
 var currentTag;
 var $skills = $('#skills');
-var $intro = $('#intro');
+var $intro = $('#outro').find('');
+var $aboutVideo = $('#outro-video');
 
 function reserResizing () {
     $html.css('font-size', '');
@@ -55,19 +56,21 @@ function onScrollIntro () {
     var windowHeight = $window.height();
 
     if (scrollTop < windowHeight) {
-        $intro.css('opacity', (1 - ((100 * (scrollTop / windowHeight)) / 100) * 1.5));
+        $intro.css('opacity', (1 - ((100 * (scrollTop / windowHeight)) / 100) * 0.5));
     }
 }
 
-
-function onScrollSkills () {
+function onScrollAbout () {
     var scrollTop = $window.scrollTop();
     var windowHeight = $window.height();
 
-    if (scrollTop < windowHeight) {
-        $skills.css('opacity', ((100 * (scrollTop / windowHeight)) / 100))
+    if (scrollTop > (windowHeight * 2)) {
+        $aboutVideo.css('z-index', '-1');
+    } else {
+        $aboutVideo.css('z-index', '-2');
     }
 }
+
 
 
 var mX, mY, distance,
@@ -90,12 +93,12 @@ $document.ready(function () {
     });
 
     $.each($element.find('path'), function (number, element) {
-        $(element).css('animation',  'rotating ' + getRandomArbitrary(2, 60) + 's linear infinite');
+        $(element).css('animation',  'rotating ' + getRandomArbitrary(4, 60) + 's linear infinite');
     });
 
 
-    $(window).on('scroll', onScrollIntro);
-
+    $(window).on('scroll', onScrollAbout);
+    //
     //$('#skills').mousemove(function(e) {
     //    mX = e.pageX;
     //    mY = e.pageY;
