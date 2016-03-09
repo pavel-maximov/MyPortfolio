@@ -112,7 +112,6 @@ h3, .h3 {
 // main container --------------------------------
 
 .main-container {
-
 }
 
 
@@ -120,38 +119,50 @@ h3, .h3 {
 
 
 %article-wrapper {
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.section-header {
+  width: 25%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-}
-
-.article-header {
-  text-align: center;
-  margin-top: 4rem;
-}
-
-.article-footer {
-  text-align: center;
-}
-
-.article-body {
-  display: flex;
   align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.article-header-title {
+.section-header-title {
+  margin-top: 2.5rem;
+}
+
+.section-header-secondary-title {
   font-family: $font-family-she-always-walks-alone;
   font-size: 2.4rem;
   line-height: 1;
   display: block;
 }
 
-.article-header-sub-title {
+.section-header-secondary-sub-title {
   font-family: $font-family-work-sans-light;
   font-size: 1.6rem;
   line-height: 1.2;
   display: block;
+  margin-bottom: 2rem;
+}
+
+
+.article-footer {
+  text-align: center;
+}
+
+.article-body {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .article-title-wrapper {
@@ -163,12 +174,12 @@ h3, .h3 {
 }
 
 
-.article-title-img {
+.section-header-img {
   width: 100%;
 }
 
 
-.article-title-img-wrapper {
+.section-header-img-wrapper {
   width: 100%;
   max-width: 300px;
 }
@@ -185,39 +196,20 @@ h3, .h3 {
 #intro {
   @extend %article-wrapper;
 
-  & .article-header {
-    margin-top: auto;
+  & .section-header {
   }
 
-
-  & .article-footer {
-    margin-top: auto;
+  & .section-header-img-wrapper {
+    max-width: 400px;
+    margin-bottom: 3rem;
   }
 
-
-  & .article-title-wrapper {
-    width: 27%;
-  }
-
-
-  & .article-title-img-wrapper {
-    max-width: 360px;
-    margin-bottom: 2rem;
-  }
-
-
-  & .article-header-title {
-    font-size: 4.6rem;
-    line-height: 1.2;
-  }
-
-
-  & .article-header-sub-title {
+  & .section-header-sub-title {
     font-family: $font-family-work-sans-thin;
     font-size: 3rem;
     line-height: 1.2;
+    margin-bottom: 3rem;
   }
-
 
   & .article-video {
     position: fixed;
@@ -255,27 +247,24 @@ h3, .h3 {
 
 #skills {
   @extend %article-wrapper;
-  background: linear-gradient(to right, rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.7) 100%); ;
+  //background: linear-gradient(to right, rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.7) 100%); ;
 
-
-  & .article-title-wrapper {
-    width: 30%;
-    padding-left: 15%;
-
-    & .article-title-img-wrapper {
-      max-width: 250px;
-    }
+  & .section-header {
+    left: 3%;
   }
 
+  & .section-header-img-wrapper {
+    max-width: 250px;
+  }
 
   & .article-img-wrapper {
-    width: 40%;
+    width: 66%;
     position: relative;
 
     & .article-img,
     & .article-img-overlay {
       width: 80%;
-      max-width: 550px;
+      max-width: 600px;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -288,10 +277,9 @@ h3, .h3 {
     }
   }
 
-
   & .article-content-wrapper {
-    width: 30%;
-    padding-right: 17%;
+    width: 33%;
+    padding-right: 8%;
 
     & p {
       margin-bottom: 0;
@@ -312,90 +300,58 @@ h3, .h3 {
 
 #portfolio {
   @extend %article-wrapper;
-  background-color: white;
-  position: relative;
+  //background: linear-gradient(to right, rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.7) 100%); ;
+  flex-direction: column;
 
-  &.fixed-position {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+  & .section-header-img-wrapper {
+    width: 90%;
+    max-width: 300px;
   }
 
-  & .article-title-wrapper {
-    width: 25%;
+  & .section-header {
     position: absolute;
+    top: 50vh;
     left: 0;
-    top: 50%;
     transform: translateY(-50%);
+  }
 
-    & .article-title-img-wrapper {
-      width: 70%;
-      max-width: 300px;
-    }
+  &.scrolling-this .section-header {
+    position: fixed;
+  }
+
+  &.scrolled-this .section-header {
+    position: absolute;
+    top: auto;
+    bottom: 50vh;
+    transform: translateY(50%);
   }
 
   & .article-body {
-    height: 100%;
-  }
-
-  & .article-header {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-
-  & .article-footer {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  & .article-content-wrapper {
     width: 100%;
-    max-height: 100%;
-    overflow-y: hidden;
-
-    & p {
-      margin-bottom: 0;
-      text-align: center;
-
-      & span {
-        color: rgba(0,0,0,0.3);
-      }
-    }
-  }
-
-  &.fixed-position .article-content-wrapper {
-      overflow-y: scroll;
+    padding-left: 25%;
   }
 
   & .portfolio-item-vendomo {
     @extend %portfolio-item;
-    background-color: #e6e9f3;
+    //background-color: #fff;
+    //background-color: #e6e9f3;
   }
 
   & .portfolio-item-foodora {
     @extend %portfolio-item;
-    background-color: #EFDBE4;
+    //background-color: #fff;
+    //background-color: #EFDBE4;
   }
 
   & .portfolio-item-bk {
     @extend %portfolio-item;
-    background-color: #D8CBC7;
-  }
-
-  & .portfolio-item-vendomo-crm {
-    @extend %portfolio-item;
-    background-color: black;
+    //background-color: #fff;
+    //background-color: #D8CBC7;
   }
 
   &  .portfolio-item-img {
-    margin: auto;
+    margin-top: auto;
+    margin-bottom: 5rem;
   }
 }
 
@@ -403,20 +359,36 @@ h3, .h3 {
   height: 100vh;
   display: flex;
   margin-bottom: 0;
-  padding-left: 25%;
+}
+
+.portfolio-item-title {
+  position: absolute;
+  left: 50%;
+  top: 12rem;
+  font-size: 2.8rem;
+  text-align: center;
+  width: 30%;
+}
+
+.portfolio-item-subtitle {
+  position: absolute;
+  left: 50%;
+  top: 15rem;
+  text-align: center;
+  width: 30%;
 }
 
 // portfolio end --------------------------------
 
 #experience {
   @extend %article-wrapper;
-  background-color: #F3F3F3;
+  //background-color: #F3F3F3;
 
 
   & .article-title-wrapper {
     width: 25%;
 
-    & .article-title-img-wrapper {
+    & .section-header-img-wrapper {
       width: 70%;
       max-width: 300px;
     }
@@ -445,13 +417,13 @@ h3, .h3 {
 
 #about {
   @extend %article-wrapper;
-  background-color: white;
+  //background-color: white;
 
 
   & .article-title-wrapper {
     width: 25%;
 
-    & .article-title-img-wrapper {
+    & .section-header-img-wrapper {
       width: 70%;
       max-width: 300px;
     }
@@ -479,68 +451,17 @@ h3, .h3 {
   }
 }
 
-#outro {
-  @extend %article-wrapper;
-
-  & .article-header {
-    margin-top: auto;
-  }
-
-
-  & .article-footer {
-    margin-top: auto;
-  }
-
-
-  & .article-title-wrapper {
-    width: 27%;
-  }
-
-
-  & .article-title-img-wrapper {
-    max-width: 360px;
-    margin-bottom: 2rem;
-  }
-
-
-  & .article-header-title {
-    font-size: 4.6rem;
-    line-height: 1.2;
-  }
-
-
-  & .article-header-sub-title {
-    font-family: $font-family-work-sans-thin;
-    font-size: 3rem;
-    line-height: 1.2;
-  }
-
-
-  & .article-video {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -2;
-    transform: translateY(-50%) translateX(-50%);
-    //background: url('/img/intro.jpg') no-repeat;
-    background-size: cover;
-  }
-}
-
 
 #contact {
   @extend %article-wrapper;
-  background-color: #FFF;
+  background-color: #F3F3F3;
 
 
-  & .article-title-wrapper {
+  & .section-header {
     width: 25%;
+    position: relative;
 
-    & .article-title-img-wrapper {
+    & .section-header-img-wrapper {
       width: 70%;
       max-width: 350px;
     }
@@ -565,6 +486,59 @@ h3, .h3 {
         color: rgba(0,0,0,0.3);
       }
     }
+  }
+}
+
+
+#outro {
+  @extend %article-wrapper;
+
+  & .section-header {
+    margin-top: auto;
+  }
+
+
+  & .article-footer {
+    margin-top: auto;
+  }
+
+
+  & .article-title-wrapper {
+    width: 27%;
+  }
+
+
+  & .section-header-img-wrapper {
+    max-width: 360px;
+    margin-bottom: 2rem;
+  }
+
+
+  & .section-header-secondary-title {
+    font-size: 4.6rem;
+    line-height: 1.2;
+  }
+
+
+  & .section-header-sub-title {
+    font-family: $font-family-work-sans-thin;
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+
+
+  & .article-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -2;
+    transform: translateY(-50%) translateX(-50%);
+    //background: url('/img/intro.jpg') no-repeat;
+    background-size: cover;
   }
 }
 

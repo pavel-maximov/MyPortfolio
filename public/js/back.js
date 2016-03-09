@@ -2,107 +2,131 @@
 var $document = $(document);
 var $window = $(window);
 var $htmlBody = $('html,body');
-var $html = $('html');
-var $introCode = $('#intro-code');
-var typeInterval;
-var currentOpenTags = 0;
-var currentTag;
-var $skills = $('#skills');
-var $intro = $('#outro').find('');
+//var $html = $('html');
+//var $introCode = $('#intro-code');
+//var typeInterval;
+//var currentOpenTags = 0;
+//var currentTag;
+//var $skills = $('#skills');
+//var $intro = $('#outro').find('');
+var $element  = $('#skills-cogwheels');
 var $aboutVideo = $('#outro-video');
 var $portfolio = $('#portfolio');
-
-
+var $main = $('#main');
 var startPoint;
 var endPoint;
 
 
-function reserResizing () {
-    $html.css('font-size', '');
-    $body.css('background-size', '');
-    $target.css('width', '');
-    $target.css('height', '');
+//function reserResizing () {
+//    $html.css('font-size', '');
+//    $body.css('background-size', '');
+//    $target.css('width', '');
+//    $target.css('height', '');
+//}
+
+//
+//var code = '<article id="intro"><header class="article-header"><div class="article-title-wrapper"><figure class="article-title-img-wrapper"><img class="article-title-img" src="/img/head.png"></figure><h1>Pavel Maximov</h1><h2>Front-end Developer</h2><h3>London, UK</h3></div><nav class="article-nav"></nav></header><div class="article-body"><video id="intro-video" height="100%" width="100%" autoplay loop><source src="/video/intro.mp4" type="video/mp4"></video><div id="intro-code"></div></div></article>';
+//var printedChar = 0;
+//
+//
+//function printChar() {
+//    var nextChar = code[printedChar],
+//        target;
+//
+//    if (nextChar !== undefined) {
+//        if(nextChar === '<') {
+//            currentTag = code.substring((printedChar + 1), code.substring((printedChar + 1)).indexOf(' ') + 1);
+//            console.log(currentTag);
+//
+//            if (code[(printedChar + 1)] === '/') {
+//                currentOpenTags -= 1;
+//            } else {
+//                currentOpenTags += 1;
+//            }
+//            $introCode.append('<div style="padding-left:' + (currentOpenTags * 20) + 'px"></div>');
+//        }
+//        target = $introCode.children().last();
+//        target.html(target.html() + code[printedChar]);
+//        printedChar += 1;
+//    } else {
+//        clearInterval(typeInterval);
+//    }
+//}
+
+//
+//function onScrollIntro () {
+//    var scrollTop = $window.scrollTop();
+//    var windowHeight = $window.height();
+//
+//    if (scrollTop < windowHeight) {
+//        $intro.css('opacity', (1 - ((100 * (scrollTop / windowHeight)) / 100) * 0.5));
+//    }
+//}
+//
+//
+
+
+//
+//function calculateDistance(elem, mouseX, mouseY) {
+//    return Math.floor(Math.sqrt(Math.pow(mouseX - (elem.offset().left+(elem.width()/2)), 2) + Math.pow(mouseY - (elem.offset().top+(elem.height()/2)), 2)));
+//}
+
+function getRandomArbitrary(min, max) {
+    return Math.random() * (max - min) + min;
 }
 
 function scrollToElement(selector){
     $htmlBody.animate({scrollTop: $(selector).offset().top},'fast');
 }
 
-var code = '<article id="intro"><header class="article-header"><div class="article-title-wrapper"><figure class="article-title-img-wrapper"><img class="article-title-img" src="/img/head.png"></figure><h1>Pavel Maximov</h1><h2>Front-end Developer</h2><h3>London, UK</h3></div><nav class="article-nav"></nav></header><div class="article-body"><video id="intro-video" height="100%" width="100%" autoplay loop><source src="/video/intro.mp4" type="video/mp4"></video><div id="intro-code"></div></div></article>';
-var printedChar = 0;
-
-
-function printChar() {
-    var nextChar = code[printedChar],
-        target;
-
-    if (nextChar !== undefined) {
-        if(nextChar === '<') {
-            currentTag = code.substring((printedChar + 1), code.substring((printedChar + 1)).indexOf(' ') + 1);
-            console.log(currentTag);
-
-            if (code[(printedChar + 1)] === '/') {
-                currentOpenTags -= 1;
-            } else {
-                currentOpenTags += 1;
-            }
-            $introCode.append('<div style="padding-left:' + (currentOpenTags * 20) + 'px"></div>');
-        }
-        target = $introCode.children().last();
-        target.html(target.html() + code[printedChar]);
-        printedChar += 1;
-    } else {
-        clearInterval(typeInterval);
-    }
-}
-
-
-function onScrollIntro () {
-    var scrollTop = $window.scrollTop();
-    var windowHeight = $window.height();
-
-    if (scrollTop < windowHeight) {
-        $intro.css('opacity', (1 - ((100 * (scrollTop / windowHeight)) / 100) * 0.5));
-    }
-}
-
-function onScrollAbout () {
-    var scrollTop = $window.scrollTop();
-    var windowHeight = $window.height();
-
-    if (scrollTop > (windowHeight * 2)) {
+function onScrollAbout (scrollTop, windowHeight) {
+    if (scrollTop > (windowHeight * 6)) {
         $aboutVideo.css('z-index', '-1');
     } else {
         $aboutVideo.css('z-index', '-2');
     }
 }
 
-
-function onScrollPortfolio () {
-    var scrollTop = $window.scrollTop();
-
-    if (scrollTop >= startPoint && scrollTop <= endPoint) {
-        $portfolio.addClass('fixed-position');
-    } else if (scrollTop < startPoint || scrollTop > endPoint) {
-        $portfolio.removeClass('fixed-position');
+function onScrollPortfolio (scrollTop) {
+    if (scrollTop < startPoint) {
+        $portfolio.removeClass('scrolled-this');
+        $portfolio.removeClass('scrolling-this');
+    } else if (scrollTop < endPoint) {
+        $portfolio.addClass('scrolling-this');
+        $portfolio.removeClass('scrolled-this');
+    } else {
+        $portfolio.removeClass('scrolling-this');
+        $portfolio.addClass('scrolled-this');
     }
 }
 
+function onScrollMainContainer (scrollTop, windowHeight, scrollPoints) {
+    var newAlphaValue;
+    var newHueValue;
 
-
-var mX, mY, distance,
-    cogwheelsInitialSpeeds = {},
-    $element  = $('#skills-cogwheels');
-
-
-function calculateDistance(elem, mouseX, mouseY) {
-    return Math.floor(Math.sqrt(Math.pow(mouseX - (elem.offset().left+(elem.width()/2)), 2) + Math.pow(mouseY - (elem.offset().top+(elem.height()/2)), 2)));
+    if (scrollTop < scrollPoints.skills) {
+        newAlphaValue = scrollTop / windowHeight;
+        newAlphaValue = newAlphaValue > .7 ? .7 : newAlphaValue;
+        $main.css('background-color', 'hsla(0,10%,100%,' + newAlphaValue + ')');
+    } else if (scrollTop > scrollPoints.vendomoStart) {
+        newHueValue = (scrollPoints.vendomoStart - scrollTop) / (scrollPoints.vendomoStart - scrollPoints.vendomoEnd) * 30;
+        $main.css('background-color', 'hsla(' + newHueValue + ',50%,40%,0.7)');
+    }
 }
 
-function getRandomArbitrary(min, max) {
-    return Math.random() * (max - min) + min;
-}
+function onScroll() {
+    var scrollTop = $window.scrollTop();
+    var windowHeight = $window.height();
+    var scrollPoints = {
+        skills: windowHeight,
+        vendomoStart: windowHeight + (windowHeight / 2),
+        vendomoEnd: windowHeight * 2
+    };
 
+    onScrollAbout(scrollTop, windowHeight);
+    onScrollPortfolio(scrollTop);
+    onScrollMainContainer(scrollTop, windowHeight, scrollPoints);
+}
 
 $document.ready(function () {
     $('[data-toggle="offcanvas"]').click(function () {
@@ -114,12 +138,11 @@ $document.ready(function () {
     });
 
     startPoint = $portfolio.offset().top;
-    endPoint = startPoint + 50;
-    $(window).on('scroll', onScrollAbout);
-    $(window).on('scroll', function() {$portfolio.removeClass('fixed-position')});
-    $portfolio.on('scroll', function() {$portfolio.addClass('fixed-position')});
-    //onScrollAbout();
-    //onScrollPortfolio();
+    endPoint = startPoint + $portfolio.outerHeight() - $window.height();
+
+    $main.css('background-color', 'hsla(0,10%,10%,0)');
+    $window.on('scroll', onScroll);
+    onScroll();
     //
     //$('#skills').mousemove(function(e) {
     //    mX = e.pageX;

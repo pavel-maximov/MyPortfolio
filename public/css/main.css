@@ -4820,34 +4820,44 @@ h3, .h3 {
   font-size: 1.6rem;
   line-height: 1.2; }
 
-#intro, #skills, #portfolio, #experience, #about, #outro, #contact {
-  height: 100vh;
+#intro, #skills, #portfolio, #experience, #about, #contact, #outro {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: relative; }
+
+.section-header {
+  width: 25%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
-
-.article-header {
-  text-align: center;
-  margin-top: 4rem; }
-
-.article-footer {
+  align-items: center;
+  justify-content: center;
   text-align: center; }
 
-.article-body {
-  display: flex;
-  align-items: center; }
+.section-header-title {
+  margin-top: 2.5rem; }
 
-.article-header-title {
+.section-header-secondary-title {
   font-family: "she-always-walks-alone", serif;
   font-size: 2.4rem;
   line-height: 1;
   display: block; }
 
-.article-header-sub-title {
+.section-header-secondary-sub-title {
   font-family: "worksans-light", sans-serif;
   font-size: 1.6rem;
   line-height: 1.2;
-  display: block; }
+  display: block;
+  margin-bottom: 2rem; }
+
+.article-footer {
+  text-align: center; }
+
+.article-body {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .article-title-wrapper {
   text-align: center;
@@ -4856,10 +4866,10 @@ h3, .h3 {
   align-items: center;
   margin: auto; }
 
-.article-title-img {
+.section-header-img {
   width: 100%; }
 
-.article-title-img-wrapper {
+.section-header-img-wrapper {
   width: 100%;
   max-width: 300px; }
 
@@ -4868,27 +4878,15 @@ h3, .h3 {
   margin-top: auto;
   text-align: center; }
 
-#intro .article-header {
-  margin-top: auto; }
+#intro .section-header-img-wrapper {
+  max-width: 400px;
+  margin-bottom: 3rem; }
 
-#intro .article-footer {
-  margin-top: auto; }
-
-#intro .article-title-wrapper {
-  width: 27%; }
-
-#intro .article-title-img-wrapper {
-  max-width: 360px;
-  margin-bottom: 2rem; }
-
-#intro .article-header-title {
-  font-size: 4.6rem;
-  line-height: 1.2; }
-
-#intro .article-header-sub-title {
+#intro .section-header-sub-title {
   font-family: "worksans-thin", sans-serif;
   font-size: 3rem;
-  line-height: 1.2; }
+  line-height: 1.2;
+  margin-bottom: 3rem; }
 
 #intro .article-video {
   position: fixed;
@@ -4902,133 +4900,139 @@ h3, .h3 {
   transform: translateY(-50%) translateX(-50%);
   background-size: cover; }
 
-#skills {
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.7) 100%); }
-  #skills .article-title-wrapper {
-    width: 30%;
-    padding-left: 15%; }
-    #skills .article-title-wrapper .article-title-img-wrapper {
-      max-width: 250px; }
-  #skills .article-img-wrapper {
-    width: 40%;
-    position: relative; }
-    #skills .article-img-wrapper .article-img,
-    #skills .article-img-wrapper .article-img-overlay {
-      width: 80%;
-      max-width: 550px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translateX(-50%) translateY(-50%); }
-      #skills .article-img-wrapper .article-img path,
-      #skills .article-img-wrapper .article-img-overlay path {
-        animation-name: rotating;
-        transform-origin: 50% 50%; }
-  #skills .article-content-wrapper {
-    width: 30%;
-    padding-right: 17%; }
-    #skills .article-content-wrapper p {
-      margin-bottom: 0;
-      text-align: center; }
-      #skills .article-content-wrapper p span {
-        color: rgba(0, 0, 0, 0.3); }
+#skills .section-header {
+  left: 3%; }
+
+#skills .section-header-img-wrapper {
+  max-width: 250px; }
+
+#skills .article-img-wrapper {
+  width: 66%;
+  position: relative; }
+  #skills .article-img-wrapper .article-img,
+  #skills .article-img-wrapper .article-img-overlay {
+    width: 80%;
+    max-width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); }
+    #skills .article-img-wrapper .article-img path,
+    #skills .article-img-wrapper .article-img-overlay path {
+      animation-name: rotating;
+      transform-origin: 50% 50%; }
+
+#skills .article-content-wrapper {
+  width: 33%;
+  padding-right: 8%; }
+  #skills .article-content-wrapper p {
+    margin-bottom: 0;
+    text-align: center; }
+    #skills .article-content-wrapper p span {
+      color: rgba(0, 0, 0, 0.3); }
 
 #portfolio {
-  background-color: white;
-  position: relative; }
-  #portfolio.fixed-position {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; }
-  #portfolio .article-title-wrapper {
-    width: 25%;
+  flex-direction: column; }
+  #portfolio .section-header-img-wrapper {
+    width: 90%;
+    max-width: 300px; }
+  #portfolio .section-header {
     position: absolute;
+    top: 50vh;
     left: 0;
-    top: 50%;
     transform: translateY(-50%); }
-    #portfolio .article-title-wrapper .article-title-img-wrapper {
-      width: 70%;
-      max-width: 300px; }
+  #portfolio.scrolling-this .section-header {
+    position: fixed; }
+  #portfolio.scrolled-this .section-header {
+    position: absolute;
+    top: auto;
+    bottom: 50vh;
+    transform: translateY(50%); }
   #portfolio .article-body {
-    height: 100%; }
-  #portfolio .article-header {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%); }
-  #portfolio .article-footer {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%); }
-  #portfolio .article-content-wrapper {
     width: 100%;
-    max-height: 100%;
-    overflow-y: hidden; }
-    #portfolio .article-content-wrapper p {
-      margin-bottom: 0;
-      text-align: center; }
-      #portfolio .article-content-wrapper p span {
-        color: rgba(0, 0, 0, 0.3); }
-  #portfolio.fixed-position .article-content-wrapper {
-    overflow-y: scroll; }
-  #portfolio .portfolio-item-vendomo {
-    background-color: #e6e9f3; }
-  #portfolio .portfolio-item-foodora {
-    background-color: #EFDBE4; }
-  #portfolio .portfolio-item-bk {
-    background-color: #D8CBC7; }
-  #portfolio .portfolio-item-vendomo-crm {
-    background-color: black; }
+    padding-left: 25%; }
   #portfolio .portfolio-item-img {
-    margin: auto; }
+    margin-top: auto;
+    margin-bottom: 5rem; }
 
-#portfolio .portfolio-item-vendomo, #portfolio .portfolio-item-foodora, #portfolio .portfolio-item-bk, #portfolio .portfolio-item-vendomo-crm {
+#portfolio .portfolio-item-vendomo, #portfolio .portfolio-item-foodora, #portfolio .portfolio-item-bk {
   height: 100vh;
   display: flex;
-  margin-bottom: 0;
-  padding-left: 25%; }
+  margin-bottom: 0; }
 
-#experience {
+.portfolio-item-title {
+  position: absolute;
+  left: 50%;
+  top: 12rem;
+  font-size: 2.8rem;
+  text-align: center;
+  width: 30%; }
+
+.portfolio-item-subtitle {
+  position: absolute;
+  left: 50%;
+  top: 15rem;
+  text-align: center;
+  width: 30%; }
+
+#experience .article-title-wrapper {
+  width: 25%; }
+  #experience .article-title-wrapper .section-header-img-wrapper {
+    width: 70%;
+    max-width: 300px; }
+
+#experience .article-body {
+  height: 85%; }
+
+#experience .article-content-wrapper {
+  width: 75%;
+  max-height: 100%; }
+  #experience .article-content-wrapper p {
+    margin-bottom: 0;
+    text-align: center; }
+    #experience .article-content-wrapper p span {
+      color: rgba(0, 0, 0, 0.3); }
+
+#about .article-title-wrapper {
+  width: 25%; }
+  #about .article-title-wrapper .section-header-img-wrapper {
+    width: 70%;
+    max-width: 300px; }
+
+#about .article-body {
+  height: 85%; }
+
+#about .article-content-wrapper {
+  width: 75%;
+  overflow-y: scroll;
+  max-height: 100%; }
+  #about .article-content-wrapper p {
+    margin-bottom: 0;
+    text-align: center; }
+    #about .article-content-wrapper p span {
+      color: rgba(0, 0, 0, 0.3); }
+
+#contact {
   background-color: #F3F3F3; }
-  #experience .article-title-wrapper {
-    width: 25%; }
-    #experience .article-title-wrapper .article-title-img-wrapper {
+  #contact .section-header {
+    width: 25%;
+    position: relative; }
+    #contact .section-header .section-header-img-wrapper {
       width: 70%;
-      max-width: 300px; }
-  #experience .article-body {
+      max-width: 350px; }
+  #contact .article-body {
     height: 85%; }
-  #experience .article-content-wrapper {
-    width: 75%;
-    max-height: 100%; }
-    #experience .article-content-wrapper p {
-      margin-bottom: 0;
-      text-align: center; }
-      #experience .article-content-wrapper p span {
-        color: rgba(0, 0, 0, 0.3); }
-
-#about {
-  background-color: white; }
-  #about .article-title-wrapper {
-    width: 25%; }
-    #about .article-title-wrapper .article-title-img-wrapper {
-      width: 70%;
-      max-width: 300px; }
-  #about .article-body {
-    height: 85%; }
-  #about .article-content-wrapper {
+  #contact .article-content-wrapper {
     width: 75%;
     overflow-y: scroll;
     max-height: 100%; }
-    #about .article-content-wrapper p {
+    #contact .article-content-wrapper p {
       margin-bottom: 0;
       text-align: center; }
-      #about .article-content-wrapper p span {
+      #contact .article-content-wrapper p span {
         color: rgba(0, 0, 0, 0.3); }
 
-#outro .article-header {
+#outro .section-header {
   margin-top: auto; }
 
 #outro .article-footer {
@@ -5037,15 +5041,15 @@ h3, .h3 {
 #outro .article-title-wrapper {
   width: 27%; }
 
-#outro .article-title-img-wrapper {
+#outro .section-header-img-wrapper {
   max-width: 360px;
   margin-bottom: 2rem; }
 
-#outro .article-header-title {
+#outro .section-header-secondary-title {
   font-size: 4.6rem;
   line-height: 1.2; }
 
-#outro .article-header-sub-title {
+#outro .section-header-sub-title {
   font-family: "worksans-thin", sans-serif;
   font-size: 3rem;
   line-height: 1.2; }
@@ -5061,25 +5065,6 @@ h3, .h3 {
   z-index: -2;
   transform: translateY(-50%) translateX(-50%);
   background-size: cover; }
-
-#contact {
-  background-color: #FFF; }
-  #contact .article-title-wrapper {
-    width: 25%; }
-    #contact .article-title-wrapper .article-title-img-wrapper {
-      width: 70%;
-      max-width: 350px; }
-  #contact .article-body {
-    height: 85%; }
-  #contact .article-content-wrapper {
-    width: 75%;
-    overflow-y: scroll;
-    max-height: 100%; }
-    #contact .article-content-wrapper p {
-      margin-bottom: 0;
-      text-align: center; }
-      #contact .article-content-wrapper p span {
-        color: rgba(0, 0, 0, 0.3); }
 
 .footer__title {
   color: #8a2e3f; }
