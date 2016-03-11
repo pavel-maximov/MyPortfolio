@@ -112,6 +112,7 @@ h3, .h3 {
 // main container --------------------------------
 
 .main-container {
+  background: rgba(255,255,255,0.8);
 }
 
 
@@ -163,6 +164,7 @@ h3, .h3 {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .article-title-wrapper {
@@ -298,6 +300,13 @@ h3, .h3 {
 
 // portfolio --------------------------------
 
+%portfolio-item-img-preview {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+
 #portfolio {
   @extend %article-wrapper;
   //background: linear-gradient(to right, rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.7) 100%); ;
@@ -327,32 +336,244 @@ h3, .h3 {
   }
 
   & .article-body {
-    width: 100%;
-    padding-left: 25%;
+    width: 75%;
+    margin-left: 25%;
   }
 
-  & .portfolio-item-vendomo {
-    @extend %portfolio-item;
-    //background-color: #fff;
-    //background-color: #e6e9f3;
-  }
-
-  & .portfolio-item-foodora {
-    @extend %portfolio-item;
-    //background-color: #fff;
-    //background-color: #EFDBE4;
-  }
-
-  & .portfolio-item-bk {
+  & .portfolio-item-vendomo-crm {
     @extend %portfolio-item;
     //background-color: #fff;
     //background-color: #D8CBC7;
   }
 
   &  .portfolio-item-img {
-    margin-top: auto;
-    margin-bottom: 5rem;
+    width: 100%;
   }
+
+  & .portfolio-item-vendomo {
+    @extend %portfolio-item;
+
+    & .portfolio-item-desktop {
+      position: absolute;
+      top: 13%;
+      left: 26%;
+      width: 60%;
+      max-width: 796px;
+
+      & .portfolio-item-img-preview {
+          @extend %portfolio-item-img-preview;
+          top: 36.4%;
+      }
+    }
+
+    & .portfolio-item-tablet {
+      position: absolute;
+      top: 44%;
+      left: 70%;
+      width: 50%;
+      max-width: 263px;
+
+      & .portfolio-item-img-preview {
+        @extend %portfolio-item-img-preview;
+        top: 44.5%;
+      }
+    }
+
+    & .portfolio-item-notebook {
+      position: absolute;
+      top: 44.6%;
+      left: 0;
+      width: 50%;
+      max-width: 600px;
+
+      & .portfolio-item-img-preview {
+        @extend %portfolio-item-img-preview;
+        top: 42.2%;
+      }
+    }
+
+    & .portfolio-item-mobile {
+      position: absolute;
+      top: 60%;
+      left: 85%;
+      width: 10%;
+      max-width: 111px;
+
+      & .portfolio-item-img-preview {
+        @extend %portfolio-item-img-preview;
+        top: 45.5%;
+      }
+    }
+  }
+
+  & .portfolio-item-foodora {
+    @extend %portfolio-item;
+
+    & .portfolio-item-desktop {
+      position: absolute;
+      top: 13%;
+      left: 10%;
+      width: 60%;
+      max-width: 796px;
+
+      & .portfolio-item-img-preview {
+        @extend %portfolio-item-img-preview;
+        top: 36.4%;
+      }
+    }
+
+    & .portfolio-item-tablet {
+      position: absolute;
+      top: 44%;
+      left: 0;
+      width: 50%;
+      max-width: 263px;
+
+      & .portfolio-item-img-preview {
+        @extend %portfolio-item-img-preview;
+        top: 44.5%;
+      }
+    }
+
+    & .portfolio-item-notebook {
+      position: absolute;
+      top: 44.6%;
+      left: 52%;
+      width: 50%;
+      max-width: 600px;
+
+      & .portfolio-item-img-preview {
+        @extend %portfolio-item-img-preview;
+        top: 42.2%;
+      }
+    }
+
+    & .portfolio-item-mobile {
+      position: absolute;
+      top: 60%;
+      left: 14%;
+      width: 10%;
+      max-width: 111px;
+
+      & .portfolio-item-img-preview {
+        @extend %portfolio-item-img-preview;
+        top: 45.5%;
+      }
+    }
+  }
+
+  & .portfolio-item-bk {
+    @extend %portfolio-item;
+
+    & .portfolio-item-desktop {
+      position: absolute;
+      top: 13%;
+      left: 15%;
+      width: 60%;
+      max-width: 796px;
+
+      & .portfolio-item-img-preview {
+        @extend %portfolio-item-img-preview;
+        top: 36.4%;
+      }
+    }
+
+    & .portfolio-item-tablet {
+      position: absolute;
+      top: 44%;
+      left: 6%;
+      width: 50%;
+      max-width: 263px;
+
+      & .portfolio-item-img-preview {
+        @extend %portfolio-item-img-preview;
+        top: 44.5%;
+      }
+    }
+
+    & .portfolio-item-notebook {
+      position: absolute;
+      top: 44.6%;
+      left: 52%;
+      width: 50%;
+      max-width: 600px;
+
+      & .portfolio-item-img-preview {
+        @extend %portfolio-item-img-preview;
+        top: 42.2%;
+      }
+    }
+
+    & .portfolio-item-mobile {
+      position: absolute;
+      top: 60%;
+      left: 2%;
+      width: 10%;
+      max-width: 111px;
+
+      & .portfolio-item-img-preview {
+        @extend %portfolio-item-img-preview;
+        top: 45.5%;
+      }
+    }
+  }
+
+  & .portfolio-item-vendomo-crm {
+    @extend %portfolio-item;
+
+    & .portfolio-item-desktop {
+      position: absolute;
+      top: 13%;
+      left: 15%;
+      width: 60%;
+      max-width: 796px;
+
+      & .portfolio-item-img-preview {
+        @extend %portfolio-item-img-preview;
+        top: 36.4%;
+      }
+    }
+
+    & .portfolio-item-tablet {
+      position: absolute;
+      top: 44%;
+      left: 6%;
+      width: 50%;
+      max-width: 263px;
+
+      & .portfolio-item-img-preview {
+        @extend %portfolio-item-img-preview;
+        top: 44.5%;
+      }
+    }
+
+    & .portfolio-item-notebook {
+      position: absolute;
+      top: 44.6%;
+      left: 52%;
+      width: 50%;
+      max-width: 600px;
+
+      & .portfolio-item-img-preview {
+        @extend %portfolio-item-img-preview;
+        top: 42.2%;
+      }
+    }
+
+    & .portfolio-item-mobile {
+      position: absolute;
+      top: 60%;
+      left: 2%;
+      width: 10%;
+      max-width: 111px;
+
+      & .portfolio-item-img-preview {
+        @extend %portfolio-item-img-preview;
+        top: 45.5%;
+      }
+    }
+  }
+
 }
 
 %portfolio-item {

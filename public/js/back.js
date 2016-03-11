@@ -125,7 +125,7 @@ function onScroll() {
 
     onScrollAbout(scrollTop, windowHeight);
     onScrollPortfolio(scrollTop);
-    onScrollMainContainer(scrollTop, windowHeight, scrollPoints);
+    //onScrollMainContainer(scrollTop, windowHeight, scrollPoints);
 }
 
 $document.ready(function () {
@@ -140,7 +140,7 @@ $document.ready(function () {
     startPoint = $portfolio.offset().top;
     endPoint = startPoint + $portfolio.outerHeight() - $window.height();
 
-    $main.css('background-color', 'hsla(0,10%,10%,0)');
+    //$main.css('background-color', 'hsla(0,10%,10%,0)');
     $window.on('scroll', onScroll);
     onScroll();
     //

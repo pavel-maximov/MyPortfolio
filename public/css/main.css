@@ -4820,6 +4820,9 @@ h3, .h3 {
   font-size: 1.6rem;
   line-height: 1.2; }
 
+.main-container {
+  background: rgba(255, 255, 255, 0.8); }
+
 #intro, #skills, #portfolio, #experience, #about, #contact, #outro {
   min-height: 100vh;
   display: flex;
@@ -4857,7 +4860,8 @@ h3, .h3 {
   width: 75%;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  position: relative; }
 
 .article-title-wrapper {
   text-align: center;
@@ -4931,6 +4935,11 @@ h3, .h3 {
     #skills .article-content-wrapper p span {
       color: rgba(0, 0, 0, 0.3); }
 
+#portfolio .portfolio-item-vendomo .portfolio-item-desktop .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo .portfolio-item-tablet .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo .portfolio-item-notebook .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo .portfolio-item-mobile .portfolio-item-img-preview, #portfolio .portfolio-item-foodora .portfolio-item-desktop .portfolio-item-img-preview, #portfolio .portfolio-item-foodora .portfolio-item-tablet .portfolio-item-img-preview, #portfolio .portfolio-item-foodora .portfolio-item-notebook .portfolio-item-img-preview, #portfolio .portfolio-item-foodora .portfolio-item-mobile .portfolio-item-img-preview, #portfolio .portfolio-item-bk .portfolio-item-desktop .portfolio-item-img-preview, #portfolio .portfolio-item-bk .portfolio-item-tablet .portfolio-item-img-preview, #portfolio .portfolio-item-bk .portfolio-item-notebook .portfolio-item-img-preview, #portfolio .portfolio-item-bk .portfolio-item-mobile .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo-crm .portfolio-item-desktop .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo-crm .portfolio-item-tablet .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo-crm .portfolio-item-notebook .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo-crm .portfolio-item-mobile .portfolio-item-img-preview {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%); }
+
 #portfolio {
   flex-direction: column; }
   #portfolio .section-header-img-wrapper {
@@ -4949,13 +4958,140 @@ h3, .h3 {
     bottom: 50vh;
     transform: translateY(50%); }
   #portfolio .article-body {
-    width: 100%;
-    padding-left: 25%; }
+    width: 75%;
+    margin-left: 25%; }
   #portfolio .portfolio-item-img {
-    margin-top: auto;
-    margin-bottom: 5rem; }
+    width: 100%; }
+  #portfolio .portfolio-item-vendomo .portfolio-item-desktop {
+    position: absolute;
+    top: 13%;
+    left: 26%;
+    width: 60%;
+    max-width: 796px; }
+    #portfolio .portfolio-item-vendomo .portfolio-item-desktop .portfolio-item-img-preview {
+      top: 36.4%; }
+  #portfolio .portfolio-item-vendomo .portfolio-item-tablet {
+    position: absolute;
+    top: 44%;
+    left: 70%;
+    width: 50%;
+    max-width: 263px; }
+    #portfolio .portfolio-item-vendomo .portfolio-item-tablet .portfolio-item-img-preview {
+      top: 44.5%; }
+  #portfolio .portfolio-item-vendomo .portfolio-item-notebook {
+    position: absolute;
+    top: 44.6%;
+    left: 0;
+    width: 50%;
+    max-width: 600px; }
+    #portfolio .portfolio-item-vendomo .portfolio-item-notebook .portfolio-item-img-preview {
+      top: 42.2%; }
+  #portfolio .portfolio-item-vendomo .portfolio-item-mobile {
+    position: absolute;
+    top: 60%;
+    left: 85%;
+    width: 10%;
+    max-width: 111px; }
+    #portfolio .portfolio-item-vendomo .portfolio-item-mobile .portfolio-item-img-preview {
+      top: 45.5%; }
+  #portfolio .portfolio-item-foodora .portfolio-item-desktop {
+    position: absolute;
+    top: 13%;
+    left: 10%;
+    width: 60%;
+    max-width: 796px; }
+    #portfolio .portfolio-item-foodora .portfolio-item-desktop .portfolio-item-img-preview {
+      top: 36.4%; }
+  #portfolio .portfolio-item-foodora .portfolio-item-tablet {
+    position: absolute;
+    top: 44%;
+    left: 0;
+    width: 50%;
+    max-width: 263px; }
+    #portfolio .portfolio-item-foodora .portfolio-item-tablet .portfolio-item-img-preview {
+      top: 44.5%; }
+  #portfolio .portfolio-item-foodora .portfolio-item-notebook {
+    position: absolute;
+    top: 44.6%;
+    left: 52%;
+    width: 50%;
+    max-width: 600px; }
+    #portfolio .portfolio-item-foodora .portfolio-item-notebook .portfolio-item-img-preview {
+      top: 42.2%; }
+  #portfolio .portfolio-item-foodora .portfolio-item-mobile {
+    position: absolute;
+    top: 60%;
+    left: 14%;
+    width: 10%;
+    max-width: 111px; }
+    #portfolio .portfolio-item-foodora .portfolio-item-mobile .portfolio-item-img-preview {
+      top: 45.5%; }
+  #portfolio .portfolio-item-bk .portfolio-item-desktop {
+    position: absolute;
+    top: 13%;
+    left: 15%;
+    width: 60%;
+    max-width: 796px; }
+    #portfolio .portfolio-item-bk .portfolio-item-desktop .portfolio-item-img-preview {
+      top: 36.4%; }
+  #portfolio .portfolio-item-bk .portfolio-item-tablet {
+    position: absolute;
+    top: 44%;
+    left: 6%;
+    width: 50%;
+    max-width: 263px; }
+    #portfolio .portfolio-item-bk .portfolio-item-tablet .portfolio-item-img-preview {
+      top: 44.5%; }
+  #portfolio .portfolio-item-bk .portfolio-item-notebook {
+    position: absolute;
+    top: 44.6%;
+    left: 52%;
+    width: 50%;
+    max-width: 600px; }
+    #portfolio .portfolio-item-bk .portfolio-item-notebook .portfolio-item-img-preview {
+      top: 42.2%; }
+  #portfolio .portfolio-item-bk .portfolio-item-mobile {
+    position: absolute;
+    top: 60%;
+    left: 2%;
+    width: 10%;
+    max-width: 111px; }
+    #portfolio .portfolio-item-bk .portfolio-item-mobile .portfolio-item-img-preview {
+      top: 45.5%; }
+  #portfolio .portfolio-item-vendomo-crm .portfolio-item-desktop {
+    position: absolute;
+    top: 13%;
+    left: 15%;
+    width: 60%;
+    max-width: 796px; }
+    #portfolio .portfolio-item-vendomo-crm .portfolio-item-desktop .portfolio-item-img-preview {
+      top: 36.4%; }
+  #portfolio .portfolio-item-vendomo-crm .portfolio-item-tablet {
+    position: absolute;
+    top: 44%;
+    left: 6%;
+    width: 50%;
+    max-width: 263px; }
+    #portfolio .portfolio-item-vendomo-crm .portfolio-item-tablet .portfolio-item-img-preview {
+      top: 44.5%; }
+  #portfolio .portfolio-item-vendomo-crm .portfolio-item-notebook {
+    position: absolute;
+    top: 44.6%;
+    left: 52%;
+    width: 50%;
+    max-width: 600px; }
+    #portfolio .portfolio-item-vendomo-crm .portfolio-item-notebook .portfolio-item-img-preview {
+      top: 42.2%; }
+  #portfolio .portfolio-item-vendomo-crm .portfolio-item-mobile {
+    position: absolute;
+    top: 60%;
+    left: 2%;
+    width: 10%;
+    max-width: 111px; }
+    #portfolio .portfolio-item-vendomo-crm .portfolio-item-mobile .portfolio-item-img-preview {
+      top: 45.5%; }
 
-#portfolio .portfolio-item-vendomo, #portfolio .portfolio-item-foodora, #portfolio .portfolio-item-bk {
+#portfolio .portfolio-item-vendomo-crm, #portfolio .portfolio-item-vendomo, #portfolio .portfolio-item-foodora, #portfolio .portfolio-item-bk {
   height: 100vh;
   display: flex;
   margin-bottom: 0; }
