@@ -4935,7 +4935,7 @@ h3, .h3 {
     #skills .article-content-wrapper p span {
       color: rgba(0, 0, 0, 0.3); }
 
-#portfolio .portfolio-item-vendomo .portfolio-item-desktop .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo .portfolio-item-tablet .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo .portfolio-item-notebook .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo .portfolio-item-mobile .portfolio-item-img-preview, #portfolio .portfolio-item-foodora .portfolio-item-desktop .portfolio-item-img-preview, #portfolio .portfolio-item-foodora .portfolio-item-tablet .portfolio-item-img-preview, #portfolio .portfolio-item-foodora .portfolio-item-notebook .portfolio-item-img-preview, #portfolio .portfolio-item-foodora .portfolio-item-mobile .portfolio-item-img-preview, #portfolio .portfolio-item-bk .portfolio-item-desktop .portfolio-item-img-preview, #portfolio .portfolio-item-bk .portfolio-item-tablet .portfolio-item-img-preview, #portfolio .portfolio-item-bk .portfolio-item-notebook .portfolio-item-img-preview, #portfolio .portfolio-item-bk .portfolio-item-mobile .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo-crm .portfolio-item-desktop .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo-crm .portfolio-item-tablet .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo-crm .portfolio-item-notebook .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo-crm .portfolio-item-mobile .portfolio-item-img-preview {
+#portfolio .portfolio-item-vendomo .portfolio-item-desktop .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo .portfolio-item-tablet .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo .portfolio-item-notebook .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo .portfolio-item-mobile .portfolio-item-img-preview, #portfolio .portfolio-item-foodora .portfolio-item-desktop .portfolio-item-img-preview, #portfolio .portfolio-item-foodora .portfolio-item-tablet .portfolio-item-img-preview, #portfolio .portfolio-item-foodora .portfolio-item-notebook .portfolio-item-img-preview, #portfolio .portfolio-item-foodora .portfolio-item-mobile .portfolio-item-img-preview, #portfolio .portfolio-item-bk .portfolio-item-desktop .portfolio-item-img-preview, #portfolio .portfolio-item-bk .portfolio-item-tablet .portfolio-item-img-preview, #portfolio .portfolio-item-bk .portfolio-item-notebook .portfolio-item-img-preview, #portfolio .portfolio-item-bk .portfolio-item-mobile .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo-crm .portfolio-item-desktop .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo-crm .portfolio-item-tablet .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo-crm .portfolio-item-notebook .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo-crm .portfolio-item-mobile .portfolio-item-img-preview, #portfolio .portfolio-item-timvision .portfolio-item-tv1 .portfolio-item-img-preview, #portfolio .portfolio-item-timvision .portfolio-item-tv2 .portfolio-item-img-preview, #portfolio .portfolio-item-cubomusica .portfolio-item-tv1 .portfolio-item-img-preview, #portfolio .portfolio-item-cubomusica .portfolio-item-tv2 .portfolio-item-img-preview {
   position: absolute;
   left: 50%;
   transform: translateX(-50%) translateY(-50%); }
@@ -5090,8 +5090,40 @@ h3, .h3 {
     max-width: 111px; }
     #portfolio .portfolio-item-vendomo-crm .portfolio-item-mobile .portfolio-item-img-preview {
       top: 45.5%; }
+  #portfolio .portfolio-item-timvision .portfolio-item-tv1 {
+    position: absolute;
+    top: 17%;
+    left: 3%;
+    width: 53%;
+    max-width: 760px; }
+    #portfolio .portfolio-item-timvision .portfolio-item-tv1 .portfolio-item-img-preview {
+      top: 42.4%; }
+  #portfolio .portfolio-item-timvision .portfolio-item-tv2 {
+    position: absolute;
+    top: 32%;
+    left: 37%;
+    width: 53%;
+    max-width: 760px; }
+    #portfolio .portfolio-item-timvision .portfolio-item-tv2 .portfolio-item-img-preview {
+      top: 42.4%; }
+  #portfolio .portfolio-item-cubomusica .portfolio-item-tv1 {
+    position: absolute;
+    top: 17%;
+    left: 3%;
+    width: 53%;
+    max-width: 760px; }
+    #portfolio .portfolio-item-cubomusica .portfolio-item-tv1 .portfolio-item-img-preview {
+      top: 42.4%; }
+  #portfolio .portfolio-item-cubomusica .portfolio-item-tv2 {
+    position: absolute;
+    top: 32%;
+    left: 37%;
+    width: 53%;
+    max-width: 760px; }
+    #portfolio .portfolio-item-cubomusica .portfolio-item-tv2 .portfolio-item-img-preview {
+      top: 42.4%; }
 
-#portfolio .portfolio-item-vendomo-crm, #portfolio .portfolio-item-vendomo, #portfolio .portfolio-item-foodora, #portfolio .portfolio-item-bk {
+#portfolio .portfolio-item-vendomo-crm, #portfolio .portfolio-item-vendomo, #portfolio .portfolio-item-foodora, #portfolio .portfolio-item-bk, #portfolio .portfolio-item-timvision, #portfolio .portfolio-item-cubomusica {
   height: 100vh;
   display: flex;
   margin-bottom: 0; }

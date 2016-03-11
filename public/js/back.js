@@ -80,7 +80,7 @@ function scrollToElement(selector){
 }
 
 function onScrollAbout (scrollTop, windowHeight) {
-    if (scrollTop > (windowHeight * 6)) {
+    if (scrollTop > (windowHeight * 10)) {
         $aboutVideo.css('z-index', '-1');
     } else {
         $aboutVideo.css('z-index', '-2');

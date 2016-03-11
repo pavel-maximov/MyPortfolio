@@ -574,6 +574,68 @@ h3, .h3 {
     }
   }
 
+  & .portfolio-item-timvision {
+    @extend %portfolio-item;
+
+    & .portfolio-item-tv1 {
+      position: absolute;
+      top: 17%;
+      left: 3%;
+      width: 53%;
+      max-width: 760px;
+
+      & .portfolio-item-img-preview {
+        @extend %portfolio-item-img-preview;
+        top: 42.4%;
+      }
+    }
+
+
+    & .portfolio-item-tv2 {
+      position: absolute;
+      top: 32%;
+      left: 37%;
+      width: 53%;
+      max-width: 760px;
+
+      & .portfolio-item-img-preview {
+        @extend %portfolio-item-img-preview;
+        top: 42.4%;;
+      }
+    }
+  }
+
+  & .portfolio-item-cubomusica {
+    @extend %portfolio-item;
+
+    & .portfolio-item-tv1 {
+      position: absolute;
+      top: 17%;
+      left: 3%;
+      width: 53%;
+      max-width: 760px;
+
+      & .portfolio-item-img-preview {
+        @extend %portfolio-item-img-preview;
+        top: 42.4%;
+      }
+    }
+
+
+    & .portfolio-item-tv2 {
+      position: absolute;
+      top: 32%;
+      left: 37%;
+      width: 53%;
+      max-width: 760px;
+
+      & .portfolio-item-img-preview {
+        @extend %portfolio-item-img-preview;
+        top: 42.4%;;
+      }
+    }
+  }
+
 }
 
 %portfolio-item {
