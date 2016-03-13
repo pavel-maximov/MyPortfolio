@@ -80,7 +80,7 @@ function scrollToElement(selector){
 }
 
 function onScrollAbout (scrollTop, windowHeight) {
-    if (scrollTop > (windowHeight * 10)) {
+    if (scrollTop > (windowHeight * 12)) {
         $aboutVideo.css('z-index', '-1');
     } else {
         $aboutVideo.css('z-index', '-2');
@@ -102,15 +102,23 @@ function onScrollPortfolio (scrollTop) {
 
 function onScrollMainContainer (scrollTop, windowHeight, scrollPoints) {
     var newAlphaValue;
-    var newHueValue;
 
     if (scrollTop < scrollPoints.skills) {
         newAlphaValue = scrollTop / windowHeight;
+        newAlphaValue = newAlphaValue < .3 ? .3 : newAlphaValue;
         newAlphaValue = newAlphaValue > .7 ? .7 : newAlphaValue;
         $main.css('background-color', 'hsla(0,10%,100%,' + newAlphaValue + ')');
-    } else if (scrollTop > scrollPoints.vendomoStart) {
-        newHueValue = (scrollPoints.vendomoStart - scrollTop) / (scrollPoints.vendomoStart - scrollPoints.vendomoEnd) * 30;
-        $main.css('background-color', 'hsla(' + newHueValue + ',50%,40%,0.7)');
+    } else if (scrollTop < scrollPoints.projectsEnd) {
+        $main.css('background-color', 'hsla(0,10%,100%,0.7)');
+    } else if (scrollTop > scrollPoints.projectsEnd && scrollTop < scrollPoints.experience) {
+        newAlphaValue = (scrollTop - scrollPoints.projectsEnd) / (scrollPoints.experience - scrollPoints.projectsEnd);
+        newAlphaValue = newAlphaValue < .7 ? .7 : newAlphaValue;
+        newAlphaValue = newAlphaValue > 1 ? 1 : newAlphaValue;
+        $main.css('background-color', 'hsla(0,10%,100%,' + newAlphaValue + ')');
+    } else if (scrollTop < scrollPoints.outro) {
+        $main.css('background-color', 'hsla(0,10%,100%,1)');
+    } else {
+        $main.css('background-color', 'hsla(0,10%,10%,0)');
     }
 }
 
@@ -119,13 +127,14 @@ function onScroll() {
     var windowHeight = $window.height();
     var scrollPoints = {
         skills: windowHeight,
-        vendomoStart: windowHeight + (windowHeight / 2),
-        vendomoEnd: windowHeight * 2
+        projectsEnd: windowHeight * 9 - (windowHeight / 3),
+        experience: windowHeight * 9,
+        outro: windowHeight * 12
     };
 
     onScrollAbout(scrollTop, windowHeight);
     onScrollPortfolio(scrollTop);
-    //onScrollMainContainer(scrollTop, windowHeight, scrollPoints);
+    onScrollMainContainer(scrollTop, windowHeight, scrollPoints);
 }
 
 $document.ready(function () {

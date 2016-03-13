@@ -4775,6 +4775,27 @@ a.text-danger:focus, a.text-danger:hover {
   .flex-items-xl-between {
     justify-content: space-between; } }
 
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+.rotating {
+  -webkit-animation: rotating 2s linear infinite;
+  -moz-animation: rotating 2s linear infinite;
+  -ms-animation: rotating 2s linear infinite;
+  -o-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite; }
+
 @font-face {
   font-family: 'worksans-thin';
   src: url("/fonts/worksans-thin.woff2") format("woff2"), url("/fonts/worksans-thin.woff") format("woff"), url("/fonts/worksans-thin.ttf") format("truetype");
@@ -4819,9 +4840,6 @@ h3, .h3 {
   font-family: "worksans-light", sans-serif;
   font-size: 1.6rem;
   line-height: 1.2; }
-
-.main-container {
-  background: rgba(255, 255, 255, 0.8); }
 
 #intro, #skills, #portfolio, #experience, #about, #contact, #outro {
   min-height: 100vh;
@@ -4935,7 +4953,7 @@ h3, .h3 {
     #skills .article-content-wrapper p span {
       color: rgba(0, 0, 0, 0.3); }
 
-#portfolio .portfolio-item-vendomo .portfolio-item-desktop .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo .portfolio-item-tablet .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo .portfolio-item-notebook .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo .portfolio-item-mobile .portfolio-item-img-preview, #portfolio .portfolio-item-foodora .portfolio-item-desktop .portfolio-item-img-preview, #portfolio .portfolio-item-foodora .portfolio-item-tablet .portfolio-item-img-preview, #portfolio .portfolio-item-foodora .portfolio-item-notebook .portfolio-item-img-preview, #portfolio .portfolio-item-foodora .portfolio-item-mobile .portfolio-item-img-preview, #portfolio .portfolio-item-bk .portfolio-item-desktop .portfolio-item-img-preview, #portfolio .portfolio-item-bk .portfolio-item-tablet .portfolio-item-img-preview, #portfolio .portfolio-item-bk .portfolio-item-notebook .portfolio-item-img-preview, #portfolio .portfolio-item-bk .portfolio-item-mobile .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo-crm .portfolio-item-desktop .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo-crm .portfolio-item-tablet .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo-crm .portfolio-item-notebook .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo-crm .portfolio-item-mobile .portfolio-item-img-preview, #portfolio .portfolio-item-timvision .portfolio-item-tv1 .portfolio-item-img-preview, #portfolio .portfolio-item-timvision .portfolio-item-tv2 .portfolio-item-img-preview, #portfolio .portfolio-item-cubomusica .portfolio-item-tv1 .portfolio-item-img-preview, #portfolio .portfolio-item-cubomusica .portfolio-item-tv2 .portfolio-item-img-preview {
+#portfolio .portfolio-item-bk .portfolio-item-desktop .portfolio-item-img-preview, #portfolio .portfolio-item-bk .portfolio-item-tablet .portfolio-item-img-preview, #portfolio .portfolio-item-bk .portfolio-item-notebook .portfolio-item-img-preview, #portfolio .portfolio-item-bk .portfolio-item-mobile .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo .portfolio-item-desktop .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo .portfolio-item-tablet .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo .portfolio-item-notebook .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo .portfolio-item-mobile .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo-crm .portfolio-item-desktop .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo-crm .portfolio-item-tablet .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo-crm .portfolio-item-notebook .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo-crm .portfolio-item-mobile .portfolio-item-img-preview, #portfolio .portfolio-item-foodora .portfolio-item-desktop .portfolio-item-img-preview, #portfolio .portfolio-item-foodora .portfolio-item-tablet .portfolio-item-img-preview, #portfolio .portfolio-item-foodora .portfolio-item-notebook .portfolio-item-img-preview, #portfolio .portfolio-item-foodora .portfolio-item-mobile .portfolio-item-img-preview, #portfolio .portfolio-item-timvision .portfolio-item-tv1 .portfolio-item-img-preview, #portfolio .portfolio-item-timvision .portfolio-item-tv2 .portfolio-item-img-preview, #portfolio .portfolio-item-cubomusica .portfolio-item-tv1 .portfolio-item-img-preview, #portfolio .portfolio-item-cubomusica .portfolio-item-tv2 .portfolio-item-img-preview, #portfolio .portfolio-item-unicri .portfolio-item-notebook-ande .portfolio-item-img-preview, #portfolio .portfolio-item-unicri .portfolio-item-notebook-eusec .portfolio-item-img-preview, #portfolio .portfolio-item-unicri .portfolio-item-notebook-cbrn .portfolio-item-img-preview, #portfolio .portfolio-item-unicri .portfolio-item-notebook-ipo .portfolio-item-img-preview, #portfolio .portfolio-item-unicri .portfolio-item-notebook-lab .portfolio-item-img-preview, #portfolio .portfolio-item-others .portfolio-item-notebook-school .portfolio-item-img-preview, #portfolio .portfolio-item-others .portfolio-item-notebook-davide .portfolio-item-img-preview, #portfolio .portfolio-item-others .portfolio-item-notebook-acqua .portfolio-item-img-preview, #portfolio .portfolio-item-others .portfolio-item-notebook-milena .portfolio-item-img-preview, #portfolio .portfolio-item-others .portfolio-item-notebook-pandora .portfolio-item-img-preview {
   position: absolute;
   left: 50%;
   transform: translateX(-50%) translateY(-50%); }
@@ -4962,70 +4980,23 @@ h3, .h3 {
     margin-left: 25%; }
   #portfolio .portfolio-item-img {
     width: 100%; }
-  #portfolio .portfolio-item-vendomo .portfolio-item-desktop {
+  #portfolio .portfolio-item-vendomo-crm, #portfolio .portfolio-item-bk, #portfolio .portfolio-item-vendomo, #portfolio .portfolio-item-foodora, #portfolio .portfolio-item-timvision, #portfolio .portfolio-item-cubomusica, #portfolio .portfolio-item-unicri, #portfolio .portfolio-item-others {
+    height: 100vh;
+    display: flex;
+    margin-bottom: 0; }
+  #portfolio .portfolio-item-title {
     position: absolute;
-    top: 13%;
-    left: 26%;
-    width: 60%;
-    max-width: 796px; }
-    #portfolio .portfolio-item-vendomo .portfolio-item-desktop .portfolio-item-img-preview {
-      top: 36.4%; }
-  #portfolio .portfolio-item-vendomo .portfolio-item-tablet {
+    left: 50%;
+    top: 12rem;
+    font-size: 2.8rem;
+    text-align: center;
+    width: 30%; }
+  #portfolio .portfolio-item-subtitle {
     position: absolute;
-    top: 44%;
-    left: 70%;
-    width: 50%;
-    max-width: 263px; }
-    #portfolio .portfolio-item-vendomo .portfolio-item-tablet .portfolio-item-img-preview {
-      top: 44.5%; }
-  #portfolio .portfolio-item-vendomo .portfolio-item-notebook {
-    position: absolute;
-    top: 44.6%;
-    left: 0;
-    width: 50%;
-    max-width: 600px; }
-    #portfolio .portfolio-item-vendomo .portfolio-item-notebook .portfolio-item-img-preview {
-      top: 42.2%; }
-  #portfolio .portfolio-item-vendomo .portfolio-item-mobile {
-    position: absolute;
-    top: 60%;
-    left: 85%;
-    width: 10%;
-    max-width: 111px; }
-    #portfolio .portfolio-item-vendomo .portfolio-item-mobile .portfolio-item-img-preview {
-      top: 45.5%; }
-  #portfolio .portfolio-item-foodora .portfolio-item-desktop {
-    position: absolute;
-    top: 13%;
-    left: 10%;
-    width: 60%;
-    max-width: 796px; }
-    #portfolio .portfolio-item-foodora .portfolio-item-desktop .portfolio-item-img-preview {
-      top: 36.4%; }
-  #portfolio .portfolio-item-foodora .portfolio-item-tablet {
-    position: absolute;
-    top: 44%;
-    left: 0;
-    width: 50%;
-    max-width: 263px; }
-    #portfolio .portfolio-item-foodora .portfolio-item-tablet .portfolio-item-img-preview {
-      top: 44.5%; }
-  #portfolio .portfolio-item-foodora .portfolio-item-notebook {
-    position: absolute;
-    top: 44.6%;
-    left: 52%;
-    width: 50%;
-    max-width: 600px; }
-    #portfolio .portfolio-item-foodora .portfolio-item-notebook .portfolio-item-img-preview {
-      top: 42.2%; }
-  #portfolio .portfolio-item-foodora .portfolio-item-mobile {
-    position: absolute;
-    top: 60%;
-    left: 14%;
-    width: 10%;
-    max-width: 111px; }
-    #portfolio .portfolio-item-foodora .portfolio-item-mobile .portfolio-item-img-preview {
-      top: 45.5%; }
+    left: 50%;
+    top: 15rem;
+    text-align: center;
+    width: 30%; }
   #portfolio .portfolio-item-bk .portfolio-item-desktop {
     position: absolute;
     top: 13%;
@@ -5037,7 +5008,7 @@ h3, .h3 {
   #portfolio .portfolio-item-bk .portfolio-item-tablet {
     position: absolute;
     top: 44%;
-    left: 6%;
+    left: 11.5%;
     width: 50%;
     max-width: 263px; }
     #portfolio .portfolio-item-bk .portfolio-item-tablet .portfolio-item-img-preview {
@@ -5053,23 +5024,55 @@ h3, .h3 {
   #portfolio .portfolio-item-bk .portfolio-item-mobile {
     position: absolute;
     top: 60%;
-    left: 2%;
+    left: 6%;
     width: 10%;
     max-width: 111px; }
     #portfolio .portfolio-item-bk .portfolio-item-mobile .portfolio-item-img-preview {
       top: 45.5%; }
-  #portfolio .portfolio-item-vendomo-crm .portfolio-item-desktop {
+  #portfolio .portfolio-item-vendomo .portfolio-item-desktop {
     position: absolute;
     top: 13%;
-    left: 15%;
+    left: 23%;
+    width: 60%;
+    max-width: 796px; }
+    #portfolio .portfolio-item-vendomo .portfolio-item-desktop .portfolio-item-img-preview {
+      top: 36.4%; }
+  #portfolio .portfolio-item-vendomo .portfolio-item-tablet {
+    position: absolute;
+    top: 44%;
+    left: 66%;
+    width: 50%;
+    max-width: 263px; }
+    #portfolio .portfolio-item-vendomo .portfolio-item-tablet .portfolio-item-img-preview {
+      top: 44.5%; }
+  #portfolio .portfolio-item-vendomo .portfolio-item-notebook {
+    position: absolute;
+    top: 44.6%;
+    left: 0;
+    width: 50%;
+    max-width: 600px; }
+    #portfolio .portfolio-item-vendomo .portfolio-item-notebook .portfolio-item-img-preview {
+      top: 42.2%; }
+  #portfolio .portfolio-item-vendomo .portfolio-item-mobile {
+    position: absolute;
+    top: 60%;
+    left: 82%;
+    width: 10%;
+    max-width: 111px; }
+    #portfolio .portfolio-item-vendomo .portfolio-item-mobile .portfolio-item-img-preview {
+      top: 45.5%; }
+  #portfolio .portfolio-item-vendomo-crm .portfolio-item-desktop {
+    position: absolute;
+    top: 14%;
+    left: 8%;
     width: 60%;
     max-width: 796px; }
     #portfolio .portfolio-item-vendomo-crm .portfolio-item-desktop .portfolio-item-img-preview {
       top: 36.4%; }
   #portfolio .portfolio-item-vendomo-crm .portfolio-item-tablet {
     position: absolute;
-    top: 44%;
-    left: 6%;
+    top: 49%;
+    left: 22%;
     width: 50%;
     max-width: 263px; }
     #portfolio .portfolio-item-vendomo-crm .portfolio-item-tablet .portfolio-item-img-preview {
@@ -5077,71 +5080,163 @@ h3, .h3 {
   #portfolio .portfolio-item-vendomo-crm .portfolio-item-notebook {
     position: absolute;
     top: 44.6%;
-    left: 52%;
+    left: 49%;
     width: 50%;
     max-width: 600px; }
     #portfolio .portfolio-item-vendomo-crm .portfolio-item-notebook .portfolio-item-img-preview {
       top: 42.2%; }
   #portfolio .portfolio-item-vendomo-crm .portfolio-item-mobile {
     position: absolute;
-    top: 60%;
-    left: 2%;
+    top: 55%;
+    left: 13%;
     width: 10%;
     max-width: 111px; }
     #portfolio .portfolio-item-vendomo-crm .portfolio-item-mobile .portfolio-item-img-preview {
       top: 45.5%; }
+  #portfolio .portfolio-item-foodora .portfolio-item-desktop {
+    position: absolute;
+    top: 13%;
+    left: 25%;
+    width: 60%;
+    max-width: 796px; }
+    #portfolio .portfolio-item-foodora .portfolio-item-desktop .portfolio-item-img-preview {
+      top: 36.4%; }
+  #portfolio .portfolio-item-foodora .portfolio-item-tablet {
+    position: absolute;
+    top: 44%;
+    left: 72%;
+    width: 50%;
+    max-width: 263px; }
+    #portfolio .portfolio-item-foodora .portfolio-item-tablet .portfolio-item-img-preview {
+      top: 44.5%; }
+  #portfolio .portfolio-item-foodora .portfolio-item-notebook {
+    position: absolute;
+    top: 48.6%;
+    left: 3%;
+    width: 50%;
+    max-width: 600px; }
+    #portfolio .portfolio-item-foodora .portfolio-item-notebook .portfolio-item-img-preview {
+      top: 42.2%; }
+  #portfolio .portfolio-item-foodora .portfolio-item-mobile {
+    position: absolute;
+    top: 55.2%;
+    left: 62.8%;
+    width: 10%;
+    max-width: 111px; }
+    #portfolio .portfolio-item-foodora .portfolio-item-mobile .portfolio-item-img-preview {
+      top: 45.5%; }
   #portfolio .portfolio-item-timvision .portfolio-item-tv1 {
     position: absolute;
-    top: 17%;
-    left: 3%;
-    width: 53%;
-    max-width: 760px; }
+    top: 16%;
+    left: 1%;
+    width: 55.9%;
+    max-width: 800px; }
     #portfolio .portfolio-item-timvision .portfolio-item-tv1 .portfolio-item-img-preview {
       top: 42.4%; }
   #portfolio .portfolio-item-timvision .portfolio-item-tv2 {
     position: absolute;
     top: 32%;
     left: 37%;
-    width: 53%;
-    max-width: 760px; }
+    width: 55.9%;
+    max-width: 800px; }
     #portfolio .portfolio-item-timvision .portfolio-item-tv2 .portfolio-item-img-preview {
       top: 42.4%; }
   #portfolio .portfolio-item-cubomusica .portfolio-item-tv1 {
     position: absolute;
-    top: 17%;
-    left: 3%;
-    width: 53%;
-    max-width: 760px; }
+    top: 16%;
+    left: 1%;
+    width: 55.9%;
+    max-width: 800px; }
     #portfolio .portfolio-item-cubomusica .portfolio-item-tv1 .portfolio-item-img-preview {
       top: 42.4%; }
   #portfolio .portfolio-item-cubomusica .portfolio-item-tv2 {
     position: absolute;
     top: 32%;
     left: 37%;
-    width: 53%;
-    max-width: 760px; }
+    width: 55.9%;
+    max-width: 800px; }
     #portfolio .portfolio-item-cubomusica .portfolio-item-tv2 .portfolio-item-img-preview {
       top: 42.4%; }
-
-#portfolio .portfolio-item-vendomo-crm, #portfolio .portfolio-item-vendomo, #portfolio .portfolio-item-foodora, #portfolio .portfolio-item-bk, #portfolio .portfolio-item-timvision, #portfolio .portfolio-item-cubomusica {
-  height: 100vh;
-  display: flex;
-  margin-bottom: 0; }
-
-.portfolio-item-title {
-  position: absolute;
-  left: 50%;
-  top: 12rem;
-  font-size: 2.8rem;
-  text-align: center;
-  width: 30%; }
-
-.portfolio-item-subtitle {
-  position: absolute;
-  left: 50%;
-  top: 15rem;
-  text-align: center;
-  width: 30%; }
+  #portfolio .portfolio-item-unicri .portfolio-item-notebook-ande {
+    position: absolute;
+    top: 18%;
+    left: -2%;
+    width: 50%;
+    max-width: 600px; }
+    #portfolio .portfolio-item-unicri .portfolio-item-notebook-ande .portfolio-item-img-preview {
+      top: 42.2%; }
+  #portfolio .portfolio-item-unicri .portfolio-item-notebook-eusec {
+    position: absolute;
+    top: 18%;
+    left: 56%;
+    width: 50%;
+    max-width: 600px; }
+    #portfolio .portfolio-item-unicri .portfolio-item-notebook-eusec .portfolio-item-img-preview {
+      top: 42.2%; }
+  #portfolio .portfolio-item-unicri .portfolio-item-notebook-cbrn {
+    position: absolute;
+    top: 31%;
+    left: 9%;
+    width: 50%;
+    max-width: 600px; }
+    #portfolio .portfolio-item-unicri .portfolio-item-notebook-cbrn .portfolio-item-img-preview {
+      top: 42.2%; }
+  #portfolio .portfolio-item-unicri .portfolio-item-notebook-ipo {
+    position: absolute;
+    top: 31%;
+    left: 45%;
+    width: 50%;
+    max-width: 600px; }
+    #portfolio .portfolio-item-unicri .portfolio-item-notebook-ipo .portfolio-item-img-preview {
+      top: 42.2%; }
+  #portfolio .portfolio-item-unicri .portfolio-item-notebook-lab {
+    position: absolute;
+    top: 44%;
+    left: 27%;
+    width: 50%;
+    max-width: 600px; }
+    #portfolio .portfolio-item-unicri .portfolio-item-notebook-lab .portfolio-item-img-preview {
+      top: 42.2%; }
+  #portfolio .portfolio-item-others .portfolio-item-notebook-school {
+    position: absolute;
+    top: 18%;
+    left: -2%;
+    width: 50%;
+    max-width: 600px; }
+    #portfolio .portfolio-item-others .portfolio-item-notebook-school .portfolio-item-img-preview {
+      top: 42.2%; }
+  #portfolio .portfolio-item-others .portfolio-item-notebook-davide {
+    position: absolute;
+    top: 18%;
+    left: 56%;
+    width: 50%;
+    max-width: 600px; }
+    #portfolio .portfolio-item-others .portfolio-item-notebook-davide .portfolio-item-img-preview {
+      top: 42.2%; }
+  #portfolio .portfolio-item-others .portfolio-item-notebook-acqua {
+    position: absolute;
+    top: 44%;
+    left: 27%;
+    width: 50%;
+    max-width: 600px; }
+    #portfolio .portfolio-item-others .portfolio-item-notebook-acqua .portfolio-item-img-preview {
+      top: 42.2%; }
+  #portfolio .portfolio-item-others .portfolio-item-notebook-milena {
+    position: absolute;
+    top: 31%;
+    left: 9%;
+    width: 50%;
+    max-width: 600px; }
+    #portfolio .portfolio-item-others .portfolio-item-notebook-milena .portfolio-item-img-preview {
+      top: 42.2%; }
+  #portfolio .portfolio-item-others .portfolio-item-notebook-pandora {
+    position: absolute;
+    top: 31%;
+    left: 45%;
+    width: 50%;
+    max-width: 600px; }
+    #portfolio .portfolio-item-others .portfolio-item-notebook-pandora .portfolio-item-img-preview {
+      top: 42.2%; }
 
 #experience .article-title-wrapper {
   width: 25%; }
@@ -5181,7 +5276,7 @@ h3, .h3 {
       color: rgba(0, 0, 0, 0.3); }
 
 #contact {
-  background-color: #F3F3F3; }
+  background-color: #FFF; }
   #contact .section-header {
     width: 25%;
     position: relative; }
@@ -5373,26 +5468,5 @@ h3, .h3 {
   .side-bar__nav__button--code {
     top: 367px;
     left: 9px; } }
-
-@keyframes rotating {
-  from {
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  to {
-    -ms-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg); } }
-
-.rotating {
-  -webkit-animation: rotating 2s linear infinite;
-  -moz-animation: rotating 2s linear infinite;
-  -ms-animation: rotating 2s linear infinite;
-  -o-animation: rotating 2s linear infinite;
-  animation: rotating 2s linear infinite; }
 
 /*# sourceMappingURL=maps/main.css.map */
