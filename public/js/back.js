@@ -105,20 +105,25 @@ function onScrollMainContainer (scrollTop, windowHeight, scrollPoints) {
 
     if (scrollTop < scrollPoints.skills) {
         newAlphaValue = scrollTop / windowHeight;
-        newAlphaValue = newAlphaValue < .3 ? .3 : newAlphaValue;
-        newAlphaValue = newAlphaValue > .7 ? .7 : newAlphaValue;
+        newAlphaValue = newAlphaValue < .2 ? .2 : newAlphaValue;
+        newAlphaValue = newAlphaValue > .75 ? .75 : newAlphaValue;
         $main.css('background-color', 'hsla(0,10%,100%,' + newAlphaValue + ')');
     } else if (scrollTop < scrollPoints.projectsEnd) {
-        $main.css('background-color', 'hsla(0,10%,100%,0.7)');
+        $main.css('background-color', 'hsla(0,10%,100%,0.75)');
     } else if (scrollTop > scrollPoints.projectsEnd && scrollTop < scrollPoints.experience) {
-        newAlphaValue = (scrollTop - scrollPoints.projectsEnd) / (scrollPoints.experience - scrollPoints.projectsEnd);
-        newAlphaValue = newAlphaValue < .7 ? .7 : newAlphaValue;
-        newAlphaValue = newAlphaValue > 1 ? 1 : newAlphaValue;
-        $main.css('background-color', 'hsla(0,10%,100%,' + newAlphaValue + ')');
+        $main.css('background-color', 'hsla(0,10%,100%,0.75)');
+        //newAlphaValue = (scrollTop - scrollPoints.projectsEnd) / (scrollPoints.experience - scrollPoints.projectsEnd);
+        //newAlphaValue = newAlphaValue < .7 ? .7 : newAlphaValue;
+        //newAlphaValue = newAlphaValue > 1 ? 1 : newAlphaValue;
+        //$main.css('background-color', 'hsla(0,10%,100%,' + newAlphaValue + ')');
     } else if (scrollTop < scrollPoints.outro) {
-        $main.css('background-color', 'hsla(0,10%,100%,1)');
+        $main.css('background-color', 'hsla(0,10%,100%,0.75)');
+        //$main.css('background-color', 'hsla(0,10%,100%,1)');
     } else {
-        $main.css('background-color', 'hsla(0,10%,10%,0)');
+        newAlphaValue = 1 - (scrollTop - scrollPoints.outro) / windowHeight;
+        newAlphaValue = newAlphaValue < 0.2 ? 0.2 : newAlphaValue;
+        newAlphaValue = newAlphaValue > .75 ? .75 : newAlphaValue;
+        $main.css('background-color', 'hsla(0,10%,100%,' + newAlphaValue + ')');
     }
 }
 

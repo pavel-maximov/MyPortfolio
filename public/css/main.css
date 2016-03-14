@@ -4841,7 +4841,10 @@ h3, .h3 {
   font-size: 1.6rem;
   line-height: 1.2; }
 
-#intro, #skills, #portfolio, #experience, #about, #contact, #outro {
+.separator {
+  color: #CCC; }
+
+#intro, #skills, #portfolio, #experience, #contact, #about, #outro {
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -4856,20 +4859,13 @@ h3, .h3 {
   text-align: center; }
 
 .section-header-title {
-  margin-top: 2.5rem; }
+  margin-top: 3rem; }
 
 .section-header-secondary-title {
-  font-family: "she-always-walks-alone", serif;
-  font-size: 2.4rem;
-  line-height: 1;
-  display: block; }
-
-.section-header-secondary-sub-title {
-  font-family: "worksans-light", sans-serif;
-  font-size: 1.6rem;
+  font-family: "worksans-thin", sans-serif;
+  font-size: 2.1rem;
   line-height: 1.2;
-  display: block;
-  margin-bottom: 2rem; }
+  display: block; }
 
 .article-footer {
   text-align: center; }
@@ -4893,7 +4889,8 @@ h3, .h3 {
 
 .section-header-img-wrapper {
   width: 100%;
-  max-width: 300px; }
+  max-width: 300px;
+  margin-bottom: 2rem; }
 
 .article-nav {
   margin-bottom: 1rem;
@@ -4906,9 +4903,10 @@ h3, .h3 {
 
 #intro .section-header-sub-title {
   font-family: "worksans-thin", sans-serif;
-  font-size: 3rem;
+  font-size: 4.5rem;
   line-height: 1.2;
-  margin-bottom: 3rem; }
+  margin-bottom: 1.8rem;
+  margin-top: 0; }
 
 #intro .article-video {
   position: fixed;
@@ -4953,7 +4951,7 @@ h3, .h3 {
     #skills .article-content-wrapper p span {
       color: rgba(0, 0, 0, 0.3); }
 
-#portfolio .portfolio-item-bk .portfolio-item-desktop .portfolio-item-img-preview, #portfolio .portfolio-item-bk .portfolio-item-tablet .portfolio-item-img-preview, #portfolio .portfolio-item-bk .portfolio-item-notebook .portfolio-item-img-preview, #portfolio .portfolio-item-bk .portfolio-item-mobile .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo .portfolio-item-desktop .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo .portfolio-item-tablet .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo .portfolio-item-notebook .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo .portfolio-item-mobile .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo-crm .portfolio-item-desktop .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo-crm .portfolio-item-tablet .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo-crm .portfolio-item-notebook .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo-crm .portfolio-item-mobile .portfolio-item-img-preview, #portfolio .portfolio-item-foodora .portfolio-item-desktop .portfolio-item-img-preview, #portfolio .portfolio-item-foodora .portfolio-item-tablet .portfolio-item-img-preview, #portfolio .portfolio-item-foodora .portfolio-item-notebook .portfolio-item-img-preview, #portfolio .portfolio-item-foodora .portfolio-item-mobile .portfolio-item-img-preview, #portfolio .portfolio-item-timvision .portfolio-item-tv1 .portfolio-item-img-preview, #portfolio .portfolio-item-timvision .portfolio-item-tv2 .portfolio-item-img-preview, #portfolio .portfolio-item-cubomusica .portfolio-item-tv1 .portfolio-item-img-preview, #portfolio .portfolio-item-cubomusica .portfolio-item-tv2 .portfolio-item-img-preview, #portfolio .portfolio-item-unicri .portfolio-item-notebook-ande .portfolio-item-img-preview, #portfolio .portfolio-item-unicri .portfolio-item-notebook-eusec .portfolio-item-img-preview, #portfolio .portfolio-item-unicri .portfolio-item-notebook-cbrn .portfolio-item-img-preview, #portfolio .portfolio-item-unicri .portfolio-item-notebook-ipo .portfolio-item-img-preview, #portfolio .portfolio-item-unicri .portfolio-item-notebook-lab .portfolio-item-img-preview, #portfolio .portfolio-item-others .portfolio-item-notebook-school .portfolio-item-img-preview, #portfolio .portfolio-item-others .portfolio-item-notebook-davide .portfolio-item-img-preview, #portfolio .portfolio-item-others .portfolio-item-notebook-acqua .portfolio-item-img-preview, #portfolio .portfolio-item-others .portfolio-item-notebook-milena .portfolio-item-img-preview, #portfolio .portfolio-item-others .portfolio-item-notebook-pandora .portfolio-item-img-preview {
+#portfolio .portfolio-item-bk .portfolio-item-desktop .portfolio-item-img-preview, #portfolio .portfolio-item-bk .portfolio-item-tablet .portfolio-item-img-preview, #portfolio .portfolio-item-bk .portfolio-item-notebook .portfolio-item-img-preview, #portfolio .portfolio-item-bk .portfolio-item-mobile .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo .portfolio-item-desktop .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo .portfolio-item-tablet .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo .portfolio-item-notebook .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo .portfolio-item-mobile .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo-crm .portfolio-item-desktop .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo-crm .portfolio-item-tablet .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo-crm .portfolio-item-notebook .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo-crm .portfolio-item-mobile .portfolio-item-img-preview, #portfolio .portfolio-item-foodora .portfolio-item-desktop .portfolio-item-img-preview, #portfolio .portfolio-item-foodora .portfolio-item-tablet .portfolio-item-img-preview, #portfolio .portfolio-item-foodora .portfolio-item-notebook .portfolio-item-img-preview, #portfolio .portfolio-item-foodora .portfolio-item-mobile .portfolio-item-img-preview, #portfolio .portfolio-item-timvision .portfolio-item-tv1 .portfolio-item-img-preview, #portfolio .portfolio-item-timvision .portfolio-item-tv2 .portfolio-item-img-preview, #portfolio .portfolio-item-cubomusica .portfolio-item-tv1 .portfolio-item-img-preview, #portfolio .portfolio-item-cubomusica .portfolio-item-tv2 .portfolio-item-img-preview, #portfolio .portfolio-item-unicri .portfolio-item-notebook-ande .portfolio-item-img-preview, #portfolio .portfolio-item-unicri .portfolio-item-notebook-eusec .portfolio-item-img-preview, #portfolio .portfolio-item-unicri .portfolio-item-notebook-cbrn .portfolio-item-img-preview, #portfolio .portfolio-item-unicri .portfolio-item-notebook-ipo .portfolio-item-img-preview, #portfolio .portfolio-item-unicri .portfolio-item-notebook-lab .portfolio-item-img-preview, #portfolio .portfolio-item-others .portfolio-item-notebook-school .portfolio-item-img-preview, #portfolio .portfolio-item-others .portfolio-item-notebook-davide .portfolio-item-img-preview, #portfolio .portfolio-item-others .portfolio-item-notebook-milena .portfolio-item-img-preview, #portfolio .portfolio-item-others .portfolio-item-notebook-pandora .portfolio-item-img-preview, #portfolio .portfolio-item-others .portfolio-item-notebook-acqua .portfolio-item-img-preview {
   position: absolute;
   left: 50%;
   transform: translateX(-50%) translateY(-50%); }
@@ -4984,19 +4982,63 @@ h3, .h3 {
     height: 100vh;
     display: flex;
     margin-bottom: 0; }
+  #portfolio .portfolio-item-title-wrapper {
+    text-align: center;
+    position: absolute;
+    max-width: 241px;
+    background-image: url("/img/portfolio/frame.png");
+    width: 31%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 320px;
+    padding: 3.7rem 3rem; }
+  #portfolio .portfolio-item-title-img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0; }
   #portfolio .portfolio-item-title {
-    position: absolute;
-    left: 50%;
-    top: 12rem;
-    font-size: 2.8rem;
-    text-align: center;
-    width: 30%; }
+    font-family: "worksans-thin", sans-serif;
+    font-size: 2.4rem;
+    margin: 0 0 0.3rem 0; }
   #portfolio .portfolio-item-subtitle {
-    position: absolute;
-    left: 50%;
-    top: 15rem;
+    font-size: 1.8rem; }
+  #portfolio .portfolio-item-subtitle-employer {
+    font-size: 1.4rem;
+    margin: 3rem 0 0; }
+  #portfolio .portfolio-item-subtitle,
+  #portfolio .portfolio-item-content-employer,
+  #portfolio .portfolio-item-content-contribution {
+    margin: 0;
+    font-size: 1.6rem;
+    font-family: "worksans-thin", sans-serif;
+    line-height: 1.3; }
+  #portfolio .portfolio-item-subtitle-contribution {
+    margin: 1rem 0 0;
+    font-size: 1.4rem; }
+  #portfolio .portfolio-item-title-wrapper-horizontal {
     text-align: center;
-    width: 30%; }
+    position: absolute;
+    max-width: 320px;
+    width: 61%;
+    background-image: url("/img/portfolio/frame-horizontal.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 241px;
+    padding: 3.5rem 4rem; }
+    #portfolio .portfolio-item-title-wrapper-horizontal .portfolio-item-title {
+      margin: 0; }
+    #portfolio .portfolio-item-title-wrapper-horizontal .portfolio-item-subtitle-contribution {
+      margin: 0.5rem 0 0; }
+    #portfolio .portfolio-item-title-wrapper-horizontal .portfolio-item-subtitle-employer {
+      margin: 0.5rem 0 0; }
+  #portfolio .project-type-label {
+    font-family: "worksans-thin", sans-serif;
+    font-size: 1.6rem;
+    position: absolute;
+    top: -2.4rem;
+    left: 4.2%; }
   #portfolio .portfolio-item-bk .portfolio-item-desktop {
     position: absolute;
     top: 13%;
@@ -5029,6 +5071,9 @@ h3, .h3 {
     max-width: 111px; }
     #portfolio .portfolio-item-bk .portfolio-item-mobile .portfolio-item-img-preview {
       top: 45.5%; }
+  #portfolio .portfolio-item-bk .portfolio-item-title-wrapper {
+    left: 72.8%;
+    top: 7.5%; }
   #portfolio .portfolio-item-vendomo .portfolio-item-desktop {
     position: absolute;
     top: 13%;
@@ -5061,9 +5106,14 @@ h3, .h3 {
     max-width: 111px; }
     #portfolio .portfolio-item-vendomo .portfolio-item-mobile .portfolio-item-img-preview {
       top: 45.5%; }
+  #portfolio .portfolio-item-vendomo .portfolio-item-title-wrapper {
+    left: 3%;
+    top: 7%; }
+  #portfolio .portfolio-item-vendomo .portfolio-item-subtitle-employer {
+    margin: 3rem 0 0; }
   #portfolio .portfolio-item-vendomo-crm .portfolio-item-desktop {
     position: absolute;
-    top: 14%;
+    top: 13%;
     left: 8%;
     width: 60%;
     max-width: 796px; }
@@ -5071,7 +5121,7 @@ h3, .h3 {
       top: 36.4%; }
   #portfolio .portfolio-item-vendomo-crm .portfolio-item-tablet {
     position: absolute;
-    top: 49%;
+    top: 50%;
     left: 22%;
     width: 50%;
     max-width: 263px; }
@@ -5087,12 +5137,17 @@ h3, .h3 {
       top: 42.2%; }
   #portfolio .portfolio-item-vendomo-crm .portfolio-item-mobile {
     position: absolute;
-    top: 55%;
+    top: 55.2%;
     left: 13%;
     width: 10%;
     max-width: 111px; }
     #portfolio .portfolio-item-vendomo-crm .portfolio-item-mobile .portfolio-item-img-preview {
       top: 45.5%; }
+  #portfolio .portfolio-item-vendomo-crm .portfolio-item-title-wrapper {
+    left: 66%;
+    top: 7%; }
+  #portfolio .portfolio-item-vendomo-crm .portfolio-item-subtitle-employer {
+    margin: 2rem 0 0; }
   #portfolio .portfolio-item-foodora .portfolio-item-desktop {
     position: absolute;
     top: 13%;
@@ -5125,9 +5180,14 @@ h3, .h3 {
     max-width: 111px; }
     #portfolio .portfolio-item-foodora .portfolio-item-mobile .portfolio-item-img-preview {
       top: 45.5%; }
+  #portfolio .portfolio-item-foodora .portfolio-item-title-wrapper {
+    left: 5%;
+    top: 11%; }
+  #portfolio .portfolio-item-foodora .portfolio-item-subtitle-employer {
+    margin: 3rem 0 0; }
   #portfolio .portfolio-item-timvision .portfolio-item-tv1 {
     position: absolute;
-    top: 16%;
+    top: 18%;
     left: 1%;
     width: 55.9%;
     max-width: 800px; }
@@ -5135,15 +5195,20 @@ h3, .h3 {
       top: 42.4%; }
   #portfolio .portfolio-item-timvision .portfolio-item-tv2 {
     position: absolute;
-    top: 32%;
+    top: 34%;
     left: 37%;
     width: 55.9%;
     max-width: 800px; }
     #portfolio .portfolio-item-timvision .portfolio-item-tv2 .portfolio-item-img-preview {
       top: 42.4%; }
+  #portfolio .portfolio-item-timvision .portfolio-item-title-wrapper-horizontal {
+    left: 60%;
+    top: 5.5%; }
+  #portfolio .portfolio-item-timvision .project-type-label {
+    left: 1.6%; }
   #portfolio .portfolio-item-cubomusica .portfolio-item-tv1 {
     position: absolute;
-    top: 16%;
+    top: 18%;
     left: 1%;
     width: 55.9%;
     max-width: 800px; }
@@ -5151,98 +5216,159 @@ h3, .h3 {
       top: 42.4%; }
   #portfolio .portfolio-item-cubomusica .portfolio-item-tv2 {
     position: absolute;
-    top: 32%;
+    top: 34%;
     left: 37%;
     width: 55.9%;
     max-width: 800px; }
     #portfolio .portfolio-item-cubomusica .portfolio-item-tv2 .portfolio-item-img-preview {
       top: 42.4%; }
+  #portfolio .portfolio-item-cubomusica .portfolio-item-title-wrapper-horizontal {
+    left: 60%;
+    top: 5.5%; }
+  #portfolio .portfolio-item-cubomusica .project-type-label {
+    left: 1.6%; }
+  #portfolio .portfolio-item-unicri .project-type-label {
+    top: -2.2rem; }
   #portfolio .portfolio-item-unicri .portfolio-item-notebook-ande {
     position: absolute;
-    top: 18%;
+    top: 25%;
     left: -2%;
     width: 50%;
     max-width: 600px; }
     #portfolio .portfolio-item-unicri .portfolio-item-notebook-ande .portfolio-item-img-preview {
       top: 42.2%; }
+    #portfolio .portfolio-item-unicri .portfolio-item-notebook-ande .project-type-label {
+      left: auto;
+      right: 12.8%; }
   #portfolio .portfolio-item-unicri .portfolio-item-notebook-eusec {
     position: absolute;
-    top: 18%;
+    top: 25%;
     left: 56%;
     width: 50%;
     max-width: 600px; }
     #portfolio .portfolio-item-unicri .portfolio-item-notebook-eusec .portfolio-item-img-preview {
       top: 42.2%; }
+    #portfolio .portfolio-item-unicri .portfolio-item-notebook-eusec .project-type-label {
+      left: 12.8%; }
   #portfolio .portfolio-item-unicri .portfolio-item-notebook-cbrn {
     position: absolute;
-    top: 31%;
+    top: 38%;
     left: 9%;
     width: 50%;
     max-width: 600px; }
     #portfolio .portfolio-item-unicri .portfolio-item-notebook-cbrn .portfolio-item-img-preview {
       top: 42.2%; }
+    #portfolio .portfolio-item-unicri .portfolio-item-notebook-cbrn .project-type-label {
+      left: auto;
+      right: 12.8%; }
   #portfolio .portfolio-item-unicri .portfolio-item-notebook-ipo {
     position: absolute;
-    top: 31%;
+    top: 38%;
     left: 45%;
     width: 50%;
     max-width: 600px; }
     #portfolio .portfolio-item-unicri .portfolio-item-notebook-ipo .portfolio-item-img-preview {
       top: 42.2%; }
+    #portfolio .portfolio-item-unicri .portfolio-item-notebook-ipo .project-type-label {
+      left: 12.8%; }
   #portfolio .portfolio-item-unicri .portfolio-item-notebook-lab {
     position: absolute;
-    top: 44%;
+    top: 51%;
     left: 27%;
     width: 50%;
     max-width: 600px; }
     #portfolio .portfolio-item-unicri .portfolio-item-notebook-lab .portfolio-item-img-preview {
       top: 42.2%; }
+    #portfolio .portfolio-item-unicri .portfolio-item-notebook-lab .project-type-label {
+      left: 50%;
+      bottom: -1rem;
+      top: auto;
+      transform: translateX(-50%); }
+  #portfolio .portfolio-item-unicri .portfolio-item-title-wrapper {
+    left: 65%;
+    top: 8%; }
+  #portfolio .portfolio-item-unicri .portfolio-item-title-wrapper-horizontal {
+    left: 36.7%;
+    top: 7%; }
+  #portfolio .portfolio-item-unicri .portfolio-item-subtitle-employer {
+    margin-top: 0.5rem; }
+  #portfolio .portfolio-item-unicri .portfolio-item-title {
+    margin-top: 0.5rem; }
   #portfolio .portfolio-item-others .portfolio-item-notebook-school {
     position: absolute;
-    top: 18%;
+    top: 25%;
     left: -2%;
     width: 50%;
     max-width: 600px; }
     #portfolio .portfolio-item-others .portfolio-item-notebook-school .portfolio-item-img-preview {
       top: 42.2%; }
+    #portfolio .portfolio-item-others .portfolio-item-notebook-school .project-type-label {
+      left: auto;
+      right: 12.8%; }
   #portfolio .portfolio-item-others .portfolio-item-notebook-davide {
     position: absolute;
-    top: 18%;
+    top: 25%;
     left: 56%;
     width: 50%;
     max-width: 600px; }
     #portfolio .portfolio-item-others .portfolio-item-notebook-davide .portfolio-item-img-preview {
       top: 42.2%; }
-  #portfolio .portfolio-item-others .portfolio-item-notebook-acqua {
-    position: absolute;
-    top: 44%;
-    left: 27%;
-    width: 50%;
-    max-width: 600px; }
-    #portfolio .portfolio-item-others .portfolio-item-notebook-acqua .portfolio-item-img-preview {
-      top: 42.2%; }
+    #portfolio .portfolio-item-others .portfolio-item-notebook-davide .project-type-label {
+      left: 12.8%; }
   #portfolio .portfolio-item-others .portfolio-item-notebook-milena {
     position: absolute;
-    top: 31%;
+    top: 38%;
     left: 9%;
     width: 50%;
     max-width: 600px; }
     #portfolio .portfolio-item-others .portfolio-item-notebook-milena .portfolio-item-img-preview {
       top: 42.2%; }
+    #portfolio .portfolio-item-others .portfolio-item-notebook-milena .project-type-label {
+      left: auto;
+      right: 12.8%; }
   #portfolio .portfolio-item-others .portfolio-item-notebook-pandora {
     position: absolute;
-    top: 31%;
+    top: 38%;
     left: 45%;
     width: 50%;
     max-width: 600px; }
     #portfolio .portfolio-item-others .portfolio-item-notebook-pandora .portfolio-item-img-preview {
       top: 42.2%; }
+    #portfolio .portfolio-item-others .portfolio-item-notebook-pandora .project-type-label {
+      left: 12.8%; }
+  #portfolio .portfolio-item-others .portfolio-item-notebook-acqua {
+    position: absolute;
+    top: 51%;
+    left: 27%;
+    width: 50%;
+    max-width: 600px; }
+    #portfolio .portfolio-item-others .portfolio-item-notebook-acqua .portfolio-item-img-preview {
+      top: 42.2%; }
+    #portfolio .portfolio-item-others .portfolio-item-notebook-acqua .project-type-label {
+      left: 50%;
+      bottom: -1rem;
+      top: auto;
+      transform: translateX(-50%); }
+  #portfolio .portfolio-item-others .portfolio-item-title-wrapper {
+    left: 65%;
+    top: 8%; }
+  #portfolio .portfolio-item-others .portfolio-item-title-wrapper-horizontal {
+    left: 36.7%;
+    top: 7%; }
+  #portfolio .portfolio-item-others .portfolio-item-subtitle-employer {
+    margin-top: 1rem; }
+  #portfolio .portfolio-item-others .portfolio-item-title {
+    margin-top: 0.5rem; }
 
 #experience .article-title-wrapper {
   width: 25%; }
   #experience .article-title-wrapper .section-header-img-wrapper {
     width: 70%;
     max-width: 300px; }
+
+#experience .section-header-img {
+  position: relative;
+  left: -14%; }
 
 #experience .article-body {
   height: 85%; }
@@ -5256,11 +5382,32 @@ h3, .h3 {
     #experience .article-content-wrapper p span {
       color: rgba(0, 0, 0, 0.3); }
 
-#about .article-title-wrapper {
-  width: 25%; }
-  #about .article-title-wrapper .section-header-img-wrapper {
+#contact .section-header {
+  width: 25%;
+  position: relative; }
+  #contact .section-header .section-header-img-wrapper {
+    width: 74%;
+    max-width: 350px; }
+
+#contact .article-body {
+  height: 85%; }
+
+#contact .article-content-wrapper {
+  width: 75%;
+  overflow-y: scroll;
+  max-height: 100%; }
+  #contact .article-content-wrapper p {
+    margin-bottom: 0;
+    text-align: center; }
+    #contact .article-content-wrapper p span {
+      color: rgba(0, 0, 0, 0.3); }
+
+#about .section-header {
+  width: 25%;
+  position: relative; }
+  #about .section-header .section-header-img-wrapper {
     width: 70%;
-    max-width: 300px; }
+    max-width: 190px; }
 
 #about .article-body {
   height: 85%; }
@@ -5275,47 +5422,25 @@ h3, .h3 {
     #about .article-content-wrapper p span {
       color: rgba(0, 0, 0, 0.3); }
 
-#contact {
-  background-color: #FFF; }
-  #contact .section-header {
-    width: 25%;
-    position: relative; }
-    #contact .section-header .section-header-img-wrapper {
-      width: 70%;
-      max-width: 350px; }
-  #contact .article-body {
-    height: 85%; }
-  #contact .article-content-wrapper {
-    width: 75%;
-    overflow-y: scroll;
-    max-height: 100%; }
-    #contact .article-content-wrapper p {
-      margin-bottom: 0;
-      text-align: center; }
-      #contact .article-content-wrapper p span {
-        color: rgba(0, 0, 0, 0.3); }
-
-#outro .section-header {
-  margin-top: auto; }
-
-#outro .article-footer {
-  margin-top: auto; }
-
-#outro .article-title-wrapper {
-  width: 27%; }
-
 #outro .section-header-img-wrapper {
-  max-width: 360px;
-  margin-bottom: 2rem; }
+  max-width: 350px;
+  margin-bottom: 3rem; }
+
+#outro .section-header-img {
+  position: relative;
+  left: 5%; }
 
 #outro .section-header-secondary-title {
-  font-size: 4.6rem;
-  line-height: 1.2; }
+  font-size: 3rem; }
+
+#outro .section-header-nav {
+  margin-top: 3rem; }
 
 #outro .section-header-sub-title {
   font-family: "worksans-thin", sans-serif;
-  font-size: 3rem;
-  line-height: 1.2; }
+  font-size: 4.5rem;
+  line-height: 1.2;
+  margin-bottom: 1.8rem; }
 
 #outro .article-video {
   position: fixed;
@@ -5325,7 +5450,7 @@ h3, .h3 {
   min-height: 100%;
   width: auto;
   height: auto;
-  z-index: -2;
+  z-index: -1;
   transform: translateY(-50%) translateX(-50%);
   background-size: cover; }
 
@@ -5342,20 +5467,24 @@ h3, .h3 {
 
 .footer__nav__button {
   border: 0;
-  padding: 5px 10px;
+  padding: 3px 7px;
   background: transparent;
   color: #000;
-  cursor: pointer; }
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-transform: uppercase; }
   .footer__nav__button:hover, .footer__nav__button.hover, .footer__nav__button:focus, .footer__nav__button.focus, .footer__nav__button:active, .footer__nav__button.active, .footer__nav__button:active {
     color: #8a2e3f;
     outline: 0; }
 
 .article-header__nav__button {
   border: 0;
-  padding: 5px 10px;
+  padding: 3px 7px;
   background: transparent;
   color: #000;
-  cursor: pointer; }
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-transform: uppercase; }
   .article-header__nav__button:hover, .article-header__nav__button.hover, .article-header__nav__button:focus, .article-header__nav__button.focus, .article-header__nav__button:active, .article-header__nav__button.active, .article-header__nav__button:active {
     color: #8a2e3f;
     outline: 0; }
@@ -5401,10 +5530,12 @@ h3, .h3 {
 .side-bar__nav__button--portfolio, .side-bar__nav__button--skills, .side-bar__nav__button--experience, .side-bar__nav__button--contact, .side-bar__nav__button--resume, .side-bar__nav__button--code {
   position: absolute;
   border: 0;
-  padding: 5px 10px;
+  padding: 3px 7px;
   background: transparent;
   color: #000;
-  cursor: pointer; }
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-transform: uppercase; }
   .side-bar__nav__button--portfolio:hover, .side-bar__nav__button--skills:hover, .side-bar__nav__button--experience:hover, .side-bar__nav__button--contact:hover, .side-bar__nav__button--resume:hover, .side-bar__nav__button--code:hover, .hover.side-bar__nav__button--portfolio, .hover.side-bar__nav__button--skills, .hover.side-bar__nav__button--experience, .hover.side-bar__nav__button--contact, .hover.side-bar__nav__button--resume, .hover.side-bar__nav__button--code, .side-bar__nav__button--portfolio:focus, .side-bar__nav__button--skills:focus, .side-bar__nav__button--experience:focus, .side-bar__nav__button--contact:focus, .side-bar__nav__button--resume:focus, .side-bar__nav__button--code:focus, .focus.side-bar__nav__button--portfolio, .focus.side-bar__nav__button--skills, .focus.side-bar__nav__button--experience, .focus.side-bar__nav__button--contact, .focus.side-bar__nav__button--resume, .focus.side-bar__nav__button--code, .side-bar__nav__button--portfolio:active, .side-bar__nav__button--skills:active, .side-bar__nav__button--experience:active, .side-bar__nav__button--contact:active, .side-bar__nav__button--resume:active, .side-bar__nav__button--code:active, .active.side-bar__nav__button--portfolio, .active.side-bar__nav__button--skills, .active.side-bar__nav__button--experience, .active.side-bar__nav__button--contact, .active.side-bar__nav__button--resume, .active.side-bar__nav__button--code, .side-bar__nav__button--portfolio:active, .side-bar__nav__button--skills:active, .side-bar__nav__button--experience:active, .side-bar__nav__button--contact:active, .side-bar__nav__button--resume:active, .side-bar__nav__button--code:active {
     color: #8a2e3f;
     outline: 0; }
