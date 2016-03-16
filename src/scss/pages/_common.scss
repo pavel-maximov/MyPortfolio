@@ -307,6 +307,106 @@ h3, .h3 {
       }
     }
   }
+
+  & .cogwheel {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  & .skills-list-title {
+    margin: 0;
+    font-size: 4rem;
+    font-family: $font-family-work-sans-thin;
+  }
+
+  & .skills-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  %skills-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: $font-family-work-sans-thin;
+    line-height: 1.4;
+  }
+
+  & .skills-group-javascript {
+    @extend %skills-group;
+    width: 60%;
+    max-width: 450px;
+    height: 454px;
+    left: 46%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  %skills-group-medium {
+    width: 24.4%;
+    max-width: 350px;
+    height: 354px;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  & .skills-group-css {
+    @extend %skills-group;
+    @extend %skills-group-medium;
+    left: 15%;
+  }
+
+  & .skills-group-html {
+    @extend %skills-group;
+    @extend %skills-group-medium;
+    left: 77%;
+  }
+
+  %skills-group-small {
+    @extend %skills-group;
+    width: 40%;
+    max-width: 250px;
+    height: 254px;
+    transform: translateX(-50%) translateY(-50%);
+
+    & .skills-list-title {
+      font-size: 3rem;
+    }
+  }
+
+  & .skills-group-tools {
+    @extend %skills-group;
+    @extend %skills-group-small;
+    left: 28%;
+    top: 25%;
+  }
+
+  & .skills-group-coding {
+    @extend %skills-group;
+    @extend %skills-group-small;
+    left: 64%;
+    top: 25%;
+  }
+
+  & .skills-group-uxui {
+    @extend %skills-group;
+    @extend %skills-group-small;
+    left: 28%;
+    top: 75%;
+  }
+
+  & .skills-group-backend {
+    @extend %skills-group;
+    @extend %skills-group-small;
+    left: 64%;
+    top: 75%;
+  }
+
 }
 
 

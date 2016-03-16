@@ -106,23 +106,23 @@ function onScrollMainContainer (scrollTop, windowHeight, scrollPoints) {
     if (scrollTop < scrollPoints.skills) {
         newAlphaValue = scrollTop / windowHeight;
         newAlphaValue = newAlphaValue < .2 ? .2 : newAlphaValue;
-        newAlphaValue = newAlphaValue > .75 ? .75 : newAlphaValue;
+        newAlphaValue = newAlphaValue > .8 ? .8 : newAlphaValue;
         $main.css('background-color', 'hsla(0,10%,100%,' + newAlphaValue + ')');
     } else if (scrollTop < scrollPoints.projectsEnd) {
-        $main.css('background-color', 'hsla(0,10%,100%,0.75)');
+        $main.css('background-color', 'hsla(0,10%,100%,0.8)');
     } else if (scrollTop > scrollPoints.projectsEnd && scrollTop < scrollPoints.experience) {
-        $main.css('background-color', 'hsla(0,10%,100%,0.75)');
+        $main.css('background-color', 'hsla(0,10%,100%,0.8)');
         //newAlphaValue = (scrollTop - scrollPoints.projectsEnd) / (scrollPoints.experience - scrollPoints.projectsEnd);
         //newAlphaValue = newAlphaValue < .7 ? .7 : newAlphaValue;
         //newAlphaValue = newAlphaValue > 1 ? 1 : newAlphaValue;
         //$main.css('background-color', 'hsla(0,10%,100%,' + newAlphaValue + ')');
     } else if (scrollTop < scrollPoints.outro) {
-        $main.css('background-color', 'hsla(0,10%,100%,0.75)');
+        $main.css('background-color', 'hsla(0,10%,100%,0.8)');
         //$main.css('background-color', 'hsla(0,10%,100%,1)');
     } else {
         newAlphaValue = 1 - (scrollTop - scrollPoints.outro) / windowHeight;
         newAlphaValue = newAlphaValue < 0.2 ? 0.2 : newAlphaValue;
-        newAlphaValue = newAlphaValue > .75 ? .75 : newAlphaValue;
+        newAlphaValue = newAlphaValue > .8 ? .8 : newAlphaValue;
         $main.css('background-color', 'hsla(0,10%,100%,' + newAlphaValue + ')');
     }
 }
@@ -147,8 +147,8 @@ $document.ready(function () {
         $('[data-offcanvas="content"]').toggleClass('offcanvas-active');
     });
 
-    $.each($element.find('path'), function (number, element) {
-        $(element).css('animation',  'rotating ' + getRandomArbitrary(4, 60) + 's linear infinite');
+    $.each($('.cogwheel'), function (number, element) {
+        $(element).css('animation',  'rotating ' + getRandomArbitrary(20, 60) + 's linear infinite');
     });
 
     startPoint = $portfolio.offset().top;

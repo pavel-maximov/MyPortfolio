@@ -4951,6 +4951,76 @@ h3, .h3 {
     #skills .article-content-wrapper p span {
       color: rgba(0, 0, 0, 0.3); }
 
+#skills .cogwheel {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+#skills .skills-list-title {
+  margin: 0;
+  font-size: 4rem;
+  font-family: "worksans-thin", sans-serif; }
+
+#skills .skills-list {
+  list-style: none;
+  padding: 0; }
+
+#skills .skills-group-javascript, #skills .skills-group-css, #skills .skills-group-html, #skills .skills-group-tools, #skills .skills-group-coding, #skills .skills-group-uxui, #skills .skills-group-backend {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: "worksans-thin", sans-serif;
+  line-height: 1.4; }
+
+#skills .skills-group-javascript {
+  width: 60%;
+  max-width: 450px;
+  height: 454px;
+  left: 46%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%); }
+
+#skills .skills-group-css, #skills .skills-group-html {
+  width: 24.4%;
+  max-width: 350px;
+  height: 354px;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%); }
+
+#skills .skills-group-css {
+  left: 15%; }
+
+#skills .skills-group-html {
+  left: 77%; }
+
+#skills .skills-group-tools, #skills .skills-group-coding, #skills .skills-group-uxui, #skills .skills-group-backend {
+  width: 40%;
+  max-width: 250px;
+  height: 254px;
+  transform: translateX(-50%) translateY(-50%); }
+  #skills .skills-group-tools .skills-list-title, #skills .skills-group-coding .skills-list-title, #skills .skills-group-uxui .skills-list-title, #skills .skills-group-backend .skills-list-title {
+    font-size: 3rem; }
+
+#skills .skills-group-tools {
+  left: 28%;
+  top: 25%; }
+
+#skills .skills-group-coding {
+  left: 64%;
+  top: 25%; }
+
+#skills .skills-group-uxui {
+  left: 28%;
+  top: 75%; }
+
+#skills .skills-group-backend {
+  left: 64%;
+  top: 75%; }
+
 #portfolio .portfolio-item-bk .portfolio-item-desktop .portfolio-item-img-preview, #portfolio .portfolio-item-bk .portfolio-item-tablet .portfolio-item-img-preview, #portfolio .portfolio-item-bk .portfolio-item-notebook .portfolio-item-img-preview, #portfolio .portfolio-item-bk .portfolio-item-mobile .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo .portfolio-item-desktop .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo .portfolio-item-tablet .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo .portfolio-item-notebook .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo .portfolio-item-mobile .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo-crm .portfolio-item-desktop .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo-crm .portfolio-item-tablet .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo-crm .portfolio-item-notebook .portfolio-item-img-preview, #portfolio .portfolio-item-vendomo-crm .portfolio-item-mobile .portfolio-item-img-preview, #portfolio .portfolio-item-foodora .portfolio-item-desktop .portfolio-item-img-preview, #portfolio .portfolio-item-foodora .portfolio-item-tablet .portfolio-item-img-preview, #portfolio .portfolio-item-foodora .portfolio-item-notebook .portfolio-item-img-preview, #portfolio .portfolio-item-foodora .portfolio-item-mobile .portfolio-item-img-preview, #portfolio .portfolio-item-timvision .portfolio-item-tv1 .portfolio-item-img-preview, #portfolio .portfolio-item-timvision .portfolio-item-tv2 .portfolio-item-img-preview, #portfolio .portfolio-item-cubomusica .portfolio-item-tv1 .portfolio-item-img-preview, #portfolio .portfolio-item-cubomusica .portfolio-item-tv2 .portfolio-item-img-preview, #portfolio .portfolio-item-unicri .portfolio-item-notebook-ande .portfolio-item-img-preview, #portfolio .portfolio-item-unicri .portfolio-item-notebook-eusec .portfolio-item-img-preview, #portfolio .portfolio-item-unicri .portfolio-item-notebook-cbrn .portfolio-item-img-preview, #portfolio .portfolio-item-unicri .portfolio-item-notebook-ipo .portfolio-item-img-preview, #portfolio .portfolio-item-unicri .portfolio-item-notebook-lab .portfolio-item-img-preview, #portfolio .portfolio-item-others .portfolio-item-notebook-school .portfolio-item-img-preview, #portfolio .portfolio-item-others .portfolio-item-notebook-davide .portfolio-item-img-preview, #portfolio .portfolio-item-others .portfolio-item-notebook-milena .portfolio-item-img-preview, #portfolio .portfolio-item-others .portfolio-item-notebook-pandora .portfolio-item-img-preview, #portfolio .portfolio-item-others .portfolio-item-notebook-acqua .portfolio-item-img-preview {
   position: absolute;
   left: 50%;
