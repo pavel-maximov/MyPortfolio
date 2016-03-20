@@ -1,0 +1,179 @@
+
+
+///////////////////  Skills  ///////////////////
+
+#skills {
+  @extend %article-wrapper;
+  //background: linear-gradient(to right, rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.7) 100%); ;
+
+  & .section-header {
+    left: 3%;
+  }
+
+  & .section-header-img-wrapper {
+    max-width: 250px;
+  }
+
+  & .article-img-wrapper {
+    width: 66%;
+    position: relative;
+
+    & .article-img,
+    & .article-img-overlay {
+      width: 80%;
+      max-width: 600px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+
+      & path {
+        animation-name: rotating;
+        transform-origin: 50% 50%;
+      }
+    }
+  }
+
+  & .article-content-wrapper {
+    width: 33%;
+    padding-right: 8%;
+
+    & p {
+      margin-bottom: 0;
+      text-align: center;
+
+      & span {
+        color: rgba(0,0,0,0.3);
+      }
+    }
+  }
+
+  & .cogwheel {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    //animation: rotating 60s linear infinite;
+  }
+
+  & .skills-list {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & ul {
+      list-style: none;
+      padding: 0;
+    }
+  }
+
+  & .skills-list-title {
+    margin: 0;
+    font-size: 3.6rem;
+    font-family: $font-family-work-sans-thin;
+    margin-bottom: 0.8rem;
+  }
+
+
+  %skills-group {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    text-align: center;
+    font-size: 1.6rem;
+    //font-family: $font-family-work-sans-thin;
+    line-height: 1.3;
+  }
+
+  & .skills-group-javascript {
+    @extend %skills-group;
+    height: 404px;
+    width: 404px;
+
+    & .skills-list {
+      top: -50%;
+      left: -50%;
+    }
+  }
+
+  %skills-group-medium {
+    height: 304px;
+    width: 304px;
+  }
+
+  & .skills-group-css {
+    @extend %skills-group;
+    @extend %skills-group-medium;
+
+    & .skills-list {
+      top: -50%;
+      left: -180%;
+    }
+  }
+
+  & .skills-group-html {
+    @extend %skills-group;
+    @extend %skills-group-medium;
+    right: 0;
+
+    & .skills-list {
+      top: -50%;
+      right: -80%;
+    }
+  }
+
+  %skills-group-small {
+    @extend %skills-group;
+    height: 204px;
+    width: 204px;
+
+    & .skills-list-title {
+      font-size: 2.6rem;
+      margin-bottom: 0.6rem;
+    }
+  }
+
+  & .skills-group-tools {
+    @extend %skills-group;
+    @extend %skills-group-small;
+
+    & .skills-list {
+      top: -160%;
+      left: -164%;
+    }
+  }
+
+  & .skills-group-coding {
+    @extend %skills-group;
+    @extend %skills-group-small;
+
+    & .skills-list {
+      top: -160%;
+      right: -64%;
+    }
+  }
+
+  & .skills-group-uxui {
+    @extend %skills-group;
+    @extend %skills-group-small;
+
+    & .skills-list {
+      top: 60%;
+      left: -164%;
+    }
+  }
+
+  & .skills-group-backend {
+    @extend %skills-group;
+    @extend %skills-group-small;
+
+    & .skills-list {
+      top: 60%;
+      right: -64%;
+    }
+  }
+
+}

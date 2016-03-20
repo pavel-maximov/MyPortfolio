@@ -1,0 +1,48 @@
+
+///////////////////  Outro  ///////////////////
+
+#outro {
+  @extend %article-wrapper;
+
+  & .section-header {
+  }
+
+  & .section-header-img-wrapper {
+    max-width: 400px;
+    margin-bottom: 3rem;
+  }
+
+  & .section-header-img {
+    position: relative;
+    left: 5%;
+  }
+
+  & .section-header-secondary-title {
+    font-size: 3rem;
+  }
+
+  & .section-header-nav {
+    margin-top: 3rem;
+  }
+
+  & .section-header-sub-title {
+    font-family: $font-family-work-sans-thin;
+    font-size: 4.5rem;
+    line-height: 1.2;
+    margin-bottom: 1.8rem;
+  }
+
+  & .article-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translateY(-50%) translateX(-50%);
+    //background: url('/img/intro.jpg') no-repeat;
+    background-size: cover;
+  }
+}

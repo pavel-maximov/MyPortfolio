@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Pavel Maximov Portfolio - Frontend Developer - UX Designer</title>
+    <title>Pavel Maximov Portfolio - Front-end Developer - UX Designer</title>
     <link rel="stylesheet" type="text/css" href="/css/main.css">
 </head>
 <body>
@@ -17,9 +17,9 @@
                 <img class="section-header-img" src="/img/head.png">
             </figure>
             <h1 class="section-header-title">Pavel Maximov</h1>
-            <h1 class="section-header-sub-title">Frontend Developer</h1>
+            <h1 class="section-header-sub-title">Front-end Developer</h1>
             <nav class="section-header-nav">
-                <button class="article-header__nav__button" onClick="scrollToElement('#portfolio')">Projects</button><span class="separator">/</span><button class="article-header__nav__button" onClick="scrollToElement('#skills')">Skills</button><span class="separator">/</span><button class="article-header__nav__button" onClick="scrollToElement('#experience')">Experience</button><span class="separator">/</span><button class="article-header__nav__button" onClick="scrollToElement('#about')">About</button><span class="separator">/</span><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Contact</button><br/><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Resume</button><span class="separator">/</span><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Code example</button>
+                <button class="article-header__nav__button" onClick="scrollToElement('#portfolio')">Projects</button><button class="article-header__nav__button" onClick="scrollToElement('#skills')">Skills</button><button class="article-header__nav__button" onClick="scrollToElement('#experience')">Experience</button><button class="article-header__nav__button" onClick="scrollToElement('#about')">About</button><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Contact</button><br/><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Resume</button><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Code</button>
             </nav>
         </header>
         <video class="article-video" height="100%" width="100%" autoplay loop>
@@ -33,85 +33,97 @@
                 <img class="section-header-img" src="/img/skills.png">
             </figure>
             <span class="section-header-secondary-title">Pavel Maximov</span>
-            <span class="section-header-secondary-title">Frontend Developer</span>
+            <span class="section-header-secondary-title">Front-end Developer</span>
             <h2 class="section-header-title">Skills</h2>
             <nav class="section-header-nav">
-                <button class="article-header__nav__button" onClick="scrollToElement('#portfolio')">Projects</button><span class="separator">/</span><button class="article-header__nav__button" onClick="scrollToElement('#skills')">Skills</button><span class="separator">/</span><button class="article-header__nav__button" onClick="scrollToElement('#experience')">Experience</button><span class="separator">/</span><button class="article-header__nav__button" onClick="scrollToElement('#about')">About</button><span class="separator">/</span><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Contact</button><br/><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Resume</button><span class="separator">/</span><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Code example</button>
+                <button class="article-header__nav__button" onClick="scrollToElement('#portfolio')">Projects</button><button class="article-header__nav__button" onClick="scrollToElement('#skills')">Skills</button><button class="article-header__nav__button" onClick="scrollToElement('#experience')">Experience</button><button class="article-header__nav__button" onClick="scrollToElement('#about')">About</button><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Contact</button><br/><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Resume</button><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Code</button>
             </nav>
         </header>
         <div class="article-body">
             <div class="skills-group-javascript">
-                <img class="cogwheel" src="/img/portfolio/cogwheel-large.svg">
-                <h3 class="skills-list-title">JavaScript</h3>
-                <ul class="skills-list">
-                    <li>Backbone.JS</li>
-                    <li>AngularJS</li>
-                    <li>React</li>
-                    <li>jQuery</li>
-                    <li>Lodash</li>
-                    <li>TDD/BDD</li>
-                </ul>
+                <div class="skills-list">
+                    <img class="cogwheel" src="/img/portfolio/cogwheel-large.svg">
+                    <h3 class="skills-list-title">JavaScript</h3>
+                    <ul>
+                        <li>Backbone.JS</li>
+                        <li>AngularJS</li>
+                        <li>React</li>
+                        <li>jQuery</li>
+                        <li>Lodash</li>
+                        <li>TDD/BDD</li>
+                    </ul>
+                </div>
             </div>
             <div class="skills-group-css">
-                <img class="cogwheel" src="/img/portfolio/cogwheel-medium.svg">
-                <h3 class="skills-list-title">CSS</h3>
-                <ul class="skills-list">
-                    <li>SASS</li>
-                    <li>LESS</li>
-                    <li>Bootstrap</li>
-                    <li>Responsive</li>
-                    <li>Cross-browser</li>
-                </ul>
+                <div class="skills-list">
+                    <img class="cogwheel" src="/img/portfolio/cogwheel-medium.svg">
+                    <h3 class="skills-list-title">CSS</h3>
+                    <ul>
+                        <li>SASS</li>
+                        <li>LESS</li>
+                        <li>Bootstrap</li>
+                        <li>Responsive</li>
+                        <li>Cross-browser</li>
+                    </ul>
+                </div>
             </div>
             <div class="skills-group-html">
-                <img class="cogwheel" src="/img/portfolio/cogwheel-medium.svg">
-                <h3 class="skills-list-title">HTML</h3>
-                <ul class="skills-list">
-                    <li>Twig</li>
-                    <li>Accessibility</li>
-                    <li>SEO</li>
-                </ul>
+                <div class="skills-list">
+                    <img class="cogwheel" src="/img/portfolio/cogwheel-medium.svg">
+                    <h3 class="skills-list-title">HTML</h3>
+                    <ul>
+                        <li>Twig</li>
+                        <li>Accessibility</li>
+                        <li>SEO</li>
+                    </ul>
+                </div>
             </div>
             <div class="skills-group-uxui">
-                <img class="cogwheel" src="/img/portfolio/cogwheel-small.svg">
-                <h3 class="skills-list-title">UX/UI</h3>
-                <ul class="skills-list">
-                    <li>Design</li>
-                    <li>Usability</li>
-                    <li>Photoshop</li>
-                    <li>Illustrator</li>
-                    <li>Mockups</li>
-                </ul>
+                <div class="skills-list">
+                    <img class="cogwheel" src="/img/portfolio/cogwheel-small.svg">
+                    <h3 class="skills-list-title">UX/UI</h3>
+                    <ul>
+                        <li>Design</li>
+                        <li>Photoshop</li>
+                        <li>Illustrator</li>
+                        <li>Mockups</li>
+                    </ul>
+                </div>
             </div>
             <div class="skills-group-tools">
-                <img class="cogwheel" src="/img/portfolio/cogwheel-small.svg">
-                <h3 class="skills-list-title">Tools</h3>
-                <ul class="skills-list">
-                    <li>Gulp</li>
-                    <li>Grunt</li>
-                    <li>Git/GitHub</li>
-                    <li>SVN</li>
-                </ul>
+                <div class="skills-list">
+                    <img class="cogwheel" src="/img/portfolio/cogwheel-small.svg">
+                    <h3 class="skills-list-title">Tools</h3>
+                    <ul>
+                        <li>Gulp</li>
+                        <li>Grunt</li>
+                        <li>Git/GitHub</li>
+                        <li>SVN</li>
+                    </ul>
+                </div>
             </div>
             <div class="skills-group-coding">
-                <img class="cogwheel" src="/img/portfolio/cogwheel-small.svg">
-                <h3 class="skills-list-title">Coding</h3>
-                <ul class="skills-list">
-                    <li>Object-oriented</li>
-                    <li>Functional</li>
-                    <li>Design patterns</li>
-                    <li>Modularity</li>
-                </ul>
+                <div class="skills-list">
+                    <img class="cogwheel" src="/img/portfolio/cogwheel-small.svg">
+                    <h3 class="skills-list-title">Coding</h3>
+                    <ul>
+                        <li>Object-oriented</li>
+                        <li>Functional</li>
+                        <li>Design patterns</li>
+                        <li>Modularity</li>
+                    </ul>
+                </div>
             </div>
             <div class="skills-group-backend">
-                <img class="cogwheel" src="/img/portfolio/cogwheel-small.svg">
-                <h3 class="skills-list-title">Backend</h3>
-                <ul class="skills-list">
-                    <li>Wordpress</li>
-                    <li>PHP (basics)</li>
-                    <li>Sympfony (basics)</li>
-                    <li>MySQL (basics)</li>
-                </ul>
+                <div class="skills-list">
+                    <img class="cogwheel" src="/img/portfolio/cogwheel-small.svg">
+                    <h3 class="skills-list-title">Back-end</h3>
+                    <ul>
+                        <li>Wordpress</li>
+                        <li>PHP (basics)</li>
+                        <li>MySQL (basics)</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -122,10 +134,10 @@
                 <img class="section-header-img" src="/img/portfolio.png">
             </figure>
             <span class="section-header-secondary-title">Pavel Maximov</span>
-            <span class="section-header-secondary-title">Frontend Developer</span>
+            <span class="section-header-secondary-title">Front-end Developer</span>
             <h2 class="section-header-title">Projects</h2>
             <nav class="section-header-nav">
-                <button class="article-header__nav__button" onClick="scrollToElement('#portfolio')">Projects</button><span class="separator">/</span><button class="article-header__nav__button" onClick="scrollToElement('#skills')">Skills</button><span class="separator">/</span><button class="article-header__nav__button" onClick="scrollToElement('#experience')">Experience</button><span class="separator">/</span><button class="article-header__nav__button" onClick="scrollToElement('#about')">About</button><span class="separator">/</span><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Contact</button><br/><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Resume</button><span class="separator">/</span><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Code example</button>
+                <button class="article-header__nav__button" onClick="scrollToElement('#portfolio')">Projects</button><button class="article-header__nav__button" onClick="scrollToElement('#skills')">Skills</button><button class="article-header__nav__button" onClick="scrollToElement('#experience')">Experience</button><button class="article-header__nav__button" onClick="scrollToElement('#about')">About</button><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Contact</button><br/><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Resume</button><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Code</button>
             </nav>
         </header>
         <article class="article-body portfolio-item-bk">
@@ -152,7 +164,7 @@
                 <h4 class="portfolio-item-subtitle-employer">Employer:</h4>
                 <p class="portfolio-item-content-employer">Rocket Internet S.E.</p>
                 <h4 class="portfolio-item-subtitle-contribution">Contribution:</h4>
-                <p class="portfolio-item-content-contribution">JavaScript, AJAX, Backbone.JS, jQuery, Lodash, JSON, HTML, CSS, SASS, Bootstrap, Grunt, Twig, Git</p>
+                <p class="portfolio-item-content-contribution">JavaScript, AJAX, Backbone.JS, jQuery, Lodash, JSON, HTML, CSS, SASS, Bootstrap, Grunt, Twig</p>
             </div>
         </article>
 
@@ -180,7 +192,7 @@
                 <h4 class="portfolio-item-subtitle-employer">Employer:</h4>
                 <p class="portfolio-item-content-employer">Rocket Internet S.E.</p>
                 <h4 class="portfolio-item-subtitle-contribution">Contribution:</h4>
-                <p class="portfolio-item-content-contribution">JavaScript, jQuery, HTML, CSS, SASS, Bootstrap, Gulp, Git, Photoshop, Mockups</p>
+                <p class="portfolio-item-content-contribution">JavaScript, jQuery, HTML, CSS, SASS, Bootstrap, Gulp, Photoshop, Mockups</p>
             </div>
         </article>
 
@@ -208,7 +220,7 @@
                 <h4 class="portfolio-item-subtitle-employer">Employer:</h4>
                 <p class="portfolio-item-content-employer">Rocket Internet S.E.</p>
                 <h4 class="portfolio-item-subtitle-contribution">Contribution:</h4>
-                <p class="portfolio-item-content-contribution">JavaScript, AJAX, jQuery, HTML, CSS, LESS, Bootstrap, Gulp, Git</p>
+                <p class="portfolio-item-content-contribution">JavaScript, AJAX, jQuery, HTML, CSS, LESS, Bootstrap, Gulp</p>
             </div>
         </article>
 
@@ -236,7 +248,7 @@
                 <h4 class="portfolio-item-subtitle-employer">Employer:</h4>
                 <p class="portfolio-item-content-employer">Rocket Internet S.E.</p>
                 <h4 class="portfolio-item-subtitle-contribution">Contribution:</h4>
-                <p class="portfolio-item-content-contribution">JavaScript, AJAX, Backbone.JS, jQuery, Lodash, JSON, TDD, HTML, CSS, SASS, Grunt, Bootstrap, Twig, Git</p>
+                <p class="portfolio-item-content-contribution">JavaScript, AJAX, Backbone.JS, jQuery, Lodash, JSON, TDD, HTML, CSS, SASS, Grunt, Bootstrap, Twig</p>
             </div>
         </article>
 
@@ -358,14 +370,161 @@
                 <img class="section-header-img" src="/img/experience.png">
             </figure>
             <span class="section-header-secondary-title">Pavel Maximov</span>
-            <span class="section-header-secondary-title">Frontend Developer</span>
+            <span class="section-header-secondary-title">Front-end Developer</span>
             <h2 class="section-header-title">Experience</h2>
             <nav class="section-header-nav">
-                <button class="article-header__nav__button" onClick="scrollToElement('#portfolio')">Projects</button><span class="separator">/</span><button class="article-header__nav__button" onClick="scrollToElement('#skills')">Skills</button><span class="separator">/</span><button class="article-header__nav__button" onClick="scrollToElement('#experience')">Experience</button><span class="separator">/</span><button class="article-header__nav__button" onClick="scrollToElement('#about')">About</button><span class="separator">/</span><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Contact</button><br/><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Resume</button><span class="separator">/</span><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Code example</button>
+                <button class="article-header__nav__button" onClick="scrollToElement('#portfolio')">Projects</button><button class="article-header__nav__button" onClick="scrollToElement('#skills')">Skills</button><button class="article-header__nav__button" onClick="scrollToElement('#experience')">Experience</button><button class="article-header__nav__button" onClick="scrollToElement('#about')">About</button><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Contact</button><br/><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Resume</button><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Code</button>
             </nav>
         </header>
-        <div class="article-body">
-        </div>
+        <article class="article-body">
+            <div class="experience-timeline">
+                <div class="experience-timeline-year">2016</div>
+            </div>
+            <div class="experience-content">
+                <figure class="experience-employer-logo-rocket">
+                    <img class="experience-employer-logo-img" src="/img/experience/rl.png">
+                </figure>
+                <h3 class="experience-employer-name">Rocket Internet S.E. - Berlin, Germany</h3>
+                <h3 class="experience-position">Senior Front-end Developer</h3>
+                <p class="experience-period">1 year (May 2015 - April 2016)</p>
+                <h4 class="experience-subtitle">Contributed to:</h4>
+                <ul class="experience-projects">
+                    <li><strong>Burger King Delivery service e-commerce</strong> - food delivery in Germany</li>
+                    <li><strong>Vendomo marketing website</strong> - real estate selling and renting startup</li>
+                    <li><strong>Vendomo CRM web app</strong> - landlords and candidates dashboard</li>
+                    <li><strong>Foodora e-commerce</strong> - multinational food delivery startup</li>
+                </ul>
+                <h4 class="experience-subtitle">Technologies</h4>
+                <p>JavaScript, Backbone.js, jQuery, Lodash, HTML, CSS, SASS, LESS, Bootstrap, PHP, Twig, Symfony 2, Git, GitHub, JIRA, Agile, Photoshop, Illustrator.</p>
+            </div>
+        </article>
+        <article class="article-body">
+            <div class="experience-timeline">
+                <div class="experience-timeline-year">2015</div>
+            </div>
+            <div class="experience-content">
+                <figure class="experience-employer-logo-rocket">
+                    <img class="experience-employer-logo-img" src="/img/experience/tl.png">
+                </figure>
+                <h3 class="experience-employer-name">Telecom Italia s.p.a. - Turin, Italy</h3>
+                <h3 class="experience-position">Front-end Developer</h3>
+                <p class="experience-period">3 years (December 2011 - April 2015)</p>
+                <h4 class="experience-subtitle">Contributed to:</h4>
+                <ul class="experience-projects">
+                    <li><strong>TIMvision web app</strong> - on demand TV service for Samsung Smart-TV</li>
+                    <li><strong>CuboMusica (TIMmusic) web app</strong> - music streaming service for Samsung Smart-TV</li>
+                    <li><strong>Trenitalia newspaper reading web app</strong> - online newspaper reading service</li>
+                    <li><strong>Trenitalia “Portale Frecciarossa” backoffice web app</strong> - multimedia CMS front-end</li>
+                    <li><strong>UX/UI design for new web apps proposals</strong></li>
+                </ul>
+                <h4 class="experience-subtitle">Technologies</h4>
+                <p>JavaScript, jQuery, AngularJS, HTML, CSS, SVN, Samsung Smart TV SDK, Photoshop, Mockups.</p>
+                <h4 class="experience-subtitle">LinkedIn Referencies</h4>
+                <div class="experience-reference">
+                    <p class="experience-reference-content">
+                        <img src="/img/experience/quotes-open.svg" class="quote-open">
+                        Pavel is a hard and trustworthy worker, detail oriented, always ready and capable to find brilliant solutions with his creative mind and his fresh look on problems.
+                        <button class="experience-reference-more-button"> Read all</button>
+                        <img src="/img/experience/quotes-close.svg" class="quote-close">
+                    </p>
+                    <p class="experience-reference-author">
+                        Giuseppe Sisto<br/>R&D Senior Researcher at Telecom Italia
+                    </p>
+                </div>
+            </div>
+        </article>
+        <article class="article-body">
+            <div class="experience-timeline">
+                <div class="experience-timeline-year">2011</div>
+            </div>
+            <div class="experience-content">
+                <figure class="experience-employer-logo-rocket">
+                    <img class="experience-employer-logo-img" src="/img/experience/uni.png">
+                </figure>
+                <h3 class="experience-employer-name">United Nations Interregional Crime and Justice Research Institute (UNICRI)<br/>Turin, Italy</h3>
+                <h3 class="experience-position">Front-end Developer / Graphic Designer</h3>
+                <p class="experience-period">5 years (October 2005 - February 2011)</p>
+                <h4 class="experience-subtitle">Contributed to:</h4>
+                <ul class="experience-projects">
+                    <li><strong>CBRN KMS e-learning portal</strong> - project on sharing counter-terrorism best practices</li>
+                    <li><strong>EU-SEC e-learning portal</strong> - project on sharing major events security best practices</li>
+                    <li><strong>SGCT Lab website</strong> - UNICRI Security Governance/Counter-terrorism Laboratory</li>
+                    <li><strong>IPO Programme website</strong> project on major events security</li>
+                    <li><strong>Anti-Corruption website</strong> - project fighting corruption in South America</li>
+                    <li><strong>Graphic layout for 30+ print designs</strong> - brochures, posters, publication layouts and adv</li>
+                </ul>
+                <h4 class="experience-subtitle">Technologies</h4>
+                <p>JavaScript, HTML, CSS, PHP, Wordpress, Photoshop, Illustrator, InDesign.</p>
+                <h4 class="experience-subtitle">LinkedIn Referencies</h4>
+                <div class="experience-reference">
+                    <p class="experience-reference-content">
+                        <img src="/img/experience/quotes-open.svg" class="quote-open">
+                        Pavel performed very well on all our requirements, displaying a solid understanding of web technologies like HTML, CSS, Javascript and CMS systems, together with an outstanding care in polishing the layout on all browsers, which was important to reach our audiences in the less developer countries.
+                        <button class="experience-reference-more-button"> Read all</button>
+                        <img src="/img/experience/quotes-close.svg" class="quote-close">
+                    </p>
+                    <p class="experience-reference-author">
+                        Francesco Cappe'<br/>Head of the UNICRI Security Governance/Counter-Terrorism Laboratory
+                    </p>
+                </div>
+            </div>
+        </article>
+        <article class="article-body">
+            <div class="experience-timeline">
+                <div class="experience-timeline-year">2005</div>
+            </div>
+            <div class="experience-content">
+                <h3 class="experience-employer-name">Freelancing for small/medium clients in Turin, Italy</h3>
+                <h3 class="experience-position">Front-end Developer / Graphic Designer</h3>
+                <p class="experience-period">2 years (August 2003 - September 2005)</p>
+                <h4 class="experience-subtitle">Created:</h4>
+                <ul class="experience-projects">
+                    <li><strong>Vaso di Pandora e-commerce</strong> - concept store</li>
+                    <li><strong>15+ marketing websites</strong> for various clients</li>
+                    <li><strong>20+ print designs</strong> - brochures, posters and adv</li>
+                    <li><strong>10+ logo designs and branding</strong></li>
+                </ul>
+                <h4 class="experience-subtitle">Technologies</h4>
+                <p>JavaScript, HTML, CSS, Flash, PHP, Wordpress, Photoshop, Illustrator, InDesign.</p>
+            </div>
+        </article>
+        <article class="article-body">
+            <div class="experience-timeline">
+                <div class="experience-timeline-year">2003</div>
+            </div>
+            <div class="experience-content">
+                <h3 class="experience-employer-name">Cometa Comunicazioni s.r.l. web agency in Turin, Italy</h3>
+                <h3 class="experience-position">Front-end Developer / Graphic Designer</h3>
+                <p class="experience-period">4 years (June 1999 - August 2003)</p>
+                <h4 class="experience-subtitle">Contributed to:</h4>
+                <ul class="experience-projects">
+                    <li><strong>10+ e-commerce portals</strong></li>
+                    <li><strong>15+ marketing websites</strong></li>
+                    <li><strong>20+ animated web banners</strong></li>
+                    <li><strong>15+ print designs</strong> - brochures, logos, posters and adv</li>
+                </ul>
+                <h4 class="experience-subtitle">Technologies</h4>
+                <p>HTML, CSS, JavaScript, Flash, Photoshop, Illustrator, InDesign</p>
+            </div>
+        </article>
+        <article class="article-body">
+            <div class="experience-timeline">
+                <div class="experience-timeline-year">1999</div>
+                <div class="experience-timeline-year-last">1998</div>
+            </div>
+            <div class="experience-content">
+                <h3 class="experience-employer-name">Xenia Edizioni s.r.l publishing house in Milan, Italy</h3>
+                <h3 class="experience-position">Volunteer Web Designer</h3>
+                <p class="experience-period">1 year (March 1998 - May 1999)</p>
+                <h4 class="experience-subtitle">Contributed to:</h4>
+                <ul class="experience-projects">
+                    <li><strong>3 monthly webzines</strong> for The Games Machine magazine</li>
+                    <li><strong>10+ animated web banners</strong></li>
+                </ul>
+                <h4 class="experience-subtitle">Technologies</h4>
+                <p>HTML, CSS, Photoshop</p>
+            </div>
+        </article>
     </section>
 
     <section id="about">
@@ -374,13 +533,82 @@
                 <img class="section-header-img" src="/img/about-me.png">
             </figure>
             <span class="section-header-secondary-title">Pavel Maximov</span>
-            <span class="section-header-secondary-title">Frontend Developer</span>
+            <span class="section-header-secondary-title">Front-end Developer</span>
             <h2 class="section-header-title">About me</h2>
             <nav class="section-header-nav">
-                <button class="article-header__nav__button" onClick="scrollToElement('#portfolio')">Projects</button><span class="separator">/</span><button class="article-header__nav__button" onClick="scrollToElement('#skills')">Skills</button><span class="separator">/</span><button class="article-header__nav__button" onClick="scrollToElement('#experience')">Experience</button><span class="separator">/</span><button class="article-header__nav__button" onClick="scrollToElement('#about')">About</button><span class="separator">/</span><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Contact</button><br/><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Resume</button><span class="separator">/</span><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Code example</button>
+                <button class="article-header__nav__button" onClick="scrollToElement('#portfolio')">Projects</button><button class="article-header__nav__button" onClick="scrollToElement('#skills')">Skills</button><button class="article-header__nav__button" onClick="scrollToElement('#experience')">Experience</button><button class="article-header__nav__button" onClick="scrollToElement('#about')">About</button><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Contact</button><br/><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Resume</button><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Code</button>
             </nav>
         </header>
         <div class="article-body">
+            <div class="article-column-central">
+                <div class="about-interest">
+                    <figure class="about-photo">
+                        <img class="section-header-img" src="/img/me.png">
+                    </figure>
+                    <h3 class="about-interest-title-main">Dear Visitor, <br/>thank you for your interest <br/> in my work.</h3>
+                    <p>
+                        My name is Pavel, I'm a Senior Front-end Developer with 17+ years of experience, based in London, UK.
+                    </p>
+                    <p>
+                        I love to code cool features in JavaScript and to create neat, responsive web layouts with SASS and HTML. I love clean, modular and expressive code, which feels like poetry.
+                    </p>
+                    <p>
+                        Even if I'm more a coder now, I can contribute to the UX/UI design of your project too, since I also have some years of experience as graphic designer.
+                    </p>
+                    <p>
+                        I feel very comfortable working in international teams, having lived in Russia, Italy and Germany I love and embrace cultural diversity.
+                    </p>
+                    <p>
+                        Web development is the profession of my life and I would be happy to contribute to your project with all my passion and skills. <button class="article-header__nav__button" onClick="scrollToElement('#contact')">Contact me</button>
+                    </p>
+                </div>
+            </div>
+            <h3 class="about-interest-title-main">Besides coding, I also like:</h3>
+            <div class="article-column">
+                <div class="about-interest">
+                    <h3 class="about-interest-title">Salsa dancing</h3>
+                    <p>
+                        Dancing is pure magic! There is nothing better of a Salsa Friday night after an intense coding week. I love the Caribbean culture, music and atmosphere and I have been dancing Salsa for several years, experimenting also with Bachata, Merengue, Cha-cha, Argentinian Tango and Swing. Strangely enough, I recently realised that dancing and coding have something in common: they both develop intuitive thinking.
+                        <button class="interest-button">Dancing</button>
+                    </p>
+                </div>
+                <div class="about-interest">
+                    <h3 class="about-interest-title">Meditation</h3>
+                    <p>
+                        When I started to learn Zazen meditation I was absolutely stunned by the state of intense mental clarity that is possible to achieve with this practice. Since than, the Mindfulness philosophy has been incredibly useful in many areas of my life, also helping me develop a more selfless approach to my profession, reducing attachment to my own opinions and making me much more open to the ideas of others.
+                    </p>
+                </div>
+                <div class="about-interest">
+                    <h3 class="about-interest-title">Photography</h3>
+                    <p>
+                        Started as an experiment, turned into a hobby, photography even became my secondary profession for two years, when, besides coding, I worked on several photo projects. I tried myself with reportage, sports and dancing photography, having a lot of fun with all of them. Now, after focusing exclusively on coding, I photograph only for fun, occasionally using my photo retouching skills on web projects.
+                        <button class="interest-button">My photos</button>
+                    </p>
+                </div>
+            </div>
+            <div class="article-column">
+                <div class="about-interest">
+                    <h3 class="about-interest-title">Boxing</h3>
+                    <p>
+                        First time I tried boxing I was absolutely terrified, and absolutely thrilled too. This initial fear was the strongest motivation to learn I have ever felt. I fell in love with this sport because of the great life lessons it teaches: fair play, respect for your opponent and to never surrender. I always remember that in front of a coding challenge, when tempted to surrender to a quick hack, instead of work harder for the elegant solution.
+                        <button class="interest-button">Boxing</button>
+                    </p>
+                </div>
+                <div class="about-interest">
+                    <h3 class="about-interest-title">Graphic design</h3>
+                    <p>
+                        I was 11 when I got my first computer, it was a super fast 386 PC with 2Mb of RAM, and I was totally fascinated by the most unexpected software: Paint! I spent countless hours with it, creating my own graphics, it was magic! Than came Photoshop, Corel Draw, and in 1998 I started my career becoming a web and print designer. Later I came to love coding even more, but occasionally I still have some fun designing.
+                        <button class="interest-button">My designs</button>
+                    </p>
+                </div>
+                <div class="about-interest">
+                    <h3 class="about-interest-title">Video editing</h3>
+                    <p>
+                        After playing with photography I was naturally attracted to video. My employers at UNICRI accepted my proposal to create a series of video clips about our project and I started to experiment with filming, montage and video effects. The results were encouraging and, for some time, I did video editing as a side activity. Even if now I code only, still my understanding of video formats is often useful on web projects.
+                        <button class="interest-button">My videos</button>
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -390,25 +618,37 @@
                 <img class="section-header-img" src="/img/contact.png">
             </figure>
             <span class="section-header-secondary-title">Pavel Maximov</span>
-            <span class="section-header-secondary-title">Frontend Developer</span>
+            <span class="section-header-secondary-title">Front-end Developer</span>
             <h2 class="section-header-title">Contact</h2>
             <nav class="section-header-nav">
-                <button class="article-header__nav__button" onClick="scrollToElement('#portfolio')">Projects</button><span class="separator">/</span><button class="article-header__nav__button" onClick="scrollToElement('#skills')">Skills</button><span class="separator">/</span><button class="article-header__nav__button" onClick="scrollToElement('#experience')">Experience</button><span class="separator">/</span><button class="article-header__nav__button" onClick="scrollToElement('#about')">About</button><span class="separator">/</span><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Contact</button><br/><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Resume</button><span class="separator">/</span><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Code example</button>
+                <button class="article-header__nav__button" onClick="scrollToElement('#portfolio')">Projects</button><button class="article-header__nav__button" onClick="scrollToElement('#skills')">Skills</button><button class="article-header__nav__button" onClick="scrollToElement('#experience')">Experience</button><button class="article-header__nav__button" onClick="scrollToElement('#about')">About</button><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Contact</button><br/><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Resume</button><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Code</button>
             </nav>
         </header>
         <div class="article-body">
+            <h3 class="contact-title">May I help you?</h3>
+            <p>
+                I'm a Senior Front-end Developer based in London, UK.
+                <br/>I would be happy to design and build your next, amazing web project.
+                <br/>My next availability is April 2016.
+            </p>
+            <h3 class="contact-title">Contact me</h3>
+            <div class="contact-methods">
+                <a class="contact-method" href="mailto:pavel@maximov.it" target="_blank">pavel@maximov.it</a>
+                <a class="contact-method" href="tel:00393482449123" target="_blank">+39 348 2449 123</a>
+                <a class="contact-method" href="https://de.linkedin.com/in/frontendlondon" target="_blank">LinkedIn</a>
+            </div>
         </div>
     </section>
 
     <section id="outro">
         <header class="section-header">
             <figure class="section-header-img-wrapper">
-                <img class="section-header-img" src="/img/me.png">
+                <img class="section-header-img" src="/img/outro.png">
             </figure>
             <span class="section-header-secondary-title">Thank you for visiting!</span>
             <span class="section-header-secondary-title">Hope to hear from you soon.</span>
             <nav class="section-header-nav">
-                <button class="article-header__nav__button" onClick="scrollToElement('#portfolio')">Projects</button><span class="separator">/</span><button class="article-header__nav__button" onClick="scrollToElement('#skills')">Skills</button><span class="separator">/</span><button class="article-header__nav__button" onClick="scrollToElement('#experience')">Experience</button><span class="separator">/</span><button class="article-header__nav__button" onClick="scrollToElement('#about')">About</button><span class="separator">/</span><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Contact</button><br/><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Resume</button><span class="separator">/</span><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Code example</button>
+                <button class="article-header__nav__button" onClick="scrollToElement('#portfolio')">Projects</button><button class="article-header__nav__button" onClick="scrollToElement('#skills')">Skills</button><button class="article-header__nav__button" onClick="scrollToElement('#experience')">Experience</button><button class="article-header__nav__button" onClick="scrollToElement('#about')">About</button><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Contact</button><br/><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Resume</button><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Code</button>
             </nav>
         </header>
         <video class="article-video" height="100%" width="100%" autoplay loop>

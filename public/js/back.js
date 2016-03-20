@@ -12,9 +12,13 @@ var $htmlBody = $('html,body');
 var $element  = $('#skills-cogwheels');
 var $aboutVideo = $('#outro-video');
 var $portfolio = $('#portfolio');
+var $experience = $('#experience');
 var $main = $('#main');
-var startPoint;
-var endPoint;
+var $outro = $('#outro');
+var startPointPortfolio;
+var endPointPortfolio;
+var startPointExperience;
+var endPointExperience;
 
 
 //function reserResizing () {
@@ -100,29 +104,33 @@ function onScrollPortfolio (scrollTop) {
     }
 }
 
+function onScrollStickyHeader (options) {
+    if (options.scrollTop < options.startPoint) {
+        options.$element.removeClass('scrolled-this');
+        options.$element.removeClass('scrolling-this');
+    } else if (options.scrollTop < options.endPoint) {
+        options.$element.addClass('scrolling-this');
+        options.$element.removeClass('scrolled-this');
+    } else {
+        options.$element.removeClass('scrolling-this');
+        options.$element.addClass('scrolled-this');
+    }
+}
+
 function onScrollMainContainer (scrollTop, windowHeight, scrollPoints) {
     var newAlphaValue;
 
     if (scrollTop < scrollPoints.skills) {
         newAlphaValue = scrollTop / windowHeight;
         newAlphaValue = newAlphaValue < .2 ? .2 : newAlphaValue;
-        newAlphaValue = newAlphaValue > .8 ? .8 : newAlphaValue;
+        newAlphaValue = newAlphaValue > .85 ? .85 : newAlphaValue;
         $main.css('background-color', 'hsla(0,10%,100%,' + newAlphaValue + ')');
-    } else if (scrollTop < scrollPoints.projectsEnd) {
-        $main.css('background-color', 'hsla(0,10%,100%,0.8)');
-    } else if (scrollTop > scrollPoints.projectsEnd && scrollTop < scrollPoints.experience) {
-        $main.css('background-color', 'hsla(0,10%,100%,0.8)');
-        //newAlphaValue = (scrollTop - scrollPoints.projectsEnd) / (scrollPoints.experience - scrollPoints.projectsEnd);
-        //newAlphaValue = newAlphaValue < .7 ? .7 : newAlphaValue;
-        //newAlphaValue = newAlphaValue > 1 ? 1 : newAlphaValue;
-        //$main.css('background-color', 'hsla(0,10%,100%,' + newAlphaValue + ')');
     } else if (scrollTop < scrollPoints.outro) {
-        $main.css('background-color', 'hsla(0,10%,100%,0.8)');
-        //$main.css('background-color', 'hsla(0,10%,100%,1)');
+        $main.css('background-color', 'hsla(0,10%,100%,0.85)');
     } else {
-        newAlphaValue = 1 - (scrollTop - scrollPoints.outro) / windowHeight;
+        newAlphaValue = 1 - (scrollTop - scrollPoints.outro) / (windowHeight / 2);
         newAlphaValue = newAlphaValue < 0.2 ? 0.2 : newAlphaValue;
-        newAlphaValue = newAlphaValue > .8 ? .8 : newAlphaValue;
+        newAlphaValue = newAlphaValue > .85 ? .85 : newAlphaValue;
         $main.css('background-color', 'hsla(0,10%,100%,' + newAlphaValue + ')');
     }
 }
@@ -132,13 +140,22 @@ function onScroll() {
     var windowHeight = $window.height();
     var scrollPoints = {
         skills: windowHeight,
-        projectsEnd: windowHeight * 9 - (windowHeight / 3),
-        experience: windowHeight * 9,
-        outro: windowHeight * 12
+        outro: $outro.offset().top - (windowHeight / 2)
     };
 
     onScrollAbout(scrollTop, windowHeight);
-    onScrollPortfolio(scrollTop);
+    onScrollStickyHeader({
+        $element: $portfolio,
+        startPoint: startPointPortfolio,
+        endPoint: endPointPortfolio,
+        scrollTop: scrollTop
+    });
+    onScrollStickyHeader({
+        $element: $experience,
+        startPoint: startPointExperience,
+        endPoint: endPointExperience,
+        scrollTop: scrollTop
+    });
     onScrollMainContainer(scrollTop, windowHeight, scrollPoints);
 }
 
@@ -148,11 +165,13 @@ $document.ready(function () {
     });
 
     $.each($('.cogwheel'), function (number, element) {
-        $(element).css('animation',  'rotating ' + getRandomArbitrary(20, 60) + 's linear infinite');
+        //$(element).css('animation',  'rotating ' + getRandomArbitrary(20, 60) + 's linear infinite');
     });
 
-    startPoint = $portfolio.offset().top;
-    endPoint = startPoint + $portfolio.outerHeight() - $window.height();
+    startPointPortfolio = $portfolio.offset().top;
+    endPointPortfolio = startPointPortfolio + $portfolio.outerHeight() - $window.height();
+    startPointExperience = $experience.offset().top;
+    endPointExperience = startPointExperience + $experience.outerHeight() - $window.height();
 
     //$main.css('background-color', 'hsla(0,10%,10%,0)');
     $window.on('scroll', onScroll);
