@@ -129,7 +129,7 @@
     </section>
 
     <section id="portfolio">
-        <header class="section-header">
+        <header class="section-header" id="portfolio-section-header">
             <figure class="section-header-img-wrapper">
                 <img class="section-header-img" src="/img/portfolio.png">
             </figure>
@@ -140,8 +140,8 @@
                 <button class="article-header__nav__button" onClick="scrollToElement('#portfolio')">Projects</button><button class="article-header__nav__button" onClick="scrollToElement('#skills')">Skills</button><button class="article-header__nav__button" onClick="scrollToElement('#experience')">Experience</button><button class="article-header__nav__button" onClick="scrollToElement('#about')">About</button><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Contact</button><br/><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Resume</button><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Code</button>
             </nav>
         </header>
-        <article class="article-body portfolio-item-bk">
-            <figure class="portfolio-item-desktop">
+        <article class="article-body portfolio-item-bk js-portfolio-item">
+            <figure class="portfolio-item-desktop" >
                 <figcaption class="project-type-label">E-commerce in JavaScript/PHP</figcaption>
                 <img class="portfolio-item-img" src="/img/portfolio/desktop.png">
                 <img class="portfolio-item-img-preview" src="/img/portfolio/bk-preview-desktop.jpg">
@@ -150,10 +150,10 @@
                 <img class="portfolio-item-img" src="/img/portfolio/tablet.png">
                 <img class="portfolio-item-img-preview" src="/img/portfolio/bk-preview-tablet.jpg">
             </figure>
-            <figure class="portfolio-item-notebook">
+            <div class="portfolio-item-notebook">
                 <img class="portfolio-item-img" src="/img/portfolio/notebook.png">
                 <img class="portfolio-item-img-preview" src="/img/portfolio/bk-preview-notebook.jpg">
-            </figure>
+            </div>
             <figure class="portfolio-item-mobile">
                 <img class="portfolio-item-img" src="/img/portfolio/mobile.png">
                 <img class="portfolio-item-img-preview" src="/img/portfolio/bk-preview-mobile.jpg">
@@ -166,9 +166,80 @@
                 <h4 class="portfolio-item-subtitle-contribution">Contribution:</h4>
                 <p class="portfolio-item-content-contribution">JavaScript, AJAX, Backbone.JS, jQuery, Lodash, JSON, HTML, CSS, SASS, Bootstrap, Grunt, Twig</p>
             </div>
+
+            <div class="portfolio-item-modal modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="portfolio-item-modal-content">
+                        <button class="portfolio-item-modal-close">X</button>
+                        <div class="portfolio-item-modal-details-wrapper">
+                            <h3 class="portfolio-item-title">Burger King Delivery Service</h3>
+                            <h4 class="portfolio-item-subtitle">E-commerce in JavaScript/PHP</h4>
+                            <p class="portfolio-item-content-details">As Senior Front-end Developer in Rocket Internet SE (Berlin), for this project I contributed to the HTML/CSS layout (responsive with 4 breakpoints) and to several JavaScript features including: restaurant search, product and toppings selection, cart, checkout and order tracking.</p>
+                            <p class="portfolio-item-content-details">Technologies: JavaScript, jQuery, Backbone.js, HTML5, Twig, CSS3, SASS, Bootstrap, Git.</p>
+                        </div>
+                        <div class="portfolio-item-notebook">
+                            <img class="portfolio-item-img" src="/img/portfolio/notebook.png">
+                            <div class="portfolio-item-img-full-wrapper carousel slide" id="carousel-example-generic" >
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="carousel-item active tse-scrollable wrapper">
+                                            <div class="tse-content">
+                                                <img class="portfolio-item-img-full" src="/img/portfolio/bk-01-notebook.png">
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item tse-scrollable wrapper">
+                                            <div class="tse-content">
+                                                <img class="portfolio-item-img-full" src="/img/portfolio/bk-02-notebook.png">
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item tse-scrollable wrapper">
+                                            <div class="tse-content">
+                                                <img class="portfolio-item-img-full" src="/img/portfolio/bk-03-notebook.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                <
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                >
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        <figure class="portfolio-item-mobile">
+                            <img class="portfolio-item-img" src="/img/portfolio/mobile.png">
+                            <div class="portfolio-item-img-full-wrapper carousel slide" id="carousel-example-generic2" >
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="portfolio-item-img-full" src="/img/portfolio/bk-01-mobile.png">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="portfolio-item-img-full" src="/img/portfolio/bk-02-mobile.png">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="portfolio-item-img-full" src="/img/portfolio/bk-03-mobile.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
         </article>
 
-        <article class="article-body portfolio-item-vendomo">
+        <article class="article-body portfolio-item-vendomo js-portfolio-item">
             <figure class="portfolio-item-desktop">
                 <figcaption class="project-type-label">Website in JavaScript/PHP</figcaption>
                 <img class="portfolio-item-img" src="/img/portfolio/desktop.png">
@@ -196,7 +267,7 @@
             </div>
         </article>
 
-        <article class="article-body portfolio-item-vendomo-crm">
+        <article class="article-body portfolio-item-vendomo-crm js-portfolio-item">
             <figure class="portfolio-item-desktop">
                 <figcaption class="project-type-label">Web app in JavaScript/PHP</figcaption>
                 <img class="portfolio-item-img" src="/img/portfolio/desktop.png">
@@ -224,7 +295,7 @@
             </div>
         </article>
 
-        <article class="article-body portfolio-item-foodora">
+        <article class="article-body portfolio-item-foodora js-portfolio-item">
             <figure class="portfolio-item-desktop">
                 <figcaption class="project-type-label">E-commerce in JavaScript/PHP</figcaption>
                 <img class="portfolio-item-img" src="/img/portfolio/desktop.png">
@@ -252,7 +323,7 @@
             </div>
         </article>
 
-        <article class="article-body portfolio-item-timvision">
+        <article class="article-body portfolio-item-timvision js-portfolio-item">
             <figure class="portfolio-item-tv1">
                 <figcaption class="project-type-label">Smart-TV web app in JavaScript</figcaption>
                 <img class="portfolio-item-img-preview" src="/img/portfolio/timvision-preview-catalog.jpg">
@@ -272,7 +343,7 @@
             </div>
         </article>
 
-        <article class="article-body portfolio-item-cubomusica">
+        <article class="article-body portfolio-item-cubomusica js-portfolio-item">
             <figure class="portfolio-item-tv1">
                 <figcaption class="project-type-label">Smart-TV web app in JavaScript</figcaption>
                 <img class="portfolio-item-img" src="/img/portfolio/samsung-tv.png">
@@ -292,7 +363,7 @@
             </div>
         </article>
 
-        <article class="article-body portfolio-item-unicri">
+        <article class="article-body portfolio-item-unicri js-portfolio-item">
             <figure class="portfolio-item-notebook-ande">
                 <figcaption class="project-type-label">Website</figcaption>
                 <img class="portfolio-item-img" src="/img/portfolio/notebook.png">
@@ -327,7 +398,7 @@
             </div>
         </article>
 
-        <article class="article-body portfolio-item-others">
+        <article class="article-body portfolio-item-others js-portfolio-item">
             <figure class="portfolio-item-notebook-school">
                 <figcaption class="project-type-label">Website</figcaption>
                 <img class="portfolio-item-img" src="/img/portfolio/notebook.png">
@@ -444,17 +515,18 @@
                 <h3 class="experience-employer-name">United Nations Interregional Crime and Justice Research Institute (UNICRI)<br/>Turin, Italy</h3>
                 <h3 class="experience-position">Front-end Developer / Graphic Designer</h3>
                 <p class="experience-period">5 years (October 2005 - February 2011)</p>
-                <h4 class="experience-subtitle">Contributed to:</h4>
+                <h4 class="experience-subtitle">Working in the Security Governance/Counter-Terrorism Laboratory​<br/> I contributed to:</h4>
                 <ul class="experience-projects">
                     <li><strong>CBRN KMS e-learning portal</strong> - project on sharing counter-terrorism best practices</li>
                     <li><strong>EU-SEC e-learning portal</strong> - project on sharing major events security best practices</li>
-                    <li><strong>SGCT Lab website</strong> - UNICRI Security Governance/Counter-terrorism Laboratory</li>
-                    <li><strong>IPO Programme website</strong> project on major events security</li>
-                    <li><strong>Anti-Corruption website</strong> - project fighting corruption in South America</li>
+                    <li><strong>SGCT Lab website</strong> - all activities of my department</li>
+                    <li><strong>IPO Programme website</strong> - project on major events security</li>
+                    <li><strong>Andean Countries Anti-Corruption website</strong> - project fighting corruption in South America</li>
                     <li><strong>Graphic layout for 30+ print designs</strong> - brochures, posters, publication layouts and adv</li>
+                    <li><strong>Several photo and video reportages</strong> of the department activities</li>
                 </ul>
                 <h4 class="experience-subtitle">Technologies</h4>
-                <p>JavaScript, HTML, CSS, PHP, Wordpress, Photoshop, Illustrator, InDesign.</p>
+                <p>JavaScript, HTML, CSS, PHP, Wordpress, Photoshop, Illustrator, InDesign, Premiere, AfterEffects.</p>
                 <h4 class="experience-subtitle">LinkedIn Referencies</h4>
                 <div class="experience-reference">
                     <p class="experience-reference-content">
@@ -467,6 +539,16 @@
                         Francesco Cappe'<br/>Head of the UNICRI Security Governance/Counter-Terrorism Laboratory
                     </p>
                 </div>
+                <div class="experience-reference">
+                    <p class="experience-reference-content">
+                        <img src="/img/experience/quotes-open.svg" class="quote-open">
+                        Pavel contributed not only to the technical side of the project but also helped us to structure the considerable amount of information we had in order to make it more suitable for the e-learning format.<button class="experience-reference-more-button"> Read all</button>
+                        <img src="/img/experience/quotes-close.svg" class="quote-close">
+                    </p>
+                    <p class="experience-reference-author">
+                        Marian de Bruijn<br/>Programme Coordinator at UNICRI
+                    </p>
+                </div>
             </div>
         </article>
         <article class="article-body">
@@ -474,14 +556,14 @@
                 <div class="experience-timeline-year">2005</div>
             </div>
             <div class="experience-content">
-                <h3 class="experience-employer-name">Freelancing for small/medium clients in Turin, Italy</h3>
+                <h3 class="experience-employer-name">Freelancing</h3>
                 <h3 class="experience-position">Front-end Developer / Graphic Designer</h3>
-                <p class="experience-period">2 years (August 2003 - September 2005)</p>
-                <h4 class="experience-subtitle">Created:</h4>
+                <p class="experience-period">7 years (July 2003 - February 2011)</p>
+                <h4 class="experience-subtitle">Working as freelance on side projects for web agencies and clients<br/> I contributed to: </h4>
                 <ul class="experience-projects">
-                    <li><strong>Vaso di Pandora e-commerce</strong> - concept store</li>
-                    <li><strong>15+ marketing websites</strong> for various clients</li>
-                    <li><strong>20+ print designs</strong> - brochures, posters and adv</li>
+                    <li><strong>2 e-commerce websites</strong></li>
+                    <li><strong>15+ marketing websites</strong></li>
+                    <li><strong>20+ print designs</strong> like brochures, posters and adv</li>
                     <li><strong>10+ logo designs and branding</strong></li>
                 </ul>
                 <h4 class="experience-subtitle">Technologies</h4>
@@ -493,9 +575,9 @@
                 <div class="experience-timeline-year">2003</div>
             </div>
             <div class="experience-content">
-                <h3 class="experience-employer-name">Cometa Comunicazioni s.r.l. web agency in Turin, Italy</h3>
-                <h3 class="experience-position">Front-end Developer / Graphic Designer</h3>
-                <p class="experience-period">4 years (June 1999 - August 2003)</p>
+                <h3 class="experience-employer-name">Cometa Comunicazioni s.r.l. (web agency in Turin, Italy)</h3>
+                <h3 class="experience-position">Web Developer / Graphic Designer</h3>
+                <p class="experience-period">4 years (June 1999 - July 2003)</p>
                 <h4 class="experience-subtitle">Contributed to:</h4>
                 <ul class="experience-projects">
                     <li><strong>10+ e-commerce portals</strong></li>
@@ -504,7 +586,7 @@
                     <li><strong>15+ print designs</strong> - brochures, logos, posters and adv</li>
                 </ul>
                 <h4 class="experience-subtitle">Technologies</h4>
-                <p>HTML, CSS, JavaScript, Flash, Photoshop, Illustrator, InDesign</p>
+                <p>HTML, CSS, JavaScript, Flash, PHP, Photoshop, Illustrator, InDesign</p>
             </div>
         </article>
         <article class="article-body">
@@ -513,13 +595,14 @@
                 <div class="experience-timeline-year-last">1998</div>
             </div>
             <div class="experience-content">
-                <h3 class="experience-employer-name">Xenia Edizioni s.r.l publishing house in Milan, Italy</h3>
+                <h3 class="experience-employer-name">Xenia Edizioni s.r.l (publishing house in Milan, Italy)</h3>
                 <h3 class="experience-position">Volunteer Web Designer</h3>
                 <p class="experience-period">1 year (March 1998 - May 1999)</p>
-                <h4 class="experience-subtitle">Contributed to:</h4>
+                <p>I started my career as a volunteer contributor, creating designs and HTML/CSS layout for 3 webzines about video games, published monthly on the CD attached to "The Games Machine" magazine:</p>
                 <ul class="experience-projects">
-                    <li><strong>3 monthly webzines</strong> for The Games Machine magazine</li>
-                    <li><strong>10+ animated web banners</strong></li>
+                    <li><strong>"Cronache di Britannia"</strong> - webzine about Ultima Online video game</li>
+                    <li><strong>"Cronache del dopobomba"</strong> - webzine about Fallout 1 and 2 video games</li>
+                    <li><strong>"Baldur's Gate"</strong> - webzine about the game with same name</li>
                 </ul>
                 <h4 class="experience-subtitle">Technologies</h4>
                 <p>HTML, CSS, Photoshop</p>
@@ -659,8 +742,10 @@
 </main>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js"></script>-->
-<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>-->
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+<script src="/js/jquery.trackpad-scroll-emulator.min.js" ></script>
 <script src="/js/back.js" ></script>
 
 </body>

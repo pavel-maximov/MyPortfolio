@@ -23,6 +23,10 @@
     transform: translateY(-50%);
   }
 
+  &.portfolio-item--open .section-header {
+    display: none;
+  }
+
   &.scrolling-this .section-header {
     position: fixed;
   }
@@ -63,6 +67,24 @@
     background-size: 100%;
     min-height: 320px;
     padding: 3.7rem 3rem;
+  }
+
+  .portfolio-item-details-wrapper {
+    display: none;
+    position: absolute;
+    max-width: 350px;
+    width: 31%;
+    top: 5%;
+    left: -30%;
+  }
+
+  &.portfolio-item--open .portfolio-item-title-wrapper {
+    display: none;
+  }
+
+
+  &.portfolio-item--open .portfolio-item-details-wrapper {
+    display: block;
   }
 
   .portfolio-item-title-img {
@@ -136,6 +158,37 @@
     left: 4.2%;
   }
 
+  .portfolio-item-img-full-wrapper {
+    position: absolute;
+  }
+
+  .portfolio-item-img-full {
+    width: 100%;
+  }
+
+  .portfolio-item-modal {
+    & .modal-dialog {
+      width: 97%;
+      height: 90%;
+      max-width: none;
+    }
+  }
+
+
+  .portfolio-item-modal {
+    & .modal-dialog {
+      width: 97%;
+      height: 90%;
+      max-width: none;
+    }
+
+    & .portfolio-item-subtitle {
+      margin-bottom: 2rem;
+      font-family: $font-family-work-sans-thin;
+      font-size: 1.8rem;
+    }
+  }
+
   /////////  BK  /////////
 
   & .portfolio-item-bk {
@@ -152,6 +205,7 @@
         @extend %portfolio-item-img-preview;
         top: 36.4%;
       }
+
     }
 
     & .portfolio-item-tablet {
@@ -191,6 +245,9 @@
         @extend %portfolio-item-img-preview;
         top: 45.5%;
       }
+
+      & .portfolio-item-img-full {
+      }
     }
 
     & .portfolio-item-title-wrapper {
@@ -198,7 +255,77 @@
       top: 11%;
     }
 
+    & .portfolio-item-modal {
+      & .portfolio-item-modal-details-wrapper {
+        position: fixed;
+        left: 60px;
+        top: 60px;
+        width: 17%;
+      }
+
+
+      & .portfolio-item-notebook {
+        position: fixed;
+        left: 16.3%;
+        top: 4%;
+        width: 82%;
+        max-width: none;
+
+        & .portfolio-item-img-full-wrapper {
+          top: 55px;
+          left: 12.5%;
+          right: 12.5%;
+          bottom: 193px;
+        }
+
+        & .wrapper {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      & .portfolio-item-mobile {
+        position: fixed;
+        left: 8%;
+        top: 45%;
+        width: 13%;
+        max-width: none;
+
+        & .portfolio-item-img-full-wrapper {
+          top: 50px;
+          left: 2.5%;
+          right: 2.5%;
+          bottom: 103px;
+        }
+
+        & .wrapper {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      & .portfolio-item-modal-close {
+        width: 150px;
+        height: 150px;
+        color: #666;
+        font-size: 7rem;
+        font-family: $font-family-work-sans-thin;
+        position: fixed;
+        top: -30px;
+        right: -30px;
+        z-index: 1;
+        background: transparent;
+        border: none;
+        outline: none !important;
+
+        &:hover,
+        &:focus {
+          color: #999;
+        }
+      }
+    }
   }
+
 
   /////////  Vendomo  /////////
 

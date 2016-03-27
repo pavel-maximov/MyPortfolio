@@ -19,6 +19,7 @@ var startPointPortfolio;
 var endPointPortfolio;
 var startPointExperience;
 var endPointExperience;
+var currentScroll = $('#myModal').scrollTop();
 
 
 //function reserResizing () {
@@ -135,7 +136,7 @@ function onScrollMainContainer (scrollTop, windowHeight, scrollPoints) {
     }
 }
 
-function onScroll() {
+function onScroll(event) {
     var scrollTop = $window.scrollTop();
     var windowHeight = $window.height();
     var scrollPoints = {
@@ -159,6 +160,15 @@ function onScroll() {
     onScrollMainContainer(scrollTop, windowHeight, scrollPoints);
 }
 
+
+function portfolioItemsScroll () {
+    var $this = $(this);
+    var newScroll = $this.scrollTop();
+    console.log('currentScroll ' + currentScroll + ' newScroll ' + newScroll);
+    // $this.scrollTop($this.scrollTop() + (newScroll - currentScroll));
+    // currentScroll = newScroll;
+}
+
 $document.ready(function () {
     $('[data-toggle="offcanvas"]').click(function () {
         $('[data-offcanvas="content"]').toggleClass('offcanvas-active');
@@ -176,6 +186,56 @@ $document.ready(function () {
     //$main.css('background-color', 'hsla(0,10%,10%,0)');
     $window.on('scroll', onScroll);
     onScroll();
+
+    $('.portfolio-item-bk .portfolio-item-desktop').click(function() {
+        $('#myModal')
+            .on('shown.bs.modal', function () {
+                $('#carousel-example-generic').carousel({
+                    interval: false
+                });
+                $('#carousel-example-generic2').carousel({
+                    interval: false
+                });
+                $('.portfolio-item-modal-close').click(function() {
+                    $('#myModal').modal('hide');
+                });
+                $('.left.carousel-control').click(function () {
+                    $('#carousel-example-generic2').carousel('prev')
+                });
+                $('.right.carousel-control').click(function () {
+                    $('#carousel-example-generic2').carousel('next')
+                });
+                $('.wrapper').TrackpadScrollEmulator();
+            })
+            .modal();
+
+        // $('#myModal').find('.portfolio-item-notebook .portfolio-item-img-full-wrapper').scroll(portfolioItemsScroll);
+        //
+        // var $parent = $(this).parent();
+        //
+        // $parent.toggleClass('portfolio-item--open');
+        // if ($parent.hasClass('portfolio-item--open')) {
+        //     openedPortfolioItem = $parent;
+        // } else {
+        //     openedPortfolioItem = null;
+        // }
+    });
+
+
+    // $('.js-draggable').draggable({
+    //     drag: function(event, ui) {
+    //         var parentHeight = ui.helper.parent().outerHeight();
+    //         var childHeight = ui.helper.outerHeight();
+    //
+    //         if (ui.position.top > 0) {
+    //             ui.position.top = 0;
+    //         } else if ((Math.abs(ui.position.top) + parentHeight - ui.helper.parent().scrollTop()) > childHeight) {
+    //             ui.position.top = -(childHeight - parentHeight);
+    //         }
+    //     },
+    //     axis: 'y',
+    //     scroll: false
+    // });
     //
     //$('#skills').mousemove(function(e) {
     //    mX = e.pageX;
