@@ -140,24 +140,37 @@
                 <button class="article-header__nav__button" onClick="scrollToElement('#portfolio')">Projects</button><button class="article-header__nav__button" onClick="scrollToElement('#skills')">Skills</button><button class="article-header__nav__button" onClick="scrollToElement('#experience')">Experience</button><button class="article-header__nav__button" onClick="scrollToElement('#about')">About</button><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Contact</button><br/><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Resume</button><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Code</button>
             </nav>
         </header>
+
         <article class="article-body portfolio-item-bk js-portfolio-item">
-            <figure class="portfolio-item-desktop" >
-                <figcaption class="project-type-label">E-commerce in JavaScript/PHP</figcaption>
-                <img class="portfolio-item-img" src="/img/portfolio/desktop.png">
-                <img class="portfolio-item-img-preview" src="/img/portfolio/bk-preview-desktop.jpg">
-            </figure>
-            <figure class="portfolio-item-tablet">
-                <img class="portfolio-item-img" src="/img/portfolio/tablet.png">
-                <img class="portfolio-item-img-preview" src="/img/portfolio/bk-preview-tablet.jpg">
-            </figure>
-            <div class="portfolio-item-notebook">
-                <img class="portfolio-item-img" src="/img/portfolio/notebook.png">
-                <img class="portfolio-item-img-preview" src="/img/portfolio/bk-preview-notebook.jpg">
+            <div class="portfolio-item-desktop">
+                <div class="project-type-label">E-commerce in JavaScript/PHP</div>
+                <img class="portfolio-item-device-img" src="/img/portfolio/desktop.png">
+                <figure class="portfolio-item-img-preview">
+                    <img class="portfolio-item-img" src="/img/portfolio/bk-preview-desktop.jpg">
+                    <img class="portfolio-item-eye-icon" src="/img/icons/eye.svg">
+                </figure>
             </div>
-            <figure class="portfolio-item-mobile">
-                <img class="portfolio-item-img" src="/img/portfolio/mobile.png">
-                <img class="portfolio-item-img-preview" src="/img/portfolio/bk-preview-mobile.jpg">
-            </figure>
+            <div class="portfolio-item-tablet">
+                <img class="portfolio-item-device-img" src="/img/portfolio/tablet.png">
+                <figure class="portfolio-item-img-preview">
+                    <img class="portfolio-item-img" src="/img/portfolio/bk-preview-tablet.jpg">
+                    <img class="portfolio-item-eye-icon" src="/img/icons/eye.svg">
+                </figure>
+            </div>
+            <div class="portfolio-item-notebook">
+                <img class="portfolio-item-device-img" src="/img/portfolio/notebook.png">
+                <figure class="portfolio-item-img-preview">
+                    <img class="portfolio-item-img" src="/img/portfolio/bk-preview-notebook.jpg">
+                    <img class="portfolio-item-eye-icon" src="/img/icons/eye.svg">
+                </figure>
+            </div>
+            <div class="portfolio-item-mobile">
+                <img class="portfolio-item-device-img" src="/img/portfolio/mobile.png">
+                <figure class="portfolio-item-img-preview">
+                    <img class="portfolio-item-img" src="/img/portfolio/bk-preview-mobile.jpg">
+                    <img class="portfolio-item-eye-icon" src="/img/icons/eye.svg">
+                </figure>
+            </div>
             <div class="portfolio-item-title-wrapper">
                 <h3 class="portfolio-item-title">Burger King</h3>
                 <h4 class="portfolio-item-subtitle">Delivery Service</h4>
@@ -167,7 +180,7 @@
                 <p class="portfolio-item-content-contribution">JavaScript, AJAX, Backbone.JS, jQuery, Lodash, JSON, HTML, CSS, SASS, Bootstrap, Grunt, Twig</p>
             </div>
 
-            <div class="portfolio-item-modal modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="portfolio-item-modal modal fade" id="bk-modal" tabindex="-1" role="dialog" aria-labelledby="bk-modalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="portfolio-item-modal-content">
                         <button class="portfolio-item-modal-close">X</button>
@@ -178,57 +191,69 @@
                             <p class="portfolio-item-content-details">Technologies: JavaScript, jQuery, Backbone.js, HTML5, Twig, CSS3, SASS, Bootstrap, Git.</p>
                         </div>
                         <div class="portfolio-item-notebook">
-                            <img class="portfolio-item-img" src="/img/portfolio/notebook.png">
-                            <div class="portfolio-item-img-full-wrapper carousel slide" id="carousel-example-generic" >
+                            <img class="portfolio-item-device-img" src="/img/portfolio/notebook.png">
+                            <div class="portfolio-item-img-full-wrapper carousel slide" id="bk-main-carousel" >
+
                                     <ol class="carousel-indicators">
-                                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                        <li data-target="#bk-main-carousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#bk-main-carousel" data-slide-to="1"></li>
+                                        <li data-target="#bk-main-carousel" data-slide-to="2"></li>
+                                        <li data-target="#bk-main-carousel" data-slide-to="3"></li>
                                     </ol>
                                     <div class="carousel-inner" role="listbox">
                                         <div class="carousel-item active tse-scrollable wrapper">
                                             <div class="tse-content">
-                                                <img class="portfolio-item-img-full" src="/img/portfolio/bk-01-notebook.png">
+                                                <img class="portfolio-item-img-full" src="/img/portfolio/bk-01-notebook.jpg">
                                             </div>
                                         </div>
                                         <div class="carousel-item tse-scrollable wrapper">
                                             <div class="tse-content">
-                                                <img class="portfolio-item-img-full" src="/img/portfolio/bk-02-notebook.png">
+                                                <img class="portfolio-item-img-full" src="/img/portfolio/bk-02-notebook.jpg">
                                             </div>
                                         </div>
                                         <div class="carousel-item tse-scrollable wrapper">
                                             <div class="tse-content">
-                                                <img class="portfolio-item-img-full" src="/img/portfolio/bk-03-notebook.png">
+                                                <img class="portfolio-item-img-full" src="/img/portfolio/bk-03-notebook.jpg">
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item tse-scrollable wrapper">
+                                            <div class="tse-content">
+                                                <img class="portfolio-item-img-full" src="/img/portfolio/bk-04-notebook.jpg">
                                             </div>
                                         </div>
                                     </div>
                             </div>
-                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                            <a class="left carousel-control" href="#bk-main-carousel" role="button" data-slide="prev">
                                 <
                                 <span class="sr-only">Previous</span>
                             </a>
-                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                            <a class="right carousel-control" href="#bk-main-carousel" role="button" data-slide="next">
                                 >
                                 <span class="sr-only">Next</span>
                             </a>
                         </div>
                         <figure class="portfolio-item-mobile">
-                            <img class="portfolio-item-img" src="/img/portfolio/mobile.png">
-                            <div class="portfolio-item-img-full-wrapper carousel slide" id="carousel-example-generic2" >
+                            <img class="portfolio-item-device-img" src="/img/portfolio/mobile.png">
+                            <div class="portfolio-item-img-full-wrapper carousel slide" id="bk-secondary-carousel" >
                                 <div class="carousel-inner" role="listbox">
                                     <div class="carousel-item active tse-scrollable wrapper">
                                         <div class="tse-content">
-                                            <img class="portfolio-item-img-full" src="/img/portfolio/bk-01-mobile.png">
+                                            <img class="portfolio-item-img-full" src="/img/portfolio/bk-01-mobile.jpg">
                                         </div>
                                     </div>
                                     <div class="carousel-item tse-scrollable wrapper">
                                         <div class="tse-content">
-                                            <img class="portfolio-item-img-full" src="/img/portfolio/bk-02-mobile.png">
+                                            <img class="portfolio-item-img-full" src="/img/portfolio/bk-02-mobile.jpg">
                                         </div>
                                     </div>
                                     <div class="carousel-item tse-scrollable wrapper">
                                         <div class="tse-content">
-                                            <img class="portfolio-item-img-full" src="/img/portfolio/bk-03-mobile.png">
+                                            <img class="portfolio-item-img-full" src="/img/portfolio/bk-03-mobile.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="portfolio-item-img-full" src="/img/portfolio/bk-04-mobile.jpg">
                                         </div>
                                     </div>
                                 </div>
@@ -240,23 +265,35 @@
         </article>
 
         <article class="article-body portfolio-item-vendomo js-portfolio-item">
-            <figure class="portfolio-item-desktop">
-                <figcaption class="project-type-label">Website in JavaScript/PHP</figcaption>
-                <img class="portfolio-item-img" src="/img/portfolio/desktop.png">
-                <img class="portfolio-item-img-preview" src="/img/portfolio/vendomo-preview-desktop.jpg">
-            </figure>
-            <figure class="portfolio-item-tablet">
-                <img class="portfolio-item-img" src="/img/portfolio/tablet.png">
-                <img class="portfolio-item-img-preview" src="/img/portfolio/vendomo-preview-tablet.jpg">
-            </figure>
-            <figure class="portfolio-item-notebook">
-                <img class="portfolio-item-img" src="/img/portfolio/notebook.png">
-                <img class="portfolio-item-img-preview" src="/img/portfolio/vendomo-preview-notebook.jpg">
-            </figure>
-            <figure class="portfolio-item-mobile">
-                <img class="portfolio-item-img" src="/img/portfolio/mobile.png">
-                <img class="portfolio-item-img-preview" src="/img/portfolio/vendomo-preview-mobile.jpg">
-            </figure>
+            <div class="portfolio-item-desktop">
+                <div class="project-type-label">Website in JavaScript/PHP</div>
+                <img class="portfolio-item-device-img" src="/img/portfolio/desktop.png">
+                <figure class="portfolio-item-img-preview">
+                    <img class="portfolio-item-img" src="/img/portfolio/vendomo-preview-desktop.jpg">
+                    <img class="portfolio-item-eye-icon" src="/img/icons/eye.svg">
+                </figure>
+            </div>
+            <div class="portfolio-item-tablet">
+                <img class="portfolio-item-device-img" src="/img/portfolio/tablet.png">
+                <figure class="portfolio-item-img-preview">
+                    <img class="portfolio-item-img" src="/img/portfolio/vendomo-preview-tablet.jpg">
+                    <img class="portfolio-item-eye-icon" src="/img/icons/eye.svg">
+                </figure>
+            </div>
+            <div class="portfolio-item-notebook">
+                <img class="portfolio-item-device-img" src="/img/portfolio/notebook.png">
+                <figure class="portfolio-item-img-preview">
+                    <img class="portfolio-item-img" src="/img/portfolio/vendomo-preview-notebook.jpg">
+                    <img class="portfolio-item-eye-icon" src="/img/icons/eye.svg">
+                </figure>
+            </div>
+            <div class="portfolio-item-mobile">
+                <img class="portfolio-item-device-img" src="/img/portfolio/mobile.png">
+                <figure class="portfolio-item-img-preview">
+                    <img class="portfolio-item-img" src="/img/portfolio/vendomo-preview-mobile.jpg">
+                    <img class="portfolio-item-eye-icon" src="/img/icons/eye.svg">
+                </figure>
+            </div>
             <div class="portfolio-item-title-wrapper">
                 <h3 class="portfolio-item-title">Vendomo</h3>
                 <h4 class="portfolio-item-subtitle">Real Estate Selling and Renting Startup</h4>
@@ -265,26 +302,99 @@
                 <h4 class="portfolio-item-subtitle-contribution">Contribution:</h4>
                 <p class="portfolio-item-content-contribution">JavaScript, jQuery, HTML, CSS, SASS, Bootstrap, Gulp, Photoshop, Mockups</p>
             </div>
+
+            <div class="portfolio-item-modal modal fade" id="vendomo-modal" tabindex="-1" role="dialog" aria-labelledby="bk-modalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="portfolio-item-modal-content">
+                        <button class="portfolio-item-modal-close">X</button>
+                        <div class="portfolio-item-modal-details-wrapper">
+                            <h3 class="portfolio-item-title">Burger King Delivery Service</h3>
+                            <h4 class="portfolio-item-subtitle">E-commerce in JavaScript/PHP</h4>
+                            <p class="portfolio-item-content-details">As Senior Front-end Developer in Rocket Internet SE (Berlin), for this project I contributed to the HTML/CSS layout (responsive with 4 breakpoints) and to several JavaScript features including: restaurant search, product and toppings selection, cart, checkout and order tracking.</p>
+                            <p class="portfolio-item-content-details">Technologies: JavaScript, jQuery, Backbone.js, HTML5, Twig, CSS3, SASS, Bootstrap, Git.</p>
+                        </div>
+                        <div class="portfolio-item-notebook">
+                            <img class="portfolio-item-device-img" src="/img/portfolio/notebook.png">
+                            <div class="portfolio-item-img-full-wrapper carousel slide" id="vendomo-main-carousel" >
+
+                                <ol class="carousel-indicators">
+                                    <li data-target="#vendomo-main-carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#vendomo-main-carousel" data-slide-to="1"></li>
+                                </ol>
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="portfolio-item-img-full" src="/img/portfolio/vendomo-01-notebook.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="portfolio-item-img-full" src="/img/portfolio/vendomo-02-notebook.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#vendomo-main-carousel" role="button" data-slide="prev">
+                                <
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#vendomo-main-carousel" role="button" data-slide="next">
+                                >
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        <figure class="portfolio-item-mobile">
+                            <img class="portfolio-item-device-img" src="/img/portfolio/mobile.png">
+                            <div class="portfolio-item-img-full-wrapper carousel slide" id="vendomo-secondary-carousel" >
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="portfolio-item-img-full" src="/img/portfolio/vendomo-01-mobile.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="portfolio-item-img-full" src="/img/portfolio/vendomo-02-mobile.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
         </article>
 
         <article class="article-body portfolio-item-vendomo-crm js-portfolio-item">
-            <figure class="portfolio-item-desktop">
-                <figcaption class="project-type-label">Web app in JavaScript/PHP</figcaption>
-                <img class="portfolio-item-img" src="/img/portfolio/desktop.png">
-                <img class="portfolio-item-img-preview" src="/img/portfolio/vendomo-crm-preview-desktop.jpg">
-            </figure>
-            <figure class="portfolio-item-tablet">
-                <img class="portfolio-item-img" src="/img/portfolio/tablet.png">
-                <img class="portfolio-item-img-preview" src="/img/portfolio/vendomo-crm-preview-tablet.jpg">
-            </figure>
-            <figure class="portfolio-item-notebook">
-                <img class="portfolio-item-img" src="/img/portfolio/notebook.png">
-                <img class="portfolio-item-img-preview" src="/img/portfolio/vendomo-crm-preview-notebook.jpg">
-            </figure>
-            <figure class="portfolio-item-mobile">
-                <img class="portfolio-item-img" src="/img/portfolio/mobile.png">
-                <img class="portfolio-item-img-preview" src="/img/portfolio/vendomo-crm-preview-mobile.jpg">
-            </figure>
+            <div class="portfolio-item-desktop">
+                <div class="project-type-label">Web app in JavaScript/PHP</div>
+                <img class="portfolio-item-device-img" src="/img/portfolio/desktop.png">
+                <figure class="portfolio-item-img-preview">
+                    <img class="portfolio-item-img" src="/img/portfolio/vendomo-crm-preview-desktop.jpg">
+                    <img class="portfolio-item-eye-icon" src="/img/icons/eye.svg">
+                </figure>
+            </div>
+            <div class="portfolio-item-tablet">
+                <img class="portfolio-item-device-img" src="/img/portfolio/tablet.png">
+                <figure class="portfolio-item-img-preview">
+                    <img class="portfolio-item-img" src="/img/portfolio/vendomo-crm-preview-tablet.jpg">
+                    <img class="portfolio-item-eye-icon" src="/img/icons/eye.svg">
+                </figure>
+            </div>
+            <div class="portfolio-item-notebook">
+                <img class="portfolio-item-device-img" src="/img/portfolio/notebook.png">
+                <figure class="portfolio-item-img-preview">
+                    <img class="portfolio-item-img" src="/img/portfolio/vendomo-crm-preview-notebook.jpg">
+                    <img class="portfolio-item-eye-icon" src="/img/icons/eye.svg">
+                </figure>
+            </div>
+            <div class="portfolio-item-mobile">
+                <img class="portfolio-item-device-img" src="/img/portfolio/mobile.png">
+                <figure class="portfolio-item-img-preview">
+                    <img class="portfolio-item-img" src="/img/portfolio/vendomo-crm-preview-mobile.jpg">
+                    <img class="portfolio-item-eye-icon" src="/img/icons/eye.svg">
+                </figure>
+            </div>
             <div class="portfolio-item-title-wrapper">
                 <h3 class="portfolio-item-title">Vendomo <br/>CRM Dashboard</h3>
                 <h4 class="portfolio-item-subtitle">Landlords and Candidates Backoffice </h4>
@@ -296,23 +406,35 @@
         </article>
 
         <article class="article-body portfolio-item-foodora js-portfolio-item">
-            <figure class="portfolio-item-desktop">
-                <figcaption class="project-type-label">E-commerce in JavaScript/PHP</figcaption>
-                <img class="portfolio-item-img" src="/img/portfolio/desktop.png">
-                <img class="portfolio-item-img-preview" src="/img/portfolio/foodora-preview-desktop.jpg">
-            </figure>
-            <figure class="portfolio-item-tablet">
-                <img class="portfolio-item-img" src="/img/portfolio/tablet.png">
-                <img class="portfolio-item-img-preview" src="/img/portfolio/foodora-preview-tablet.jpg">
-            </figure>
-            <figure class="portfolio-item-notebook">
-                <img class="portfolio-item-img" src="/img/portfolio/notebook.png">
-                <img class="portfolio-item-img-preview" src="/img/portfolio/foodora-preview-notebook.jpg">
-            </figure>
-            <figure class="portfolio-item-mobile">
-                <img class="portfolio-item-img" src="/img/portfolio/mobile.png">
-                <img class="portfolio-item-img-preview" src="/img/portfolio/foodora-preview-mobile.jpg">
-            </figure>
+            <div class="portfolio-item-desktop">
+                <div class="project-type-label">E-commerce in JavaScript/PHP</div>
+                <img class="portfolio-item-device-img" src="/img/portfolio/desktop.png">
+                <figure class="portfolio-item-img-preview">
+                    <img class="portfolio-item-img" src="/img/portfolio/foodora-preview-desktop.jpg">
+                    <img class="portfolio-item-eye-icon" src="/img/icons/eye.svg">
+                </figure>
+            </div>
+            <div class="portfolio-item-tablet">
+                <img class="portfolio-item-device-img" src="/img/portfolio/tablet.png">
+                <figure class="portfolio-item-img-preview">
+                    <img class="portfolio-item-img" src="/img/portfolio/foodora-preview-tablet.jpg">
+                    <img class="portfolio-item-eye-icon" src="/img/icons/eye.svg">
+                </figure>
+            </div>
+            <div class="portfolio-item-notebook">
+                <img class="portfolio-item-device-img" src="/img/portfolio/notebook.png">
+                <figure class="portfolio-item-img-preview">
+                    <img class="portfolio-item-img" src="/img/portfolio/foodora-preview-notebook.jpg">
+                    <img class="portfolio-item-eye-icon" src="/img/icons/eye.svg">
+                </figure>
+            </div>
+            <div class="portfolio-item-mobile">
+                <img class="portfolio-item-device-img" src="/img/portfolio/mobile.png">
+                <figure class="portfolio-item-img-preview">
+                    <img class="portfolio-item-img" src="/img/portfolio/foodora-preview-mobile.jpg">
+                    <img class="portfolio-item-eye-icon" src="/img/icons/eye.svg">
+                </figure>
+            </div>
             <div class="portfolio-item-title-wrapper">
                 <h3 class="portfolio-item-title">Foodora</h3>
                 <h4 class="portfolio-item-subtitle">Food Delivery Startup</h4>
@@ -327,11 +449,11 @@
             <figure class="portfolio-item-tv1">
                 <figcaption class="project-type-label">Smart-TV web app in JavaScript</figcaption>
                 <img class="portfolio-item-img-preview" src="/img/portfolio/timvision-preview-catalog.jpg">
-                <img class="portfolio-item-img" src="/img/portfolio/samsung-tv.png">
+                <img class="portfolio-item-device-img" src="/img/portfolio/samsung-tv.png">
             </figure>
             <figure class="portfolio-item-tv2">
                 <img class="portfolio-item-img-preview" src="/img/portfolio/timvision-preview-home.jpg">
-                <img class="portfolio-item-img" src="/img/portfolio/samsung-tv.png">
+                <img class="portfolio-item-device-img" src="/img/portfolio/samsung-tv.png">
             </figure>
             <div class="portfolio-item-title-wrapper-horizontal">
                 <h3 class="portfolio-item-title">TIMvision</h3>
@@ -346,11 +468,11 @@
         <article class="article-body portfolio-item-cubomusica js-portfolio-item">
             <figure class="portfolio-item-tv1">
                 <figcaption class="project-type-label">Smart-TV web app in JavaScript</figcaption>
-                <img class="portfolio-item-img" src="/img/portfolio/samsung-tv.png">
+                <img class="portfolio-item-device-img" src="/img/portfolio/samsung-tv.png">
                 <img class="portfolio-item-img-preview" src="/img/portfolio/cubomusica-preview-player.jpg">
             </figure>
             <figure class="portfolio-item-tv2">
-                <img class="portfolio-item-img" src="/img/portfolio/samsung-tv.png">
+                <img class="portfolio-item-device-img" src="/img/portfolio/samsung-tv.png">
                 <img class="portfolio-item-img-preview" src="/img/portfolio/cubomusica-preview-home.jpg">
             </figure>
             <div class="portfolio-item-title-wrapper-horizontal">
@@ -366,27 +488,27 @@
         <article class="article-body portfolio-item-unicri js-portfolio-item">
             <figure class="portfolio-item-notebook-ande">
                 <figcaption class="project-type-label">Website</figcaption>
-                <img class="portfolio-item-img" src="/img/portfolio/notebook.png">
+                <img class="portfolio-item-device-img" src="/img/portfolio/notebook.png">
                 <img class="portfolio-item-img-preview" src="/img/portfolio/ande-preview-notebook.jpg">
             </figure>
             <figure class="portfolio-item-notebook-eusec">
                 <figcaption class="project-type-label">E-learning</figcaption>
-                <img class="portfolio-item-img" src="/img/portfolio/notebook.png">
+                <img class="portfolio-item-device-img" src="/img/portfolio/notebook.png">
                 <img class="portfolio-item-img-preview" src="/img/portfolio/eusec-preview-notebook.jpg">
             </figure>
             <figure class="portfolio-item-notebook-cbrn">
                 <figcaption class="project-type-label">E-learning</figcaption>
-                <img class="portfolio-item-img" src="/img/portfolio/notebook.png">
+                <img class="portfolio-item-device-img" src="/img/portfolio/notebook.png">
                 <img class="portfolio-item-img-preview" src="/img/portfolio/cbrn-preview-notebook.jpg">
             </figure>
             <figure class="portfolio-item-notebook-ipo">
                 <figcaption class="project-type-label">Website</figcaption>
-                <img class="portfolio-item-img" src="/img/portfolio/notebook.png">
+                <img class="portfolio-item-device-img" src="/img/portfolio/notebook.png">
                 <img class="portfolio-item-img-preview" src="/img/portfolio/ipo-preview-notebook.jpg">
             </figure>
             <figure class="portfolio-item-notebook-lab">
                 <figcaption class="project-type-label">Website</figcaption>
-                <img class="portfolio-item-img" src="/img/portfolio/notebook.png">
+                <img class="portfolio-item-device-img" src="/img/portfolio/notebook.png">
                 <img class="portfolio-item-img-preview" src="/img/portfolio/lab-preview-notebook.jpg">
             </figure>
             <div class="portfolio-item-title-wrapper-horizontal">
@@ -401,27 +523,27 @@
         <article class="article-body portfolio-item-others js-portfolio-item">
             <figure class="portfolio-item-notebook-school">
                 <figcaption class="project-type-label">Website</figcaption>
-                <img class="portfolio-item-img" src="/img/portfolio/notebook.png">
+                <img class="portfolio-item-device-img" src="/img/portfolio/notebook.png">
                 <img class="portfolio-item-img-preview" src="/img/portfolio/school-preview-notebook.jpg">
             </figure>
             <figure class="portfolio-item-notebook-davide">
                 <figcaption class="project-type-label">Website</figcaption>
-                <img class="portfolio-item-img" src="/img/portfolio/notebook.png">
+                <img class="portfolio-item-device-img" src="/img/portfolio/notebook.png">
                 <img class="portfolio-item-img-preview" src="/img/portfolio/davide-preview-notebook.jpg">
             </figure>
             <figure class="portfolio-item-notebook-milena">
                 <figcaption class="project-type-label">Website</figcaption>
-                <img class="portfolio-item-img" src="/img/portfolio/notebook.png">
+                <img class="portfolio-item-device-img" src="/img/portfolio/notebook.png">
                 <img class="portfolio-item-img-preview" src="/img/portfolio/milena-preview-notebook.jpg">
             </figure>
             <figure class="portfolio-item-notebook-pandora">
                 <figcaption class="project-type-label">E-commerce</figcaption>
-                <img class="portfolio-item-img" src="/img/portfolio/notebook.png">
+                <img class="portfolio-item-device-img" src="/img/portfolio/notebook.png">
                 <img class="portfolio-item-img-preview" src="/img/portfolio/pandora-preview-notebook.jpg">
             </figure>
             <figure class="portfolio-item-notebook-acqua">
                 <figcaption class="project-type-label">E-commerce</figcaption>
-                <img class="portfolio-item-img" src="/img/portfolio/notebook.png">
+                <img class="portfolio-item-device-img" src="/img/portfolio/notebook.png">
                 <img class="portfolio-item-img-preview" src="/img/portfolio/acqua-preview-notebook.jpg">
             </figure>
             <div class="portfolio-item-title-wrapper-horizontal">

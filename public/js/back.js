@@ -19,7 +19,7 @@ var startPointPortfolio;
 var endPointPortfolio;
 var startPointExperience;
 var endPointExperience;
-var currentScroll = $('#myModal').scrollTop();
+var currentScroll = $('#bk-modal').scrollTop();
 
 
 //function reserResizing () {
@@ -169,6 +169,45 @@ function portfolioItemsScroll () {
     // currentScroll = newScroll;
 }
 
+function checkCarouselItem ($mainCarousel, $controlsContainer) {
+    if($mainCarousel.find('.carousel-inner .carousel-item:first').hasClass('active')) {
+        $controlsContainer.find('.left.carousel-control').hide();
+        $controlsContainer.find('.right.carousel-control').show();
+    } else if($mainCarousel.find('.carousel-inner .carousel-item:last').hasClass('active')) {
+        $controlsContainer.find('.right.carousel-control').hide();
+        $controlsContainer.find('.left.carousel-control').show();
+    } else {
+        $controlsContainer.find('.carousel-control').show();
+    }
+}
+
+function initModal($modal, $mainCarousel, $secondaryCarousel) {
+    $mainCarousel.carousel({
+        interval: false,
+        wrap: false
+    });
+    checkCarouselItem($mainCarousel, $modal);
+
+    $secondaryCarousel.carousel({
+        interval: false,
+        wrap: false
+    });
+
+    $mainCarousel
+        .on('slide.bs.carousel', function (e) {
+            $secondaryCarousel.carousel($(e.relatedTarget).index());
+        })
+        .on('slid.bs.carousel', function () {
+            checkCarouselItem($mainCarousel, $modal);
+        });
+
+    $modal.find('.portfolio-item-modal-close').click(function() {
+        $modal.modal('hide');
+    });
+
+    $modal.find('.tse-scrollable').TrackpadScrollEmulator();
+}
+
 $document.ready(function () {
     $('[data-toggle="offcanvas"]').click(function () {
         $('[data-offcanvas="content"]').toggleClass('offcanvas-active');
@@ -187,38 +226,24 @@ $document.ready(function () {
     $window.on('scroll', onScroll);
     onScroll();
 
-    $('.portfolio-item-bk .portfolio-item-desktop').click(function() {
-        $('#myModal')
+    $('.portfolio-item-bk .portfolio-item-img-preview').click(function() {
+        $('#bk-modal')
             .on('shown.bs.modal', function () {
-                $('#carousel-example-generic').carousel({
-                    interval: false
-                });
-                $('#carousel-example-generic2').carousel({
-                    interval: false
-                });
-                $('.portfolio-item-modal-close').click(function() {
-                    $('#myModal').modal('hide');
-                });
-                $('.left.carousel-control').click(function () {
-                    $('#carousel-example-generic2').carousel('prev')
-                });
-                $('.right.carousel-control').click(function () {
-                    $('#carousel-example-generic2').carousel('next')
-                });
-                $('.wrapper').TrackpadScrollEmulator();
+                var $this = $(this);
+                
+                initModal($this, $this.find('#bk-main-carousel'), $this.find('#bk-secondary-carousel'));
             })
             .modal();
+    });
 
-        // $('#myModal').find('.portfolio-item-notebook .portfolio-item-img-full-wrapper').scroll(portfolioItemsScroll);
-        //
-        // var $parent = $(this).parent();
-        //
-        // $parent.toggleClass('portfolio-item--open');
-        // if ($parent.hasClass('portfolio-item--open')) {
-        //     openedPortfolioItem = $parent;
-        // } else {
-        //     openedPortfolioItem = null;
-        // }
+    $('.portfolio-item-vendomo .portfolio-item-img-preview').click(function() {
+        $('#vendomo-modal')
+            .on('shown.bs.modal', function () {
+                var $this = $(this);
+
+                initModal($this, $this.find('#vendomo-main-carousel'), $this.find('#vendomo-secondary-carousel'));
+            })
+            .modal();
     });
 
 
