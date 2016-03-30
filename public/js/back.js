@@ -246,6 +246,16 @@ $document.ready(function () {
             .modal();
     });
 
+    $('.portfolio-item-vendomo-crm .portfolio-item-img-preview').click(function() {
+        $('#vendomo-crm-modal')
+            .on('shown.bs.modal', function () {
+                var $this = $(this);
+
+                initModal($this, $this.find('#vendomo-crm-main-carousel'), $this.find('#vendomo-crm-secondary-carousel'));
+            })
+            .modal();
+    });
+
 
     // $('.js-draggable').draggable({
     //     drag: function(event, ui) {
