@@ -172,28 +172,6 @@
     width: 100%;
   }
 
-  .portfolio-item-modal {
-    & .modal-dialog {
-      width: 97%;
-      height: 90%;
-      max-width: none;
-    }
-  }
-
-  .portfolio-item-modal {
-    & .modal-dialog {
-      width: 97%;
-      height: 90%;
-      max-width: none;
-    }
-
-    & .portfolio-item-subtitle {
-      margin-bottom: 2rem;
-      font-family: $font-family-work-sans-thin;
-      font-size: 1.8rem;
-    }
-  }
-
   .portfolio-item-eye-icon {
     display: none;
     position: absolute;
@@ -290,6 +268,38 @@
     }
   }
 
+  & .portfolio-item-tv1,
+  & .portfolio-item-tv2 {
+    position: absolute;
+    top: 18%;
+    left: 1%;
+    width: 55.9%;
+    max-width: 800px;
+
+    & .portfolio-item-img-preview {
+      position: absolute;
+      top: 2.3%;
+      left: 1.5%;
+      width: 97%;
+      max-width: 776px;
+    }
+  }
+
+  & .portfolio-item-tv2 {
+    top: 34%;
+    left: 37%;
+  }
+
+  & .portfolio-item-title-wrapper-horizontal {
+    left: 60%;
+    top: 7%;
+  }
+
+  & .project-type-label {
+    left: 1.6%;
+  }
+
+
   /////////  BK  /////////
 
   & .portfolio-item-bk {
@@ -357,6 +367,7 @@
     }
   }
 
+
   /////////  Vendomo CRM  /////////
 
   & .portfolio-item-vendomo-crm {
@@ -391,6 +402,7 @@
       margin: 2rem 0 0;
     }
   }
+
 
   /////////  Foodora  /////////
 
@@ -427,90 +439,16 @@
     }
   }
 
-  /////////  TIMVision  /////////
-
-  & .portfolio-item-timvision {
-    @extend %portfolio-item;
-
-    & .portfolio-item-tv1 {
-      position: absolute;
-      top: 18%;
-      left: 1%;
-      width: 55.9%;
-      max-width: 800px;
-
-      & .portfolio-item-img-preview {
-        @extend %portfolio-item-img-preview;
-        top: 42.4%;
-      }
-    }
 
 
-    & .portfolio-item-tv2 {
-      position: absolute;
-      top: 34%;
-      left: 37%;
-      width: 55.9%;
-      max-width: 800px;
+  /////////  Timvision and Cubomusica /////////
 
-      & .portfolio-item-img-preview {
-        @extend %portfolio-item-img-preview;
-        top: 42.4%;;
-      }
-    }
-
-    & .portfolio-item-title-wrapper-horizontal {
-      left: 60%;
-      top: 7%;
-    }
-
-    & .project-type-label {
-      left: 1.6%;
-    }
-  }
-
-  /////////  CuboMusica  /////////
-
+  & .portfolio-item-timvision,
   & .portfolio-item-cubomusica {
     @extend %portfolio-item;
 
-    & .portfolio-item-tv1 {
-      position: absolute;
-      top: 18%;
-      left: 1%;
-      width: 55.9%;
-      max-width: 800px;
-
-      & .portfolio-item-img-preview {
-        @extend %portfolio-item-img-preview;
-        top: 42.4%;
-      }
-    }
-
-
-    & .portfolio-item-tv2 {
-      position: absolute;
-      top: 34%;
-      left: 37%;
-      width: 55.9%;
-      max-width: 800px;
-
-      & .portfolio-item-img-preview {
-        @extend %portfolio-item-img-preview;
-        top: 42.4%;;
-      }
-    }
-
-    & .portfolio-item-title-wrapper-horizontal {
-      left: 60%;
-      top: 7%;
-    }
-
-    & .project-type-label {
-      left: 1.6%;
-    }
-
   }
+
 
   /////////  UNICRI  /////////
 
@@ -736,7 +674,20 @@
 
   /////////  MODAL  /////////
 
-  .portfolio-item-modal {
+  %portfolio-item-modal {
+
+    & .modal-dialog {
+      width: 97%;
+      height: 90%;
+      max-width: none;
+    }
+
+    & .portfolio-item-subtitle {
+      margin-bottom: 2rem;
+      font-family: $font-family-work-sans-thin;
+      font-size: 1.8rem;
+    }
+
     & .portfolio-item-modal-details-wrapper {
       position: fixed;
       left: 60px;
@@ -785,6 +736,31 @@
       }
     }
 
+    & .portfolio-item-samsung-tv {
+      position: fixed;
+      left: 25%;
+      top: 7.5%;
+      width: 67%;
+      max-width: none;
+
+      & .portfolio-item-img-full-wrapper {
+        top: 2.4%;
+        left: 1.5%;
+        right: 1.7%;
+        bottom: 18.3%;
+      }
+
+      & .portfolio-item-device-img {
+        max-width: 1239px;
+      }
+
+      & .wrapper {
+        width: 100%;
+        height: 100%;
+        max-width: 1200px;
+      }
+    }
+
     & .portfolio-item-modal-close {
       width: 150px;
       height: 150px;
@@ -806,4 +782,46 @@
     }
   }
 
+  .portfolio-item-modal-notebook-mobile {
+    @extend %portfolio-item-modal;
+
+    .carousel-control.left {
+      left: 0;
+    }
+
+    .carousel-control.right {
+      right: 0;
+    }
+
+    .carousel-indicators {
+      bottom: -5%;
+      left: 50%;
+      top: 48%;
+    }
+  }
+
+  .portfolio-item-modal-tv {
+    @extend %portfolio-item-modal;
+
+    .carousel-control{
+      top: 39%;
+    }
+
+    .carousel-control.left {
+      left: 16%;
+    }
+
+    .carousel-control.right {
+      right: 0;
+    }
+
+    .carousel-indicators {
+      bottom: -2%;
+      left: 56.3%;
+    }
+  }
+
+  .portfolio-item-modal-notebook {
+    @extend %portfolio-item-modal;
+  }
 }

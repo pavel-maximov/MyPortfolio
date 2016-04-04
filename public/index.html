@@ -180,7 +180,7 @@
                 <p class="portfolio-item-content-contribution">JavaScript, AJAX, Backbone.JS, jQuery, Lodash, JSON, HTML, CSS, SASS, Bootstrap, Grunt, Twig</p>
             </div>
 
-            <div class="portfolio-item-modal modal fade" id="bk-modal" tabindex="-1" role="dialog" aria-labelledby="bk-modalLabel" aria-hidden="true">
+            <div class="portfolio-item-modal-notebook-mobile modal fade" id="bk-modal" tabindex="-1" role="dialog" aria-labelledby="bk-modalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="portfolio-item-modal-content">
                         <button class="portfolio-item-modal-close">X</button>
@@ -303,7 +303,7 @@
                 <p class="portfolio-item-content-contribution">JavaScript, jQuery, HTML, CSS, SASS, Bootstrap, Gulp, Photoshop, Mockups</p>
             </div>
 
-            <div class="portfolio-item-modal modal fade" id="vendomo-modal" tabindex="-1" role="dialog" aria-labelledby="bk-modalLabel" aria-hidden="true">
+            <div class="portfolio-item-modal-notebook-mobile modal fade" id="vendomo-modal" tabindex="-1" role="dialog" aria-labelledby="bk-modalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="portfolio-item-modal-content">
                         <button class="portfolio-item-modal-close">X</button>
@@ -404,7 +404,7 @@
                 <p class="portfolio-item-content-contribution">JavaScript, AJAX, jQuery, HTML, CSS, LESS, Bootstrap, Gulp</p>
             </div>
 
-            <div class="portfolio-item-modal modal fade" id="vendomo-crm-modal" tabindex="-1" role="dialog" aria-labelledby="bk-modalLabel" aria-hidden="true">
+            <div class="portfolio-item-modal-notebook-mobile modal fade" id="vendomo-crm-modal" tabindex="-1" role="dialog" aria-labelledby="bk-modalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="portfolio-item-modal-content">
                         <button class="portfolio-item-modal-close">X</button>
@@ -527,7 +527,7 @@
                 <p class="portfolio-item-content-contribution">JavaScript, AJAX, Backbone.JS, jQuery, Lodash, JSON, TDD, HTML, CSS, SASS, Grunt, Bootstrap, Twig</p>
             </div>
 
-            <div class="portfolio-item-modal modal fade" id="foodora-modal" tabindex="-1" role="dialog" aria-labelledby="bk-modalLabel" aria-hidden="true">
+            <div class="portfolio-item-modal-notebook-mobile modal fade" id="foodora-modal" tabindex="-1" role="dialog" aria-labelledby="bk-modalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="portfolio-item-modal-content">
                         <button class="portfolio-item-modal-close">X</button>
@@ -614,12 +614,18 @@
         <article class="article-body portfolio-item-timvision js-portfolio-item">
             <figure class="portfolio-item-tv1">
                 <figcaption class="project-type-label">Smart-TV web app in JavaScript</figcaption>
-                <img class="portfolio-item-img-preview" src="/img/portfolio/timvision-preview-catalog.jpg">
                 <img class="portfolio-item-device-img" src="/img/portfolio/samsung-tv.png">
+                <figure class="portfolio-item-img-preview">
+                    <img class="portfolio-item-img" src="/img/portfolio/timvision-preview-catalog.jpg">
+                    <img class="portfolio-item-eye-icon" src="/img/icons/eye.svg">
+                </figure>
             </figure>
             <figure class="portfolio-item-tv2">
-                <img class="portfolio-item-img-preview" src="/img/portfolio/timvision-preview-home.jpg">
                 <img class="portfolio-item-device-img" src="/img/portfolio/samsung-tv.png">
+                <figure class="portfolio-item-img-preview">
+                    <img class="portfolio-item-img" src="/img/portfolio/timvision-preview-home.jpg">
+                    <img class="portfolio-item-eye-icon" src="/img/icons/eye.svg">
+                </figure>
             </figure>
             <div class="portfolio-item-title-wrapper-horizontal">
                 <h3 class="portfolio-item-title">TIMvision</h3>
@@ -629,17 +635,79 @@
                 <h4 class="portfolio-item-subtitle-contribution">Contribution:</h4>
                 <p class="portfolio-item-content-contribution">JavaScript, Samsung Web API, AJAX, XML, HTML, CSS, TDD</p>
             </div>
+
+            <div class="portfolio-item-modal-tv modal fade" id="timvision-modal" tabindex="-1" role="dialog" aria-labelledby="bk-modalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="portfolio-item-modal-content">
+                        <button class="portfolio-item-modal-close">X</button>
+                        <div class="portfolio-item-modal-details-wrapper">
+                            <h3 class="portfolio-item-title">Burger King Delivery Service</h3>
+                            <h4 class="portfolio-item-subtitle">E-commerce in JavaScript/PHP</h4>
+                            <p class="portfolio-item-content-details">As Senior Front-end Developer in Rocket Internet SE (Berlin), for this project I contributed to the HTML/CSS layout (responsive with 4 breakpoints) and to several JavaScript features including: restaurant search, product and toppings selection, cart, checkout and order tracking.</p>
+                            <p class="portfolio-item-content-details">Technologies: JavaScript, jQuery, Backbone.js, HTML5, Twig, CSS3, SASS, Bootstrap, Git.</p>
+                        </div>
+                        <div class="portfolio-item-samsung-tv">
+                            <img class="portfolio-item-device-img" src="/img/portfolio/samsung-tv.png">
+                            <div class="portfolio-item-img-full-wrapper carousel slide" id="timvision-main-carousel" >
+
+                                <ol class="carousel-indicators">
+                                    <li data-target="#timvision-main-carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#timvision-main-carousel" data-slide-to="1"></li>
+                                    <li data-target="#timvision-main-carousel" data-slide-to="2"></li>
+                                    <li data-target="#timvision-main-carousel" data-slide-to="3"></li>
+                                </ol>
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="portfolio-item-img-full" src="/img/portfolio/timvision-01.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="portfolio-item-img-full" src="/img/portfolio/timvision-02.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="portfolio-item-img-full" src="/img/portfolio/timvision-03.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="portfolio-item-img-full" src="/img/portfolio/timvision-04.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#timvision-main-carousel" role="button" data-slide="prev">
+                                <
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#timvision-main-carousel" role="button" data-slide="next">
+                                >
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </article>
 
         <article class="article-body portfolio-item-cubomusica js-portfolio-item">
             <figure class="portfolio-item-tv1">
                 <figcaption class="project-type-label">Smart-TV web app in JavaScript</figcaption>
                 <img class="portfolio-item-device-img" src="/img/portfolio/samsung-tv.png">
-                <img class="portfolio-item-img-preview" src="/img/portfolio/cubomusica-preview-player.jpg">
+                <figure class="portfolio-item-img-preview">
+                    <img class="portfolio-item-img" src="/img/portfolio/cubomusica-preview-player.jpg">
+                    <img class="portfolio-item-eye-icon" src="/img/icons/eye.svg">
+                </figure>
             </figure>
             <figure class="portfolio-item-tv2">
                 <img class="portfolio-item-device-img" src="/img/portfolio/samsung-tv.png">
-                <img class="portfolio-item-img-preview" src="/img/portfolio/cubomusica-preview-home.jpg">
+                <figure class="portfolio-item-img-preview">
+                    <img class="portfolio-item-img" src="/img/portfolio/cubomusica-preview-home.jpg">
+                    <img class="portfolio-item-eye-icon" src="/img/icons/eye.svg">
+                </figure>
             </figure>
             <div class="portfolio-item-title-wrapper-horizontal">
                 <h3 class="portfolio-item-title">CuboMusica</h3>
@@ -648,6 +716,89 @@
                 <p class="portfolio-item-content-employer">Telecom Italia s.p.a</p>
                 <h4 class="portfolio-item-subtitle-contribution">Contribution:</h4>
                 <p class="portfolio-item-content-contribution">JavaScript, Samsung Web API, AJAX, XML, HTML, CSS, TDD</p>
+            </div>
+
+            <div class="portfolio-item-modal-tv modal fade" id="cubomusica-modal" tabindex="-1" role="dialog" aria-labelledby="bk-modalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="portfolio-item-modal-content">
+                        <button class="portfolio-item-modal-close">X</button>
+                        <div class="portfolio-item-modal-details-wrapper">
+                            <h3 class="portfolio-item-title">Burger King Delivery Service</h3>
+                            <h4 class="portfolio-item-subtitle">E-commerce in JavaScript/PHP</h4>
+                            <p class="portfolio-item-content-details">As Senior Front-end Developer in Rocket Internet SE (Berlin), for this project I contributed to the HTML/CSS layout (responsive with 4 breakpoints) and to several JavaScript features including: restaurant search, product and toppings selection, cart, checkout and order tracking.</p>
+                            <p class="portfolio-item-content-details">Technologies: JavaScript, jQuery, Backbone.js, HTML5, Twig, CSS3, SASS, Bootstrap, Git.</p>
+                        </div>
+                        <div class="portfolio-item-notebook">
+                            <img class="portfolio-item-device-img" src="/img/portfolio/notebook.png">
+                            <div class="portfolio-item-img-full-wrapper carousel slide" id="cubomusica-main-carousel" >
+
+                                <ol class="carousel-indicators">
+                                    <li data-target="#cubomusica-main-carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#cubomusica-main-carousel" data-slide-to="1"></li>
+                                    <li data-target="#cubomusica-main-carousel" data-slide-to="2"></li>
+                                    <li data-target="#cubomusica-main-carousel" data-slide-to="3"></li>
+                                </ol>
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="portfolio-item-img-full" src="/img/portfolio/cubomusica-01-notebook.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="portfolio-item-img-full" src="/img/portfolio/cubomusica-02-notebook.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="portfolio-item-img-full" src="/img/portfolio/cubomusica-03-notebook.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="portfolio-item-img-full" src="/img/portfolio/cubomusica-04-notebook.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#cubomusica-main-carousel" role="button" data-slide="prev">
+                                <
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#cubomusica-main-carousel" role="button" data-slide="next">
+                                >
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        <figure class="portfolio-item-mobile">
+                            <img class="portfolio-item-device-img" src="/img/portfolio/mobile.png">
+                            <div class="portfolio-item-img-full-wrapper carousel slide" id="cubomusica-secondary-carousel" >
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="portfolio-item-img-full" src="/img/portfolio/cubomusica-01-mobile.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="portfolio-item-img-full" src="/img/portfolio/cubomusica-02-mobile.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="portfolio-item-img-full" src="/img/portfolio/cubomusica-03-mobile.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="portfolio-item-img-full" src="/img/portfolio/cubomusica-04-mobile.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
             </div>
         </article>
 

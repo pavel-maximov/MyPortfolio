@@ -266,6 +266,16 @@ $document.ready(function () {
             .modal();
     });
 
+    $('.portfolio-item-timvision .portfolio-item-img-preview').click(function() {
+        $('#timvision-modal')
+            .on('shown.bs.modal', function () {
+                var $this = $(this);
+
+                initModal($this, $this.find('#timvision-main-carousel'), $this.find('#timvision-secondary-carousel'));
+            })
+            .modal();
+    });
+
 
     // $('.js-draggable').draggable({
     //     drag: function(event, ui) {

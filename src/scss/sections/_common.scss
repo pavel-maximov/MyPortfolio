@@ -477,7 +477,6 @@ h3, .h3 {
 
 .carousel-control {
   position: fixed;
-  top: 48%;
   color: #666;
   text-shadow: none;
   width: 90px;
@@ -493,21 +492,16 @@ h3, .h3 {
 }
 
 .carousel-control.left {
-  left: 0;
   background-image: none;
 }
 
 .carousel-control.right {
-  right: 0;
   background-image: none;
 }
 
 .carousel-indicators {
   width: auto;
   position: fixed;
-  bottom: -5%;
-  left: 50%;
-  transform: translateX(-50%);
   margin: 0;
 }
 
