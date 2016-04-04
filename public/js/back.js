@@ -256,6 +256,16 @@ $document.ready(function () {
             .modal();
     });
 
+    $('.portfolio-item-foodora .portfolio-item-img-preview').click(function() {
+        $('#foodora-modal')
+            .on('shown.bs.modal', function () {
+                var $this = $(this);
+
+                initModal($this, $this.find('#foodora-main-carousel'), $this.find('#foodora-secondary-carousel'));
+            })
+            .modal();
+    });
+
 
     // $('.js-draggable').draggable({
     //     drag: function(event, ui) {
