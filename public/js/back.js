@@ -284,7 +284,7 @@ $document.ready(function () {
                 initModal($this, $this.find('#cubomusica-main-carousel'), $this.find('#cubomusica-secondary-carousel'));
             })
             .modal();
-    }); 
+    });
 
     $('.portfolio-item-unicri .portfolio-item-img-preview').click(function() {
         $('#unicri-modal')
@@ -292,6 +292,16 @@ $document.ready(function () {
                 var $this = $(this);
 
                 initModal($this, $this.find('#unicri-main-carousel'), $this.find('#unicri-secondary-carousel'));
+            })
+            .modal();
+    });
+
+    $('.portfolio-item-others .portfolio-item-img-preview').click(function() {
+        $('#others-modal')
+            .on('shown.bs.modal', function () {
+                var $this = $(this);
+
+                initModal($this, $this.find('#others-main-carousel'), $this.find('#others-secondary-carousel'));
             })
             .modal();
     });
