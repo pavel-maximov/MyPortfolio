@@ -5322,11 +5322,6 @@ h3, .h3 {
   top: 60%;
   right: -64%; }
 
-#portfolio .portfolio-item-unicri .portfolio-item-notebook-ande .portfolio-item-img-preview, #portfolio .portfolio-item-unicri .portfolio-item-notebook-eusec .portfolio-item-img-preview, #portfolio .portfolio-item-unicri .portfolio-item-notebook-cbrn .portfolio-item-img-preview, #portfolio .portfolio-item-unicri .portfolio-item-notebook-ipo .portfolio-item-img-preview, #portfolio .portfolio-item-unicri .portfolio-item-notebook-lab .portfolio-item-img-preview, #portfolio .portfolio-item-others .portfolio-item-notebook-school .portfolio-item-img-preview, #portfolio .portfolio-item-others .portfolio-item-notebook-davide .portfolio-item-img-preview, #portfolio .portfolio-item-others .portfolio-item-notebook-milena .portfolio-item-img-preview, #portfolio .portfolio-item-others .portfolio-item-notebook-pandora .portfolio-item-img-preview, #portfolio .portfolio-item-others .portfolio-item-notebook-acqua .portfolio-item-img-preview {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%); }
-
 #portfolio {
   flex-direction: column; }
   #portfolio .section-header-img-wrapper {
@@ -5472,11 +5467,11 @@ h3, .h3 {
       left: 7%;
       width: 87%;
       max-width: 227px; }
-  #portfolio .portfolio-item-notebook {
+  #portfolio .portfolio-item-notebook, #portfolio .portfolio-item-unicri .portfolio-item-notebook-ande, #portfolio .portfolio-item-unicri .portfolio-item-notebook-eusec, #portfolio .portfolio-item-unicri .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-unicri .portfolio-item-notebook-ipo, #portfolio .portfolio-item-unicri .portfolio-item-notebook-lab, #portfolio .portfolio-item-others .portfolio-item-notebook-school, #portfolio .portfolio-item-others .portfolio-item-notebook-davide, #portfolio .portfolio-item-others .portfolio-item-notebook-milena, #portfolio .portfolio-item-others .portfolio-item-notebook-pandora, #portfolio .portfolio-item-others .portfolio-item-notebook-acqua {
     position: absolute;
     width: 50%;
     max-width: 600px; }
-    #portfolio .portfolio-item-notebook .portfolio-item-img-preview {
+    #portfolio .portfolio-item-notebook .portfolio-item-img-preview, #portfolio .portfolio-item-unicri .portfolio-item-notebook-ande .portfolio-item-img-preview, #portfolio .portfolio-item-unicri .portfolio-item-notebook-eusec .portfolio-item-img-preview, #portfolio .portfolio-item-unicri .portfolio-item-notebook-cbrn .portfolio-item-img-preview, #portfolio .portfolio-item-unicri .portfolio-item-notebook-ipo .portfolio-item-img-preview, #portfolio .portfolio-item-unicri .portfolio-item-notebook-lab .portfolio-item-img-preview, #portfolio .portfolio-item-others .portfolio-item-notebook-school .portfolio-item-img-preview, #portfolio .portfolio-item-others .portfolio-item-notebook-davide .portfolio-item-img-preview, #portfolio .portfolio-item-others .portfolio-item-notebook-milena .portfolio-item-img-preview, #portfolio .portfolio-item-others .portfolio-item-notebook-pandora .portfolio-item-img-preview, #portfolio .portfolio-item-others .portfolio-item-notebook-acqua .portfolio-item-img-preview {
       position: absolute;
       top: 5%;
       left: 12.8%;
@@ -5520,7 +5515,7 @@ h3, .h3 {
   #portfolio .portfolio-item-bk .portfolio-item-tablet {
     top: 44%;
     left: 11.5%; }
-  #portfolio .portfolio-item-bk .portfolio-item-notebook {
+  #portfolio .portfolio-item-bk .portfolio-item-notebook, #portfolio .portfolio-item-bk .portfolio-item-unicri .portfolio-item-notebook-ande, #portfolio .portfolio-item-unicri .portfolio-item-bk .portfolio-item-notebook-ande, #portfolio .portfolio-item-bk .portfolio-item-unicri .portfolio-item-notebook-eusec, #portfolio .portfolio-item-unicri .portfolio-item-bk .portfolio-item-notebook-eusec, #portfolio .portfolio-item-bk .portfolio-item-unicri .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-unicri .portfolio-item-bk .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-bk .portfolio-item-unicri .portfolio-item-notebook-ipo, #portfolio .portfolio-item-unicri .portfolio-item-bk .portfolio-item-notebook-ipo, #portfolio .portfolio-item-bk .portfolio-item-unicri .portfolio-item-notebook-lab, #portfolio .portfolio-item-unicri .portfolio-item-bk .portfolio-item-notebook-lab, #portfolio .portfolio-item-bk .portfolio-item-others .portfolio-item-notebook-school, #portfolio .portfolio-item-others .portfolio-item-bk .portfolio-item-notebook-school, #portfolio .portfolio-item-bk .portfolio-item-others .portfolio-item-notebook-davide, #portfolio .portfolio-item-others .portfolio-item-bk .portfolio-item-notebook-davide, #portfolio .portfolio-item-bk .portfolio-item-others .portfolio-item-notebook-milena, #portfolio .portfolio-item-others .portfolio-item-bk .portfolio-item-notebook-milena, #portfolio .portfolio-item-bk .portfolio-item-others .portfolio-item-notebook-pandora, #portfolio .portfolio-item-others .portfolio-item-bk .portfolio-item-notebook-pandora, #portfolio .portfolio-item-bk .portfolio-item-others .portfolio-item-notebook-acqua, #portfolio .portfolio-item-others .portfolio-item-bk .portfolio-item-notebook-acqua {
     top: 44.6%;
     left: 52%; }
   #portfolio .portfolio-item-bk .portfolio-item-mobile {
@@ -5535,7 +5530,7 @@ h3, .h3 {
   #portfolio .portfolio-item-vendomo .portfolio-item-tablet {
     top: 44%;
     left: 66%; }
-  #portfolio .portfolio-item-vendomo .portfolio-item-notebook {
+  #portfolio .portfolio-item-vendomo .portfolio-item-notebook, #portfolio .portfolio-item-vendomo .portfolio-item-unicri .portfolio-item-notebook-ande, #portfolio .portfolio-item-unicri .portfolio-item-vendomo .portfolio-item-notebook-ande, #portfolio .portfolio-item-vendomo .portfolio-item-unicri .portfolio-item-notebook-eusec, #portfolio .portfolio-item-unicri .portfolio-item-vendomo .portfolio-item-notebook-eusec, #portfolio .portfolio-item-vendomo .portfolio-item-unicri .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-unicri .portfolio-item-vendomo .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-vendomo .portfolio-item-unicri .portfolio-item-notebook-ipo, #portfolio .portfolio-item-unicri .portfolio-item-vendomo .portfolio-item-notebook-ipo, #portfolio .portfolio-item-vendomo .portfolio-item-unicri .portfolio-item-notebook-lab, #portfolio .portfolio-item-unicri .portfolio-item-vendomo .portfolio-item-notebook-lab, #portfolio .portfolio-item-vendomo .portfolio-item-others .portfolio-item-notebook-school, #portfolio .portfolio-item-others .portfolio-item-vendomo .portfolio-item-notebook-school, #portfolio .portfolio-item-vendomo .portfolio-item-others .portfolio-item-notebook-davide, #portfolio .portfolio-item-others .portfolio-item-vendomo .portfolio-item-notebook-davide, #portfolio .portfolio-item-vendomo .portfolio-item-others .portfolio-item-notebook-milena, #portfolio .portfolio-item-others .portfolio-item-vendomo .portfolio-item-notebook-milena, #portfolio .portfolio-item-vendomo .portfolio-item-others .portfolio-item-notebook-pandora, #portfolio .portfolio-item-others .portfolio-item-vendomo .portfolio-item-notebook-pandora, #portfolio .portfolio-item-vendomo .portfolio-item-others .portfolio-item-notebook-acqua, #portfolio .portfolio-item-others .portfolio-item-vendomo .portfolio-item-notebook-acqua {
     top: 44.6%;
     left: 0; }
   #portfolio .portfolio-item-vendomo .portfolio-item-mobile {
@@ -5552,7 +5547,7 @@ h3, .h3 {
   #portfolio .portfolio-item-vendomo-crm .portfolio-item-tablet {
     top: 50%;
     left: 22%; }
-  #portfolio .portfolio-item-vendomo-crm .portfolio-item-notebook {
+  #portfolio .portfolio-item-vendomo-crm .portfolio-item-notebook, #portfolio .portfolio-item-vendomo-crm .portfolio-item-unicri .portfolio-item-notebook-ande, #portfolio .portfolio-item-unicri .portfolio-item-vendomo-crm .portfolio-item-notebook-ande, #portfolio .portfolio-item-vendomo-crm .portfolio-item-unicri .portfolio-item-notebook-eusec, #portfolio .portfolio-item-unicri .portfolio-item-vendomo-crm .portfolio-item-notebook-eusec, #portfolio .portfolio-item-vendomo-crm .portfolio-item-unicri .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-unicri .portfolio-item-vendomo-crm .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-vendomo-crm .portfolio-item-unicri .portfolio-item-notebook-ipo, #portfolio .portfolio-item-unicri .portfolio-item-vendomo-crm .portfolio-item-notebook-ipo, #portfolio .portfolio-item-vendomo-crm .portfolio-item-unicri .portfolio-item-notebook-lab, #portfolio .portfolio-item-unicri .portfolio-item-vendomo-crm .portfolio-item-notebook-lab, #portfolio .portfolio-item-vendomo-crm .portfolio-item-others .portfolio-item-notebook-school, #portfolio .portfolio-item-others .portfolio-item-vendomo-crm .portfolio-item-notebook-school, #portfolio .portfolio-item-vendomo-crm .portfolio-item-others .portfolio-item-notebook-davide, #portfolio .portfolio-item-others .portfolio-item-vendomo-crm .portfolio-item-notebook-davide, #portfolio .portfolio-item-vendomo-crm .portfolio-item-others .portfolio-item-notebook-milena, #portfolio .portfolio-item-others .portfolio-item-vendomo-crm .portfolio-item-notebook-milena, #portfolio .portfolio-item-vendomo-crm .portfolio-item-others .portfolio-item-notebook-pandora, #portfolio .portfolio-item-others .portfolio-item-vendomo-crm .portfolio-item-notebook-pandora, #portfolio .portfolio-item-vendomo-crm .portfolio-item-others .portfolio-item-notebook-acqua, #portfolio .portfolio-item-others .portfolio-item-vendomo-crm .portfolio-item-notebook-acqua {
     top: 44.6%;
     left: 49%; }
   #portfolio .portfolio-item-vendomo-crm .portfolio-item-mobile {
@@ -5569,7 +5564,7 @@ h3, .h3 {
   #portfolio .portfolio-item-foodora .portfolio-item-tablet {
     top: 44%;
     left: 72%; }
-  #portfolio .portfolio-item-foodora .portfolio-item-notebook {
+  #portfolio .portfolio-item-foodora .portfolio-item-notebook, #portfolio .portfolio-item-foodora .portfolio-item-unicri .portfolio-item-notebook-ande, #portfolio .portfolio-item-unicri .portfolio-item-foodora .portfolio-item-notebook-ande, #portfolio .portfolio-item-foodora .portfolio-item-unicri .portfolio-item-notebook-eusec, #portfolio .portfolio-item-unicri .portfolio-item-foodora .portfolio-item-notebook-eusec, #portfolio .portfolio-item-foodora .portfolio-item-unicri .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-unicri .portfolio-item-foodora .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-foodora .portfolio-item-unicri .portfolio-item-notebook-ipo, #portfolio .portfolio-item-unicri .portfolio-item-foodora .portfolio-item-notebook-ipo, #portfolio .portfolio-item-foodora .portfolio-item-unicri .portfolio-item-notebook-lab, #portfolio .portfolio-item-unicri .portfolio-item-foodora .portfolio-item-notebook-lab, #portfolio .portfolio-item-foodora .portfolio-item-others .portfolio-item-notebook-school, #portfolio .portfolio-item-others .portfolio-item-foodora .portfolio-item-notebook-school, #portfolio .portfolio-item-foodora .portfolio-item-others .portfolio-item-notebook-davide, #portfolio .portfolio-item-others .portfolio-item-foodora .portfolio-item-notebook-davide, #portfolio .portfolio-item-foodora .portfolio-item-others .portfolio-item-notebook-milena, #portfolio .portfolio-item-others .portfolio-item-foodora .portfolio-item-notebook-milena, #portfolio .portfolio-item-foodora .portfolio-item-others .portfolio-item-notebook-pandora, #portfolio .portfolio-item-others .portfolio-item-foodora .portfolio-item-notebook-pandora, #portfolio .portfolio-item-foodora .portfolio-item-others .portfolio-item-notebook-acqua, #portfolio .portfolio-item-others .portfolio-item-foodora .portfolio-item-notebook-acqua {
     top: 48.6%;
     left: 3%; }
   #portfolio .portfolio-item-foodora .portfolio-item-mobile {
@@ -5583,55 +5578,30 @@ h3, .h3 {
   #portfolio .portfolio-item-unicri .project-type-label {
     top: -2.2rem; }
   #portfolio .portfolio-item-unicri .portfolio-item-notebook-ande {
-    position: absolute;
     top: 25%;
-    left: -2%;
-    width: 50%;
-    max-width: 600px; }
-    #portfolio .portfolio-item-unicri .portfolio-item-notebook-ande .portfolio-item-img-preview {
-      top: 42.2%; }
+    left: -2%; }
     #portfolio .portfolio-item-unicri .portfolio-item-notebook-ande .project-type-label {
       left: auto;
       right: 12.8%; }
   #portfolio .portfolio-item-unicri .portfolio-item-notebook-eusec {
-    position: absolute;
     top: 25%;
-    left: 56%;
-    width: 50%;
-    max-width: 600px; }
-    #portfolio .portfolio-item-unicri .portfolio-item-notebook-eusec .portfolio-item-img-preview {
-      top: 42.2%; }
+    left: 56%; }
     #portfolio .portfolio-item-unicri .portfolio-item-notebook-eusec .project-type-label {
       left: 12.8%; }
   #portfolio .portfolio-item-unicri .portfolio-item-notebook-cbrn {
-    position: absolute;
     top: 38%;
-    left: 9%;
-    width: 50%;
-    max-width: 600px; }
-    #portfolio .portfolio-item-unicri .portfolio-item-notebook-cbrn .portfolio-item-img-preview {
-      top: 42.2%; }
+    left: 9%; }
     #portfolio .portfolio-item-unicri .portfolio-item-notebook-cbrn .project-type-label {
       left: auto;
       right: 12.8%; }
   #portfolio .portfolio-item-unicri .portfolio-item-notebook-ipo {
-    position: absolute;
     top: 38%;
-    left: 45%;
-    width: 50%;
-    max-width: 600px; }
-    #portfolio .portfolio-item-unicri .portfolio-item-notebook-ipo .portfolio-item-img-preview {
-      top: 42.2%; }
+    left: 45%; }
     #portfolio .portfolio-item-unicri .portfolio-item-notebook-ipo .project-type-label {
       left: 12.8%; }
   #portfolio .portfolio-item-unicri .portfolio-item-notebook-lab {
-    position: absolute;
     top: 51%;
-    left: 27%;
-    width: 50%;
-    max-width: 600px; }
-    #portfolio .portfolio-item-unicri .portfolio-item-notebook-lab .portfolio-item-img-preview {
-      top: 42.2%; }
+    left: 27%; }
     #portfolio .portfolio-item-unicri .portfolio-item-notebook-lab .project-type-label {
       left: 50%;
       bottom: -1rem;
@@ -5645,55 +5615,30 @@ h3, .h3 {
   #portfolio .portfolio-item-unicri .portfolio-item-title {
     margin-top: 0.5rem; }
   #portfolio .portfolio-item-others .portfolio-item-notebook-school {
-    position: absolute;
     top: 25%;
-    left: -2%;
-    width: 50%;
-    max-width: 600px; }
-    #portfolio .portfolio-item-others .portfolio-item-notebook-school .portfolio-item-img-preview {
-      top: 42.2%; }
+    left: -2%; }
     #portfolio .portfolio-item-others .portfolio-item-notebook-school .project-type-label {
       left: auto;
       right: 12.8%; }
   #portfolio .portfolio-item-others .portfolio-item-notebook-davide {
-    position: absolute;
     top: 25%;
-    left: 56%;
-    width: 50%;
-    max-width: 600px; }
-    #portfolio .portfolio-item-others .portfolio-item-notebook-davide .portfolio-item-img-preview {
-      top: 42.2%; }
+    left: 56%; }
     #portfolio .portfolio-item-others .portfolio-item-notebook-davide .project-type-label {
       left: 12.8%; }
   #portfolio .portfolio-item-others .portfolio-item-notebook-milena {
-    position: absolute;
     top: 38%;
-    left: 9%;
-    width: 50%;
-    max-width: 600px; }
-    #portfolio .portfolio-item-others .portfolio-item-notebook-milena .portfolio-item-img-preview {
-      top: 42.2%; }
+    left: 9%; }
     #portfolio .portfolio-item-others .portfolio-item-notebook-milena .project-type-label {
       left: auto;
       right: 12.8%; }
   #portfolio .portfolio-item-others .portfolio-item-notebook-pandora {
-    position: absolute;
     top: 38%;
-    left: 45%;
-    width: 50%;
-    max-width: 600px; }
-    #portfolio .portfolio-item-others .portfolio-item-notebook-pandora .portfolio-item-img-preview {
-      top: 42.2%; }
+    left: 45%; }
     #portfolio .portfolio-item-others .portfolio-item-notebook-pandora .project-type-label {
       left: 12.8%; }
   #portfolio .portfolio-item-others .portfolio-item-notebook-acqua {
-    position: absolute;
     top: 51%;
-    left: 27%;
-    width: 50%;
-    max-width: 600px; }
-    #portfolio .portfolio-item-others .portfolio-item-notebook-acqua .portfolio-item-img-preview {
-      top: 42.2%; }
+    left: 27%; }
     #portfolio .portfolio-item-others .portfolio-item-notebook-acqua .project-type-label {
       left: 50%;
       bottom: -1rem;
@@ -5719,18 +5664,18 @@ h3, .h3 {
     left: 60px;
     top: 60px;
     width: 17%; }
-  #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-notebook, #portfolio .portfolio-item-modal-tv .portfolio-item-notebook, #portfolio .portfolio-item-modal-notebook .portfolio-item-notebook {
+  #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-notebook, #portfolio .portfolio-item-modal-tv .portfolio-item-notebook, #portfolio .portfolio-item-modal-notebook .portfolio-item-notebook, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-ande, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-ande, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-ande, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-ande, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-ande, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-ande, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-eusec, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-eusec, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-eusec, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-eusec, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-eusec, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-eusec, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-ipo, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-ipo, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-ipo, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-ipo, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-ipo, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-ipo, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-lab, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-lab, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-lab, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-lab, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-lab, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-lab, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-school, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-school, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-school, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-school, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-school, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-school, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-davide, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-davide, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-davide, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-davide, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-davide, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-davide, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-milena, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-milena, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-milena, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-milena, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-milena, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-milena, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-pandora, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-pandora, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-pandora, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-pandora, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-pandora, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-pandora, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-acqua, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-acqua, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-acqua, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-acqua, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-acqua, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-acqua {
     position: fixed;
     left: 16.3%;
     top: 4%;
     width: 82%;
     max-width: none; }
-    #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-notebook .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-notebook .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-notebook .portfolio-item-img-full-wrapper {
+    #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-notebook .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-notebook .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-notebook .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-ande .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-ande .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-ande .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-ande .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-ande .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-ande .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-eusec .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-eusec .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-eusec .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-eusec .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-eusec .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-eusec .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-cbrn .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-cbrn .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-cbrn .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-cbrn .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-cbrn .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-cbrn .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-ipo .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-ipo .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-ipo .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-ipo .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-ipo .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-ipo .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-lab .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-lab .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-lab .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-lab .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-lab .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-lab .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-school .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-school .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-school .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-school .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-school .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-school .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-davide .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-davide .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-davide .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-davide .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-davide .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-davide .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-milena .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-milena .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-milena .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-milena .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-milena .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-milena .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-pandora .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-pandora .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-pandora .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-pandora .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-pandora .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-pandora .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-acqua .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-acqua .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-acqua .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-acqua .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-acqua .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-acqua .portfolio-item-img-full-wrapper {
       top: 56px;
       left: 12.5%;
       right: 12.5%;
       bottom: 206px; }
-    #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-notebook .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-notebook .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-notebook .wrapper {
+    #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-notebook .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-notebook .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-notebook .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-ande .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-ande .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-ande .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-ande .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-ande .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-ande .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-eusec .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-eusec .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-eusec .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-eusec .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-eusec .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-eusec .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-cbrn .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-cbrn .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-cbrn .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-cbrn .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-cbrn .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-cbrn .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-ipo .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-ipo .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-ipo .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-ipo .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-ipo .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-ipo .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-lab .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-lab .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-lab .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-lab .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-lab .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-lab .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-school .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-school .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-school .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-school .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-school .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-school .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-davide .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-davide .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-davide .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-davide .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-davide .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-davide .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-milena .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-milena .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-milena .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-milena .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-milena .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-milena .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-pandora .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-pandora .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-pandora .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-pandora .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-pandora .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-pandora .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-acqua .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-acqua .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-acqua .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-acqua .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-acqua .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-acqua .wrapper {
       width: 100%;
       height: 100%; }
   #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-mobile, #portfolio .portfolio-item-modal-tv .portfolio-item-mobile, #portfolio .portfolio-item-modal-notebook .portfolio-item-mobile {
@@ -5785,8 +5730,7 @@ h3, .h3 {
     right: 0; }
   #portfolio .portfolio-item-modal-notebook-mobile .carousel-indicators {
     bottom: -5%;
-    left: 50%;
-    top: 48%; }
+    left: 50%; }
   #portfolio .portfolio-item-modal-tv .carousel-control {
     top: 39%; }
   #portfolio .portfolio-item-modal-tv .carousel-control.left {
@@ -5796,6 +5740,15 @@ h3, .h3 {
   #portfolio .portfolio-item-modal-tv .carousel-indicators {
     bottom: -2%;
     left: 56.3%; }
+  #portfolio .portfolio-item-modal-notebook .carousel-control {
+    top: 39%; }
+  #portfolio .portfolio-item-modal-notebook .carousel-control.left {
+    left: 0; }
+  #portfolio .portfolio-item-modal-notebook .carousel-control.right {
+    right: 0; }
+  #portfolio .portfolio-item-modal-notebook .carousel-indicators {
+    bottom: -5%;
+    left: 50%; }
 
 #experience {
   flex-direction: column;

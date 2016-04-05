@@ -284,6 +284,16 @@ $document.ready(function () {
                 initModal($this, $this.find('#cubomusica-main-carousel'), $this.find('#cubomusica-secondary-carousel'));
             })
             .modal();
+    }); 
+
+    $('.portfolio-item-unicri .portfolio-item-img-preview').click(function() {
+        $('#unicri-modal')
+            .on('shown.bs.modal', function () {
+                var $this = $(this);
+
+                initModal($this, $this.find('#unicri-main-carousel'), $this.find('#unicri-secondary-carousel'));
+            })
+            .modal();
     });
 
 

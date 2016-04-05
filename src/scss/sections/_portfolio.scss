@@ -440,7 +440,6 @@
   }
 
 
-
   /////////  Timvision and Cubomusica /////////
 
   & .portfolio-item-timvision,
@@ -460,16 +459,9 @@
     }
 
     & .portfolio-item-notebook-ande {
-      position: absolute;
+      @extend .portfolio-item-notebook;
       top: 25%;
       left: -2%;
-      width: 50%;
-      max-width: 600px;
-
-      & .portfolio-item-img-preview {
-        @extend %portfolio-item-img-preview;
-        top: 42.2%;
-      }
 
       & .project-type-label {
         left: auto;
@@ -478,16 +470,9 @@
     }
 
     & .portfolio-item-notebook-eusec {
-      position: absolute;
+      @extend .portfolio-item-notebook;
       top: 25%;
       left: 56%;
-      width: 50%;
-      max-width: 600px;
-
-      & .portfolio-item-img-preview {
-        @extend %portfolio-item-img-preview;
-        top: 42.2%;
-      }
 
       & .project-type-label {
         left: 12.8%;
@@ -495,16 +480,9 @@
     }
 
     & .portfolio-item-notebook-cbrn {
-      position: absolute;
+      @extend .portfolio-item-notebook;
       top: 38%;
       left: 9%;
-      width: 50%;
-      max-width: 600px;
-
-      & .portfolio-item-img-preview {
-        @extend %portfolio-item-img-preview;
-        top: 42.2%;
-      }
 
       & .project-type-label {
         left: auto;
@@ -513,16 +491,9 @@
     }
 
     & .portfolio-item-notebook-ipo {
-      position: absolute;
+      @extend .portfolio-item-notebook;
       top: 38%;
       left: 45%;
-      width: 50%;
-      max-width: 600px;
-
-      & .portfolio-item-img-preview {
-        @extend %portfolio-item-img-preview;
-        top: 42.2%;
-      }
 
       & .project-type-label {
         left: 12.8%;
@@ -530,16 +501,9 @@
     }
 
     & .portfolio-item-notebook-lab {
-      position: absolute;
+      @extend .portfolio-item-notebook;
       top: 51%;
       left: 27%;
-      width: 50%;
-      max-width: 600px;
-
-      & .portfolio-item-img-preview {
-        @extend %portfolio-item-img-preview;
-        top: 42.2%;
-      }
 
       & .project-type-label {
         left: 50%;
@@ -569,16 +533,9 @@
     @extend %portfolio-item;
 
     & .portfolio-item-notebook-school {
-      position: absolute;
+      @extend .portfolio-item-notebook;
       top: 25%;
       left: -2%;
-      width: 50%;
-      max-width: 600px;
-
-      & .portfolio-item-img-preview {
-        @extend %portfolio-item-img-preview;
-        top: 42.2%;
-      }
 
       & .project-type-label {
         left: auto;
@@ -587,16 +544,9 @@
     }
 
     & .portfolio-item-notebook-davide {
-      position: absolute;
+      @extend .portfolio-item-notebook;
       top: 25%;
       left: 56%;
-      width: 50%;
-      max-width: 600px;
-
-      & .portfolio-item-img-preview {
-        @extend %portfolio-item-img-preview;
-        top: 42.2%;
-      }
 
       & .project-type-label {
         left: 12.8%;
@@ -604,16 +554,9 @@
     }
 
     & .portfolio-item-notebook-milena {
-      position: absolute;
+      @extend .portfolio-item-notebook;
       top: 38%;
       left: 9%;
-      width: 50%;
-      max-width: 600px;
-
-      & .portfolio-item-img-preview {
-        @extend %portfolio-item-img-preview;
-        top: 42.2%;
-      }
 
       & .project-type-label {
         left: auto;
@@ -622,16 +565,9 @@
     }
 
     & .portfolio-item-notebook-pandora {
-      position: absolute;
+      @extend .portfolio-item-notebook;
       top: 38%;
       left: 45%;
-      width: 50%;
-      max-width: 600px;
-
-      & .portfolio-item-img-preview {
-        @extend %portfolio-item-img-preview;
-        top: 42.2%;
-      }
 
       & .project-type-label {
         left: 12.8%;
@@ -639,16 +575,9 @@
     }
 
     & .portfolio-item-notebook-acqua {
-      position: absolute;
+      @extend .portfolio-item-notebook;
       top: 51%;
       left: 27%;
-      width: 50%;
-      max-width: 600px;
-
-      & .portfolio-item-img-preview {
-        @extend %portfolio-item-img-preview;
-        top: 42.2%;
-      }
 
       & .project-type-label {
         left: 50%;
@@ -796,7 +725,6 @@
     .carousel-indicators {
       bottom: -5%;
       left: 50%;
-      top: 48%;
     }
   }
 
@@ -823,5 +751,22 @@
 
   .portfolio-item-modal-notebook {
     @extend %portfolio-item-modal;
+
+    .carousel-control{
+      top: 39%;
+    }
+
+    .carousel-control.left {
+      left: 0;
+    }
+
+    .carousel-control.right {
+      right: 0;
+    }
+
+    .carousel-indicators {
+      bottom: -5%;
+      left: 50%;
+    }
   }
 }
