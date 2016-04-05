@@ -276,6 +276,16 @@ $document.ready(function () {
             .modal();
     });
 
+    $('.portfolio-item-cubomusica .portfolio-item-img-preview').click(function() {
+        $('#cubomusica-modal')
+            .on('shown.bs.modal', function () {
+                var $this = $(this);
+
+                initModal($this, $this.find('#cubomusica-main-carousel'), $this.find('#cubomusica-secondary-carousel'));
+            })
+            .modal();
+    });
+
 
     // $('.js-draggable').draggable({
     //     drag: function(event, ui) {
