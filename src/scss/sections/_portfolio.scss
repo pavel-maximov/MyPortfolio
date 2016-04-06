@@ -714,6 +714,10 @@
   .portfolio-item-modal-notebook-mobile {
     @extend %portfolio-item-modal;
 
+    .carousel-control{
+      top: 39%;
+    }
+
     .carousel-control.left {
       left: 0;
     }

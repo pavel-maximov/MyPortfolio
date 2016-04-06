@@ -5192,6 +5192,9 @@ h3, .h3 {
   border-radius: 50%;
   margin: 0; }
 
+#intro .section-header {
+  width: 50%; }
+
 #intro .section-header-img-wrapper {
   max-width: 400px;
   margin-bottom: 3rem; }
@@ -5724,6 +5727,8 @@ h3, .h3 {
     outline: none !important; }
     #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-close:hover, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-close:hover, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-close:hover, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-close:focus, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-close:focus, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-close:focus {
       color: #999; }
+  #portfolio .portfolio-item-modal-notebook-mobile .carousel-control {
+    top: 39%; }
   #portfolio .portfolio-item-modal-notebook-mobile .carousel-control.left {
     left: 0; }
   #portfolio .portfolio-item-modal-notebook-mobile .carousel-control.right {
@@ -5813,7 +5818,6 @@ h3, .h3 {
     width: 100%;
     margin-bottom: 0.8rem; }
   #experience .experience-content {
-    width: 50%;
     padding-top: 100px;
     padding-bottom: 50px; }
   #experience .experience-employer-name {
