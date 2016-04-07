@@ -1,0 +1,75 @@
+
+///////////////////  Experience  ///////////////////
+
+#references {
+  @extend %article-wrapper;
+  min-height: 400px;
+  margin: 100px 0;
+
+  & .article-body {
+    width: 100%;
+    padding: 0 10%;
+    flex-direction: column;
+  }
+
+  & .carousel-item-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 3rem;
+  }
+
+  & .references-content {
+    min-height: 400px;
+    position: relative;
+  }
+
+  & .reference-wrapper {
+    width: 28%;
+    font-size: 1.6rem;
+  }
+
+  & .references-title {
+    font-family: $font-family-work-sans-thin;
+    font-size: 3.2rem;
+    margin-bottom: 4rem;
+  }
+
+  & .reference-content {
+    position: relative;
+    font-style: italic;
+  }
+
+  & .reference-author {
+    margin-bottom: 0;
+    position: relative;
+  }
+
+  & .quote-open {
+    vertical-align: baseline;
+  }
+
+  & .quote-close {
+    vertical-align: text-top;
+    position: relative;
+    top: 5px;
+  }
+
+  & .carousel-control {
+    position: absolute;
+    top: 0;
+  }
+
+  & .carousel-control.left {
+    left: -100px;
+  }
+
+  & .carousel-control.right {
+    right: -100px;
+  }
+
+  & .carousel-indicators {
+    position: absolute;
+    bottom: -2%;
+    left: 56.3%;
+  }
+}

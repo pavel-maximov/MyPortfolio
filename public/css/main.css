@@ -4844,7 +4844,7 @@ h3, .h3 {
 .separator {
   color: #CCC; }
 
-#intro, #skills, #portfolio, #experience, #about, #contact, #outro {
+#intro, #skills, #portfolio, #experience, #references, #about, #contact, #outro {
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -5839,38 +5839,51 @@ h3, .h3 {
     font-size: 2.2rem;
     margin-bottom: 0.5rem;
     margin-top: 2.5rem; }
-  #experience .experience-reference-more-button {
-    border: 0;
-    padding: 3px 8px;
-    background: transparent;
-    cursor: pointer;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    color: #8c8c8c; }
-    #experience .experience-reference-more-button:after {
-      content: ' >';
-      position: relative;
-      color: #8c8c8c; }
-    #experience .experience-reference-more-button:hover, #experience .experience-reference-more-button.hover, #experience .experience-reference-more-button:focus, #experience .experience-reference-more-button.focus, #experience .experience-reference-more-button:active, #experience .experience-reference-more-button.active, #experience .experience-reference-more-button:active {
-      color: #000;
-      text-decoration: underline;
-      outline: 0; }
-  #experience .experience-reference {
-    margin-top: 1rem;
-    margin-bottom: 2rem; }
-  #experience .experience-reference-content {
-    margin-bottom: 0;
+
+#references {
+  min-height: 400px;
+  margin: 100px 0; }
+  #references .article-body {
+    width: 100%;
+    padding: 0 10%;
+    flex-direction: column; }
+  #references .carousel-item-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 3rem; }
+  #references .references-content {
+    min-height: 400px;
+    position: relative; }
+  #references .reference-wrapper {
+    width: 28%;
+    font-size: 1.6rem; }
+  #references .references-title {
+    font-family: "worksans-thin", sans-serif;
+    font-size: 3.2rem;
+    margin-bottom: 4rem; }
+  #references .reference-content {
     position: relative;
     font-style: italic; }
-  #experience .experience-reference-author {
+  #references .reference-author {
     margin-bottom: 0;
     position: relative; }
-
-.quote-open {
-  vertical-align: baseline; }
-
-.quote-close {
-  vertical-align: text-top; }
+  #references .quote-open {
+    vertical-align: baseline; }
+  #references .quote-close {
+    vertical-align: text-top;
+    position: relative;
+    top: 5px; }
+  #references .carousel-control {
+    position: absolute;
+    top: 0; }
+  #references .carousel-control.left {
+    left: -100px; }
+  #references .carousel-control.right {
+    right: -100px; }
+  #references .carousel-indicators {
+    position: absolute;
+    bottom: -2%;
+    left: 56.3%; }
 
 #about {
   flex-direction: column;
@@ -5962,7 +5975,7 @@ h3, .h3 {
   #about.scrolled-this .section-header {
     position: absolute;
     top: auto;
-    bottom: 24vh; }
+    bottom: 74vh; }
 
 #contact {
   padding-right: 5%;

@@ -317,6 +317,11 @@ $document.ready(function () {
             .modal();
     });
 
+    $('#references-main-carousel').carousel({
+        interval: false,
+        wrap: false
+    });
+
 
     // $('.js-draggable').draggable({
     //     drag: function(event, ui) {

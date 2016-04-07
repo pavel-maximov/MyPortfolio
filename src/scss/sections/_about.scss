@@ -82,10 +82,6 @@
     }
   }
 
-  & .about-interest-content {
-  }
-
-
   & .interest-button {
     @include make-button();
   }
@@ -125,6 +121,6 @@
   &.scrolled-this .section-header {
     position: absolute;
     top: auto;
-    bottom: 24vh;
+    bottom: 74vh;
   }
 }
