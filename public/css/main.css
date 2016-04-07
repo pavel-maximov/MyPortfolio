@@ -5880,7 +5880,8 @@ h3, .h3 {
   #about .article-body {
     height: 85%;
     justify-content: space-between;
-    align-items: flex-start; }
+    align-items: flex-start;
+    flex-direction: column; }
   #about .article-content-wrapper {
     width: 75%;
     overflow-y: scroll;
@@ -5891,7 +5892,21 @@ h3, .h3 {
       #about .article-content-wrapper p span {
         color: rgba(0, 0, 0, 0.3); }
   #about .about-interest {
-    margin-bottom: 4rem; }
+    display: flex;
+    width: 70%;
+    margin-bottom: 5rem;
+    margin-left: 15%;
+    align-items: center; }
+    #about .about-interest:nth-child(even) .about-interest-image {
+      order: 2; }
+    #about .about-interest:nth-child(even) .about-interest-content {
+      text-align: right; }
+  #about .about-interest-image {
+    margin: 0 3rem;
+    min-width: 30%;
+    text-align: center; }
+    #about .about-interest-image img {
+      max-width: 200px; }
   #about .article-column, #about .article-column-central {
     width: 31%;
     padding-top: 37rem;
@@ -5934,7 +5949,7 @@ h3, .h3 {
     position: relative;
     left: 10px;
     width: 100%;
-    max-width: 350px; }
+    max-width: 443px; }
 
 #contact {
   padding-right: 5%;

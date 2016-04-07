@@ -20,6 +20,7 @@
     height: 85%;
     justify-content: space-between;
     align-items: flex-start;
+    flex-direction: column;
   }
 
   & .article-content-wrapper {
@@ -38,7 +39,35 @@
   }
 
   & .about-interest {
-    margin-bottom: 4rem;
+    display: flex;
+    width: 70%;
+    margin-bottom: 5rem;
+    margin-left: 15%;
+    align-items: center;
+
+    &:nth-child(even) {
+
+      & .about-interest-image {
+        order: 2;
+      }
+
+      & .about-interest-content {
+        text-align: right;
+      }
+    }
+  }
+
+  & .about-interest-image {
+    margin: 0 3rem;
+    min-width: 30%;
+    text-align: center;
+
+    & img {
+      max-width: 200px;
+    }
+  }
+
+  & .about-interest-content {
   }
 
   & .article-column {
@@ -83,6 +112,6 @@
     position: relative;
     left: 10px;
     width: 100%;
-    max-width: 350px;
+    max-width: 443px;
   }
 }
