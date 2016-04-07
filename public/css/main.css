@@ -5195,6 +5195,9 @@ h3, .h3 {
 #intro .section-header {
   width: 50%; }
 
+#intro .intro-message {
+  font-size: 1.8rem; }
+
 #intro .section-header-img-wrapper {
   max-width: 400px;
   margin-bottom: 3rem; }
@@ -5870,17 +5873,30 @@ h3, .h3 {
   vertical-align: text-top; }
 
 #about {
-  padding-right: 5%; }
+  flex-direction: column;
+  font-size: 1.6rem;
+  padding-bottom: 80px;
+  margin-top: 120px; }
+  #about .section-header-img-wrapper {
+    width: 70%;
+    max-width: 190px; }
   #about .section-header {
-    width: 25%;
-    position: relative; }
-    #about .section-header .section-header-img-wrapper {
-      width: 70%;
-      max-width: 190px; }
+    position: absolute;
+    top: 16vh;
+    left: 0; }
+  #about.scrolling-this .section-header {
+    position: fixed; }
+  #about.scrolled-this .section-header {
+    position: absolute;
+    top: auto;
+    bottom: 24vh; }
   #about .article-body {
-    height: 85%;
-    justify-content: space-between;
-    align-items: flex-start;
+    width: 75%;
+    margin-left: 25%;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding-right: 20%;
+    padding-left: 5%;
     flex-direction: column; }
   #about .article-content-wrapper {
     width: 75%;
@@ -5893,9 +5909,7 @@ h3, .h3 {
         color: rgba(0, 0, 0, 0.3); }
   #about .about-interest {
     display: flex;
-    width: 70%;
     margin-bottom: 5rem;
-    margin-left: 15%;
     align-items: center; }
     #about .about-interest:nth-child(even) .about-interest-image {
       order: 2; }
@@ -5903,19 +5917,10 @@ h3, .h3 {
       text-align: right; }
   #about .about-interest-image {
     margin: 0 3rem;
-    min-width: 30%;
+    min-width: 21%;
     text-align: center; }
     #about .about-interest-image img {
       max-width: 200px; }
-  #about .article-column, #about .article-column-central {
-    width: 31%;
-    padding-top: 37rem;
-    position: relative; }
-  #about .article-column-central {
-    padding-top: 15rem; }
-    #about .article-column-central .about-interest-title-main {
-      text-align: center;
-      position: static; }
   #about .interest-button {
     border: 0;
     padding: 3px 8px;
@@ -5932,24 +5937,32 @@ h3, .h3 {
       color: #000;
       text-decoration: underline;
       outline: 0; }
+  #about .about-intro {
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    width: 100%; }
   #about .about-interest-title {
     font-size: 2.4rem;
     font-family: "worksans-thin", sans-serif; }
   #about .about-interest-title-main {
-    font-size: 3.6rem;
+    font-size: 3.8rem;
     font-family: "worksans-thin", sans-serif;
-    line-height: 1;
-    margin-bottom: 3rem;
-    margin-top: 3rem;
-    position: absolute;
-    top: 27rem;
-    left: 34.4%; }
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem; }
   #about .about-photo {
-    margin: auto;
+    margin: 0 auto 3rem auto;
     position: relative;
     left: 10px;
     width: 100%;
-    max-width: 443px; }
+    max-width: 400px; }
+  #about.scrolling-this .section-header {
+    position: fixed; }
+  #about.scrolled-this .section-header {
+    position: absolute;
+    top: auto;
+    bottom: 24vh; }
 
 #contact {
   padding-right: 5%;

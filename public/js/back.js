@@ -14,11 +14,14 @@ var $aboutVideo = $('#outro-video');
 var $portfolio = $('#portfolio');
 var $experience = $('#experience');
 var $main = $('#main');
+var $about = $('#about');
 var $outro = $('#outro');
 var startPointPortfolio;
 var endPointPortfolio;
 var startPointExperience;
 var endPointExperience;
+var startPointAbout;
+var endPointAbout;
 var currentScroll = $('#bk-modal').scrollTop();
 
 
@@ -157,6 +160,12 @@ function onScroll(event) {
         endPoint: endPointExperience,
         scrollTop: scrollTop
     });
+    onScrollStickyHeader({
+        $element: $about,
+        startPoint: startPointAbout,
+        endPoint: endPointAbout,
+        scrollTop: scrollTop
+    });
     onScrollMainContainer(scrollTop, windowHeight, scrollPoints);
 }
 
@@ -221,6 +230,8 @@ $document.ready(function () {
     endPointPortfolio = startPointPortfolio + $portfolio.outerHeight() - $window.height();
     startPointExperience = $experience.offset().top;
     endPointExperience = startPointExperience + $experience.outerHeight() - $window.height();
+    startPointAbout = $about.offset().top;
+    endPointAbout = startPointAbout + $about.outerHeight() - $window.height();
 
     //$main.css('background-color', 'hsla(0,10%,10%,0)');
     $window.on('scroll', onScroll);
