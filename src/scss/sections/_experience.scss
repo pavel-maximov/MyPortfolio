@@ -99,8 +99,8 @@
   }
 
   & .experience-content {
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top: 80px;
+    padding-bottom: 20px;
   }
 
   & .experience-employer-name {
@@ -110,8 +110,9 @@
   }
 
   & .experience-position {
-    font-size: 3.6rem;
-    letter-spacing: -1px;
+    font-family: $font-family-work-sans-regular;
+    font-size: 3rem;
+    letter-spacing: -0.2rem;
     margin-bottom: 0.5rem;
   }
 
@@ -121,8 +122,8 @@
   }
 
   & .experience-subtitle {
-    font-family: $font-family-work-sans-thin;
-    font-size: 2.2rem;
+    font-family: $font-family-work-sans-light;
+    font-size: 1.6rem;
     margin-bottom: 0.5rem;
     margin-top: 2.5rem;
   }

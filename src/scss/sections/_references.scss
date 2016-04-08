@@ -3,13 +3,17 @@
 
 #references {
   @extend %article-wrapper;
-  min-height: 400px;
-  margin: 100px 0;
+  margin: 150px 0 ;
+  min-height: 380px;
 
   & .article-body {
     width: 100%;
-    padding: 0 10%;
+    padding: 0 6%;
     flex-direction: column;
+  }
+
+  & .carousel {
+    min-height: 380px;
   }
 
   & .carousel-item-content {
@@ -19,7 +23,6 @@
   }
 
   & .references-content {
-    min-height: 400px;
     position: relative;
   }
 
@@ -29,9 +32,10 @@
   }
 
   & .references-title {
-    font-family: $font-family-work-sans-thin;
-    font-size: 3.2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
+    font-family: $font-family-work-sans-regular;
+    font-size: 3rem;
+    letter-spacing: -0.18rem;
   }
 
   & .reference-content {
@@ -40,6 +44,14 @@
   }
 
   & .reference-author {
+    margin-bottom: 0;
+    position: relative;
+    font-family: $font-family-work-sans-regular;
+    font-size: 2.1rem;
+    letter-spacing: -0.18rem;
+  }
+
+  & .reference-author-title {
     margin-bottom: 0;
     position: relative;
   }
@@ -56,20 +68,27 @@
 
   & .carousel-control {
     position: absolute;
-    top: 0;
+    top: 10px;
   }
 
   & .carousel-control.left {
-    left: -100px;
+    left: -80px;
   }
 
   & .carousel-control.right {
-    right: -100px;
+    right: -80px;
   }
 
   & .carousel-indicators {
     position: absolute;
     bottom: -2%;
-    left: 56.3%;
+    left: 47%;
+  }
+
+  & .references-linkedin-link {
+    @include make-button();
+    clear: both;
+    display: block;
+    margin-top: 4rem;
   }
 }

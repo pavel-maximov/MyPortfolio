@@ -15,13 +15,19 @@ var $portfolio = $('#portfolio');
 var $experience = $('#experience');
 var $main = $('#main');
 var $about = $('#about');
+var $intro = $('#intro');
 var $outro = $('#outro');
+var $skills = $('#skills');
+var teaserTitleVisibilityLimit = 200;
+var cogwheelsTopBottomMargin = 170;
 var startPointPortfolio;
 var endPointPortfolio;
 var startPointExperience;
 var endPointExperience;
 var startPointAbout;
 var endPointAbout;
+var endPointSkills;
+var startPointSkills;
 var currentScroll = $('#bk-modal').scrollTop();
 
 
@@ -167,6 +173,9 @@ function onScroll(event) {
         scrollTop: scrollTop
     });
     onScrollMainContainer(scrollTop, windowHeight, scrollPoints);
+
+    setCogwheelsAnimation(scrollTop, windowHeight);
+    setTeaserTitleVisibility(scrollTop);
 }
 
 
@@ -190,31 +199,59 @@ function checkCarouselItem ($mainCarousel, $controlsContainer) {
     }
 }
 
-function initModal($modal, $mainCarousel, $secondaryCarousel) {
+function initCarousel($controlsContainer, $mainCarousel, $secondaryCarousel) {
     $mainCarousel.carousel({
         interval: false,
         wrap: false
     });
-    checkCarouselItem($mainCarousel, $modal);
+    checkCarouselItem($mainCarousel, $controlsContainer);
 
-    $secondaryCarousel.carousel({
-        interval: false,
-        wrap: false
-    });
+    if ($secondaryCarousel) {
+        $secondaryCarousel.carousel({
+            interval: false,
+            wrap: false
+        });
 
-    $mainCarousel
-        .on('slide.bs.carousel', function (e) {
+        $mainCarousel.on('slide.bs.carousel', function (e) {
             $secondaryCarousel.carousel($(e.relatedTarget).index());
         })
-        .on('slid.bs.carousel', function () {
-            checkCarouselItem($mainCarousel, $modal);
-        });
+    }
+
+    $mainCarousel.on('slid.bs.carousel', function () {
+        checkCarouselItem($mainCarousel, $controlsContainer);
+    });
+
+}
+
+function initModal($modal, $mainCarousel, $secondaryCarousel) {
+    initCarousel($modal, $mainCarousel, $secondaryCarousel);
 
     $modal.find('.portfolio-item-modal-close').click(function() {
         $modal.modal('hide');
     });
 
     $modal.find('.tse-scrollable').TrackpadScrollEmulator();
+}
+
+function setCogwheelsAnimation(scrollPosition, windowHeight) {
+    if ((scrollPosition + windowHeight - cogwheelsTopBottomMargin) < startPointSkills ||
+        scrollPosition > (endPointSkills  - cogwheelsTopBottomMargin)) {
+        if ($skills.hasClass('cogwheel-rotating')) {
+            $skills.removeClass('cogwheel-rotating');
+        }
+
+        return;
+    }
+
+    $skills.addClass('cogwheel-rotating');
+}
+
+function setTeaserTitleVisibility(scrollPosition) {
+    if (scrollPosition > teaserTitleVisibilityLimit) {
+        if ($intro.hasClass('teaser-title-visible')) {
+            $intro.removeClass('teaser-title-visible');
+        }
+    }
 }
 
 $document.ready(function () {
@@ -232,6 +269,8 @@ $document.ready(function () {
     endPointExperience = startPointExperience + $experience.outerHeight() - $window.height();
     startPointAbout = $about.offset().top;
     endPointAbout = startPointAbout + $about.outerHeight() - $window.height();
+    startPointSkills = $skills.offset().top;
+    endPointSkills = startPointSkills + $skills.outerHeight();
 
     //$main.css('background-color', 'hsla(0,10%,10%,0)');
     $window.on('scroll', onScroll);
@@ -317,11 +356,7 @@ $document.ready(function () {
             .modal();
     });
 
-    $('#references-main-carousel').carousel({
-        interval: false,
-        wrap: false
-    });
-
+    initCarousel($('#references'), $('#references-main-carousel'));
 
     // $('.js-draggable').draggable({
     //     drag: function(event, ui) {

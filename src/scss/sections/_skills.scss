@@ -53,6 +53,10 @@
     position: absolute;
     left: 0;
     top: 0;
+    opacity: 0.5;
+  }
+
+  &.cogwheel-rotating .cogwheel {
     animation: rotating 60s linear infinite;
   }
 
@@ -72,9 +76,10 @@
 
   & .skills-list-title {
     margin: 0;
-    font-size: 3.6rem;
-    font-family: $font-family-work-sans-thin;
+    font-size: 3rem;
+    letter-spacing: -0.2rem;
     margin-bottom: 0.8rem;
+    font-family: $font-family-work-sans-regular;
   }
 
 
@@ -131,7 +136,7 @@
     width: 204px;
 
     & .skills-list-title {
-      font-size: 2.6rem;
+      font-size: 2.4rem;
       margin-bottom: 0.6rem;
     }
   }
@@ -141,7 +146,7 @@
     @extend %skills-group-small;
 
     & .skills-list {
-      top: -160%;
+      top: 60%;
       left: -164%;
     }
   }
@@ -151,7 +156,7 @@
     @extend %skills-group-small;
 
     & .skills-list {
-      top: -160%;
+      top: 60%;
       right: -64%;
     }
   }
@@ -161,7 +166,7 @@
     @extend %skills-group-small;
 
     & .skills-list {
-      top: 60%;
+      top: -160%;
       left: -164%;
     }
   }
@@ -171,7 +176,7 @@
     @extend %skills-group-small;
 
     & .skills-list {
-      top: 60%;
+      top: -160%;
       right: -64%;
     }
   }

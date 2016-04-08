@@ -10,6 +10,7 @@
 
   & .intro-message {
     font-size: 1.8rem;
+    margin-bottom: 100px;
   }
 
   & .section-header-img-wrapper {
@@ -38,7 +39,21 @@
     //background: url('/img/intro.jpg') no-repeat;
     background-size: cover;
   }
+
+  .section-teaser-title {
+    display: none;
+    position: absolute;
+    left: 45.9%;
+    bottom: 0;
+    font-size: 3rem;
+    font-family: $font-family-work-sans-thin;
+  }
+
+  &.teaser-title-visible .section-teaser-title {
+    display: block;
+  }
 }
+
 
 //#intro-code {
 //  z-index: 1;

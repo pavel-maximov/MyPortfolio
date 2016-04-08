@@ -4797,6 +4797,12 @@ a.text-danger:focus, a.text-danger:hover {
   animation: rotating 2s linear infinite; }
 
 @font-face {
+  font-family: 'she-always-walks-alone';
+  src: url("/fonts/she-always-walks-alone.woff2") format("woff2"), url("/fonts/she-always-walks-alone.woff") format("woff"), url("/fonts/she-always-walks-alone.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
   font-family: 'worksans-thin';
   src: url("/fonts/worksans-thin.woff2") format("woff2"), url("/fonts/worksans-thin.woff") format("woff"), url("/fonts/worksans-thin.ttf") format("truetype");
   font-weight: normal;
@@ -4809,8 +4815,8 @@ a.text-danger:focus, a.text-danger:hover {
   font-style: normal; }
 
 @font-face {
-  font-family: 'she-always-walks-alone';
-  src: url("/fonts/she-always-walks-alone.woff2") format("woff2"), url("/fonts/she-always-walks-alone.woff") format("woff"), url("/fonts/she-always-walks-alone.ttf") format("truetype");
+  font-family: 'worksans-regular';
+  src: url("/fonts/WorkSans-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
@@ -5192,11 +5198,17 @@ h3, .h3 {
   border-radius: 50%;
   margin: 0; }
 
+.arrow-down {
+  transform: rotate(-90deg);
+  font-size: 7rem;
+  font-family: "worksans-thin", sans-serif; }
+
 #intro .section-header {
   width: 50%; }
 
 #intro .intro-message {
-  font-size: 1.8rem; }
+  font-size: 1.8rem;
+  margin-bottom: 100px; }
 
 #intro .section-header-img-wrapper {
   max-width: 400px;
@@ -5220,6 +5232,17 @@ h3, .h3 {
   z-index: -1;
   transform: translateY(-50%) translateX(-50%);
   background-size: cover; }
+
+#intro .section-teaser-title {
+  display: none;
+  position: absolute;
+  left: 45.9%;
+  bottom: 0;
+  font-size: 3rem;
+  font-family: "worksans-thin", sans-serif; }
+
+#intro.teaser-title-visible .section-teaser-title {
+  display: block; }
 
 #skills .section-header {
   left: 3%; }
@@ -5257,6 +5280,9 @@ h3, .h3 {
   position: absolute;
   left: 0;
   top: 0;
+  opacity: 0.5; }
+
+#skills.cogwheel-rotating .cogwheel {
   animation: rotating 60s linear infinite; }
 
 #skills .skills-list {
@@ -5272,9 +5298,10 @@ h3, .h3 {
 
 #skills .skills-list-title {
   margin: 0;
-  font-size: 3.6rem;
-  font-family: "worksans-thin", sans-serif;
-  margin-bottom: 0.8rem; }
+  font-size: 3rem;
+  letter-spacing: -0.2rem;
+  margin-bottom: 0.8rem;
+  font-family: "worksans-regular", sans-serif; }
 
 #skills .skills-group-javascript, #skills .skills-group-css, #skills .skills-group-html, #skills .skills-group-tools, #skills .skills-group-coding, #skills .skills-group-uxui, #skills .skills-group-backend {
   position: absolute;
@@ -5309,23 +5336,23 @@ h3, .h3 {
   height: 204px;
   width: 204px; }
   #skills .skills-group-tools .skills-list-title, #skills .skills-group-coding .skills-list-title, #skills .skills-group-uxui .skills-list-title, #skills .skills-group-backend .skills-list-title {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     margin-bottom: 0.6rem; }
 
 #skills .skills-group-tools .skills-list {
-  top: -160%;
+  top: 60%;
   left: -164%; }
 
 #skills .skills-group-coding .skills-list {
-  top: -160%;
+  top: 60%;
   right: -64%; }
 
 #skills .skills-group-uxui .skills-list {
-  top: 60%;
+  top: -160%;
   left: -164%; }
 
 #skills .skills-group-backend .skills-list {
-  top: 60%;
+  top: -160%;
   right: -64%; }
 
 #portfolio {
@@ -5362,6 +5389,7 @@ h3, .h3 {
     display: flex;
     margin-bottom: 0; }
   #portfolio .portfolio-item-title-wrapper {
+    display: none;
     text-align: center;
     position: absolute;
     max-width: 241px;
@@ -5407,6 +5435,7 @@ h3, .h3 {
     margin: 1rem 0 0;
     font-size: 1.6rem; }
   #portfolio .portfolio-item-title-wrapper-horizontal {
+    display: none;
     text-align: center;
     position: absolute;
     max-width: 320px;
@@ -5422,6 +5451,21 @@ h3, .h3 {
       margin: 0.5rem 0 0; }
     #portfolio .portfolio-item-title-wrapper-horizontal .portfolio-item-subtitle-employer {
       margin: 0.5rem 0 0; }
+  #portfolio .portfolio-item-mobile:hover ~ .portfolio-item-title-wrapper,
+  #portfolio .portfolio-item-tablet:hover ~ .portfolio-item-title-wrapper,
+  #portfolio .portfolio-item-notebook:hover ~ .portfolio-item-title-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-notebook-ande:hover ~ .portfolio-item-title-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-notebook-eusec:hover ~ .portfolio-item-title-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-notebook-cbrn:hover ~ .portfolio-item-title-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-notebook-ipo:hover ~ .portfolio-item-title-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-notebook-lab:hover ~ .portfolio-item-title-wrapper, #portfolio .portfolio-item-others .portfolio-item-notebook-school:hover ~ .portfolio-item-title-wrapper, #portfolio .portfolio-item-others .portfolio-item-notebook-davide:hover ~ .portfolio-item-title-wrapper, #portfolio .portfolio-item-others .portfolio-item-notebook-milena:hover ~ .portfolio-item-title-wrapper, #portfolio .portfolio-item-others .portfolio-item-notebook-pandora:hover ~ .portfolio-item-title-wrapper, #portfolio .portfolio-item-others .portfolio-item-notebook-acqua:hover ~ .portfolio-item-title-wrapper,
+  #portfolio .portfolio-item-desktop:hover ~ .portfolio-item-title-wrapper,
+  #portfolio .portfolio-item-desktop:hover ~ .portfolio-item-title-wrapper,
+  #portfolio .portfolio-item-tv1:hover ~ .portfolio-item-title-wrapper,
+  #portfolio .portfolio-item-tv2:hover ~ .portfolio-item-title-wrapper
+#portfolio .portfolio-item-mobile:hover ~ .portfolio-item-title-wrapper-horizontal,
+  #portfolio .portfolio-item-tablet:hover ~ .portfolio-item-title-wrapper-horizontal,
+  #portfolio .portfolio-item-notebook:hover ~ .portfolio-item-title-wrapper-horizontal, #portfolio .portfolio-item-unicri .portfolio-item-notebook-ande:hover ~ .portfolio-item-title-wrapper-horizontal, #portfolio .portfolio-item-unicri .portfolio-item-notebook-eusec:hover ~ .portfolio-item-title-wrapper-horizontal, #portfolio .portfolio-item-unicri .portfolio-item-notebook-cbrn:hover ~ .portfolio-item-title-wrapper-horizontal, #portfolio .portfolio-item-unicri .portfolio-item-notebook-ipo:hover ~ .portfolio-item-title-wrapper-horizontal, #portfolio .portfolio-item-unicri .portfolio-item-notebook-lab:hover ~ .portfolio-item-title-wrapper-horizontal, #portfolio .portfolio-item-others .portfolio-item-notebook-school:hover ~ .portfolio-item-title-wrapper-horizontal, #portfolio .portfolio-item-others .portfolio-item-notebook-davide:hover ~ .portfolio-item-title-wrapper-horizontal, #portfolio .portfolio-item-others .portfolio-item-notebook-milena:hover ~ .portfolio-item-title-wrapper-horizontal, #portfolio .portfolio-item-others .portfolio-item-notebook-pandora:hover ~ .portfolio-item-title-wrapper-horizontal, #portfolio .portfolio-item-others .portfolio-item-notebook-acqua:hover ~ .portfolio-item-title-wrapper-horizontal,
+  #portfolio .portfolio-item-desktop:hover ~ .portfolio-item-title-wrapper-horizontal,
+  #portfolio .portfolio-item-desktop:hover ~ .portfolio-item-title-wrapper-horizontal,
+  #portfolio .portfolio-item-tv1:hover ~ .portfolio-item-title-wrapper-horizontal,
+  #portfolio .portfolio-item-tv2:hover ~ .portfolio-item-title-wrapper-horizontal {
+    display: block; }
   #portfolio .project-type-label {
     font-size: 1.6rem;
     position: absolute;
@@ -5821,50 +5865,59 @@ h3, .h3 {
     width: 100%;
     margin-bottom: 0.8rem; }
   #experience .experience-content {
-    padding-top: 100px;
-    padding-bottom: 50px; }
+    padding-top: 80px;
+    padding-bottom: 20px; }
   #experience .experience-employer-name {
     font-size: 2.2rem;
     letter-spacing: -1px;
     margin-bottom: 0.5rem; }
   #experience .experience-position {
-    font-size: 3.6rem;
-    letter-spacing: -1px;
+    font-family: "worksans-regular", sans-serif;
+    font-size: 3rem;
+    letter-spacing: -0.2rem;
     margin-bottom: 0.5rem; }
   #experience .experience-period {
     font-family: "worksans-thin", sans-serif;
     font-size: 2.2rem; }
   #experience .experience-subtitle {
-    font-family: "worksans-thin", sans-serif;
-    font-size: 2.2rem;
+    font-family: "worksans-light", sans-serif;
+    font-size: 1.6rem;
     margin-bottom: 0.5rem;
     margin-top: 2.5rem; }
 
 #references {
-  min-height: 400px;
-  margin: 100px 0; }
+  margin: 150px 0;
+  min-height: 380px; }
   #references .article-body {
     width: 100%;
-    padding: 0 10%;
+    padding: 0 6%;
     flex-direction: column; }
+  #references .carousel {
+    min-height: 380px; }
   #references .carousel-item-content {
     display: flex;
     justify-content: space-around;
     padding: 0 3rem; }
   #references .references-content {
-    min-height: 400px;
     position: relative; }
   #references .reference-wrapper {
     width: 28%;
     font-size: 1.6rem; }
   #references .references-title {
-    font-family: "worksans-thin", sans-serif;
-    font-size: 3.2rem;
-    margin-bottom: 4rem; }
+    margin-bottom: 6rem;
+    font-family: "worksans-regular", sans-serif;
+    font-size: 3rem;
+    letter-spacing: -0.18rem; }
   #references .reference-content {
     position: relative;
     font-style: italic; }
   #references .reference-author {
+    margin-bottom: 0;
+    position: relative;
+    font-family: "worksans-regular", sans-serif;
+    font-size: 2.1rem;
+    letter-spacing: -0.18rem; }
+  #references .reference-author-title {
     margin-bottom: 0;
     position: relative; }
   #references .quote-open {
@@ -5875,15 +5928,34 @@ h3, .h3 {
     top: 5px; }
   #references .carousel-control {
     position: absolute;
-    top: 0; }
+    top: 10px; }
   #references .carousel-control.left {
-    left: -100px; }
+    left: -80px; }
   #references .carousel-control.right {
-    right: -100px; }
+    right: -80px; }
   #references .carousel-indicators {
     position: absolute;
     bottom: -2%;
-    left: 56.3%; }
+    left: 47%; }
+  #references .references-linkedin-link {
+    border: 0;
+    padding: 3px 8px;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #8c8c8c;
+    clear: both;
+    display: block;
+    margin-top: 4rem; }
+    #references .references-linkedin-link:after {
+      content: ' >';
+      position: relative;
+      color: #8c8c8c; }
+    #references .references-linkedin-link:hover, #references .references-linkedin-link.hover, #references .references-linkedin-link:focus, #references .references-linkedin-link.focus, #references .references-linkedin-link:active, #references .references-linkedin-link.active, #references .references-linkedin-link:active {
+      color: #000;
+      text-decoration: underline;
+      outline: 0; }
 
 #about {
   flex-direction: column;

@@ -64,6 +64,7 @@
   }
 
   .portfolio-item-title-wrapper {
+    display: none;
     text-align: center;
     position: absolute;
     max-width: 241px;
@@ -133,6 +134,7 @@
   }
 
   .portfolio-item-title-wrapper-horizontal {
+    display: none;
     text-align: center;
     position: absolute;
     max-width: 320px;
@@ -155,6 +157,24 @@
       margin: 0.5rem 0 0;
     }
 
+  }
+
+
+  & .portfolio-item-mobile:hover ~ .portfolio-item-title-wrapper,
+  & .portfolio-item-tablet:hover ~ .portfolio-item-title-wrapper,
+  & .portfolio-item-notebook:hover ~ .portfolio-item-title-wrapper,
+  & .portfolio-item-desktop:hover ~ .portfolio-item-title-wrapper,
+  & .portfolio-item-desktop:hover ~ .portfolio-item-title-wrapper,
+  & .portfolio-item-tv1:hover ~ .portfolio-item-title-wrapper,
+  & .portfolio-item-tv2:hover ~ .portfolio-item-title-wrapper
+  & .portfolio-item-mobile:hover ~ .portfolio-item-title-wrapper-horizontal,
+  & .portfolio-item-tablet:hover ~ .portfolio-item-title-wrapper-horizontal,
+  & .portfolio-item-notebook:hover ~ .portfolio-item-title-wrapper-horizontal,
+  & .portfolio-item-desktop:hover ~ .portfolio-item-title-wrapper-horizontal,
+  & .portfolio-item-desktop:hover ~ .portfolio-item-title-wrapper-horizontal,
+  & .portfolio-item-tv1:hover ~ .portfolio-item-title-wrapper-horizontal,
+  & .portfolio-item-tv2:hover ~ .portfolio-item-title-wrapper-horizontal {
+    display: block;
   }
 
   .project-type-label {
@@ -773,4 +793,5 @@
       left: 50%;
     }
   }
+
 }
