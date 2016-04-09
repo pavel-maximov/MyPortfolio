@@ -9,7 +9,6 @@ var $htmlBody = $('html,body');
 //var currentTag;
 //var $skills = $('#skills');
 //var $intro = $('#outro').find('');
-var $element  = $('#skills-cogwheels');
 var $aboutVideo = $('#outro-video');
 var $portfolio = $('#portfolio');
 var $experience = $('#experience');
@@ -132,7 +131,6 @@ function onScrollMainContainer (scrollTop, windowHeight, scrollPoints) {
 
     if (scrollTop < scrollPoints.skills) {
         newAlphaValue = scrollTop / windowHeight;
-        newAlphaValue = newAlphaValue < .2 ? .2 : newAlphaValue;
         newAlphaValue = newAlphaValue > .85 ? .85 : newAlphaValue;
         $main.css('background-color', 'hsla(0,10%,100%,' + newAlphaValue + ')');
     } else if (scrollTop < scrollPoints.outro) {
@@ -173,7 +171,6 @@ function onScroll(event) {
         scrollTop: scrollTop
     });
     onScrollMainContainer(scrollTop, windowHeight, scrollPoints);
-
     setCogwheelsAnimation(scrollTop, windowHeight);
     setTeaserTitleVisibility(scrollTop);
 }
@@ -357,29 +354,6 @@ $document.ready(function () {
     });
 
     initCarousel($('#references'), $('#references-main-carousel'));
-
-    // $('.js-draggable').draggable({
-    //     drag: function(event, ui) {
-    //         var parentHeight = ui.helper.parent().outerHeight();
-    //         var childHeight = ui.helper.outerHeight();
-    //
-    //         if (ui.position.top > 0) {
-    //             ui.position.top = 0;
-    //         } else if ((Math.abs(ui.position.top) + parentHeight - ui.helper.parent().scrollTop()) > childHeight) {
-    //             ui.position.top = -(childHeight - parentHeight);
-    //         }
-    //     },
-    //     axis: 'y',
-    //     scroll: false
-    // });
-    //
-    //$('#skills').mousemove(function(e) {
-    //    mX = e.pageX;
-    //    mY = e.pageY;
-    //    distance = calculateDistance($element, mX, mY);
-    //});
-
-    //typeInterval = setInterval(printChar, 40);
 });
 
 //

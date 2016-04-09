@@ -28,7 +28,7 @@
 
   & .reference-wrapper {
     width: 28%;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 
   & .references-title {
@@ -58,6 +58,8 @@
 
   & .quote-open {
     vertical-align: baseline;
+    position: relative;
+    top: 2px;
   }
 
   & .quote-close {

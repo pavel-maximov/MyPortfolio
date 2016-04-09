@@ -6,6 +6,7 @@
   @extend %article-wrapper;
   padding-right: 5%;
   align-items: center;
+  min-height: 70vh;
 
   & .section-header {
     width: 25%;
@@ -18,11 +19,11 @@
   }
 
   & .article-body {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     height: 85%;
     flex-direction: column;
-    //font-family: $font-family-work-sans-thin;
     text-align: center;
+    padding-right: 26%;
   }
 
   & .article-content-wrapper {
@@ -47,6 +48,7 @@
   }
 
   & .contact-methods {
+    @include make-button();
     display: flex;
     justify-content: center;
   }
@@ -55,7 +57,7 @@
     border-radius: 50%;
     width: 22rem;
     height: 22rem;
-    margin: 3rem 1rem;
+    margin: 2rem 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
