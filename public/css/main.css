@@ -5187,6 +5187,7 @@ h3, .h3 {
   margin: 0; }
 
 .arrow-down {
+  display: block;
   transform: rotate(-90deg);
   font-size: 5rem;
   font-family: "worksans-thin", sans-serif;
@@ -5233,116 +5234,101 @@ h3, .h3 {
 #intro.teaser-title-visible .section-teaser-title {
   display: block; }
 
-#skills .section-header {
-  left: 3%; }
-
-#skills .section-header-img-wrapper {
-  max-width: 250px; }
-
-#skills .article-img-wrapper {
-  width: 66%;
-  position: relative; }
-  #skills .article-img-wrapper .article-img,
-  #skills .article-img-wrapper .article-img-overlay {
-    width: 80%;
-    max-width: 600px;
+#skills {
+  min-height: 80vh; }
+  #skills .section-header {
+    left: 3%; }
+  #skills .section-header-img-wrapper {
+    max-width: 250px; }
+  #skills .article-img-wrapper {
+    width: 66%;
+    position: relative; }
+    #skills .article-img-wrapper .article-img,
+    #skills .article-img-wrapper .article-img-overlay {
+      width: 80%;
+      max-width: 600px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%); }
+      #skills .article-img-wrapper .article-img path,
+      #skills .article-img-wrapper .article-img-overlay path {
+        animation-name: rotating;
+        transform-origin: 50% 50%; }
+  #skills .article-content-wrapper {
+    width: 33%;
+    padding-right: 8%; }
+    #skills .article-content-wrapper p {
+      margin-bottom: 0;
+      text-align: center; }
+      #skills .article-content-wrapper p span {
+        color: rgba(0, 0, 0, 0.3); }
+  #skills .cogwheel {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.6; }
+  #skills.cogwheel-rotating .cogwheel {
+    animation: rotating 60s linear infinite; }
+  #skills .skills-list {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    #skills .skills-list ul {
+      list-style: none;
+      padding: 0; }
+  #skills .skills-list-title {
+    margin: 0;
+    font-size: 3rem;
+    letter-spacing: -0.2rem;
+    margin-bottom: 0.8rem;
+    font-family: "worksans-regular", sans-serif; }
+  #skills .skills-group-javascript, #skills .skills-group-css, #skills .skills-group-html, #skills .skills-group-tools, #skills .skills-group-coding, #skills .skills-group-uxui, #skills .skills-group-backend {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%); }
-    #skills .article-img-wrapper .article-img path,
-    #skills .article-img-wrapper .article-img-overlay path {
-      animation-name: rotating;
-      transform-origin: 50% 50%; }
-
-#skills .article-content-wrapper {
-  width: 33%;
-  padding-right: 8%; }
-  #skills .article-content-wrapper p {
-    margin-bottom: 0;
-    text-align: center; }
-    #skills .article-content-wrapper p span {
-      color: rgba(0, 0, 0, 0.3); }
-
-#skills .cogwheel {
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0.6; }
-
-#skills.cogwheel-rotating .cogwheel {
-  animation: rotating 60s linear infinite; }
-
-#skills .skills-list {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-  #skills .skills-list ul {
-    list-style: none;
-    padding: 0; }
-
-#skills .skills-list-title {
-  margin: 0;
-  font-size: 3rem;
-  letter-spacing: -0.2rem;
-  margin-bottom: 0.8rem;
-  font-family: "worksans-regular", sans-serif; }
-
-#skills .skills-group-javascript, #skills .skills-group-css, #skills .skills-group-html, #skills .skills-group-tools, #skills .skills-group-coding, #skills .skills-group-uxui, #skills .skills-group-backend {
-  position: absolute;
-  top: 50%;
-  left: 45%;
-  text-align: center;
-  font-size: 1.5rem;
-  line-height: 1.3; }
-
-#skills .skills-group-javascript {
-  height: 404px;
-  width: 404px; }
-  #skills .skills-group-javascript .skills-list {
+    left: 45%;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.3; }
+  #skills .skills-group-javascript {
+    height: 404px;
+    width: 404px; }
+    #skills .skills-group-javascript .skills-list {
+      top: -50%;
+      left: -50%; }
+  #skills .skills-group-css, #skills .skills-group-html {
+    height: 304px;
+    width: 304px; }
+  #skills .skills-group-css .skills-list {
     top: -50%;
-    left: -50%; }
-
-#skills .skills-group-css, #skills .skills-group-html {
-  height: 304px;
-  width: 304px; }
-
-#skills .skills-group-css .skills-list {
-  top: -50%;
-  left: -180%; }
-
-#skills .skills-group-html {
-  right: 0; }
-  #skills .skills-group-html .skills-list {
-    top: -50%;
-    right: -80%; }
-
-#skills .skills-group-tools, #skills .skills-group-coding, #skills .skills-group-uxui, #skills .skills-group-backend {
-  height: 204px;
-  width: 204px; }
-  #skills .skills-group-tools .skills-list-title, #skills .skills-group-coding .skills-list-title, #skills .skills-group-uxui .skills-list-title, #skills .skills-group-backend .skills-list-title {
-    font-size: 2.4rem;
-    margin-bottom: 0.6rem; }
-
-#skills .skills-group-tools .skills-list {
-  top: 60%;
-  left: -164%; }
-
-#skills .skills-group-coding .skills-list {
-  top: 60%;
-  right: -64%; }
-
-#skills .skills-group-uxui .skills-list {
-  top: -160%;
-  left: -164%; }
-
-#skills .skills-group-backend .skills-list {
-  top: -160%;
-  right: -64%; }
+    left: -180%; }
+  #skills .skills-group-html {
+    right: 0; }
+    #skills .skills-group-html .skills-list {
+      top: -50%;
+      right: -80%; }
+  #skills .skills-group-tools, #skills .skills-group-coding, #skills .skills-group-uxui, #skills .skills-group-backend {
+    height: 204px;
+    width: 204px; }
+    #skills .skills-group-tools .skills-list-title, #skills .skills-group-coding .skills-list-title, #skills .skills-group-uxui .skills-list-title, #skills .skills-group-backend .skills-list-title {
+      font-size: 2.4rem;
+      margin-bottom: 0.6rem; }
+  #skills .skills-group-tools .skills-list {
+    top: 60%;
+    left: -164%; }
+  #skills .skills-group-coding .skills-list {
+    top: 60%;
+    right: -64%; }
+  #skills .skills-group-uxui .skills-list {
+    top: -160%;
+    left: -164%; }
+  #skills .skills-group-backend .skills-list {
+    top: -160%;
+    right: -64%; }
 
 #portfolio {
   flex-direction: column; }
@@ -5404,10 +5390,12 @@ h3, .h3 {
     top: 0;
     z-index: 0; }
   #portfolio .portfolio-item-title {
-    font-size: 2.4rem;
-    margin: 0 0 0.3rem 0; }
+    font-size: 2.2rem;
+    margin: 0 0 0.3rem 0;
+    font-family: "worksans-regular", sans-serif;
+    letter-spacing: -0.2rem; }
   #portfolio .portfolio-item-subtitle {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     font-family: "worksans-light", sans-serif; }
   #portfolio .portfolio-item-subtitle-employer {
     font-size: 1.5rem;
@@ -5543,7 +5531,7 @@ h3, .h3 {
     left: 37%; }
   #portfolio .portfolio-item-title-wrapper-horizontal {
     left: 60%;
-    top: 7%; }
+    top: 8.5%; }
   #portfolio .project-type-label {
     left: 1.6%; }
   #portfolio .portfolio-item-bk .portfolio-item-desktop {
@@ -5561,6 +5549,8 @@ h3, .h3 {
   #portfolio .portfolio-item-bk .portfolio-item-title-wrapper {
     left: 72.8%;
     top: 11%; }
+  #portfolio .portfolio-item-bk .portfolio-item-subtitle-employer {
+    margin: 4rem 0 0; }
   #portfolio .portfolio-item-vendomo .portfolio-item-desktop {
     top: 13%;
     left: 23%; }
@@ -5594,7 +5584,7 @@ h3, .h3 {
     left: 66%;
     top: 10.5%; }
   #portfolio .portfolio-item-vendomo-crm .portfolio-item-subtitle-employer {
-    margin: 2rem 0 0; }
+    margin: 3rem 0 0; }
   #portfolio .portfolio-item-foodora .portfolio-item-desktop {
     top: 13%;
     left: 25%; }
@@ -5612,6 +5602,9 @@ h3, .h3 {
     top: 14%; }
   #portfolio .portfolio-item-foodora .portfolio-item-subtitle-employer {
     margin: 3rem 0 0; }
+  #portfolio .portfolio-item-timvision .portfolio-item-title,
+  #portfolio .portfolio-item-cubomusica .portfolio-item-title {
+    margin: 0.2rem 0 0.2rem; }
   #portfolio .portfolio-item-unicri .project-type-label {
     top: -2.2rem; }
   #portfolio .portfolio-item-unicri .portfolio-item-notebook-ande {
@@ -5646,7 +5639,7 @@ h3, .h3 {
       transform: translateX(-50%); }
   #portfolio .portfolio-item-unicri .portfolio-item-title-wrapper-horizontal {
     left: 36.7%;
-    top: 11%; }
+    top: 12%; }
   #portfolio .portfolio-item-unicri .portfolio-item-subtitle-employer {
     margin-top: 0.5rem; }
   #portfolio .portfolio-item-unicri .portfolio-item-title {
@@ -5683,70 +5676,98 @@ h3, .h3 {
       transform: translateX(-50%); }
   #portfolio .portfolio-item-others .portfolio-item-title-wrapper-horizontal {
     left: 36.7%;
-    top: 11%; }
+    top: 12%; }
   #portfolio .portfolio-item-others .portfolio-item-subtitle-employer {
-    margin-top: 1rem; }
+    margin-top: 0.5rem; }
   #portfolio .portfolio-item-others .portfolio-item-title {
     margin-top: 0.5rem; }
-  #portfolio .portfolio-item-modal-notebook-mobile .modal-dialog, #portfolio .portfolio-item-modal-tv .modal-dialog, #portfolio .portfolio-item-modal-notebook .modal-dialog {
+  #portfolio .portfolio-item-modal-notebook-mobile .modal-dialog, #portfolio .portfolio-item-modal-tv-timvision .modal-dialog,
+  #portfolio .portfolio-item-modal-tv-cubomusica .modal-dialog, #portfolio .portfolio-item-modal-notebook-unicri .modal-dialog,
+  #portfolio .portfolio-item-modal-notebook-others .modal-dialog {
     width: 97%;
     height: 90%;
     max-width: none; }
-  #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-subtitle, #portfolio .portfolio-item-modal-tv .portfolio-item-subtitle, #portfolio .portfolio-item-modal-notebook .portfolio-item-subtitle {
+  #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-subtitle, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-subtitle,
+  #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-subtitle, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-subtitle,
+  #portfolio .portfolio-item-modal-notebook-others .portfolio-item-subtitle {
     margin-bottom: 2rem;
     font-family: "worksans-thin", sans-serif;
     font-size: 1.8rem; }
-  #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-details-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-details-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-details-wrapper {
+  #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-details-wrapper, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-modal-details-wrapper,
+  #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-modal-details-wrapper, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-modal-details-wrapper,
+  #portfolio .portfolio-item-modal-notebook-others .portfolio-item-modal-details-wrapper {
     position: fixed;
     left: 60px;
     top: 60px;
     width: 17%; }
-  #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-notebook, #portfolio .portfolio-item-modal-tv .portfolio-item-notebook, #portfolio .portfolio-item-modal-notebook .portfolio-item-notebook, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-ande, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-ande, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-ande, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-ande, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-ande, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-ande, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-eusec, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-eusec, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-eusec, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-eusec, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-eusec, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-eusec, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-ipo, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-ipo, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-ipo, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-ipo, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-ipo, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-ipo, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-lab, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-lab, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-lab, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-lab, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-lab, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-lab, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-school, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-school, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-school, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-school, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-school, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-school, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-davide, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-davide, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-davide, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-davide, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-davide, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-davide, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-milena, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-milena, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-milena, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-milena, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-milena, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-milena, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-pandora, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-pandora, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-pandora, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-pandora, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-pandora, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-pandora, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-acqua, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-acqua, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-acqua, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-acqua, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-acqua, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-acqua {
+  #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-notebook, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-notebook,
+  #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-notebook, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-notebook,
+  #portfolio .portfolio-item-modal-notebook-others .portfolio-item-notebook, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-ande, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-ande, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-unicri .portfolio-item-notebook-ande, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv-timvision .portfolio-item-notebook-ande, #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-unicri .portfolio-item-notebook-ande, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv-cubomusica .portfolio-item-notebook-ande, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-unicri .portfolio-item-notebook-ande, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-unicri .portfolio-item-notebook-ande, #portfolio .portfolio-item-modal-notebook-others .portfolio-item-unicri .portfolio-item-notebook-ande, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-others .portfolio-item-notebook-ande, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-eusec, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-eusec, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-unicri .portfolio-item-notebook-eusec, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv-timvision .portfolio-item-notebook-eusec, #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-unicri .portfolio-item-notebook-eusec, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv-cubomusica .portfolio-item-notebook-eusec, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-unicri .portfolio-item-notebook-eusec, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-unicri .portfolio-item-notebook-eusec, #portfolio .portfolio-item-modal-notebook-others .portfolio-item-unicri .portfolio-item-notebook-eusec, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-others .portfolio-item-notebook-eusec, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-unicri .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv-timvision .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-unicri .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv-cubomusica .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-unicri .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-unicri .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-modal-notebook-others .portfolio-item-unicri .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-others .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-ipo, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-ipo, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-unicri .portfolio-item-notebook-ipo, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv-timvision .portfolio-item-notebook-ipo, #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-unicri .portfolio-item-notebook-ipo, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv-cubomusica .portfolio-item-notebook-ipo, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-unicri .portfolio-item-notebook-ipo, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-unicri .portfolio-item-notebook-ipo, #portfolio .portfolio-item-modal-notebook-others .portfolio-item-unicri .portfolio-item-notebook-ipo, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-others .portfolio-item-notebook-ipo, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-lab, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-lab, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-unicri .portfolio-item-notebook-lab, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv-timvision .portfolio-item-notebook-lab, #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-unicri .portfolio-item-notebook-lab, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv-cubomusica .portfolio-item-notebook-lab, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-unicri .portfolio-item-notebook-lab, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-unicri .portfolio-item-notebook-lab, #portfolio .portfolio-item-modal-notebook-others .portfolio-item-unicri .portfolio-item-notebook-lab, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-others .portfolio-item-notebook-lab, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-school, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-school, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-others .portfolio-item-notebook-school, #portfolio .portfolio-item-others .portfolio-item-modal-tv-timvision .portfolio-item-notebook-school, #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-others .portfolio-item-notebook-school, #portfolio .portfolio-item-others .portfolio-item-modal-tv-cubomusica .portfolio-item-notebook-school, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-others .portfolio-item-notebook-school, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-unicri .portfolio-item-notebook-school, #portfolio .portfolio-item-modal-notebook-others .portfolio-item-others .portfolio-item-notebook-school, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-others .portfolio-item-notebook-school, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-davide, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-davide, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-others .portfolio-item-notebook-davide, #portfolio .portfolio-item-others .portfolio-item-modal-tv-timvision .portfolio-item-notebook-davide, #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-others .portfolio-item-notebook-davide, #portfolio .portfolio-item-others .portfolio-item-modal-tv-cubomusica .portfolio-item-notebook-davide, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-others .portfolio-item-notebook-davide, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-unicri .portfolio-item-notebook-davide, #portfolio .portfolio-item-modal-notebook-others .portfolio-item-others .portfolio-item-notebook-davide, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-others .portfolio-item-notebook-davide, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-milena, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-milena, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-others .portfolio-item-notebook-milena, #portfolio .portfolio-item-others .portfolio-item-modal-tv-timvision .portfolio-item-notebook-milena, #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-others .portfolio-item-notebook-milena, #portfolio .portfolio-item-others .portfolio-item-modal-tv-cubomusica .portfolio-item-notebook-milena, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-others .portfolio-item-notebook-milena, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-unicri .portfolio-item-notebook-milena, #portfolio .portfolio-item-modal-notebook-others .portfolio-item-others .portfolio-item-notebook-milena, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-others .portfolio-item-notebook-milena, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-pandora, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-pandora, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-others .portfolio-item-notebook-pandora, #portfolio .portfolio-item-others .portfolio-item-modal-tv-timvision .portfolio-item-notebook-pandora, #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-others .portfolio-item-notebook-pandora, #portfolio .portfolio-item-others .portfolio-item-modal-tv-cubomusica .portfolio-item-notebook-pandora, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-others .portfolio-item-notebook-pandora, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-unicri .portfolio-item-notebook-pandora, #portfolio .portfolio-item-modal-notebook-others .portfolio-item-others .portfolio-item-notebook-pandora, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-others .portfolio-item-notebook-pandora, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-acqua, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-acqua, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-others .portfolio-item-notebook-acqua, #portfolio .portfolio-item-others .portfolio-item-modal-tv-timvision .portfolio-item-notebook-acqua, #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-others .portfolio-item-notebook-acqua, #portfolio .portfolio-item-others .portfolio-item-modal-tv-cubomusica .portfolio-item-notebook-acqua, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-others .portfolio-item-notebook-acqua, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-unicri .portfolio-item-notebook-acqua, #portfolio .portfolio-item-modal-notebook-others .portfolio-item-others .portfolio-item-notebook-acqua, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-others .portfolio-item-notebook-acqua {
     position: fixed;
     left: 16.3%;
     top: 4%;
     width: 82%;
     max-width: none; }
-    #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-notebook .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-notebook .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-notebook .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-ande .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-ande .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-ande .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-ande .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-ande .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-ande .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-eusec .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-eusec .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-eusec .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-eusec .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-eusec .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-eusec .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-cbrn .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-cbrn .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-cbrn .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-cbrn .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-cbrn .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-cbrn .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-ipo .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-ipo .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-ipo .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-ipo .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-ipo .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-ipo .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-lab .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-lab .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-lab .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-lab .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-lab .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-lab .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-school .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-school .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-school .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-school .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-school .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-school .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-davide .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-davide .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-davide .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-davide .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-davide .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-davide .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-milena .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-milena .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-milena .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-milena .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-milena .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-milena .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-pandora .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-pandora .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-pandora .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-pandora .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-pandora .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-pandora .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-acqua .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-acqua .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-acqua .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-acqua .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-acqua .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-acqua .portfolio-item-img-full-wrapper {
+    #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-notebook .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-notebook .portfolio-item-img-full-wrapper,
+    #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-notebook .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-notebook .portfolio-item-img-full-wrapper,
+    #portfolio .portfolio-item-modal-notebook-others .portfolio-item-notebook .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-ande .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-ande .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-unicri .portfolio-item-notebook-ande .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv-timvision .portfolio-item-notebook-ande .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-unicri .portfolio-item-notebook-ande .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv-cubomusica .portfolio-item-notebook-ande .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-unicri .portfolio-item-notebook-ande .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-unicri .portfolio-item-notebook-ande .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-others .portfolio-item-unicri .portfolio-item-notebook-ande .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-others .portfolio-item-notebook-ande .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-eusec .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-eusec .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-unicri .portfolio-item-notebook-eusec .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv-timvision .portfolio-item-notebook-eusec .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-unicri .portfolio-item-notebook-eusec .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv-cubomusica .portfolio-item-notebook-eusec .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-unicri .portfolio-item-notebook-eusec .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-unicri .portfolio-item-notebook-eusec .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-others .portfolio-item-unicri .portfolio-item-notebook-eusec .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-others .portfolio-item-notebook-eusec .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-cbrn .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-cbrn .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-unicri .portfolio-item-notebook-cbrn .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv-timvision .portfolio-item-notebook-cbrn .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-unicri .portfolio-item-notebook-cbrn .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv-cubomusica .portfolio-item-notebook-cbrn .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-unicri .portfolio-item-notebook-cbrn .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-unicri .portfolio-item-notebook-cbrn .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-others .portfolio-item-unicri .portfolio-item-notebook-cbrn .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-others .portfolio-item-notebook-cbrn .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-ipo .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-ipo .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-unicri .portfolio-item-notebook-ipo .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv-timvision .portfolio-item-notebook-ipo .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-unicri .portfolio-item-notebook-ipo .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv-cubomusica .portfolio-item-notebook-ipo .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-unicri .portfolio-item-notebook-ipo .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-unicri .portfolio-item-notebook-ipo .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-others .portfolio-item-unicri .portfolio-item-notebook-ipo .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-others .portfolio-item-notebook-ipo .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-lab .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-lab .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-unicri .portfolio-item-notebook-lab .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv-timvision .portfolio-item-notebook-lab .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-unicri .portfolio-item-notebook-lab .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv-cubomusica .portfolio-item-notebook-lab .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-unicri .portfolio-item-notebook-lab .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-unicri .portfolio-item-notebook-lab .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-others .portfolio-item-unicri .portfolio-item-notebook-lab .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-others .portfolio-item-notebook-lab .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-school .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-school .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-others .portfolio-item-notebook-school .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv-timvision .portfolio-item-notebook-school .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-others .portfolio-item-notebook-school .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv-cubomusica .portfolio-item-notebook-school .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-others .portfolio-item-notebook-school .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-unicri .portfolio-item-notebook-school .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-others .portfolio-item-others .portfolio-item-notebook-school .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-others .portfolio-item-notebook-school .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-davide .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-davide .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-others .portfolio-item-notebook-davide .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv-timvision .portfolio-item-notebook-davide .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-others .portfolio-item-notebook-davide .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv-cubomusica .portfolio-item-notebook-davide .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-others .portfolio-item-notebook-davide .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-unicri .portfolio-item-notebook-davide .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-others .portfolio-item-others .portfolio-item-notebook-davide .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-others .portfolio-item-notebook-davide .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-milena .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-milena .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-others .portfolio-item-notebook-milena .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv-timvision .portfolio-item-notebook-milena .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-others .portfolio-item-notebook-milena .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv-cubomusica .portfolio-item-notebook-milena .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-others .portfolio-item-notebook-milena .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-unicri .portfolio-item-notebook-milena .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-others .portfolio-item-others .portfolio-item-notebook-milena .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-others .portfolio-item-notebook-milena .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-pandora .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-pandora .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-others .portfolio-item-notebook-pandora .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv-timvision .portfolio-item-notebook-pandora .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-others .portfolio-item-notebook-pandora .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv-cubomusica .portfolio-item-notebook-pandora .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-others .portfolio-item-notebook-pandora .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-unicri .portfolio-item-notebook-pandora .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-others .portfolio-item-others .portfolio-item-notebook-pandora .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-others .portfolio-item-notebook-pandora .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-acqua .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-acqua .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-others .portfolio-item-notebook-acqua .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv-timvision .portfolio-item-notebook-acqua .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-others .portfolio-item-notebook-acqua .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv-cubomusica .portfolio-item-notebook-acqua .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-others .portfolio-item-notebook-acqua .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-unicri .portfolio-item-notebook-acqua .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-others .portfolio-item-others .portfolio-item-notebook-acqua .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-others .portfolio-item-notebook-acqua .portfolio-item-img-full-wrapper {
       top: 56px;
       left: 12.5%;
       right: 12.5%;
       bottom: 206px; }
-    #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-notebook .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-notebook .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-notebook .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-ande .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-ande .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-ande .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-ande .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-ande .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-ande .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-eusec .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-eusec .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-eusec .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-eusec .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-eusec .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-eusec .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-cbrn .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-cbrn .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-cbrn .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-cbrn .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-cbrn .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-cbrn .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-ipo .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-ipo .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-ipo .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-ipo .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-ipo .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-ipo .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-lab .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-lab .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-lab .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-lab .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-lab .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-lab .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-school .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-school .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-school .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-school .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-school .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-school .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-davide .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-davide .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-davide .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-davide .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-davide .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-davide .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-milena .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-milena .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-milena .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-milena .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-milena .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-milena .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-pandora .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-pandora .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-pandora .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-pandora .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-pandora .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-pandora .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-acqua .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-acqua .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-acqua .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-acqua .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-acqua .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-acqua .wrapper {
+    #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-notebook .wrapper, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-notebook .wrapper,
+    #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-notebook .wrapper, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-notebook .wrapper,
+    #portfolio .portfolio-item-modal-notebook-others .portfolio-item-notebook .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-ande .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-ande .wrapper, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-unicri .portfolio-item-notebook-ande .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv-timvision .portfolio-item-notebook-ande .wrapper, #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-unicri .portfolio-item-notebook-ande .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv-cubomusica .portfolio-item-notebook-ande .wrapper, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-unicri .portfolio-item-notebook-ande .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-unicri .portfolio-item-notebook-ande .wrapper, #portfolio .portfolio-item-modal-notebook-others .portfolio-item-unicri .portfolio-item-notebook-ande .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-others .portfolio-item-notebook-ande .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-eusec .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-eusec .wrapper, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-unicri .portfolio-item-notebook-eusec .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv-timvision .portfolio-item-notebook-eusec .wrapper, #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-unicri .portfolio-item-notebook-eusec .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv-cubomusica .portfolio-item-notebook-eusec .wrapper, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-unicri .portfolio-item-notebook-eusec .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-unicri .portfolio-item-notebook-eusec .wrapper, #portfolio .portfolio-item-modal-notebook-others .portfolio-item-unicri .portfolio-item-notebook-eusec .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-others .portfolio-item-notebook-eusec .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-cbrn .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-cbrn .wrapper, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-unicri .portfolio-item-notebook-cbrn .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv-timvision .portfolio-item-notebook-cbrn .wrapper, #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-unicri .portfolio-item-notebook-cbrn .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv-cubomusica .portfolio-item-notebook-cbrn .wrapper, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-unicri .portfolio-item-notebook-cbrn .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-unicri .portfolio-item-notebook-cbrn .wrapper, #portfolio .portfolio-item-modal-notebook-others .portfolio-item-unicri .portfolio-item-notebook-cbrn .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-others .portfolio-item-notebook-cbrn .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-ipo .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-ipo .wrapper, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-unicri .portfolio-item-notebook-ipo .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv-timvision .portfolio-item-notebook-ipo .wrapper, #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-unicri .portfolio-item-notebook-ipo .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv-cubomusica .portfolio-item-notebook-ipo .wrapper, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-unicri .portfolio-item-notebook-ipo .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-unicri .portfolio-item-notebook-ipo .wrapper, #portfolio .portfolio-item-modal-notebook-others .portfolio-item-unicri .portfolio-item-notebook-ipo .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-others .portfolio-item-notebook-ipo .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-lab .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-lab .wrapper, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-unicri .portfolio-item-notebook-lab .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv-timvision .portfolio-item-notebook-lab .wrapper, #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-unicri .portfolio-item-notebook-lab .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv-cubomusica .portfolio-item-notebook-lab .wrapper, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-unicri .portfolio-item-notebook-lab .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-unicri .portfolio-item-notebook-lab .wrapper, #portfolio .portfolio-item-modal-notebook-others .portfolio-item-unicri .portfolio-item-notebook-lab .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-others .portfolio-item-notebook-lab .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-school .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-school .wrapper, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-others .portfolio-item-notebook-school .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv-timvision .portfolio-item-notebook-school .wrapper, #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-others .portfolio-item-notebook-school .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv-cubomusica .portfolio-item-notebook-school .wrapper, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-others .portfolio-item-notebook-school .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-unicri .portfolio-item-notebook-school .wrapper, #portfolio .portfolio-item-modal-notebook-others .portfolio-item-others .portfolio-item-notebook-school .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-others .portfolio-item-notebook-school .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-davide .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-davide .wrapper, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-others .portfolio-item-notebook-davide .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv-timvision .portfolio-item-notebook-davide .wrapper, #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-others .portfolio-item-notebook-davide .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv-cubomusica .portfolio-item-notebook-davide .wrapper, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-others .portfolio-item-notebook-davide .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-unicri .portfolio-item-notebook-davide .wrapper, #portfolio .portfolio-item-modal-notebook-others .portfolio-item-others .portfolio-item-notebook-davide .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-others .portfolio-item-notebook-davide .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-milena .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-milena .wrapper, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-others .portfolio-item-notebook-milena .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv-timvision .portfolio-item-notebook-milena .wrapper, #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-others .portfolio-item-notebook-milena .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv-cubomusica .portfolio-item-notebook-milena .wrapper, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-others .portfolio-item-notebook-milena .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-unicri .portfolio-item-notebook-milena .wrapper, #portfolio .portfolio-item-modal-notebook-others .portfolio-item-others .portfolio-item-notebook-milena .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-others .portfolio-item-notebook-milena .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-pandora .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-pandora .wrapper, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-others .portfolio-item-notebook-pandora .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv-timvision .portfolio-item-notebook-pandora .wrapper, #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-others .portfolio-item-notebook-pandora .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv-cubomusica .portfolio-item-notebook-pandora .wrapper, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-others .portfolio-item-notebook-pandora .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-unicri .portfolio-item-notebook-pandora .wrapper, #portfolio .portfolio-item-modal-notebook-others .portfolio-item-others .portfolio-item-notebook-pandora .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-others .portfolio-item-notebook-pandora .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-acqua .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-acqua .wrapper, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-others .portfolio-item-notebook-acqua .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv-timvision .portfolio-item-notebook-acqua .wrapper, #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-others .portfolio-item-notebook-acqua .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv-cubomusica .portfolio-item-notebook-acqua .wrapper, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-others .portfolio-item-notebook-acqua .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-unicri .portfolio-item-notebook-acqua .wrapper, #portfolio .portfolio-item-modal-notebook-others .portfolio-item-others .portfolio-item-notebook-acqua .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-others .portfolio-item-notebook-acqua .wrapper {
       width: 100%;
       height: 100%; }
-  #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-mobile, #portfolio .portfolio-item-modal-tv .portfolio-item-mobile, #portfolio .portfolio-item-modal-notebook .portfolio-item-mobile {
+  #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-mobile, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-mobile,
+  #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-mobile, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-mobile,
+  #portfolio .portfolio-item-modal-notebook-others .portfolio-item-mobile {
     position: fixed;
     left: 8%;
     top: 45%;
     width: 13%;
     max-width: none; }
-    #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-mobile .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-mobile .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-mobile .portfolio-item-img-full-wrapper {
+    #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-mobile .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-mobile .portfolio-item-img-full-wrapper,
+    #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-mobile .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-mobile .portfolio-item-img-full-wrapper,
+    #portfolio .portfolio-item-modal-notebook-others .portfolio-item-mobile .portfolio-item-img-full-wrapper {
       top: 50px;
       left: 2.5%;
       right: 2.5%;
       bottom: 103px; }
-    #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-mobile .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-mobile .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-mobile .wrapper {
+    #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-mobile .wrapper, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-mobile .wrapper,
+    #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-mobile .wrapper, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-mobile .wrapper,
+    #portfolio .portfolio-item-modal-notebook-others .portfolio-item-mobile .wrapper {
       width: 100%;
       height: 100%; }
-  #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-samsung-tv, #portfolio .portfolio-item-modal-tv .portfolio-item-samsung-tv, #portfolio .portfolio-item-modal-notebook .portfolio-item-samsung-tv {
+  #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-samsung-tv, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-samsung-tv,
+  #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-samsung-tv, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-samsung-tv,
+  #portfolio .portfolio-item-modal-notebook-others .portfolio-item-samsung-tv {
     position: fixed;
     left: 25%;
     top: 7.5%;
     width: 67%;
     max-width: none; }
-    #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-samsung-tv .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-samsung-tv .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-samsung-tv .portfolio-item-img-full-wrapper {
+    #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-samsung-tv .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-samsung-tv .portfolio-item-img-full-wrapper,
+    #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-samsung-tv .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-samsung-tv .portfolio-item-img-full-wrapper,
+    #portfolio .portfolio-item-modal-notebook-others .portfolio-item-samsung-tv .portfolio-item-img-full-wrapper {
       top: 2.4%;
       left: 1.5%;
       right: 1.7%;
       bottom: 18.3%; }
-    #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-samsung-tv .portfolio-item-device-img, #portfolio .portfolio-item-modal-tv .portfolio-item-samsung-tv .portfolio-item-device-img, #portfolio .portfolio-item-modal-notebook .portfolio-item-samsung-tv .portfolio-item-device-img {
+    #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-samsung-tv .portfolio-item-device-img, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-samsung-tv .portfolio-item-device-img,
+    #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-samsung-tv .portfolio-item-device-img, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-samsung-tv .portfolio-item-device-img,
+    #portfolio .portfolio-item-modal-notebook-others .portfolio-item-samsung-tv .portfolio-item-device-img {
       max-width: 1239px; }
-    #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-samsung-tv .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-samsung-tv .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-samsung-tv .wrapper {
+    #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-samsung-tv .wrapper, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-samsung-tv .wrapper,
+    #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-samsung-tv .wrapper, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-samsung-tv .wrapper,
+    #portfolio .portfolio-item-modal-notebook-others .portfolio-item-samsung-tv .wrapper {
       width: 100%;
       height: 100%;
       max-width: 1200px; }
-  #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-close, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-close, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-close {
+  #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-close, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-modal-close,
+  #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-modal-close, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-modal-close,
+  #portfolio .portfolio-item-modal-notebook-others .portfolio-item-modal-close {
     width: 150px;
     height: 150px;
     color: #666;
@@ -5759,7 +5780,11 @@ h3, .h3 {
     background: transparent;
     border: none;
     outline: none !important; }
-    #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-close:hover, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-close:hover, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-close:hover, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-close:focus, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-close:focus, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-close:focus {
+    #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-close:hover, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-modal-close:hover,
+    #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-modal-close:hover, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-modal-close:hover,
+    #portfolio .portfolio-item-modal-notebook-others .portfolio-item-modal-close:hover, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-close:focus, #portfolio .portfolio-item-modal-tv-timvision .portfolio-item-modal-close:focus,
+    #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-modal-close:focus, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-modal-close:focus,
+    #portfolio .portfolio-item-modal-notebook-others .portfolio-item-modal-close:focus {
       color: #999; }
   #portfolio .portfolio-item-modal-notebook-mobile .carousel-control {
     top: 39%; }
@@ -5769,30 +5794,45 @@ h3, .h3 {
     right: 0; }
   #portfolio .portfolio-item-modal-notebook-mobile .carousel-indicators {
     bottom: -5%;
-    left: 50%; }
-  #portfolio .portfolio-item-modal-tv .carousel-control {
+    left: 55.1%; }
+  #portfolio .portfolio-item-modal-tv-timvision .carousel-control,
+  #portfolio .portfolio-item-modal-tv-cubomusica .carousel-control {
     top: 39%; }
-  #portfolio .portfolio-item-modal-tv .carousel-control.left {
+  #portfolio .portfolio-item-modal-tv-timvision .carousel-control.left,
+  #portfolio .portfolio-item-modal-tv-cubomusica .carousel-control.left {
     left: 16%; }
-  #portfolio .portfolio-item-modal-tv .carousel-control.right {
+  #portfolio .portfolio-item-modal-tv-timvision .carousel-control.right,
+  #portfolio .portfolio-item-modal-tv-cubomusica .carousel-control.right {
     right: 0; }
-  #portfolio .portfolio-item-modal-tv .carousel-indicators {
+  #portfolio .portfolio-item-modal-tv-timvision .carousel-indicators,
+  #portfolio .portfolio-item-modal-tv-cubomusica .carousel-indicators {
     bottom: -2%;
     left: 56.3%; }
-  #portfolio .portfolio-item-modal-notebook .carousel-control {
+  #portfolio .portfolio-item-modal-tv-cubomusica .carousel-indicators {
+    bottom: -2%;
+    left: 57.3%; }
+  #portfolio .portfolio-item-modal-notebook-unicri .carousel-control,
+  #portfolio .portfolio-item-modal-notebook-others .carousel-control {
     top: 39%; }
-  #portfolio .portfolio-item-modal-notebook .carousel-control.left {
-    left: 0; }
-  #portfolio .portfolio-item-modal-notebook .carousel-control.right {
+  #portfolio .portfolio-item-modal-notebook-unicri .carousel-control.left,
+  #portfolio .portfolio-item-modal-notebook-others .carousel-control.left {
+    left: 13%; }
+  #portfolio .portfolio-item-modal-notebook-unicri .carousel-control.right,
+  #portfolio .portfolio-item-modal-notebook-others .carousel-control.right {
     right: 0; }
-  #portfolio .portfolio-item-modal-notebook .carousel-indicators {
+  #portfolio .portfolio-item-modal-notebook-unicri .carousel-indicators,
+  #portfolio .portfolio-item-modal-notebook-others .carousel-indicators {
     bottom: -5%;
-    left: 50%; }
+    left: 53.6%; }
+  #portfolio .portfolio-item-modal-notebook-others .carousel-indicators {
+    bottom: -5%;
+    left: 54.7%; }
 
 #experience {
   flex-direction: column;
   font-size: 1.5rem;
-  padding-bottom: 80px; }
+  padding-bottom: 8vh;
+  padding-top: 12vh; }
   #experience .section-header-img-wrapper {
     width: 90%;
     max-width: 300px; }
@@ -5945,8 +5985,7 @@ h3, .h3 {
 #about {
   flex-direction: column;
   font-size: 1.5rem;
-  padding-bottom: 80px;
-  margin-top: 120px; }
+  margin: 15vh 0 8vh; }
   #about .section-header-img-wrapper {
     width: 70%;
     max-width: 190px; }
@@ -6022,17 +6061,11 @@ h3, .h3 {
     left: 10px;
     width: 100%;
     max-width: 400px; }
-  #about.scrolling-this .section-header {
-    position: fixed; }
-  #about.scrolled-this .section-header {
-    position: absolute;
-    top: auto;
-    bottom: 74vh; }
 
 #contact {
   padding-right: 5%;
   align-items: center;
-  min-height: 70vh; }
+  min-height: 65vh; }
   #contact .section-header {
     width: 25%;
     position: relative; }

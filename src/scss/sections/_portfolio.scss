@@ -101,12 +101,14 @@
   }
 
   .portfolio-item-title {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     margin: 0 0 0.3rem 0;
+    font-family: $font-family-work-sans-regular;
+    letter-spacing: -0.2rem;
   }
 
   .portfolio-item-subtitle {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     font-family: $font-family-work-sans-light;
   }
 
@@ -310,7 +312,7 @@
 
   & .portfolio-item-title-wrapper-horizontal {
     left: 60%;
-    top: 7%;
+    top: 8.5%;
   }
 
   & .project-type-label {
@@ -346,6 +348,10 @@
     & .portfolio-item-title-wrapper {
       left: 72.8%;
       top: 11%;
+    }
+
+    & .portfolio-item-subtitle-employer {
+      margin: 4rem 0 0;
     }
   }
 
@@ -417,7 +423,7 @@
     }
 
     & .portfolio-item-subtitle-employer {
-      margin: 2rem 0 0;
+      margin: 3rem 0 0;
     }
   }
 
@@ -464,6 +470,9 @@
   & .portfolio-item-cubomusica {
     @extend %portfolio-item;
 
+    & .portfolio-item-title {
+      margin: 0.2rem 0 0.2rem;
+    }
   }
 
 
@@ -533,7 +542,7 @@
 
     & .portfolio-item-title-wrapper-horizontal {
       left: 36.7%;
-      top: 11%;
+      top: 12%;
     }
 
     & .portfolio-item-subtitle-employer {
@@ -607,11 +616,11 @@
 
     & .portfolio-item-title-wrapper-horizontal {
       left: 36.7%;
-      top: 11%;
+      top: 12%;
     }
 
     & .portfolio-item-subtitle-employer {
-      margin-top: 1rem;
+      margin-top: 0.5rem;
     }
 
     & .portfolio-item-title {
@@ -746,11 +755,12 @@
 
     .carousel-indicators {
       bottom: -5%;
-      left: 50%;
+      left: 55.1%;
     }
   }
 
-  .portfolio-item-modal-tv {
+  .portfolio-item-modal-tv-timvision,
+  .portfolio-item-modal-tv-cubomusica {
     @extend %portfolio-item-modal;
 
     .carousel-control{
@@ -771,7 +781,16 @@
     }
   }
 
-  .portfolio-item-modal-notebook {
+  .portfolio-item-modal-tv-cubomusica {
+
+    .carousel-indicators {
+      bottom: -2%;
+      left: 57.3%;
+    }
+  }
+
+  .portfolio-item-modal-notebook-unicri,
+  .portfolio-item-modal-notebook-others {
     @extend %portfolio-item-modal;
 
     .carousel-control{
@@ -779,7 +798,7 @@
     }
 
     .carousel-control.left {
-      left: 0;
+      left: 13%;
     }
 
     .carousel-control.right {
@@ -788,7 +807,15 @@
 
     .carousel-indicators {
       bottom: -5%;
-      left: 50%;
+      left: 53.6%;
+    }
+  }
+
+  .portfolio-item-modal-notebook-others {
+
+    .carousel-indicators {
+      bottom: -5%;
+      left: 54.7%;
     }
   }
 

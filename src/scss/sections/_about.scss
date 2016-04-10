@@ -6,8 +6,7 @@
   @extend %article-wrapper;
   flex-direction: column;
   font-size: 1.5rem;
-  padding-bottom: 80px;
-  margin-top: 120px;
+  margin: 15vh 0 8vh;
 
   & .section-header-img-wrapper {
     width: 70%;
@@ -111,15 +110,5 @@
     left: 10px;
     width: 100%;
     max-width: 400px;
-  }
-
-  &.scrolling-this .section-header {
-    position: fixed;
-  }
-
-  &.scrolled-this .section-header {
-    position: absolute;
-    top: auto;
-    bottom: 74vh;
   }
 }

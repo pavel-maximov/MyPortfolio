@@ -5,7 +5,8 @@
   @extend %article-wrapper;
   flex-direction: column;
   font-size: 1.5rem;
-  padding-bottom: 80px;
+  padding-bottom: 8vh;
+  padding-top: 12vh;
 
   & .section-header-img-wrapper {
     width: 90%;

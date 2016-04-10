@@ -522,6 +522,7 @@ h3, .h3 {
 }
 
 .arrow-down {
+  display: block;
   transform: rotate(-90deg);
   font-size: 5rem;
   font-family: $font-family-work-sans-thin;
