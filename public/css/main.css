@@ -5372,6 +5372,9 @@ h3, .h3 {
     background-size: 100%;
     min-height: 320px;
     padding: 3.7rem 3rem; }
+  #portfolio .child-hovered .portfolio-item-title-wrapper,
+  #portfolio .child-hovered .portfolio-item-title-wrapper-horizontal {
+    display: block; }
   #portfolio .portfolio-item-details-wrapper {
     display: none;
     position: absolute;
@@ -5426,26 +5429,12 @@ h3, .h3 {
       margin: 0.5rem 0 0; }
     #portfolio .portfolio-item-title-wrapper-horizontal .portfolio-item-subtitle-employer {
       margin: 0.5rem 0 0; }
-  #portfolio .portfolio-item-mobile:hover ~ .portfolio-item-title-wrapper,
-  #portfolio .portfolio-item-tablet:hover ~ .portfolio-item-title-wrapper,
-  #portfolio .portfolio-item-notebook:hover ~ .portfolio-item-title-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-notebook-ande:hover ~ .portfolio-item-title-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-notebook-eusec:hover ~ .portfolio-item-title-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-notebook-cbrn:hover ~ .portfolio-item-title-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-notebook-ipo:hover ~ .portfolio-item-title-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-notebook-lab:hover ~ .portfolio-item-title-wrapper, #portfolio .portfolio-item-others .portfolio-item-notebook-school:hover ~ .portfolio-item-title-wrapper, #portfolio .portfolio-item-others .portfolio-item-notebook-davide:hover ~ .portfolio-item-title-wrapper, #portfolio .portfolio-item-others .portfolio-item-notebook-milena:hover ~ .portfolio-item-title-wrapper, #portfolio .portfolio-item-others .portfolio-item-notebook-pandora:hover ~ .portfolio-item-title-wrapper, #portfolio .portfolio-item-others .portfolio-item-notebook-acqua:hover ~ .portfolio-item-title-wrapper,
-  #portfolio .portfolio-item-desktop:hover ~ .portfolio-item-title-wrapper,
-  #portfolio .portfolio-item-desktop:hover ~ .portfolio-item-title-wrapper,
-  #portfolio .portfolio-item-tv1:hover ~ .portfolio-item-title-wrapper,
-  #portfolio .portfolio-item-tv2:hover ~ .portfolio-item-title-wrapper
-#portfolio .portfolio-item-mobile:hover ~ .portfolio-item-title-wrapper-horizontal,
-  #portfolio .portfolio-item-tablet:hover ~ .portfolio-item-title-wrapper-horizontal,
-  #portfolio .portfolio-item-notebook:hover ~ .portfolio-item-title-wrapper-horizontal, #portfolio .portfolio-item-unicri .portfolio-item-notebook-ande:hover ~ .portfolio-item-title-wrapper-horizontal, #portfolio .portfolio-item-unicri .portfolio-item-notebook-eusec:hover ~ .portfolio-item-title-wrapper-horizontal, #portfolio .portfolio-item-unicri .portfolio-item-notebook-cbrn:hover ~ .portfolio-item-title-wrapper-horizontal, #portfolio .portfolio-item-unicri .portfolio-item-notebook-ipo:hover ~ .portfolio-item-title-wrapper-horizontal, #portfolio .portfolio-item-unicri .portfolio-item-notebook-lab:hover ~ .portfolio-item-title-wrapper-horizontal, #portfolio .portfolio-item-others .portfolio-item-notebook-school:hover ~ .portfolio-item-title-wrapper-horizontal, #portfolio .portfolio-item-others .portfolio-item-notebook-davide:hover ~ .portfolio-item-title-wrapper-horizontal, #portfolio .portfolio-item-others .portfolio-item-notebook-milena:hover ~ .portfolio-item-title-wrapper-horizontal, #portfolio .portfolio-item-others .portfolio-item-notebook-pandora:hover ~ .portfolio-item-title-wrapper-horizontal, #portfolio .portfolio-item-others .portfolio-item-notebook-acqua:hover ~ .portfolio-item-title-wrapper-horizontal,
-  #portfolio .portfolio-item-desktop:hover ~ .portfolio-item-title-wrapper-horizontal,
-  #portfolio .portfolio-item-desktop:hover ~ .portfolio-item-title-wrapper-horizontal,
-  #portfolio .portfolio-item-tv1:hover ~ .portfolio-item-title-wrapper-horizontal,
-  #portfolio .portfolio-item-tv2:hover ~ .portfolio-item-title-wrapper-horizontal {
-    display: block; }
   #portfolio .project-type-label {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     position: absolute;
-    top: -2.4rem;
-    left: 4.2%; }
+    top: -3.6rem;
+    left: 4.2%;
+    font-family: "worksans-thin", sans-serif; }
   #portfolio .portfolio-item-img-full-wrapper {
     position: absolute; }
   #portfolio .portfolio-item-img-full {
@@ -5786,6 +5775,37 @@ h3, .h3 {
     #portfolio .portfolio-item-modal-tv-cubomusica .portfolio-item-modal-close:focus, #portfolio .portfolio-item-modal-notebook-unicri .portfolio-item-modal-close:focus,
     #portfolio .portfolio-item-modal-notebook-others .portfolio-item-modal-close:focus {
       color: #999; }
+  #portfolio .portfolio-item-modal-notebook-mobile .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-tv-timvision .carousel-item-scroll-teaser,
+  #portfolio .portfolio-item-modal-tv-cubomusica .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook-unicri .carousel-item-scroll-teaser,
+  #portfolio .portfolio-item-modal-notebook-others .carousel-item-scroll-teaser {
+    display: none;
+    height: 60px;
+    width: 60px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 30px);
+    color: white;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #portfolio .portfolio-item-modal-notebook-mobile .carousel-item-scroll-teaser .carousel-item-scroll-teaser-arrow, #portfolio .portfolio-item-modal-tv-timvision .carousel-item-scroll-teaser .carousel-item-scroll-teaser-arrow,
+    #portfolio .portfolio-item-modal-tv-cubomusica .carousel-item-scroll-teaser .carousel-item-scroll-teaser-arrow, #portfolio .portfolio-item-modal-notebook-unicri .carousel-item-scroll-teaser .carousel-item-scroll-teaser-arrow,
+    #portfolio .portfolio-item-modal-notebook-others .carousel-item-scroll-teaser .carousel-item-scroll-teaser-arrow {
+      transform: rotate(-90deg);
+      font-family: "worksans-thin", sans-serif;
+      font-size: 3rem;
+      line-height: 0.5; }
+    #portfolio .portfolio-item-modal-notebook-mobile .carousel-item-scroll-teaser .carousel-item-scroll-teaser-text, #portfolio .portfolio-item-modal-tv-timvision .carousel-item-scroll-teaser .carousel-item-scroll-teaser-text,
+    #portfolio .portfolio-item-modal-tv-cubomusica .carousel-item-scroll-teaser .carousel-item-scroll-teaser-text, #portfolio .portfolio-item-modal-notebook-unicri .carousel-item-scroll-teaser .carousel-item-scroll-teaser-text,
+    #portfolio .portfolio-item-modal-notebook-others .carousel-item-scroll-teaser .carousel-item-scroll-teaser-text {
+      font-size: 1.4rem; }
+  #portfolio .portfolio-item-modal-notebook-mobile .active .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-tv-timvision .active .carousel-item-scroll-teaser,
+  #portfolio .portfolio-item-modal-tv-cubomusica .active .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook-unicri .active .carousel-item-scroll-teaser,
+  #portfolio .portfolio-item-modal-notebook-others .active .carousel-item-scroll-teaser {
+    display: flex; }
   #portfolio .portfolio-item-modal-notebook-mobile .carousel-control {
     top: 39%; }
   #portfolio .portfolio-item-modal-notebook-mobile .carousel-control.left {

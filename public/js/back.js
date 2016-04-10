@@ -2,13 +2,6 @@
 var $document = $(document);
 var $window = $(window);
 var $htmlBody = $('html,body');
-//var $html = $('html');
-//var $introCode = $('#intro-code');
-//var typeInterval;
-//var currentOpenTags = 0;
-//var currentTag;
-//var $skills = $('#skills');
-//var $intro = $('#outro').find('');
 var $aboutVideo = $('#outro-video');
 var $portfolio = $('#portfolio');
 var $experience = $('#experience');
@@ -29,60 +22,8 @@ var endPointSkills;
 var startPointSkills;
 var currentScroll = $('#bk-modal').scrollTop();
 
-
-//
-//var code = '<article id="intro"><header class="article-header"><div class="article-title-wrapper"><figure class="article-title-img-wrapper"><img class="article-title-img" src="/img/head.png"></figure><h1>Pavel Maximov</h1><h2>Front-end Developer</h2><h3>London, UK</h3></div><nav class="article-nav"></nav></header><div class="article-body"><video id="intro-video" height="100%" width="100%" autoplay loop><source src="/video/intro.mp4" type="video/mp4"></video><div id="intro-code"></div></div></article>';
-//var printedChar = 0;
-//
-//
-//function printChar() {
-//    var nextChar = code[printedChar],
-//        target;
-//
-//    if (nextChar !== undefined) {
-//        if(nextChar === '<') {
-//            currentTag = code.substring((printedChar + 1), code.substring((printedChar + 1)).indexOf(' ') + 1);
-//            console.log(currentTag);
-//
-//            if (code[(printedChar + 1)] === '/') {
-//                currentOpenTags -= 1;
-//            } else {
-//                currentOpenTags += 1;
-//            }
-//            $introCode.append('<div style="padding-left:' + (currentOpenTags * 20) + 'px"></div>');
-//        }
-//        target = $introCode.children().last();
-//        target.html(target.html() + code[printedChar]);
-//        printedChar += 1;
-//    } else {
-//        clearInterval(typeInterval);
-//    }
-//}
-
-//
-//function onScrollIntro () {
-//    var scrollTop = $window.scrollTop();
-//    var windowHeight = $window.height();
-//
-//    if (scrollTop < windowHeight) {
-//        $intro.css('opacity', (1 - ((100 * (scrollTop / windowHeight)) / 100) * 0.5));
-//    }
-//}
-//
-//
-
-
-//
-//function calculateDistance(elem, mouseX, mouseY) {
-//    return Math.floor(Math.sqrt(Math.pow(mouseX - (elem.offset().left+(elem.width()/2)), 2) + Math.pow(mouseY - (elem.offset().top+(elem.height()/2)), 2)));
-//}
-
-function getRandomArbitrary(min, max) {
-    return Math.random() * (max - min) + min;
-}
-
 function scrollToElement(selector){
-    $htmlBody.animate({scrollTop: $(selector).offset().top}, 1500);
+    $htmlBody.animate({scrollTop: $(selector).offset().top}, 2000);
 }
 
 function onScrollAbout (scrollTop, windowHeight) {
@@ -90,19 +31,6 @@ function onScrollAbout (scrollTop, windowHeight) {
         $aboutVideo.css('z-index', '-1');
     } else {
         $aboutVideo.css('z-index', '-2');
-    }
-}
-
-function onScrollPortfolio (scrollTop) {
-    if (scrollTop < startPoint) {
-        $portfolio.removeClass('scrolled-this');
-        $portfolio.removeClass('scrolling-this');
-    } else if (scrollTop < endPoint) {
-        $portfolio.addClass('scrolling-this');
-        $portfolio.removeClass('scrolled-this');
-    } else {
-        $portfolio.removeClass('scrolling-this');
-        $portfolio.addClass('scrolled-this');
     }
 }
 
@@ -135,7 +63,7 @@ function onScrollMainContainer (scrollTop, windowHeight, scrollPoints) {
     }
 }
 
-function onScroll(event) {
+function onScroll() {
     var scrollTop = $window.scrollTop();
     var windowHeight = $window.height();
     var scrollPoints = {
@@ -167,48 +95,20 @@ function onScroll(event) {
     setTeaserTitleVisibility(scrollTop);
 }
 
-
-function portfolioItemsScroll () {
-    var $this = $(this);
-    var newScroll = $this.scrollTop();
-    console.log('currentScroll ' + currentScroll + ' newScroll ' + newScroll);
-    // $this.scrollTop($this.scrollTop() + (newScroll - currentScroll));
-    // currentScroll = newScroll;
-}
-
-function checkCarouselItem ($mainCarousel, $controlsContainer) {
-    if($mainCarousel.find('.carousel-inner .carousel-item:first').hasClass('active')) {
-        $controlsContainer.find('.left.carousel-control').hide();
-        $controlsContainer.find('.right.carousel-control').show();
-    } else if($mainCarousel.find('.carousel-inner .carousel-item:last').hasClass('active')) {
-        $controlsContainer.find('.right.carousel-control').hide();
-        $controlsContainer.find('.left.carousel-control').show();
-    } else {
-        $controlsContainer.find('.carousel-control').show();
-    }
-}
-
 function initCarousel($controlsContainer, $mainCarousel, $secondaryCarousel) {
     $mainCarousel.carousel({
-        interval: false,
-        wrap: false
+        interval: false
     });
-    checkCarouselItem($mainCarousel, $controlsContainer);
 
     if ($secondaryCarousel) {
         $secondaryCarousel.carousel({
-            interval: false,
-            wrap: false
+            interval: false
         });
 
         $mainCarousel.on('slide.bs.carousel', function (e) {
             $secondaryCarousel.carousel($(e.relatedTarget).index());
         })
     }
-
-    $mainCarousel.on('slid.bs.carousel', function () {
-        checkCarouselItem($mainCarousel, $controlsContainer);
-    });
 
 }
 
@@ -220,6 +120,31 @@ function initModal($modal, $mainCarousel, $secondaryCarousel) {
     });
 
     $modal.find('.tse-scrollable').TrackpadScrollEmulator();
+
+    $.each($modal.find('.carousel-item'), function(index, element) {
+        var $element = $(element);
+
+        $element.append('' +
+            '<div class="carousel-item-scroll-teaser">' +
+            '<div class="carousel-item-scroll-teaser-text">scroll</div>' +
+            '<div class="carousel-item-scroll-teaser-arrow"><</div>' +
+            '</div>'
+        );
+
+        $element.find('.tse-scroll-content').one('scroll', function() {
+            $element.find('.carousel-item-scroll-teaser').remove();
+        });
+    });
+
+    $modal.find('.carousel').on('slid.bs.carousel', function() {
+        var $carouselItemActive = $(this).find('.carousel-item.active');
+        var $scrollContent = $carouselItemActive.find('.tse-scroll-content');
+        var $tseContent = $carouselItemActive.find('.tse-content');
+
+        if ($tseContent.outerHeight() <= $scrollContent.outerHeight()) {
+            $carouselItemActive.find('.carousel-item-scroll-teaser').remove();
+        }
+    });
 }
 
 function setCogwheelsAnimation(scrollPosition, windowHeight) {
@@ -265,85 +190,22 @@ $document.ready(function () {
     $window.on('scroll', onScroll);
     onScroll();
 
-    $('.portfolio-item-bk .portfolio-item-img-preview').click(function() {
-        $('#bk-modal')
-            .on('shown.bs.modal', function () {
-                var $this = $(this);
-                
-                initModal($this, $this.find('#bk-main-carousel'), $this.find('#bk-secondary-carousel'));
-            })
-            .modal();
+    $('.modal').one('shown.bs.modal', function() {
+        var $this = $(this);
+
+        initModal($this, $this.find('.main-carousel'), $this.find('.secondary-carousel'));
     });
-
-    $('.portfolio-item-vendomo .portfolio-item-img-preview').click(function() {
-        $('#vendomo-modal')
-            .on('shown.bs.modal', function () {
-                var $this = $(this);
-
-                initModal($this, $this.find('#vendomo-main-carousel'), $this.find('#vendomo-secondary-carousel'));
-            })
-            .modal();
-    });
-
-    $('.portfolio-item-vendomo-crm .portfolio-item-img-preview').click(function() {
-        $('#vendomo-crm-modal')
-            .on('shown.bs.modal', function () {
-                var $this = $(this);
-
-                initModal($this, $this.find('#vendomo-crm-main-carousel'), $this.find('#vendomo-crm-secondary-carousel'));
-            })
-            .modal();
-    });
-
-    $('.portfolio-item-foodora .portfolio-item-img-preview').click(function() {
-        $('#foodora-modal')
-            .on('shown.bs.modal', function () {
-                var $this = $(this);
-
-                initModal($this, $this.find('#foodora-main-carousel'), $this.find('#foodora-secondary-carousel'));
-            })
-            .modal();
-    });
-
-    $('.portfolio-item-timvision .portfolio-item-img-preview').click(function() {
-        $('#timvision-modal')
-            .on('shown.bs.modal', function () {
-                var $this = $(this);
-
-                initModal($this, $this.find('#timvision-main-carousel'), $this.find('#timvision-secondary-carousel'));
-            })
-            .modal();
-    });
-
-    $('.portfolio-item-cubomusica .portfolio-item-img-preview').click(function() {
-        $('#cubomusica-modal')
-            .on('shown.bs.modal', function () {
-                var $this = $(this);
-
-                initModal($this, $this.find('#cubomusica-main-carousel'), $this.find('#cubomusica-secondary-carousel'));
-            })
-            .modal();
-    });
-
-    $('.portfolio-item-unicri .portfolio-item-img-preview').click(function() {
-        $('#unicri-modal')
-            .on('shown.bs.modal', function () {
-                var $this = $(this);
-
-                initModal($this, $this.find('#unicri-main-carousel'), $this.find('#unicri-secondary-carousel'));
-            })
-            .modal();
-    });
-
-    $('.portfolio-item-others .portfolio-item-img-preview').click(function() {
-        $('#others-modal')
-            .on('shown.bs.modal', function () {
-                var $this = $(this);
-
-                initModal($this, $this.find('#others-main-carousel'), $this.find('#others-secondary-carousel'));
-            })
-            .modal();
-    });
+    
+    $('.portfolio-item-img-preview')
+        .click(function() {
+            $(this).closest('.js-portfolio-item').find('.modal').modal();
+        })
+        .on('mouseover', function (){
+            $(this).closest('.js-portfolio-item').addClass('child-hovered');
+        })
+        .on('mouseout', function (){
+            $(this).closest('.js-portfolio-item').removeClass('child-hovered');
+        });
 
     initCarousel($('#references'), $('#references-main-carousel'));
 });

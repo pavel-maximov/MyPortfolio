@@ -74,6 +74,11 @@
     padding: 3.7rem 3rem;
   }
 
+  .child-hovered .portfolio-item-title-wrapper,
+  .child-hovered .portfolio-item-title-wrapper-horizontal {
+    display: block;
+  }
+
   .portfolio-item-details-wrapper {
     display: none;
     position: absolute;
@@ -159,29 +164,12 @@
 
   }
 
-
-  & .portfolio-item-mobile:hover ~ .portfolio-item-title-wrapper,
-  & .portfolio-item-tablet:hover ~ .portfolio-item-title-wrapper,
-  & .portfolio-item-notebook:hover ~ .portfolio-item-title-wrapper,
-  & .portfolio-item-desktop:hover ~ .portfolio-item-title-wrapper,
-  & .portfolio-item-desktop:hover ~ .portfolio-item-title-wrapper,
-  & .portfolio-item-tv1:hover ~ .portfolio-item-title-wrapper,
-  & .portfolio-item-tv2:hover ~ .portfolio-item-title-wrapper
-  & .portfolio-item-mobile:hover ~ .portfolio-item-title-wrapper-horizontal,
-  & .portfolio-item-tablet:hover ~ .portfolio-item-title-wrapper-horizontal,
-  & .portfolio-item-notebook:hover ~ .portfolio-item-title-wrapper-horizontal,
-  & .portfolio-item-desktop:hover ~ .portfolio-item-title-wrapper-horizontal,
-  & .portfolio-item-desktop:hover ~ .portfolio-item-title-wrapper-horizontal,
-  & .portfolio-item-tv1:hover ~ .portfolio-item-title-wrapper-horizontal,
-  & .portfolio-item-tv2:hover ~ .portfolio-item-title-wrapper-horizontal {
-    display: block;
-  }
-
   .project-type-label {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     position: absolute;
-    top: -2.4rem;
+    top: -3.6rem;
     left: 4.2%;
+    font-family: $font-family-work-sans-thin;
   }
 
   .portfolio-item-img-full-wrapper {
@@ -735,6 +723,36 @@
       &:focus {
         color: #999;
       }
+    }
+
+    & .carousel-item-scroll-teaser {
+      display: none;
+      height: 60px;
+      width: 60px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 50%;
+      position: absolute;
+      bottom: 20px;
+      left: calc(50% - 30px);
+      color: white;
+      text-align: center;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      & .carousel-item-scroll-teaser-arrow {
+        transform: rotate(-90deg);
+        font-family: $font-family-work-sans-thin;
+        font-size: 3rem;
+        line-height: 0.5;
+      }
+      & .carousel-item-scroll-teaser-text {
+        font-size: 1.4rem;
+      }
+    }
+
+    & .active .carousel-item-scroll-teaser {
+      display: flex;
     }
   }
 
