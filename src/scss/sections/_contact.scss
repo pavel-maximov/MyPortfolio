@@ -42,13 +42,15 @@
   }
 
   & .contact-title {
-    font-family: $font-family-work-sans-thin;
-    font-size: 3.6rem;
+    @include text-regular-title();
     margin: 2rem 0;
   }
 
+  & .contact-content {
+    @include text-thin-title();
+  }
+
   & .contact-methods {
-    @include make-button();
     display: flex;
     justify-content: center;
   }
@@ -59,8 +61,21 @@
     height: 22rem;
     margin: 2rem 1rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 1px dotted #8c8c8c;
+  }
+
+  & .contact-method-img {
+    width: 15%;
+    height: 15%;
+    margin-top: -5%;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  & .contact-method-link {
+    @include make-button();
   }
 }

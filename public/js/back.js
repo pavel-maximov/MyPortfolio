@@ -118,21 +118,23 @@ function initSlide($slide, $modal) {
         $slide.data('tse-initialised', true);
         if ($tseContent.outerHeight() > $slide.outerHeight()) {
             $slide.TrackpadScrollEmulator({ autoHide: false });
-            $slide.find('.tse-scroll-content').one('scroll', function() {
-                $modal.find('.carousel-item-scroll-teaser').remove();
-            });
 
-            $slide.find('.tse-content').append('' +
-                '<div class="carousel-item-scroll-teaser">' +
-                '<img class="carousel-item-scroll-teaser-image" src="/img/mouse-touch.svg">' +
-                '<div class="carousel-item-scroll-teaser-text">scroll down</div>' +
-                '<div class="carousel-item-scroll-teaser-arrow"><</div>' +
-                '</div>'
-            );
-
-            $modal.find('.tse-scrollable.active .tse-scroll-content').one('scroll', function() {
-                $modal.find('.carousel-item-scroll-teaser').remove();
-            });
+            if ($modal.data('scroll-teaser-needed')) {
+                $slide.find('.tse-scroll-content').one('scroll', function() {
+                    $modal.find('.carousel-item-scroll-teaser').remove();
+                });
+                $slide.find('.tse-content').append('' +
+                    '<div class="carousel-item-scroll-teaser">' +
+                    '<img class="carousel-item-scroll-teaser-image" src="/img/mouse-touch.svg">' +
+                    '<div class="carousel-item-scroll-teaser-text">scroll down</div>' +
+                    '<div class="carousel-item-scroll-teaser-arrow"><</div>' +
+                    '</div>'
+                );
+                $modal.find('.tse-scrollable.active .tse-scroll-content').one('scroll', function() {
+                    $modal.find('.carousel-item-scroll-teaser').remove();
+                    $modal.data('scroll-teaser-needed', false);
+                });
+            }
         } else {
             $slide.find('.carousel-item-scroll-teaser').remove();
         }
@@ -142,6 +144,7 @@ function initSlide($slide, $modal) {
 function initModal($modal, $mainCarousel, $secondaryCarousel) {
     initCarousel($modal, $mainCarousel, $secondaryCarousel);
 
+    $modal.data('scroll-teaser-needed', true);
     $modal.find('.portfolio-item-modal-close').click(function() {
         $modal.modal('hide');
     });

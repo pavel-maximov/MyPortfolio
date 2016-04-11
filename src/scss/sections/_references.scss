@@ -28,14 +28,11 @@
 
   & .reference-wrapper {
     width: 28%;
-    font-size: 1.6rem;
   }
 
   & .references-title {
+    @include text-regular-title();
     margin-bottom: 6rem;
-    font-family: $font-family-work-sans-regular;
-    font-size: 3rem;
-    letter-spacing: -0.18rem;
   }
 
   & .reference-content {
@@ -44,11 +41,16 @@
   }
 
   & .reference-author {
+    @include text-regular-title-small();
+    margin-bottom: 0.6rem;
+    margin-top: 1.2rem;
+    position: relative;
+  }
+
+  & .reference-author-title {
+    @include text-thin-title-small();
     margin-bottom: 0;
     position: relative;
-    font-family: $font-family-work-sans-regular;
-    font-size: 2.1rem;
-    letter-spacing: -0.18rem;
   }
 
   & .reference-author-title {

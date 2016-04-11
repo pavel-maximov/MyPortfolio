@@ -24,10 +24,12 @@
   letter-spacing: -0.1rem;
   font-family: $font-family-work-sans-regular;
   text-decoration: underline;
+  outline: none;
 
   &:hover,
   &:focus,
   &:active {
+    outline: none;
     color: #8c8c8c;
     text-decoration: underline;
   }

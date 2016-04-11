@@ -53,6 +53,11 @@
     }
   }
 
+  & .about-interest-content {
+    padding-right: 9%;
+    padding-left: 0;
+  }
+
   & .about-interest {
     display: flex;
     margin-bottom: 5rem;
@@ -66,6 +71,8 @@
 
       & .about-interest-content {
         text-align: right;
+        padding-left: 9%;
+        padding-right: 0;
       }
     }
   }
@@ -85,21 +92,17 @@
   }
 
   & .about-intro {
-    font-size: 1.6rem;
     margin-bottom: 4rem;
     text-align: center;
     width: 100%;
   }
 
   & .about-interest-title {
-    font-size: 2.4rem;
-    font-family: $font-family-work-sans-thin;
+    @include text-thin-title();
   }
 
   & .about-interest-title-main {
-    font-family: $font-family-work-sans-regular;
-    font-size: 2.7rem;
-    letter-spacing: -0.2rem;
+    @include text-regular-title();
     margin-bottom: 0.5rem;
     width: 100%;
     text-align: center;
