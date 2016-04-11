@@ -165,11 +165,11 @@
   }
 
   .project-type-label {
-    font-size: 2.2rem;
+    font-size: 2rem;
     position: absolute;
-    top: -3.6rem;
+    top: -3.1rem;
     left: 4.2%;
-    font-family: $font-family-work-sans-thin;
+    letter-spacing: -0.08rem;
   }
 
   .portfolio-item-img-full-wrapper {
@@ -726,33 +726,45 @@
     }
 
     & .carousel-item-scroll-teaser {
-      display: none;
-      height: 60px;
-      width: 60px;
-      background-color: rgba(0, 0, 0, 0.6);
-      border-radius: 50%;
+      display: flex;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
       position: absolute;
-      bottom: 20px;
-      left: calc(50% - 30px);
+      top: 0;
+      left: 0;
       color: white;
       text-align: center;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
+      cursor: s-resize;
+
+      & .carousel-item-scroll-teaser-image {
+        width: 200px;
+        height: 110px;
+      }
+
+      & .carousel-item-scroll-teaser-text {
+        font-size: 1.8rem;
+        font-family: $font-family-work-sans-regular;
+        margin-top: 1rem;
+      }
 
       & .carousel-item-scroll-teaser-arrow {
-        transform: rotate(-90deg);
-        font-family: $font-family-work-sans-thin;
         font-size: 3rem;
-        line-height: 0.5;
+        line-height: 1;
+        transform: rotate(-90deg);
       }
-      & .carousel-item-scroll-teaser-text {
-        font-size: 1.4rem;
-      }
+
     }
 
-    & .active .carousel-item-scroll-teaser {
-      display: flex;
+    & .portfolio-item-mobile .carousel-item-scroll-teaser {
+      padding-top: 66%;
+    }
+
+    & .portfolio-item-notebook .carousel-item-scroll-teaser {
+      padding-top: 27%;
     }
   }
 
@@ -773,12 +785,12 @@
 
     .carousel-indicators {
       bottom: -5%;
-      left: 55.1%;
+      left: 24.4%;
+      right: 9.9%;
     }
   }
 
-  .portfolio-item-modal-tv-timvision,
-  .portfolio-item-modal-tv-cubomusica {
+  .portfolio-item-modal-tv {
     @extend %portfolio-item-modal;
 
     .carousel-control{
@@ -795,20 +807,12 @@
 
     .carousel-indicators {
       bottom: -2%;
-      left: 56.3%;
+      left: 25%;
+      right: 8.4%;
     }
   }
 
-  .portfolio-item-modal-tv-cubomusica {
-
-    .carousel-indicators {
-      bottom: -2%;
-      left: 57.3%;
-    }
-  }
-
-  .portfolio-item-modal-notebook-unicri,
-  .portfolio-item-modal-notebook-others {
+  .portfolio-item-modal-notebook {
     @extend %portfolio-item-modal;
 
     .carousel-control{
@@ -824,17 +828,15 @@
     }
 
     .carousel-indicators {
-      bottom: -5%;
-      left: 53.6%;
+      bottom: -2%;
+      left: 24.4%;
+      right: 9.9%;
     }
   }
 
-  .portfolio-item-modal-notebook-others {
-
-    .carousel-indicators {
-      bottom: -5%;
-      left: 54.7%;
-    }
+  .tse-content {
+    position: relative;
+    cursor: ns-resize;
   }
 
 }

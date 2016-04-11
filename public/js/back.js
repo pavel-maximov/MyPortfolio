@@ -20,7 +20,6 @@ var startPointAbout;
 var endPointAbout;
 var endPointSkills;
 var startPointSkills;
-var currentScroll = $('#bk-modal').scrollTop();
 
 function scrollToElement(selector){
     $htmlBody.animate({scrollTop: $(selector).offset().top}, 2000);
@@ -112,6 +111,22 @@ function initCarousel($controlsContainer, $mainCarousel, $secondaryCarousel) {
 
 }
 
+function initSlide($slide, $modal) {
+    var $tseContent = $slide.find('.tse-content');
+
+    if (!$slide.data('tse-initialised')) {
+        $slide.data('tse-initialised', true);
+        if ($tseContent.outerHeight() > $slide.outerHeight()) {
+            $slide.TrackpadScrollEmulator({ autoHide: false });
+            $slide.find('.tse-scroll-content').one('scroll', function() {
+                $modal.find('.carousel-item-scroll-teaser').remove();
+            });
+        } else {
+            $slide.find('.carousel-item-scroll-teaser').remove();
+        }
+    }
+}
+
 function initModal($modal, $mainCarousel, $secondaryCarousel) {
     initCarousel($modal, $mainCarousel, $secondaryCarousel);
 
@@ -119,32 +134,30 @@ function initModal($modal, $mainCarousel, $secondaryCarousel) {
         $modal.modal('hide');
     });
 
-    $modal.find('.tse-scrollable').TrackpadScrollEmulator();
-
     $.each($modal.find('.carousel-item'), function(index, element) {
-        var $element = $(element);
+        var $tseContent = $(element).find('.tse-content');
 
-        $element.append('' +
+        $tseContent.append('' +
             '<div class="carousel-item-scroll-teaser">' +
-            '<div class="carousel-item-scroll-teaser-text">scroll</div>' +
+            '<img class="carousel-item-scroll-teaser-image" src="/img/mouse-touch.svg">' +
+            '<div class="carousel-item-scroll-teaser-text">scroll down</div>' +
             '<div class="carousel-item-scroll-teaser-arrow"><</div>' +
             '</div>'
         );
 
-        $element.find('.tse-scroll-content').one('scroll', function() {
-            $element.find('.carousel-item-scroll-teaser').remove();
+        $modal.find('.tse-scrollable.active .tse-scroll-content').one('scroll', function() {
+            $modal.find('.carousel-item-scroll-teaser').remove();
         });
     });
 
     $modal.find('.carousel').on('slid.bs.carousel', function() {
-        var $carouselItemActive = $(this).find('.carousel-item.active');
-        var $scrollContent = $carouselItemActive.find('.tse-scroll-content');
-        var $tseContent = $carouselItemActive.find('.tse-content');
-
-        if ($tseContent.outerHeight() <= $scrollContent.outerHeight()) {
-            $carouselItemActive.find('.carousel-item-scroll-teaser').remove();
-        }
+        initSlide($(this).find('.tse-scrollable.active'), $modal)
     });
+
+    $.each($modal.find('.tse-scrollable.active'), function(index, element) {
+        initSlide($(element), $modal);
+    });
+
 }
 
 function setCogwheelsAnimation(scrollPosition, windowHeight) {
