@@ -20,7 +20,7 @@
   padding: 3px 8px;
   background: transparent;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   letter-spacing: -0.1rem;
   font-family: $font-family-work-sans-regular;
   text-decoration: underline;
@@ -101,6 +101,55 @@
 }
 
 
+@mixin text-base {
+  font-family: $font-family-work-sans-light;;
+  font-size: 1.6rem;
+  letter-spacing: -0.02rem;
+  line-height: 1.4;
+}
+
+@mixin text-display-title {
+  font-family: $font-family-she-always-walks-alone;
+  font-size: 4.4rem;
+  letter-spacing: -0.02rem;
+  line-height: 1.2;
+}
+
+@mixin text-thin-title {
+  font-family: $font-family-work-sans-thin;
+  font-size: 2.4rem;
+  line-height: 1.2;
+}
+
+@mixin text-thin-title-small {
+  font-family: $font-family-work-sans-thin;
+  font-size: 1.7rem;
+  line-height: 1.2;
+  letter-spacing: 0.03rem;
+}
+
+@mixin text-light-title {
+  font-family: $font-family-work-sans-light;
+  font-size: 2.4rem;
+  letter-spacing: -0.08rem;
+  line-height: 1.2;
+}
+
+@mixin text-regular-title {
+  font-family: $font-family-work-sans-regular;
+  font-size: 2.7rem;
+  letter-spacing: -0.2rem;
+  line-height: 1.2;
+}
+
+@mixin text-regular-title-small {
+  font-family: $font-family-work-sans-regular;
+  font-size: 2.2rem;
+  letter-spacing: -0.12rem;
+  line-height: 1.1;
+}
+
+
 ///////////////////  Base  ///////////////////
 
 html {
@@ -111,30 +160,22 @@ html {
 
 
 body  {
+  @include text-base();
   padding: 0;
   margin: 0;
-  overflow-x: hidden; /* Prevent scroll on narrow devices */
+  overflow-x: hidden;
 }
 
 h1, .h1 {
-  font-family: $font-family-she-always-walks-alone;
-  font-size: 4.4rem;
-  margin-bottom: 0;
-  margin-top: 4rem;
 }
 
 
 h2, .h2 {
-  font-family: $font-family-she-always-walks-alone;
-  font-size: 5rem;
-  line-height: 1.2;
 }
 
 
 h3, .h3 {
-  font-family: $font-family-work-sans-light;
-  font-size: 1.5rem;
-  line-height: 1.2;
+  //@include text-main-title();
 }
 
 .main-container {
@@ -165,14 +206,12 @@ h3, .h3 {
 }
 
 .section-header-title {
+  @include text-display-title();
   margin-top: 3rem;
 }
 
-.section-header-secondary-title {
-  font-family: $font-family-work-sans-thin;
-  font-size: 2.1rem;
-  line-height: 1.2;
-  display: block;
+.section-header-subtitle {
+  @include text-thin-title();
 }
 
 .article-footer {

@@ -8,8 +8,19 @@
     width: 50%;
   }
 
+  & .intro-name {
+    @include text-display-title();
+    display: block;
+  }
+
+  & .intro-job-title {
+    @include text-thin-title();
+    display: block;
+    font-size: 4.6rem;
+    letter-spacing: -0.1rem;
+  }
+
   & .intro-message {
-    font-size: 1.5rem;
     margin-bottom: 100px;
   }
 
@@ -19,14 +30,13 @@
   }
 
   & .section-header-sub-title {
-    font-family: $font-family-work-sans-thin;
+    @include text-thin-title();
     font-size: 4.5rem;
-    line-height: 1.2;
     margin-bottom: 1.8rem;
     margin-top: 0;
   }
 
-  & .article-video {
+  & .intro-video {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -40,16 +50,17 @@
     background-size: cover;
   }
 
-  .section-teaser-title {
+  .intro-teaser-title {
+    @include text-thin-title();
     display: none;
     position: absolute;
-    left: 45.9%;
+    width: 100%;
+    text-align: center;
+    left: 0;
     bottom: 0;
-    font-size: 3rem;
-    font-family: $font-family-work-sans-thin;
   }
 
-  &.teaser-title-visible .section-teaser-title {
+  &.teaser-title-visible .intro-teaser-title {
     display: block;
   }
 }

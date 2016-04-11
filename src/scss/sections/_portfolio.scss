@@ -62,7 +62,7 @@
   }
 
   .portfolio-item-title-wrapper {
-    display: none;
+    //display: none;
     text-align: center;
     position: absolute;
     max-width: 241px;
@@ -72,6 +72,35 @@
     background-size: 100%;
     min-height: 320px;
     padding: 3.7rem 3rem;
+  }
+
+  .portfolio-item-title-wrapper-horizontal {
+    //display: none;
+    text-align: center;
+    position: absolute;
+    max-width: 320px;
+    width: 61%;
+    background-image: url('/img/portfolio/frame-horizontal.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 241px;
+    padding: 3.5rem 4rem;
+    left: 60%;
+    top: 8%;
+
+    & .portfolio-item-title {
+      margin-bottom: 0.3rem;
+      margin-top: 0.3rem;
+    }
+
+    .portfolio-item-secondary-title {
+      margin-top: 0.3rem;
+    }
+
+    .portfolio-item-text {
+      margin-bottom: 0;
+      line-height: 1.2;
+    }
   }
 
   .child-hovered .portfolio-item-title-wrapper,
@@ -88,11 +117,6 @@
     left: -30%;
   }
 
-  &.portfolio-item--open .portfolio-item-title-wrapper {
-    display: none;
-  }
-
-
   &.portfolio-item--open .portfolio-item-details-wrapper {
     display: block;
   }
@@ -106,70 +130,26 @@
   }
 
   .portfolio-item-title {
-    font-size: 2.2rem;
-    margin: 0 0 0.3rem 0;
-    font-family: $font-family-work-sans-regular;
-    letter-spacing: -0.2rem;
+    @include text-regular-title-small();
+    margin-bottom: 0.3rem;
   }
 
-  .portfolio-item-subtitle {
-    font-size: 2.2rem;
-    font-family: $font-family-work-sans-light;
-  }
-
-  .portfolio-item-subtitle-employer {
-    //font-family: $font-family-work-sans-light;
-    font-size: 1.5rem;
-    margin: 2rem 0 0;
-  }
-
-  .portfolio-item-subtitle,
-  .portfolio-item-content-employer,
-  .portfolio-item-content-contribution {
-    margin: 0;
-    font-size: 1.5rem;
-    //font-family: $font-family-work-sans-thin;
+  .portfolio-item-text {
+    @include text-base();
     line-height: 1.3;
   }
 
-  .portfolio-item-subtitle-contribution {
-    margin: 1rem 0 0;
-    //font-family: $font-family-work-sans-light;
-    font-size: 1.5rem;
-  }
-
-  .portfolio-item-title-wrapper-horizontal {
-    display: none;
-    text-align: center;
-    position: absolute;
-    max-width: 320px;
-    width: 61%;
-    background-image: url('/img/portfolio/frame-horizontal.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    min-height: 241px;
-    padding: 3.5rem 4rem;
-
-    & .portfolio-item-title {
-      margin: 0;
-    }
-
-    & .portfolio-item-subtitle-contribution {
-      margin: 0.5rem 0 0;
-    }
-
-    & .portfolio-item-subtitle-employer {
-      margin: 0.5rem 0 0;
-    }
-
+  .portfolio-item-secondary-title {
+    @include text-thin-title-small();
+    margin-top: 1rem;
+    margin-bottom: 0;
   }
 
   .project-type-label {
-    font-size: 2rem;
+    @include text-thin-title();
     position: absolute;
     top: -3.1rem;
     left: 4.2%;
-    letter-spacing: -0.08rem;
   }
 
   .portfolio-item-img-full-wrapper {
@@ -298,10 +278,6 @@
     left: 37%;
   }
 
-  & .portfolio-item-title-wrapper-horizontal {
-    left: 60%;
-    top: 8.5%;
-  }
 
   & .project-type-label {
     left: 1.6%;
@@ -339,7 +315,7 @@
     }
 
     & .portfolio-item-subtitle-employer {
-      margin: 4rem 0 0;
+      margin: 2rem 0 0;
     }
   }
 
@@ -375,7 +351,7 @@
     }
 
     & .portfolio-item-subtitle-employer {
-      margin: 3rem 0 0;
+      margin: 2rem 0 0;
     }
   }
 
@@ -411,7 +387,7 @@
     }
 
     & .portfolio-item-subtitle-employer {
-      margin: 3rem 0 0;
+      margin: 2rem 0 0;
     }
   }
 
@@ -447,7 +423,7 @@
     }
 
     & .portfolio-item-subtitle-employer {
-      margin: 3rem 0 0;
+      margin: 2rem 0 0;
     }
   }
 
@@ -470,7 +446,7 @@
     @extend %portfolio-item;
 
     & .project-type-label {
-      top: -2.2rem;
+      top: -3rem;
     }
 
     & .portfolio-item-notebook-ande {
@@ -530,7 +506,7 @@
 
     & .portfolio-item-title-wrapper-horizontal {
       left: 36.7%;
-      top: 12%;
+      top: 9%;
     }
 
     & .portfolio-item-subtitle-employer {
@@ -604,15 +580,7 @@
 
     & .portfolio-item-title-wrapper-horizontal {
       left: 36.7%;
-      top: 12%;
-    }
-
-    & .portfolio-item-subtitle-employer {
-      margin-top: 0.5rem;
-    }
-
-    & .portfolio-item-title {
-      margin-top: 0.5rem;
+      top: 9%;
     }
   }
 
@@ -635,10 +603,19 @@
     & .portfolio-item-modal-details-wrapper {
       position: fixed;
       left: 60px;
-      top: 60px;
+      top: 40px;
       width: 17%;
     }
 
+    & .portfolio-item-modal-title {
+      @include text-regular-title-small();
+      margin-bottom: 0.3rem;
+    }
+
+    & .portfolio-item-modal-subtitle {
+      @include text-thin-title-small();
+      margin-bottom: 1.4rem;
+    }
 
     & .portfolio-item-notebook {
       position: fixed;

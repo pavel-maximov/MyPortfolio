@@ -121,6 +121,18 @@ function initSlide($slide, $modal) {
             $slide.find('.tse-scroll-content').one('scroll', function() {
                 $modal.find('.carousel-item-scroll-teaser').remove();
             });
+
+            $slide.find('.tse-content').append('' +
+                '<div class="carousel-item-scroll-teaser">' +
+                '<img class="carousel-item-scroll-teaser-image" src="/img/mouse-touch.svg">' +
+                '<div class="carousel-item-scroll-teaser-text">scroll down</div>' +
+                '<div class="carousel-item-scroll-teaser-arrow"><</div>' +
+                '</div>'
+            );
+
+            $modal.find('.tse-scrollable.active .tse-scroll-content').one('scroll', function() {
+                $modal.find('.carousel-item-scroll-teaser').remove();
+            });
         } else {
             $slide.find('.carousel-item-scroll-teaser').remove();
         }
@@ -132,22 +144,6 @@ function initModal($modal, $mainCarousel, $secondaryCarousel) {
 
     $modal.find('.portfolio-item-modal-close').click(function() {
         $modal.modal('hide');
-    });
-
-    $.each($modal.find('.carousel-item'), function(index, element) {
-        var $tseContent = $(element).find('.tse-content');
-
-        $tseContent.append('' +
-            '<div class="carousel-item-scroll-teaser">' +
-            '<img class="carousel-item-scroll-teaser-image" src="/img/mouse-touch.svg">' +
-            '<div class="carousel-item-scroll-teaser-text">scroll down</div>' +
-            '<div class="carousel-item-scroll-teaser-arrow"><</div>' +
-            '</div>'
-        );
-
-        $modal.find('.tse-scrollable.active .tse-scroll-content').one('scroll', function() {
-            $modal.find('.carousel-item-scroll-teaser').remove();
-        });
     });
 
     $modal.find('.carousel').on('slid.bs.carousel', function() {

@@ -16,8 +16,10 @@
             <figure class="section-header-img-wrapper">
                 <img class="section-header-img" src="/img/head.png">
             </figure>
-            <h1 class="section-header-title">Pavel Maximov</h1>
-            <h1 class="section-header-sub-title">Front-end Developer</h1>
+            <h1 class="section-header-title">
+                <span class="intro-name">Pavel Maximov</span>
+                <span class="intro-job-title">Front-end Developer</span>
+            </h1>
             <p class="intro-message">
                 Welcome!
                 <br/>I'm a London based web developer with 17 years of commercial experience.
@@ -25,12 +27,12 @@
                 <br/>I strive to write clean, modular and expressive code, which feels like poetry.
                 <br/>Give a look to my work.
             </p>
-            <h3 class="section-teaser-title">
+            <h3 class="intro-teaser-title">
                 My Projects
                 <span class="arrow-down"><</span>
             </h3>
         </header>
-        <video class="article-video" height="100%" width="100%" autoplay loop>
+        <video class="intro-video" height="100%" width="100%" autoplay loop>
             <source src="/video/introB.mp4"  type="video/mp4">
         </video>
     </section>
@@ -40,8 +42,7 @@
             <figure class="section-header-img-wrapper">
                 <img class="section-header-img" src="/img/portfolio.png">
             </figure>
-            <span class="section-header-secondary-title">Pavel Maximov</span>
-            <span class="section-header-secondary-title">Front-end Developer</span>
+            <div class="section-header-subtitle">Pavel Maximov<br/>Front-end Developer</div>
             <h2 class="section-header-title">Projects</h2>
             <nav class="section-header-nav">
                 <button class="article-header__nav__button" onClick="scrollToElement('#portfolio')">Projects</button><button class="article-header__nav__button" onClick="scrollToElement('#skills')">Skills</button><button class="article-header__nav__button" onClick="scrollToElement('#experience')">Experience</button><button class="article-header__nav__button" onClick="scrollToElement('#about')">About</button><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Contact</button>
@@ -81,11 +82,11 @@
             </div>
             <div class="portfolio-item-title-wrapper">
                 <h3 class="portfolio-item-title">Burger King</h3>
-                <h4 class="portfolio-item-subtitle">Delivery Service</h4>
-                <h4 class="portfolio-item-subtitle-employer">Employer:</h4>
-                <p class="portfolio-item-content-employer">Rocket Internet SE</p>
-                <h4 class="portfolio-item-subtitle-contribution">Contribution:</h4>
-                <p class="portfolio-item-content-contribution">JavaScript, jQuery, Backbone.js, Lodash, HTML5, Twig, CSS3, SASS, Bootstrap, Photoshop, Grunt, Git</p>
+                <h4 class="portfolio-item-text">Delivery Service</h4>
+                <h4 class="portfolio-item-secondary-title">Employer:</h4>
+                <p class="portfolio-item-text">Rocket Internet SE</p>
+                <h4 class="portfolio-item-secondary-title">Contribution:</h4>
+                <p class="portfolio-item-text">JavaScript, jQuery, Backbone.js, Lodash, HTML5, Twig, CSS3, SASS, Bootstrap, Photoshop, Grunt, Git</p>
             </div>
 
             <div class="portfolio-item-modal-notebook-mobile modal fade" id="bk-modal" tabindex="-1" role="dialog" aria-labelledby="bk-modalLabel" aria-hidden="true">
@@ -93,10 +94,10 @@
                     <div class="portfolio-item-modal-content">
                         <button class="portfolio-item-modal-close">X</button>
                         <div class="portfolio-item-modal-details-wrapper">
-                            <h3 class="portfolio-item-title">Burger King</h3>
-                            <h4 class="portfolio-item-subtitle">Delivery Service</h4>
-                            <p class="portfolio-item-content-details">As Senior Front-end Developer at Rocket Internet, for the Burger King Delivery Service e-commerce I contributed to the HTML/CSS layout (responsive with 4 breakpoints) and JavaScript features including: restaurants search, product menu, toppings selection, cart, checkout and order tracking.</p>
-                            <p class="portfolio-item-content-details">Technologies: JavaScript, jQuery, Backbone.js, Lodash, HTML5, Twig, CSS3, SASS, Bootstrap, Photoshop, Grunt, Git.</p>
+                            <h3 class="portfolio-item-modal-title">Burger King</h3>
+                            <h4 class="portfolio-item-modal-subtitle">Delivery Service</h4>
+                            <p>As Senior Front-end Developer at Rocket Internet, for the Burger King Delivery Service e-commerce I contributed to the HTML/CSS layout (responsive with 4 breakpoints) and JavaScript features including: restaurants search, product menu, toppings selection, cart, checkout and order tracking.</p>
+                            <p>Technologies: JavaScript, jQuery, Backbone.js, Lodash, HTML5, Twig, CSS3, SASS, Bootstrap, Photoshop, Grunt, Git.</p>
                         </div>
                         <div class="portfolio-item-notebook">
                             <img class="portfolio-item-device-img" src="/img/portfolio/notebook.png">
@@ -203,11 +204,11 @@
             </div>
             <div class="portfolio-item-title-wrapper">
                 <h3 class="portfolio-item-title">Vendomo marketing website</h3>
-                <h4 class="portfolio-item-subtitle">Real estate startup</h4>
-                <h4 class="portfolio-item-subtitle-employer">Employer:</h4>
-                <p class="portfolio-item-content-employer">Rocket Internet SE</p>
-                <h4 class="portfolio-item-subtitle-contribution">Contribution:</h4>
-                <p class="portfolio-item-content-contribution">JavaScript, jQuery, HTML5, CSS3, LESS, Bootstrap, Photoshop, Illustrator, Gulp, Git</p>
+                <h4 class="portfolio-item-text">Real estate startup</h4>
+                <h4 class="portfolio-item-secondary-title">Employer:</h4>
+                <p class="portfolio-item-text">Rocket Internet SE</p>
+                <h4 class="portfolio-item-secondary-title">Contribution:</h4>
+                <p class="portfolio-item-text">JavaScript, jQuery, HTML5, CSS3, LESS, Bootstrap, Photoshop, Illustrator, Gulp, Git</p>
             </div>
 
             <div class="portfolio-item-modal-notebook-mobile modal fade" id="vendomo-modal" tabindex="-1" role="dialog" aria-labelledby="bk-modalLabel" aria-hidden="true">
@@ -215,10 +216,10 @@
                     <div class="portfolio-item-modal-content">
                         <button class="portfolio-item-modal-close">X</button>
                         <div class="portfolio-item-modal-details-wrapper">
-                            <h3 class="portfolio-item-title">Vendomo marketing website</h3>
-                            <h4 class="portfolio-item-subtitle">Real estate startup</h4>
-                            <p class="portfolio-item-content-details">As Senior Front-end Developer at Rocket Internet, for Vendomo marketing website I created the HTML/CSS layout on all pages (responsive with 4 breakpoints) and developed all the JavaScript features: real time fees calculator, animated slides presentation and scrolling effects. </p>
-                            <p class="portfolio-item-content-details">Technologies: JavaScript, jQuery, HTML5, CSS3, LESS, Bootstrap, Photoshop, Illustrator, Gulp, Git.</p>
+                            <h3 class="portfolio-item-modal-title">Vendomo marketing website</h3>
+                            <h4 class="portfolio-item-modal-subtitle">Real estate startup</h4>
+                            <p>As Senior Front-end Developer at Rocket Internet, for Vendomo marketing website I created the HTML/CSS layout on all pages (responsive with 4 breakpoints) and developed all the JavaScript features: real time fees calculator, animated slides presentation and scrolling effects. </p>
+                            <p>Technologies: JavaScript, jQuery, HTML5, CSS3, LESS, Bootstrap, Photoshop, Illustrator, Gulp, Git.</p>
                         </div>
                         <div class="portfolio-item-notebook">
                             <img class="portfolio-item-device-img" src="/img/portfolio/notebook.png">
@@ -304,11 +305,11 @@
             </div>
             <div class="portfolio-item-title-wrapper">
                 <h3 class="portfolio-item-title">Vendomo <br/>CRM dashboard</h3>
-                <h4 class="portfolio-item-subtitle">Real estate startup</h4>
-                <h4 class="portfolio-item-subtitle-employer">Employer:</h4>
-                <p class="portfolio-item-content-employer">Rocket Internet SE</p>
-                <h4 class="portfolio-item-subtitle-contribution">Contribution:</h4>
-                <p class="portfolio-item-content-contribution">JavaScript, jQuery, HTML5, CSS3, LESS, Bootstrap, Photoshop, Gulp, Git</p>
+                <h4 class="portfolio-item-text">Real estate startup</h4>
+                <h4 class="portfolio-item-secondary-title">Employer:</h4>
+                <p class="portfolio-item-text">Rocket Internet SE</p>
+                <h4 class="portfolio-item-secondary-title">Contribution:</h4>
+                <p class="portfolio-item-text">JavaScript, jQuery, HTML5, CSS3, LESS, Bootstrap, Photoshop, Gulp, Git</p>
             </div>
 
             <div class="portfolio-item-modal-notebook-mobile modal fade" id="vendomo-crm-modal" tabindex="-1" role="dialog" aria-labelledby="bk-modalLabel" aria-hidden="true">
@@ -316,10 +317,10 @@
                     <div class="portfolio-item-modal-content">
                         <button class="portfolio-item-modal-close">X</button>
                         <div class="portfolio-item-modal-details-wrapper">
-                            <h3 class="portfolio-item-title">Vendomo CRM dashboard</h3>
-                            <h4 class="portfolio-item-subtitle">Real estate startup</h4>
-                            <p class="portfolio-item-content-details">As Senior Front-end Developer at Rocket Internet, for Vendomo CRM web app I created the responsive HTML/CSS layout on all pages and I contributed to the JavaScript features including management of properties, candidatures and appointments. </p>
-                            <p class="portfolio-item-content-details">Technologies: JavaScript, jQuery, HTML5, CSS3, LESS, Bootstrap, Photoshop, Gulp, Git.</p>
+                            <h3 class="portfolio-item-modal-title">Vendomo CRM dashboard</h3>
+                            <h4 class="portfolio-item-modal-subtitle">Real estate startup</h4>
+                            <p>As Senior Front-end Developer at Rocket Internet, for Vendomo CRM web app I created the responsive HTML/CSS layout on all pages and I contributed to the JavaScript features including management of properties, candidatures and appointments. </p>
+                            <p>Technologies: JavaScript, jQuery, HTML5, CSS3, LESS, Bootstrap, Photoshop, Gulp, Git.</p>
                         </div>
                         <div class="portfolio-item-notebook">
                             <img class="portfolio-item-device-img" src="/img/portfolio/notebook.png">
@@ -427,11 +428,11 @@
             </div>
             <div class="portfolio-item-title-wrapper">
                 <h3 class="portfolio-item-title">Foodora</h3>
-                <h4 class="portfolio-item-subtitle">Food delivery startup</h4>
-                <h4 class="portfolio-item-subtitle-employer">Employer:</h4>
-                <p class="portfolio-item-content-employer">Rocket Internet SE</p>
-                <h4 class="portfolio-item-subtitle-contribution">Contribution:</h4>
-                <p class="portfolio-item-content-contribution">JavaScript, jQuery, Backbone.js, Lodash, TDD, HTML5, Twig, CSS3, SASS, Bootstrap, Photoshop, Grunt, Git</p>
+                <h4 class="portfolio-item-text">Food delivery startup</h4>
+                <h4 class="portfolio-item-secondary-title">Employer:</h4>
+                <p class="portfolio-item-text">Rocket Internet SE</p>
+                <h4 class="portfolio-item-secondary-title">Contribution:</h4>
+                <p class="portfolio-item-text">JavaScript, jQuery, Backbone.js, Lodash, TDD, HTML5, Twig, CSS3, SASS, Bootstrap, Photoshop, Grunt, Git</p>
             </div>
 
             <div class="portfolio-item-modal-notebook-mobile modal fade" id="foodora-modal" tabindex="-1" role="dialog" aria-labelledby="bk-modalLabel" aria-hidden="true">
@@ -439,10 +440,10 @@
                     <div class="portfolio-item-modal-content">
                         <button class="portfolio-item-modal-close">X</button>
                         <div class="portfolio-item-modal-details-wrapper">
-                            <h3 class="portfolio-item-title">Foodora</h3>
-                            <h4 class="portfolio-item-subtitle">Food delivery startup</h4>
-                            <p class="portfolio-item-content-details">As Senior Front-end Developer at Rocket Internet, for Foodora e-commerce I contributed to the HTML/CSS layout (responsive with 4 breakpoints), CSS animations and JavaScript features including: restaurants search, menu, toppings selection, cart and checkout process. </p>
-                            <p class="portfolio-item-content-details">Technologies: JavaScript, jQuery, Backbone.js, Lodash, TDD, HTML5, Twig, CSS3, SASS, Bootstrap, Photoshop, Grunt, Git.</p>
+                            <h3 class="portfolio-item-modal-title">Foodora</h3>
+                            <h4 class="portfolio-item-modal-subtitle">Food delivery startup</h4>
+                            <p>As Senior Front-end Developer at Rocket Internet, for Foodora e-commerce I contributed to the HTML/CSS layout (responsive with 4 breakpoints), CSS animations and JavaScript features including: restaurants search, menu, toppings selection, cart and checkout process. </p>
+                            <p>Technologies: JavaScript, jQuery, Backbone.js, Lodash, TDD, HTML5, Twig, CSS3, SASS, Bootstrap, Photoshop, Grunt, Git.</p>
                         </div>
                         <div class="portfolio-item-notebook">
                             <img class="portfolio-item-device-img" src="/img/portfolio/notebook.png">
@@ -536,11 +537,11 @@
             </figure>
             <div class="portfolio-item-title-wrapper-horizontal">
                 <h3 class="portfolio-item-title">TIMvision</h3>
-                <h4 class="portfolio-item-subtitle">On demand TV service <br/>for Samsung Smart-TV</h4>
-                <h4 class="portfolio-item-subtitle-employer">Employer:</h4>
-                <p class="portfolio-item-content-employer">Telecom Italia s.p.a</p>
-                <h4 class="portfolio-item-subtitle-contribution">Contribution:</h4>
-                <p class="portfolio-item-content-contribution">JavaScript, AJAX, HTML5, CSS3, XML, Samsung Web API</p>
+                <h4 class="portfolio-item-text">On demand TV service <br/>for Samsung Smart-TV</h4>
+                <h4 class="portfolio-item-secondary-title">Employer:</h4>
+                <p class="portfolio-item-text">Telecom Italia s.p.a</p>
+                <h4 class="portfolio-item-secondary-title">Contribution:</h4>
+                <p class="portfolio-item-text">JavaScript, AJAX, HTML5, CSS3, XML, Samsung Web API</p>
             </div>
 
             <div class="portfolio-item-modal-tv modal fade" id="timvision-modal" tabindex="-1" role="dialog" aria-labelledby="bk-modalLabel" aria-hidden="true">
@@ -548,10 +549,10 @@
                     <div class="portfolio-item-modal-content">
                         <button class="portfolio-item-modal-close">X</button>
                         <div class="portfolio-item-modal-details-wrapper">
-                            <h3 class="portfolio-item-title">TIMvision</h3>
-                            <h4 class="portfolio-item-subtitle">On demand TV service <br/>for Samsung Smart-TV</h4>
-                            <p class="portfolio-item-content-details">As Frontend Developer at Telecom Italia, for the TIMvision Samsung SmartTV web app I updated and rebranded the HTML/CSS layout and developed new features including: credit card payment, telemetry module, video details and channels views. I also performed testing, bug fixing and improvements on numerous existing features. </p>
-                            <p class="portfolio-item-content-details">Technologies: JavaScript, AJAX, HTML5, CSS3, XML, Samsung Web API.</p>
+                            <h3 class="portfolio-item-modal-title">TIMvision</h3>
+                            <h4 class="portfolio-item-modal-subtitle">On demand TV service <br/>for Samsung Smart-TV</h4>
+                            <p>As Frontend Developer at Telecom Italia, for the TIMvision Samsung SmartTV web app I updated and rebranded the HTML/CSS layout and developed new features including: credit card payment, telemetry module, video details and channels views. I also performed testing, bug fixing and improvements on numerous existing features. </p>
+                            <p>Technologies: JavaScript, AJAX, HTML5, CSS3, XML, Samsung Web API.</p>
                         </div>
                         <div class="portfolio-item-samsung-tv">
                             <img class="portfolio-item-device-img" src="/img/portfolio/samsung-tv.png">
@@ -618,11 +619,11 @@
             </figure>
             <div class="portfolio-item-title-wrapper-horizontal">
                 <h3 class="portfolio-item-title">CuboMusica</h3>
-                <h4 class="portfolio-item-subtitle">Music streaming <br/>for Samsung Smart-TV</h4>
-                <h4 class="portfolio-item-subtitle-employer">Employer:</h4>
-                <p class="portfolio-item-content-employer">Telecom Italia s.p.a</p>
-                <h4 class="portfolio-item-subtitle-contribution">Contribution:</h4>
-                <p class="portfolio-item-content-contribution">JavaScript, AJAX, HTML5, CSS3, XML, Samsung Web API</p>
+                <h4 class="portfolio-item-text">Music streaming <br/>for Samsung Smart-TV</h4>
+                <h4 class="portfolio-item-secondary-title">Employer:</h4>
+                <p class="portfolio-item-text">Telecom Italia s.p.a</p>
+                <h4 class="portfolio-item-secondary-title">Contribution:</h4>
+                <p class="portfolio-item-text">JavaScript, AJAX, HTML5, CSS3, XML, Samsung Web API</p>
             </div>
 
             <div class="portfolio-item-modal-tv modal fade" id="cubomusica-modal" tabindex="-1" role="dialog" aria-labelledby="bk-modalLabel" aria-hidden="true">
@@ -630,10 +631,10 @@
                     <div class="portfolio-item-modal-content">
                         <button class="portfolio-item-modal-close">X</button>
                         <div class="portfolio-item-modal-details-wrapper">
-                            <h3 class="portfolio-item-title">CuboMusica</h3>
-                            <h4 class="portfolio-item-subtitle">Music streaming <br/>for Samsung Smart-TV</h4>
-                            <p class="portfolio-item-content-details">As Frontend Developer at Telecom Italia, for the TIMmusic Samsung SmartTV web app I improved several existing features, updated and rebranded HTML/CSS layout and performed testing and bug fixing, preparing also the app documentation for the Samsung certification process.</p>
-                            <p class="portfolio-item-content-details">Technologies: JavaScript, AJAX, HTML5, CSS3, XML, Samsung Web API.</p>
+                            <h3 class="portfolio-item-modal-title">CuboMusica</h3>
+                            <h4 class="portfolio-item-modal-subtitle">Music streaming <br/>for Samsung Smart-TV</h4>
+                            <p>As Frontend Developer at Telecom Italia, for the TIMmusic Samsung SmartTV web app I improved several existing features, updated and rebranded HTML/CSS layout and performed testing and bug fixing, preparing also the app documentation for the Samsung certification process.</p>
+                            <p>Technologies: JavaScript, AJAX, HTML5, CSS3, XML, Samsung Web API.</p>
                         </div>
                         <div class="portfolio-item-samsung-tv">
                             <img class="portfolio-item-device-img" src="/img/portfolio/samsung-tv.png">
@@ -713,10 +714,10 @@
             </div>
             <div class="portfolio-item-title-wrapper-horizontal">
                 <h3 class="portfolio-item-title">Websites for<br/>United Nations</h3>
-                <h4 class="portfolio-item-subtitle-employer">Employer:</h4>
-                <p class="portfolio-item-content-employer">UNICRI</p>
-                <h4 class="portfolio-item-subtitle-contribution">Contribution:</h4>
-                <p class="portfolio-item-content-contribution">HTML, CSS, JavaScript, jQuery, CMS, UX/UI Design, Photoshop</p>
+                <h4 class="portfolio-item-secondary-title">Employer:</h4>
+                <p class="portfolio-item-text">UNICRI</p>
+                <h4 class="portfolio-item-secondary-title">Contribution:</h4>
+                <p class="portfolio-item-text">HTML, CSS, JavaScript, jQuery, CMS, UX/UI Design, Photoshop</p>
             </div>
 
             <div class="portfolio-item-modal-notebook modal fade" id="unicri-modal" tabindex="-1" role="dialog" aria-labelledby="unicri-modalLabel" aria-hidden="true">
@@ -724,10 +725,10 @@
                     <div class="portfolio-item-modal-content">
                         <button class="portfolio-item-modal-close">X</button>
                         <div class="portfolio-item-modal-details-wrapper">
-                            <h3 class="portfolio-item-title">Websites for United Nations</h3>
-                            <h4 class="portfolio-item-subtitle"></h4>
-                            <p class="portfolio-item-content-details">As Front-end Developer at UNICRI (United Nations agency), I was in charge of creating 3 promotional websites and 2 e-learning portals. The websites were for projects in the field of security and counter-terrorism, jointly created by United Nations and European Union. For all of them I made the designs and implemented the HTML/CSS pages. For some of them I also set up and customised the CMS. Some of those websites contained restricted data.</p>
-                            <p class="portfolio-item-content-details">Technologies: HTML, CSS, JavaScript, jQuery, CMS, UX/UI Design, Photoshop.</p>
+                            <h3 class="portfolio-item-modal-title">Websites for United Nations</h3>
+                            <h4 class="portfolio-item-modal-subtitle"></h4>
+                            <p>As Front-end Developer at UNICRI (United Nations agency), I was in charge of creating 3 promotional websites and 2 e-learning portals. The websites were for projects in the field of security and counter-terrorism, jointly created by United Nations and European Union. For all of them I made the designs and implemented the HTML/CSS pages. For some of them I also set up and customised the CMS. Some of those websites contained restricted data.</p>
+                            <p>Technologies: HTML, CSS, JavaScript, jQuery, CMS, UX/UI Design, Photoshop.</p>
                         </div>
                         <div class="portfolio-item-notebook">
                             <img class="portfolio-item-device-img" src="/img/portfolio/notebook.png">
@@ -839,11 +840,11 @@
 
             <div class="portfolio-item-title-wrapper-horizontal">
                 <h3 class="portfolio-item-title">Everything else</h3>
-                <h4 class="portfolio-item-subtitle">Websites for various clients</h4>
-                <h4 class="portfolio-item-subtitle-employer">Employer:</h4>
-                <p class="portfolio-item-content-employer">Self-employed</p>
-                <h4 class="portfolio-item-subtitle-contribution">Contribution:</h4>
-                <p class="portfolio-item-content-contribution">HTML, CSS, SASS, JavaScript, jQuery, Wordpress, Grunt, UX/UI Design, Photoshop</p>
+                <h4 class="portfolio-item-text">Websites for various clients</h4>
+                <h4 class="portfolio-item-secondary-title">Employer:</h4>
+                <p class="portfolio-item-text">Self-employed</p>
+                <h4 class="portfolio-item-secondary-title">Contribution:</h4>
+                <p class="portfolio-item-text">HTML, CSS, SASS, JavaScript, jQuery, Wordpress, Grunt, UX/UI Design, Photoshop</p>
             </div>
 
             <div class="portfolio-item-modal-notebook modal fade" id="others-modal" tabindex="-1" role="dialog" aria-labelledby="others-modalLabel" aria-hidden="true">
@@ -851,10 +852,10 @@
                     <div class="portfolio-item-modal-content">
                         <button class="portfolio-item-modal-close">X</button>
                         <div class="portfolio-item-modal-details-wrapper">
-                            <h3 class="portfolio-item-title">Everything else</h3>
-                            <h4 class="portfolio-item-subtitle">Websites for various clients</h4>
-                            <p class="portfolio-item-content-details">As Freelance Front-end Developer I consulted various web agencies and clients, creating numerous static and dynamic websites. In most cases I did both designs and HTML/CSS layout and in some cases I also set up and customised the CMS (Wordpress). Only few of them are shown here.</p>
-                            <p class="portfolio-item-content-details">Technologies: HTML, CSS, SASS, JavaScript, jQuery, Wordpress, Grunt, UX/UI Design, Photoshop.</p>
+                            <h3 class="portfolio-item-modal-title">Everything else</h3>
+                            <h4 class="portfolio-item-modal-subtitle">Websites for various clients</h4>
+                            <p>As Freelance Front-end Developer I consulted various web agencies and clients, creating numerous static and dynamic websites. In most cases I did both designs and HTML/CSS layout and in some cases I also set up and customised the CMS (Wordpress). Only few of them are shown here.</p>
+                            <p>Technologies: HTML, CSS, SASS, JavaScript, jQuery, Wordpress, Grunt, UX/UI Design, Photoshop.</p>
                         </div>
                         <div class="portfolio-item-notebook">
                             <img class="portfolio-item-device-img" src="/img/portfolio/notebook.png">
@@ -915,8 +916,8 @@
             <figure class="section-header-img-wrapper">
                 <img class="section-header-img" src="/img/skills.png">
             </figure>
-            <span class="section-header-secondary-title">Pavel Maximov</span>
-            <span class="section-header-secondary-title">Front-end Developer</span>
+            <span class="section-header-subtitle">Pavel Maximov</span>
+            <span class="section-header-subtitle">Front-end Developer</span>
             <h2 class="section-header-title">Skills</h2>
             <nav class="section-header-nav">
                 <button class="article-header__nav__button" onClick="scrollToElement('#portfolio')">Projects</button><button class="article-header__nav__button" onClick="scrollToElement('#skills')">Skills</button><button class="article-header__nav__button" onClick="scrollToElement('#experience')">Experience</button><button class="article-header__nav__button" onClick="scrollToElement('#about')">About</button><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Contact</button>
@@ -1015,8 +1016,8 @@
             <figure class="section-header-img-wrapper">
                 <img class="section-header-img" src="/img/experience.png">
             </figure>
-            <span class="section-header-secondary-title">Pavel Maximov</span>
-            <span class="section-header-secondary-title">Front-end Developer</span>
+            <span class="section-header-subtitle">Pavel Maximov</span>
+            <span class="section-header-subtitle">Front-end Developer</span>
             <h2 class="section-header-title">Experience</h2>
             <nav class="section-header-nav">
                 <button class="article-header__nav__button" onClick="scrollToElement('#portfolio')">Projects</button><button class="article-header__nav__button" onClick="scrollToElement('#skills')">Skills</button><button class="article-header__nav__button" onClick="scrollToElement('#experience')">Experience</button><button class="article-header__nav__button" onClick="scrollToElement('#about')">About</button><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Contact</button>
@@ -1291,8 +1292,8 @@
             <figure class="section-header-img-wrapper">
                 <img class="section-header-img" src="/img/about-me.png">
             </figure>
-            <span class="section-header-secondary-title">Pavel Maximov</span>
-            <span class="section-header-secondary-title">Front-end Developer</span>
+            <span class="section-header-subtitle">Pavel Maximov</span>
+            <span class="section-header-subtitle">Front-end Developer</span>
             <h2 class="section-header-title">About me</h2>
             <nav class="section-header-nav">
                 <button class="article-header__nav__button" onClick="scrollToElement('#portfolio')">Projects</button><button class="article-header__nav__button" onClick="scrollToElement('#skills')">Skills</button><button class="article-header__nav__button" onClick="scrollToElement('#experience')">Experience</button><button class="article-header__nav__button" onClick="scrollToElement('#about')">About</button><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Contact</button>
@@ -1304,7 +1305,7 @@
                 <figure class="about-photo">
                     <img class="me" src="/img/me.png">
                 </figure>
-                <h3 class="about-interest-title-main">Hi, nice to meet you!</h3>
+                <h3 class="about-interest-title">Hi, nice to meet you!</h3>
                 <p>
                     I'm Pavel, a London based web developer and life enthusiast :D<br/>
                     I'm kind of a nomad, I was born in the cold Siberia region in Soviet Union, <br/>
@@ -1401,8 +1402,8 @@
             <figure class="section-header-img-wrapper">
                 <img class="section-header-img" src="/img/contact.png">
             </figure>
-            <span class="section-header-secondary-title">Pavel Maximov</span>
-            <span class="section-header-secondary-title">Front-end Developer</span>
+            <span class="section-header-subtitle">Pavel Maximov</span>
+            <span class="section-header-subtitle">Front-end Developer</span>
             <h2 class="section-header-title">Contact</h2>
             <nav class="section-header-nav">
                 <button class="article-header__nav__button" onClick="scrollToElement('#portfolio')">Projects</button><button class="article-header__nav__button" onClick="scrollToElement('#skills')">Skills</button><button class="article-header__nav__button" onClick="scrollToElement('#experience')">Experience</button><button class="article-header__nav__button" onClick="scrollToElement('#about')">About</button><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Contact</button>
@@ -1429,14 +1430,14 @@
             <figure class="section-header-img-wrapper">
                 <img class="section-header-img" src="/img/outro.png">
             </figure>
-            <span class="section-header-secondary-title">Thank you for visiting!</span>
-            <span class="section-header-secondary-title">Hope to hear from you soon.</span>
+            <span class="section-header-subtitle">Thank you for visiting!</span>
+            <span class="section-header-subtitle">Hope to hear from you soon.</span>
             <nav class="section-header-nav">
                 <button class="article-header__nav__button" onClick="scrollToElement('#portfolio')">Projects</button><button class="article-header__nav__button" onClick="scrollToElement('#skills')">Skills</button><button class="article-header__nav__button" onClick="scrollToElement('#experience')">Experience</button><button class="article-header__nav__button" onClick="scrollToElement('#about')">About</button><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Contact</button>
                 <br/><a class="article-header__nav__button" href="https://github.com/pavelmaximov" target="_blank">GitHub</a><a class="article-header__nav__button" href="http://www.pavelmaximov.com/resume-frontend-pavel-maximov.pdf" target="_blank">Resume</a>
             </nav>
         </header>
-        <video class="article-video" height="100%" width="100%" autoplay loop>
+        <video class="intro-video" height="100%" width="100%" autoplay loop>
             <source src="/video/introB.mp4"  type="video/mp4">
         </video>
     </section>

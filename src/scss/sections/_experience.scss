@@ -4,7 +4,7 @@
 #experience {
   @extend %article-wrapper;
   flex-direction: column;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   padding-bottom: 8vh;
   padding-top: 12vh;
 
@@ -124,7 +124,7 @@
 
   & .experience-subtitle {
     font-family: $font-family-work-sans-light;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-bottom: 0.5rem;
     margin-top: 2.5rem;
   }

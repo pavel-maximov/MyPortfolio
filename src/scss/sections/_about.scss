@@ -5,7 +5,7 @@
 #about {
   @extend %article-wrapper;
   flex-direction: column;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin: 15vh 0 8vh;
 
   & .section-header-img-wrapper {
@@ -97,11 +97,12 @@
   }
 
   & .about-interest-title-main {
-    font-size: 3.6rem;
-    font-family: $font-family-work-sans-thin;
+    font-family: $font-family-work-sans-regular;
+    font-size: 2.7rem;
+    letter-spacing: -0.2rem;
+    margin-bottom: 0.5rem;
     width: 100%;
     text-align: center;
-    margin-bottom: 2rem;
   }
 
   & .about-photo {
