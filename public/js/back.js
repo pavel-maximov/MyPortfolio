@@ -130,9 +130,12 @@ function initSlide($slide, $modal) {
                     '<div class="carousel-item-scroll-teaser-arrow"><</div>' +
                     '</div>'
                 );
+                $modal.addClass('scroll-teaser-enabled');
                 $modal.find('.tse-scrollable.active .tse-scroll-content').one('scroll', function() {
                     $modal.find('.carousel-item-scroll-teaser').remove();
                     $modal.data('scroll-teaser-needed', false);
+                    $modal.removeClass('scroll-teaser-enabled');
+                    $('.modal').data('scroll-teaser-needed', false);
                 });
             }
         } else {
@@ -144,13 +147,14 @@ function initSlide($slide, $modal) {
 function initModal($modal, $mainCarousel, $secondaryCarousel) {
     initCarousel($modal, $mainCarousel, $secondaryCarousel);
 
-    $modal.data('scroll-teaser-needed', true);
     $modal.find('.portfolio-item-modal-close').click(function() {
         $modal.modal('hide');
     });
 
     $modal.find('.carousel').on('slid.bs.carousel', function() {
-        initSlide($(this).find('.tse-scrollable.active'), $modal)
+        initSlide($(this).find('.tse-scrollable.active'), $modal);
+        $modal.find('.carousel-label').removeClass('active');
+        $modal.find('.carousel-label:eq(' + $modal.find('.carousel-item.active').index() + ')').addClass('active');
     });
 
     $.each($modal.find('.tse-scrollable.active'), function(index, element) {
@@ -202,6 +206,7 @@ $document.ready(function () {
     $window.on('scroll', onScroll);
     onScroll();
 
+    $('.modal').data('scroll-teaser-needed', true);
     $('.modal').one('shown.bs.modal', function() {
         var $this = $(this);
 

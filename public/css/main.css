@@ -5072,8 +5072,12 @@ body {
   top: 0;
   right: 0;
   bottom: 0;
-  width: 11px;
+  width: 16px;
   display: block !important; }
+
+.scroll-teaser-enabled .tse-scrollbar {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 7px; }
 
 .tse-scrollbar .drag-handle {
   cursor: pointer;
@@ -5105,6 +5109,10 @@ body {
 
 .tse-scrollbar .drag-handle.visible {
   opacity: 0.65; }
+
+.scroll-teaser-enabled .tse-scrollbar .drag-handle.visible {
+  background: #fff;
+  opacity: 1; }
 
 /* Used when testing the scrollbar width */
 /* No longer using ::scrollbar too, since it breaks Chrome 25 */
@@ -5453,10 +5461,10 @@ body {
     margin-top: 1rem;
     margin-bottom: 0; }
   #portfolio .project-type-label {
-    font-family: "worksans-thin", sans-serif;
-    font-size: 1.7rem;
+    font-family: "worksans-light", sans-serif;
+    font-size: 2rem;
+    letter-spacing: -0.08rem;
     line-height: 1.2;
-    letter-spacing: 0.03rem;
     position: absolute;
     top: -3.1rem;
     left: 4.2%; }
@@ -5788,8 +5796,8 @@ body {
     align-items: center;
     cursor: s-resize; }
     #portfolio .portfolio-item-modal-notebook-mobile .carousel-item-scroll-teaser .carousel-item-scroll-teaser-image, #portfolio .portfolio-item-modal-tv .carousel-item-scroll-teaser .carousel-item-scroll-teaser-image, #portfolio .portfolio-item-modal-notebook .carousel-item-scroll-teaser .carousel-item-scroll-teaser-image {
-      width: 200px;
-      height: 110px; }
+      width: 150px;
+      height: 71px; }
     #portfolio .portfolio-item-modal-notebook-mobile .carousel-item-scroll-teaser .carousel-item-scroll-teaser-text, #portfolio .portfolio-item-modal-tv .carousel-item-scroll-teaser .carousel-item-scroll-teaser-text, #portfolio .portfolio-item-modal-notebook .carousel-item-scroll-teaser .carousel-item-scroll-teaser-text {
       font-size: 1.8rem;
       font-family: "worksans-regular", sans-serif;
@@ -5835,6 +5843,20 @@ body {
   #portfolio .tse-content {
     position: relative;
     cursor: ns-resize; }
+  #portfolio .carousel-labels {
+    font-family: "worksans-light", sans-serif;
+    font-size: 2rem;
+    letter-spacing: -0.08rem;
+    line-height: 1.2;
+    position: absolute;
+    left: -1%;
+    top: -3.5%;
+    width: 100%;
+    text-align: center; }
+  #portfolio .carousel-label {
+    display: none; }
+  #portfolio .carousel-label.active {
+    display: block; }
 
 #experience {
   flex-direction: column;

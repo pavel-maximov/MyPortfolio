@@ -146,7 +146,7 @@
   }
 
   .project-type-label {
-    @include text-thin-title-small();
+    @include text-light-title-small();
     position: absolute;
     top: -3.1rem;
     left: 4.2%;
@@ -718,8 +718,8 @@
       cursor: s-resize;
 
       & .carousel-item-scroll-teaser-image {
-        width: 200px;
-        height: 110px;
+        width: 150px;
+        height: 71px;
       }
 
       & .carousel-item-scroll-teaser-text {
@@ -816,4 +816,20 @@
     cursor: ns-resize;
   }
 
+  .carousel-labels {
+    @include text-light-title-small();
+    position: absolute;
+    left: -1%;
+    top: -3.5%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .carousel-label {
+    display: none;
+  }
+
+  .carousel-label.active  {
+    display: block;
+  }
 }
