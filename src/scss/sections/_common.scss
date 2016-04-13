@@ -531,6 +531,10 @@ h3, .h3 {
   background-color: #fff;
 }
 
+.about-model-open .modal-backdrop {
+  background-color: rgba(0,0,0,0.9);
+}
+
 .carousel-control {
   position: fixed;
   color: #666;
@@ -584,4 +588,39 @@ h3, .h3 {
   font-size: 5rem;
   font-family: $font-family-work-sans-thin;
   opacity: 0.5;
+}
+
+
+.carousel-item-scroll-teaser {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  text-align: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: s-resize;
+
+  & .carousel-item-scroll-teaser-image {
+    width: 150px;
+    height: 71px;
+  }
+
+  & .carousel-item-scroll-teaser-text {
+    font-size: 1.8rem;
+    font-family: $font-family-work-sans-regular;
+    margin-top: 1rem;
+  }
+
+  & .carousel-item-scroll-teaser-arrow {
+    font-size: 3rem;
+    line-height: 1;
+    transform: rotate(-90deg);
+  }
+
 }

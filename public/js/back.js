@@ -5,6 +5,7 @@ var $htmlBody = $('html,body');
 var $aboutVideo = $('#outro-video');
 var $portfolio = $('#portfolio');
 var $experience = $('#experience');
+var $body = $('body');
 var $main = $('#main');
 var $about = $('#about');
 var $intro = $('#intro');
@@ -147,7 +148,8 @@ function initSlide($slide, $modal) {
 function initModal($modal, $mainCarousel, $secondaryCarousel) {
     initCarousel($modal, $mainCarousel, $secondaryCarousel);
 
-    $modal.find('.portfolio-item-modal-close').click(function() {
+    $modal.find('.modal-close-button').click(function() {
+        $body.removeClass('about-model-open');
         $modal.modal('hide');
     });
 
@@ -160,7 +162,6 @@ function initModal($modal, $mainCarousel, $secondaryCarousel) {
     $.each($modal.find('.tse-scrollable.active'), function(index, element) {
         initSlide($(element), $modal);
     });
-
 }
 
 function setCogwheelsAnimation(scrollPosition, windowHeight) {
@@ -205,13 +206,14 @@ $document.ready(function () {
     //$main.css('background-color', 'hsla(0,10%,10%,0)');
     $window.on('scroll', onScroll);
     onScroll();
-
-    $('.modal').data('scroll-teaser-needed', true);
-    $('.modal').one('shown.bs.modal', function() {
-        var $this = $(this);
-
-        initModal($this, $this.find('.main-carousel'), $this.find('.secondary-carousel'));
-    });
+ 
+    $('.modal')
+        .data('scroll-teaser-needed', true)
+        .one('shown.bs.modal', function() {
+            var $this = $(this);
+    
+            initModal($this, $this.find('.main-carousel'), $this.find('.secondary-carousel'));
+        });
     
     $('.portfolio-item-img-preview')
         .click(function() {
@@ -222,6 +224,12 @@ $document.ready(function () {
         })
         .on('mouseout', function (){
             $(this).closest('.js-portfolio-item').removeClass('child-hovered');
+        });
+
+    $('.interest-modal-link')
+        .click(function() {
+            $body.addClass('about-model-open');
+            $($(this).data('target-modal')).modal();
         });
 
     initCarousel($('#references'), $('#references-main-carousel'));

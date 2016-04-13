@@ -92,7 +92,7 @@
             <div class="portfolio-item-modal-notebook-mobile modal fade" id="bk-modal" tabindex="-1" role="dialog" aria-labelledby="bk-modalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="portfolio-item-modal-content">
-                        <button class="portfolio-item-modal-close">X</button>
+                        <button class="modal-close-button">X</button>
                         <div class="portfolio-item-modal-details-wrapper">
                             <h3 class="portfolio-item-modal-title">Burger King</h3>
                             <h4 class="portfolio-item-modal-subtitle">Delivery Service</h4>
@@ -220,7 +220,7 @@
             <div class="portfolio-item-modal-notebook-mobile modal fade" id="vendomo-modal" tabindex="-1" role="dialog" aria-labelledby="bk-modalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="portfolio-item-modal-content">
-                        <button class="portfolio-item-modal-close">X</button>
+                        <button class="modal-close-button">X</button>
                         <div class="portfolio-item-modal-details-wrapper">
                             <h3 class="portfolio-item-modal-title">Vendomo marketing website</h3>
                             <h4 class="portfolio-item-modal-subtitle">Real estate startup</h4>
@@ -325,7 +325,7 @@
             <div class="portfolio-item-modal-notebook-mobile modal fade" id="vendomo-crm-modal" tabindex="-1" role="dialog" aria-labelledby="bk-modalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="portfolio-item-modal-content">
-                        <button class="portfolio-item-modal-close">X</button>
+                        <button class="modal-close-button">X</button>
                         <div class="portfolio-item-modal-details-wrapper">
                             <h3 class="portfolio-item-modal-title">Vendomo CRM dashboard</h3>
                             <h4 class="portfolio-item-modal-subtitle">Real estate startup</h4>
@@ -454,7 +454,7 @@
             <div class="portfolio-item-modal-notebook-mobile modal fade" id="foodora-modal" tabindex="-1" role="dialog" aria-labelledby="bk-modalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="portfolio-item-modal-content">
-                        <button class="portfolio-item-modal-close">X</button>
+                        <button class="modal-close-button">X</button>
                         <div class="portfolio-item-modal-details-wrapper">
                             <h3 class="portfolio-item-modal-title">Foodora</h3>
                             <h4 class="portfolio-item-modal-subtitle">Food delivery startup</h4>
@@ -569,7 +569,7 @@
             <div class="portfolio-item-modal-tv modal fade" id="timvision-modal" tabindex="-1" role="dialog" aria-labelledby="bk-modalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="portfolio-item-modal-content">
-                        <button class="portfolio-item-modal-close">X</button>
+                        <button class="modal-close-button">X</button>
                         <div class="portfolio-item-modal-details-wrapper">
                             <h3 class="portfolio-item-modal-title">TIMvision</h3>
                             <h4 class="portfolio-item-modal-subtitle">On demand TV service <br/>for Samsung Smart-TV</h4>
@@ -657,7 +657,7 @@
             <div class="portfolio-item-modal-tv modal fade" id="cubomusica-modal" tabindex="-1" role="dialog" aria-labelledby="bk-modalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="portfolio-item-modal-content">
-                        <button class="portfolio-item-modal-close">X</button>
+                        <button class="modal-close-button">X</button>
                         <div class="portfolio-item-modal-details-wrapper">
                             <h3 class="portfolio-item-modal-title">CuboMusica</h3>
                             <h4 class="portfolio-item-modal-subtitle">Music streaming <br/>for Samsung Smart-TV</h4>
@@ -755,7 +755,7 @@
             <div class="portfolio-item-modal-notebook modal fade" id="unicri-modal" tabindex="-1" role="dialog" aria-labelledby="unicri-modalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="portfolio-item-modal-content">
-                        <button class="portfolio-item-modal-close">X</button>
+                        <button class="modal-close-button">X</button>
                         <div class="portfolio-item-modal-details-wrapper">
                             <h3 class="portfolio-item-modal-title">Websites for United Nations</h3>
                             <h4 class="portfolio-item-modal-subtitle"></h4>
@@ -891,7 +891,7 @@
             <div class="portfolio-item-modal-notebook modal fade" id="others-modal" tabindex="-1" role="dialog" aria-labelledby="others-modalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="portfolio-item-modal-content">
-                        <button class="portfolio-item-modal-close">X</button>
+                        <button class="modal-close-button">X</button>
                         <div class="portfolio-item-modal-details-wrapper">
                             <h3 class="portfolio-item-modal-title">Everything else</h3>
                             <h4 class="portfolio-item-modal-subtitle">Websites for various clients</h4>
@@ -1395,6 +1395,7 @@
                     </p>
                 </div>
             </div>
+
             <div class="about-interest">
                 <figure class="about-interest-image">
                     <img class="me" src="/img/about-photo.png">
@@ -1404,12 +1405,862 @@
                     <p>
                         Started as an experiment, turned into a hobby, photography even became my secondary profession for two years, when, besides coding, I worked on several photo projects. I tried myself with reportage, sports and dancing photography, having a lot of fun with all of them. Now I photograph only for fun, occasionally using my photo retouching skills on web projects.
                         My photos:<br/>
-                        <button class="interest-button">Boxing</button>
-                        <button class="interest-button">Salsa</button>
-                        <button class="interest-button">Buddhist monks</button>
+                        <button data-target-modal="#photo-boxing-modal" class="interest-button interest-modal-link">Boxing</button>
+                        <button data-target-modal="#photo-monks-modal" class="interest-button interest-modal-link">Buddhist monks</button>
+                        <button data-target-modal="#photo-cemetery-modal" class="interest-button interest-modal-link">Monumental cemetery</button>
+                        <button data-target-modal="#photo-muslims-modal" class="interest-button interest-modal-link">Muslims praying</button>
+                        <button data-target-modal="#photo-salsa-modal" class="interest-button interest-modal-link">Salsa dancing</button>
+                        <button data-target-modal="#photo-golf-modal" class="interest-button interest-modal-link">Golf</button>
                     </p>
                 </div>
+                <div class="about-item-modal modal fade" id="photo-boxing-modal" tabindex="-1" role="dialog" aria-labelledby="photo-boxing-modalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="about-item-modal-content">
+                            <button class="modal-close-button">X</button>
+                            <div class="about-item-img-full-wrapper carousel main-carousel slide" id="photo-boxing-main-carousel" >
+                                <ol class="carousel-indicators">
+                                    <li data-target="#photo-boxing-main-carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#photo-boxing-main-carousel" data-slide-to="1"></li>
+                                    <li data-target="#photo-boxing-main-carousel" data-slide-to="2"></li>
+                                    <li data-target="#photo-boxing-main-carousel" data-slide-to="3"></li>
+                                    <li data-target="#photo-boxing-main-carousel" data-slide-to="4"></li>
+                                    <li data-target="#photo-boxing-main-carousel" data-slide-to="5"></li>
+                                    <li data-target="#photo-boxing-main-carousel" data-slide-to="6"></li>
+                                    <li data-target="#photo-boxing-main-carousel" data-slide-to="7"></li>
+                                    <li data-target="#photo-boxing-main-carousel" data-slide-to="8"></li>
+                                    <li data-target="#photo-boxing-main-carousel" data-slide-to="9"></li>
+                                    <li data-target="#photo-boxing-main-carousel" data-slide-to="10"></li>
+                                    <li data-target="#photo-boxing-main-carousel" data-slide-to="11"></li>
+                                    <li data-target="#photo-boxing-main-carousel" data-slide-to="12"></li>
+                                    <li data-target="#photo-boxing-main-carousel" data-slide-to="13"></li>
+                                    <li data-target="#photo-boxing-main-carousel" data-slide-to="14"></li>
+                                    <li data-target="#photo-boxing-main-carousel" data-slide-to="15"></li>
+                                    <li data-target="#photo-boxing-main-carousel" data-slide-to="16"></li>
+                                    <li data-target="#photo-boxing-main-carousel" data-slide-to="17"></li>
+                                    <li data-target="#photo-boxing-main-carousel" data-slide-to="18"></li>
+                                    <li data-target="#photo-boxing-main-carousel" data-slide-to="19"></li>
+                                </ol>
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/boxe/pavel-maximov-boxe-01.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/boxe/pavel-maximov-boxe-02.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/boxe/pavel-maximov-boxe-03.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/boxe/pavel-maximov-boxe-04.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/boxe/pavel-maximov-boxe-05.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/boxe/pavel-maximov-boxe-06.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/boxe/pavel-maximov-boxe-07.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/boxe/pavel-maximov-boxe-08.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/boxe/pavel-maximov-boxe-09.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/boxe/pavel-maximov-boxe-10.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/boxe/pavel-maximov-boxe-11.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/boxe/pavel-maximov-boxe-12.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/boxe/pavel-maximov-boxe-13.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/boxe/pavel-maximov-boxe-14.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/boxe/pavel-maximov-boxe-15.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/boxe/pavel-maximov-boxe-16.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/boxe/pavel-maximov-boxe-17.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/boxe/pavel-maximov-boxe-18.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/boxe/pavel-maximov-boxe-19.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/boxe/pavel-maximov-boxe-20.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#photo-boxing-main-carousel" role="button" data-slide="prev">
+                                <
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#photo-boxing-main-carousel" role="button" data-slide="next">
+                                >
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-item-modal modal fade" id="photo-salsa-modal" tabindex="-1" role="dialog" aria-labelledby="photo-salsa-modalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="about-item-modal-content">
+                            <button class="modal-close-button">X</button>
+                            <div class="about-item-img-full-wrapper carousel main-carousel slide" id="photo-salsa-main-carousel" >
+                                <ol class="carousel-indicators">
+                                    <li data-target="#photo-salsa-main-carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#photo-salsa-main-carousel" data-slide-to="1"></li>
+                                    <li data-target="#photo-salsa-main-carousel" data-slide-to="2"></li>
+                                    <li data-target="#photo-salsa-main-carousel" data-slide-to="3"></li>
+                                    <li data-target="#photo-salsa-main-carousel" data-slide-to="4"></li>
+                                    <li data-target="#photo-salsa-main-carousel" data-slide-to="5"></li>
+                                    <li data-target="#photo-salsa-main-carousel" data-slide-to="6"></li>
+                                    <li data-target="#photo-salsa-main-carousel" data-slide-to="7"></li>
+                                    <li data-target="#photo-salsa-main-carousel" data-slide-to="8"></li>
+                                    <li data-target="#photo-salsa-main-carousel" data-slide-to="9"></li>
+                                    <li data-target="#photo-salsa-main-carousel" data-slide-to="10"></li>
+                                    <li data-target="#photo-salsa-main-carousel" data-slide-to="11"></li>
+                                    <li data-target="#photo-salsa-main-carousel" data-slide-to="12"></li>
+                                    <li data-target="#photo-salsa-main-carousel" data-slide-to="13"></li>
+                                    <li data-target="#photo-salsa-main-carousel" data-slide-to="14"></li>
+                                    <li data-target="#photo-salsa-main-carousel" data-slide-to="15"></li>
+                                    <li data-target="#photo-salsa-main-carousel" data-slide-to="16"></li>
+                                    <li data-target="#photo-salsa-main-carousel" data-slide-to="17"></li>
+                                    <li data-target="#photo-salsa-main-carousel" data-slide-to="18"></li>
+                                    <li data-target="#photo-salsa-main-carousel" data-slide-to="19"></li>
+                                </ol>
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/salsa/pavel-maximov-salsa-01.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/salsa/pavel-maximov-salsa-02.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/salsa/pavel-maximov-salsa-03.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/salsa/pavel-maximov-salsa-04.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/salsa/pavel-maximov-salsa-05.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/salsa/pavel-maximov-salsa-06.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/salsa/pavel-maximov-salsa-07.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/salsa/pavel-maximov-salsa-08.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/salsa/pavel-maximov-salsa-09.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/salsa/pavel-maximov-salsa-10.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/salsa/pavel-maximov-salsa-11.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/salsa/pavel-maximov-salsa-12.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/salsa/pavel-maximov-salsa-13.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/salsa/pavel-maximov-salsa-14.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/salsa/pavel-maximov-salsa-15.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/salsa/pavel-maximov-salsa-16.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/salsa/pavel-maximov-salsa-17.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/salsa/pavel-maximov-salsa-18.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/salsa/pavel-maximov-salsa-19.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/salsa/pavel-maximov-salsa-20.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#photo-salsa-main-carousel" role="button" data-slide="prev">
+                                <
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#photo-salsa-main-carousel" role="button" data-slide="next">
+                                >
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-item-modal modal fade" id="photo-monks-modal" tabindex="-1" role="dialog" aria-labelledby="photo-monks-modalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="about-item-modal-content">
+                            <button class="modal-close-button">X</button>
+                            <div class="about-item-img-full-wrapper carousel main-carousel slide" id="photo-monks-main-carousel" >
+                                <ol class="carousel-indicators">
+                                    <li data-target="#photo-monks-main-carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#photo-monks-main-carousel" data-slide-to="1"></li>
+                                    <li data-target="#photo-monks-main-carousel" data-slide-to="2"></li>
+                                    <li data-target="#photo-monks-main-carousel" data-slide-to="3"></li>
+                                    <li data-target="#photo-monks-main-carousel" data-slide-to="4"></li>
+                                    <li data-target="#photo-monks-main-carousel" data-slide-to="5"></li>
+                                    <li data-target="#photo-monks-main-carousel" data-slide-to="6"></li>
+                                    <li data-target="#photo-monks-main-carousel" data-slide-to="7"></li>
+                                    <li data-target="#photo-monks-main-carousel" data-slide-to="8"></li>
+                                    <li data-target="#photo-monks-main-carousel" data-slide-to="9"></li>
+                                    <li data-target="#photo-monks-main-carousel" data-slide-to="10"></li>
+                                    <li data-target="#photo-monks-main-carousel" data-slide-to="11"></li>
+                                    <li data-target="#photo-monks-main-carousel" data-slide-to="12"></li>
+                                    <li data-target="#photo-monks-main-carousel" data-slide-to="13"></li>
+                                    <li data-target="#photo-monks-main-carousel" data-slide-to="14"></li>
+                                    <li data-target="#photo-monks-main-carousel" data-slide-to="15"></li>
+                                    <li data-target="#photo-monks-main-carousel" data-slide-to="16"></li>
+                                    <li data-target="#photo-monks-main-carousel" data-slide-to="17"></li>
+                                    <li data-target="#photo-monks-main-carousel" data-slide-to="18"></li>
+                                    <li data-target="#photo-monks-main-carousel" data-slide-to="19"></li>
+                                </ol>
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/monks/pavel-maximov-monks-01.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/monks/pavel-maximov-monks-02.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/monks/pavel-maximov-monks-03.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/monks/pavel-maximov-monks-04.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/monks/pavel-maximov-monks-05.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/monks/pavel-maximov-monks-06.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/monks/pavel-maximov-monks-07.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/monks/pavel-maximov-monks-08.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/monks/pavel-maximov-monks-09.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/monks/pavel-maximov-monks-10.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/monks/pavel-maximov-monks-11.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/monks/pavel-maximov-monks-12.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/monks/pavel-maximov-monks-13.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/monks/pavel-maximov-monks-14.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/monks/pavel-maximov-monks-15.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/monks/pavel-maximov-monks-16.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/monks/pavel-maximov-monks-17.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/monks/pavel-maximov-monks-18.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/monks/pavel-maximov-monks-19.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/monks/pavel-maximov-monks-20.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#photo-monks-main-carousel" role="button" data-slide="prev">
+                                <
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#photo-monks-main-carousel" role="button" data-slide="next">
+                                >
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-item-modal modal fade" id="photo-cemetery-modal" tabindex="-1" role="dialog" aria-labelledby="photo-cemetery-modalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="about-item-modal-content">
+                            <button class="modal-close-button">X</button>
+                            <div class="about-item-img-full-wrapper carousel main-carousel slide" id="photo-cemetery-main-carousel" >
+                                <ol class="carousel-indicators">
+                                    <li data-target="#photo-cemetery-main-carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#photo-cemetery-main-carousel" data-slide-to="1"></li>
+                                    <li data-target="#photo-cemetery-main-carousel" data-slide-to="2"></li>
+                                    <li data-target="#photo-cemetery-main-carousel" data-slide-to="3"></li>
+                                    <li data-target="#photo-cemetery-main-carousel" data-slide-to="4"></li>
+                                    <li data-target="#photo-cemetery-main-carousel" data-slide-to="5"></li>
+                                    <li data-target="#photo-cemetery-main-carousel" data-slide-to="6"></li>
+                                    <li data-target="#photo-cemetery-main-carousel" data-slide-to="7"></li>
+                                    <li data-target="#photo-cemetery-main-carousel" data-slide-to="8"></li>
+                                    <li data-target="#photo-cemetery-main-carousel" data-slide-to="9"></li>
+                                    <li data-target="#photo-cemetery-main-carousel" data-slide-to="10"></li>
+                                    <li data-target="#photo-cemetery-main-carousel" data-slide-to="11"></li>
+                                    <li data-target="#photo-cemetery-main-carousel" data-slide-to="12"></li>
+                                    <li data-target="#photo-cemetery-main-carousel" data-slide-to="13"></li>
+                                    <li data-target="#photo-cemetery-main-carousel" data-slide-to="14"></li>
+                                    <li data-target="#photo-cemetery-main-carousel" data-slide-to="15"></li>
+                                    <li data-target="#photo-cemetery-main-carousel" data-slide-to="16"></li>
+                                    <li data-target="#photo-cemetery-main-carousel" data-slide-to="17"></li>
+                                    <li data-target="#photo-cemetery-main-carousel" data-slide-to="18"></li>
+                                    <li data-target="#photo-cemetery-main-carousel" data-slide-to="19"></li>
+                                </ol>
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/cemetery/pavel-maximov-cemetery-01.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/cemetery/pavel-maximov-cemetery-02.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/cemetery/pavel-maximov-cemetery-03.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/cemetery/pavel-maximov-cemetery-04.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/cemetery/pavel-maximov-cemetery-05.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/cemetery/pavel-maximov-cemetery-06.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/cemetery/pavel-maximov-cemetery-07.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/cemetery/pavel-maximov-cemetery-08.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/cemetery/pavel-maximov-cemetery-09.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/cemetery/pavel-maximov-cemetery-10.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/cemetery/pavel-maximov-cemetery-11.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/cemetery/pavel-maximov-cemetery-12.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/cemetery/pavel-maximov-cemetery-13.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/cemetery/pavel-maximov-cemetery-14.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/cemetery/pavel-maximov-cemetery-15.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/cemetery/pavel-maximov-cemetery-16.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/cemetery/pavel-maximov-cemetery-17.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/cemetery/pavel-maximov-cemetery-18.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/cemetery/pavel-maximov-cemetery-19.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/cemetery/pavel-maximov-cemetery-20.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#photo-cemetery-main-carousel" role="button" data-slide="prev">
+                                <
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#photo-cemetery-main-carousel" role="button" data-slide="next">
+                                >
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-item-modal modal fade" id="photo-muslims-modal" tabindex="-1" role="dialog" aria-labelledby="photo-muslims-modalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="about-item-modal-content">
+                            <button class="modal-close-button">X</button>
+                            <div class="about-item-img-full-wrapper carousel main-carousel slide" id="photo-muslims-main-carousel" >
+                                <ol class="carousel-indicators">
+                                    <li data-target="#photo-muslims-main-carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#photo-muslims-main-carousel" data-slide-to="1"></li>
+                                    <li data-target="#photo-muslims-main-carousel" data-slide-to="2"></li>
+                                    <li data-target="#photo-muslims-main-carousel" data-slide-to="3"></li>
+                                    <li data-target="#photo-muslims-main-carousel" data-slide-to="4"></li>
+                                    <li data-target="#photo-muslims-main-carousel" data-slide-to="5"></li>
+                                    <li data-target="#photo-muslims-main-carousel" data-slide-to="6"></li>
+                                    <li data-target="#photo-muslims-main-carousel" data-slide-to="7"></li>
+                                    <li data-target="#photo-muslims-main-carousel" data-slide-to="8"></li>
+                                    <li data-target="#photo-muslims-main-carousel" data-slide-to="9"></li>
+                                    <li data-target="#photo-muslims-main-carousel" data-slide-to="10"></li>
+                                    <li data-target="#photo-muslims-main-carousel" data-slide-to="11"></li>
+                                    <li data-target="#photo-muslims-main-carousel" data-slide-to="12"></li>
+                                    <li data-target="#photo-muslims-main-carousel" data-slide-to="13"></li>
+                                    <li data-target="#photo-muslims-main-carousel" data-slide-to="14"></li>
+                                    <li data-target="#photo-muslims-main-carousel" data-slide-to="15"></li>
+                                    <li data-target="#photo-muslims-main-carousel" data-slide-to="16"></li>
+                                    <li data-target="#photo-muslims-main-carousel" data-slide-to="17"></li>
+                                    <li data-target="#photo-muslims-main-carousel" data-slide-to="18"></li>
+                                    <li data-target="#photo-muslims-main-carousel" data-slide-to="19"></li>
+                                </ol>
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/muslims/pavel-maximov-muslims-01.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/muslims/pavel-maximov-muslims-02.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/muslims/pavel-maximov-muslims-03.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/muslims/pavel-maximov-muslims-04.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/muslims/pavel-maximov-muslims-05.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/muslims/pavel-maximov-muslims-06.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/muslims/pavel-maximov-muslims-07.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/muslims/pavel-maximov-muslims-08.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/muslims/pavel-maximov-muslims-09.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/muslims/pavel-maximov-muslims-10.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/muslims/pavel-maximov-muslims-11.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/muslims/pavel-maximov-muslims-12.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/muslims/pavel-maximov-muslims-13.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/muslims/pavel-maximov-muslims-14.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/muslims/pavel-maximov-muslims-15.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/muslims/pavel-maximov-muslims-16.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/muslims/pavel-maximov-muslims-17.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/muslims/pavel-maximov-muslims-18.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/muslims/pavel-maximov-muslims-19.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/muslims/pavel-maximov-muslims-20.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#photo-muslims-main-carousel" role="button" data-slide="prev">
+                                <
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#photo-muslims-main-carousel" role="button" data-slide="next">
+                                >
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-item-modal modal fade" id="photo-golf-modal" tabindex="-1" role="dialog" aria-labelledby="photo-golf-modalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="about-item-modal-content">
+                            <button class="modal-close-button">X</button>
+                            <div class="about-item-img-full-wrapper carousel main-carousel slide" id="photo-golf-main-carousel" >
+                                <ol class="carousel-indicators">
+                                    <li data-target="#photo-golf-main-carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#photo-golf-main-carousel" data-slide-to="1"></li>
+                                    <li data-target="#photo-golf-main-carousel" data-slide-to="2"></li>
+                                    <li data-target="#photo-golf-main-carousel" data-slide-to="3"></li>
+                                    <li data-target="#photo-golf-main-carousel" data-slide-to="4"></li>
+                                    <li data-target="#photo-golf-main-carousel" data-slide-to="5"></li>
+                                    <li data-target="#photo-golf-main-carousel" data-slide-to="6"></li>
+                                    <li data-target="#photo-golf-main-carousel" data-slide-to="7"></li>
+                                    <li data-target="#photo-golf-main-carousel" data-slide-to="8"></li>
+                                    <li data-target="#photo-golf-main-carousel" data-slide-to="9"></li>
+                                    <li data-target="#photo-golf-main-carousel" data-slide-to="10"></li>
+                                    <li data-target="#photo-golf-main-carousel" data-slide-to="11"></li>
+                                    <li data-target="#photo-golf-main-carousel" data-slide-to="12"></li>
+                                    <li data-target="#photo-golf-main-carousel" data-slide-to="13"></li>
+                                    <li data-target="#photo-golf-main-carousel" data-slide-to="14"></li>
+                                    <li data-target="#photo-golf-main-carousel" data-slide-to="15"></li>
+                                    <li data-target="#photo-golf-main-carousel" data-slide-to="16"></li>
+                                    <li data-target="#photo-golf-main-carousel" data-slide-to="17"></li>
+                                    <li data-target="#photo-golf-main-carousel" data-slide-to="18"></li>
+                                    <li data-target="#photo-golf-main-carousel" data-slide-to="19"></li>
+                                </ol>
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/golf/pavel-maximov-golf-01.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/golf/pavel-maximov-golf-02.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/golf/pavel-maximov-golf-03.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/golf/pavel-maximov-golf-04.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/golf/pavel-maximov-golf-05.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/golf/pavel-maximov-golf-06.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/golf/pavel-maximov-golf-07.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/golf/pavel-maximov-golf-08.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/golf/pavel-maximov-golf-09.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/golf/pavel-maximov-golf-10.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/golf/pavel-maximov-golf-11.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/golf/pavel-maximov-golf-12.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/golf/pavel-maximov-golf-13.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/golf/pavel-maximov-golf-14.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/golf/pavel-maximov-golf-15.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/golf/pavel-maximov-golf-16.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/golf/pavel-maximov-golf-17.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/golf/pavel-maximov-golf-18.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/golf/pavel-maximov-golf-19.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item tse-scrollable wrapper">
+                                        <div class="tse-content">
+                                            <img class="about-item-img-full" src="/img/photo/golf/pavel-maximov-golf-20.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#photo-golf-main-carousel" role="button" data-slide="prev">
+                                <
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#photo-golf-main-carousel" role="button" data-slide="next">
+                                >
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
+
             <div class="about-interest">
                 <figure class="about-interest-image">
                     <img class="me" src="/img/about-video.png">
@@ -1427,6 +2278,7 @@
                     </p>
                 </div>
             </div>
+
             <div class="about-interest">
                 <figure class="about-interest-image">
                     <img class="me" src="/img/about-design.png">
@@ -1454,7 +2306,7 @@
             <span class="section-header-subtitle">Front-end Developer</span>
             <h2 class="section-header-title">Contact</h2>
             <nav class="section-header-nav">
-                <button class="article-header__nav__button" onClick="scrollToElement('#portfolio')">Projects</button><button class="article-header__nav__button" onClick="scrollToElement('#skills')">Skills</button><button class="article-header__nav__button" onClick="scrollToElement('#experience')">Experience</button><button class="article-header__nav__button" onClick="scrollToElement('#about')">About</button><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Contact</button>
+                <button class="article-header__nav__button" onClick="scrollToElement('#about')">Projects</button><button class="article-header__nav__button" onClick="scrollToElement('#skills')">Skills</button><button class="article-header__nav__button" onClick="scrollToElement('#experience')">Experience</button><button class="article-header__nav__button" onClick="scrollToElement('#about')">About</button><button class="article-header__nav__button" onClick="scrollToElement('#contact')">Contact</button>
                 <br/><a class="article-header__nav__button" href="https://github.com/pavelmaximov" target="_blank">GitHub</a><a class="article-header__nav__button" href="http://www.pavelmaximov.com/resume-frontend-pavel-maximov.pdf" target="_blank">Resume</a>
             </nav>
         </header>

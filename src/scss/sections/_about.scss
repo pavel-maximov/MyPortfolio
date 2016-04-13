@@ -115,4 +115,135 @@
     width: 100%;
     max-width: 400px;
   }
+
+
+  /////////  MODAL  /////////
+
+  .about-item-modal {
+
+    & .modal-dialog {
+      width: 97%;
+      height: 90%;
+      max-width: none;
+    }
+
+    & .about-item-subtitle {
+      margin-bottom: 2rem;
+      font-family: $font-family-work-sans-thin;
+      font-size: 1.8rem;
+    }
+
+    & .about-item-modal-details-wrapper {
+      position: fixed;
+      left: 60px;
+      top: 40px;
+      width: 17%;
+    }
+
+    & .about-item-modal-title {
+      @include text-regular-title-small();
+      margin-bottom: 0.3rem;
+    }
+
+    & .about-item-modal-subtitle {
+      @include text-thin-title-small();
+      margin-bottom: 1.4rem;
+    }
+
+    & .about-item-img-full-wrapper {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: calc(15% + 90px);
+      right: calc(15% + 90px);
+      max-width: none;
+    }
+
+    & .carousel-item-scroll-teaser {
+      padding-top: 38%;
+    }
+
+    & .wrapper {
+      width: 100%;
+      height: 100%;
+    }
+
+    & .modal-close-button {
+      width: 150px;
+      height: 150px;
+      color: #fff;
+      font-size: 7rem;
+      font-family: $font-family-work-sans-thin;
+      position: fixed;
+      top: -30px;
+      right: -30px;
+      z-index: 1;
+      background: transparent;
+      border: none;
+      outline: none !important;
+
+      &:hover,
+      &:focus {
+        color: #999;
+      }
+    }
+
+    .carousel-control{
+      top: calc(50% - 45px);
+      color: #fff;
+
+      &:hover,
+      &:focus {
+        color: #999;
+      }
+    }
+
+    .carousel-control.left {
+      left: 13%;
+    }
+
+    .carousel-control.right {
+      right: 13%;
+    }
+
+    .carousel-indicators {
+      bottom: -2%;
+      left: 13%;
+      right: 13%;
+    }
+
+    .carousel-indicators li {
+      border: 1px solid #fff;
+    }
+
+    .carousel-indicators .active {
+      border: 1px solid #fff;
+      background-color: #fff;
+    }
+  }
+
+  .tse-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .carousel-labels {
+    @include text-light-title-small();
+    position: absolute;
+    left: -1%;
+    top: -3.5%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .carousel-label {
+    display: none;
+  }
+
+  .carousel-label.active  {
+    display: block;
+  }
 }

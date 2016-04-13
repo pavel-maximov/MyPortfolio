@@ -5153,6 +5153,9 @@ body {
 .modal-backdrop {
   background-color: #fff; }
 
+.about-model-open .modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.9); }
+
 .carousel-control {
   position: fixed;
   color: #666;
@@ -5197,6 +5200,32 @@ body {
   font-size: 5rem;
   font-family: "worksans-thin", sans-serif;
   opacity: 0.5; }
+
+.carousel-item-scroll-teaser {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  text-align: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: s-resize; }
+  .carousel-item-scroll-teaser .carousel-item-scroll-teaser-image {
+    width: 150px;
+    height: 71px; }
+  .carousel-item-scroll-teaser .carousel-item-scroll-teaser-text {
+    font-size: 1.8rem;
+    font-family: "worksans-regular", sans-serif;
+    margin-top: 1rem; }
+  .carousel-item-scroll-teaser .carousel-item-scroll-teaser-arrow {
+    font-size: 3rem;
+    line-height: 1;
+    transform: rotate(-90deg); }
 
 #intro .section-header {
   width: 50%; }
@@ -5766,7 +5795,7 @@ body {
       width: 100%;
       height: 100%;
       max-width: 1200px; }
-  #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-close, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-close, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-close {
+  #portfolio .portfolio-item-modal-notebook-mobile .modal-close-button, #portfolio .portfolio-item-modal-tv .modal-close-button, #portfolio .portfolio-item-modal-notebook .modal-close-button {
     width: 150px;
     height: 150px;
     color: #666;
@@ -5779,33 +5808,8 @@ body {
     background: transparent;
     border: none;
     outline: none !important; }
-    #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-close:hover, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-close:hover, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-close:hover, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-close:focus, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-close:focus, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-close:focus {
+    #portfolio .portfolio-item-modal-notebook-mobile .modal-close-button:hover, #portfolio .portfolio-item-modal-tv .modal-close-button:hover, #portfolio .portfolio-item-modal-notebook .modal-close-button:hover, #portfolio .portfolio-item-modal-notebook-mobile .modal-close-button:focus, #portfolio .portfolio-item-modal-tv .modal-close-button:focus, #portfolio .portfolio-item-modal-notebook .modal-close-button:focus {
       color: #999; }
-  #portfolio .portfolio-item-modal-notebook-mobile .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-tv .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook .carousel-item-scroll-teaser {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: white;
-    text-align: center;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    cursor: s-resize; }
-    #portfolio .portfolio-item-modal-notebook-mobile .carousel-item-scroll-teaser .carousel-item-scroll-teaser-image, #portfolio .portfolio-item-modal-tv .carousel-item-scroll-teaser .carousel-item-scroll-teaser-image, #portfolio .portfolio-item-modal-notebook .carousel-item-scroll-teaser .carousel-item-scroll-teaser-image {
-      width: 150px;
-      height: 71px; }
-    #portfolio .portfolio-item-modal-notebook-mobile .carousel-item-scroll-teaser .carousel-item-scroll-teaser-text, #portfolio .portfolio-item-modal-tv .carousel-item-scroll-teaser .carousel-item-scroll-teaser-text, #portfolio .portfolio-item-modal-notebook .carousel-item-scroll-teaser .carousel-item-scroll-teaser-text {
-      font-size: 1.8rem;
-      font-family: "worksans-regular", sans-serif;
-      margin-top: 1rem; }
-    #portfolio .portfolio-item-modal-notebook-mobile .carousel-item-scroll-teaser .carousel-item-scroll-teaser-arrow, #portfolio .portfolio-item-modal-tv .carousel-item-scroll-teaser .carousel-item-scroll-teaser-arrow, #portfolio .portfolio-item-modal-notebook .carousel-item-scroll-teaser .carousel-item-scroll-teaser-arrow {
-      font-size: 3rem;
-      line-height: 1;
-      transform: rotate(-90deg); }
   #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-mobile .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-tv .portfolio-item-mobile .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook .portfolio-item-mobile .carousel-item-scroll-teaser {
     padding-top: 66%; }
   #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-notebook .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-tv .portfolio-item-notebook .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook .portfolio-item-notebook .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-ande .carousel-item-scroll-teaser, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-ande .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-ande .carousel-item-scroll-teaser, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-ande .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-ande .carousel-item-scroll-teaser, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-ande .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-eusec .carousel-item-scroll-teaser, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-eusec .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-eusec .carousel-item-scroll-teaser, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-eusec .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-eusec .carousel-item-scroll-teaser, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-eusec .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-cbrn .carousel-item-scroll-teaser, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-cbrn .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-cbrn .carousel-item-scroll-teaser, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-cbrn .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-cbrn .carousel-item-scroll-teaser, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-cbrn .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-ipo .carousel-item-scroll-teaser, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-ipo .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-ipo .carousel-item-scroll-teaser, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-ipo .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-ipo .carousel-item-scroll-teaser, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-ipo .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-lab .carousel-item-scroll-teaser, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-lab .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-lab .carousel-item-scroll-teaser, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-lab .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-lab .carousel-item-scroll-teaser, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-lab .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-school .carousel-item-scroll-teaser, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-school .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-school .carousel-item-scroll-teaser, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-school .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-school .carousel-item-scroll-teaser, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-school .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-davide .carousel-item-scroll-teaser, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-davide .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-davide .carousel-item-scroll-teaser, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-davide .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-davide .carousel-item-scroll-teaser, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-davide .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-milena .carousel-item-scroll-teaser, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-milena .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-milena .carousel-item-scroll-teaser, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-milena .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-milena .carousel-item-scroll-teaser, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-milena .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-pandora .carousel-item-scroll-teaser, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-pandora .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-pandora .carousel-item-scroll-teaser, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-pandora .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-pandora .carousel-item-scroll-teaser, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-pandora .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-acqua .carousel-item-scroll-teaser, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-acqua .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-acqua .carousel-item-scroll-teaser, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-acqua .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-acqua .carousel-item-scroll-teaser, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-acqua .carousel-item-scroll-teaser {
@@ -6101,6 +6105,96 @@ body {
     left: 10px;
     width: 100%;
     max-width: 400px; }
+  #about .about-item-modal .modal-dialog {
+    width: 97%;
+    height: 90%;
+    max-width: none; }
+  #about .about-item-modal .about-item-subtitle {
+    margin-bottom: 2rem;
+    font-family: "worksans-thin", sans-serif;
+    font-size: 1.8rem; }
+  #about .about-item-modal .about-item-modal-details-wrapper {
+    position: fixed;
+    left: 60px;
+    top: 40px;
+    width: 17%; }
+  #about .about-item-modal .about-item-modal-title {
+    font-family: "worksans-regular", sans-serif;
+    font-size: 2.2rem;
+    letter-spacing: -0.12rem;
+    line-height: 1.1;
+    margin-bottom: 0.3rem; }
+  #about .about-item-modal .about-item-modal-subtitle {
+    font-family: "worksans-thin", sans-serif;
+    font-size: 1.7rem;
+    line-height: 1.2;
+    letter-spacing: 0.03rem;
+    margin-bottom: 1.4rem; }
+  #about .about-item-modal .about-item-img-full-wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: calc(15% + 90px);
+    right: calc(15% + 90px);
+    max-width: none; }
+  #about .about-item-modal .carousel-item-scroll-teaser {
+    padding-top: 38%; }
+  #about .about-item-modal .wrapper {
+    width: 100%;
+    height: 100%; }
+  #about .about-item-modal .modal-close-button {
+    width: 150px;
+    height: 150px;
+    color: #fff;
+    font-size: 7rem;
+    font-family: "worksans-thin", sans-serif;
+    position: fixed;
+    top: -30px;
+    right: -30px;
+    z-index: 1;
+    background: transparent;
+    border: none;
+    outline: none !important; }
+    #about .about-item-modal .modal-close-button:hover, #about .about-item-modal .modal-close-button:focus {
+      color: #999; }
+  #about .about-item-modal .carousel-control {
+    top: calc(50% - 45px);
+    color: #fff; }
+    #about .about-item-modal .carousel-control:hover, #about .about-item-modal .carousel-control:focus {
+      color: #999; }
+  #about .about-item-modal .carousel-control.left {
+    left: 13%; }
+  #about .about-item-modal .carousel-control.right {
+    right: 13%; }
+  #about .about-item-modal .carousel-indicators {
+    bottom: -2%;
+    left: 13%;
+    right: 13%; }
+  #about .about-item-modal .carousel-indicators li {
+    border: 1px solid #fff; }
+  #about .about-item-modal .carousel-indicators .active {
+    border: 1px solid #fff;
+    background-color: #fff; }
+  #about .tse-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; }
+  #about .carousel-labels {
+    font-family: "worksans-light", sans-serif;
+    font-size: 2rem;
+    letter-spacing: -0.08rem;
+    line-height: 1.2;
+    position: absolute;
+    left: -1%;
+    top: -3.5%;
+    width: 100%;
+    text-align: center; }
+  #about .carousel-label {
+    display: none; }
+  #about .carousel-label.active {
+    display: block; }
 
 #contact {
   padding-right: 5%;
