@@ -120,10 +120,7 @@ function initSlide($slide, $modal) {
         if ($tseContent.outerHeight() > $slide.outerHeight()) {
             $slide.TrackpadScrollEmulator({ autoHide: false });
 
-            if ($modal.data('scroll-teaser-needed')) {
-                $slide.find('.tse-scroll-content').one('scroll', function() {
-                    $modal.find('.carousel-item-scroll-teaser').remove();
-                });
+            if ($slide.data('scroll-teaser-needed')) {
                 $slide.find('.tse-content').append('' +
                     '<div class="carousel-item-scroll-teaser">' +
                     '<img class="carousel-item-scroll-teaser-image" src="/img/mouse-touch.svg">' +
@@ -131,12 +128,21 @@ function initSlide($slide, $modal) {
                     '<div class="carousel-item-scroll-teaser-arrow"><</div>' +
                     '</div>'
                 );
-                $modal.addClass('scroll-teaser-enabled');
+                $slide.addClass('scroll-teaser-enabled');
                 $modal.find('.tse-scrollable.active .tse-scroll-content').one('scroll', function() {
-                    $modal.find('.carousel-item-scroll-teaser').remove();
-                    $modal.data('scroll-teaser-needed', false);
-                    $modal.removeClass('scroll-teaser-enabled');
-                    $('.modal').data('scroll-teaser-needed', false);
+                    var $this = $(this);
+                    var $parentDeviceType;
+                    var $parentDeviceTypeClass;
+
+                    if ($this.parents('.portfolio-item-notebook').length) {
+                        $parentDeviceTypeClass = '.portfolio-item-notebook';
+                    } else if ($this.parents('.portfolio-item-mobile').length) {
+                        $parentDeviceTypeClass = '.portfolio-item-mobile';
+                    }
+                    $parentDeviceType = $('.modal').find($parentDeviceTypeClass + ' .carousel-item');
+                    $parentDeviceType.find('.carousel-item-scroll-teaser').remove();
+                    $parentDeviceType.removeClass('scroll-teaser-enabled');
+                    $parentDeviceType.data('scroll-teaser-needed', false);
                 });
             }
         } else {
@@ -208,12 +214,12 @@ $document.ready(function () {
     onScroll();
  
     $('.modal')
-        .data('scroll-teaser-needed', true)
         .one('shown.bs.modal', function() {
             var $this = $(this);
     
             initModal($this, $this.find('.main-carousel'), $this.find('.secondary-carousel'));
-        });
+        })
+        .find('.tse-scrollable').data('scroll-teaser-needed', true);
     
     $('.portfolio-item-img-preview')
         .click(function() {

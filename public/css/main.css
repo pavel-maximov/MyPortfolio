@@ -5346,7 +5346,7 @@ body {
     letter-spacing: -0.12rem;
     line-height: 1.1;
     margin-top: 0;
-    margin-bottom: 0.8rem; }
+    margin-bottom: 0.4rem; }
   #skills .skills-group-javascript, #skills .skills-group-css, #skills .skills-group-html, #skills .skills-group-tools, #skills .skills-group-coding, #skills .skills-group-uxui, #skills .skills-group-backend {
     position: absolute;
     top: 50%;
@@ -6052,17 +6052,36 @@ body {
         color: rgba(0, 0, 0, 0.3); }
   #about .about-interest-content {
     padding-right: 9%;
-    padding-left: 0; }
+    padding-left: 0;
+    display: flex;
+    align-items: center; }
   #about .about-interest {
     display: flex;
     margin-bottom: 5rem;
-    align-items: center; }
-    #about .about-interest:nth-child(even) .about-interest-image {
-      order: 2; }
+    align-items: center;
+    justify-content: center; }
+    #about .about-interest:nth-child(even) .about-interest-title {
+      order: 2;
+      margin: 0 0 0 3rem; }
     #about .about-interest:nth-child(even) .about-interest-content {
       text-align: right;
       padding-left: 9%;
       padding-right: 0; }
+    #about .about-interest .about-interest-title {
+      font-family: "worksans-thin", sans-serif;
+      font-size: 2.4rem;
+      line-height: 1.2;
+      width: 200px;
+      height: 200px;
+      margin: 0 3rem 0 0;
+      padding: 3rem;
+      border-radius: 50%;
+      border: 1px dotted #8c8c8c;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex: 1 0 auto; }
   #about .about-interest-image {
     margin: 0 3rem;
     min-width: 21%;
@@ -6087,16 +6106,16 @@ body {
     margin-bottom: 4rem;
     text-align: center;
     width: 100%; }
-  #about .about-interest-title {
-    font-family: "worksans-thin", sans-serif;
-    font-size: 2.4rem;
-    line-height: 1.2; }
+    #about .about-intro .about-interest-title {
+      font-family: "worksans-thin", sans-serif;
+      font-size: 2.4rem;
+      line-height: 1.2; }
   #about .about-interest-title-main {
     font-family: "worksans-regular", sans-serif;
     font-size: 2.7rem;
     letter-spacing: -0.2rem;
     line-height: 1.2;
-    margin-bottom: 0.5rem;
+    margin-bottom: 3rem;
     width: 100%;
     text-align: center; }
   #about .about-photo {
