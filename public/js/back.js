@@ -115,54 +115,76 @@ function initCarousel($controlsContainer, $mainCarousel, $secondaryCarousel) {
 function initSlide($slide, $modal) {
     var $tseContent = $slide.find('.tse-content');
 
-    if (!$slide.data('tse-initialised')) {
-        $slide.data('tse-initialised', true);
-        if ($tseContent.outerHeight() > $slide.outerHeight()) {
-            $slide.TrackpadScrollEmulator({ autoHide: false });
+    // TODO solve race condition between mobile and notebook images
+    $slide.find('.portfolio-item-img-full').one('load', function() {
+        var $parentDeviceTypeClass;
 
-            if ($slide.data('scroll-teaser-needed')) {
-                $slide.find('.tse-content').append('' +
-                    '<div class="carousel-item-scroll-teaser">' +
-                    '<img class="carousel-item-scroll-teaser-image" src="/img/mouse-touch.svg">' +
-                    '<div class="carousel-item-scroll-teaser-text">scroll down</div>' +
-                    '<div class="carousel-item-scroll-teaser-arrow"><</div>' +
-                    '</div>'
-                );
-                $slide.addClass('scroll-teaser-enabled');
-                $modal.find('.tse-scrollable.active .tse-scroll-content').one('scroll', function() {
-                    var $this = $(this);
-                    var $parentDeviceType;
-                    var $parentDeviceTypeClass;
-
-                    if ($this.parents('.portfolio-item-notebook').length) {
-                        $parentDeviceTypeClass = '.portfolio-item-notebook';
-                    } else if ($this.parents('.portfolio-item-mobile').length) {
-                        $parentDeviceTypeClass = '.portfolio-item-mobile';
-                    }
-                    $parentDeviceType = $('.modal').find($parentDeviceTypeClass + ' .carousel-item');
-                    $parentDeviceType.find('.carousel-item-scroll-teaser').remove();
-                    $parentDeviceType.removeClass('scroll-teaser-enabled');
-                    $parentDeviceType.data('scroll-teaser-needed', false);
-                });
-            }
-        } else {
-            $slide.find('.carousel-item-scroll-teaser').remove();
+        if ($slide.parents('.portfolio-item-notebook').length) {
+            $parentDeviceTypeClass = '.portfolio-item-notebook';
+        } else if ($slide.parents('.portfolio-item-mobile').length) {
+            $parentDeviceTypeClass = '.portfolio-item-mobile';
         }
+
+        if (!$slide.data('tse-initialised')) {
+            $slide.data('tse-initialised', true);
+            if ($tseContent.outerHeight() > $slide.outerHeight()) {
+                $slide.TrackpadScrollEmulator({ autoHide: false });
+
+                // TODO refactor this, it's ugly
+                if (($parentDeviceTypeClass === '.portfolio-item-notebook' && $body.data('notebook-scroll-teaser-needed')) ||
+                    ($parentDeviceTypeClass === '.portfolio-item-mobile' && $body.data('mobile-scroll-teaser-needed'))
+                ) {
+                    $slide.find('.tse-content').append('' +
+                        '<div class="carousel-item-scroll-teaser">' +
+                        '<img class="carousel-item-scroll-teaser-image" src="/img/mouse-touch.svg">' +
+                        '<div class="carousel-item-scroll-teaser-text">scroll down</div>' +
+                        '<div class="carousel-item-scroll-teaser-arrow"><</div>' +
+                        '</div>'
+                    );
+                    $slide.addClass('scroll-teaser-enabled');
+                    $modal.find('.tse-scrollable.active .tse-scroll-content').one('scroll', function() {
+                        var $this = $(this);
+                        var $parentDeviceType;
+                        var $parentDeviceTypeClass;
+
+                        // TODO refactor this, it's ugly
+                        if ($this.parents('.portfolio-item-notebook').length) {
+                            $parentDeviceTypeClass = '.portfolio-item-notebook';
+                            $body.data('notebook-scroll-teaser-needed', false);
+                        } else if ($this.parents('.portfolio-item-mobile').length) {
+                            $parentDeviceTypeClass = '.portfolio-item-mobile';
+                            $body.data('mobile-scroll-teaser-needed', false);
+                        }
+
+                        $parentDeviceType = $('.modal').find($parentDeviceTypeClass + ' .carousel-item');
+                        $parentDeviceType.find('.carousel-item-scroll-teaser').remove();
+                        $parentDeviceType.removeClass('scroll-teaser-enabled');
+                    });
+                }
+            } else {
+                $slide.find('.carousel-item-scroll-teaser').remove();
+            }
+        }
+    }).each(function() {
+        if (this.complete) {
+            $(this).load();
+        }
+    });
+}
+
+function closeModal() {
+    var $modal = $(this).closest('.modal');
+    var $video = $modal.find('video');
+
+    $body.removeClass('about-model-open');
+    if ($video.length) {
+        $video[0].pause();
     }
+    $modal.modal('hide');
 }
 
 function initModal($modal, $mainCarousel, $secondaryCarousel) {
     initCarousel($modal, $mainCarousel, $secondaryCarousel);
-
-    $modal.find('.modal-close-button').click(function() {
-        var $video = $modal.find('video');
-
-        $body.removeClass('about-model-open');
-        if ($video.length) {
-            $video[0].pause();
-        }
-        $modal.modal('hide');
-    });
 
     $modal.find('.carousel').on('slid.bs.carousel', function() {
         initSlide($(this).find('.tse-scrollable.active'), $modal);
@@ -196,6 +218,7 @@ function setTeaserTitleVisibility(scrollPosition) {
     }
 }
 
+
 $document.ready(function () {
     $('[data-toggle="offcanvas"]').click(function () {
         $('[data-offcanvas="content"]').toggleClass('offcanvas-active');
@@ -221,11 +244,23 @@ $document.ready(function () {
     $('.modal')
         .one('shown.bs.modal', function() {
             var $this = $(this);
-    
-            initModal($this, $this.find('.main-carousel'), $this.find('.secondary-carousel'));
+
+            if ($this.find('.portfolio-item-modal-content').length) {
+                $this.find('.portfolio-item-modal-content').load($this.data('modal-src'), function() {
+                    initModal($this, $this.find('.main-carousel'), $this.find('.secondary-carousel'));
+                })
+            } else if ($this.find('.about-item-modal-content').length) {
+                $this.find('.about-item-modal-content').load($this.data('modal-src'), function() {
+                    initModal($this, $this.find('.main-carousel'), $this.find('.secondary-carousel'));
+                })
+            }
         })
-        .find('.tse-scrollable').data('scroll-teaser-needed', true);
-    
+        .append('<button class="modal-close-button">X</button>');
+
+    $('.modal').find('.modal-close-button').click(closeModal);
+    $body.data('notebook-scroll-teaser-needed', true);
+    $body.data('mobile-scroll-teaser-needed', true);
+
     $('.portfolio-item-img-preview')
         .click(function() {
             $(this).closest('.js-portfolio-item').find('.modal').modal();

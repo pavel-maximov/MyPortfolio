@@ -682,6 +682,7 @@
       }
     }
 
+    // TODO this style is duplicated with portfolio
     & .modal-close-button {
       width: 150px;
       height: 150px;
@@ -689,8 +690,8 @@
       font-size: 7rem;
       font-family: $font-family-work-sans-thin;
       position: fixed;
-      top: -30px;
-      right: -30px;
+      top: 0;
+      right: 0;
       z-index: 1;
       background: transparent;
       border: none;
