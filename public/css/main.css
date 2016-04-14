@@ -1483,6 +1483,176 @@ pre {
   .offset-xl-11 {
     margin-left: 91.66667%; } }
 
+@media (min-width: 1680px) {
+  .col-xxl {
+    position: relative;
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px; }
+  .col-xxl-1 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%; }
+  .col-xxl-2 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%; }
+  .col-xxl-3 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 25%;
+    max-width: 25%; }
+  .col-xxl-4 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%; }
+  .col-xxl-5 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%; }
+  .col-xxl-6 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 50%;
+    max-width: 50%; }
+  .col-xxl-7 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%; }
+  .col-xxl-8 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%; }
+  .col-xxl-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 75%;
+    max-width: 75%; }
+  .col-xxl-10 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%; }
+  .col-xxl-11 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%; }
+  .col-xxl-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 100%;
+    max-width: 100%; }
+  .pull-xxl-0 {
+    right: auto; }
+  .pull-xxl-1 {
+    right: 8.33333%; }
+  .pull-xxl-2 {
+    right: 16.66667%; }
+  .pull-xxl-3 {
+    right: 25%; }
+  .pull-xxl-4 {
+    right: 33.33333%; }
+  .pull-xxl-5 {
+    right: 41.66667%; }
+  .pull-xxl-6 {
+    right: 50%; }
+  .pull-xxl-7 {
+    right: 58.33333%; }
+  .pull-xxl-8 {
+    right: 66.66667%; }
+  .pull-xxl-9 {
+    right: 75%; }
+  .pull-xxl-10 {
+    right: 83.33333%; }
+  .pull-xxl-11 {
+    right: 91.66667%; }
+  .pull-xxl-12 {
+    right: 100%; }
+  .push-xxl-0 {
+    left: auto; }
+  .push-xxl-1 {
+    left: 8.33333%; }
+  .push-xxl-2 {
+    left: 16.66667%; }
+  .push-xxl-3 {
+    left: 25%; }
+  .push-xxl-4 {
+    left: 33.33333%; }
+  .push-xxl-5 {
+    left: 41.66667%; }
+  .push-xxl-6 {
+    left: 50%; }
+  .push-xxl-7 {
+    left: 58.33333%; }
+  .push-xxl-8 {
+    left: 66.66667%; }
+  .push-xxl-9 {
+    left: 75%; }
+  .push-xxl-10 {
+    left: 83.33333%; }
+  .push-xxl-11 {
+    left: 91.66667%; }
+  .push-xxl-12 {
+    left: 100%; }
+  .offset-xxl-0 {
+    margin-left: 0%; }
+  .offset-xxl-1 {
+    margin-left: 8.33333%; }
+  .offset-xxl-2 {
+    margin-left: 16.66667%; }
+  .offset-xxl-3 {
+    margin-left: 25%; }
+  .offset-xxl-4 {
+    margin-left: 33.33333%; }
+  .offset-xxl-5 {
+    margin-left: 41.66667%; }
+  .offset-xxl-6 {
+    margin-left: 50%; }
+  .offset-xxl-7 {
+    margin-left: 58.33333%; }
+  .offset-xxl-8 {
+    margin-left: 66.66667%; }
+  .offset-xxl-9 {
+    margin-left: 75%; }
+  .offset-xxl-10 {
+    margin-left: 83.33333%; }
+  .offset-xxl-11 {
+    margin-left: 91.66667%; } }
+
 .table {
   width: 100%;
   max-width: 100%;
@@ -4211,6 +4381,14 @@ a.bg-danger:focus, a.bg-danger:hover {
   .pull-xl-none {
     float: none !important; } }
 
+@media (min-width: 1680px) {
+  .pull-xxl-left {
+    float: left !important; }
+  .pull-xxl-right {
+    float: right !important; }
+  .pull-xxl-none {
+    float: none !important; } }
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -4476,6 +4654,14 @@ a.bg-danger:focus, a.bg-danger:hover {
   .text-xl-center {
     text-align: center !important; } }
 
+@media (min-width: 1680px) {
+  .text-xxl-left {
+    text-align: left !important; }
+  .text-xxl-right {
+    text-align: right !important; }
+  .text-xxl-center {
+    text-align: center !important; } }
+
 .text-lowercase {
   text-transform: lowercase !important; }
 
@@ -4575,7 +4761,15 @@ a.text-danger:focus, a.text-danger:hover {
   .hidden-xl-up {
     display: none !important; } }
 
-.hidden-xl-down {
+@media (max-width: 1679px) {
+  .hidden-xl-down {
+    display: none !important; } }
+
+@media (min-width: 1680px) {
+  .hidden-xxl-up {
+    display: none !important; } }
+
+.hidden-xxl-down {
   display: none !important; }
 
 .visible-print-block {
@@ -4775,6 +4969,40 @@ a.text-danger:focus, a.text-danger:hover {
   .flex-items-xl-between {
     justify-content: space-between; } }
 
+@media (min-width: 1680px) {
+  .flex-xxl-first {
+    order: -1; }
+  .flex-xxl-last {
+    order: 1; } }
+
+@media (min-width: 1680px) {
+  .flex-items-xxl-top {
+    align-items: flex-start; }
+  .flex-items-xxl-middle {
+    align-items: center; }
+  .flex-items-xxl-bottom {
+    align-items: flex-end; } }
+
+@media (min-width: 1680px) {
+  .flex-xxl-top {
+    align-self: flex-start; }
+  .flex-xxl-middle {
+    align-self: center; }
+  .flex-xxl-bottom {
+    align-self: flex-end; } }
+
+@media (min-width: 1680px) {
+  .flex-items-xxl-left {
+    justify-content: flex-start; }
+  .flex-items-xxl-center {
+    justify-content: center; }
+  .flex-items-xxl-right {
+    justify-content: flex-end; }
+  .flex-items-xxl-around {
+    justify-content: space-around; }
+  .flex-items-xxl-between {
+    justify-content: space-between; } }
+
 @keyframes rotating {
   from {
     -ms-transform: rotate(0deg);
@@ -4827,45 +5055,62 @@ html {
 
 body {
   font-family: "worksans-light", sans-serif;
-  font-size: 1.6rem;
-  letter-spacing: -0.02rem;
-  line-height: 1.4;
   color: #000;
+  font-size: 1.4rem;
+  letter-spacing: -0.01rem;
+  line-height: 1.3;
   padding: 0;
   margin: 0;
   overflow-x: hidden;
   color: #333; }
+  @media (min-width: 1680px) {
+    body {
+      letter-spacing: -0.02rem;
+      font-size: 1.6rem;
+      line-height: 1.4; } }
 
 .separator {
   color: #CCC; }
 
 #intro, #skills, #portfolio, #experience, #references, #about, #contact, #outro {
-  min-height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   position: relative; }
 
 .section-header {
-  width: 25%;
+  width: 22%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center; }
+  text-align: center;
+  padding-left: 1.5%; }
+  @media (min-width: 1680px) {
+    .section-header {
+      padding-left: 0;
+      width: 25%; } }
 
 .section-header-title {
   font-family: "she-always-walks-alone", serif;
-  font-size: 4.4rem;
-  letter-spacing: -0.02rem;
-  line-height: 1.2;
   color: #000;
+  font-size: 3.6rem;
+  letter-spacing: -0.01rem;
+  line-height: 1.2;
   margin-top: 3rem; }
+  @media (min-width: 1680px) {
+    .section-header-title {
+      font-size: 4.4rem;
+      letter-spacing: -0.02rem; } }
 
 .section-header-subtitle {
   font-family: "worksans-thin", sans-serif;
-  font-size: 2.4rem;
+  font-size: 2rem;
   line-height: 1.2;
   color: #000; }
+  @media (min-width: 1680px) {
+    .section-header-subtitle {
+      font-size: 2.4rem; } }
 
 .article-footer {
   text-align: center; }
@@ -4909,36 +5154,42 @@ body {
   padding-top: 2vw; }
 
 .footer__nav__button {
+  font-size: 1.4rem;
+  letter-spacing: -0.08rem;
+  font-family: "worksans-regular", sans-serif;
+  text-decoration: underline;
+  color: #000;
   border: 0;
   padding: 3px 8px;
   background: transparent;
   cursor: pointer;
-  font-size: 1.6rem;
-  letter-spacing: -0.1rem;
-  font-family: "worksans-regular", sans-serif;
-  text-decoration: underline;
-  outline: none;
-  color: #000; }
+  outline: none !important; }
   .footer__nav__button:hover, .footer__nav__button:focus, .footer__nav__button:active {
-    outline: none;
     color: #8c8c8c;
     text-decoration: underline; }
+  @media (min-width: 1680px) {
+    .footer__nav__button {
+      font-size: 1.6rem;
+      letter-spacing: -0.1rem; } }
 
 .article-header__nav__button {
+  font-size: 1.4rem;
+  letter-spacing: -0.08rem;
+  font-family: "worksans-regular", sans-serif;
+  text-decoration: underline;
+  color: #000;
   border: 0;
   padding: 3px 8px;
   background: transparent;
   cursor: pointer;
-  font-size: 1.6rem;
-  letter-spacing: -0.1rem;
-  font-family: "worksans-regular", sans-serif;
-  text-decoration: underline;
-  outline: none;
-  color: #000; }
+  outline: none !important; }
   .article-header__nav__button:hover, .article-header__nav__button:focus, .article-header__nav__button:active {
-    outline: none;
     color: #8c8c8c;
     text-decoration: underline; }
+  @media (min-width: 1680px) {
+    .article-header__nav__button {
+      font-size: 1.6rem;
+      letter-spacing: -0.1rem; } }
 
 @media (max-width: 800px) {
   .side-bar {
@@ -4980,20 +5231,23 @@ body {
 
 .side-bar__nav__button--portfolio, .side-bar__nav__button--skills, .side-bar__nav__button--experience, .side-bar__nav__button--contact, .side-bar__nav__button--resume, .side-bar__nav__button--code {
   position: absolute;
+  font-size: 1.4rem;
+  letter-spacing: -0.08rem;
+  font-family: "worksans-regular", sans-serif;
+  text-decoration: underline;
+  color: #000;
   border: 0;
   padding: 3px 8px;
   background: transparent;
   cursor: pointer;
-  font-size: 1.6rem;
-  letter-spacing: -0.1rem;
-  font-family: "worksans-regular", sans-serif;
-  text-decoration: underline;
-  outline: none;
-  color: #000; }
+  outline: none !important; }
   .side-bar__nav__button--portfolio:hover, .side-bar__nav__button--skills:hover, .side-bar__nav__button--experience:hover, .side-bar__nav__button--contact:hover, .side-bar__nav__button--resume:hover, .side-bar__nav__button--code:hover, .side-bar__nav__button--portfolio:focus, .side-bar__nav__button--skills:focus, .side-bar__nav__button--experience:focus, .side-bar__nav__button--contact:focus, .side-bar__nav__button--resume:focus, .side-bar__nav__button--code:focus, .side-bar__nav__button--portfolio:active, .side-bar__nav__button--skills:active, .side-bar__nav__button--experience:active, .side-bar__nav__button--contact:active, .side-bar__nav__button--resume:active, .side-bar__nav__button--code:active {
-    outline: none;
     color: #8c8c8c;
     text-decoration: underline; }
+  @media (min-width: 1680px) {
+    .side-bar__nav__button--portfolio, .side-bar__nav__button--skills, .side-bar__nav__button--experience, .side-bar__nav__button--contact, .side-bar__nav__button--resume, .side-bar__nav__button--code {
+      font-size: 1.6rem;
+      letter-spacing: -0.1rem; } }
 
 @media (min-width: 801px) {
   .side-bar__nav__button--portfolio {
@@ -5234,68 +5488,83 @@ body {
     line-height: 1;
     transform: rotate(-90deg); }
 
-#intro .section-header {
-  width: 50%; }
-
-#intro .intro-name {
-  font-family: "she-always-walks-alone", serif;
-  font-size: 4.4rem;
-  letter-spacing: -0.02rem;
-  line-height: 1.2;
-  color: #000;
-  display: block; }
-
-#intro .intro-job-title {
-  font-family: "worksans-thin", sans-serif;
-  font-size: 2.4rem;
-  line-height: 1.2;
-  color: #000;
-  display: block;
-  font-size: 4.6rem;
-  letter-spacing: -0.1rem; }
-
-#intro .intro-message {
-  margin-bottom: 100px; }
-
-#intro .section-header-img-wrapper {
-  max-width: 400px;
-  margin-bottom: 3rem; }
-
-#intro .section-header-sub-title {
-  font-family: "worksans-thin", sans-serif;
-  font-size: 2.4rem;
-  line-height: 1.2;
-  color: #000;
-  font-size: 4.5rem;
-  margin-bottom: 1.8rem;
-  margin-top: 0; }
-
-#intro .intro-video {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -1;
-  transform: translateY(-50%) translateX(-50%);
-  background-size: cover; }
-
-#intro .intro-teaser-title {
-  font-family: "worksans-thin", sans-serif;
-  font-size: 2.4rem;
-  line-height: 1.2;
-  color: #000;
-  display: none;
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  left: 0;
-  bottom: 0; }
-
-#intro.teaser-title-visible .intro-teaser-title {
-  display: block; }
+#intro {
+  height: 100vh;
+  min-height: 630px; }
+  @media (min-width: 1680px) {
+    #intro {
+      min-height: 900px; } }
+  #intro .section-header {
+    width: 100%;
+    height: 100%; }
+  #intro .intro-name {
+    font-family: "she-always-walks-alone", serif;
+    color: #000;
+    font-size: 3.6rem;
+    letter-spacing: -0.01rem;
+    line-height: 1.2;
+    display: block; }
+    @media (min-width: 1680px) {
+      #intro .intro-name {
+        font-size: 4.4rem;
+        letter-spacing: -0.02rem; } }
+  #intro .intro-job-title {
+    font-family: "worksans-thin", sans-serif;
+    color: #000;
+    line-height: 1.2;
+    font-size: 3.8rem;
+    letter-spacing: -0.08rem;
+    display: block; }
+    @media (min-width: 1680px) {
+      #intro .intro-job-title {
+        font-size: 4.6rem;
+        letter-spacing: -0.1rem; } }
+  #intro .intro-message {
+    margin-bottom: 3rem; }
+  #intro .section-header-img-wrapper {
+    max-width: 400px;
+    width: 20%;
+    margin-bottom: 1rem; }
+    @media (min-width: 1680px) {
+      #intro .section-header-img-wrapper {
+        width: 42%;
+        margin-bottom: 2rem; } }
+  #intro .section-header-sub-title {
+    font-family: "worksans-thin", sans-serif;
+    font-size: 2rem;
+    line-height: 1.2;
+    color: #000;
+    font-size: 4.5rem;
+    margin-bottom: 1.8rem;
+    margin-top: 0; }
+    @media (min-width: 1680px) {
+      #intro .section-header-sub-title {
+        font-size: 2.4rem; } }
+  #intro .intro-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translateY(-50%) translateX(-50%);
+    background-size: cover; }
+  #intro .intro-teaser-title {
+    font-family: "worksans-thin", sans-serif;
+    font-size: 2rem;
+    line-height: 1.2;
+    color: #000;
+    visibility: hidden;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0; }
+    @media (min-width: 1680px) {
+      #intro .intro-teaser-title {
+        font-size: 2.4rem; } }
+  #intro.teaser-title-visible .intro-teaser-title {
+    visibility: visible; }
 
 #skills {
   min-height: 80vh; }
@@ -5346,20 +5615,28 @@ body {
       padding: 0; }
   #skills .skills-list-title {
     font-family: "worksans-regular", sans-serif;
-    font-size: 2.7rem;
-    letter-spacing: -0.2rem;
+    font-size: 2rem;
+    letter-spacing: -0.12rem;
     line-height: 1.2;
     color: #000;
     margin-top: 0;
     margin-bottom: 0.8rem; }
+    @media (min-width: 1680px) {
+      #skills .skills-list-title {
+        font-size: 2.7rem;
+        letter-spacing: -0.2rem; } }
   #skills .skills-list-title-small {
     font-family: "worksans-regular", sans-serif;
-    font-size: 2.2rem;
-    letter-spacing: -0.12rem;
+    font-size: 1.5rem;
+    letter-spacing: -0.08rem;
     line-height: 1.1;
     color: #000;
     margin-top: 0;
     margin-bottom: 0.4rem; }
+    @media (min-width: 1680px) {
+      #skills .skills-list-title-small {
+        font-size: 2.2rem;
+        letter-spacing: -0.12rem; } }
   #skills .skills-group-javascript, #skills .skills-group-css, #skills .skills-group-html, #skills .skills-group-tools, #skills .skills-group-coding, #skills .skills-group-uxui, #skills .skills-group-backend {
     position: absolute;
     top: 50%;
@@ -5420,8 +5697,12 @@ body {
     top: auto;
     bottom: calc(50vh - 273px); }
   #portfolio .article-body {
-    width: 75%;
-    margin-left: 25%; }
+    width: 77%;
+    margin-left: 23%; }
+    @media (min-width: 1680px) {
+      #portfolio .article-body {
+        width: 75%;
+        margin-left: 25%; } }
   #portfolio .portfolio-item-img {
     width: 100%;
     height: auto; }
@@ -5429,10 +5710,55 @@ body {
     width: 100%;
     height: auto; }
   #portfolio .portfolio-item-vendomo-crm, #portfolio .portfolio-item-bk, #portfolio .portfolio-item-vendomo, #portfolio .portfolio-item-foodora, #portfolio .portfolio-item-timvision,
-  #portfolio .portfolio-item-cubomusica, #portfolio .portfolio-item-unicri, #portfolio .portfolio-item-others {
+  #portfolio .portfolio-item-cubomusica, #portfolio .portfolio-item-unicri,
+  #portfolio .portfolio-item-others {
     height: 100vh;
     display: flex;
     margin-bottom: 0; }
+  #portfolio .portfolio-item-title {
+    font-family: "worksans-regular", sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: -0.08rem;
+    line-height: 1.1;
+    color: #000;
+    max-width: 92%;
+    margin-bottom: 0.3rem; }
+    @media (min-width: 1680px) {
+      #portfolio .portfolio-item-title {
+        font-size: 2.2rem;
+        letter-spacing: -0.12rem; } }
+    @media (min-width: 1680px) {
+      #portfolio .portfolio-item-title {
+        max-width: none; } }
+  #portfolio .portfolio-item-text {
+    font-family: "worksans-light", sans-serif;
+    color: #000;
+    font-size: 1.4rem;
+    letter-spacing: -0.01rem;
+    line-height: 1.3;
+    line-height: 1.3;
+    margin-bottom: 0.3rem; }
+    @media (min-width: 1680px) {
+      #portfolio .portfolio-item-text {
+        letter-spacing: -0.02rem;
+        font-size: 1.6rem;
+        line-height: 1.4; } }
+    @media (min-width: 1680px) {
+      #portfolio .portfolio-item-text {
+        margin-bottom: 1rem; } }
+  #portfolio .portfolio-item-secondary-title {
+    font-family: "worksans-thin", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    letter-spacing: 0.02rem;
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 0; }
+    @media (min-width: 1680px) {
+      #portfolio .portfolio-item-secondary-title {
+        line-height: 1.2;
+        font-size: 1.7rem;
+        letter-spacing: 0.03rem; } }
   #portfolio .portfolio-item-title-wrapper {
     display: none;
     text-align: center;
@@ -5442,8 +5768,15 @@ body {
     width: 31%;
     background-repeat: no-repeat;
     background-size: 100%;
+    background-position: center;
     min-height: 320px;
-    padding: 3.7rem 3rem; }
+    padding: 0 4%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    @media (min-width: 1680px) {
+      #portfolio .portfolio-item-title-wrapper {
+        padding: 0 3rem; } }
   #portfolio .portfolio-item-title-wrapper-horizontal {
     display: none;
     text-align: center;
@@ -5467,7 +5800,7 @@ body {
       line-height: 1.2; }
   #portfolio .child-hovered .portfolio-item-title-wrapper,
   #portfolio .child-hovered .portfolio-item-title-wrapper-horizontal {
-    display: block; }
+    display: flex; }
   #portfolio .portfolio-item-details-wrapper {
     display: none;
     position: absolute;
@@ -5483,37 +5816,22 @@ body {
     left: 0;
     top: 0;
     z-index: 0; }
-  #portfolio .portfolio-item-title {
-    font-family: "worksans-regular", sans-serif;
-    font-size: 2.2rem;
-    letter-spacing: -0.12rem;
-    line-height: 1.1;
-    color: #000;
-    margin-bottom: 0.3rem; }
-  #portfolio .portfolio-item-text {
-    font-family: "worksans-light", sans-serif;
-    font-size: 1.6rem;
-    letter-spacing: -0.02rem;
-    line-height: 1.4;
-    color: #000;
-    line-height: 1.3; }
-  #portfolio .portfolio-item-secondary-title {
-    font-family: "worksans-thin", sans-serif;
-    font-size: 1.7rem;
-    line-height: 1.2;
-    letter-spacing: 0.03rem;
-    color: #000;
-    margin-top: 1rem;
-    margin-bottom: 0; }
   #portfolio .project-type-label {
     font-family: "worksans-light", sans-serif;
-    font-size: 2rem;
-    letter-spacing: -0.08rem;
+    font-size: 1.7rem;
+    letter-spacing: -0.07rem;
     line-height: 1.2;
     color: #000;
     position: absolute;
-    top: -3.1rem;
+    top: -2.4rem;
     left: 4.2%; }
+    @media (min-width: 1680px) {
+      #portfolio .project-type-label {
+        font-size: 2rem;
+        letter-spacing: -0.08rem; } }
+    @media (min-width: 1680px) {
+      #portfolio .project-type-label {
+        bottom: -3.1rem; } }
   #portfolio .portfolio-item-img-full-wrapper {
     position: absolute; }
   #portfolio .portfolio-item-img-full {
@@ -5542,7 +5860,7 @@ body {
     display: block; }
   #portfolio .portfolio-item-desktop {
     position: absolute;
-    width: 60%;
+    width: calc(56% + (56% * 0.1));
     max-width: 796px; }
     #portfolio .portfolio-item-desktop .portfolio-item-img-preview {
       position: absolute;
@@ -5552,7 +5870,7 @@ body {
       max-width: 729px; }
   #portfolio .portfolio-item-tablet {
     position: absolute;
-    width: 50%;
+    width: calc(19% + (19% * 0.1));
     max-width: 263px; }
     #portfolio .portfolio-item-tablet .portfolio-item-img-preview {
       position: absolute;
@@ -5560,11 +5878,11 @@ body {
       left: 7%;
       width: 87%;
       max-width: 227px; }
-  #portfolio .portfolio-item-notebook, #portfolio .portfolio-item-unicri .portfolio-item-notebook-ande, #portfolio .portfolio-item-unicri .portfolio-item-notebook-eusec, #portfolio .portfolio-item-unicri .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-unicri .portfolio-item-notebook-ipo, #portfolio .portfolio-item-unicri .portfolio-item-notebook-lab, #portfolio .portfolio-item-others .portfolio-item-notebook-school, #portfolio .portfolio-item-others .portfolio-item-notebook-davide, #portfolio .portfolio-item-others .portfolio-item-notebook-milena, #portfolio .portfolio-item-others .portfolio-item-notebook-pandora, #portfolio .portfolio-item-others .portfolio-item-notebook-acqua {
+  #portfolio .portfolio-item-notebook {
     position: absolute;
-    width: 50%;
+    width: calc(42% + (42% * 0.1));
     max-width: 600px; }
-    #portfolio .portfolio-item-notebook .portfolio-item-img-preview, #portfolio .portfolio-item-unicri .portfolio-item-notebook-ande .portfolio-item-img-preview, #portfolio .portfolio-item-unicri .portfolio-item-notebook-eusec .portfolio-item-img-preview, #portfolio .portfolio-item-unicri .portfolio-item-notebook-cbrn .portfolio-item-img-preview, #portfolio .portfolio-item-unicri .portfolio-item-notebook-ipo .portfolio-item-img-preview, #portfolio .portfolio-item-unicri .portfolio-item-notebook-lab .portfolio-item-img-preview, #portfolio .portfolio-item-others .portfolio-item-notebook-school .portfolio-item-img-preview, #portfolio .portfolio-item-others .portfolio-item-notebook-davide .portfolio-item-img-preview, #portfolio .portfolio-item-others .portfolio-item-notebook-milena .portfolio-item-img-preview, #portfolio .portfolio-item-others .portfolio-item-notebook-pandora .portfolio-item-img-preview, #portfolio .portfolio-item-others .portfolio-item-notebook-acqua .portfolio-item-img-preview {
+    #portfolio .portfolio-item-notebook .portfolio-item-img-preview {
       position: absolute;
       top: 5%;
       left: 12.8%;
@@ -5572,7 +5890,7 @@ body {
       max-width: 445px; }
   #portfolio .portfolio-item-mobile {
     position: absolute;
-    width: 10%;
+    width: calc(8% + (8% * 0.1));
     max-width: 111px; }
     #portfolio .portfolio-item-mobile .portfolio-item-img-preview {
       position: absolute;
@@ -5597,151 +5915,171 @@ body {
   #portfolio .portfolio-item-tv2 {
     top: 34%;
     left: 37%; }
+    @media (min-width: 1680px) {
+      #portfolio .portfolio-item-tv2 {
+        top: 36%; } }
+  #portfolio .notebooks-set-item1 {
+    top: 28%;
+    left: 1%; }
+    @media (min-width: 1680px) {
+      #portfolio .notebooks-set-item1 {
+        top: 25%;
+        left: -2%; } }
+    #portfolio .notebooks-set-item1 .project-type-label {
+      left: auto;
+      right: 12.8%; }
+  #portfolio .notebooks-set-item2 {
+    top: 28%;
+    left: 57%; }
+    @media (min-width: 1680px) {
+      #portfolio .notebooks-set-item2 {
+        top: 25%;
+        left: 56%; } }
+    #portfolio .notebooks-set-item2 .project-type-label {
+      left: 12.8%; }
+  #portfolio .notebooks-set-item3 {
+    top: 38%;
+    left: 12%; }
+    @media (min-width: 1680px) {
+      #portfolio .notebooks-set-item3 {
+        left: 9%; } }
+    #portfolio .notebooks-set-item3 .project-type-label {
+      left: auto;
+      right: 12.8%; }
+  #portfolio .notebooks-set-item4 {
+    top: 38%;
+    left: 46%; }
+    @media (min-width: 1680px) {
+      #portfolio .notebooks-set-item4 {
+        left: 45%; } }
+    #portfolio .notebooks-set-item4 .project-type-label {
+      left: 12.8%; }
+  #portfolio .notebooks-set-item5 {
+    top: 48%;
+    left: 27%; }
+    @media (min-width: 1680px) {
+      #portfolio .notebooks-set-item5 {
+        top: 51%; } }
+    #portfolio .notebooks-set-item5 .project-type-label {
+      left: 50%;
+      bottom: -1rem;
+      top: auto;
+      transform: translateX(-50%); }
   #portfolio .project-type-label {
     left: 1.6%; }
   #portfolio .portfolio-item-bk .portfolio-item-desktop {
-    top: 13%;
+    top: 18%;
     left: 15%; }
+    @media (min-width: 1680px) {
+      #portfolio .portfolio-item-bk .portfolio-item-desktop {
+        top: 13%; } }
   #portfolio .portfolio-item-bk .portfolio-item-tablet {
     top: 44%;
     left: 11.5%; }
-  #portfolio .portfolio-item-bk .portfolio-item-notebook, #portfolio .portfolio-item-bk .portfolio-item-unicri .portfolio-item-notebook-ande, #portfolio .portfolio-item-unicri .portfolio-item-bk .portfolio-item-notebook-ande, #portfolio .portfolio-item-bk .portfolio-item-unicri .portfolio-item-notebook-eusec, #portfolio .portfolio-item-unicri .portfolio-item-bk .portfolio-item-notebook-eusec, #portfolio .portfolio-item-bk .portfolio-item-unicri .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-unicri .portfolio-item-bk .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-bk .portfolio-item-unicri .portfolio-item-notebook-ipo, #portfolio .portfolio-item-unicri .portfolio-item-bk .portfolio-item-notebook-ipo, #portfolio .portfolio-item-bk .portfolio-item-unicri .portfolio-item-notebook-lab, #portfolio .portfolio-item-unicri .portfolio-item-bk .portfolio-item-notebook-lab, #portfolio .portfolio-item-bk .portfolio-item-others .portfolio-item-notebook-school, #portfolio .portfolio-item-others .portfolio-item-bk .portfolio-item-notebook-school, #portfolio .portfolio-item-bk .portfolio-item-others .portfolio-item-notebook-davide, #portfolio .portfolio-item-others .portfolio-item-bk .portfolio-item-notebook-davide, #portfolio .portfolio-item-bk .portfolio-item-others .portfolio-item-notebook-milena, #portfolio .portfolio-item-others .portfolio-item-bk .portfolio-item-notebook-milena, #portfolio .portfolio-item-bk .portfolio-item-others .portfolio-item-notebook-pandora, #portfolio .portfolio-item-others .portfolio-item-bk .portfolio-item-notebook-pandora, #portfolio .portfolio-item-bk .portfolio-item-others .portfolio-item-notebook-acqua, #portfolio .portfolio-item-others .portfolio-item-bk .portfolio-item-notebook-acqua {
+  #portfolio .portfolio-item-bk .portfolio-item-notebook {
     top: 44.6%;
     left: 52%; }
   #portfolio .portfolio-item-bk .portfolio-item-mobile {
-    top: 60%;
+    top: 55%;
     left: 6%; }
+    @media (min-width: 1680px) {
+      #portfolio .portfolio-item-bk .portfolio-item-mobile {
+        top: 60%; } }
   #portfolio .portfolio-item-bk .portfolio-item-title-wrapper {
-    left: 72.8%;
-    top: 11%; }
+    right: -33.5%;
+    top: -11%; }
   #portfolio .portfolio-item-bk .portfolio-item-subtitle-employer {
     margin: 2rem 0 0; }
   #portfolio .portfolio-item-vendomo .portfolio-item-desktop {
-    top: 13%;
+    top: 18%;
     left: 23%; }
+    @media (min-width: 1680px) {
+      #portfolio .portfolio-item-vendomo .portfolio-item-desktop {
+        top: 13%; } }
   #portfolio .portfolio-item-vendomo .portfolio-item-tablet {
     top: 44%;
     left: 66%; }
-  #portfolio .portfolio-item-vendomo .portfolio-item-notebook, #portfolio .portfolio-item-vendomo .portfolio-item-unicri .portfolio-item-notebook-ande, #portfolio .portfolio-item-unicri .portfolio-item-vendomo .portfolio-item-notebook-ande, #portfolio .portfolio-item-vendomo .portfolio-item-unicri .portfolio-item-notebook-eusec, #portfolio .portfolio-item-unicri .portfolio-item-vendomo .portfolio-item-notebook-eusec, #portfolio .portfolio-item-vendomo .portfolio-item-unicri .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-unicri .portfolio-item-vendomo .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-vendomo .portfolio-item-unicri .portfolio-item-notebook-ipo, #portfolio .portfolio-item-unicri .portfolio-item-vendomo .portfolio-item-notebook-ipo, #portfolio .portfolio-item-vendomo .portfolio-item-unicri .portfolio-item-notebook-lab, #portfolio .portfolio-item-unicri .portfolio-item-vendomo .portfolio-item-notebook-lab, #portfolio .portfolio-item-vendomo .portfolio-item-others .portfolio-item-notebook-school, #portfolio .portfolio-item-others .portfolio-item-vendomo .portfolio-item-notebook-school, #portfolio .portfolio-item-vendomo .portfolio-item-others .portfolio-item-notebook-davide, #portfolio .portfolio-item-others .portfolio-item-vendomo .portfolio-item-notebook-davide, #portfolio .portfolio-item-vendomo .portfolio-item-others .portfolio-item-notebook-milena, #portfolio .portfolio-item-others .portfolio-item-vendomo .portfolio-item-notebook-milena, #portfolio .portfolio-item-vendomo .portfolio-item-others .portfolio-item-notebook-pandora, #portfolio .portfolio-item-others .portfolio-item-vendomo .portfolio-item-notebook-pandora, #portfolio .portfolio-item-vendomo .portfolio-item-others .portfolio-item-notebook-acqua, #portfolio .portfolio-item-others .portfolio-item-vendomo .portfolio-item-notebook-acqua {
+  #portfolio .portfolio-item-vendomo .portfolio-item-notebook {
     top: 44.6%;
-    left: 0; }
+    left: 1%; }
   #portfolio .portfolio-item-vendomo .portfolio-item-mobile {
-    top: 60%;
+    top: 55%;
     left: 82%; }
+    @media (min-width: 1680px) {
+      #portfolio .portfolio-item-vendomo .portfolio-item-mobile {
+        top: 60%; } }
   #portfolio .portfolio-item-vendomo .portfolio-item-title-wrapper {
-    left: 3%;
-    top: 10.5%; }
+    left: -36%;
+    top: -13%; }
   #portfolio .portfolio-item-vendomo .portfolio-item-subtitle-employer {
     margin: 2rem 0 0; }
   #portfolio .portfolio-item-vendomo-crm .portfolio-item-desktop {
-    top: 13%;
+    top: 21%;
     left: 8%; }
+    @media (min-width: 1680px) {
+      #portfolio .portfolio-item-vendomo-crm .portfolio-item-desktop {
+        top: 13%; } }
   #portfolio .portfolio-item-vendomo-crm .portfolio-item-tablet {
     top: 50%;
     left: 22%; }
-  #portfolio .portfolio-item-vendomo-crm .portfolio-item-notebook, #portfolio .portfolio-item-vendomo-crm .portfolio-item-unicri .portfolio-item-notebook-ande, #portfolio .portfolio-item-unicri .portfolio-item-vendomo-crm .portfolio-item-notebook-ande, #portfolio .portfolio-item-vendomo-crm .portfolio-item-unicri .portfolio-item-notebook-eusec, #portfolio .portfolio-item-unicri .portfolio-item-vendomo-crm .portfolio-item-notebook-eusec, #portfolio .portfolio-item-vendomo-crm .portfolio-item-unicri .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-unicri .portfolio-item-vendomo-crm .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-vendomo-crm .portfolio-item-unicri .portfolio-item-notebook-ipo, #portfolio .portfolio-item-unicri .portfolio-item-vendomo-crm .portfolio-item-notebook-ipo, #portfolio .portfolio-item-vendomo-crm .portfolio-item-unicri .portfolio-item-notebook-lab, #portfolio .portfolio-item-unicri .portfolio-item-vendomo-crm .portfolio-item-notebook-lab, #portfolio .portfolio-item-vendomo-crm .portfolio-item-others .portfolio-item-notebook-school, #portfolio .portfolio-item-others .portfolio-item-vendomo-crm .portfolio-item-notebook-school, #portfolio .portfolio-item-vendomo-crm .portfolio-item-others .portfolio-item-notebook-davide, #portfolio .portfolio-item-others .portfolio-item-vendomo-crm .portfolio-item-notebook-davide, #portfolio .portfolio-item-vendomo-crm .portfolio-item-others .portfolio-item-notebook-milena, #portfolio .portfolio-item-others .portfolio-item-vendomo-crm .portfolio-item-notebook-milena, #portfolio .portfolio-item-vendomo-crm .portfolio-item-others .portfolio-item-notebook-pandora, #portfolio .portfolio-item-others .portfolio-item-vendomo-crm .portfolio-item-notebook-pandora, #portfolio .portfolio-item-vendomo-crm .portfolio-item-others .portfolio-item-notebook-acqua, #portfolio .portfolio-item-others .portfolio-item-vendomo-crm .portfolio-item-notebook-acqua {
+  #portfolio .portfolio-item-vendomo-crm .portfolio-item-notebook {
     top: 45.2%;
     left: 49%; }
   #portfolio .portfolio-item-vendomo-crm .portfolio-item-mobile {
     top: 54.6%;
     left: 11.7%; }
   #portfolio .portfolio-item-vendomo-crm .portfolio-item-title-wrapper {
-    left: 66%;
-    top: 10.5%; }
+    left: 104%;
+    top: -10.5%; }
   #portfolio .portfolio-item-vendomo-crm .portfolio-item-subtitle-employer {
     margin: 2rem 0 0; }
   #portfolio .portfolio-item-foodora .portfolio-item-desktop {
-    top: 13%;
+    top: 19%;
     left: 25%; }
+    @media (min-width: 1680px) {
+      #portfolio .portfolio-item-foodora .portfolio-item-desktop {
+        top: 13%; } }
   #portfolio .portfolio-item-foodora .portfolio-item-tablet {
     top: 44%;
     left: 72%; }
-  #portfolio .portfolio-item-foodora .portfolio-item-notebook, #portfolio .portfolio-item-foodora .portfolio-item-unicri .portfolio-item-notebook-ande, #portfolio .portfolio-item-unicri .portfolio-item-foodora .portfolio-item-notebook-ande, #portfolio .portfolio-item-foodora .portfolio-item-unicri .portfolio-item-notebook-eusec, #portfolio .portfolio-item-unicri .portfolio-item-foodora .portfolio-item-notebook-eusec, #portfolio .portfolio-item-foodora .portfolio-item-unicri .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-unicri .portfolio-item-foodora .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-foodora .portfolio-item-unicri .portfolio-item-notebook-ipo, #portfolio .portfolio-item-unicri .portfolio-item-foodora .portfolio-item-notebook-ipo, #portfolio .portfolio-item-foodora .portfolio-item-unicri .portfolio-item-notebook-lab, #portfolio .portfolio-item-unicri .portfolio-item-foodora .portfolio-item-notebook-lab, #portfolio .portfolio-item-foodora .portfolio-item-others .portfolio-item-notebook-school, #portfolio .portfolio-item-others .portfolio-item-foodora .portfolio-item-notebook-school, #portfolio .portfolio-item-foodora .portfolio-item-others .portfolio-item-notebook-davide, #portfolio .portfolio-item-others .portfolio-item-foodora .portfolio-item-notebook-davide, #portfolio .portfolio-item-foodora .portfolio-item-others .portfolio-item-notebook-milena, #portfolio .portfolio-item-others .portfolio-item-foodora .portfolio-item-notebook-milena, #portfolio .portfolio-item-foodora .portfolio-item-others .portfolio-item-notebook-pandora, #portfolio .portfolio-item-others .portfolio-item-foodora .portfolio-item-notebook-pandora, #portfolio .portfolio-item-foodora .portfolio-item-others .portfolio-item-notebook-acqua, #portfolio .portfolio-item-others .portfolio-item-foodora .portfolio-item-notebook-acqua {
+  #portfolio .portfolio-item-foodora .portfolio-item-notebook {
     top: 48.6%;
-    left: 3%; }
+    left: 1%; }
   #portfolio .portfolio-item-foodora .portfolio-item-mobile {
     top: 55.7%;
     left: 62.8%; }
   #portfolio .portfolio-item-foodora .portfolio-item-title-wrapper {
-    left: 5%;
-    top: 14%; }
+    left: -36%;
+    top: -7%; }
   #portfolio .portfolio-item-foodora .portfolio-item-subtitle-employer {
     margin: 2rem 0 0; }
   #portfolio .portfolio-item-timvision .portfolio-item-title,
   #portfolio .portfolio-item-cubomusica .portfolio-item-title {
     margin: 0.2rem 0 0.2rem; }
-  #portfolio .portfolio-item-unicri .project-type-label {
-    top: -3rem; }
-  #portfolio .portfolio-item-unicri .portfolio-item-notebook-ande {
-    top: 25%;
-    left: -2%; }
-    #portfolio .portfolio-item-unicri .portfolio-item-notebook-ande .project-type-label {
-      left: auto;
-      right: 12.8%; }
-  #portfolio .portfolio-item-unicri .portfolio-item-notebook-eusec {
-    top: 25%;
-    left: 56%; }
-    #portfolio .portfolio-item-unicri .portfolio-item-notebook-eusec .project-type-label {
-      left: 12.8%; }
-  #portfolio .portfolio-item-unicri .portfolio-item-notebook-cbrn {
-    top: 38%;
-    left: 9%; }
-    #portfolio .portfolio-item-unicri .portfolio-item-notebook-cbrn .project-type-label {
-      left: auto;
-      right: 12.8%; }
-  #portfolio .portfolio-item-unicri .portfolio-item-notebook-ipo {
-    top: 38%;
-    left: 45%; }
-    #portfolio .portfolio-item-unicri .portfolio-item-notebook-ipo .project-type-label {
-      left: 12.8%; }
-  #portfolio .portfolio-item-unicri .portfolio-item-notebook-lab {
-    top: 51%;
-    left: 27%; }
-    #portfolio .portfolio-item-unicri .portfolio-item-notebook-lab .project-type-label {
-      left: 50%;
-      bottom: -1rem;
-      top: auto;
-      transform: translateX(-50%); }
-  #portfolio .portfolio-item-unicri .portfolio-item-title-wrapper-horizontal {
-    left: 36.7%;
-    top: 9%; }
-  #portfolio .portfolio-item-unicri .portfolio-item-subtitle-employer {
-    margin-top: 0.5rem; }
-  #portfolio .portfolio-item-unicri .portfolio-item-title {
-    margin-top: 0.5rem; }
-  #portfolio .portfolio-item-others .portfolio-item-notebook-school {
-    top: 25%;
-    left: -2%; }
-    #portfolio .portfolio-item-others .portfolio-item-notebook-school .project-type-label {
-      left: auto;
-      right: 12.8%; }
-  #portfolio .portfolio-item-others .portfolio-item-notebook-davide {
-    top: 25%;
-    left: 56%; }
-    #portfolio .portfolio-item-others .portfolio-item-notebook-davide .project-type-label {
-      left: 12.8%; }
-  #portfolio .portfolio-item-others .portfolio-item-notebook-milena {
-    top: 38%;
-    left: 9%; }
-    #portfolio .portfolio-item-others .portfolio-item-notebook-milena .project-type-label {
-      left: auto;
-      right: 12.8%; }
-  #portfolio .portfolio-item-others .portfolio-item-notebook-pandora {
-    top: 38%;
-    left: 45%; }
-    #portfolio .portfolio-item-others .portfolio-item-notebook-pandora .project-type-label {
-      left: 12.8%; }
-  #portfolio .portfolio-item-others .portfolio-item-notebook-acqua {
-    top: 51%;
-    left: 27%; }
-    #portfolio .portfolio-item-others .portfolio-item-notebook-acqua .project-type-label {
-      left: 50%;
-      bottom: -1rem;
-      top: auto;
-      transform: translateX(-50%); }
+  #portfolio .portfolio-item-unicri .portfolio-item-notebook,
+  #portfolio .portfolio-item-others .portfolio-item-notebook {
+    width: 41%; }
+    @media (min-width: 1680px) {
+      #portfolio .portfolio-item-unicri .portfolio-item-notebook,
+      #portfolio .portfolio-item-others .portfolio-item-notebook {
+        width: 42%; } }
+  #portfolio .portfolio-item-unicri .project-type-label,
+  #portfolio .portfolio-item-others .project-type-label {
+    bottom: -2rem; }
+    @media (min-width: 1680px) {
+      #portfolio .portfolio-item-unicri .project-type-label,
+      #portfolio .portfolio-item-others .project-type-label {
+        bottom: -3rem; } }
+  #portfolio .portfolio-item-unicri .portfolio-item-title-wrapper-horizontal,
   #portfolio .portfolio-item-others .portfolio-item-title-wrapper-horizontal {
     left: 36.7%;
     top: 9%; }
+  #portfolio .portfolio-item-unicri .portfolio-item-subtitle-employer,
+  #portfolio .portfolio-item-others .portfolio-item-subtitle-employer {
+    margin-top: 0.5rem; }
+  #portfolio .portfolio-item-unicri .portfolio-item-title,
+  #portfolio .portfolio-item-others .portfolio-item-title {
+    margin-top: 0.5rem; }
   #portfolio .portfolio-item-modal-notebook-mobile .modal-dialog, #portfolio .portfolio-item-modal-tv .modal-dialog, #portfolio .portfolio-item-modal-notebook .modal-dialog {
     width: 97%;
     height: 90%;
@@ -5757,30 +6095,39 @@ body {
     width: 17%; }
   #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-title, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-title, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-title {
     font-family: "worksans-regular", sans-serif;
-    font-size: 2.2rem;
-    letter-spacing: -0.12rem;
+    font-size: 1.5rem;
+    letter-spacing: -0.08rem;
     line-height: 1.1;
     color: #000;
     margin-bottom: 0.3rem; }
+    @media (min-width: 1680px) {
+      #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-title, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-title, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-title {
+        font-size: 2.2rem;
+        letter-spacing: -0.12rem; } }
   #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-subtitle, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-subtitle, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-subtitle {
     font-family: "worksans-thin", sans-serif;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     line-height: 1.2;
-    letter-spacing: 0.03rem;
+    letter-spacing: 0.02rem;
     color: #000;
     margin-bottom: 1.4rem; }
-  #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-notebook, #portfolio .portfolio-item-modal-tv .portfolio-item-notebook, #portfolio .portfolio-item-modal-notebook .portfolio-item-notebook, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-ande, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-ande, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-ande, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-ande, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-ande, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-ande, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-eusec, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-eusec, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-eusec, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-eusec, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-eusec, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-eusec, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-ipo, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-ipo, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-ipo, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-ipo, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-ipo, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-ipo, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-lab, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-lab, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-lab, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-lab, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-lab, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-lab, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-school, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-school, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-school, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-school, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-school, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-school, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-davide, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-davide, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-davide, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-davide, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-davide, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-davide, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-milena, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-milena, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-milena, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-milena, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-milena, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-milena, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-pandora, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-pandora, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-pandora, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-pandora, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-pandora, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-pandora, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-acqua, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-acqua, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-acqua, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-acqua, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-acqua, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-acqua {
+    @media (min-width: 1680px) {
+      #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-subtitle, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-subtitle, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-subtitle {
+        line-height: 1.2;
+        font-size: 1.7rem;
+        letter-spacing: 0.03rem; } }
+  #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-notebook, #portfolio .portfolio-item-modal-tv .portfolio-item-notebook, #portfolio .portfolio-item-modal-notebook .portfolio-item-notebook {
     position: fixed;
     left: 16.3%;
     top: 4%;
     width: 82%;
     max-width: none; }
-    #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-notebook .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-notebook .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-notebook .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-ande .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-ande .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-ande .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-ande .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-ande .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-ande .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-eusec .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-eusec .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-eusec .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-eusec .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-eusec .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-eusec .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-cbrn .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-cbrn .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-cbrn .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-cbrn .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-cbrn .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-cbrn .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-ipo .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-ipo .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-ipo .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-ipo .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-ipo .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-ipo .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-lab .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-lab .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-lab .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-lab .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-lab .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-lab .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-school .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-school .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-school .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-school .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-school .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-school .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-davide .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-davide .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-davide .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-davide .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-davide .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-davide .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-milena .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-milena .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-milena .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-milena .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-milena .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-milena .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-pandora .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-pandora .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-pandora .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-pandora .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-pandora .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-pandora .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-acqua .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-acqua .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-acqua .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-acqua .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-acqua .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-acqua .portfolio-item-img-full-wrapper {
+    #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-notebook .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-notebook .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-notebook .portfolio-item-img-full-wrapper {
       top: 56px;
       left: 12.5%;
       right: 12.5%;
       bottom: 206px; }
-    #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-notebook .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-notebook .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-notebook .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-ande .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-ande .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-ande .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-ande .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-ande .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-ande .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-eusec .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-eusec .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-eusec .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-eusec .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-eusec .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-eusec .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-cbrn .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-cbrn .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-cbrn .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-cbrn .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-cbrn .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-cbrn .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-ipo .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-ipo .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-ipo .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-ipo .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-ipo .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-ipo .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-lab .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-lab .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-lab .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-lab .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-lab .wrapper, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-lab .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-school .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-school .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-school .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-school .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-school .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-school .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-davide .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-davide .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-davide .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-davide .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-davide .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-davide .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-milena .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-milena .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-milena .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-milena .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-milena .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-milena .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-pandora .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-pandora .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-pandora .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-pandora .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-pandora .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-pandora .wrapper, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-acqua .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-acqua .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-acqua .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-acqua .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-acqua .wrapper, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-acqua .wrapper {
+    #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-notebook .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-notebook .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-notebook .wrapper {
       width: 100%;
       height: 100%; }
   #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-mobile, #portfolio .portfolio-item-modal-tv .portfolio-item-mobile, #portfolio .portfolio-item-modal-notebook .portfolio-item-mobile {
@@ -5831,7 +6178,7 @@ body {
       color: #999; }
   #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-mobile .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-tv .portfolio-item-mobile .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook .portfolio-item-mobile .carousel-item-scroll-teaser {
     padding-top: 66%; }
-  #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-notebook .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-tv .portfolio-item-notebook .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook .portfolio-item-notebook .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-ande .carousel-item-scroll-teaser, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-ande .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-ande .carousel-item-scroll-teaser, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-ande .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-ande .carousel-item-scroll-teaser, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-ande .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-eusec .carousel-item-scroll-teaser, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-eusec .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-eusec .carousel-item-scroll-teaser, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-eusec .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-eusec .carousel-item-scroll-teaser, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-eusec .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-cbrn .carousel-item-scroll-teaser, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-cbrn .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-cbrn .carousel-item-scroll-teaser, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-cbrn .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-cbrn .carousel-item-scroll-teaser, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-cbrn .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-ipo .carousel-item-scroll-teaser, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-ipo .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-ipo .carousel-item-scroll-teaser, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-ipo .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-ipo .carousel-item-scroll-teaser, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-ipo .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-lab .carousel-item-scroll-teaser, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-lab .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-lab .carousel-item-scroll-teaser, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-lab .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-lab .carousel-item-scroll-teaser, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-lab .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-school .carousel-item-scroll-teaser, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-school .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-school .carousel-item-scroll-teaser, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-school .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-school .carousel-item-scroll-teaser, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-school .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-davide .carousel-item-scroll-teaser, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-davide .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-davide .carousel-item-scroll-teaser, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-davide .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-davide .carousel-item-scroll-teaser, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-davide .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-milena .carousel-item-scroll-teaser, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-milena .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-milena .carousel-item-scroll-teaser, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-milena .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-milena .carousel-item-scroll-teaser, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-milena .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-pandora .carousel-item-scroll-teaser, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-pandora .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-pandora .carousel-item-scroll-teaser, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-pandora .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-pandora .carousel-item-scroll-teaser, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-pandora .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-acqua .carousel-item-scroll-teaser, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-acqua .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-acqua .carousel-item-scroll-teaser, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-acqua .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-acqua .carousel-item-scroll-teaser, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-acqua .carousel-item-scroll-teaser {
+  #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-notebook .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-tv .portfolio-item-notebook .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook .portfolio-item-notebook .carousel-item-scroll-teaser {
     padding-top: 27%; }
   #portfolio .portfolio-item-modal-notebook-mobile .carousel-control {
     top: 39%; }
@@ -5868,8 +6215,8 @@ body {
     cursor: ns-resize; }
   #portfolio .carousel-labels {
     font-family: "worksans-light", sans-serif;
-    font-size: 2rem;
-    letter-spacing: -0.08rem;
+    font-size: 1.7rem;
+    letter-spacing: -0.07rem;
     line-height: 1.2;
     color: #000;
     position: absolute;
@@ -5877,6 +6224,10 @@ body {
     top: -3.5%;
     width: 100%;
     text-align: center; }
+    @media (min-width: 1680px) {
+      #portfolio .carousel-labels {
+        font-size: 2rem;
+        letter-spacing: -0.08rem; } }
   #portfolio .carousel-label {
     display: none; }
   #portfolio .carousel-label.active {
@@ -5928,9 +6279,12 @@ body {
     justify-content: center;
     align-items: center;
     font-family: "worksans-thin", sans-serif;
-    font-size: 2.4rem;
+    font-size: 2rem;
     line-height: 1.2;
     color: #000; }
+    @media (min-width: 1680px) {
+      #experience .experience-timeline-year, #experience .experience-timeline-year-last {
+        font-size: 2.4rem; } }
   #experience .experience-timeline-year-last {
     position: absolute;
     left: 0;
@@ -5940,25 +6294,37 @@ body {
     padding-bottom: 20px; }
   #experience .experience-employer-name {
     font-family: "worksans-thin", sans-serif;
-    font-size: 2.4rem;
+    font-size: 2rem;
     line-height: 1.2;
     color: #000;
     margin-bottom: 0.5rem; }
+    @media (min-width: 1680px) {
+      #experience .experience-employer-name {
+        font-size: 2.4rem; } }
   #experience .experience-position {
     font-family: "worksans-regular", sans-serif;
-    font-size: 2.7rem;
-    letter-spacing: -0.2rem;
+    font-size: 2rem;
+    letter-spacing: -0.12rem;
     line-height: 1.2;
     color: #000;
     margin-bottom: 0.5rem; }
+    @media (min-width: 1680px) {
+      #experience .experience-position {
+        font-size: 2.7rem;
+        letter-spacing: -0.2rem; } }
   #experience .experience-subtitle {
     font-family: "worksans-light", sans-serif;
-    font-size: 1.6rem;
-    letter-spacing: -0.02rem;
-    line-height: 1.4;
     color: #000;
+    font-size: 1.4rem;
+    letter-spacing: -0.01rem;
+    line-height: 1.3;
     margin-bottom: 0.5rem;
     margin-top: 2.5rem; }
+    @media (min-width: 1680px) {
+      #experience .experience-subtitle {
+        letter-spacing: -0.02rem;
+        font-size: 1.6rem;
+        line-height: 1.4; } }
 
 #references {
   margin: 150px 0;
@@ -5979,31 +6345,44 @@ body {
     width: 28%; }
   #references .references-title {
     font-family: "worksans-regular", sans-serif;
-    font-size: 2.7rem;
-    letter-spacing: -0.2rem;
+    font-size: 2rem;
+    letter-spacing: -0.12rem;
     line-height: 1.2;
     color: #000;
     margin-bottom: 6rem; }
+    @media (min-width: 1680px) {
+      #references .references-title {
+        font-size: 2.7rem;
+        letter-spacing: -0.2rem; } }
   #references .reference-content {
     position: relative;
     font-style: italic; }
   #references .reference-author {
     font-family: "worksans-regular", sans-serif;
-    font-size: 2.2rem;
-    letter-spacing: -0.12rem;
+    font-size: 1.5rem;
+    letter-spacing: -0.08rem;
     line-height: 1.1;
     color: #000;
     margin-bottom: 0.6rem;
     margin-top: 1.2rem;
     position: relative; }
+    @media (min-width: 1680px) {
+      #references .reference-author {
+        font-size: 2.2rem;
+        letter-spacing: -0.12rem; } }
   #references .reference-author-title {
     font-family: "worksans-thin", sans-serif;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     line-height: 1.2;
-    letter-spacing: 0.03rem;
+    letter-spacing: 0.02rem;
     color: #000;
     margin-bottom: 0;
     position: relative; }
+    @media (min-width: 1680px) {
+      #references .reference-author-title {
+        line-height: 1.2;
+        font-size: 1.7rem;
+        letter-spacing: 0.03rem; } }
   #references .reference-author-title {
     margin-bottom: 0;
     position: relative; }
@@ -6027,23 +6406,26 @@ body {
     bottom: -2%;
     left: 47%; }
   #references .references-linkedin-link {
+    font-size: 1.4rem;
+    letter-spacing: -0.08rem;
+    font-family: "worksans-regular", sans-serif;
+    text-decoration: underline;
+    color: #000;
     border: 0;
     padding: 3px 8px;
     background: transparent;
     cursor: pointer;
-    font-size: 1.6rem;
-    letter-spacing: -0.1rem;
-    font-family: "worksans-regular", sans-serif;
-    text-decoration: underline;
-    outline: none;
-    color: #000;
+    outline: none !important;
     clear: both;
     display: block;
     margin-top: 4rem; }
     #references .references-linkedin-link:hover, #references .references-linkedin-link:focus, #references .references-linkedin-link:active {
-      outline: none;
       color: #8c8c8c;
       text-decoration: underline; }
+    @media (min-width: 1680px) {
+      #references .references-linkedin-link {
+        font-size: 1.6rem;
+        letter-spacing: -0.1rem; } }
 
 #about {
   flex-direction: column;
@@ -6097,7 +6479,7 @@ body {
       padding-right: 0; }
     #about .about-interest .about-interest-title {
       font-family: "worksans-thin", sans-serif;
-      font-size: 2.4rem;
+      font-size: 2rem;
       line-height: 1.2;
       color: #000;
       width: 200px;
@@ -6111,6 +6493,9 @@ body {
       align-items: center;
       text-align: center;
       flex: 1 0 auto; }
+      @media (min-width: 1680px) {
+        #about .about-interest .about-interest-title {
+          font-size: 2.4rem; } }
   #about .about-interest-image {
     margin: 0 3rem;
     min-width: 21%;
@@ -6118,38 +6503,48 @@ body {
     #about .about-interest-image img {
       max-width: 200px; }
   #about .interest-button {
+    font-size: 1.4rem;
+    letter-spacing: -0.08rem;
+    font-family: "worksans-regular", sans-serif;
+    text-decoration: underline;
+    color: #000;
     border: 0;
     padding: 3px 8px;
     background: transparent;
     cursor: pointer;
-    font-size: 1.6rem;
-    letter-spacing: -0.1rem;
-    font-family: "worksans-regular", sans-serif;
-    text-decoration: underline;
-    outline: none;
-    color: #000; }
+    outline: none !important; }
     #about .interest-button:hover, #about .interest-button:focus, #about .interest-button:active {
-      outline: none;
       color: #8c8c8c;
       text-decoration: underline; }
+    @media (min-width: 1680px) {
+      #about .interest-button {
+        font-size: 1.6rem;
+        letter-spacing: -0.1rem; } }
   #about .about-intro {
     margin-bottom: 4rem;
     text-align: center;
     width: 100%; }
     #about .about-intro .about-interest-title {
       font-family: "worksans-thin", sans-serif;
-      font-size: 2.4rem;
+      font-size: 2rem;
       line-height: 1.2;
       color: #000; }
+      @media (min-width: 1680px) {
+        #about .about-intro .about-interest-title {
+          font-size: 2.4rem; } }
   #about .about-interest-title-main {
     font-family: "worksans-regular", sans-serif;
-    font-size: 2.7rem;
-    letter-spacing: -0.2rem;
+    font-size: 2rem;
+    letter-spacing: -0.12rem;
     line-height: 1.2;
     color: #000;
     margin-bottom: 3rem;
     width: 100%;
     text-align: center; }
+    @media (min-width: 1680px) {
+      #about .about-interest-title-main {
+        font-size: 2.7rem;
+        letter-spacing: -0.2rem; } }
   #about .about-photo {
     margin: 0 auto 3rem auto;
     position: relative;
@@ -6179,18 +6574,27 @@ body {
     width: 17%; }
   #about .about-item-modal .about-item-modal-title {
     font-family: "worksans-regular", sans-serif;
-    font-size: 2.2rem;
-    letter-spacing: -0.12rem;
+    font-size: 1.5rem;
+    letter-spacing: -0.08rem;
     line-height: 1.1;
     color: #000;
     margin-bottom: 0.3rem; }
+    @media (min-width: 1680px) {
+      #about .about-item-modal .about-item-modal-title {
+        font-size: 2.2rem;
+        letter-spacing: -0.12rem; } }
   #about .about-item-modal .about-item-modal-subtitle {
     font-family: "worksans-thin", sans-serif;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     line-height: 1.2;
-    letter-spacing: 0.03rem;
+    letter-spacing: 0.02rem;
     color: #000;
     margin-bottom: 1.4rem; }
+    @media (min-width: 1680px) {
+      #about .about-item-modal .about-item-modal-subtitle {
+        line-height: 1.2;
+        font-size: 1.7rem;
+        letter-spacing: 0.03rem; } }
   #about .about-item-modal .about-item-img-full-wrapper {
     position: fixed;
     top: 0;
@@ -6244,8 +6648,8 @@ body {
     height: 100%; }
   #about .carousel-labels {
     font-family: "worksans-light", sans-serif;
-    font-size: 2rem;
-    letter-spacing: -0.08rem;
+    font-size: 1.7rem;
+    letter-spacing: -0.07rem;
     line-height: 1.2;
     color: #000;
     position: absolute;
@@ -6253,6 +6657,10 @@ body {
     top: -3.5%;
     width: 100%;
     text-align: center; }
+    @media (min-width: 1680px) {
+      #about .carousel-labels {
+        font-size: 2rem;
+        letter-spacing: -0.08rem; } }
   #about .carousel-label {
     display: none; }
   #about .carousel-label.active {
@@ -6285,16 +6693,23 @@ body {
         color: rgba(0, 0, 0, 0.3); }
   #contact .contact-title {
     font-family: "worksans-regular", sans-serif;
-    font-size: 2.7rem;
-    letter-spacing: -0.2rem;
+    font-size: 2rem;
+    letter-spacing: -0.12rem;
     line-height: 1.2;
     color: #000;
     margin: 2rem 0; }
+    @media (min-width: 1680px) {
+      #contact .contact-title {
+        font-size: 2.7rem;
+        letter-spacing: -0.2rem; } }
   #contact .contact-content {
     font-family: "worksans-thin", sans-serif;
-    font-size: 2.4rem;
+    font-size: 2rem;
     line-height: 1.2;
     color: #000; }
+    @media (min-width: 1680px) {
+      #contact .contact-content {
+        font-size: 2.4rem; } }
   #contact .contact-methods {
     display: flex;
     justify-content: center; }
@@ -6315,20 +6730,23 @@ body {
     margin-bottom: 10px;
     display: block; }
   #contact .contact-method-link {
+    font-size: 1.4rem;
+    letter-spacing: -0.08rem;
+    font-family: "worksans-regular", sans-serif;
+    text-decoration: underline;
+    color: #000;
     border: 0;
     padding: 3px 8px;
     background: transparent;
     cursor: pointer;
-    font-size: 1.6rem;
-    letter-spacing: -0.1rem;
-    font-family: "worksans-regular", sans-serif;
-    text-decoration: underline;
-    outline: none;
-    color: #000; }
+    outline: none !important; }
     #contact .contact-method-link:hover, #contact .contact-method-link:focus, #contact .contact-method-link:active {
-      outline: none;
       color: #8c8c8c;
       text-decoration: underline; }
+    @media (min-width: 1680px) {
+      #contact .contact-method-link {
+        font-size: 1.6rem;
+        letter-spacing: -0.1rem; } }
 
 #outro .section-header-img-wrapper {
   max-width: 400px;
@@ -6346,9 +6764,12 @@ body {
 
 #outro .section-header-sub-title {
   font-family: "worksans-thin", sans-serif;
-  font-size: 2.4rem;
+  font-size: 2rem;
   line-height: 1.2;
   color: #000;
   margin-bottom: 1.8rem; }
+  @media (min-width: 1680px) {
+    #outro .section-header-sub-title {
+      font-size: 2.4rem; } }
 
 /*# sourceMappingURL=maps/main.css.map */

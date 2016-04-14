@@ -37,8 +37,13 @@
   }
 
   & .article-body {
-    width: 75%;
-    margin-left: 25%;
+    width: 77%;
+    margin-left: 23%;
+
+    @include media-breakpoint-up(xxl) {
+      width: 75%;
+      margin-left: 25%;
+    }
   }
 
   & .portfolio-item-vendomo-crm {
@@ -61,6 +66,33 @@
     margin-bottom: 0;
   }
 
+  .portfolio-item-title {
+    @include text-regular-title-small();
+    max-width: 92%;
+    margin-bottom: 0.3rem;
+    @include media-breakpoint-up(xxl) {
+      max-width: none;
+    }
+  }
+
+  .portfolio-item-text {
+    @include text-base();
+    line-height: 1.3;
+    margin-bottom: 0.3rem;
+    @include media-breakpoint-up(xxl) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .portfolio-item-secondary-title {
+    @include text-thin-title-small();
+    margin-top: 0;
+    margin-bottom: 0;
+    @include media-breakpoint-up(xxl) {
+      //margin-top: 1rem;
+    }
+  }
+
   .portfolio-item-title-wrapper {
     display: none;
     text-align: center;
@@ -70,8 +102,15 @@
     width: 31%;
     background-repeat: no-repeat;
     background-size: 100%;
+    background-position: center;
     min-height: 320px;
-    padding: 3.7rem 3rem;
+    padding: 0 4%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include media-breakpoint-up(xxl) {
+      padding: 0 3rem;
+    }
   }
 
   .portfolio-item-title-wrapper-horizontal {
@@ -105,7 +144,7 @@
 
   .child-hovered .portfolio-item-title-wrapper,
   .child-hovered .portfolio-item-title-wrapper-horizontal {
-    display: block;
+    display: flex;
   }
 
   .portfolio-item-details-wrapper {
@@ -129,27 +168,15 @@
     z-index: 0;
   }
 
-  .portfolio-item-title {
-    @include text-regular-title-small();
-    margin-bottom: 0.3rem;
-  }
-
-  .portfolio-item-text {
-    @include text-base();
-    line-height: 1.3;
-  }
-
-  .portfolio-item-secondary-title {
-    @include text-thin-title-small();
-    margin-top: 1rem;
-    margin-bottom: 0;
-  }
-
   .project-type-label {
     @include text-light-title-small();
     position: absolute;
-    top: -3.1rem;
+    top: -2.4rem;
     left: 4.2%;
+
+    @include media-breakpoint-up(xxl) {
+      bottom: -3.1rem;
+    }
   }
 
   .portfolio-item-img-full-wrapper {
@@ -202,7 +229,7 @@
 
   .portfolio-item-desktop {
     position: absolute;
-    width: 60%;
+    width: calc(56% + (56% * 0.1));
     max-width: 796px;
 
     & .portfolio-item-img-preview {
@@ -216,7 +243,7 @@
 
   & .portfolio-item-tablet {
     position: absolute;
-    width: 50%;
+    width: calc(19% + (19% * 0.1));
     max-width: 263px;
 
     & .portfolio-item-img-preview {
@@ -230,7 +257,7 @@
 
   & .portfolio-item-notebook {
     position: absolute;
-    width: 50%;
+    width: calc(42% + (42% * 0.1));
     max-width: 600px;
 
     & .portfolio-item-img-preview {
@@ -244,7 +271,7 @@
 
   & .portfolio-item-mobile {
     position: absolute;
-    width: 10%;
+    width: calc(8% + (8% * 0.1));
     max-width: 111px;
 
     & .portfolio-item-img-preview {
@@ -276,8 +303,77 @@
   & .portfolio-item-tv2 {
     top: 34%;
     left: 37%;
+    @include media-breakpoint-up(xxl) {
+      top: 36%;
+    }
   }
 
+  & .notebooks-set-item1 {
+    top: 28%;
+    left: 1%;
+    @include media-breakpoint-up(xxl) {
+      top: 25%;
+      left: -2%;
+    }
+
+    & .project-type-label {
+      left: auto;
+      right: 12.8%;
+    }
+  }
+
+  & .notebooks-set-item2 {
+    top: 28%;
+    left: 57%;
+    @include media-breakpoint-up(xxl) {
+      top: 25%;
+      left: 56%;
+    }
+
+    & .project-type-label {
+      left: 12.8%;
+    }
+  }
+
+  & .notebooks-set-item3 {
+    top: 38%;
+    left: 12%;
+    @include media-breakpoint-up(xxl) {
+      left: 9%;
+    }
+
+    & .project-type-label {
+      left: auto;
+      right: 12.8%;
+    }
+  }
+
+  & .notebooks-set-item4 {
+    top: 38%;
+    left: 46%;
+    @include media-breakpoint-up(xxl) {
+      left: 45%;
+    }
+
+    & .project-type-label {
+      left: 12.8%;
+    }
+  }
+
+  & .notebooks-set-item5 {
+    top: 48%;
+    left: 27%;
+    @include media-breakpoint-up(xxl) {
+      top: 51%;
+    }
+
+    & .project-type-label {
+      left: 50%;
+      bottom: -1rem;
+      top: auto;
+      transform: translateX(-50%);
+    }
+  }
 
   & .project-type-label {
     left: 1.6%;
@@ -290,8 +386,12 @@
     @extend %portfolio-item;
 
     & .portfolio-item-desktop {
-      top: 13%;
+      top: 18%;
       left: 15%;
+
+      @include media-breakpoint-up(xxl) {
+        top: 13%;
+      }
     }
 
     & .portfolio-item-tablet {
@@ -305,13 +405,17 @@
     }
 
     & .portfolio-item-mobile {
-      top: 60%;
+      top: 55%;
       left: 6%;
+
+      @include media-breakpoint-up(xxl) {
+        top: 60%;
+      }
     }
 
     & .portfolio-item-title-wrapper {
-      left: 72.8%;
-      top: 11%;
+      right: -33.5%;
+      top: -11%;
     }
 
     & .portfolio-item-subtitle-employer {
@@ -326,8 +430,12 @@
     @extend %portfolio-item;
 
     & .portfolio-item-desktop {
-      top: 13%;
+      top: 18%;
       left: 23%;
+
+      @include media-breakpoint-up(xxl) {
+        top: 13%;
+      }
     }
 
     & .portfolio-item-tablet {
@@ -337,17 +445,21 @@
 
     & .portfolio-item-notebook {
       top: 44.6%;
-      left: 0;
+      left: 1%;
     }
 
     & .portfolio-item-mobile {
-      top: 60%;
+      top: 55%;
       left: 82%;
+
+      @include media-breakpoint-up(xxl) {
+        top: 60%;
+      }
     }
 
     & .portfolio-item-title-wrapper {
-      left: 3%;
-      top: 10.5%;
+      left: -36%;
+      top: -13%;
     }
 
     & .portfolio-item-subtitle-employer {
@@ -362,8 +474,12 @@
     @extend %portfolio-item;
 
     & .portfolio-item-desktop {
-      top: 13%;
+      top: 21%;
       left: 8%;
+
+      @include media-breakpoint-up(xxl) {
+        top: 13%;
+      }
     }
 
     & .portfolio-item-tablet {
@@ -382,8 +498,8 @@
     }
 
     & .portfolio-item-title-wrapper {
-      left: 66%;
-      top: 10.5%;
+      left: 104%;
+      top: -10.5%;
     }
 
     & .portfolio-item-subtitle-employer {
@@ -398,8 +514,12 @@
     @extend %portfolio-item;
 
     & .portfolio-item-desktop {
-      top: 13%;
+      top: 19%;
       left: 25%;
+
+      @include media-breakpoint-up(xxl) {
+        top: 13%;
+      }
     }
 
     & .portfolio-item-tablet {
@@ -409,7 +529,7 @@
 
     & .portfolio-item-notebook {
       top: 48.6%;
-      left: 3%;
+      left: 1%;
     }
 
     & .portfolio-item-mobile {
@@ -418,8 +538,8 @@
     }
 
     & .portfolio-item-title-wrapper {
-      left: 5%;
-      top: 14%;
+      left: -36%;
+      top: -7%;
     }
 
     & .portfolio-item-subtitle-employer {
@@ -440,67 +560,25 @@
   }
 
 
-  /////////  UNICRI  /////////
+  /////////  UNICRI & Others /////////
 
-  & .portfolio-item-unicri {
+  & .portfolio-item-unicri,
+  & .portfolio-item-others {
     @extend %portfolio-item;
 
+    & .portfolio-item-notebook {
+      width: 41%;
+
+      @include media-breakpoint-up(xxl) {
+        width: 42%;
+      }
+    }
+
     & .project-type-label {
-      top: -3rem;
-    }
+      bottom: -2rem;
 
-    & .portfolio-item-notebook-ande {
-      @extend .portfolio-item-notebook;
-      top: 25%;
-      left: -2%;
-
-      & .project-type-label {
-        left: auto;
-        right: 12.8%;
-      }
-    }
-
-    & .portfolio-item-notebook-eusec {
-      @extend .portfolio-item-notebook;
-      top: 25%;
-      left: 56%;
-
-      & .project-type-label {
-        left: 12.8%;
-      }
-    }
-
-    & .portfolio-item-notebook-cbrn {
-      @extend .portfolio-item-notebook;
-      top: 38%;
-      left: 9%;
-
-      & .project-type-label {
-        left: auto;
-        right: 12.8%;
-      }
-    }
-
-    & .portfolio-item-notebook-ipo {
-      @extend .portfolio-item-notebook;
-      top: 38%;
-      left: 45%;
-
-      & .project-type-label {
-        left: 12.8%;
-      }
-    }
-
-    & .portfolio-item-notebook-lab {
-      @extend .portfolio-item-notebook;
-      top: 51%;
-      left: 27%;
-
-      & .project-type-label {
-        left: 50%;
-        bottom: -1rem;
-        top: auto;
-        transform: translateX(-50%);
+      @include media-breakpoint-up(xxl) {
+        bottom: -3rem;
       }
     }
 
@@ -515,72 +593,6 @@
 
     & .portfolio-item-title {
       margin-top: 0.5rem;
-    }
-  }
-
-  /////////  Others  /////////
-
-  & .portfolio-item-others {
-    @extend %portfolio-item;
-
-    & .portfolio-item-notebook-school {
-      @extend .portfolio-item-notebook;
-      top: 25%;
-      left: -2%;
-
-      & .project-type-label {
-        left: auto;
-        right: 12.8%;
-      }
-    }
-
-    & .portfolio-item-notebook-davide {
-      @extend .portfolio-item-notebook;
-      top: 25%;
-      left: 56%;
-
-      & .project-type-label {
-        left: 12.8%;
-      }
-    }
-
-    & .portfolio-item-notebook-milena {
-      @extend .portfolio-item-notebook;
-      top: 38%;
-      left: 9%;
-
-      & .project-type-label {
-        left: auto;
-        right: 12.8%;
-      }
-    }
-
-    & .portfolio-item-notebook-pandora {
-      @extend .portfolio-item-notebook;
-      top: 38%;
-      left: 45%;
-
-      & .project-type-label {
-        left: 12.8%;
-      }
-    }
-
-    & .portfolio-item-notebook-acqua {
-      @extend .portfolio-item-notebook;
-      top: 51%;
-      left: 27%;
-
-      & .project-type-label {
-        left: 50%;
-        bottom: -1rem;
-        top: auto;
-        transform: translateX(-50%);
-      }
-    }
-
-    & .portfolio-item-title-wrapper-horizontal {
-      left: 36.7%;
-      top: 9%;
     }
   }
 

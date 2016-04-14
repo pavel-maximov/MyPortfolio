@@ -16,24 +16,12 @@
 
 
 @mixin make-button () {
+  @include text-link();
   border: 0;
   padding: 3px 8px;
   background: transparent;
   cursor: pointer;
-  font-size: 1.6rem;
-  letter-spacing: -0.1rem;
-  font-family: $font-family-work-sans-regular;
-  text-decoration: underline;
-  outline: none;
-  color: #000;
-
-  &:hover,
-  &:focus,
-  &:active {
-    outline: none;
-    color: #8c8c8c;
-    text-decoration: underline;
-  }
+  outline: none !important;
 }
 
 
@@ -103,68 +91,141 @@
   font-style: normal;
 }
 
-
 @mixin text-base {
   font-family: $font-family-work-sans-light;;
-  font-size: 1.6rem;
-  letter-spacing: -0.02rem;
-  line-height: 1.4;
   color: #000;
+  font-size: 1.4rem;
+  letter-spacing: -0.01rem;
+  line-height: 1.3;
+
+  @include media-breakpoint-up(xxl) {
+    letter-spacing: -0.02rem;
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+}
+
+@mixin text-link {
+  font-size: 1.4rem;
+  letter-spacing: -0.08rem;
+  font-family: $font-family-work-sans-regular;
+  text-decoration: underline;
+  color: #000;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #8c8c8c;
+    text-decoration: underline;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    font-size: 1.6rem;
+    letter-spacing: -0.1rem;
+  }
 }
 
 @mixin text-display-title {
   font-family: $font-family-she-always-walks-alone;
-  font-size: 4.4rem;
-  letter-spacing: -0.02rem;
-  line-height: 1.2;
   color: #000;
+  font-size: 3.6rem;
+  letter-spacing: -0.01rem;
+  line-height: 1.2;
+
+  @include media-breakpoint-up(xxl) {
+    font-size: 4.4rem;
+    letter-spacing: -0.02rem;
+  }
 }
 
 @mixin text-thin-title {
   font-family: $font-family-work-sans-thin;
-  font-size: 2.4rem;
+  font-size: 2rem;
   line-height: 1.2;
   color: #000;
+
+  @include media-breakpoint-up(xxl) {
+    font-size: 2.4rem;
+  }
+}
+
+@mixin text-thin-title-big {
+  font-family: $font-family-work-sans-thin;
+  color: #000;
+  line-height: 1.2;
+  font-size: 3.8rem;
+  letter-spacing: -0.08rem;
+
+  @include media-breakpoint-up(xxl) {
+    font-size: 4.6rem;
+    letter-spacing: -0.1rem;
+  }
 }
 
 @mixin text-thin-title-small {
   font-family: $font-family-work-sans-thin;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   line-height: 1.2;
-  letter-spacing: 0.03rem;
+  letter-spacing: 0.02rem;
   color: #000;
+
+  @include media-breakpoint-up(xxl) {
+    line-height: 1.2;
+    font-size: 1.7rem;
+    letter-spacing: 0.03rem;
+  }
 }
 
 @mixin text-light-title {
   font-family: $font-family-work-sans-light;
-  font-size: 2.4rem;
-  letter-spacing: -0.08rem;
+  font-size: 2rem;
+  letter-spacing: -0.06rem;
   line-height: 1.2;
   color: #000;
+
+  @include media-breakpoint-up(xxl) {
+    font-size: 2.4rem;
+    letter-spacing: -0.08rem;
+  }
 }
 
 @mixin text-light-title-small {
   font-family: $font-family-work-sans-light;
-  font-size: 2rem;
-  letter-spacing: -0.08rem;
+  font-size: 1.7rem;
+  letter-spacing: -0.07rem;
   line-height: 1.2;
   color: #000;
+
+  @include media-breakpoint-up(xxl) {
+    font-size: 2rem;
+    letter-spacing: -0.08rem;
+  }
 }
 
 @mixin text-regular-title {
   font-family: $font-family-work-sans-regular;
-  font-size: 2.7rem;
-  letter-spacing: -0.2rem;
+  font-size: 2rem;
+  letter-spacing: -0.12rem;
   line-height: 1.2;
   color: #000;
+
+  @include media-breakpoint-up(xxl) {
+    font-size: 2.7rem;
+    letter-spacing: -0.2rem;
+  }
 }
 
 @mixin text-regular-title-small {
   font-family: $font-family-work-sans-regular;
-  font-size: 2.2rem;
-  letter-spacing: -0.12rem;
+  font-size: 1.5rem;
+  letter-spacing: -0.08rem;
   line-height: 1.1;
   color: #000;
+
+  @include media-breakpoint-up(xxl) {
+    font-size: 2.2rem;
+    letter-spacing: -0.12rem;
+  }
 }
 
 
@@ -209,19 +270,25 @@ h3, .h3 {
 }
 
 %article-wrapper {
-  min-height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   position: relative;
 }
 
 .section-header {
-  width: 25%;
+  width: 22%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding-left: 1.5%;
+
+  @include media-breakpoint-up(xxl) {
+    padding-left: 0;
+    width: 25%;
+  }
 }
 
 .section-header-title {
