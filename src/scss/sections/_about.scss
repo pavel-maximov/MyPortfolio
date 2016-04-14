@@ -129,15 +129,27 @@
   & .about-photo {
     margin: 0 auto 3rem auto;
     position: relative;
-    left: 10px;
+    left: 15px;
     width: 100%;
     max-width: 400px;
+    height: 316px;
   }
 
 
   /////////  MODAL  /////////
 
   .about-item-modal {
+
+    & .about-item-modal-content {
+      height: 100%;
+    }
+
+    & .about-video-container {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
     & .modal-dialog {
       width: 97%;

@@ -155,7 +155,12 @@ function initModal($modal, $mainCarousel, $secondaryCarousel) {
     initCarousel($modal, $mainCarousel, $secondaryCarousel);
 
     $modal.find('.modal-close-button').click(function() {
+        var $video = $modal.find('video');
+
         $body.removeClass('about-model-open');
+        if ($video.length) {
+            $video[0].pause();
+        }
         $modal.modal('hide');
     });
 
@@ -205,7 +210,7 @@ $document.ready(function () {
     startPointExperience = $experience.offset().top;
     endPointExperience = startPointExperience + $experience.outerHeight() - $window.height();
     startPointAbout = $about.offset().top;
-    endPointAbout = startPointAbout + $about.outerHeight() - ($window.height() / 2);
+    endPointAbout = startPointAbout + $about.outerHeight() - $window.height();
     startPointSkills = $skills.offset().top;
     endPointSkills = startPointSkills + $skills.outerHeight();
 

@@ -4830,9 +4830,11 @@ body {
   font-size: 1.6rem;
   letter-spacing: -0.02rem;
   line-height: 1.4;
+  color: #000;
   padding: 0;
   margin: 0;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  color: #333; }
 
 .separator {
   color: #CCC; }
@@ -4856,12 +4858,14 @@ body {
   font-size: 4.4rem;
   letter-spacing: -0.02rem;
   line-height: 1.2;
+  color: #000;
   margin-top: 3rem; }
 
 .section-header-subtitle {
   font-family: "worksans-thin", sans-serif;
   font-size: 2.4rem;
-  line-height: 1.2; }
+  line-height: 1.2;
+  color: #000; }
 
 .article-footer {
   text-align: center; }
@@ -4913,7 +4917,8 @@ body {
   letter-spacing: -0.1rem;
   font-family: "worksans-regular", sans-serif;
   text-decoration: underline;
-  outline: none; }
+  outline: none;
+  color: #000; }
   .footer__nav__button:hover, .footer__nav__button:focus, .footer__nav__button:active {
     outline: none;
     color: #8c8c8c;
@@ -4928,7 +4933,8 @@ body {
   letter-spacing: -0.1rem;
   font-family: "worksans-regular", sans-serif;
   text-decoration: underline;
-  outline: none; }
+  outline: none;
+  color: #000; }
   .article-header__nav__button:hover, .article-header__nav__button:focus, .article-header__nav__button:active {
     outline: none;
     color: #8c8c8c;
@@ -4982,7 +4988,8 @@ body {
   letter-spacing: -0.1rem;
   font-family: "worksans-regular", sans-serif;
   text-decoration: underline;
-  outline: none; }
+  outline: none;
+  color: #000; }
   .side-bar__nav__button--portfolio:hover, .side-bar__nav__button--skills:hover, .side-bar__nav__button--experience:hover, .side-bar__nav__button--contact:hover, .side-bar__nav__button--resume:hover, .side-bar__nav__button--code:hover, .side-bar__nav__button--portfolio:focus, .side-bar__nav__button--skills:focus, .side-bar__nav__button--experience:focus, .side-bar__nav__button--contact:focus, .side-bar__nav__button--resume:focus, .side-bar__nav__button--code:focus, .side-bar__nav__button--portfolio:active, .side-bar__nav__button--skills:active, .side-bar__nav__button--experience:active, .side-bar__nav__button--contact:active, .side-bar__nav__button--resume:active, .side-bar__nav__button--code:active {
     outline: none;
     color: #8c8c8c;
@@ -5235,12 +5242,14 @@ body {
   font-size: 4.4rem;
   letter-spacing: -0.02rem;
   line-height: 1.2;
+  color: #000;
   display: block; }
 
 #intro .intro-job-title {
   font-family: "worksans-thin", sans-serif;
   font-size: 2.4rem;
   line-height: 1.2;
+  color: #000;
   display: block;
   font-size: 4.6rem;
   letter-spacing: -0.1rem; }
@@ -5256,6 +5265,7 @@ body {
   font-family: "worksans-thin", sans-serif;
   font-size: 2.4rem;
   line-height: 1.2;
+  color: #000;
   font-size: 4.5rem;
   margin-bottom: 1.8rem;
   margin-top: 0; }
@@ -5276,6 +5286,7 @@ body {
   font-family: "worksans-thin", sans-serif;
   font-size: 2.4rem;
   line-height: 1.2;
+  color: #000;
   display: none;
   position: absolute;
   width: 100%;
@@ -5338,6 +5349,7 @@ body {
     font-size: 2.7rem;
     letter-spacing: -0.2rem;
     line-height: 1.2;
+    color: #000;
     margin-top: 0;
     margin-bottom: 0.8rem; }
   #skills .skills-list-title-small {
@@ -5345,6 +5357,7 @@ body {
     font-size: 2.2rem;
     letter-spacing: -0.12rem;
     line-height: 1.1;
+    color: #000;
     margin-top: 0;
     margin-bottom: 0.4rem; }
   #skills .skills-group-javascript, #skills .skills-group-css, #skills .skills-group-html, #skills .skills-group-tools, #skills .skills-group-coding, #skills .skills-group-uxui, #skills .skills-group-backend {
@@ -5475,18 +5488,21 @@ body {
     font-size: 2.2rem;
     letter-spacing: -0.12rem;
     line-height: 1.1;
+    color: #000;
     margin-bottom: 0.3rem; }
   #portfolio .portfolio-item-text {
     font-family: "worksans-light", sans-serif;
     font-size: 1.6rem;
     letter-spacing: -0.02rem;
     line-height: 1.4;
+    color: #000;
     line-height: 1.3; }
   #portfolio .portfolio-item-secondary-title {
     font-family: "worksans-thin", sans-serif;
     font-size: 1.7rem;
     line-height: 1.2;
     letter-spacing: 0.03rem;
+    color: #000;
     margin-top: 1rem;
     margin-bottom: 0; }
   #portfolio .project-type-label {
@@ -5494,6 +5510,7 @@ body {
     font-size: 2rem;
     letter-spacing: -0.08rem;
     line-height: 1.2;
+    color: #000;
     position: absolute;
     top: -3.1rem;
     left: 4.2%; }
@@ -5743,12 +5760,14 @@ body {
     font-size: 2.2rem;
     letter-spacing: -0.12rem;
     line-height: 1.1;
+    color: #000;
     margin-bottom: 0.3rem; }
   #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-subtitle, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-subtitle, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-subtitle {
     font-family: "worksans-thin", sans-serif;
     font-size: 1.7rem;
     line-height: 1.2;
     letter-spacing: 0.03rem;
+    color: #000;
     margin-bottom: 1.4rem; }
   #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-notebook, #portfolio .portfolio-item-modal-tv .portfolio-item-notebook, #portfolio .portfolio-item-modal-notebook .portfolio-item-notebook, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-ande, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-ande, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-ande, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-ande, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-ande, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-ande, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-eusec, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-eusec, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-eusec, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-eusec, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-eusec, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-eusec, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-cbrn, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-ipo, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-ipo, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-ipo, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-ipo, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-ipo, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-ipo, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-unicri .portfolio-item-notebook-lab, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-lab, #portfolio .portfolio-item-modal-tv .portfolio-item-unicri .portfolio-item-notebook-lab, #portfolio .portfolio-item-unicri .portfolio-item-modal-tv .portfolio-item-notebook-lab, #portfolio .portfolio-item-modal-notebook .portfolio-item-unicri .portfolio-item-notebook-lab, #portfolio .portfolio-item-unicri .portfolio-item-modal-notebook .portfolio-item-notebook-lab, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-school, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-school, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-school, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-school, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-school, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-school, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-davide, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-davide, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-davide, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-davide, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-davide, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-davide, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-milena, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-milena, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-milena, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-milena, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-milena, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-milena, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-pandora, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-pandora, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-pandora, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-pandora, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-pandora, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-pandora, #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-others .portfolio-item-notebook-acqua, #portfolio .portfolio-item-others .portfolio-item-modal-notebook-mobile .portfolio-item-notebook-acqua, #portfolio .portfolio-item-modal-tv .portfolio-item-others .portfolio-item-notebook-acqua, #portfolio .portfolio-item-others .portfolio-item-modal-tv .portfolio-item-notebook-acqua, #portfolio .portfolio-item-modal-notebook .portfolio-item-others .portfolio-item-notebook-acqua, #portfolio .portfolio-item-others .portfolio-item-modal-notebook .portfolio-item-notebook-acqua {
     position: fixed;
@@ -5852,6 +5871,7 @@ body {
     font-size: 2rem;
     letter-spacing: -0.08rem;
     line-height: 1.2;
+    color: #000;
     position: absolute;
     left: -1%;
     top: -3.5%;
@@ -5909,7 +5929,8 @@ body {
     align-items: center;
     font-family: "worksans-thin", sans-serif;
     font-size: 2.4rem;
-    line-height: 1.2; }
+    line-height: 1.2;
+    color: #000; }
   #experience .experience-timeline-year-last {
     position: absolute;
     left: 0;
@@ -5921,18 +5942,21 @@ body {
     font-family: "worksans-thin", sans-serif;
     font-size: 2.4rem;
     line-height: 1.2;
+    color: #000;
     margin-bottom: 0.5rem; }
   #experience .experience-position {
     font-family: "worksans-regular", sans-serif;
     font-size: 2.7rem;
     letter-spacing: -0.2rem;
     line-height: 1.2;
+    color: #000;
     margin-bottom: 0.5rem; }
   #experience .experience-subtitle {
     font-family: "worksans-light", sans-serif;
     font-size: 1.6rem;
     letter-spacing: -0.02rem;
     line-height: 1.4;
+    color: #000;
     margin-bottom: 0.5rem;
     margin-top: 2.5rem; }
 
@@ -5958,6 +5982,7 @@ body {
     font-size: 2.7rem;
     letter-spacing: -0.2rem;
     line-height: 1.2;
+    color: #000;
     margin-bottom: 6rem; }
   #references .reference-content {
     position: relative;
@@ -5967,6 +5992,7 @@ body {
     font-size: 2.2rem;
     letter-spacing: -0.12rem;
     line-height: 1.1;
+    color: #000;
     margin-bottom: 0.6rem;
     margin-top: 1.2rem;
     position: relative; }
@@ -5975,6 +6001,7 @@ body {
     font-size: 1.7rem;
     line-height: 1.2;
     letter-spacing: 0.03rem;
+    color: #000;
     margin-bottom: 0;
     position: relative; }
   #references .reference-author-title {
@@ -6009,6 +6036,7 @@ body {
     font-family: "worksans-regular", sans-serif;
     text-decoration: underline;
     outline: none;
+    color: #000;
     clear: both;
     display: block;
     margin-top: 4rem; }
@@ -6071,6 +6099,7 @@ body {
       font-family: "worksans-thin", sans-serif;
       font-size: 2.4rem;
       line-height: 1.2;
+      color: #000;
       width: 200px;
       height: 200px;
       margin: 0 3rem 0 0;
@@ -6097,7 +6126,8 @@ body {
     letter-spacing: -0.1rem;
     font-family: "worksans-regular", sans-serif;
     text-decoration: underline;
-    outline: none; }
+    outline: none;
+    color: #000; }
     #about .interest-button:hover, #about .interest-button:focus, #about .interest-button:active {
       outline: none;
       color: #8c8c8c;
@@ -6109,21 +6139,31 @@ body {
     #about .about-intro .about-interest-title {
       font-family: "worksans-thin", sans-serif;
       font-size: 2.4rem;
-      line-height: 1.2; }
+      line-height: 1.2;
+      color: #000; }
   #about .about-interest-title-main {
     font-family: "worksans-regular", sans-serif;
     font-size: 2.7rem;
     letter-spacing: -0.2rem;
     line-height: 1.2;
+    color: #000;
     margin-bottom: 3rem;
     width: 100%;
     text-align: center; }
   #about .about-photo {
     margin: 0 auto 3rem auto;
     position: relative;
-    left: 10px;
+    left: 15px;
     width: 100%;
-    max-width: 400px; }
+    max-width: 400px;
+    height: 316px; }
+  #about .about-item-modal .about-item-modal-content {
+    height: 100%; }
+  #about .about-item-modal .about-video-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   #about .about-item-modal .modal-dialog {
     width: 97%;
     height: 90%;
@@ -6142,12 +6182,14 @@ body {
     font-size: 2.2rem;
     letter-spacing: -0.12rem;
     line-height: 1.1;
+    color: #000;
     margin-bottom: 0.3rem; }
   #about .about-item-modal .about-item-modal-subtitle {
     font-family: "worksans-thin", sans-serif;
     font-size: 1.7rem;
     line-height: 1.2;
     letter-spacing: 0.03rem;
+    color: #000;
     margin-bottom: 1.4rem; }
   #about .about-item-modal .about-item-img-full-wrapper {
     position: fixed;
@@ -6205,6 +6247,7 @@ body {
     font-size: 2rem;
     letter-spacing: -0.08rem;
     line-height: 1.2;
+    color: #000;
     position: absolute;
     left: -1%;
     top: -3.5%;
@@ -6245,11 +6288,13 @@ body {
     font-size: 2.7rem;
     letter-spacing: -0.2rem;
     line-height: 1.2;
+    color: #000;
     margin: 2rem 0; }
   #contact .contact-content {
     font-family: "worksans-thin", sans-serif;
     font-size: 2.4rem;
-    line-height: 1.2; }
+    line-height: 1.2;
+    color: #000; }
   #contact .contact-methods {
     display: flex;
     justify-content: center; }
@@ -6278,7 +6323,8 @@ body {
     letter-spacing: -0.1rem;
     font-family: "worksans-regular", sans-serif;
     text-decoration: underline;
-    outline: none; }
+    outline: none;
+    color: #000; }
     #contact .contact-method-link:hover, #contact .contact-method-link:focus, #contact .contact-method-link:active {
       outline: none;
       color: #8c8c8c;
@@ -6302,6 +6348,7 @@ body {
   font-family: "worksans-thin", sans-serif;
   font-size: 2.4rem;
   line-height: 1.2;
+  color: #000;
   margin-bottom: 1.8rem; }
 
 /*# sourceMappingURL=maps/main.css.map */
