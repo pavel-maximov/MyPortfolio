@@ -1653,6 +1653,176 @@ pre {
   .offset-xxl-11 {
     margin-left: 91.66667%; } }
 
+@media (min-width: 1921px) {
+  .col-xxxl {
+    position: relative;
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px; }
+  .col-xxxl-1 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%; }
+  .col-xxxl-2 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%; }
+  .col-xxxl-3 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 25%;
+    max-width: 25%; }
+  .col-xxxl-4 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%; }
+  .col-xxxl-5 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%; }
+  .col-xxxl-6 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 50%;
+    max-width: 50%; }
+  .col-xxxl-7 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%; }
+  .col-xxxl-8 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%; }
+  .col-xxxl-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 75%;
+    max-width: 75%; }
+  .col-xxxl-10 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%; }
+  .col-xxxl-11 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%; }
+  .col-xxxl-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 100%;
+    max-width: 100%; }
+  .pull-xxxl-0 {
+    right: auto; }
+  .pull-xxxl-1 {
+    right: 8.33333%; }
+  .pull-xxxl-2 {
+    right: 16.66667%; }
+  .pull-xxxl-3 {
+    right: 25%; }
+  .pull-xxxl-4 {
+    right: 33.33333%; }
+  .pull-xxxl-5 {
+    right: 41.66667%; }
+  .pull-xxxl-6 {
+    right: 50%; }
+  .pull-xxxl-7 {
+    right: 58.33333%; }
+  .pull-xxxl-8 {
+    right: 66.66667%; }
+  .pull-xxxl-9 {
+    right: 75%; }
+  .pull-xxxl-10 {
+    right: 83.33333%; }
+  .pull-xxxl-11 {
+    right: 91.66667%; }
+  .pull-xxxl-12 {
+    right: 100%; }
+  .push-xxxl-0 {
+    left: auto; }
+  .push-xxxl-1 {
+    left: 8.33333%; }
+  .push-xxxl-2 {
+    left: 16.66667%; }
+  .push-xxxl-3 {
+    left: 25%; }
+  .push-xxxl-4 {
+    left: 33.33333%; }
+  .push-xxxl-5 {
+    left: 41.66667%; }
+  .push-xxxl-6 {
+    left: 50%; }
+  .push-xxxl-7 {
+    left: 58.33333%; }
+  .push-xxxl-8 {
+    left: 66.66667%; }
+  .push-xxxl-9 {
+    left: 75%; }
+  .push-xxxl-10 {
+    left: 83.33333%; }
+  .push-xxxl-11 {
+    left: 91.66667%; }
+  .push-xxxl-12 {
+    left: 100%; }
+  .offset-xxxl-0 {
+    margin-left: 0%; }
+  .offset-xxxl-1 {
+    margin-left: 8.33333%; }
+  .offset-xxxl-2 {
+    margin-left: 16.66667%; }
+  .offset-xxxl-3 {
+    margin-left: 25%; }
+  .offset-xxxl-4 {
+    margin-left: 33.33333%; }
+  .offset-xxxl-5 {
+    margin-left: 41.66667%; }
+  .offset-xxxl-6 {
+    margin-left: 50%; }
+  .offset-xxxl-7 {
+    margin-left: 58.33333%; }
+  .offset-xxxl-8 {
+    margin-left: 66.66667%; }
+  .offset-xxxl-9 {
+    margin-left: 75%; }
+  .offset-xxxl-10 {
+    margin-left: 83.33333%; }
+  .offset-xxxl-11 {
+    margin-left: 91.66667%; } }
+
 .table {
   width: 100%;
   max-width: 100%;
@@ -4389,6 +4559,14 @@ a.bg-danger:focus, a.bg-danger:hover {
   .pull-xxl-none {
     float: none !important; } }
 
+@media (min-width: 1921px) {
+  .pull-xxxl-left {
+    float: left !important; }
+  .pull-xxxl-right {
+    float: right !important; }
+  .pull-xxxl-none {
+    float: none !important; } }
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -4662,6 +4840,14 @@ a.bg-danger:focus, a.bg-danger:hover {
   .text-xxl-center {
     text-align: center !important; } }
 
+@media (min-width: 1921px) {
+  .text-xxxl-left {
+    text-align: left !important; }
+  .text-xxxl-right {
+    text-align: right !important; }
+  .text-xxxl-center {
+    text-align: center !important; } }
+
 .text-lowercase {
   text-transform: lowercase !important; }
 
@@ -4769,7 +4955,15 @@ a.text-danger:focus, a.text-danger:hover {
   .hidden-xxl-up {
     display: none !important; } }
 
-.hidden-xxl-down {
+@media (max-width: 1920px) {
+  .hidden-xxl-down {
+    display: none !important; } }
+
+@media (min-width: 1921px) {
+  .hidden-xxxl-up {
+    display: none !important; } }
+
+.hidden-xxxl-down {
   display: none !important; }
 
 .visible-print-block {
@@ -5003,6 +5197,40 @@ a.text-danger:focus, a.text-danger:hover {
   .flex-items-xxl-between {
     justify-content: space-between; } }
 
+@media (min-width: 1921px) {
+  .flex-xxxl-first {
+    order: -1; }
+  .flex-xxxl-last {
+    order: 1; } }
+
+@media (min-width: 1921px) {
+  .flex-items-xxxl-top {
+    align-items: flex-start; }
+  .flex-items-xxxl-middle {
+    align-items: center; }
+  .flex-items-xxxl-bottom {
+    align-items: flex-end; } }
+
+@media (min-width: 1921px) {
+  .flex-xxxl-top {
+    align-self: flex-start; }
+  .flex-xxxl-middle {
+    align-self: center; }
+  .flex-xxxl-bottom {
+    align-self: flex-end; } }
+
+@media (min-width: 1921px) {
+  .flex-items-xxxl-left {
+    justify-content: flex-start; }
+  .flex-items-xxxl-center {
+    justify-content: center; }
+  .flex-items-xxxl-right {
+    justify-content: flex-end; }
+  .flex-items-xxxl-around {
+    justify-content: space-around; }
+  .flex-items-xxxl-between {
+    justify-content: space-between; } }
+
 @keyframes rotating {
   from {
     -ms-transform: rotate(0deg);
@@ -5079,7 +5307,11 @@ body {
   position: relative; }
 
 .section-header {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 22%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -5094,14 +5326,15 @@ body {
 .section-header-title {
   font-family: "she-always-walks-alone", serif;
   color: #000;
-  font-size: 3.6rem;
+  font-size: 3.2rem;
   letter-spacing: -0.01rem;
-  line-height: 1.2;
+  line-height: 1;
   margin-top: 3rem; }
   @media (min-width: 1680px) {
     .section-header-title {
       font-size: 4.4rem;
-      letter-spacing: -0.02rem; } }
+      letter-spacing: -0.02rem;
+      line-height: 1.2; } }
 
 .section-header-subtitle {
   font-family: "worksans-thin", sans-serif;
@@ -5490,7 +5723,7 @@ body {
 
 #intro {
   height: 100vh;
-  min-height: 630px; }
+  min-height: 580px; }
   @media (min-width: 1680px) {
     #intro {
       min-height: 900px; } }
@@ -5500,34 +5733,36 @@ body {
   #intro .intro-name {
     font-family: "she-always-walks-alone", serif;
     color: #000;
-    font-size: 3.6rem;
+    font-size: 3.2rem;
     letter-spacing: -0.01rem;
-    line-height: 1.2;
+    line-height: 1;
     display: block; }
     @media (min-width: 1680px) {
       #intro .intro-name {
         font-size: 4.4rem;
-        letter-spacing: -0.02rem; } }
+        letter-spacing: -0.02rem;
+        line-height: 1.2; } }
   #intro .intro-job-title {
     font-family: "worksans-thin", sans-serif;
     color: #000;
-    line-height: 1.2;
-    font-size: 3.8rem;
+    font-size: 3.4rem;
     letter-spacing: -0.08rem;
+    line-height: 1;
     display: block; }
     @media (min-width: 1680px) {
       #intro .intro-job-title {
         font-size: 4.6rem;
-        letter-spacing: -0.1rem; } }
+        letter-spacing: -0.1rem;
+        line-height: 1.2; } }
   #intro .intro-message {
-    margin-bottom: 3rem; }
+    margin-bottom: 2vh; }
   #intro .section-header-img-wrapper {
     max-width: 400px;
-    width: 20%;
+    width: 18%;
     margin-bottom: 1rem; }
     @media (min-width: 1680px) {
       #intro .section-header-img-wrapper {
-        width: 42%;
+        width: 20%;
         margin-bottom: 2rem; } }
   #intro .section-header-sub-title {
     font-family: "worksans-thin", sans-serif;
@@ -5559,11 +5794,16 @@ body {
     visibility: hidden;
     width: 100%;
     text-align: center;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    position: relative;
+    top: 10px; }
     @media (min-width: 1680px) {
       #intro .intro-teaser-title {
         font-size: 2.4rem; } }
-  #intro.teaser-title-visible .intro-teaser-title {
+  #intro .arrow-down {
+    visibility: hidden; }
+  #intro.teaser-title-visible .intro-teaser-title,
+  #intro.teaser-title-visible .arrow-down {
     visibility: visible; }
 
 #skills {
@@ -5684,10 +5924,6 @@ body {
   #portfolio .section-header-img-wrapper {
     width: 90%;
     max-width: 300px; }
-  #portfolio .section-header {
-    position: absolute;
-    top: calc(50vh - 273px);
-    left: 0; }
   #portfolio.portfolio-item--open .section-header {
     display: none; }
   #portfolio.scrolling-this .section-header {
@@ -5712,6 +5948,7 @@ body {
   #portfolio .portfolio-item-vendomo-crm, #portfolio .portfolio-item-bk, #portfolio .portfolio-item-vendomo, #portfolio .portfolio-item-foodora, #portfolio .portfolio-item-timvision,
   #portfolio .portfolio-item-cubomusica, #portfolio .portfolio-item-unicri,
   #portfolio .portfolio-item-others {
+    min-height: 800px;
     height: 100vh;
     display: flex;
     margin-bottom: 0; }
@@ -5721,7 +5958,7 @@ body {
     letter-spacing: -0.08rem;
     line-height: 1.1;
     color: #000;
-    max-width: 92%;
+    width: 70%;
     margin-bottom: 0.3rem; }
     @media (min-width: 1680px) {
       #portfolio .portfolio-item-title {
@@ -5730,14 +5967,29 @@ body {
     @media (min-width: 1680px) {
       #portfolio .portfolio-item-title {
         max-width: none; } }
+  #portfolio .portfolio-item-secondary-title {
+    font-family: "worksans-thin", sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    letter-spacing: 0.03rem;
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 80%; }
+    @media (min-width: 1680px) {
+      #portfolio .portfolio-item-secondary-title {
+        line-height: 1.2;
+        font-size: 1.7rem;
+        letter-spacing: 0.03rem; } }
   #portfolio .portfolio-item-text {
     font-family: "worksans-light", sans-serif;
     color: #000;
     font-size: 1.4rem;
     letter-spacing: -0.01rem;
     line-height: 1.3;
-    line-height: 1.3;
-    margin-bottom: 0.3rem; }
+    line-height: 1.2;
+    margin-bottom: 0.1rem;
+    width: 74%; }
     @media (min-width: 1680px) {
       #portfolio .portfolio-item-text {
         letter-spacing: -0.02rem;
@@ -5745,20 +5997,8 @@ body {
         line-height: 1.4; } }
     @media (min-width: 1680px) {
       #portfolio .portfolio-item-text {
-        margin-bottom: 1rem; } }
-  #portfolio .portfolio-item-secondary-title {
-    font-family: "worksans-thin", sans-serif;
-    font-size: 1.6rem;
-    line-height: 1.2;
-    letter-spacing: 0.02rem;
-    color: #000;
-    margin-top: 0;
-    margin-bottom: 0; }
-    @media (min-width: 1680px) {
-      #portfolio .portfolio-item-secondary-title {
-        line-height: 1.2;
-        font-size: 1.7rem;
-        letter-spacing: 0.03rem; } }
+        margin-bottom: 1rem;
+        line-height: 1.3; } }
   #portfolio .portfolio-item-title-wrapper {
     display: none;
     text-align: center;
@@ -5770,13 +6010,9 @@ body {
     background-size: 100%;
     background-position: center;
     min-height: 320px;
-    padding: 0 4%;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    @media (min-width: 1680px) {
-      #portfolio .portfolio-item-title-wrapper {
-        padding: 0 3rem; } }
   #portfolio .portfolio-item-title-wrapper-horizontal {
     display: none;
     text-align: center;
@@ -5987,7 +6223,7 @@ body {
         top: 60%; } }
   #portfolio .portfolio-item-bk .portfolio-item-title-wrapper {
     right: -33.5%;
-    top: -11%; }
+    top: -16%; }
   #portfolio .portfolio-item-bk .portfolio-item-subtitle-employer {
     margin: 2rem 0 0; }
   #portfolio .portfolio-item-vendomo .portfolio-item-desktop {
@@ -6010,7 +6246,7 @@ body {
         top: 60%; } }
   #portfolio .portfolio-item-vendomo .portfolio-item-title-wrapper {
     left: -36%;
-    top: -13%; }
+    top: -18%; }
   #portfolio .portfolio-item-vendomo .portfolio-item-subtitle-employer {
     margin: 2rem 0 0; }
   #portfolio .portfolio-item-vendomo-crm .portfolio-item-desktop {
@@ -6030,7 +6266,7 @@ body {
     left: 11.7%; }
   #portfolio .portfolio-item-vendomo-crm .portfolio-item-title-wrapper {
     left: 104%;
-    top: -10.5%; }
+    top: -21%; }
   #portfolio .portfolio-item-vendomo-crm .portfolio-item-subtitle-employer {
     margin: 2rem 0 0; }
   #portfolio .portfolio-item-foodora .portfolio-item-desktop {
@@ -6050,7 +6286,7 @@ body {
     left: 62.8%; }
   #portfolio .portfolio-item-foodora .portfolio-item-title-wrapper {
     left: -36%;
-    top: -7%; }
+    top: -13%; }
   #portfolio .portfolio-item-foodora .portfolio-item-subtitle-employer {
     margin: 2rem 0 0; }
   #portfolio .portfolio-item-timvision .portfolio-item-title,
@@ -6106,9 +6342,9 @@ body {
         letter-spacing: -0.12rem; } }
   #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-subtitle, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-subtitle, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-subtitle {
     font-family: "worksans-thin", sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     line-height: 1.2;
-    letter-spacing: 0.02rem;
+    letter-spacing: 0.03rem;
     color: #000;
     margin-bottom: 1.4rem; }
     @media (min-width: 1680px) {
@@ -6372,9 +6608,9 @@ body {
         letter-spacing: -0.12rem; } }
   #references .reference-author-title {
     font-family: "worksans-thin", sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     line-height: 1.2;
-    letter-spacing: 0.02rem;
+    letter-spacing: 0.03rem;
     color: #000;
     margin-bottom: 0;
     position: relative; }
@@ -6585,9 +6821,9 @@ body {
         letter-spacing: -0.12rem; } }
   #about .about-item-modal .about-item-modal-subtitle {
     font-family: "worksans-thin", sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     line-height: 1.2;
-    letter-spacing: 0.02rem;
+    letter-spacing: 0.03rem;
     color: #000;
     margin-bottom: 1.4rem; }
     @media (min-width: 1680px) {

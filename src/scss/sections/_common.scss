@@ -128,13 +128,14 @@
 @mixin text-display-title {
   font-family: $font-family-she-always-walks-alone;
   color: #000;
-  font-size: 3.6rem;
+  font-size: 3.2rem;
   letter-spacing: -0.01rem;
-  line-height: 1.2;
+  line-height: 1;
 
   @include media-breakpoint-up(xxl) {
     font-size: 4.4rem;
     letter-spacing: -0.02rem;
+    line-height: 1.2;
   }
 }
 
@@ -152,21 +153,22 @@
 @mixin text-thin-title-big {
   font-family: $font-family-work-sans-thin;
   color: #000;
-  line-height: 1.2;
-  font-size: 3.8rem;
+  font-size: 3.4rem;
   letter-spacing: -0.08rem;
+  line-height: 1;
 
   @include media-breakpoint-up(xxl) {
     font-size: 4.6rem;
     letter-spacing: -0.1rem;
+    line-height: 1.2;
   }
 }
 
 @mixin text-thin-title-small {
   font-family: $font-family-work-sans-thin;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 1.2;
-  letter-spacing: 0.02rem;
+  letter-spacing: 0.03rem;
   color: #000;
 
   @include media-breakpoint-up(xxl) {
@@ -277,14 +279,17 @@ h3, .h3 {
 }
 
 .section-header {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 22%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding-left: 1.5%;
-
   @include media-breakpoint-up(xxl) {
     padding-left: 0;
     width: 25%;

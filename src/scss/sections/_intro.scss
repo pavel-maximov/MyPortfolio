@@ -4,7 +4,7 @@
 #intro {
   @extend %article-wrapper;
   height: 100vh;
-  min-height: 630px;
+  min-height: 580px;
 
   @include media-breakpoint-up(xxl) {
     min-height: 900px;
@@ -26,16 +26,16 @@
   }
 
   & .intro-message {
-    margin-bottom: 3rem;
+    margin-bottom: 2vh;
   }
 
   & .section-header-img-wrapper {
     max-width: 400px;
-    width: 20%;
+    width: 18%;
     margin-bottom: 1rem;
 
     @include media-breakpoint-up(xxl) {
-      width: 42%;
+      width: 20%;
       margin-bottom: 2rem;
     }
   }
@@ -61,15 +61,22 @@
     background-size: cover;
   }
 
-  .intro-teaser-title {
+  & .intro-teaser-title {
     @include text-thin-title();
     visibility: hidden;
     width: 100%;
     text-align: center;
     margin-bottom: 0;
+    position: relative;
+    top: 10px;
   }
 
-  &.teaser-title-visible .intro-teaser-title {
+  & .arrow-down {
+    visibility: hidden;
+  }
+
+  &.teaser-title-visible .intro-teaser-title,
+  &.teaser-title-visible .arrow-down {
     visibility: visible;
   }
 }
