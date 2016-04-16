@@ -521,11 +521,11 @@
     }
 
     & .portfolio-item-title-wrapper-horizontal {
-      right: -290px;
-      top: -18%;
+      right: 12%;
+      top: -60%;
       @include media-breakpoint-up(xxl) {
-        right: -350px;
-        top: -23%;
+        right: 15%;
+        top: -300px;
       }
     }
   }
@@ -553,9 +553,10 @@
 
     & .portfolio-item-title-wrapper-horizontal {
       right: -44%;
-      top: -38%;
+      top: -42%;
       @include media-breakpoint-up(xxl) {
         right: -45%;
+        top: -180px;
       }
     }
 
@@ -591,6 +592,28 @@
       width: 17%;
     }
 
+    @mixin portfolio-item-wrapper-modal () {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      min-height: 500px;
+      @include media-breakpoint-up(xxl) {
+        min-height: 770px;
+      }
+    }
+
+    & .portfolio-item-notebook-wrapper {
+      @include portfolio-item-wrapper-modal();
+      left: 50%;
+      right: 0;
+    }
+
+    & .portfolio-item-mobile-wrapper {
+      @include portfolio-item-wrapper-modal();
+      left: 0;
+      right: 50%;
+    }
+
     & .portfolio-item-modal-title {
       @include text-regular-title-small();
       margin-bottom: 0.3rem;
@@ -602,17 +625,34 @@
     }
 
     & .portfolio-item-notebook {
-      position: fixed;
-      left: 16.3%;
-      top: 4%;
-      width: 82%;
+      position: absolute;
+      padding-top: 86.3%;
+      top: 50%;
+      left: -55%;
+      bottom: auto;
       max-width: none;
+      width: 133%;
+      margin-top: -39%;
+      @include media-breakpoint-up(xxl) {
+        width: 148%;
+        margin-top: -42%;
+        left: -57%;
+      }
+
+      & .portfolio-item-device-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
 
       & .portfolio-item-img-full-wrapper {
-        top: 56px;
+        top: 4%;
         left: 12.5%;
         right: 12.5%;
-        bottom: 206px;
+        bottom: 20.5%;
+        @include media-breakpoint-up(xxl) {
+          bottom: 12.5%;
+        }
       }
 
       & .wrapper {
@@ -622,11 +662,28 @@
     }
 
     & .portfolio-item-mobile {
-      position: fixed;
-      left: 8%;
-      top: 45%;
-      width: 13%;
+      position: absolute;
+      padding-top: 55.5%;
+      top: 50%;
+      left: auto;
+      right: 48%;
+      bottom: auto;
       max-width: none;
+      width: 24%;
+      margin-top: -13%;
+      z-index: 1;
+      @include media-breakpoint-up(xxl) {
+        width: 26%;
+        margin-top: -10%;
+        right: 51%;
+        padding-top: 60.1%;
+      }
+
+      & .portfolio-item-device-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
 
       & .portfolio-item-img-full-wrapper {
         top: 50px;
@@ -712,9 +769,13 @@
     }
 
     .carousel-indicators {
-      bottom: -5%;
-      left: 24.4%;
-      right: 9.9%;
+      bottom: 7.8%;
+      left: 0;
+      right: 0;
+      position: absolute;
+      @include media-breakpoint-up(xxl) {
+        bottom: -2.2%;
+      }
     }
   }
 
