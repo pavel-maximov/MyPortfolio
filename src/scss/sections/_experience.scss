@@ -12,25 +12,9 @@
     max-width: 300px;
   }
 
-  & .section-header {
-    position: absolute;
-    top: calc(50vh - 360px);
-    left: 0;
-  }
-
   & .section-header-img {
     position: relative;
     left: -14%;
-  }
-
-  &.scrolling-this .section-header {
-    position: fixed;
-  }
-
-  &.scrolled-this .section-header {
-    position: absolute;
-    top: auto;
-    bottom: calc(50vh - 360px);
   }
 
   & .article-body {

@@ -6,16 +6,15 @@
   @extend %article-wrapper;
   padding-right: 5%;
   align-items: center;
-  min-height: 65vh;
+  height: 60vh;
 
   & .section-header {
-    width: 25%;
-    position: relative;
+    height: 60vh;
+  }
 
-    & .section-header-img-wrapper {
-      width: 77%;
-      max-width: 350px;
-    }
+  & .section-header-img-wrapper {
+    width: 77%;
+    max-width: 350px;
   }
 
   & .article-body {

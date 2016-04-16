@@ -4,11 +4,11 @@
 
 #skills {
   @extend %article-wrapper;
-  min-height: 80vh;
+  height: 80vh;
   //background: linear-gradient(to right, rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.7) 100%); ;
 
-  & .section-header {
-    left: 3%;
+  & .article-body {
+    height: 80vh;
   }
 
   & .section-header-img-wrapper {

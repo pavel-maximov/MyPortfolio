@@ -3,8 +3,12 @@
 
 #outro {
   @extend %article-wrapper;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 
   & .section-header {
+    position: static;
   }
 
   & .section-header-img-wrapper {

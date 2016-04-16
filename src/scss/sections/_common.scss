@@ -193,7 +193,7 @@
 
 @mixin text-light-title-small {
   font-family: $font-family-work-sans-light;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   letter-spacing: -0.07rem;
   line-height: 1.2;
   color: #000;
@@ -260,10 +260,6 @@ h3, .h3 {
   //@include text-main-title();
 }
 
-.main-container {
-}
-
-
 
 ///////////////////  Sections  ///////////////////
 
@@ -310,11 +306,20 @@ h3, .h3 {
 }
 
 .article-body {
-  width: 75%;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  width: 100%;
+  margin-left: 0;
+  @include media-breakpoint-only(xl) {
+    width: 77%;
+    margin-left: 23%;
+  }
+  @include media-breakpoint-up(xxl) {
+    width: 75%;
+    margin-left: 25%;
+  }
 }
 
 .article-title-wrapper {
@@ -325,11 +330,27 @@ h3, .h3 {
   margin: auto;
 }
 
-
 .section-header-img {
   width: 100%;
 }
 
+.section-header {
+  position: absolute;
+  top: 0;
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
+}
+
+&.scrolling-this .section-header {
+  position: fixed;
+}
+
+&.scrolled-this .section-header {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+}
 
 .section-header-img-wrapper {
   width: 100%;
@@ -342,7 +363,6 @@ h3, .h3 {
   margin-top: auto;
   text-align: center;
 }
-
 
 
 ///////////////////  Footer  ///////////////////
