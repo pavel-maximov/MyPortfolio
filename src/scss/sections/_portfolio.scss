@@ -277,7 +277,7 @@
   & .portfolio-item-tv1,
   & .portfolio-item-tv2 {
     position: absolute;
-    bottom: 26%;
+    bottom: 21%;
     left: 1%;
     width: 55.9%;
     max-width: 800px;
@@ -292,7 +292,7 @@
   }
 
   & .portfolio-item-tv2 {
-    bottom: 9%;
+    bottom: 4%;
     left: 37%;
   }
 
@@ -372,22 +372,22 @@
     @extend %portfolio-item;
 
     & .portfolio-item-desktop {
-      bottom: 22%;
+      bottom: 7%;
       left: 12%;
     }
 
     & .portfolio-item-tablet {
-      bottom: 20%;
+      bottom: 5%;
       left: 9.5%;
     }
 
     & .portfolio-item-notebook {
-      bottom: 20%;
+      bottom: 5%;
       left: 50%;
     }
 
     & .portfolio-item-mobile {
-      bottom: 19%;
+      bottom: 4%;
       left: 4%;
     }
 
@@ -408,22 +408,22 @@
     @extend %portfolio-item;
 
     & .portfolio-item-desktop {
-      bottom: 22%;
+      bottom: 7%;
       left: 23%;
     }
 
     & .portfolio-item-tablet {
-      bottom: 20%;
+      bottom: 5%;
       left: 66%;
     }
 
     & .portfolio-item-notebook {
-      bottom: 20%;
+      bottom: 5%;
       left: 1%;
     }
 
     & .portfolio-item-mobile {
-      bottom: 19%;
+      bottom: 4%;
       left: 82%;
     }
 
@@ -444,22 +444,22 @@
     @extend %portfolio-item;
 
     & .portfolio-item-desktop {
-      bottom: 22%;
+      bottom: 7%;
       left: 7%;
     }
 
     & .portfolio-item-tablet {
-      bottom: 16%;
+      bottom: 1%;
       left: 22%;
     }
 
     & .portfolio-item-notebook {
-      bottom: 20%;
+      bottom: 5%;
       left: 49%;
     }
 
     & .portfolio-item-mobile {
-      bottom: 23%;
+      bottom: 8%;
       left: 11.7%;
     }
 
@@ -480,22 +480,22 @@
     @extend %portfolio-item;
 
     & .portfolio-item-desktop {
-      bottom: 22%;
+      bottom: 7%;
       left: 25%;
     }
 
     & .portfolio-item-tablet {
-      bottom: 20%;
+      bottom: 5%;
       left: 73%;
     }
 
     & .portfolio-item-notebook {
-      bottom: 20%;
+      bottom: 5%;
       left: 1%;
     }
 
     & .portfolio-item-mobile {
-      bottom: 19%;
+      bottom: 4%;
       left: 62.8%;
     }
 
@@ -545,10 +545,7 @@
     }
 
     & .project-type-label {
-      bottom: -2rem;
-      @include media-breakpoint-up(xxl) {
-        bottom: -3rem;
-      }
+      bottom: -0.5rem;
     }
 
     & .portfolio-item-title-wrapper-horizontal {
@@ -586,13 +583,13 @@
     }
 
     & .portfolio-item-modal-details-wrapper {
-      position: fixed;
-      left: 60px;
-      top: 40px;
-      width: 17%;
+      position: absolute;
+      left: -94%;
+      top: 8.6%;
+      width: 29%;
     }
 
-    @mixin portfolio-item-wrapper-modal () {
+    & .portfolio-item-modal-wrapper {
       position: fixed;
       top: 0;
       bottom: 0;
@@ -600,19 +597,10 @@
       @include media-breakpoint-up(xxl) {
         min-height: 770px;
       }
-    }
-
-    & .portfolio-item-notebook-wrapper {
-      @include portfolio-item-wrapper-modal();
       left: 50%;
       right: 0;
     }
 
-    & .portfolio-item-mobile-wrapper {
-      @include portfolio-item-wrapper-modal();
-      left: 0;
-      right: 50%;
-    }
 
     & .portfolio-item-modal-title {
       @include text-regular-title-small();
@@ -628,15 +616,16 @@
       position: absolute;
       padding-top: 86.3%;
       top: 50%;
-      left: -55%;
+      left: -31%;
       bottom: auto;
       max-width: none;
       width: 133%;
-      margin-top: -39%;
+      margin-top: -35%;
+      z-index: 1;
       @include media-breakpoint-up(xxl) {
-        width: 148%;
-        margin-top: -42%;
-        left: -57%;
+        width: 145%;
+        margin-top: -38%;
+        left: -41%;
       }
 
       & .portfolio-item-device-img {
@@ -646,12 +635,13 @@
       }
 
       & .portfolio-item-img-full-wrapper {
-        top: 4%;
+        top: 5.4%;
         left: 12.5%;
         right: 12.5%;
-        bottom: 20.5%;
+        bottom: 22.7%;
         @include media-breakpoint-up(xxl) {
-          bottom: 12.5%;
+          top: 6.4%;
+          bottom: 15%;
         }
       }
 
@@ -665,18 +655,15 @@
       position: absolute;
       padding-top: 55.5%;
       top: 50%;
-      left: auto;
-      right: 48%;
+      left: -48%;
       bottom: auto;
       max-width: none;
       width: 24%;
-      margin-top: -13%;
-      z-index: 1;
+      margin-top: -9%;
+      z-index: 2;
       @include media-breakpoint-up(xxl) {
-        width: 26%;
-        margin-top: -10%;
-        right: 51%;
-        padding-top: 60.1%;
+        top: 57%;
+        left: -55%;
       }
 
       & .portfolio-item-device-img {
@@ -686,10 +673,10 @@
       }
 
       & .portfolio-item-img-full-wrapper {
-        top: 50px;
+        top: 9%;
         left: 2.5%;
         right: 2.5%;
-        bottom: 103px;
+        bottom: 18.5%;
       }
 
       & .wrapper {
@@ -699,20 +686,32 @@
     }
 
     & .portfolio-item-samsung-tv {
-      position: fixed;
-      left: 25%;
-      top: 7.5%;
-      width: 67%;
+      position: absolute;
+      padding-top: 86.3%;
+      top: 50%;
+      left: -33%;
+      bottom: auto;
       max-width: none;
+      width: 115%;
+      margin-top: -35%;
+      z-index: 1;
+      @include media-breakpoint-up(xxl) {
+        width: 130%;
+        margin-top: -38%;
+        left: -40%;
+      }
 
       & .portfolio-item-img-full-wrapper {
         top: 2.4%;
         left: 1.5%;
         right: 1.7%;
-        bottom: 18.3%;
+        bottom: 15%;
       }
 
       & .portfolio-item-device-img {
+        position: absolute;
+        top: 0;
+        left: 0;
         max-width: 1239px;
       }
 
@@ -723,29 +722,8 @@
       }
     }
 
-    // TODO this style is duplicated with portfolio
-    & .modal-close-button {
-      width: 150px;
-      height: 150px;
-      color: #666;
-      font-size: 7rem;
-      font-family: $font-family-work-sans-thin;
-      position: fixed;
-      top: 0;
-      right: 0;
-      z-index: 1;
-      background: transparent;
-      border: none;
-      outline: none !important;
-
-      &:hover,
-      &:focus {
-        color: #999;
-      }
-    }
-
     & .portfolio-item-mobile .carousel-item-scroll-teaser {
-      padding-top: 66%;
+      padding-top: 50%;
     }
 
     & .portfolio-item-notebook .carousel-item-scroll-teaser {
@@ -755,28 +733,6 @@
 
   .portfolio-item-modal-notebook-mobile {
     @extend %portfolio-item-modal;
-
-    .carousel-control{
-      top: 39%;
-    }
-
-    .carousel-control.left {
-      left: 0;
-    }
-
-    .carousel-control.right {
-      right: 0;
-    }
-
-    .carousel-indicators {
-      bottom: 7.8%;
-      left: 0;
-      right: 0;
-      position: absolute;
-      @include media-breakpoint-up(xxl) {
-        bottom: -2.2%;
-      }
-    }
   }
 
   .portfolio-item-modal-tv {
@@ -787,39 +743,37 @@
     }
 
     .carousel-control.left {
-      left: 16%;
-    }
-
-    .carousel-control.right {
-      right: 0;
+      left: 22%;
     }
 
     .carousel-indicators {
-      bottom: -2%;
-      left: 25%;
-      right: 8.4%;
+      bottom: -10%;
+      @include media-breakpoint-up(xxl) {
+        bottom: -22%;
+      }
+    }
+
+    & .portfolio-item-modal-details-wrapper {
+      width: 37%;
     }
   }
 
   .portfolio-item-modal-notebook {
     @extend %portfolio-item-modal;
 
-    .carousel-control{
-      top: 39%;
-    }
-
     .carousel-control.left {
-      left: 13%;
+      left: 23%;
     }
 
-    .carousel-control.right {
-      right: 0;
+    & .portfolio-item-notebook {
+      left: -41%;
+      @include media-breakpoint-up(xxl) {
+        left: -47%;
+      }
     }
 
-    .carousel-indicators {
-      bottom: -2%;
-      left: 24.4%;
-      right: 9.9%;
+    & .portfolio-item-modal-details-wrapper {
+      width: 37%;
     }
   }
 

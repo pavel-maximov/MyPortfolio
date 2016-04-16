@@ -639,6 +639,7 @@ h3, .h3 {
 
 .carousel-control {
   position: fixed;
+  top: 39%;
   color: #666;
   text-shadow: none;
   width: 90px;
@@ -655,16 +656,24 @@ h3, .h3 {
 
 .carousel-control.left {
   background-image: none;
+  left: 17%;
 }
 
 .carousel-control.right {
   background-image: none;
+  right: -2%;
 }
 
 .carousel-indicators {
   width: auto;
-  position: fixed;
   margin: 0;
+  bottom: -21.6%;
+  left: 0;
+  right: 0;
+  position: absolute;
+  @include media-breakpoint-up(xxl) {
+    bottom: -19.3%;
+  }
 }
 
 .carousel-indicators li {
@@ -709,14 +718,22 @@ h3, .h3 {
   cursor: s-resize;
 
   & .carousel-item-scroll-teaser-image {
-    width: 150px;
-    height: 71px;
+    width: 20%;
+    height: 16%;
+    max-width: 150px;
+    max-height: 71px;
+    min-width: 100px;
+    min-height: 50px;
   }
 
   & .carousel-item-scroll-teaser-text {
-    font-size: 1.8rem;
     font-family: $font-family-work-sans-regular;
-    margin-top: 1rem;
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
+    @include media-breakpoint-up(xxl) {
+      font-size: 1.8rem;
+      margin-top: 1rem;
+    }
   }
 
   & .carousel-item-scroll-teaser-arrow {
@@ -725,4 +742,30 @@ h3, .h3 {
     transform: rotate(-90deg);
   }
 
+}
+
+//////////////// MODAL //////////////////
+
+.modal-dialog {
+  margin: 0;
+}
+
+& .modal-close-button {
+  width: 90px;
+  height: 90px;
+  color: #666;
+  font-size: 7rem;
+  font-family: $font-family-work-sans-thin;
+  position: fixed;
+  top: 1%;
+  right: 1%;
+  z-index: 1;
+  background: transparent;
+  border: none;
+  outline: none !important;
+
+  &:hover,
+  &:focus {
+    color: #999;
+  }
 }

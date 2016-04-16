@@ -182,26 +182,6 @@
       height: 100%;
     }
 
-    & .modal-close-button {
-      width: 150px;
-      height: 150px;
-      color: #fff;
-      font-size: 7rem;
-      font-family: $font-family-work-sans-thin;
-      position: fixed;
-      top: 0;
-      right: 0;
-      z-index: 1;
-      background: transparent;
-      border: none;
-      outline: none !important;
-
-      &:hover,
-      &:focus {
-        color: #999;
-      }
-    }
-
     .carousel-control{
       top: calc(50% - 45px);
       color: #fff;
