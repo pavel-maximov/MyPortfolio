@@ -13,7 +13,10 @@
 
   & .section-header-img-wrapper {
     width: 90%;
-    max-width: 300px;
+    max-width: 240px;
+    @include media-breakpoint-up(xxl) {
+      max-width: 300px;
+    }
   }
 
   &.portfolio-item--open .section-header {

@@ -12,7 +12,6 @@
   }
 
   & .section-header-img-wrapper {
-    max-width: 400px;
     margin-bottom: 3rem;
   }
 
@@ -20,18 +19,16 @@
     position: relative;
     left: 5%;
   }
-
-  & .section-header-subtitle {
-    font-size: 3rem;
-  }
-
   & .section-header-nav {
     margin-top: 3rem;
   }
 
   & .section-header-sub-title {
     @include text-thin-title();
-    margin-bottom: 1.8rem;
+    margin-bottom: 0;
+    @include media-breakpoint-up(xxl) {
+      margin-bottom: 1.8rem;
+    }
   }
 
 }

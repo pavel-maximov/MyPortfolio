@@ -12,7 +12,7 @@ var $intro = $('#intro');
 var $outro = $('#outro');
 var $skills = $('#skills');
 var teaserTitleVisibilityLimit = 200;
-var cogwheelsTopBottomMargin = 170;
+var gearsAnimationStartModifier = 50;
 var startPointPortfolio;
 var endPointPortfolio;
 var startPointExperience;
@@ -198,8 +198,8 @@ function initModal($modal, $mainCarousel, $secondaryCarousel) {
 }
 
 function setCogwheelsAnimation(scrollPosition, windowHeight) {
-    if ((scrollPosition + windowHeight - cogwheelsTopBottomMargin) < startPointSkills ||
-        scrollPosition > (endPointSkills  - cogwheelsTopBottomMargin)) {
+    if ((scrollPosition + windowHeight - gearsAnimationStartModifier) < startPointSkills ||
+        scrollPosition > (endPointSkills  - gearsAnimationStartModifier)) {
         if ($skills.hasClass('cogwheel-rotating')) {
             $skills.removeClass('cogwheel-rotating');
         }
