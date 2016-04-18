@@ -15,6 +15,11 @@
     height: 100%;
   }
 
+
+  & .section-header-title {
+    margin-top: 6vh;
+  }
+
   & .intro-name {
     @include text-display-title();
     display: block;
@@ -26,14 +31,17 @@
   }
 
   & .intro-message {
-    margin-bottom: 2vh;
+    margin-bottom: 3vh;
   }
 
   & .section-header-img-wrapper {
-    max-width: 400px;
-    width: 18%;
+    max-width: 320px;
+    width: 43%;
     margin-bottom: 1rem;
-
+    @include media-breakpoint-only(xl) {
+      max-width: 400px;
+      width: 18%;
+    }
     @include media-breakpoint-up(xxl) {
       width: 20%;
       margin-bottom: 2rem;

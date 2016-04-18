@@ -13,6 +13,7 @@ var $outro = $('#outro');
 var $skills = $('#skills');
 var teaserTitleVisibilityLimit = 200;
 var gearsAnimationStartModifier = 50;
+var desktopMinimumBreakpoint = 1245;
 var startPointPortfolio;
 var endPointPortfolio;
 var startPointExperience;
@@ -24,14 +25,6 @@ var startPointSkills;
 
 function scrollToElement(selector){
     $htmlBody.animate({scrollTop: $(selector).offset().top}, 2000);
-}
-
-function onScrollAbout (scrollTop, windowHeight) {
-    if (scrollTop > (windowHeight * 12)) {
-        $aboutVideo.css('z-index', '-1');
-    } else {
-        $aboutVideo.css('z-index', '-2');
-    }
 }
 
 function onScrollStickyHeader (options) {
@@ -71,25 +64,26 @@ function onScroll() {
         outro: $outro.offset().top - windowHeight
     };
 
-    onScrollAbout(scrollTop, windowHeight);
-    onScrollStickyHeader({
-        $element: $portfolio,
-        startPoint: startPointPortfolio,
-        endPoint: endPointPortfolio,
-        scrollTop: scrollTop
-    });
-    onScrollStickyHeader({
-        $element: $experience,
-        startPoint: startPointExperience,
-        endPoint: endPointExperience,
-        scrollTop: scrollTop
-    });
-    onScrollStickyHeader({
-        $element: $about,
-        startPoint: startPointAbout,
-        endPoint: endPointAbout,
-        scrollTop: scrollTop
-    });
+    if ( $window.width() >= desktopMinimumBreakpoint ) {
+        onScrollStickyHeader({
+            $element: $portfolio,
+            startPoint: startPointPortfolio,
+            endPoint: endPointPortfolio,
+            scrollTop: scrollTop
+        });
+        onScrollStickyHeader({
+            $element: $experience,
+            startPoint: startPointExperience,
+            endPoint: endPointExperience,
+            scrollTop: scrollTop
+        });
+        onScrollStickyHeader({
+            $element: $about,
+            startPoint: startPointAbout,
+            endPoint: endPointAbout,
+            scrollTop: scrollTop
+        });
+    }
     onScrollMainContainer(scrollTop, windowHeight, scrollPoints);
     setCogwheelsAnimation(scrollTop, windowHeight);
     setTeaserTitleVisibility(scrollTop);

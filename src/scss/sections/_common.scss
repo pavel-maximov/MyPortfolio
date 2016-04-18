@@ -263,6 +263,21 @@ h3, .h3 {
 
 ///////////////////  Sections  ///////////////////
 
+.main-container {
+  @include media-breakpoint-only(lg) {
+    padding: 0 4rem;
+  }
+  @include media-breakpoint-only(md) {
+    padding: 0 3rem;
+  }
+  @include media-breakpoint-only(sm) {
+    padding: 0 2rem;
+  }
+  @include media-breakpoint-only(xs) {
+    padding: 0 1rem;
+  }
+}
+
 .separator {
   color: #CCC;
 }
@@ -279,13 +294,20 @@ h3, .h3 {
   top: 0;
   left: 0;
   width: 22%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding-left: 1.5%;
+  @include media-breakpoint-down(lg) {
+    position: static;
+    width: 100%;
+  }
+  @include media-breakpoint-up(xl) {
+    margin-bottom: 5vh;
+    height: 100vh;
+  }
   @include media-breakpoint-up(xxl) {
     padding-left: 0;
     width: 25%;
@@ -333,14 +355,6 @@ h3, .h3 {
 
 .section-header-img {
   width: 100%;
-}
-
-.section-header {
-  position: absolute;
-  top: 0;
-  @include media-breakpoint-down(lg) {
-    display: none;
-  }
 }
 
 &.scrolling-this .section-header {

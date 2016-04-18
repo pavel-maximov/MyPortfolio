@@ -5297,6 +5297,22 @@ body {
       font-size: 1.6rem;
       line-height: 1.4; } }
 
+@media (min-width: 1024px) and (max-width: 1244px) {
+  .main-container {
+    padding: 0 4rem; } }
+
+@media (min-width: 801px) and (max-width: 1023px) {
+  .main-container {
+    padding: 0 3rem; } }
+
+@media (min-width: 480px) and (max-width: 800px) {
+  .main-container {
+    padding: 0 2rem; } }
+
+@media (max-width: 479px) {
+  .main-container {
+    padding: 0 1rem; } }
+
 .separator {
   color: #CCC; }
 
@@ -5311,13 +5327,20 @@ body {
   top: 0;
   left: 0;
   width: 22%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding-left: 1.5%; }
+  @media (max-width: 1244px) {
+    .section-header {
+      position: static;
+      width: 100%; } }
+  @media (min-width: 1245px) {
+    .section-header {
+      margin-bottom: 5vh;
+      height: 100vh; } }
   @media (min-width: 1681px) {
     .section-header {
       padding-left: 0;
@@ -5375,13 +5398,6 @@ body {
 
 .section-header-img {
   width: 100%; }
-
-.section-header {
-  position: absolute;
-  top: 0; }
-  @media (max-width: 1244px) {
-    .section-header {
-      display: none; } }
 
 .scrolling-this .section-header {
   position: fixed; }
@@ -5792,6 +5808,8 @@ body {
   #intro .section-header {
     width: 100%;
     height: 100%; }
+  #intro .section-header-title {
+    margin-top: 6vh; }
   #intro .intro-name {
     font-family: "she-always-walks-alone", serif;
     color: #000;
@@ -5817,11 +5835,16 @@ body {
         letter-spacing: -0.1rem;
         line-height: 1.2; } }
   #intro .intro-message {
-    margin-bottom: 2vh; }
+    margin-bottom: 3vh; }
+  #intro .section-header-img-wrapper {
+    max-width: 320px;
+    width: 43%;
+    margin-bottom: 1rem; }
+
+@media (min-width: 1245px) and (max-width: 1680px) {
   #intro .section-header-img-wrapper {
     max-width: 400px;
-    width: 18%;
-    margin-bottom: 1rem; }
+    width: 18%; } }
     @media (min-width: 1681px) {
       #intro .section-header-img-wrapper {
         width: 20%;
@@ -6060,12 +6083,20 @@ body {
 
 #portfolio {
   flex-direction: column; }
+  @media (max-width: 1244px) {
+    #portfolio .article-body {
+      flex-direction: column; } }
   #portfolio .section-header-img-wrapper {
     width: 90%;
-    max-width: 240px; }
-    @media (min-width: 1681px) {
-      #portfolio .section-header-img-wrapper {
-        max-width: 300px; } }
+    max-width: 300px; }
+
+@media (min-width: 1245px) and (max-width: 1680px) {
+  #portfolio .section-header-img-wrapper {
+    max-width: 240px; } }
+
+@media (min-width: 1024px) and (max-width: 1244px) {
+  #portfolio .section-header {
+    margin-bottom: 30px; } }
   #portfolio.portfolio-item--open .section-header {
     display: none; }
   #portfolio .portfolio-item-img {
@@ -6077,62 +6108,100 @@ body {
   #portfolio .portfolio-item-vendomo-crm, #portfolio .portfolio-item-bk, #portfolio .portfolio-item-vendomo, #portfolio .portfolio-item-foodora, #portfolio .portfolio-item-timvision,
   #portfolio .portfolio-item-cubomusica, #portfolio .portfolio-item-unicri,
   #portfolio .portfolio-item-others {
-    min-height: 800px;
-    height: 100vh;
+    min-height: 700px;
     display: flex;
     margin-bottom: 0; }
+    @media (min-width: 1245px) {
+      #portfolio .portfolio-item-vendomo-crm, #portfolio .portfolio-item-bk, #portfolio .portfolio-item-vendomo, #portfolio .portfolio-item-foodora, #portfolio .portfolio-item-timvision,
+      #portfolio .portfolio-item-cubomusica, #portfolio .portfolio-item-unicri,
+      #portfolio .portfolio-item-others {
+        min-height: 800px;
+        height: 100vh; } }
+  #portfolio .portfolio-items-wrapper {
+    position: relative;
+    width: calc(100% + 8rem);
+    padding-top: 66%; }
+    @media (min-width: 1245px) {
+      #portfolio .portfolio-items-wrapper {
+        width: 100%;
+        padding-top: 60%; } }
   #portfolio .portfolio-item-title {
     font-family: "worksans-regular", sans-serif;
-    font-size: 1.5rem;
-    letter-spacing: -0.08rem;
-    line-height: 1.1;
+    font-size: 2rem;
+    letter-spacing: -0.12rem;
+    line-height: 1.2;
     color: #000;
-    width: 76%;
-    margin-bottom: 0.3rem; }
+    margin-bottom: 0.6rem; }
     @media (min-width: 1681px) {
       #portfolio .portfolio-item-title {
-        font-size: 2.2rem;
-        letter-spacing: -0.12rem; } }
+        font-size: 2.7rem;
+        letter-spacing: -0.2rem; } }
+    @media (min-width: 1245px) {
+      #portfolio .portfolio-item-title {
+        font-family: "worksans-regular", sans-serif;
+        font-size: 1.5rem;
+        letter-spacing: -0.08rem;
+        line-height: 1.1;
+        color: #000;
+        width: 76%;
+        margin-bottom: 0.3rem; } }
+  @media (min-width: 1245px) and (min-width: 1681px) {
+    #portfolio .portfolio-item-title {
+      font-size: 2.2rem;
+      letter-spacing: -0.12rem; } }
   #portfolio .portfolio-item-secondary-title {
     font-family: "worksans-thin", sans-serif;
     font-size: 1.4rem;
     line-height: 1.2;
     letter-spacing: 0.03rem;
     color: #000;
-    margin-top: 0;
-    margin-bottom: 0;
-    width: 80%; }
+    margin-top: 0.5rem;
+    margin-bottom: 0.1rem; }
     @media (min-width: 1681px) {
       #portfolio .portfolio-item-secondary-title {
         line-height: 1.2;
         font-size: 1.7rem;
         letter-spacing: 0.03rem; } }
+    @media (min-width: 1245px) {
+      #portfolio .portfolio-item-secondary-title {
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 80%; } }
   #portfolio .portfolio-item-text {
     font-family: "worksans-light", sans-serif;
     color: #000;
     font-size: 1.4rem;
     letter-spacing: -0.01rem;
     line-height: 1.3;
-    line-height: 1.2;
-    margin-bottom: 0.1rem;
-    width: 74%; }
+    margin-bottom: 0.3rem; }
     @media (min-width: 1681px) {
       #portfolio .portfolio-item-text {
         letter-spacing: -0.02rem;
         font-size: 1.6rem;
         line-height: 1.4; } }
+    @media (min-width: 1245px) {
+      #portfolio .portfolio-item-text {
+        line-height: 1.2;
+        margin-bottom: 0.1rem;
+        width: 74%; } }
     @media (min-width: 1681px) {
       #portfolio .portfolio-item-text {
         margin-bottom: 1rem;
         line-height: 1.3; } }
   #portfolio .portfolio-item-title-wrapper {
     display: block;
-    position: absolute;
-    width: 31%;
-    max-width: 200px;
-    padding-top: 42%; }
+    width: 50%;
+    margin-top: 70px; }
+    @media (min-width: 1245px) {
+      #portfolio .portfolio-item-title-wrapper {
+        margin-top: 0;
+        position: absolute;
+        width: 31%;
+        max-width: 200px;
+        padding-top: 28%; } }
     @media (min-width: 1681px) {
       #portfolio .portfolio-item-title-wrapper {
+        padding-top: 26%;
         max-width: 241px; } }
   #portfolio .portfolio-item-title-wrapper-horizontal {
     display: block;
@@ -6143,8 +6212,9 @@ body {
     @media (min-width: 1681px) {
       #portfolio .portfolio-item-title-wrapper-horizontal {
         max-width: 320px; } }
-    #portfolio .portfolio-item-title-wrapper-horizontal .portfolio-item-title-content {
-      background-image: url("/img/portfolio/frame-horizontal.png"); }
+    @media (min-width: 1245px) {
+      #portfolio .portfolio-item-title-wrapper-horizontal .portfolio-item-title-content {
+        background-image: url("/img/portfolio/frame-horizontal.png"); } }
     #portfolio .portfolio-item-title-wrapper-horizontal .portfolio-item-title {
       margin-bottom: 0.3rem;
       margin-top: 0; }
@@ -6157,18 +6227,20 @@ body {
   #portfolio .portfolio-item-title-content {
     display: flex;
     text-align: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url("/img/portfolio/frame.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+    @media (min-width: 1245px) {
+      #portfolio .portfolio-item-title-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url("/img/portfolio/frame.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center; } }
   #portfolio .portfolio-item-title-centering {
     position: absolute;
     bottom: 70%;
@@ -6353,9 +6425,15 @@ body {
   #portfolio .portfolio-item-bk .portfolio-item-mobile {
     bottom: 4%;
     left: 4%; }
+
+@media (min-width: 1245px) and (max-width: 1680px) {
   #portfolio .portfolio-item-bk .portfolio-item-title-wrapper {
-    right: -35%;
-    top: -12%; }
+    left: 76%;
+    bottom: 54%; } }
+  @media (min-width: 1681px) {
+    #portfolio .portfolio-item-bk .portfolio-item-title-wrapper {
+      left: calc(850px + 10%);
+      bottom: 55%; } }
   #portfolio .portfolio-item-bk .portfolio-item-subtitle-employer {
     margin: 2rem 0 0; }
   #portfolio .portfolio-item-vendomo .portfolio-item-desktop {
