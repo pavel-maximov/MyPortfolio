@@ -2,7 +2,6 @@
 var $document = $(document);
 var $window = $(window);
 var $htmlBody = $('html,body');
-var $aboutVideo = $('#outro-video');
 var $portfolio = $('#portfolio');
 var $experience = $('#experience');
 var $body = $('body');

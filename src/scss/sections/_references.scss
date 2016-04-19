@@ -19,7 +19,7 @@
   }
 
   & .carousel {
-    min-height: 520px;
+    min-height: 700px;
     @include media-breakpoint-only(xl) {
       min-height: 320px;
     }
@@ -45,8 +45,8 @@
   & .reference-wrapper {
     width: 28%;
     @include media-breakpoint-down(lg) {
-      width: 90%;
-      padding-bottom: 3%;
+      width: 80%;
+      padding-bottom: 50px;
     }
   }
 
@@ -99,20 +99,27 @@
   & .carousel-control {
     position: absolute;
     top: 33%;
+    @include media-breakpoint-down(xl) {
+      width: 60px;
+    }
     @include media-breakpoint-up(xl) {
       top: 10px;
     }
   }
 
   & .carousel-control.left {
-    left: -55px;
+    @include media-breakpoint-down(xl) {
+      left: -20px;
+    }
     @include media-breakpoint-up(xl) {
       left: -80px;
     }
   }
 
   & .carousel-control.right {
-    right: -55px;
+    @include media-breakpoint-down(xl) {
+      right: -20px;
+    }
     @include media-breakpoint-up(xl) {
       right: -80px;
     }

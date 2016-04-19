@@ -4,7 +4,6 @@
 
 #about {
   @extend %article-wrapper;
-  flex-direction: column;
   margin-bottom: 5vh;
 
   & .section-header-img-wrapper {
@@ -92,7 +91,6 @@
       @include media-breakpoint-up(xxl) {
         width: 200px;
         height: 200px;
-        margin: 0 3rem 0 0;
         margin: 0 3rem 0 0;
         padding: 3rem;
       }
