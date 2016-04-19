@@ -128,13 +128,12 @@ $link-hover-decoration:   none !default;
 //// adapting to different screen sizes, for use in media queries.
 //
 $grid-breakpoints: (
-        xs: 0,
+        xs: 320,
         sm: 480px,
-        md: 801px,
-        lg: 1024px,
-        xl: 1245px,
-        xxl: 1681px,
-        xxxl: 1921px
+        md: 768px,
+        lg: 1245px,
+        xl: 1681px,
+        xxl: 1921px,
 );
 //@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
 //
@@ -147,7 +146,8 @@ $container-max-widths: (
         sm: map_get($grid-breakpoints, sm),
         md: map_get($grid-breakpoints, md),
         lg: map_get($grid-breakpoints, lg),
-        xl: 1220px
+        xl: map_get($grid-breakpoints, xl),
+        xxl: map_get($grid-breakpoints, xxl)
 );
 //@include _assert-ascending($container-max-widths, "$container-max-widths");
 //

@@ -14,10 +14,10 @@
 }
 
 .home__title-name {
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(xs) {
     margin-top: 6vw;
   }
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(sm) {
     margin-top: 4rem;
   }
 }
@@ -30,7 +30,7 @@
   position: relative;
   top: 0.2rem;
   width: 1.5rem;
-  @include media-breakpoint-only(md) {
+  @include media-breakpoint-only(sm) {
     top: 0.5rem;
   }
 }
@@ -42,11 +42,11 @@
 .home__head-img {
   max-width: 400px;
   text-align: center;
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(xs) {
     width: 92%;
     margin: auto;
   }
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(sm) {
     position: absolute;
     top: 56%;
     left: 46%;
@@ -61,10 +61,10 @@
 }
 
 .home__hire-me {
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(xs) {
     display: none;
   }
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(sm) {
     display: block;
     background-image: url('/img/badge.png');
     background-repeat: no-repeat;

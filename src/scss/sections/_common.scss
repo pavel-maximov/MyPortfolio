@@ -97,7 +97,7 @@
   font-size: 1.4rem;
   letter-spacing: -0.01rem;
   line-height: 1.3;
-  @include media-breakpoint-up(xxl) {
+  @include media-breakpoint-up(xl) {
     letter-spacing: -0.02rem;
     font-size: 1.6rem;
     line-height: 1.4;
@@ -110,7 +110,7 @@
   font-family: $font-family-work-sans-regular;
   text-decoration: underline;
   color: #000;
-  @include media-breakpoint-up(xxl) {
+  @include media-breakpoint-up(xl) {
     font-size: 1.6rem;
     letter-spacing: -0.1rem;
   }
@@ -127,13 +127,18 @@
 @mixin text-display-title {
   font-family: $font-family-she-always-walks-alone;
   color: #000;
-  font-size: 4.4rem;
-  letter-spacing: -0.02rem;
-  line-height: 1.2;
-  @include media-breakpoint-only(xl) {
-    font-size: 3.2rem;
-    letter-spacing: -0.01rem;
-    line-height: 1;
+  font-size: 3.2rem;
+  letter-spacing: -0.01rem;
+  line-height: 1;
+  @include media-breakpoint-up(sm) {
+    font-size: 3.8rem;
+    letter-spacing: -0.015rem;
+    line-height: 1.1;
+  }
+  @include media-breakpoint-up(xl) {
+    font-size: 4.4rem;
+    letter-spacing: -0.02rem;
+    line-height: 1.2;
   }
 }
 
@@ -142,7 +147,7 @@
   line-height: 1.2;
   color: #000;
   font-size: 2rem;
-  @include media-breakpoint-up(xxl) {
+  @include media-breakpoint-up(xl) {
     font-size: 2.4rem;
   }
 }
@@ -150,13 +155,18 @@
 @mixin text-thin-title-big {
   font-family: $font-family-work-sans-thin;
   color: #000;
-  font-size: 4.6rem;
-  letter-spacing: -0.1rem;
-  line-height: 1.2;
-  @include media-breakpoint-only(xl) {
-    font-size: 3.4rem;
+  font-size: 3rem;
+  letter-spacing: -0.05rem;
+  line-height: 1;
+  @include media-breakpoint-up(sm) {
+    font-size: 3.6rem;
     letter-spacing: -0.08rem;
     line-height: 1;
+  }
+  @include media-breakpoint-up(xl) {
+    font-size: 4.6rem;
+    letter-spacing: -0.1rem;
+    line-height: 1.2;
   }
 }
 
@@ -166,7 +176,7 @@
   letter-spacing: 0.03rem;
   color: #000;
   font-size: 1.7rem;
-  @include media-breakpoint-only(xl) {
+  @include media-breakpoint-only(lg) {
     font-size: 1.4rem;
   }
 }
@@ -177,7 +187,7 @@
   color: #000;
   font-size: 2rem;
   letter-spacing: -0.06rem;
-  @include media-breakpoint-up(xxl) {
+  @include media-breakpoint-up(xl) {
     font-size: 2.4rem;
     letter-spacing: -0.08rem;
   }
@@ -189,7 +199,7 @@
   color: #000;
   font-size: 1.4rem;
   letter-spacing: -0.07rem;
-  @include media-breakpoint-up(xxl) {
+  @include media-breakpoint-up(xl) {
     font-size: 2rem;
     letter-spacing: -0.08rem;
   }
@@ -201,7 +211,7 @@
   color: #000;
   font-size: 2.7rem;
   letter-spacing: -0.2rem;
-  @include media-breakpoint-only(xl) {
+  @include media-breakpoint-only(lg) {
     font-size: 2rem;
     letter-spacing: -0.12rem;
   }
@@ -213,7 +223,7 @@
   color: #000;
   font-size: 2.2rem;
   letter-spacing: -0.12rem;
-  @include media-breakpoint-only(xl) {
+  @include media-breakpoint-only(lg) {
     font-size: 1.5rem;
     letter-spacing: -0.08rem;
   }
@@ -252,21 +262,6 @@ h3, .h3 {
 
 ///////////////////  Sections  ///////////////////
 
-.main-container {
-  @include media-breakpoint-only(lg) {
-    //padding: 0 4rem;
-  }
-  @include media-breakpoint-only(md) {
-    //padding: 0 3rem;
-  }
-  @include media-breakpoint-only(sm) {
-    //padding: 0 2rem;
-  }
-  @include media-breakpoint-only(xs) {
-    //padding: 0 1rem;
-  }
-}
-
 .separator {
   color: #CCC;
 }
@@ -277,6 +272,11 @@ h3, .h3 {
   justify-content: center;
   align-items: flex-start;
   position: relative;
+  @include media-breakpoint-down(md) {
+    margin-bottom: 18vh;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
 
 .section-header {
@@ -289,16 +289,18 @@ h3, .h3 {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding-left: 1.5%;
-  @include media-breakpoint-down(lg) {
+  @include media-breakpoint-up(md) {
+    padding-left: 1.5%;
+  }
+  @include media-breakpoint-down(md) {
     position: static;
     width: 100%;
   }
-  @include media-breakpoint-up(xl) {
+  @include media-breakpoint-up(lg) {
     margin-bottom: 5vh;
     height: 100vh;
   }
-  @include media-breakpoint-up(xxl) {
+  @include media-breakpoint-up(xl) {
     padding-left: 0;
     width: 25%;
   }
@@ -311,13 +313,13 @@ h3, .h3 {
 
 .section-header-subtitle {
   @include text-thin-title();
-  @include media-breakpoint-down(lg) {
+  @include media-breakpoint-down(md) {
     display: none;
   }
 }
 
 .section-header-nav {
-  @include media-breakpoint-down(lg) {
+  @include media-breakpoint-down(md) {
     display: none;
   }
 }
@@ -334,11 +336,11 @@ h3, .h3 {
   width: 100%;
   height: 100%;
   margin-left: 0;
-  @include media-breakpoint-only(xl) {
+  @include media-breakpoint-only(lg) {
     width: 77%;
     margin-left: 23%;
   }
-  @include media-breakpoint-up(xxl) {
+  @include media-breakpoint-up(xl) {
     width: 75%;
     margin-left: 25%;
   }
@@ -417,7 +419,7 @@ h3, .h3 {
 ///////////////////  Sidebar  ///////////////////
 
 .side-bar {
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(xs) {
     @include make-offcanvas-menu();
     width: $off-canvas-menu-width;
     min-height: 100%;
@@ -426,14 +428,14 @@ h3, .h3 {
     background-image: url('/img/side-background-mobile.jpg');
     background-repeat: repeat-y;
   }
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(sm) {
     position: absolute;
     width: 14.6rem;
     top: 8.3rem;
     right: 0;
     bottom: 30rem;
   }
-  @include media-breakpoint-only(md) {
+  @include media-breakpoint-only(sm) {
     width: 15rem;
     top: 8.1rem;
   }
@@ -442,12 +444,12 @@ h3, .h3 {
 .side-bar__nav {
   position: relative;
   height: 100%;
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(xs) {
     background-repeat: no-repeat;
     background-image: url('/img/main-background-mobile.jpg');
     height: 483px;
   }
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(sm) {
     width: 130px;
   }
 }
@@ -459,11 +461,11 @@ h3, .h3 {
 
 .side-bar__nav__button--portfolio {
   @extend %side-bar__nav-button;
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(sm) {
     top: 2.2rem;
     left: 1.2rem;
   }
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(xs) {
     top: 60px;
     left: 0;
   }
@@ -471,11 +473,11 @@ h3, .h3 {
 
 .side-bar__nav__button--skills {
   @extend %side-bar__nav-button;
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(sm) {
     top: 7.6rem;
     left: 1.4rem;
   }
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(xs) {
     top: 119px;
     left: 3px;
   }
@@ -483,11 +485,11 @@ h3, .h3 {
 
 .side-bar__nav__button--experience {
   @extend %side-bar__nav-button;
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(sm) {
     top: 12.6rem;
     left: 1.5rem;
   }
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(xs) {
     top: 173px;
     left: 2px;
   }
@@ -495,11 +497,11 @@ h3, .h3 {
 
 .side-bar__nav__button--contact {
   @extend %side-bar__nav-button;
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(sm) {
     top: 17.7rem;
     left: 1.5rem;
   }
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(xs) {
     top: 228px;
     left: 3px;
   }
@@ -507,11 +509,11 @@ h3, .h3 {
 
 .side-bar__nav__button--resume {
   @extend %side-bar__nav-button;
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(sm) {
     top: 26.3rem;
     left: 1.8rem;
   }
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(xs) {
     top: 312px;
     left: 7px;
   }
@@ -519,11 +521,11 @@ h3, .h3 {
 
 .side-bar__nav__button--code {
   @extend %side-bar__nav-button;
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(sm) {
     top: 31.5rem;
     left: 1.9rem;
   }
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(xs) {
     top: 367px;
     left: 9px;
   }
@@ -685,7 +687,7 @@ h3, .h3 {
   left: 0;
   right: 0;
   position: absolute;
-  @include media-breakpoint-up(xxl) {
+  @include media-breakpoint-up(xl) {
     bottom: -19.3%;
   }
 }
@@ -744,7 +746,7 @@ h3, .h3 {
     font-family: $font-family-work-sans-regular;
     font-size: 1.6rem;
     margin-top: 0.5rem;
-    @include media-breakpoint-up(xxl) {
+    @include media-breakpoint-up(xl) {
       font-size: 1.8rem;
       margin-top: 1rem;
     }

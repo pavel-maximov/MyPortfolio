@@ -9,7 +9,7 @@
   & .section-header-img-wrapper {
     width: 90%;
     max-width: 210px;
-    @include media-breakpoint-up(xxl) {
+    @include media-breakpoint-up(xl) {
       max-width: 300px;
     }
   }
@@ -29,7 +29,7 @@
     width: 13%;
     margin-left: 3%;
     position: relative;
-    @include media-breakpoint-up(xl) {
+    @include media-breakpoint-up(lg) {
       width: 15%;
     }
 
