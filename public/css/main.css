@@ -5460,12 +5460,16 @@ body {
   font-size: 9rem;
   font-family: "worksans-thin", sans-serif;
   opacity: 1; }
+  @media (max-width: 1244px) {
+    .carousel-control {
+      font-size: 8vw;
+      width: 8vw; } }
   .carousel-control:focus, .carousel-control:hover {
     color: #999; }
 
 .carousel-control.left {
   background-image: none;
-  left: 19%; }
+  left: 0; }
 
 .carousel-control.right {
   background-image: none;
@@ -6583,6 +6587,18 @@ body {
   #portfolio .portfolio-item-others .line-breaker {
     display: block; } }
 
+#portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-content, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-content, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+@media (min-width: 768px) and (max-width: 1244px) {
+  #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-content, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-content, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-content {
+    min-height: 710px; } }
+
 #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-subtitle, #portfolio .portfolio-item-modal-tv .portfolio-item-subtitle, #portfolio .portfolio-item-modal-notebook .portfolio-item-subtitle {
   margin-bottom: 2rem;
   font-family: "worksans-thin", sans-serif;
@@ -6590,24 +6606,37 @@ body {
 
 #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-details-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-details-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-details-wrapper {
   position: absolute;
-  left: -94%;
+  left: 0;
+  right: 0;
   top: 0;
   bottom: 0;
-  width: 27%;
+  padding: 0 5%;
   display: flex;
   justify-content: center;
-  flex-direction: column; }
+  flex-direction: column;
+  text-align: center;
+  background-color: white; }
 
 #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-wrapper {
   position: fixed;
   top: 0;
   bottom: 0;
-  min-height: 500px;
-  left: 50%;
-  right: 0; }
-  @media (min-width: 1565px) {
+  left: 38%;
+  width: 110vh; }
+
+@media (min-width: 1245px) and (max-width: 1564px) {
+  #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-wrapper {
+    max-width: 670px;
+    min-height: 548px; } }
+
+@media (min-width: 1565px) and (max-width: 1920px) {
+  #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-wrapper {
+    max-width: 960px;
+    min-width: 700px;
+    min-height: 855px; } }
+  @media (min-width: 1921px) {
     #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-wrapper {
-      min-height: 680px; } }
+      max-width: 1000px; } }
 
 #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-title, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-title, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-title {
   font-family: "worksans-regular", sans-serif;
@@ -6651,7 +6680,7 @@ body {
   bottom: auto;
   max-width: none;
   width: 128%;
-  margin-top: -35%;
+  margin-top: -37%;
   z-index: 1; }
   @media (min-width: 1565px) {
     #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-notebook, #portfolio .portfolio-item-modal-tv .portfolio-item-notebook, #portfolio .portfolio-item-modal-notebook .portfolio-item-notebook {
@@ -6683,7 +6712,7 @@ body {
   bottom: auto;
   max-width: none;
   width: 23%;
-  margin-top: -9%;
+  margin-top: -11%;
   z-index: 2; }
   @media (min-width: 1565px) {
     #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-mobile, #portfolio .portfolio-item-modal-tv .portfolio-item-mobile, #portfolio .portfolio-item-modal-notebook .portfolio-item-mobile {
@@ -6738,18 +6767,8 @@ body {
 #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-notebook .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-tv .portfolio-item-notebook .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook .portfolio-item-notebook .carousel-item-scroll-teaser {
   padding-top: 27%; }
 
-#portfolio .portfolio-item-modal-notebook-mobile .carousel-control.left {
-  background-image: none;
-  left: 19%; }
-  @media (min-width: 1565px) {
-    #portfolio .portfolio-item-modal-notebook-mobile .carousel-control.left {
-      left: 17%; } }
-
 #portfolio .portfolio-item-modal-tv .carousel-control {
   top: 39%; }
-
-#portfolio .portfolio-item-modal-tv .carousel-control.left {
-  left: 22%; }
 
 #portfolio .portfolio-item-modal-tv .carousel-indicators {
   bottom: -6%; }
@@ -6758,10 +6777,7 @@ body {
       bottom: -13%; } }
 
 #portfolio .portfolio-item-modal-tv .portfolio-item-modal-details-wrapper {
-  width: 35%; }
-
-#portfolio .portfolio-item-modal-notebook .carousel-control.left {
-  left: 22%; }
+  width: 17%; }
 
 #portfolio .portfolio-item-modal-notebook .portfolio-item-notebook {
   left: -41%; }
@@ -6770,11 +6786,12 @@ body {
       left: -47%; } }
 
 #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-details-wrapper {
-  width: 35%; }
+  width: 17%; }
 
 #portfolio .tse-content {
   position: relative;
-  cursor: ns-resize; }
+  cursor: ns-resize;
+  min-height: 100%; }
 
 #portfolio .carousel-labels {
   font-family: "worksans-light", sans-serif;

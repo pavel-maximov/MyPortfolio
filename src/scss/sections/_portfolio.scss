@@ -748,6 +748,19 @@
 
   %portfolio-item-modal {
 
+    // TODO possible duplicate from about modal
+    & .portfolio-item-modal-content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @include media-breakpoint-only(md) {
+        min-height: 710px;
+      }
+    }
+
     & .portfolio-item-subtitle {
       margin-bottom: 2rem;
       font-family: $font-family-work-sans-thin;
@@ -756,25 +769,38 @@
 
     & .portfolio-item-modal-details-wrapper {
       position: absolute;
-      left: -94%;
+      left: 0;
+      right: 0;
       top: 0;
       bottom: 0;
-      width: 27%;
+      padding: 0 5%;
       display: flex;
       justify-content: center;
       flex-direction: column;
+      text-align: center;
+      background-color: white;
     }
 
     & .portfolio-item-modal-wrapper {
       position: fixed;
       top: 0;
       bottom: 0;
-      min-height: 500px;
-      @include media-breakpoint-up(xl) {
-        min-height: 680px;
+      left: 38%;
+      width: 110vh;
+      //max-width: 120vh;
+      @include media-breakpoint-only(lg) {
+        max-width: 670px;
+        min-height: 548px;
       }
-      left: 50%;
-      right: 0;
+      @include media-breakpoint-only(xl) {
+        max-width: 960px;
+        min-width: 700px;
+        min-height: 855px;
+        // Continua con questo schema del 3 valori
+      }
+      @include media-breakpoint-only(xxl) {
+        max-width: 1000px;
+      }
     }
 
 
@@ -796,7 +822,7 @@
       bottom: auto;
       max-width: none;
       width: 128%;
-      margin-top: -35%;
+      margin-top: -37%;
       z-index: 1;
       @include media-breakpoint-up(xl) {
         width: 140%;
@@ -835,7 +861,7 @@
       bottom: auto;
       max-width: none;
       width: 23%;
-      margin-top: -9%;
+      margin-top: -11%;
       z-index: 2;
       @include media-breakpoint-up(xl) {
         margin-top: -8%;
@@ -910,13 +936,6 @@
   .portfolio-item-modal-notebook-mobile {
     @extend %portfolio-item-modal;
 
-    & .carousel-control.left {
-      background-image: none;
-      left: 19%;
-      @include media-breakpoint-up(xl) {
-        left: 17%;
-      }
-    }
   }
 
   .portfolio-item-modal-tv {
@@ -924,10 +943,6 @@
 
     .carousel-control{
       top: 39%;
-    }
-
-    .carousel-control.left {
-      left: 22%;
     }
 
     .carousel-indicators {
@@ -938,16 +953,12 @@
     }
 
     & .portfolio-item-modal-details-wrapper {
-      width: 35%;
+      width: 17%;
     }
   }
 
   .portfolio-item-modal-notebook {
     @extend %portfolio-item-modal;
-
-    .carousel-control.left {
-      left: 22%;
-    }
 
     & .portfolio-item-notebook {
       left: -41%;
@@ -957,13 +968,14 @@
     }
 
     & .portfolio-item-modal-details-wrapper {
-      width: 35%;
+      width: 17%;
     }
   }
 
   .tse-content {
     position: relative;
     cursor: ns-resize;
+    min-height: 100%;
   }
 
   .carousel-labels {
