@@ -63,10 +63,10 @@
   & .section-header-img-wrapper {
     width: 40vh;
     min-width: 230px;
-    max-width: 280px;
+    max-width: 270px;
     margin-top: 11vh;
     @include media-breakpoint-up(sm) {
-      max-width: 320px;
+      max-width: 300px;
     }
     @include media-breakpoint-up(md) {
       margin-top: 10px;

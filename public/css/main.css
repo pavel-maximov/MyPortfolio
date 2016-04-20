@@ -571,9 +571,9 @@ pre {
   @media (min-width: 1245px) {
     .container {
       max-width: 1245px; } }
-  @media (min-width: 1681px) {
+  @media (min-width: 1565px) {
     .container {
-      max-width: 1681px; } }
+      max-width: 1565px; } }
   @media (min-width: 1921px) {
     .container {
       max-width: 1921px; } }
@@ -1268,7 +1268,7 @@ pre {
   .offset-lg-11 {
     margin-left: 91.66667%; } }
 
-@media (min-width: 1681px) {
+@media (min-width: 1565px) {
   .col-xl {
     position: relative;
     flex-basis: 0;
@@ -4327,7 +4327,7 @@ a.bg-danger:focus, a.bg-danger:hover {
   .pull-lg-none {
     float: none !important; } }
 
-@media (min-width: 1681px) {
+@media (min-width: 1565px) {
   .pull-xl-left {
     float: left !important; }
   .pull-xl-right {
@@ -4599,7 +4599,7 @@ a.bg-danger:focus, a.bg-danger:hover {
   .text-lg-center {
     text-align: center !important; } }
 
-@media (min-width: 1681px) {
+@media (min-width: 1565px) {
   .text-xl-left {
     text-align: left !important; }
   .text-xl-right {
@@ -4707,11 +4707,11 @@ a.text-danger:focus, a.text-danger:hover {
   .hidden-lg-up {
     display: none !important; } }
 
-@media (max-width: 1680px) {
+@media (max-width: 1564px) {
   .hidden-lg-down {
     display: none !important; } }
 
-@media (min-width: 1681px) {
+@media (min-width: 1565px) {
   .hidden-xl-up {
     display: none !important; } }
 
@@ -4884,13 +4884,13 @@ a.text-danger:focus, a.text-danger:hover {
   .flex-items-lg-between {
     justify-content: space-between; } }
 
-@media (min-width: 1681px) {
+@media (min-width: 1565px) {
   .flex-xl-first {
     order: -1; }
   .flex-xl-last {
     order: 1; } }
 
-@media (min-width: 1681px) {
+@media (min-width: 1565px) {
   .flex-items-xl-top {
     align-items: flex-start; }
   .flex-items-xl-middle {
@@ -4898,7 +4898,7 @@ a.text-danger:focus, a.text-danger:hover {
   .flex-items-xl-bottom {
     align-items: flex-end; } }
 
-@media (min-width: 1681px) {
+@media (min-width: 1565px) {
   .flex-xl-top {
     align-self: flex-start; }
   .flex-xl-middle {
@@ -4906,7 +4906,7 @@ a.text-danger:focus, a.text-danger:hover {
   .flex-xl-bottom {
     align-self: flex-end; } }
 
-@media (min-width: 1681px) {
+@media (min-width: 1565px) {
   .flex-items-xl-left {
     justify-content: flex-start; }
   .flex-items-xl-center {
@@ -5012,7 +5012,13 @@ body {
   margin: 0;
   overflow-x: hidden;
   color: #333; }
-  @media (min-width: 1681px) {
+
+@media (min-width: 768px) and (max-width: 1244px) {
+  body {
+    letter-spacing: -0.02rem;
+    font-size: 1.6rem;
+    line-height: 1.4; } }
+  @media (min-width: 1565px) {
     body {
       letter-spacing: -0.02rem;
       font-size: 1.6rem;
@@ -5026,7 +5032,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  position: relative; }
+  position: relative;
+  max-width: 1920px;
+  margin: auto; }
   @media (max-width: 1244px) {
     #intro, #skills, #portfolio, #experience, #references, #about, #contact, #outro {
       margin-bottom: 18vh;
@@ -5054,10 +5062,14 @@ body {
     .section-header {
       margin-bottom: 5vh;
       height: 100vh; } }
-  @media (min-width: 1681px) {
+  @media (min-width: 1565px) {
     .section-header {
       padding-left: 0;
       width: 25%; } }
+  @media (min-width: 1921px) {
+    .section-header {
+      width: 480px;
+      left: auto; } }
 
 .section-header-title {
   font-family: "she-always-walks-alone", serif;
@@ -5071,7 +5083,13 @@ body {
       font-size: 3.8rem;
       letter-spacing: -0.015rem;
       line-height: 1.1; } }
-  @media (min-width: 1681px) {
+
+@media (min-width: 768px) and (max-width: 1244px) {
+  .section-header-title {
+    font-size: 4.4rem;
+    letter-spacing: -0.02rem;
+    line-height: 1.2; } }
+  @media (min-width: 1565px) {
     .section-header-title {
       font-size: 4.4rem;
       letter-spacing: -0.02rem;
@@ -5082,7 +5100,7 @@ body {
   line-height: 1.2;
   color: #000;
   font-size: 2rem; }
-  @media (min-width: 1681px) {
+  @media (min-width: 1565px) {
     .section-header-subtitle {
       font-size: 2.4rem; } }
   @media (max-width: 1244px) {
@@ -5105,11 +5123,11 @@ body {
   height: 100%;
   margin-left: 0; }
 
-@media (min-width: 1245px) and (max-width: 1680px) {
+@media (min-width: 1245px) and (max-width: 1564px) {
   .article-body {
     width: 77%;
     margin-left: 23%; } }
-  @media (min-width: 1681px) {
+  @media (min-width: 1565px) {
     .article-body {
       width: 75%;
       margin-left: 25%; } }
@@ -5164,7 +5182,12 @@ body {
   background: transparent;
   cursor: pointer;
   outline: none !important; }
-  @media (min-width: 1681px) {
+
+@media (min-width: 768px) and (max-width: 1244px) {
+  .footer__nav__button {
+    font-size: 1.6rem;
+    letter-spacing: -0.1rem; } }
+  @media (min-width: 1565px) {
     .footer__nav__button {
       font-size: 1.6rem;
       letter-spacing: -0.1rem; } }
@@ -5183,7 +5206,12 @@ body {
   background: transparent;
   cursor: pointer;
   outline: none !important; }
-  @media (min-width: 1681px) {
+
+@media (min-width: 768px) and (max-width: 1244px) {
+  .article-header__nav__button {
+    font-size: 1.6rem;
+    letter-spacing: -0.1rem; } }
+  @media (min-width: 1565px) {
     .article-header__nav__button {
       font-size: 1.6rem;
       letter-spacing: -0.1rem; } }
@@ -5241,7 +5269,12 @@ body {
   background: transparent;
   cursor: pointer;
   outline: none !important; }
-  @media (min-width: 1681px) {
+
+@media (min-width: 768px) and (max-width: 1244px) {
+  .side-bar__nav__button--portfolio, .side-bar__nav__button--skills, .side-bar__nav__button--experience, .side-bar__nav__button--contact, .side-bar__nav__button--resume, .side-bar__nav__button--code {
+    font-size: 1.6rem;
+    letter-spacing: -0.1rem; } }
+  @media (min-width: 1565px) {
     .side-bar__nav__button--portfolio, .side-bar__nav__button--skills, .side-bar__nav__button--experience, .side-bar__nav__button--contact, .side-bar__nav__button--resume, .side-bar__nav__button--code {
       font-size: 1.6rem;
       letter-spacing: -0.1rem; } }
@@ -5432,20 +5465,20 @@ body {
 
 .carousel-control.left {
   background-image: none;
-  left: 17%; }
+  left: 19%; }
 
 .carousel-control.right {
   background-image: none;
-  right: -2%; }
+  right: 0; }
 
 .carousel-indicators {
   width: auto;
   margin: 0;
-  bottom: -21.6%;
+  bottom: -21.1%;
   left: 0;
   right: 0;
   position: absolute; }
-  @media (min-width: 1681px) {
+  @media (min-width: 1565px) {
     .carousel-indicators {
       bottom: -19.3%; } }
 
@@ -5496,7 +5529,7 @@ body {
     font-family: "worksans-regular", sans-serif;
     font-size: 1.6rem;
     margin-top: 0.5rem; }
-    @media (min-width: 1681px) {
+    @media (min-width: 1565px) {
       .carousel-item-scroll-teaser .carousel-item-scroll-teaser-text {
         font-size: 1.8rem;
         margin-top: 1rem; } }
@@ -5506,7 +5539,10 @@ body {
     transform: rotate(-90deg); }
 
 .modal-dialog {
-  margin: 0; }
+  width: 100%;
+  height: 100%;
+  max-width: 1920px;
+  margin: auto; }
 
 .modal-close-button {
   width: 90px;
@@ -5516,7 +5552,7 @@ body {
   font-family: "worksans-thin", sans-serif;
   position: fixed;
   top: 1%;
-  right: 1%;
+  right: 0;
   z-index: 1;
   background: transparent;
   border: none;
@@ -5534,7 +5570,7 @@ body {
     height: 100vh;
     min-height: 580px; } }
 
-@media (min-width: 1681px) {
+@media (min-width: 1565px) {
   #intro {
     min-height: 780px; } }
 
@@ -5563,7 +5599,13 @@ body {
       font-size: 3.8rem;
       letter-spacing: -0.015rem;
       line-height: 1.1; } }
-  @media (min-width: 1681px) {
+
+@media (min-width: 768px) and (max-width: 1244px) {
+  #intro .intro-name {
+    font-size: 4.4rem;
+    letter-spacing: -0.02rem;
+    line-height: 1.2; } }
+  @media (min-width: 1565px) {
     #intro .intro-name {
       font-size: 4.4rem;
       letter-spacing: -0.02rem;
@@ -5581,7 +5623,7 @@ body {
       font-size: 3.6rem;
       letter-spacing: -0.08rem;
       line-height: 1; } }
-  @media (min-width: 1681px) {
+  @media (min-width: 1565px) {
     #intro .intro-job-title {
       font-size: 4.6rem;
       letter-spacing: -0.1rem;
@@ -5604,16 +5646,16 @@ body {
 #intro .section-header-img-wrapper {
   width: 40vh;
   min-width: 230px;
-  max-width: 280px;
+  max-width: 270px;
   margin-top: 11vh; }
   @media (min-width: 480px) {
     #intro .section-header-img-wrapper {
-      max-width: 320px; } }
+      max-width: 300px; } }
   @media (min-width: 768px) {
     #intro .section-header-img-wrapper {
       margin-top: 10px;
       margin-bottom: 0; } }
-  @media (min-width: 1681px) {
+  @media (min-width: 1565px) {
     #intro .section-header-img-wrapper {
       max-width: 430px;
       min-width: 320px; } }
@@ -5629,7 +5671,7 @@ body {
   font-size: 4.5rem;
   margin-bottom: 1.8rem;
   margin-top: 0; }
-  @media (min-width: 1681px) {
+  @media (min-width: 1565px) {
     #intro .section-header-sub-title {
       font-size: 2.4rem; } }
 
@@ -5656,7 +5698,7 @@ body {
   margin-bottom: 0;
   position: relative;
   top: 10px; }
-  @media (min-width: 1681px) {
+  @media (min-width: 1565px) {
     #intro .intro-teaser-title {
       font-size: 2.4rem; } }
   @media (max-width: 767px) {
@@ -5681,7 +5723,7 @@ body {
       padding-top: 135%; } }
   #skills .section-header-img-wrapper {
     max-width: 210px; }
-    @media (min-width: 1681px) {
+    @media (min-width: 1565px) {
       #skills .section-header-img-wrapper {
         max-width: 250px; } }
   @media (max-width: 1244px) {
@@ -5751,8 +5793,12 @@ body {
     letter-spacing: -0.2rem;
     margin-top: 0;
     margin-bottom: 0.8rem; }
+    @media (max-width: 767px) {
+      #skills .skills-list-title {
+        font-size: 2rem;
+        letter-spacing: -0.12rem; } }
 
-@media (min-width: 1245px) and (max-width: 1680px) {
+@media (min-width: 1245px) and (max-width: 1564px) {
   #skills .skills-list-title {
     font-size: 2rem;
     letter-spacing: -0.12rem; } }
@@ -5765,7 +5811,7 @@ body {
     margin-top: 0.5rem;
     margin-bottom: 0.4rem; }
 
-@media (min-width: 1245px) and (max-width: 1680px) {
+@media (min-width: 1245px) and (max-width: 1564px) {
   #skills .skills-list-title-small {
     font-size: 1.5rem;
     letter-spacing: -0.08rem; } }
@@ -5775,11 +5821,11 @@ body {
     left: 50%;
     text-align: center; }
 
-@media (min-width: 1245px) and (max-width: 1680px) {
+@media (min-width: 1245px) and (max-width: 1564px) {
   #skills .skills-group-javascript, #skills .skills-group-css, #skills .skills-group-html, #skills .skills-group-tools, #skills .skills-group-coding, #skills .skills-group-uxui, #skills .skills-group-backend {
     top: 50%;
     left: 49.4%; } }
-    @media (min-width: 1681px) {
+    @media (min-width: 1565px) {
       #skills .skills-group-javascript, #skills .skills-group-css, #skills .skills-group-html, #skills .skills-group-tools, #skills .skills-group-coding, #skills .skills-group-uxui, #skills .skills-group-backend {
         top: 50%;
         left: 47.8%; } }
@@ -5787,11 +5833,11 @@ body {
     padding-top: 36%;
     width: 36%; }
 
-@media (min-width: 1245px) and (max-width: 1680px) {
+@media (min-width: 1245px) and (max-width: 1564px) {
   #skills .skills-group-javascript {
     padding-top: 31%;
     width: 31%; } }
-    @media (min-width: 1681px) {
+    @media (min-width: 1565px) {
       #skills .skills-group-javascript {
         padding-top: 29%;
         width: 29%; } }
@@ -5804,11 +5850,11 @@ body {
     padding-top: 26%;
     width: 26%; }
 
-@media (min-width: 1245px) and (max-width: 1680px) {
+@media (min-width: 1245px) and (max-width: 1564px) {
   #skills .skills-group-css, #skills .skills-group-html {
     padding-top: 22%;
     width: 22%; } }
-    @media (min-width: 1681px) {
+    @media (min-width: 1565px) {
       #skills .skills-group-css, #skills .skills-group-html {
         padding-top: 20%;
         width: 20%; } }
@@ -5826,11 +5872,11 @@ body {
     padding-top: 22%;
     width: 22%; }
 
-@media (min-width: 1245px) and (max-width: 1680px) {
+@media (min-width: 1245px) and (max-width: 1564px) {
   #skills .skills-group-tools, #skills .skills-group-coding, #skills .skills-group-uxui, #skills .skills-group-backend {
     padding-top: 17%;
     width: 17%; } }
-    @media (min-width: 1681px) {
+    @media (min-width: 1565px) {
       #skills .skills-group-tools, #skills .skills-group-coding, #skills .skills-group-uxui, #skills .skills-group-backend {
         padding-top: 15%;
         width: 15%; } }
@@ -5838,11 +5884,11 @@ body {
     top: 58%;
     left: -141%; }
 
-@media (min-width: 1245px) and (max-width: 1680px) {
+@media (min-width: 1245px) and (max-width: 1564px) {
   #skills .skills-group-tools .skills-list {
     top: 60%;
     left: -156%; } }
-    @media (min-width: 1681px) {
+    @media (min-width: 1565px) {
       #skills .skills-group-tools .skills-list {
         top: 60%;
         left: -160%; } }
@@ -5850,11 +5896,11 @@ body {
     top: 58%;
     right: -43%; }
 
-@media (min-width: 1245px) and (max-width: 1680px) {
+@media (min-width: 1245px) and (max-width: 1564px) {
   #skills .skills-group-coding .skills-list {
     top: 60%;
     right: -56%; } }
-    @media (min-width: 1681px) {
+    @media (min-width: 1565px) {
       #skills .skills-group-coding .skills-list {
         top: 60%;
         right: -60%; } }
@@ -5862,11 +5908,11 @@ body {
     top: -156%;
     left: -141%; }
 
-@media (min-width: 1245px) and (max-width: 1680px) {
+@media (min-width: 1245px) and (max-width: 1564px) {
   #skills .skills-group-uxui .skills-list {
     top: -160%;
     left: -156%; } }
-    @media (min-width: 1681px) {
+    @media (min-width: 1565px) {
       #skills .skills-group-uxui .skills-list {
         top: -160%;
         left: -160%; } }
@@ -5874,11 +5920,11 @@ body {
     top: -156%;
     right: -43%; }
 
-@media (min-width: 1245px) and (max-width: 1680px) {
+@media (min-width: 1245px) and (max-width: 1564px) {
   #skills .skills-group-backend .skills-list {
     top: -160%;
     right: -56%; } }
-    @media (min-width: 1681px) {
+    @media (min-width: 1565px) {
       #skills .skills-group-backend .skills-list {
         top: -160%;
         right: -60%; } }
@@ -5888,16 +5934,27 @@ body {
     flex-direction: column; } }
 
 #portfolio .section-header-img-wrapper {
-  width: 90%;
-  max-width: 300px; }
+  max-width: 260px;
+  width: 68vh; }
+  @media (max-width: 767px) {
+    #portfolio .section-header-img-wrapper {
+      margin-bottom: 5px; } }
+  @media (min-width: 768px) {
+    #portfolio .section-header-img-wrapper {
+      max-width: 300px;
+      width: 90%; } }
 
-@media (min-width: 1245px) and (max-width: 1680px) {
+@media (min-width: 1245px) and (max-width: 1564px) {
   #portfolio .section-header-img-wrapper {
     max-width: 240px; } }
 
 @media (min-width: 768px) and (max-width: 1244px) {
   #portfolio .section-header {
     margin-bottom: 30px; } }
+
+@media (max-width: 767px) {
+  #portfolio .section-header-title {
+    margin-bottom: 0; } }
 
 #portfolio.portfolio-item--open .section-header {
   display: none; }
@@ -5910,13 +5967,13 @@ body {
   width: 100%;
   height: auto; }
 
-@media (min-width: 1245px) and (max-width: 1680px) {
+@media (min-width: 1245px) and (max-width: 1564px) {
   #portfolio .portfolio-item-vendomo-crm, #portfolio .portfolio-item-bk, #portfolio .portfolio-item-vendomo, #portfolio .portfolio-item-foodora, #portfolio .portfolio-item-timvision,
   #portfolio .portfolio-item-cubomusica, #portfolio .portfolio-item-unicri,
   #portfolio .portfolio-item-others {
     padding-top: 55%; } }
 
-@media (min-width: 1681px) {
+@media (min-width: 1565px) {
   #portfolio .portfolio-item-vendomo-crm, #portfolio .portfolio-item-bk, #portfolio .portfolio-item-vendomo, #portfolio .portfolio-item-foodora, #portfolio .portfolio-item-timvision,
   #portfolio .portfolio-item-cubomusica, #portfolio .portfolio-item-unicri,
   #portfolio .portfolio-item-others {
@@ -5927,6 +5984,15 @@ body {
   width: 100%;
   padding-top: 60%;
   margin-top: 2rem; }
+  @media (max-width: 767px) {
+    #portfolio .portfolio-items-wrapper {
+      width: 111%;
+      margin-top: 11%; } }
+
+@media (min-width: 768px) and (max-width: 1244px) {
+  #portfolio .portfolio-items-wrapper {
+    width: 109%;
+    margin-top: 5%; } }
   @media (min-width: 1245px) {
     #portfolio .portfolio-items-wrapper {
       margin-top: 0;
@@ -5940,9 +6006,13 @@ body {
   color: #000;
   font-size: 2.7rem;
   letter-spacing: -0.2rem;
-  margin-bottom: 0.6rem; }
+  margin-bottom: 1rem; }
+  @media (max-width: 767px) {
+    #portfolio .portfolio-item-title {
+      font-size: 2rem;
+      letter-spacing: -0.12rem; } }
 
-@media (min-width: 1245px) and (max-width: 1680px) {
+@media (min-width: 1245px) and (max-width: 1564px) {
   #portfolio .portfolio-item-title {
     font-size: 2rem;
     letter-spacing: -0.12rem; } }
@@ -5956,7 +6026,7 @@ body {
       width: 76%;
       margin-bottom: 0.3rem; } }
 
-@media (min-width: 1245px) and (min-width: 1245px) and (max-width: 1680px) {
+@media (min-width: 1245px) and (min-width: 1245px) and (max-width: 1564px) {
   #portfolio .portfolio-item-title {
     font-size: 1.5rem;
     letter-spacing: -0.08rem; } }
@@ -5964,13 +6034,22 @@ body {
 #portfolio .portfolio-item-secondary-title {
   font-family: "worksans-thin", sans-serif;
   line-height: 1.2;
-  letter-spacing: 0.03rem;
   color: #000;
   font-size: 1.7rem;
+  letter-spacing: 0.03rem;
   margin-top: 0.3rem;
   margin-bottom: 0; }
+  @media (max-width: 767px) {
+    #portfolio .portfolio-item-secondary-title {
+      font-size: 1.6rem;
+      letter-spacing: 0.05rem; } }
 
-@media (min-width: 1245px) and (max-width: 1680px) {
+@media (min-width: 768px) and (max-width: 1244px) {
+  #portfolio .portfolio-item-secondary-title {
+    font-size: 1.8rem;
+    letter-spacing: 0.03rem; } }
+
+@media (min-width: 1245px) and (max-width: 1564px) {
   #portfolio .portfolio-item-secondary-title {
     font-size: 1.4rem; } }
   @media (min-width: 1245px) {
@@ -5986,7 +6065,13 @@ body {
   letter-spacing: -0.01rem;
   line-height: 1.3;
   margin-bottom: 0; }
-  @media (min-width: 1681px) {
+
+@media (min-width: 768px) and (max-width: 1244px) {
+  #portfolio .portfolio-item-text {
+    letter-spacing: -0.02rem;
+    font-size: 1.6rem;
+    line-height: 1.4; } }
+  @media (min-width: 1565px) {
     #portfolio .portfolio-item-text {
       letter-spacing: -0.02rem;
       font-size: 1.6rem;
@@ -5996,7 +6081,7 @@ body {
       line-height: 1.2;
       margin-bottom: 0.1rem;
       width: 74%; } }
-  @media (min-width: 1681px) {
+  @media (min-width: 1565px) {
     #portfolio .portfolio-item-text {
       margin-bottom: 1rem;
       line-height: 1.3; } }
@@ -6004,7 +6089,10 @@ body {
 #portfolio .portfolio-item-title-wrapper {
   display: block;
   width: 100%;
-  margin-top: 100px; }
+  margin-top: 60px; }
+  @media (min-width: 768px) {
+    #portfolio .portfolio-item-title-wrapper {
+      margin-top: 100px; } }
   @media (min-width: 1245px) {
     #portfolio .portfolio-item-title-wrapper {
       display: none;
@@ -6013,7 +6101,7 @@ body {
       position: absolute;
       width: 200px;
       height: 270px; } }
-  @media (min-width: 1681px) {
+  @media (min-width: 1565px) {
     #portfolio .portfolio-item-title-wrapper {
       bottom: 52%;
       width: 241px;
@@ -6025,26 +6113,31 @@ body {
   margin-top: 70px; }
   @media (min-width: 1245px) {
     #portfolio .portfolio-item-title-wrapper-horizontal {
+      display: none;
       margin-top: 0;
       position: absolute;
       width: 280px;
       height: 215px; } }
-  @media (min-width: 1681px) {
+  @media (min-width: 1565px) {
     #portfolio .portfolio-item-title-wrapper-horizontal {
       width: 320px;
       height: 250px; } }
   @media (min-width: 1245px) {
     #portfolio .portfolio-item-title-wrapper-horizontal .portfolio-item-title-content {
       background-image: url("/img/portfolio/frame-horizontal.png"); } }
-  #portfolio .portfolio-item-title-wrapper-horizontal .portfolio-item-title {
-    margin-bottom: 0.3rem;
-    margin-top: 0; }
+  @media (min-width: 1245px) {
+    #portfolio .portfolio-item-title-wrapper-horizontal .portfolio-item-title {
+      margin-bottom: 0.3rem;
+      margin-top: 0; } }
   #portfolio .portfolio-item-title-wrapper-horizontal .portfolio-item-secondary-title {
     margin-top: 0; }
   #portfolio .portfolio-item-title-wrapper-horizontal .portfolio-item-text {
     margin-bottom: 0;
     line-height: 1.2;
     width: 80%; }
+    @media (max-width: 767px) {
+      #portfolio .portfolio-item-title-wrapper-horizontal .portfolio-item-text {
+        width: 100%; } }
 
 #portfolio .portfolio-item-title-content {
   display: flex;
@@ -6100,16 +6193,25 @@ body {
   font-family: "worksans-light", sans-serif;
   line-height: 1.2;
   color: #000;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   letter-spacing: -0.07rem;
   position: absolute;
   top: -1.8rem;
   left: 4.2%; }
-  @media (min-width: 1681px) {
+
+@media (min-width: 768px) and (max-width: 1244px) {
+  #portfolio .project-type-label {
+    font-size: 1.6rem;
+    letter-spacing: -0.08rem; } }
+  @media (min-width: 1565px) {
     #portfolio .project-type-label {
       font-size: 2rem;
       letter-spacing: -0.08rem; } }
-  @media (min-width: 1681px) {
+
+@media (min-width: 768px) and (max-width: 1244px) {
+  #portfolio .project-type-label {
+    top: -2.4rem; } }
+  @media (min-width: 1565px) {
     #portfolio .project-type-label {
       top: -2.4rem; } }
 
@@ -6215,61 +6317,77 @@ body {
 #portfolio .notebooks-set-item1 {
   bottom: 36%;
   left: 1%; }
-  @media (min-width: 1681px) {
+  @media (min-width: 1565px) {
     #portfolio .notebooks-set-item1 {
       left: -2%; } }
   #portfolio .notebooks-set-item1 .project-type-label {
     left: auto;
     right: 10.5%;
     top: -1.6rem; }
-    @media (min-width: 1681px) {
+    @media (min-width: 1565px) {
       #portfolio .notebooks-set-item1 .project-type-label {
         top: -2.4rem; } }
+
+@media (min-width: 768px) and (max-width: 1244px) {
+  #portfolio .notebooks-set-item1 .project-type-label {
+    top: -2.4rem; } }
 
 #portfolio .notebooks-set-item2 {
   bottom: 36%;
   left: 58%; }
-  @media (min-width: 1681px) {
+  @media (min-width: 1565px) {
     #portfolio .notebooks-set-item2 {
       left: 56%; } }
   #portfolio .notebooks-set-item2 .project-type-label {
     left: 10.5%;
     top: -1.6rem; }
-    @media (min-width: 1681px) {
+    @media (min-width: 1565px) {
       #portfolio .notebooks-set-item2 .project-type-label {
         top: -2.4rem; } }
+
+@media (min-width: 768px) and (max-width: 1244px) {
+  #portfolio .notebooks-set-item2 .project-type-label {
+    top: -2.4rem; } }
 
 #portfolio .notebooks-set-item3 {
   bottom: 24%;
   left: 12%; }
-  @media (min-width: 1681px) {
+  @media (min-width: 1565px) {
     #portfolio .notebooks-set-item3 {
       left: 9%; } }
   #portfolio .notebooks-set-item3 .project-type-label {
     left: auto;
     right: 10.5%;
     top: -1.6rem; }
-    @media (min-width: 1681px) {
+    @media (min-width: 1565px) {
       #portfolio .notebooks-set-item3 .project-type-label {
         top: -2.4rem; } }
+
+@media (min-width: 768px) and (max-width: 1244px) {
+  #portfolio .notebooks-set-item3 .project-type-label {
+    top: -2.4rem; } }
 
 #portfolio .notebooks-set-item4 {
   bottom: 24%;
   left: 47%; }
-  @media (min-width: 1681px) {
+  @media (min-width: 1565px) {
     #portfolio .notebooks-set-item4 {
       left: 45%; } }
   #portfolio .notebooks-set-item4 .project-type-label {
     left: 10.5%;
     top: -1.6rem; }
-    @media (min-width: 1681px) {
+    @media (min-width: 1565px) {
       #portfolio .notebooks-set-item4 .project-type-label {
         top: -2.4rem; } }
+
+@media (min-width: 768px) and (max-width: 1244px) {
+  #portfolio .notebooks-set-item4 .project-type-label {
+    top: -2.4rem; } }
 
 #portfolio .notebooks-set-item5 {
   bottom: 12%;
   left: 29.3%; }
-  @media (min-width: 1681px) {
+  @media (min-width: 1565px) {
     #portfolio .notebooks-set-item5 {
       left: 26.9%; } }
   #portfolio .notebooks-set-item5 .project-type-label {
@@ -6277,9 +6395,13 @@ body {
     bottom: -1rem;
     top: auto;
     transform: translateX(-50%); }
-    @media (min-width: 1681px) {
+    @media (min-width: 1565px) {
       #portfolio .notebooks-set-item5 .project-type-label {
         bottom: -1.4rem; } }
+
+@media (min-width: 768px) and (max-width: 1244px) {
+  #portfolio .notebooks-set-item5 .project-type-label {
+    bottom: -1.4rem; } }
 
 #portfolio .project-type-label {
   left: 1.6%; }
@@ -6303,11 +6425,11 @@ body {
   bottom: 4%;
   left: 4%; }
 
-@media (min-width: 1245px) and (max-width: 1680px) {
+@media (min-width: 1245px) and (max-width: 1564px) {
   #portfolio .portfolio-item-bk .portfolio-item-title-wrapper {
     left: 76%; } }
 
-@media (min-width: 1681px) {
+@media (min-width: 1565px) {
   #portfolio .portfolio-item-bk .portfolio-item-title-wrapper {
     left: calc(850px + 10%); } }
 
@@ -6349,7 +6471,7 @@ body {
 
 #portfolio .portfolio-item-vendomo-crm .portfolio-item-tablet {
   bottom: 1%;
-  left: 22%; }
+  left: 21.5%; }
 
 #portfolio .portfolio-item-vendomo-crm .portfolio-item-notebook {
   bottom: 5%;
@@ -6359,11 +6481,11 @@ body {
   bottom: 8%;
   left: 11.7%; }
 
-@media (min-width: 1245px) and (max-width: 1680px) {
+@media (min-width: 1245px) and (max-width: 1564px) {
   #portfolio .portfolio-item-vendomo-crm .portfolio-item-title-wrapper {
     left: 72%; } }
 
-@media (min-width: 1681px) {
+@media (min-width: 1565px) {
   #portfolio .portfolio-item-vendomo-crm .portfolio-item-title-wrapper {
     left: calc(790px + 10%); } }
 
@@ -6404,33 +6526,30 @@ body {
 #portfolio .portfolio-item-cubomusica .portfolio-items-wrapper {
   padding-top: 56%; }
 
-#portfolio .portfolio-item-timvision .portfolio-item-title,
-#portfolio .portfolio-item-cubomusica .portfolio-item-title {
-  margin: 0.2rem 0 0.2rem; }
-
 @media (min-width: 1245px) {
   #portfolio .portfolio-item-timvision .portfolio-item-title-wrapper-horizontal,
   #portfolio .portfolio-item-cubomusica .portfolio-item-title-wrapper-horizontal {
     bottom: 63%;
     left: 62%; } }
 
-@media (min-width: 1681px) {
+@media (min-width: 1565px) {
   #portfolio .portfolio-item-timvision .portfolio-item-title-wrapper-horizontal,
   #portfolio .portfolio-item-cubomusica .portfolio-item-title-wrapper-horizontal {
     bottom: 60%; } }
 
 #portfolio .portfolio-item-unicri .portfolio-items-wrapper,
 #portfolio .portfolio-item-others .portfolio-items-wrapper {
-  top: 25%; }
-
-#portfolio .portfolio-item-unicri .portfolio-items-wrapper,
-#portfolio .portfolio-item-others .portfolio-items-wrapper {
+  top: 25%;
   padding-top: 48%; }
+  @media (max-width: 767px) {
+    #portfolio .portfolio-item-unicri .portfolio-items-wrapper,
+    #portfolio .portfolio-item-others .portfolio-items-wrapper {
+      margin-top: 4%; } }
 
 #portfolio .portfolio-item-unicri .portfolio-item-notebook,
 #portfolio .portfolio-item-others .portfolio-item-notebook {
   width: 41%; }
-  @media (min-width: 1681px) {
+  @media (min-width: 1565px) {
     #portfolio .portfolio-item-unicri .portfolio-item-notebook,
     #portfolio .portfolio-item-others .portfolio-item-notebook {
       width: 42%; } }
@@ -6444,7 +6563,7 @@ body {
     padding-top: 17%;
     height: auto; } }
 
-@media (min-width: 1681px) {
+@media (min-width: 1565px) {
   #portfolio .portfolio-item-unicri .portfolio-item-title-wrapper-horizontal,
   #portfolio .portfolio-item-others .portfolio-item-title-wrapper-horizontal {
     top: 9%;
@@ -6454,14 +6573,15 @@ body {
 #portfolio .portfolio-item-others .portfolio-item-subtitle-employer {
   margin-top: 0.5rem; }
 
-#portfolio .portfolio-item-unicri .portfolio-item-title,
-#portfolio .portfolio-item-others .portfolio-item-title {
-  margin-top: 0.5rem; }
+@media (max-width: 479px) {
+  #portfolio .portfolio-item-unicri .project-type-label,
+  #portfolio .portfolio-item-others .project-type-label {
+    display: none; } }
 
-#portfolio .portfolio-item-modal-notebook-mobile .modal-dialog, #portfolio .portfolio-item-modal-tv .modal-dialog, #portfolio .portfolio-item-modal-notebook .modal-dialog {
-  width: 97%;
-  height: 90%;
-  max-width: none; }
+@media (max-width: 479px) {
+  #portfolio .portfolio-item-unicri .line-breaker,
+  #portfolio .portfolio-item-others .line-breaker {
+    display: block; } }
 
 #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-subtitle, #portfolio .portfolio-item-modal-tv .portfolio-item-subtitle, #portfolio .portfolio-item-modal-notebook .portfolio-item-subtitle {
   margin-bottom: 2rem;
@@ -6471,8 +6591,12 @@ body {
 #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-details-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-details-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-details-wrapper {
   position: absolute;
   left: -94%;
-  top: 8.6%;
-  width: 29%; }
+  top: 0;
+  bottom: 0;
+  width: 27%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
 
 #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-wrapper {
   position: fixed;
@@ -6481,9 +6605,9 @@ body {
   min-height: 500px;
   left: 50%;
   right: 0; }
-  @media (min-width: 1681px) {
+  @media (min-width: 1565px) {
     #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-wrapper {
-      min-height: 770px; } }
+      min-height: 680px; } }
 
 #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-title, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-title, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-title {
   font-family: "worksans-regular", sans-serif;
@@ -6493,7 +6617,7 @@ body {
   letter-spacing: -0.12rem;
   margin-bottom: 0.3rem; }
 
-@media (min-width: 1245px) and (max-width: 1680px) {
+@media (min-width: 1245px) and (max-width: 1564px) {
   #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-title, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-title, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-title {
     font-size: 1.5rem;
     letter-spacing: -0.08rem; } }
@@ -6501,30 +6625,39 @@ body {
 #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-subtitle, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-subtitle, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-subtitle {
   font-family: "worksans-thin", sans-serif;
   line-height: 1.2;
-  letter-spacing: 0.03rem;
   color: #000;
   font-size: 1.7rem;
+  letter-spacing: 0.03rem;
   margin-bottom: 1.4rem; }
+  @media (max-width: 767px) {
+    #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-subtitle, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-subtitle, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-subtitle {
+      font-size: 1.6rem;
+      letter-spacing: 0.05rem; } }
 
-@media (min-width: 1245px) and (max-width: 1680px) {
+@media (min-width: 768px) and (max-width: 1244px) {
+  #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-subtitle, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-subtitle, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-subtitle {
+    font-size: 1.8rem;
+    letter-spacing: 0.03rem; } }
+
+@media (min-width: 1245px) and (max-width: 1564px) {
   #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-subtitle, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-subtitle, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-subtitle {
     font-size: 1.4rem; } }
 
 #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-notebook, #portfolio .portfolio-item-modal-tv .portfolio-item-notebook, #portfolio .portfolio-item-modal-notebook .portfolio-item-notebook {
   position: absolute;
-  padding-top: 86.3%;
+  padding-top: 83.3%;
   top: 50%;
   left: -31%;
   bottom: auto;
   max-width: none;
-  width: 133%;
+  width: 128%;
   margin-top: -35%;
   z-index: 1; }
-  @media (min-width: 1681px) {
+  @media (min-width: 1565px) {
     #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-notebook, #portfolio .portfolio-item-modal-tv .portfolio-item-notebook, #portfolio .portfolio-item-modal-notebook .portfolio-item-notebook {
-      width: 145%;
-      margin-top: -38%;
-      left: -41%; } }
+      width: 140%;
+      margin-top: -40%;
+      left: -42%; } }
   #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-notebook .portfolio-item-device-img, #portfolio .portfolio-item-modal-tv .portfolio-item-notebook .portfolio-item-device-img, #portfolio .portfolio-item-modal-notebook .portfolio-item-notebook .portfolio-item-device-img {
     position: absolute;
     top: 0;
@@ -6534,7 +6667,7 @@ body {
     left: 12.5%;
     right: 12.5%;
     bottom: 22.7%; }
-    @media (min-width: 1681px) {
+    @media (min-width: 1565px) {
       #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-notebook .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-notebook .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-notebook .portfolio-item-img-full-wrapper {
         top: 6.4%;
         bottom: 15%; } }
@@ -6544,18 +6677,18 @@ body {
 
 #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-mobile, #portfolio .portfolio-item-modal-tv .portfolio-item-mobile, #portfolio .portfolio-item-modal-notebook .portfolio-item-mobile {
   position: absolute;
-  padding-top: 55.5%;
+  padding-top: 53%;
   top: 50%;
-  left: -48%;
+  left: -47%;
   bottom: auto;
   max-width: none;
-  width: 24%;
+  width: 23%;
   margin-top: -9%;
   z-index: 2; }
-  @media (min-width: 1681px) {
+  @media (min-width: 1565px) {
     #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-mobile, #portfolio .portfolio-item-modal-tv .portfolio-item-mobile, #portfolio .portfolio-item-modal-notebook .portfolio-item-mobile {
-      top: 57%;
-      left: -55%; } }
+      margin-top: -8%;
+      left: -54%; } }
   #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-mobile .portfolio-item-device-img, #portfolio .portfolio-item-modal-tv .portfolio-item-mobile .portfolio-item-device-img, #portfolio .portfolio-item-modal-notebook .portfolio-item-mobile .portfolio-item-device-img {
     position: absolute;
     top: 0;
@@ -6576,14 +6709,14 @@ body {
   left: -33%;
   bottom: auto;
   max-width: none;
-  width: 115%;
-  margin-top: -35%;
+  width: 112%;
+  margin-top: -37%;
   z-index: 1; }
-  @media (min-width: 1681px) {
+  @media (min-width: 1565px) {
     #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-samsung-tv, #portfolio .portfolio-item-modal-tv .portfolio-item-samsung-tv, #portfolio .portfolio-item-modal-notebook .portfolio-item-samsung-tv {
-      width: 130%;
-      margin-top: -38%;
-      left: -40%; } }
+      width: 123%;
+      margin-top: -40%;
+      left: -39%; } }
   #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-samsung-tv .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-samsung-tv .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-samsung-tv .portfolio-item-img-full-wrapper {
     top: 2.4%;
     left: 1.5%;
@@ -6605,6 +6738,13 @@ body {
 #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-notebook .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-tv .portfolio-item-notebook .carousel-item-scroll-teaser, #portfolio .portfolio-item-modal-notebook .portfolio-item-notebook .carousel-item-scroll-teaser {
   padding-top: 27%; }
 
+#portfolio .portfolio-item-modal-notebook-mobile .carousel-control.left {
+  background-image: none;
+  left: 19%; }
+  @media (min-width: 1565px) {
+    #portfolio .portfolio-item-modal-notebook-mobile .carousel-control.left {
+      left: 17%; } }
+
 #portfolio .portfolio-item-modal-tv .carousel-control {
   top: 39%; }
 
@@ -6612,25 +6752,25 @@ body {
   left: 22%; }
 
 #portfolio .portfolio-item-modal-tv .carousel-indicators {
-  bottom: -10%; }
-  @media (min-width: 1681px) {
+  bottom: -6%; }
+  @media (min-width: 1565px) {
     #portfolio .portfolio-item-modal-tv .carousel-indicators {
-      bottom: -22%; } }
+      bottom: -13%; } }
 
 #portfolio .portfolio-item-modal-tv .portfolio-item-modal-details-wrapper {
-  width: 37%; }
+  width: 35%; }
 
 #portfolio .portfolio-item-modal-notebook .carousel-control.left {
-  left: 23%; }
+  left: 22%; }
 
 #portfolio .portfolio-item-modal-notebook .portfolio-item-notebook {
   left: -41%; }
-  @media (min-width: 1681px) {
+  @media (min-width: 1565px) {
     #portfolio .portfolio-item-modal-notebook .portfolio-item-notebook {
       left: -47%; } }
 
 #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-details-wrapper {
-  width: 37%; }
+  width: 35%; }
 
 #portfolio .tse-content {
   position: relative;
@@ -6640,14 +6780,19 @@ body {
   font-family: "worksans-light", sans-serif;
   line-height: 1.2;
   color: #000;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   letter-spacing: -0.07rem;
   position: absolute;
-  left: -1%;
+  left: -2.2%;
   top: -3.5%;
   width: 100%;
   text-align: center; }
-  @media (min-width: 1681px) {
+
+@media (min-width: 768px) and (max-width: 1244px) {
+  #portfolio .carousel-labels {
+    font-size: 1.6rem;
+    letter-spacing: -0.08rem; } }
+  @media (min-width: 1565px) {
     #portfolio .carousel-labels {
       font-size: 2rem;
       letter-spacing: -0.08rem; } }
@@ -6664,7 +6809,7 @@ body {
   #experience .section-header-img-wrapper {
     width: 90%;
     max-width: 210px; }
-    @media (min-width: 1681px) {
+    @media (min-width: 1565px) {
       #experience .section-header-img-wrapper {
         max-width: 300px; } }
   #experience .section-header-img {
@@ -6702,7 +6847,7 @@ body {
     line-height: 1.2;
     color: #000;
     font-size: 2rem; }
-    @media (min-width: 1681px) {
+    @media (min-width: 1565px) {
       #experience .experience-timeline-year, #experience .experience-timeline-year-last {
         font-size: 2.4rem; } }
   #experience .experience-timeline-year-last {
@@ -6718,7 +6863,7 @@ body {
     color: #000;
     font-size: 2rem;
     margin-bottom: 0.5rem; }
-    @media (min-width: 1681px) {
+    @media (min-width: 1565px) {
       #experience .experience-employer-name {
         font-size: 2.4rem; } }
   #experience .experience-position {
@@ -6728,8 +6873,12 @@ body {
     font-size: 2.7rem;
     letter-spacing: -0.2rem;
     margin-bottom: 0.5rem; }
+    @media (max-width: 767px) {
+      #experience .experience-position {
+        font-size: 2rem;
+        letter-spacing: -0.12rem; } }
 
-@media (min-width: 1245px) and (max-width: 1680px) {
+@media (min-width: 1245px) and (max-width: 1564px) {
   #experience .experience-position {
     font-size: 2rem;
     letter-spacing: -0.12rem; } }
@@ -6741,7 +6890,13 @@ body {
     line-height: 1.3;
     margin-bottom: 0.5rem;
     margin-top: 2.5rem; }
-    @media (min-width: 1681px) {
+
+@media (min-width: 768px) and (max-width: 1244px) {
+  #experience .experience-subtitle {
+    letter-spacing: -0.02rem;
+    font-size: 1.6rem;
+    line-height: 1.4; } }
+    @media (min-width: 1565px) {
       #experience .experience-subtitle {
         letter-spacing: -0.02rem;
         font-size: 1.6rem;
@@ -6750,10 +6905,10 @@ body {
 #references {
   margin: 10vh 0; }
 
-@media (min-width: 1245px) and (max-width: 1680px) {
+@media (min-width: 1245px) and (max-width: 1564px) {
   #references {
     margin: 12vh 0; } }
-  @media (min-width: 1681px) {
+  @media (min-width: 1565px) {
     #references {
       margin: 15vh 0; } }
   #references .article-body {
@@ -6764,10 +6919,10 @@ body {
   #references .carousel {
     min-height: 700px; }
 
-@media (min-width: 1245px) and (max-width: 1680px) {
+@media (min-width: 1245px) and (max-width: 1564px) {
   #references .carousel {
     min-height: 320px; } }
-    @media (min-width: 1681px) {
+    @media (min-width: 1565px) {
       #references .carousel {
         min-height: 350px; } }
   #references .carousel-item-content {
@@ -6793,8 +6948,12 @@ body {
     font-size: 2.7rem;
     letter-spacing: -0.2rem;
     margin-bottom: 4%; }
+    @media (max-width: 767px) {
+      #references .references-title {
+        font-size: 2rem;
+        letter-spacing: -0.12rem; } }
 
-@media (min-width: 1245px) and (max-width: 1680px) {
+@media (min-width: 1245px) and (max-width: 1564px) {
   #references .references-title {
     font-size: 2rem;
     letter-spacing: -0.12rem; } }
@@ -6814,7 +6973,7 @@ body {
     margin-top: 1.2rem;
     position: relative; }
 
-@media (min-width: 1245px) and (max-width: 1680px) {
+@media (min-width: 1245px) and (max-width: 1564px) {
   #references .reference-author {
     font-size: 1.5rem;
     letter-spacing: -0.08rem; } }
@@ -6824,13 +6983,22 @@ body {
   #references .reference-author-title {
     font-family: "worksans-thin", sans-serif;
     line-height: 1.2;
-    letter-spacing: 0.03rem;
     color: #000;
     font-size: 1.7rem;
+    letter-spacing: 0.03rem;
     margin-bottom: 0;
     position: relative; }
+    @media (max-width: 767px) {
+      #references .reference-author-title {
+        font-size: 1.6rem;
+        letter-spacing: 0.05rem; } }
 
-@media (min-width: 1245px) and (max-width: 1680px) {
+@media (min-width: 768px) and (max-width: 1244px) {
+  #references .reference-author-title {
+    font-size: 1.8rem;
+    letter-spacing: 0.03rem; } }
+
+@media (min-width: 1245px) and (max-width: 1564px) {
   #references .reference-author-title {
     font-size: 1.4rem; } }
   #references .reference-author-title {
@@ -6847,19 +7015,19 @@ body {
   #references .carousel-control {
     position: absolute;
     top: 33%; }
-    @media (max-width: 1680px) {
+    @media (max-width: 1564px) {
       #references .carousel-control {
         width: 60px; } }
     @media (min-width: 1245px) {
       #references .carousel-control {
         top: 10px; } }
-  @media (max-width: 1680px) {
+  @media (max-width: 1564px) {
     #references .carousel-control.left {
       left: -20px; } }
   @media (min-width: 1245px) {
     #references .carousel-control.left {
       left: -80px; } }
-  @media (max-width: 1680px) {
+  @media (max-width: 1564px) {
     #references .carousel-control.right {
       right: -20px; } }
   @media (min-width: 1245px) {
@@ -6881,7 +7049,12 @@ body {
     clear: both;
     display: block;
     margin-top: 1%; }
-    @media (min-width: 1681px) {
+
+@media (min-width: 768px) and (max-width: 1244px) {
+  #references .references-linkedin-link {
+    font-size: 1.6rem;
+    letter-spacing: -0.1rem; } }
+    @media (min-width: 1565px) {
       #references .references-linkedin-link {
         font-size: 1.6rem;
         letter-spacing: -0.1rem; } }
@@ -6894,7 +7067,7 @@ body {
   #about .section-header-img-wrapper {
     width: 70%;
     max-width: 140px; }
-    @media (min-width: 1681px) {
+    @media (min-width: 1565px) {
       #about .section-header-img-wrapper {
         max-width: 190px; } }
   #about .article-body {
@@ -6918,10 +7091,10 @@ body {
     align-items: center;
     padding-right: 3%; }
 
-@media (min-width: 1245px) and (max-width: 1680px) {
+@media (min-width: 1245px) and (max-width: 1564px) {
   #about .about-interest-content {
     padding-right: 6%; } }
-    @media (min-width: 1681px) {
+    @media (min-width: 1565px) {
       #about .about-interest-content {
         padding-right: 9%; } }
   #about .about-interest {
@@ -6937,10 +7110,10 @@ body {
       padding-right: 0;
       padding-left: 3%; }
 
-@media (min-width: 1245px) and (max-width: 1680px) {
+@media (min-width: 1245px) and (max-width: 1564px) {
   #about .about-interest:nth-child(even) .about-interest-content {
     padding-left: 6%; } }
-      @media (min-width: 1681px) {
+      @media (min-width: 1565px) {
         #about .about-interest:nth-child(even) .about-interest-content {
           padding-left: 9%; } }
     #about .about-interest .about-interest-title {
@@ -6959,10 +7132,10 @@ body {
       align-items: center;
       text-align: center;
       flex: 1 0 auto; }
-      @media (min-width: 1681px) {
+      @media (min-width: 1565px) {
         #about .about-interest .about-interest-title {
           font-size: 2.4rem; } }
-      @media (min-width: 1681px) {
+      @media (min-width: 1565px) {
         #about .about-interest .about-interest-title {
           width: 200px;
           height: 200px;
@@ -6985,7 +7158,12 @@ body {
     background: transparent;
     cursor: pointer;
     outline: none !important; }
-    @media (min-width: 1681px) {
+
+@media (min-width: 768px) and (max-width: 1244px) {
+  #about .interest-button {
+    font-size: 1.6rem;
+    letter-spacing: -0.1rem; } }
+    @media (min-width: 1565px) {
       #about .interest-button {
         font-size: 1.6rem;
         letter-spacing: -0.1rem; } }
@@ -7001,7 +7179,7 @@ body {
       line-height: 1.2;
       color: #000;
       font-size: 2rem; }
-      @media (min-width: 1681px) {
+      @media (min-width: 1565px) {
         #about .about-intro .about-interest-title {
           font-size: 2.4rem; } }
   #about .about-interest-title-main {
@@ -7013,8 +7191,12 @@ body {
     margin-bottom: 3rem;
     width: 100%;
     text-align: center; }
+    @media (max-width: 767px) {
+      #about .about-interest-title-main {
+        font-size: 2rem;
+        letter-spacing: -0.12rem; } }
 
-@media (min-width: 1245px) and (max-width: 1680px) {
+@media (min-width: 1245px) and (max-width: 1564px) {
   #about .about-interest-title-main {
     font-size: 2rem;
     letter-spacing: -0.12rem; } }
@@ -7036,49 +7218,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; }
-  #about .about-item-modal .modal-dialog {
-    width: 97%;
-    height: 90%;
-    max-width: none; }
-  #about .about-item-modal .about-item-subtitle {
-    font-family: "worksans-light", sans-serif;
-    line-height: 1.2;
-    color: #000;
-    font-size: 2rem;
-    letter-spacing: -0.06rem;
-    margin-bottom: 2rem; }
-    @media (min-width: 1681px) {
-      #about .about-item-modal .about-item-subtitle {
-        font-size: 2.4rem;
-        letter-spacing: -0.08rem; } }
-  #about .about-item-modal .about-item-modal-details-wrapper {
-    position: fixed;
-    left: 60px;
-    top: 40px;
-    width: 17%; }
-  #about .about-item-modal .about-item-modal-title {
-    font-family: "worksans-regular", sans-serif;
-    line-height: 1.1;
-    color: #000;
-    font-size: 2.2rem;
-    letter-spacing: -0.12rem;
-    margin-bottom: 0.3rem; }
-
-@media (min-width: 1245px) and (max-width: 1680px) {
-  #about .about-item-modal .about-item-modal-title {
-    font-size: 1.5rem;
-    letter-spacing: -0.08rem; } }
-  #about .about-item-modal .about-item-modal-subtitle {
-    font-family: "worksans-thin", sans-serif;
-    line-height: 1.2;
-    letter-spacing: 0.03rem;
-    color: #000;
-    font-size: 1.7rem;
-    margin-bottom: 1.4rem; }
-
-@media (min-width: 1245px) and (max-width: 1680px) {
-  #about .about-item-modal .about-item-modal-subtitle {
-    font-size: 1.4rem; } }
   #about .about-item-modal .about-item-img-full-wrapper {
     position: fixed;
     top: 0;
@@ -7119,14 +7258,19 @@ body {
     font-family: "worksans-light", sans-serif;
     line-height: 1.2;
     color: #000;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     letter-spacing: -0.07rem;
     position: absolute;
     left: -1%;
     top: -3.5%;
     width: 100%;
     text-align: center; }
-    @media (min-width: 1681px) {
+
+@media (min-width: 768px) and (max-width: 1244px) {
+  #about .carousel-labels {
+    font-size: 1.6rem;
+    letter-spacing: -0.08rem; } }
+    @media (min-width: 1565px) {
       #about .carousel-labels {
         font-size: 2rem;
         letter-spacing: -0.08rem; } }
@@ -7139,10 +7283,10 @@ body {
   align-items: center;
   min-height: 500px; }
 
-@media (min-width: 1245px) and (max-width: 1680px) {
+@media (min-width: 1245px) and (max-width: 1564px) {
   #contact {
     min-height: 600px; } }
-  @media (min-width: 1681px) {
+  @media (min-width: 1565px) {
     #contact {
       min-height: 700px; } }
   #contact .section-header {
@@ -7176,8 +7320,12 @@ body {
     font-size: 2.7rem;
     letter-spacing: -0.2rem;
     margin: 2rem 0; }
+    @media (max-width: 767px) {
+      #contact .contact-title {
+        font-size: 2rem;
+        letter-spacing: -0.12rem; } }
 
-@media (min-width: 1245px) and (max-width: 1680px) {
+@media (min-width: 1245px) and (max-width: 1564px) {
   #contact .contact-title {
     font-size: 2rem;
     letter-spacing: -0.12rem; } }
@@ -7186,7 +7334,7 @@ body {
     line-height: 1.2;
     color: #000;
     font-size: 2rem; }
-    @media (min-width: 1681px) {
+    @media (min-width: 1565px) {
       #contact .contact-content {
         font-size: 2.4rem; } }
   #contact .contact-methods {
@@ -7201,7 +7349,7 @@ body {
     border: 1px dotted #8c8c8c;
     max-width: 300px;
     position: relative; }
-    @media (min-width: 1681px) {
+    @media (min-width: 1565px) {
       #contact .contact-method-wrapper {
         margin: 3vh 2vw; } }
   #contact .contact-method {
@@ -7231,7 +7379,12 @@ body {
     background: transparent;
     cursor: pointer;
     outline: none !important; }
-    @media (min-width: 1681px) {
+
+@media (min-width: 768px) and (max-width: 1244px) {
+  #contact .contact-method-link {
+    font-size: 1.6rem;
+    letter-spacing: -0.1rem; } }
+    @media (min-width: 1565px) {
       #contact .contact-method-link {
         font-size: 1.6rem;
         letter-spacing: -0.1rem; } }
@@ -7258,10 +7411,10 @@ body {
     color: #000;
     font-size: 2rem;
     margin-bottom: 0; }
-    @media (min-width: 1681px) {
+    @media (min-width: 1565px) {
       #outro .section-header-sub-title {
         font-size: 2.4rem; } }
-    @media (min-width: 1681px) {
+    @media (min-width: 1565px) {
       #outro .section-header-sub-title {
         margin-bottom: 1.8rem; } }
 

@@ -159,34 +159,6 @@
       align-items: center;
     }
 
-    & .modal-dialog {
-      width: 97%;
-      height: 90%;
-      max-width: none;
-    }
-
-    & .about-item-subtitle {
-      @include text-light-title();
-      margin-bottom: 2rem;
-    }
-
-    & .about-item-modal-details-wrapper {
-      position: fixed;
-      left: 60px;
-      top: 40px;
-      width: 17%;
-    }
-
-    & .about-item-modal-title {
-      @include text-regular-title-small();
-      margin-bottom: 0.3rem;
-    }
-
-    & .about-item-modal-subtitle {
-      @include text-thin-title-small();
-      margin-bottom: 1.4rem;
-    }
-
     & .about-item-img-full-wrapper {
       position: fixed;
       top: 0;
