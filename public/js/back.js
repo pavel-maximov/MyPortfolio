@@ -178,13 +178,11 @@ function closeModal() {
 
 function initModal($modal, $mainCarousel, $secondaryCarousel) {
     initCarousel($modal, $mainCarousel, $secondaryCarousel);
-
     $modal.find('.carousel').on('slid.bs.carousel', function() {
         initSlide($(this).find('.tse-scrollable.active'), $modal);
         $modal.find('.carousel-label').removeClass('active');
         $modal.find('.carousel-label:eq(' + $modal.find('.carousel-item.active').index() + ')').addClass('active');
     });
-
     $.each($modal.find('.tse-scrollable.active'), function(index, element) {
         initSlide($(element), $modal);
     });
@@ -234,12 +232,13 @@ $document.ready(function () {
     $window.on('scroll', onScroll);
     onScroll();
  
-    $('.modal')
-        .one('shown.bs.modal', function() {
+    $('.modal').one('shown.bs.modal', function() {
             var $this = $(this);
 
-            if ($this.find('.portfolio-item-modal-content').length) {
-                $this.find('.portfolio-item-modal-content').load($this.data('modal-src'), function() {
+            if ($this.find('.modal-content').length) {
+                $this.find('.modal-content').load($this.data('modal-src'), function() {
+                    $this.find('.modal-content').append('<button class="modal-close-button">X</button>');
+                    $this.find('.modal-close-button').click(closeModal);
                     initModal($this, $this.find('.main-carousel'), $this.find('.secondary-carousel'));
                 })
             } else if ($this.find('.about-item-modal-content').length) {
@@ -247,10 +246,8 @@ $document.ready(function () {
                     initModal($this, $this.find('.main-carousel'), $this.find('.secondary-carousel'));
                 })
             }
-        })
-        .append('<button class="modal-close-button">X</button>');
+        });
 
-    $('.modal').find('.modal-close-button').click(closeModal);
     $body.data('notebook-scroll-teaser-needed', true);
     $body.data('mobile-scroll-teaser-needed', true);
 

@@ -748,19 +748,6 @@
 
   %portfolio-item-modal {
 
-    // TODO possible duplicate from about modal
-    & .portfolio-item-modal-content {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      @include media-breakpoint-only(md) {
-        min-height: 710px;
-      }
-    }
-
     & .portfolio-item-subtitle {
       margin-bottom: 2rem;
       font-family: $font-family-work-sans-thin;
@@ -781,29 +768,6 @@
       background-color: white;
     }
 
-    & .portfolio-item-modal-wrapper {
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      left: 38%;
-      width: 110vh;
-      //max-width: 120vh;
-      @include media-breakpoint-only(lg) {
-        max-width: 670px;
-        min-height: 548px;
-      }
-      @include media-breakpoint-only(xl) {
-        max-width: 960px;
-        min-width: 700px;
-        min-height: 855px;
-        // Continua con questo schema del 3 valori
-      }
-      @include media-breakpoint-only(xxl) {
-        max-width: 1000px;
-      }
-    }
-
-
     & .portfolio-item-modal-title {
       @include text-regular-title-small();
       margin-bottom: 0.3rem;
@@ -816,35 +780,19 @@
 
     & .portfolio-item-notebook {
       position: absolute;
-      padding-top: 83.3%;
       top: 50%;
-      left: -31%;
       bottom: auto;
-      max-width: none;
-      width: 128%;
-      margin-top: -37%;
+      margin-top: -22%;
+      left: 17%;
+      width: 82%;
       z-index: 1;
-      @include media-breakpoint-up(xl) {
-        width: 140%;
-        margin-top: -40%;
-        left: -42%;
-      }
-
-      & .portfolio-item-device-img {
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
+      max-width: 1526px;
 
       & .portfolio-item-img-full-wrapper {
-        top: 5.4%;
+        top: 6.4%;
         left: 12.5%;
         right: 12.5%;
-        bottom: 22.7%;
-        @include media-breakpoint-up(xl) {
-          top: 6.4%;
-          bottom: 15%;
-        }
+        bottom: 20.4%;
       }
 
       & .wrapper {
@@ -855,30 +803,19 @@
 
     & .portfolio-item-mobile {
       position: absolute;
-      padding-top: 53%;
       top: 50%;
-      left: -47%;
       bottom: auto;
-      max-width: none;
-      width: 23%;
-      margin-top: -11%;
+      margin-top: -6%;
+      left: 8%;
+      width: 15%;
       z-index: 2;
-      @include media-breakpoint-up(xl) {
-        margin-top: -8%;
-        left: -54%;
-      }
-
-      & .portfolio-item-device-img {
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
+      max-width: 242px;
 
       & .portfolio-item-img-full-wrapper {
         top: 9%;
         left: 2.5%;
         right: 2.5%;
-        bottom: 18.5%;
+        bottom: 22.6%;
       }
 
       & .wrapper {
@@ -978,14 +915,6 @@
     min-height: 100%;
   }
 
-  .carousel-labels {
-    @include text-light-title-small();
-    position: absolute;
-    left: -2.2%;
-    top: -3.5%;
-    width: 100%;
-    text-align: center;
-  }
 
   .carousel-label {
     display: none;

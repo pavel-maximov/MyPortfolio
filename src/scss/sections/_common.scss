@@ -689,7 +689,7 @@ h3, .h3 {
 }
 
 .carousel-control {
-  position: fixed;
+  position: absolute;
   top: 39%;
   color: #666;
   text-shadow: none;
@@ -698,6 +698,7 @@ h3, .h3 {
   font-size: 9rem;
   font-family: $font-family-work-sans-thin;
   opacity: 1;
+  z-index: 3;
   @include media-breakpoint-down(md) {
     font-size: 8vw;
     width: 8vw;
@@ -720,15 +721,13 @@ h3, .h3 {
 }
 
 .carousel-indicators {
+  z-index: 3;
   width: auto;
   margin: 0;
-  bottom: -21.1%;
+  bottom: -21%;
   left: 0;
-  right: 0;
+  right: 26%;
   position: absolute;
-  @include media-breakpoint-up(xl) {
-    bottom: -19.3%;
-  }
 }
 
 .carousel-indicators li {
@@ -756,6 +755,18 @@ h3, .h3 {
   opacity: 0.5;
 }
 
+.carousel-labels {
+  @include text-light-title-small();
+  position: absolute;
+  top: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.carousel-labels-list {
+  padding-left: 0;
+}
 
 .carousel-item-scroll-teaser {
   display: flex;
@@ -806,6 +817,23 @@ h3, .h3 {
   height: 100%;
   max-width: 1920px;
   margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+& .modal-content {
+  width: 100vw;
+  height: 56.25vw; /* height:width ratio = 9/16 = .5625  */
+  background: pink;
+  max-height: 100vh;
+  max-width: 177.78vh; /* 16/9 = 1.778 */
+  margin: auto;
+  position: relative;
+  border: none;
+  overflow: hidden;
+  min-width: 1123px;
+  min-height: 688px;
 }
 
 & .modal-close-button {
@@ -814,7 +842,7 @@ h3, .h3 {
   color: #666;
   font-size: 7rem;
   font-family: $font-family-work-sans-thin;
-  position: fixed;
+  position: absolute;
   top: 1%;
   right: 0;
   z-index: 1;

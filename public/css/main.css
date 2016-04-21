@@ -5451,7 +5451,7 @@ body {
   background-color: rgba(0, 0, 0, 0.9); }
 
 .carousel-control {
-  position: fixed;
+  position: absolute;
   top: 39%;
   color: #666;
   text-shadow: none;
@@ -5459,7 +5459,8 @@ body {
   height: 90px;
   font-size: 9rem;
   font-family: "worksans-thin", sans-serif;
-  opacity: 1; }
+  opacity: 1;
+  z-index: 3; }
   @media (max-width: 1244px) {
     .carousel-control {
       font-size: 8vw;
@@ -5476,15 +5477,13 @@ body {
   right: 0; }
 
 .carousel-indicators {
+  z-index: 3;
   width: auto;
   margin: 0;
-  bottom: -21.1%;
+  bottom: -21%;
   left: 0;
-  right: 0;
+  right: 26%;
   position: absolute; }
-  @media (min-width: 1565px) {
-    .carousel-indicators {
-      bottom: -19.3%; } }
 
 .carousel-indicators li {
   border: 1px solid #000;
@@ -5507,6 +5506,30 @@ body {
   font-size: 5rem;
   font-family: "worksans-thin", sans-serif;
   opacity: 0.5; }
+
+.carousel-labels {
+  font-family: "worksans-light", sans-serif;
+  line-height: 1.2;
+  color: #000;
+  font-size: 1.2rem;
+  letter-spacing: -0.07rem;
+  position: absolute;
+  top: 2%;
+  left: 0;
+  right: 0;
+  text-align: center; }
+
+@media (min-width: 768px) and (max-width: 1244px) {
+  .carousel-labels {
+    font-size: 1.6rem;
+    letter-spacing: -0.08rem; } }
+  @media (min-width: 1565px) {
+    .carousel-labels {
+      font-size: 2rem;
+      letter-spacing: -0.08rem; } }
+
+.carousel-labels-list {
+  padding-left: 0; }
 
 .carousel-item-scroll-teaser {
   display: flex;
@@ -5546,7 +5569,25 @@ body {
   width: 100%;
   height: 100%;
   max-width: 1920px;
-  margin: auto; }
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.modal-content {
+  width: 100vw;
+  height: 56.25vw;
+  /* height:width ratio = 9/16 = .5625  */
+  background: pink;
+  max-height: 100vh;
+  max-width: 177.78vh;
+  /* 16/9 = 1.778 */
+  margin: auto;
+  position: relative;
+  border: none;
+  overflow: hidden;
+  min-width: 1123px;
+  min-height: 688px; }
 
 .modal-close-button {
   width: 90px;
@@ -5554,7 +5595,7 @@ body {
   color: #666;
   font-size: 7rem;
   font-family: "worksans-thin", sans-serif;
-  position: fixed;
+  position: absolute;
   top: 1%;
   right: 0;
   z-index: 1;
@@ -6587,18 +6628,6 @@ body {
   #portfolio .portfolio-item-others .line-breaker {
     display: block; } }
 
-#portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-content, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-content, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-content {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-@media (min-width: 768px) and (max-width: 1244px) {
-  #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-content, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-content, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-content {
-    min-height: 710px; } }
-
 #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-subtitle, #portfolio .portfolio-item-modal-tv .portfolio-item-subtitle, #portfolio .portfolio-item-modal-notebook .portfolio-item-subtitle {
   margin-bottom: 2rem;
   font-family: "worksans-thin", sans-serif;
@@ -6616,27 +6645,6 @@ body {
   flex-direction: column;
   text-align: center;
   background-color: white; }
-
-#portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-wrapper {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 38%;
-  width: 110vh; }
-
-@media (min-width: 1245px) and (max-width: 1564px) {
-  #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-wrapper {
-    max-width: 670px;
-    min-height: 548px; } }
-
-@media (min-width: 1565px) and (max-width: 1920px) {
-  #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-wrapper {
-    max-width: 960px;
-    min-width: 700px;
-    min-height: 855px; } }
-  @media (min-width: 1921px) {
-    #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-wrapper {
-      max-width: 1000px; } }
 
 #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-title, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-title, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-title {
   font-family: "worksans-regular", sans-serif;
@@ -6674,59 +6682,36 @@ body {
 
 #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-notebook, #portfolio .portfolio-item-modal-tv .portfolio-item-notebook, #portfolio .portfolio-item-modal-notebook .portfolio-item-notebook {
   position: absolute;
-  padding-top: 83.3%;
   top: 50%;
-  left: -31%;
   bottom: auto;
-  max-width: none;
-  width: 128%;
-  margin-top: -37%;
-  z-index: 1; }
-  @media (min-width: 1565px) {
-    #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-notebook, #portfolio .portfolio-item-modal-tv .portfolio-item-notebook, #portfolio .portfolio-item-modal-notebook .portfolio-item-notebook {
-      width: 140%;
-      margin-top: -40%;
-      left: -42%; } }
-  #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-notebook .portfolio-item-device-img, #portfolio .portfolio-item-modal-tv .portfolio-item-notebook .portfolio-item-device-img, #portfolio .portfolio-item-modal-notebook .portfolio-item-notebook .portfolio-item-device-img {
-    position: absolute;
-    top: 0;
-    left: 0; }
+  margin-top: -22%;
+  left: 17%;
+  width: 82%;
+  z-index: 1;
+  max-width: 1526px; }
   #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-notebook .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-notebook .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-notebook .portfolio-item-img-full-wrapper {
-    top: 5.4%;
+    top: 6.4%;
     left: 12.5%;
     right: 12.5%;
-    bottom: 22.7%; }
-    @media (min-width: 1565px) {
-      #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-notebook .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-notebook .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-notebook .portfolio-item-img-full-wrapper {
-        top: 6.4%;
-        bottom: 15%; } }
+    bottom: 20.4%; }
   #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-notebook .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-notebook .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-notebook .wrapper {
     width: 100%;
     height: 100%; }
 
 #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-mobile, #portfolio .portfolio-item-modal-tv .portfolio-item-mobile, #portfolio .portfolio-item-modal-notebook .portfolio-item-mobile {
   position: absolute;
-  padding-top: 53%;
   top: 50%;
-  left: -47%;
   bottom: auto;
-  max-width: none;
-  width: 23%;
-  margin-top: -11%;
-  z-index: 2; }
-  @media (min-width: 1565px) {
-    #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-mobile, #portfolio .portfolio-item-modal-tv .portfolio-item-mobile, #portfolio .portfolio-item-modal-notebook .portfolio-item-mobile {
-      margin-top: -8%;
-      left: -54%; } }
-  #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-mobile .portfolio-item-device-img, #portfolio .portfolio-item-modal-tv .portfolio-item-mobile .portfolio-item-device-img, #portfolio .portfolio-item-modal-notebook .portfolio-item-mobile .portfolio-item-device-img {
-    position: absolute;
-    top: 0;
-    left: 0; }
+  margin-top: -6%;
+  left: 8%;
+  width: 15%;
+  z-index: 2;
+  max-width: 242px; }
   #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-mobile .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-mobile .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-mobile .portfolio-item-img-full-wrapper {
     top: 9%;
     left: 2.5%;
     right: 2.5%;
-    bottom: 18.5%; }
+    bottom: 22.6%; }
   #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-mobile .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-mobile .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-mobile .wrapper {
     width: 100%;
     height: 100%; }
@@ -6792,27 +6777,6 @@ body {
   position: relative;
   cursor: ns-resize;
   min-height: 100%; }
-
-#portfolio .carousel-labels {
-  font-family: "worksans-light", sans-serif;
-  line-height: 1.2;
-  color: #000;
-  font-size: 1.2rem;
-  letter-spacing: -0.07rem;
-  position: absolute;
-  left: -2.2%;
-  top: -3.5%;
-  width: 100%;
-  text-align: center; }
-
-@media (min-width: 768px) and (max-width: 1244px) {
-  #portfolio .carousel-labels {
-    font-size: 1.6rem;
-    letter-spacing: -0.08rem; } }
-  @media (min-width: 1565px) {
-    #portfolio .carousel-labels {
-      font-size: 2rem;
-      letter-spacing: -0.08rem; } }
 
 #portfolio .carousel-label {
   display: none; }
