@@ -252,10 +252,6 @@
   color: #000;
   font-size: 2.2rem;
   letter-spacing: -0.12rem;
-  @include media-breakpoint-only(lg) {
-    font-size: 1.5rem;
-    letter-spacing: -0.08rem;
-  }
 }
 
 
@@ -672,6 +668,7 @@ h3, .h3 {
 
 .carousel-inner {
   height: 100%;
+  overflow: visible;
 }
 
 // MODAL
@@ -689,19 +686,33 @@ h3, .h3 {
 }
 
 .carousel-control {
+  font-family: $font-family-work-sans-thin;
   position: absolute;
-  top: 39%;
   color: #666;
   text-shadow: none;
-  width: 90px;
-  height: 90px;
-  font-size: 9rem;
-  font-family: $font-family-work-sans-thin;
   opacity: 1;
   z-index: 3;
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(sm) {
+    font-size: 7rem;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    top: auto;
+    bottom: 10px;
+  }
+  @include media-breakpoint-only(md) {
+    top: 39%;
     font-size: 8vw;
     width: 8vw;
+    height: 8vw;
+    line-height: 8vw;
+  }
+  @include media-breakpoint-up(lg) {
+    top: 39%;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    font-size: 9rem;
   }
 
   &:focus,
@@ -721,13 +732,32 @@ h3, .h3 {
 }
 
 .carousel-indicators {
-  z-index: 3;
   width: auto;
   margin: 0;
-  bottom: -21%;
-  left: 0;
-  right: 26%;
-  position: absolute;
+  z-index: 3;
+
+  .in & {
+    @include media-breakpoint-down(sm) {
+      left: 80px;
+      right: 80px;
+      position: fixed;
+      bottom: 33px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & li {
+        margin: 0 2px !important;
+        flex: 1 1 auto auto;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    left: 0;
+    right: 0;
+    position: absolute;
+    bottom: -25%;
+  }
 }
 
 .carousel-indicators li {
@@ -735,7 +765,7 @@ h3, .h3 {
   height: 15px;
   width: 15px;
   border-radius: 50%;
-  margin: 0;
+  margin-top: 0;
 }
 
 .carousel-indicators .active {
@@ -756,16 +786,32 @@ h3, .h3 {
 }
 
 .carousel-labels {
-  @include text-light-title-small();
+  @include text-thin-title();
   position: absolute;
-  top: 2%;
-  left: 0;
-  right: 0;
   text-align: center;
+  @include media-breakpoint-down(sm) {
+    top: 0;
+    height: 80px;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 70px;
+  }
+  @include media-breakpoint-up(sm) {
+    top: 5%;
+    left: 13.5%;
+    right: 0;
+  }
 }
 
 .carousel-labels-list {
   padding-left: 0;
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 0;
+  }
 }
 
 .carousel-item-scroll-teaser {
@@ -785,21 +831,16 @@ h3, .h3 {
 
   & .carousel-item-scroll-teaser-image {
     width: 20%;
-    height: 16%;
+    height: 8%;
     max-width: 150px;
     max-height: 71px;
-    min-width: 100px;
-    min-height: 50px;
+    min-width: 70px;
+    min-height: 35px;
   }
 
   & .carousel-item-scroll-teaser-text {
-    font-family: $font-family-work-sans-regular;
-    font-size: 1.6rem;
-    margin-top: 0.5rem;
-    @include media-breakpoint-up(xl) {
-      font-size: 1.8rem;
-      margin-top: 1rem;
-    }
+    @include text-base();
+    color: #fff;
   }
 
   & .carousel-item-scroll-teaser-arrow {
@@ -812,7 +853,16 @@ h3, .h3 {
 
 //////////////// MODAL //////////////////
 
-& .modal-dialog {
+.modal {
+  // When fading in the modal, animate it to slide down
+  &.fade .modal-dialog {
+    transition: none;
+    transform: none;
+  }
+  &.in .modal-dialog { transform: none; }
+}
+
+.modal-dialog {
   width: 100%;
   height: 100%;
   max-width: 1920px;
@@ -822,25 +872,31 @@ h3, .h3 {
   align-items: center;
 }
 
-& .modal-content {
-  width: 100vw;
-  height: 56.25vw; /* height:width ratio = 9/16 = .5625  */
-  background: pink;
-  max-height: 100vh;
-  max-width: 177.78vh; /* 16/9 = 1.778 */
-  margin: auto;
-  position: relative;
-  border: none;
-  overflow: hidden;
-  min-width: 1123px;
-  min-height: 688px;
+.modal-content {
+    border: none;
+    outline: none;
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+    height: 100%;
+  }
+  @include media-breakpoint-up(md) {
+    width: 100vw;
+    height: 62.5vw; /* height:width ratio = 10/16 = .625  */
+    max-height: 100vh;
+    max-width: 160vh; /* 16/10 = 1.6 */
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    min-width: 768px;
+    min-height: 465px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-& .modal-close-button {
-  width: 90px;
-  height: 90px;
+.modal-close-button {
   color: #666;
-  font-size: 7rem;
   font-family: $font-family-work-sans-thin;
   position: absolute;
   top: 1%;
@@ -849,6 +905,22 @@ h3, .h3 {
   background: transparent;
   border: none;
   outline: none !important;
+  font-size: 5rem;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  @include media-breakpoint-only(md) {
+    font-size: 8vw;
+    width: 8vw;
+    height: 8vw;
+    line-height: 8vw;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 90px;
+    height: 90px;
+    font-size: 8rem;
+    line-height: 90px;
+  }
 
   &:hover,
   &:focus {

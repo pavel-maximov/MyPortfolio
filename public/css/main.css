@@ -5439,7 +5439,8 @@ body {
   width: auto; }
 
 .carousel-inner {
-  height: 100%; }
+  height: 100%;
+  overflow: visible; }
 
 .modal-backdrop.in {
   opacity: 1; }
@@ -5451,20 +5452,35 @@ body {
   background-color: rgba(0, 0, 0, 0.9); }
 
 .carousel-control {
+  font-family: "worksans-thin", sans-serif;
   position: absolute;
-  top: 39%;
   color: #666;
   text-shadow: none;
-  width: 90px;
-  height: 90px;
-  font-size: 9rem;
-  font-family: "worksans-thin", sans-serif;
   opacity: 1;
   z-index: 3; }
-  @media (max-width: 1244px) {
+  @media (max-width: 767px) {
     .carousel-control {
-      font-size: 8vw;
-      width: 8vw; } }
+      font-size: 7rem;
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      top: auto;
+      bottom: 10px; } }
+
+@media (min-width: 768px) and (max-width: 1244px) {
+  .carousel-control {
+    top: 39%;
+    font-size: 8vw;
+    width: 8vw;
+    height: 8vw;
+    line-height: 8vw; } }
+  @media (min-width: 1245px) {
+    .carousel-control {
+      top: 39%;
+      width: 90px;
+      height: 90px;
+      line-height: 90px;
+      font-size: 9rem; } }
   .carousel-control:focus, .carousel-control:hover {
     color: #999; }
 
@@ -5477,20 +5493,34 @@ body {
   right: 0; }
 
 .carousel-indicators {
-  z-index: 3;
   width: auto;
   margin: 0;
-  bottom: -21%;
-  left: 0;
-  right: 26%;
-  position: absolute; }
+  z-index: 3; }
+  @media (max-width: 767px) {
+    .in .carousel-indicators {
+      left: 80px;
+      right: 80px;
+      position: fixed;
+      bottom: 33px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .in .carousel-indicators li {
+        margin: 0 2px !important;
+        flex: 1 1 auto auto; } }
+  @media (min-width: 768px) {
+    .carousel-indicators {
+      left: 0;
+      right: 0;
+      position: absolute;
+      bottom: -25%; } }
 
 .carousel-indicators li {
   border: 1px solid #000;
   height: 15px;
   width: 15px;
   border-radius: 50%;
-  margin: 0; }
+  margin-top: 0; }
 
 .carousel-indicators .active {
   border: 1px solid #000;
@@ -5508,28 +5538,37 @@ body {
   opacity: 0.5; }
 
 .carousel-labels {
-  font-family: "worksans-light", sans-serif;
+  font-family: "worksans-thin", sans-serif;
   line-height: 1.2;
   color: #000;
-  font-size: 1.2rem;
-  letter-spacing: -0.07rem;
+  font-size: 2rem;
   position: absolute;
-  top: 2%;
-  left: 0;
-  right: 0;
   text-align: center; }
-
-@media (min-width: 768px) and (max-width: 1244px) {
-  .carousel-labels {
-    font-size: 1.6rem;
-    letter-spacing: -0.08rem; } }
   @media (min-width: 1565px) {
     .carousel-labels {
-      font-size: 2rem;
-      letter-spacing: -0.08rem; } }
+      font-size: 2.4rem; } }
+  @media (max-width: 767px) {
+    .carousel-labels {
+      top: 0;
+      height: 80px;
+      right: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 0 70px; } }
+  @media (min-width: 480px) {
+    .carousel-labels {
+      top: 5%;
+      left: 13.5%;
+      right: 0; } }
 
 .carousel-labels-list {
   padding-left: 0; }
+  @media (max-width: 767px) {
+    .carousel-labels-list {
+      margin-bottom: 0; } }
 
 .carousel-item-scroll-teaser {
   display: flex;
@@ -5547,23 +5586,40 @@ body {
   cursor: s-resize; }
   .carousel-item-scroll-teaser .carousel-item-scroll-teaser-image {
     width: 20%;
-    height: 16%;
+    height: 8%;
     max-width: 150px;
     max-height: 71px;
-    min-width: 100px;
-    min-height: 50px; }
+    min-width: 70px;
+    min-height: 35px; }
   .carousel-item-scroll-teaser .carousel-item-scroll-teaser-text {
-    font-family: "worksans-regular", sans-serif;
+    font-family: "worksans-light", sans-serif;
+    color: #000;
+    font-size: 1.4rem;
+    letter-spacing: -0.01rem;
+    line-height: 1.3;
+    color: #fff; }
+
+@media (min-width: 768px) and (max-width: 1244px) {
+  .carousel-item-scroll-teaser .carousel-item-scroll-teaser-text {
+    letter-spacing: -0.02rem;
     font-size: 1.6rem;
-    margin-top: 0.5rem; }
+    line-height: 1.4; } }
     @media (min-width: 1565px) {
       .carousel-item-scroll-teaser .carousel-item-scroll-teaser-text {
-        font-size: 1.8rem;
-        margin-top: 1rem; } }
+        letter-spacing: -0.02rem;
+        font-size: 1.6rem;
+        line-height: 1.4; } }
   .carousel-item-scroll-teaser .carousel-item-scroll-teaser-arrow {
     font-size: 3rem;
     line-height: 1;
     transform: rotate(-90deg); }
+
+.modal.fade .modal-dialog {
+  transition: none;
+  transform: none; }
+
+.modal.in .modal-dialog {
+  transform: none; }
 
 .modal-dialog {
   width: 100%;
@@ -5575,25 +5631,31 @@ body {
   align-items: center; }
 
 .modal-content {
-  width: 100vw;
-  height: 56.25vw;
-  /* height:width ratio = 9/16 = .5625  */
-  background: pink;
-  max-height: 100vh;
-  max-width: 177.78vh;
-  /* 16/9 = 1.778 */
-  margin: auto;
-  position: relative;
   border: none;
-  overflow: hidden;
-  min-width: 1123px;
-  min-height: 688px; }
+  outline: none; }
+  @media (max-width: 767px) {
+    .modal-content {
+      width: 100%;
+      height: 100%; } }
+  @media (min-width: 768px) {
+    .modal-content {
+      width: 100vw;
+      height: 62.5vw;
+      /* height:width ratio = 10/16 = .625  */
+      max-height: 100vh;
+      max-width: 160vh;
+      /* 16/10 = 1.6 */
+      margin: auto;
+      overflow: hidden;
+      position: relative;
+      min-width: 768px;
+      min-height: 465px;
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
 
 .modal-close-button {
-  width: 90px;
-  height: 90px;
   color: #666;
-  font-size: 7rem;
   font-family: "worksans-thin", sans-serif;
   position: absolute;
   top: 1%;
@@ -5601,7 +5663,24 @@ body {
   z-index: 1;
   background: transparent;
   border: none;
-  outline: none !important; }
+  outline: none !important;
+  font-size: 5rem;
+  width: 60px;
+  height: 60px;
+  line-height: 60px; }
+
+@media (min-width: 768px) and (max-width: 1244px) {
+  .modal-close-button {
+    font-size: 8vw;
+    width: 8vw;
+    height: 8vw;
+    line-height: 8vw; } }
+  @media (min-width: 1245px) {
+    .modal-close-button {
+      width: 90px;
+      height: 90px;
+      font-size: 8rem;
+      line-height: 90px; } }
   .modal-close-button:hover, .modal-close-button:focus {
     color: #999; }
 
@@ -5855,11 +5934,6 @@ body {
     letter-spacing: -0.12rem;
     margin-top: 0.5rem;
     margin-bottom: 0.4rem; }
-
-@media (min-width: 1245px) and (max-width: 1564px) {
-  #skills .skills-list-title-small {
-    font-size: 1.5rem;
-    letter-spacing: -0.08rem; } }
   #skills .skills-group-javascript, #skills .skills-group-css, #skills .skills-group-html, #skills .skills-group-tools, #skills .skills-group-coding, #skills .skills-group-uxui, #skills .skills-group-backend {
     position: absolute;
     top: 50%;
@@ -6070,11 +6144,6 @@ body {
       letter-spacing: -0.12rem;
       width: 76%;
       margin-bottom: 0.3rem; } }
-
-@media (min-width: 1245px) and (min-width: 1245px) and (max-width: 1564px) {
-  #portfolio .portfolio-item-title {
-    font-size: 1.5rem;
-    letter-spacing: -0.08rem; } }
 
 #portfolio .portfolio-item-secondary-title {
   font-family: "worksans-thin", sans-serif;
@@ -6639,12 +6708,14 @@ body {
   right: 0;
   top: 0;
   bottom: 0;
-  padding: 0 5%;
+  padding: 0 20%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  background-color: white; }
+  background-color: #fff; }
+  #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-details-wrapper .portfolio-item-modal-title, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-details-wrapper .portfolio-item-modal-title, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-details-wrapper .portfolio-item-modal-title {
+    margin-bottom: 2rem; }
 
 #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-title, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-title, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-title {
   font-family: "worksans-regular", sans-serif;
@@ -6652,12 +6723,7 @@ body {
   color: #000;
   font-size: 2.2rem;
   letter-spacing: -0.12rem;
-  margin-bottom: 0.3rem; }
-
-@media (min-width: 1245px) and (max-width: 1564px) {
-  #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-title, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-title, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-title {
-    font-size: 1.5rem;
-    letter-spacing: -0.08rem; } }
+  margin-bottom: 0.2rem; }
 
 #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-modal-subtitle, #portfolio .portfolio-item-modal-tv .portfolio-item-modal-subtitle, #portfolio .portfolio-item-modal-notebook .portfolio-item-modal-subtitle {
   font-family: "worksans-thin", sans-serif;
@@ -6684,11 +6750,14 @@ body {
   position: absolute;
   top: 50%;
   bottom: auto;
-  margin-top: -22%;
+  margin-top: -21%;
   left: 17%;
-  width: 82%;
+  width: 79.5%;
   z-index: 1;
   max-width: 1526px; }
+  @media (max-width: 767px) {
+    #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-notebook, #portfolio .portfolio-item-modal-tv .portfolio-item-notebook, #portfolio .portfolio-item-modal-notebook .portfolio-item-notebook {
+      display: none; } }
   #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-notebook .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-notebook .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-notebook .portfolio-item-img-full-wrapper {
     top: 6.4%;
     left: 12.5%;
@@ -6699,22 +6768,50 @@ body {
     height: 100%; }
 
 #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-mobile, #portfolio .portfolio-item-modal-tv .portfolio-item-mobile, #portfolio .portfolio-item-modal-notebook .portfolio-item-mobile {
-  position: absolute;
-  top: 50%;
-  bottom: auto;
-  margin-top: -6%;
-  left: 8%;
-  width: 15%;
-  z-index: 2;
-  max-width: 242px; }
-  #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-mobile .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-mobile .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-mobile .portfolio-item-img-full-wrapper {
-    top: 9%;
-    left: 2.5%;
-    right: 2.5%;
-    bottom: 22.6%; }
+  position: absolute; }
+  @media (max-width: 767px) {
+    #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-mobile, #portfolio .portfolio-item-modal-tv .portfolio-item-mobile, #portfolio .portfolio-item-modal-notebook .portfolio-item-mobile {
+      top: 80px;
+      bottom: 80px;
+      left: 0;
+      right: 0;
+      width: auto;
+      max-width: none;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd; } }
+  @media (min-width: 768px) {
+    #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-mobile, #portfolio .portfolio-item-modal-tv .portfolio-item-mobile, #portfolio .portfolio-item-modal-notebook .portfolio-item-mobile {
+      top: 50%;
+      bottom: auto;
+      margin-top: -2%;
+      left: 9%;
+      width: 12.7%;
+      z-index: 2;
+      max-width: 242px; } }
+  @media (max-width: 767px) {
+    #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-mobile .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-mobile .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-mobile .portfolio-item-img-full-wrapper {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; } }
+  @media (min-width: 768px) {
+    #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-mobile .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-mobile .portfolio-item-img-full-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-mobile .portfolio-item-img-full-wrapper {
+      top: 9%;
+      left: 2.5%;
+      right: 2.5%;
+      bottom: 22.6%; } }
+  @media (max-width: 767px) {
+    #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-mobile .portfolio-item-device-img, #portfolio .portfolio-item-modal-tv .portfolio-item-mobile .portfolio-item-device-img, #portfolio .portfolio-item-modal-notebook .portfolio-item-mobile .portfolio-item-device-img {
+      display: none; } }
   #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-mobile .wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-mobile .wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-mobile .wrapper {
     width: 100%;
     height: 100%; }
+  @media (min-width: 768px) {
+    #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-mobile .portfolio-item-modal-details-wrapper, #portfolio .portfolio-item-modal-tv .portfolio-item-mobile .portfolio-item-modal-details-wrapper, #portfolio .portfolio-item-modal-notebook .portfolio-item-mobile .portfolio-item-modal-details-wrapper {
+      display: none; } }
+  @media (min-width: 768px) {
+    #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-mobile .carousel-indicators, #portfolio .portfolio-item-modal-tv .portfolio-item-mobile .carousel-indicators, #portfolio .portfolio-item-modal-notebook .portfolio-item-mobile .carousel-indicators {
+      display: none; } }
 
 #portfolio .portfolio-item-modal-notebook-mobile .portfolio-item-samsung-tv, #portfolio .portfolio-item-modal-tv .portfolio-item-samsung-tv, #portfolio .portfolio-item-modal-notebook .portfolio-item-samsung-tv {
   position: absolute;
@@ -6761,17 +6858,11 @@ body {
     #portfolio .portfolio-item-modal-tv .carousel-indicators {
       bottom: -13%; } }
 
-#portfolio .portfolio-item-modal-tv .portfolio-item-modal-details-wrapper {
-  width: 17%; }
-
 #portfolio .portfolio-item-modal-notebook .portfolio-item-notebook {
   left: -41%; }
   @media (min-width: 1565px) {
     #portfolio .portfolio-item-modal-notebook .portfolio-item-notebook {
       left: -47%; } }
-
-#portfolio .portfolio-item-modal-notebook .portfolio-item-modal-details-wrapper {
-  width: 17%; }
 
 #portfolio .tse-content {
   position: relative;
@@ -6953,11 +7044,6 @@ body {
     margin-bottom: 0.6rem;
     margin-top: 1.2rem;
     position: relative; }
-
-@media (min-width: 1245px) and (max-width: 1564px) {
-  #references .reference-author {
-    font-size: 1.5rem;
-    letter-spacing: -0.08rem; } }
     @media (max-width: 1244px) {
       #references .reference-author {
         margin-top: 0.6rem; } }
