@@ -159,7 +159,7 @@
   font-family: $font-family-work-sans-thin;
   line-height: 1.2;
   color: #000;
-  font-size: 2rem;
+  font-size: 1.7rem;
   @include media-breakpoint-up(xl) {
     font-size: 2.4rem;
   }
@@ -181,6 +181,11 @@
     letter-spacing: -0.1rem;
     line-height: 1.2;
   }
+  @include media-breakpoint-only(lg) {
+    font-size: 3.6rem;
+    letter-spacing: -0.08rem;
+    line-height: 1;
+  }
 }
 
 @mixin text-thin-title-small {
@@ -199,6 +204,7 @@
   }
   @include media-breakpoint-only(lg) {
     font-size: 1.4rem;
+    letter-spacing: 0.06rem;
   }
 }
 
@@ -248,10 +254,15 @@
 
 @mixin text-regular-title-small {
   font-family: $font-family-work-sans-regular;
-  line-height: 1.1;
+  line-height: 1.2;
   color: #000;
   font-size: 2.2rem;
   letter-spacing: -0.12rem;
+  @include media-breakpoint-only(lg) {
+    line-height: 1.1;
+    font-size: 1.7rem;
+    letter-spacing: -0.06rem;
+  }
 }
 
 
@@ -668,7 +679,6 @@ h3, .h3 {
 
 .carousel-inner {
   height: 100%;
-  overflow: visible;
 }
 
 // MODAL
@@ -789,6 +799,7 @@ h3, .h3 {
   @include text-thin-title();
   position: absolute;
   text-align: center;
+  padding-left: 0;
   @include media-breakpoint-down(sm) {
     top: 0;
     height: 80px;
@@ -804,12 +815,6 @@ h3, .h3 {
     top: 5%;
     left: 13.5%;
     right: 0;
-  }
-}
-
-.carousel-labels-list {
-  padding-left: 0;
-  @include media-breakpoint-down(sm) {
     margin-bottom: 0;
   }
 }
@@ -831,11 +836,30 @@ h3, .h3 {
 
   & .carousel-item-scroll-teaser-image {
     width: 20%;
-    height: 8%;
+    height: auto;
     max-width: 150px;
     max-height: 71px;
     min-width: 70px;
     min-height: 35px;
+    display: none;
+    @include media-breakpoint-up(lg) {
+      display: block;
+    }
+  }
+
+  & .carousel-item-scroll-teaser-image-mobile {
+    width: 20%;
+    height: auto;
+    max-width: 80px;
+    max-height: 40px;
+    min-width: 30px;
+    min-height: 15px;
+    margin-bottom: 1.5rem;
+    position: relative;
+    // TODO show this image also on MD if it's a tablet (detect tablet)
+    @include media-breakpoint-up(lg) {
+      display: none;
+    }
   }
 
   & .carousel-item-scroll-teaser-text {
@@ -910,7 +934,7 @@ h3, .h3 {
   height: 60px;
   line-height: 60px;
   @include media-breakpoint-only(md) {
-    font-size: 8vw;
+    font-size: 6vw;
     width: 8vw;
     height: 8vw;
     line-height: 8vw;
@@ -918,7 +942,7 @@ h3, .h3 {
   @include media-breakpoint-up(lg) {
     width: 90px;
     height: 90px;
-    font-size: 8rem;
+    font-size: 6.5rem;
     line-height: 90px;
   }
 

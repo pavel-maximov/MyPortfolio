@@ -760,12 +760,21 @@
       right: 0;
       top: 0;
       bottom: 0;
-      padding: 0 20%;
+      padding: 0 10%;
       display: flex;
       justify-content: center;
       flex-direction: column;
       text-align: center;
       background-color: #fff;
+      @include media-breakpoint-only(sm) {
+        padding: 0 10%;
+      }
+      @include media-breakpoint-only(md) {
+        padding: 0 3%;
+      }
+      @include media-breakpoint-up(lg) {
+        padding: 0 20%;
+      }
 
       .portfolio-item-modal-title {
         margin-bottom: 2rem;
@@ -856,7 +865,7 @@
         height: 100%;
       }
 
-      .portfolio-item-modal-details-wrapper {
+      .portfolio-item-modal-details-wrapper *  {
         @include media-breakpoint-up(md) {
           display: none;
         }

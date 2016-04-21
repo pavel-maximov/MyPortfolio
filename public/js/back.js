@@ -130,6 +130,7 @@ function initSlide($slide, $modal) {
                     $slide.find('.tse-content').append('' +
                         '<div class="carousel-item-scroll-teaser">' +
                         '<img class="carousel-item-scroll-teaser-image" src="/img/mouse-touch.svg">' +
+                        '<img class="carousel-item-scroll-teaser-image-mobile" src="/img/mobile-touch.svg">' +
                         '<div class="carousel-item-scroll-teaser-text">scroll down</div>' +
                         '<div class="carousel-item-scroll-teaser-arrow"><</div>' +
                         '</div>'
