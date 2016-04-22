@@ -263,6 +263,11 @@
     font-size: 1.7rem;
     letter-spacing: -0.06rem;
   }
+  @include media-breakpoint-down(sm) {
+    line-height: 1;
+    font-size: 1.7rem;
+    letter-spacing: -0.04rem;
+  }
 }
 
 
@@ -697,7 +702,7 @@ h3, .h3 {
 
 .carousel-control {
   font-family: $font-family-work-sans-thin;
-  position: absolute;
+  position: fixed;
   color: #666;
   text-shadow: none;
   opacity: 1;
@@ -708,7 +713,7 @@ h3, .h3 {
     height: 60px;
     line-height: 60px;
     top: auto;
-    bottom: 10px;
+    bottom: 5px;
   }
   @include media-breakpoint-only(md) {
     top: 39%;
@@ -748,13 +753,14 @@ h3, .h3 {
 
   .in & {
     @include media-breakpoint-down(sm) {
-      left: 80px;
-      right: 80px;
+      left: 60px;
+      right: 60px;
       position: fixed;
-      bottom: 33px;
+      bottom: 28px;
       display: flex;
       justify-content: center;
       align-items: center;
+
       & li {
         margin: 0 2px !important;
         flex: 1 1 auto auto;
@@ -796,25 +802,22 @@ h3, .h3 {
 }
 
 .carousel-labels {
-  @include text-thin-title();
   position: absolute;
   text-align: center;
   padding-left: 0;
+  right: 60px;
   @include media-breakpoint-down(sm) {
     top: 0;
-    height: 80px;
-    right: 0;
-    left: 0;
+    height: 70px;
+    left: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0 70px;
   }
-  @include media-breakpoint-up(sm) {
+  @include media-breakpoint-up(md) {
     top: 5%;
-    left: 13.5%;
-    right: 0;
+    left: 21.5%;
     margin-bottom: 0;
   }
 }
@@ -833,46 +836,55 @@ h3, .h3 {
   justify-content: flex-start;
   align-items: center;
   cursor: s-resize;
+}
 
-  & .carousel-item-scroll-teaser-image {
-    width: 20%;
-    height: auto;
-    max-width: 150px;
-    max-height: 71px;
-    min-width: 70px;
-    min-height: 35px;
+.carousel-item-scroll-teaser-icon {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.carousel-item-scroll-teaser-image {
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+  min-width: 70px;
+  margin-bottom: 1rem;
+  display: none;
+  @include media-breakpoint-up(lg) {
+    display: block;
+  }
+}
+
+.carousel-item-scroll-teaser-image-mobile {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 62px;
+  min-width: 30px;
+  margin-bottom: 1rem;
+  @include media-breakpoint-up(lg) {
     display: none;
-    @include media-breakpoint-up(lg) {
-      display: block;
-    }
   }
+}
 
-  & .carousel-item-scroll-teaser-image-mobile {
-    width: 20%;
-    height: auto;
-    max-width: 80px;
-    max-height: 40px;
-    min-width: 30px;
-    min-height: 15px;
-    margin-bottom: 1.5rem;
-    position: relative;
-    // TODO show this image also on MD if it's a tablet (detect tablet)
-    @include media-breakpoint-up(lg) {
-      display: none;
-    }
-  }
+& .carousel-item-scroll-teaser-text {
+  @include text-base();
+  line-height: 1 !important;
+  color: #fff;
+}
 
-  & .carousel-item-scroll-teaser-text {
-    @include text-base();
-    color: #fff;
-  }
+.carousel-labels-list {
+  padding-left: 0;
+  margin-bottom: 0;
+}
 
-  & .carousel-item-scroll-teaser-arrow {
-    font-size: 3rem;
-    line-height: 1;
-    transform: rotate(-90deg);
-  }
-
+.carousel-label {
+  @include text-thin-title-small();
 }
 
 //////////////// MODAL //////////////////
