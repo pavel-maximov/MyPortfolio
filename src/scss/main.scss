@@ -1,15 +1,20 @@
-@import "variables";
+@import "COMMON_variables";
 
-@import "modules/bourbon";
-@import "modules/bootstrap-flex";
-@import "modules/offcanvas-menu";
+//@import "VENDOR_bourbon";
+@import "VENDOR_bootstrap-flex";
+@import "VENDOR_offcanvas-menu";
 
-@import "sections/common";
-@import "sections/intro";
-@import "sections/skills";
-@import "sections/portfolio";
-@import "sections/experience";
-@import "sections/references";
-@import "sections/about";
-@import "sections/contact";
-@import "sections/outro";
+@import "COMMON_typography";
+@import "COMMON_base-layout";
+@import "COMMON_carousel";
+@import "COMMON_modal";
+@import "COMMON_trackpad-scroll";
+
+@import "SECTION_intro";
+@import "SECTION_skills";
+@import "SECTION_projects";
+@import "SECTION_experience";
+@import "SECTION_references";
+@import "SECTION_about";
+@import "SECTION_contact";
+@import "SECTION_outro";

@@ -1,0 +1,1008 @@
+
+///////////////////  Overwrites  ///////////////////
+
+// TODO use id here? maybe convert all ids to classe? or viciversa... wait for react?
+#projects {
+  @extend %article-wrapper;
+
+  .article-body {
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+    }
+  }
+
+  .section-header-img-wrapper {
+    max-width: 260px;
+    width: 68vh;
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 5px;
+    }
+    @include media-breakpoint-up(md) {
+      max-width: 300px;
+      width: 90%;
+    }
+    @include media-breakpoint-only(lg) {
+      max-width: 240px;
+    }
+  }
+
+  .section-header {
+    @include media-breakpoint-only(md) {
+      margin-bottom: 30px;
+    }
+  }
+
+  .section-header-title {
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 0;
+    }
+  }
+
+  &.projects-item--open .section-header {
+    display: none;
+  }
+}
+
+
+
+///////////////////  Common  ///////////////////
+
+// TODO convert to mixin
+%projects-item {
+  @include media-breakpoint-only(lg) {
+    padding-top: 55%;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 50%;
+  }
+}
+
+
+.projects-item-img {
+  width: 100%;
+  height: auto;
+}
+
+
+.projects-item-device-img {
+  width: 100%;
+  height: auto;
+}
+
+
+.projects-item-vendomo-crm {
+  @extend %projects-item;
+}
+
+
+.projects-items-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 60%;
+  margin-top: 2rem;
+  @include media-breakpoint-down(sm) {
+    width: 111%;
+    margin-top: 11%;
+  }
+  @include media-breakpoint-only(md) {
+    width: 109%;
+    margin-top: 5%;
+  }
+  @include media-breakpoint-up(lg) {
+    margin-top: 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
+}
+
+
+.projects-item-title {
+  @include text-regular-title();
+  margin-bottom: 1rem;
+  @include media-breakpoint-up(lg) {
+    @include text-regular-title-small();
+    width: 76%;
+    margin-bottom: 0.3rem;
+  }
+}
+
+
+.projects-item-secondary-title {
+  @include text-thin-title-small();
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+  @include media-breakpoint-up(lg) {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 80%;
+  }
+}
+
+
+.projects-item-text {
+  @include text-base();
+  margin-bottom: 0;
+  @include media-breakpoint-up(lg) {
+    line-height: 1.2;
+    margin-bottom: 0.1rem;
+    width: 74%;
+  }
+  @include media-breakpoint-up(xl) {
+    margin-bottom: 1rem;
+    line-height: 1.3;
+  }
+}
+
+
+@mixin projects-item-title-wrapper() {
+  display: block;
+  width: 100%;
+
+  .child-hovered & {
+    @include media-breakpoint-up(lg) {
+      display: block;
+    }
+  }
+}
+
+
+.projects-item-title-wrapper {
+  @include projects-item-title-wrapper();
+  margin-top: 60px;
+  @include media-breakpoint-up(md) {
+    margin-top: 100px;
+  }
+  @include media-breakpoint-up(lg) {
+    display: none;
+    bottom: 57%;
+    margin-top: 0;
+    position: absolute;
+    width: 200px;
+    height: 270px;
+  }
+  @include media-breakpoint-up(xl) {
+    bottom: 52%;
+    width: 241px;
+    height: 320px;
+  }
+}
+
+
+.projects-item-title-wrapper-horizontal {
+  @include projects-item-title-wrapper();
+  margin-top: 70px;
+  @include media-breakpoint-up(lg) {
+    display: none;
+    margin-top: 0;
+    position: absolute;
+    width: 280px;
+    height: 215px;
+  }
+  @include media-breakpoint-up(xl) {
+    width: 320px;
+    height: 250px;
+  }
+
+  .projects-item-title-content {
+    @include media-breakpoint-up(lg) {
+      background-image: url('/img/projects/frame-horizontal.png');
+    }
+  }
+
+  .projects-item-title {
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 0.3rem;
+      margin-top: 0;
+    }
+  }
+
+  .projects-item-secondary-title {
+    margin-top: 0;
+  }
+
+  .projects-item-text {
+    margin-bottom: 0;
+    line-height: 1.2;
+    width: 80%;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+}
+
+
+.projects-item-title-content {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include media-breakpoint-up(lg) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/img/projects/frame.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+  }
+}
+
+
+.projects-item-details-wrapper {
+  display: none;
+  position: absolute;
+  max-width: 350px;
+  width: 31%;
+  top: 5%;
+  left: -30%;
+
+  .projects-item--open & {
+    display: block;
+  }
+}
+
+
+.projects-item-title-img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+
+
+.project-type-label {
+  @include text-light-title-small();
+  position: absolute;
+  top: -1.8rem;
+  left: 4.2%;
+  @include media-breakpoint-only(md) {
+    top: -2.4rem;
+  }
+  @include media-breakpoint-up(xl) {
+    top: -2.4rem;
+  }
+}
+
+
+.projects-item-img-full-wrapper {
+  position: absolute;
+}
+
+
+.projects-item-img-full {
+  width: 100%;
+}
+
+
+.projects-item-eye-icon {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  // TODO center with flex
+  transform: translateX(-50%) translateY(-50%);
+}
+
+
+.projects-item-img-preview {
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+
+    .projects-item-img {
+      opacity: 0.4;
+    }
+
+    .projects-item-eye-icon {
+      display: block;
+    }
+  }
+}
+
+
+.projects-item-img-full-label {
+  display: none;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.active .projects-item-img-full-label {
+  display: block;
+}
+
+
+.line-breaker {
+  @include media-breakpoint-up(lg) {
+    display: block;
+  }
+}
+
+
+
+////////////////  Devices  ///////////////
+
+.projects-item-desktop {
+  position: absolute;
+  width: calc(56% + (56% * 0.117));
+  max-width: 796px;
+
+  .projects-item-img-preview {
+    position: absolute;
+    top: 5%;
+    left: 4.2%;
+    width: 91.6%;
+    max-width: 729px;
+  }
+}
+
+
+.projects-item-tablet {
+  position: absolute;
+  width: calc(19% + (19% * 0.117));
+  max-width: 263px;
+
+  .projects-item-img-preview {
+    position: absolute;
+    top: 4.5%;
+    left: 7%;
+    width: 87%;
+    max-width: 227px;
+  }
+}
+
+
+.projects-item-notebook {
+  position: absolute;
+  width: calc(42% + (42% * 0.117));
+  max-width: 600px;
+
+  .projects-item-img-preview {
+    position: absolute;
+    top: 5%;
+    left: 12.8%;
+    width: 74.5%;
+    max-width: 445px;
+  }
+}
+
+
+.projects-item-mobile {
+  position: absolute;
+  width: calc(8% + (8% * 0.117));
+  max-width: 111px;
+
+  .projects-item-img-preview {
+    position: absolute;
+    top: 8.5%;
+    left: 4%;
+    width: 92%;
+    max-width: 101px;
+  }
+}
+
+
+@mixin projects-item-tv () {
+  position: absolute;
+  width: 55.9%;
+  max-width: 800px;
+
+  .projects-item-img-preview {
+    position: absolute;
+    top: 2.3%;
+    left: 1.5%;
+    width: 97%;
+    max-width: 776px;
+  }
+}
+
+
+.projects-item-tv1 {
+  @include projects-item-tv();
+  bottom: 21%;
+  left: 4%;
+}
+
+
+.projects-item-tv2 {
+  @include projects-item-tv();
+  bottom: 4%;
+  left: 40%;
+}
+
+
+.notebooks-set-item1 {
+  bottom: 36%;
+  left: 1%;
+  @include media-breakpoint-up(xl) {
+    left: -2%;
+  }
+
+  .project-type-label {
+    left: auto;
+    right: 10.5%;
+    top: -1.6rem;
+    @include media-breakpoint-up(xl) {
+      top: -2.4rem;
+    }
+    @include media-breakpoint-only(md) {
+      top: -2.4rem;
+    }
+  }
+}
+
+
+.notebooks-set-item2 {
+  bottom: 36%;
+  left: 58%;
+  @include media-breakpoint-up(xl) {
+    left: 56%;
+  }
+
+  .project-type-label {
+    left: 10.5%;
+    top: -1.6rem;
+    @include media-breakpoint-up(xl) {
+      top: -2.4rem;
+    }
+    @include media-breakpoint-only(md) {
+      top: -2.4rem;
+    }
+  }
+}
+
+
+.notebooks-set-item3 {
+  bottom: 24%;
+  left: 12%;
+  @include media-breakpoint-up(xl) {
+    left: 9%;
+  }
+
+  .project-type-label {
+    left: auto;
+    right: 10.5%;
+    top: -1.6rem;
+    @include media-breakpoint-up(xl) {
+      top: -2.4rem;
+    }
+    @include media-breakpoint-only(md) {
+      top: -2.4rem;
+    }
+  }
+}
+
+
+.notebooks-set-item4 {
+  bottom: 24%;
+  left: 47%;
+  @include media-breakpoint-up(xl) {
+    left: 45%;
+  }
+
+  .project-type-label {
+    left: 10.5%;
+    top: -1.6rem;
+    @include media-breakpoint-up(xl) {
+      top: -2.4rem;
+    }
+    @include media-breakpoint-only(md) {
+      top: -2.4rem;
+    }
+  }
+}
+
+
+.notebooks-set-item5 {
+  bottom: 12%;
+  left: 29.3%;
+  @include media-breakpoint-up(xl) {
+    left: 26.9%;
+  }
+
+  .project-type-label {
+    left: 50%;
+    bottom: -1rem;
+    top: auto;
+    transform: translateX(-50%);
+    @include media-breakpoint-up(xl) {
+      bottom: -1.4rem;
+    }
+    @include media-breakpoint-only(md) {
+      bottom: -1.4rem;
+    }
+  }
+}
+
+
+.project-type-label {
+  left: 1.6%;
+}
+
+
+
+//////////////  Project BK overwrites  /////////////
+
+.projects-item-bk {
+  @extend %projects-item;
+
+  .projects-items-wrapper {
+    top: 10%;
+  }
+
+  .projects-item-desktop {
+    bottom: 7%;
+    left: 12%;
+  }
+
+  .projects-item-tablet {
+    bottom: 5%;
+    left: 9.5%;
+  }
+
+  .projects-item-notebook {
+    bottom: 5%;
+    left: 50%;
+  }
+
+  .projects-item-mobile {
+    bottom: 4%;
+    left: 4%;
+  }
+
+  .projects-item-title-wrapper {
+    @include media-breakpoint-only(lg) {
+      left: 76%;
+    }
+    @include media-breakpoint-up(xl) {
+      left: calc(850px + 10%);
+    }
+  }
+
+  .projects-item-subtitle-employer {
+    margin: 2rem 0 0;
+  }
+}
+
+
+
+//////////////  Project Vendomo overwrites  /////////////
+
+.projects-item-vendomo {
+  @extend %projects-item;
+
+  .projects-items-wrapper {
+    top: 10%;
+  }
+
+  .projects-item-desktop {
+    bottom: 7%;
+    left: 23%;
+  }
+
+  .projects-item-tablet {
+    bottom: 5%;
+    left: 70%;
+  }
+
+  .projects-item-notebook {
+    bottom: 5%;
+    left: 4%;
+  }
+
+  .projects-item-mobile {
+    bottom: 4%;
+    left: 86%;
+  }
+
+  .projects-item-title-wrapper {
+    @include media-breakpoint-up(lg) {
+      left: 1%;
+    }
+  }
+
+  .projects-item-subtitle-employer {
+    margin: 2rem 0 0;
+  }
+}
+
+
+
+//////////////  Project Vendomo CRM overwrites  /////////////
+
+.projects-item-vendomo-crm {
+  @extend %projects-item;
+
+  .projects-items-wrapper {
+    top: 10%;
+  }
+
+  .projects-item-desktop {
+    bottom: 7%;
+    left: 7%;
+  }
+
+  .projects-item-tablet {
+    bottom: 1%;
+    left: 21.5%;
+  }
+
+  .projects-item-notebook {
+    bottom: 5%;
+    left: 49%;
+  }
+
+  .projects-item-mobile {
+    bottom: 8%;
+    left: 11.7%;
+  }
+
+  .projects-item-title-wrapper {
+    @include media-breakpoint-only(lg) {
+      left: 72%;
+    }
+    @include media-breakpoint-up(xl) {
+      left: calc(790px + 10%);
+    }
+  }
+
+  .projects-item-subtitle-employer {
+    margin: 2rem 0 0;
+  }
+}
+
+
+
+//////////////  Project Foodora overwrites  /////////////
+
+.projects-item-foodora {
+  @extend %projects-item;
+
+  .projects-items-wrapper {
+    top: 10%;
+  }
+
+  .projects-item-desktop {
+    bottom: 7%;
+    left: 25%;
+  }
+
+  .projects-item-tablet {
+    bottom: 5%;
+    left: 74%;
+  }
+
+  .projects-item-notebook {
+    bottom: 5%;
+    left: 3%;
+  }
+
+  .projects-item-mobile {
+    bottom: 4%;
+    left: 63.8%;
+  }
+
+  .projects-item-title-wrapper {
+    @include media-breakpoint-up(lg) {
+      right: 77%;
+    }
+  }
+
+  .projects-item-subtitle-employer {
+    margin: 2rem 0 0;
+  }
+}
+
+
+//////////////  Project Timvision and Cubomusica overwrites  /////////////
+
+.projects-item-smart-tv {
+  @extend %projects-item;
+
+  .projects-items-wrapper {
+    top: 20%;
+  }
+
+  .projects-items-wrapper {
+    padding-top: 56%;
+  }
+
+  .projects-item-title-wrapper-horizontal {
+    @include media-breakpoint-up(lg) {
+      bottom: 63%;
+      left: 62%;
+    }
+    @include media-breakpoint-up(xl) {
+      bottom: 60%;
+    }
+  }
+}
+
+
+/////////  UNICRI & Others /////////
+
+.projects-item-several {
+  @extend %projects-item;
+
+  .projects-items-wrapper {
+    top: 25%;
+    padding-top: 48%;
+    @include media-breakpoint-down(sm) {
+      margin-top: 4%;
+    }
+  }
+
+  .projects-item-notebook {
+    width: 41%;
+    @include media-breakpoint-up(xl) {
+      width: 42%;
+    }
+  }
+
+  .projects-item-title-wrapper-horizontal {
+    @include media-breakpoint-up(lg) {
+      right: 39.5%;
+      top: 11%;
+      width: 22%;
+      padding-top: 17%;
+      height: auto;
+    }
+    @include media-breakpoint-up(xl) {
+      top: 9%;
+      right: 41%;
+    }
+  }
+
+  .projects-item-subtitle-employer {
+    margin-top: 0.5rem;
+  }
+
+  .project-type-label {
+    @include media-breakpoint-down(xs) {
+      display: none;
+    }
+  }
+
+  .line-breaker {
+    @include media-breakpoint-down(xs) {
+      display: block;
+    }
+  }
+}
+
+
+
+////////////  Projects Modal  ////////////
+
+.projects-item-modal-details-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 0 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #fff;
+  @include media-breakpoint-only(sm) {
+    padding: 0 10%;
+  }
+  @include media-breakpoint-only(md) {
+    padding: 0 3%;
+  }
+  @include media-breakpoint-up(lg) {
+    padding: 0 20%;
+  }
+
+  .projects-item-modal-title {
+    margin-bottom: 2rem;
+  }
+}
+
+
+.projects-item-modal-title {
+  @include text-regular-title-small();
+  margin-bottom: 0.2rem;
+
+  // TODO check this if it ca be optimised
+  .line-breaker {
+    @include media-breakpoint-down(sm) {
+      display: block;
+    }
+  }
+}
+
+
+.projects-item-modal-subtitle {
+  @include text-thin-title-small();
+  margin-bottom: 1.4rem;
+}
+
+
+
+/////////  Kinds of modal /////////
+
+@mixin projects-modal-notebook()  {
+
+  // TODO create new devices for modal
+  .projects-item-notebook {
+    position: absolute;
+    top: 50%;
+    bottom: auto;
+    margin-top: -21%;
+    left: 17%;
+    width: 79.5%;
+    z-index: 1;
+    max-width: 1526px;
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+
+    .projects-item-img-full-wrapper {
+      top: 6.4%;
+      left: 12.5%;
+      right: 12.5%;
+      bottom: 20.4%;
+    }
+
+    .wrapper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .carousel-item-scroll-teaser-icon {
+      top: 40px;
+    }
+  }
+}
+
+
+.projects-item-modal-notebook-mobile {
+  @include projects-modal-notebook();
+
+  // TODO create new devices for modal, no inheritance
+  .projects-item-mobile {
+    position: absolute;
+    @include media-breakpoint-down(sm) {
+      top: 70px;
+      bottom: 70px;
+      left: 0;
+      right: 0;
+      width: auto;
+      max-width: none;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+    }
+    @include media-breakpoint-up(md) {
+      top: 50%;
+      bottom: auto;
+      margin-top: -2%;
+      left: 9%;
+      width: 12.7%;
+      z-index: 2;
+      max-width: 242px;
+    }
+
+    .projects-item-img-full-wrapper {
+      @include media-breakpoint-down(sm) {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+      @include media-breakpoint-up(md) {
+        top: 9%;
+        left: 2.5%;
+        right: 2.5%;
+        bottom: 22.6%;
+      }
+    }
+
+    .projects-item-device-img {
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+    }
+
+    // TODO rename this class, ugly
+    .wrapper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .projects-item-modal-details-wrapper *  {
+      @include media-breakpoint-up(md) {
+        display: none;
+      }
+    }
+
+    .carousel-indicators {
+      @include media-breakpoint-up(md) {
+        // TODO correct this, make only the mobile ones appear. instead of notebook
+        display: none;
+      }
+    }
+
+    .carousel-item-scroll-teaser-icon {
+      top: 30px;
+      @include media-breakpoint-only(md) {
+        top: 15px;
+      }
+    }
+  }
+}
+
+
+.projects-item-modal-tv {
+
+  // TODO create new devices for modal, no inheritance
+  .projects-item-samsung-tv {
+    width: 77.5%;
+    z-index: 1;
+    max-width: 1240px;
+    position: relative;
+    margin-bottom: 40px;
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+
+    .projects-item-img-full-wrapper {
+      top: 2.5%;
+      left: 1.5%;
+      right: 1.7%;
+      bottom: 18.6%;
+
+    }
+
+    .wrapper {
+      width: 100%;
+      height: 100%;
+      max-width: 1200px;
+    }
+  }
+
+  .carousel-control{
+    top: 39%;
+  }
+
+  .carousel-indicators {
+    bottom: -6%;
+    @include media-breakpoint-up(xl) {
+      bottom: -13%;
+    }
+  }
+
+  .carousel-labels {
+    left: 80px;
+    right: 80px;
+  }
+
+  .line-breaker {
+    display: block;
+  }
+
+  .tse-content {
+    cursor: default;
+  }
+}
+
+.projects-item-modal-notebook {
+  @include projects-modal-notebook();
+
+  .projects-item-notebook {
+    left: -41%;
+    @include media-breakpoint-up(xl) {
+      left: -47%;
+    }
+  }
+}

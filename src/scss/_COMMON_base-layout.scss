@@ -1,0 +1,203 @@
+
+///////////////////  Base layout ////////////////////////
+
+html {
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+}
+
+
+body  {
+  @include text-base();
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  color: #333;
+}
+
+
+
+///////////////// Buttons //////////////////
+
+@mixin make-button () {
+  @include text-link();
+  border: 0;
+  padding: 3px 8px;
+  background: transparent;
+  cursor: pointer;
+  outline: none !important;
+}
+
+
+
+///////////////// Crisp images //////////////////
+
+// TODO delete?
+@mixin make-crisp-image () {
+  image-rendering: -moz-crisp-edges;         /* Firefox */
+  image-rendering:   -o-crisp-edges;         /* Opera */
+  image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+}
+
+
+@mixin disable-crisp-image () {
+  image-rendering: auto;         /* Firefox */
+  -ms-interpolation-mode: default;  /* IE (non-standard property) */
+}
+
+
+
+///////////////////  Sections  ///////////////////
+
+.separator {
+  color: #CCC;
+}
+
+
+// TODO refactor this to mixin
+%article-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  max-width: 1920px;
+  margin: auto;
+  @include media-breakpoint-down(md) {
+    margin-bottom: 18vh;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+
+.section-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  @include media-breakpoint-up(md) {
+    padding-left: 1.5%;
+  }
+  @include media-breakpoint-down(md) {
+    position: static;
+    width: 100%;
+  }
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 5vh;
+    height: 100vh;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-left: 0;
+    width: 25%;
+  }
+  @include media-breakpoint-up(xxl) {
+    width: 480px;
+    left: auto;
+  }
+}
+
+
+.section-header-title {
+  @include text-display-title();
+  margin-top: 3rem;
+}
+
+
+.section-header-subtitle {
+  @include text-thin-title();
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
+
+
+.section-header-nav {
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
+
+
+.section-header-nav-button {
+  @include make-button();
+}
+
+
+.article-footer {
+  text-align: center;
+}
+
+
+.article-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-left: 0;
+  @include media-breakpoint-only(lg) {
+    width: 77%;
+    margin-left: 23%;
+  }
+  @include media-breakpoint-up(xl) {
+    width: 75%;
+    margin-left: 25%;
+  }
+}
+
+
+.article-title-wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+
+.section-header-img {
+  width: 100%;
+}
+
+
+.section-header {
+  .scrolling-this & {
+    position: fixed
+  }
+
+  .scrolled-this & {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+  }
+}
+
+
+.section-header-img-wrapper {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 2rem;
+}
+
+.section-header-nav
+
+
+///////////////// Various //////////////////
+
+.arrow-down {
+  display: block;
+  transform: rotate(-90deg);
+  font-size: 5rem;
+  font-family: $font-family-work-sans-thin;
+  opacity: 0.5;
+}

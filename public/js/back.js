@@ -2,7 +2,7 @@
 var $document = $(document);
 var $window = $(window);
 var $htmlBody = $('html,body');
-var $portfolio = $('#portfolio');
+var $projects = $('#projects');
 var $experience = $('#experience');
 var $body = $('body');
 var $main = $('#main');
@@ -65,7 +65,7 @@ function onScroll() {
 
     if ( $window.width() >= desktopMinimumBreakpoint ) {
         onScrollStickyHeader({
-            $element: $portfolio,
+            $element: $projects,
             startPoint: startPointPortfolio,
             endPoint: endPointPortfolio,
             scrollTop: scrollTop
@@ -109,13 +109,13 @@ function initSlide($slide, $modal) {
     var $tseContent = $slide.find('.tse-content');
 
     // TODO solve race condition between mobile and notebook images
-    $slide.find('.portfolio-item-img-full').one('load', function() {
+    $slide.find('.projects-item-img-full').one('load', function() {
         var $parentDeviceTypeClass;
 
-        if ($slide.parents('.portfolio-item-notebook').length) {
-            $parentDeviceTypeClass = '.portfolio-item-notebook';
-        } else if ($slide.parents('.portfolio-item-mobile').length) {
-            $parentDeviceTypeClass = '.portfolio-item-mobile';
+        if ($slide.parents('.projects-item-notebook').length) {
+            $parentDeviceTypeClass = '.projects-item-notebook';
+        } else if ($slide.parents('.projects-item-mobile').length) {
+            $parentDeviceTypeClass = '.projects-item-mobile';
         }
 
         if (!$slide.data('tse-initialised')) {
@@ -124,8 +124,8 @@ function initSlide($slide, $modal) {
                 $slide.TrackpadScrollEmulator({ autoHide: false });
 
                 // TODO refactor this, it's ugly
-                if (($parentDeviceTypeClass === '.portfolio-item-notebook' && $body.data('notebook-scroll-teaser-needed')) ||
-                    ($parentDeviceTypeClass === '.portfolio-item-mobile' && $body.data('mobile-scroll-teaser-needed'))
+                if (($parentDeviceTypeClass === '.projects-item-notebook' && $body.data('notebook-scroll-teaser-needed')) ||
+                    ($parentDeviceTypeClass === '.projects-item-mobile' && $body.data('mobile-scroll-teaser-needed'))
                 ) {
                     $slide.find('.tse-content').append('' +
                         '<div class="carousel-item-scroll-teaser">' +
@@ -143,11 +143,11 @@ function initSlide($slide, $modal) {
                         var $parentDeviceTypeClass;
 
                         // TODO refactor this, it's ugly
-                        if ($this.parents('.portfolio-item-notebook').length) {
-                            $parentDeviceTypeClass = '.portfolio-item-notebook';
+                        if ($this.parents('.projects-item-notebook').length) {
+                            $parentDeviceTypeClass = '.projects-item-notebook';
                             $body.data('notebook-scroll-teaser-needed', false);
-                        } else if ($this.parents('.portfolio-item-mobile').length) {
-                            $parentDeviceTypeClass = '.portfolio-item-mobile';
+                        } else if ($this.parents('.projects-item-mobile').length) {
+                            $parentDeviceTypeClass = '.projects-item-mobile';
                             $body.data('mobile-scroll-teaser-needed', false);
                         }
 
@@ -221,8 +221,8 @@ $document.ready(function () {
         //$(element).css('animation',  'rotating ' + getRandomArbitrary(20, 60) + 's linear infinite');
     });
 
-    startPointPortfolio = $portfolio.offset().top;
-    endPointPortfolio = startPointPortfolio + $portfolio.outerHeight() - $window.height();
+    startPointPortfolio = $projects.offset().top;
+    endPointPortfolio = startPointPortfolio + $projects.outerHeight() - $window.height();
     startPointExperience = $experience.offset().top;
     endPointExperience = startPointExperience + $experience.outerHeight() - $window.height();
     startPointAbout = $about.offset().top;
@@ -253,15 +253,15 @@ $document.ready(function () {
     $body.data('notebook-scroll-teaser-needed', true);
     $body.data('mobile-scroll-teaser-needed', true);
 
-    $('.portfolio-item-img-preview')
+    $('.projects-item-img-preview')
         .click(function() {
-            $(this).closest('.js-portfolio-item').find('.modal').modal();
+            $(this).closest('.js-projects-item').find('.modal').modal();
         })
         .on('mouseover', function (){
-            $(this).closest('.js-portfolio-item').addClass('child-hovered');
+            $(this).closest('.js-projects-item').addClass('child-hovered');
         })
         .on('mouseout', function (){
-            $(this).closest('.js-portfolio-item').removeClass('child-hovered');
+            $(this).closest('.js-projects-item').removeClass('child-hovered');
         });
 
     $('.interest-modal-link')

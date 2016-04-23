@@ -1,5 +1,5 @@
 
-///////////////////  Outro  ///////////////////
+///////////////////  Overwrites  ///////////////////
 
 #outro {
   @extend %article-wrapper;
@@ -7,28 +7,27 @@
   display: flex;
   align-items: center;
 
-  & .section-header {
+  .section-header {
     position: static;
   }
 
-  & .section-header-img-wrapper {
+  .section-header-img-wrapper {
     margin-bottom: 3rem;
   }
 
-  & .section-header-img {
+  .section-header-img {
     position: relative;
     left: 5%;
   }
-  & .section-header-nav {
+  .section-header-nav {
     margin-top: 3rem;
   }
 
-  & .section-header-sub-title {
+  .section-header-sub-title {
     @include text-thin-title();
     margin-bottom: 0;
     @include media-breakpoint-up(xl) {
       margin-bottom: 1.8rem;
     }
   }
-
 }

@@ -1,0 +1,96 @@
+//////////////// Bootstrap modal overwrite //////////////////
+
+.modal-backdrop {
+  background-color: #fff;
+
+  &.in {
+    opacity: 1;
+  }
+
+  .about-model-open & {
+    background-color: rgba(0,0,0,0.9);
+  }
+}
+
+
+.modal {
+
+  &.fade .modal-dialog {
+    transition: none;
+    transform: none;
+  }
+
+  &.in .modal-dialog {
+    transform: none;
+  }
+}
+
+
+.modal-dialog {
+  width: 100%;
+  height: 100%;
+  max-width: 1920px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.modal-content {
+  border: none;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  min-width: 768px;
+  min-height: 465px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+    height: 100%;
+  }
+  @include media-breakpoint-up(md) {
+    width: 100vw;
+    height: 62.5vw; /* height:width ratio = 10/16 = .625  */
+    max-height: 100vh;
+    max-width: 160vh; /* 16/10 = 1.6 */
+    margin: auto;
+  }
+}
+
+
+.modal-close-button {
+  color: #666;
+  font-family: $font-family-work-sans-thin;
+  position: absolute;
+  top: 1%;
+  right: 0;
+  z-index: 1;
+  background: transparent;
+  border: none;
+  outline: none !important;
+  font-size: 5rem;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  @include media-breakpoint-only(md) {
+    font-size: 6vw;
+    width: 8vw;
+    height: 8vw;
+    line-height: 8vw;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 90px;
+    height: 90px;
+    font-size: 6.5rem;
+    line-height: 90px;
+  }
+
+  &:hover,
+  &:focus {
+    color: #999;
+  }
+}
