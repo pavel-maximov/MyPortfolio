@@ -7,12 +7,12 @@
 
 .carousel-control {
   font-family: $font-family-work-sans-thin;
-  position: fixed;
   color: #666;
   text-shadow: none;
   opacity: 1;
   z-index: 3;
   @include media-breakpoint-down(sm) {
+    position: fixed;
     font-size: 7rem;
     width: 60px;
     height: 60px;
@@ -21,6 +21,7 @@
     bottom: 5px;
   }
   @include media-breakpoint-only(md) {
+    position: absolute;
     top: 39%;
     font-size: 8vw;
     width: 8vw;
@@ -28,6 +29,7 @@
     line-height: 8vw;
   }
   @include media-breakpoint-up(lg) {
+    position: absolute;
     top: 39%;
     width: 90px;
     height: 90px;
@@ -103,7 +105,7 @@
 
 .carousel-labels {
   @include media-breakpoint-up(md) {
-    margin: 15px 0 10px;
+    margin-bottom: 15px;
     text-align: center;
   }
   //position: absolute;

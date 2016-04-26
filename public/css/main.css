@@ -5171,13 +5171,13 @@ body {
 
 .carousel-control {
   font-family: "worksans-thin", sans-serif;
-  position: fixed;
   color: #666;
   text-shadow: none;
   opacity: 1;
   z-index: 3; }
   @media (max-width: 767px) {
     .carousel-control {
+      position: fixed;
       font-size: 7rem;
       width: 60px;
       height: 60px;
@@ -5187,6 +5187,7 @@ body {
 
 @media (min-width: 768px) and (max-width: 1244px) {
   .carousel-control {
+    position: absolute;
     top: 39%;
     font-size: 8vw;
     width: 8vw;
@@ -5194,6 +5195,7 @@ body {
     line-height: 8vw; } }
   @media (min-width: 1245px) {
     .carousel-control {
+      position: absolute;
       top: 39%;
       width: 90px;
       height: 90px;
@@ -5248,7 +5250,7 @@ body {
 
 @media (min-width: 768px) {
   .carousel-labels {
-    margin: 15px 0 10px;
+    margin-bottom: 15px;
     text-align: center; } }
 
 .carousel-item-scroll-teaser {
@@ -5373,8 +5375,6 @@ body {
   outline: none;
   overflow: hidden;
   position: relative;
-  min-width: 768px;
-  min-height: 465px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -5385,13 +5385,24 @@ body {
       height: 100%; } }
   @media (min-width: 768px) {
     .modal-content {
+      min-width: 768px;
+      min-height: 504px;
       width: 100vw;
-      height: 62.5vw;
-      /* height:width ratio = 10/16 = .625  */
+      height: 65.6vw;
+      /* height:width ratio = 10.5/16 = .656  */
       max-height: 100vh;
-      max-width: 160vh;
-      /* 16/10 = 1.6 */
+      max-width: 152vh;
+      /* 16/10.5 = 1.52 */
       margin: auto; } }
+
+@media (min-width: 1245px) and (max-width: 1564px) {
+  .modal-content {
+    min-height: 548px;
+    min-width: 833px; } }
+  @media (min-width: 1565px) {
+    .modal-content {
+      min-height: 680px;
+      min-width: 1034px; } }
 
 .modal-close-button {
   color: #666;
@@ -5535,7 +5546,7 @@ body {
 
 @media (min-width: 1565px) {
   #intro {
-    min-height: 780px; } }
+    min-height: 700px; } }
 
 #intro .section-header {
   width: 100%;
@@ -5627,7 +5638,7 @@ body {
   @media (min-width: 1565px) {
     .section-header-img-wrapper {
       max-width: 430px;
-      min-width: 320px; } }
+      min-width: 280px; } }
   @media (min-width: 1921px) {
     .section-header-img-wrapper {
       width: 430px; } }
@@ -5661,7 +5672,6 @@ body {
   line-height: 1.2;
   color: #000;
   font-size: 1.7rem;
-  visibility: hidden;
   width: 100%;
   text-align: center;
   margin-bottom: 0;
@@ -5670,24 +5680,12 @@ body {
   @media (min-width: 1565px) {
     .intro-teaser-title {
       font-size: 2.4rem; } }
-  @media (max-width: 767px) {
-    .intro-teaser-title {
-      display: none; } }
-  .teaser-title-visible .intro-teaser-title {
-    visibility: visible; }
 
 .arrow-down {
-  display: block;
   transform: rotate(-90deg);
   font-size: 5rem;
   font-family: "worksans-thin", sans-serif;
-  opacity: 0.5;
-  visibility: hidden; }
-  @media (max-width: 767px) {
-    .arrow-down {
-      display: none; } }
-  .teaser-title-visible .arrow-down {
-    visibility: visible; }
+  opacity: 0.5; }
 
 #skills {
   margin: 50px 0;
@@ -6895,8 +6893,7 @@ body {
   width: 77.5%;
   z-index: 1;
   max-width: 1240px;
-  position: relative;
-  margin-bottom: 40px; }
+  position: relative; }
   @media (max-width: 767px) {
     .projects-item-modal-tv .projects-item-samsung-tv {
       display: none; } }
@@ -6911,17 +6908,10 @@ body {
     max-width: 1200px; }
 
 .projects-item-modal-tv .carousel-control {
-  top: 39%; }
+  top: 44%; }
 
 .projects-item-modal-tv .carousel-indicators {
-  bottom: -6%; }
-  @media (min-width: 1565px) {
-    .projects-item-modal-tv .carousel-indicators {
-      bottom: -13%; } }
-
-.projects-item-modal-tv .carousel-labels {
-  left: 80px;
-  right: 80px; }
+  bottom: -25%; }
 
 .projects-item-modal-tv .line-breaker {
   display: block; }

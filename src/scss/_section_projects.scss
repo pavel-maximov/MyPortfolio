@@ -944,14 +944,12 @@
 
 
 .projects-item-modal-tv {
-
   // TODO create new devices for modal, no inheritance
   .projects-item-samsung-tv {
     width: 77.5%;
     z-index: 1;
     max-width: 1240px;
     position: relative;
-    margin-bottom: 40px;
     @include media-breakpoint-down(sm) {
       display: none;
     }
@@ -961,7 +959,6 @@
       left: 1.5%;
       right: 1.7%;
       bottom: 18.6%;
-
     }
 
     .wrapper {
@@ -972,19 +969,11 @@
   }
 
   .carousel-control{
-    top: 39%;
+    top: 44%;
   }
 
   .carousel-indicators {
-    bottom: -6%;
-    @include media-breakpoint-up(xl) {
-      bottom: -13%;
-    }
-  }
-
-  .carousel-labels {
-    left: 80px;
-    right: 80px;
+    bottom: -25%;
   }
 
   .line-breaker {

@@ -85,7 +85,6 @@ function onScroll() {
     }
     onScrollMainContainer(scrollTop, windowHeight, scrollPoints);
     setCogwheelsAnimation(scrollTop, windowHeight);
-    setTeaserTitleVisibility(scrollTop);
 }
 
 function initCarousel($controlsContainer, $mainCarousel, $secondaryCarousel) {
@@ -202,15 +201,6 @@ function setCogwheelsAnimation(scrollPosition, windowHeight) {
 
     $skills.addClass('cogwheel-rotating');
 }
-
-function setTeaserTitleVisibility(scrollPosition) {
-    if (scrollPosition > teaserTitleVisibilityLimit) {
-        if ($intro.hasClass('teaser-title-visible')) {
-            $intro.removeClass('teaser-title-visible');
-        }
-    }
-}
-
 
 $document.ready(function () {
     $('[data-toggle="offcanvas"]').click(function () {

@@ -12,7 +12,7 @@
     min-height: 580px;
   }
   @include media-breakpoint-up(xl) {
-    min-height: 780px;
+    min-height: 700px;
   }
 
   .section-header {
@@ -79,7 +79,7 @@
   }
   @include media-breakpoint-up(xl) {
     max-width: 430px;
-    min-width: 320px;
+    min-width: 280px;
   }
   @include media-breakpoint-up(xxl) {
     width: 430px;
@@ -113,37 +113,19 @@
 
 .intro-teaser-title {
   @include text-thin-title();
-  visibility: hidden;
   width: 100%;
   text-align: center;
   margin-bottom: 0;
   position: relative;
   top: 10px;
-  @include media-breakpoint-down(sm) {
-    display: none;
-  }
-
-  .teaser-title-visible & {
-    visibility: visible;
-  }
 }
 
 
 // TODO rename adding intro-
 .arrow-down {
-  display: block;
   transform: rotate(-90deg);
   // TODO convert to typography mixin
   font-size: 5rem;
   font-family: $font-family-work-sans-thin;
   opacity: 0.5;
-
-  visibility: hidden;
-  @include media-breakpoint-down(sm) {
-    display: none;
-  }
-
-  .teaser-title-visible & {
-    visibility: visible;
-  }
 }
