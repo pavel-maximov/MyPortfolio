@@ -50,23 +50,6 @@
     width: 100%;
     height: 100%;
   }
-  @include media-breakpoint-up(md) {
-    min-width: 768px;
-    min-height: 504px;
-    width: 100vw;
-    height: 65.6vw; /* height:width ratio = 10.5/16 = .656  */
-    max-height: 100vh;
-    max-width: 152vh; /* 16/10.5 = 1.52 */
-    margin: auto;
-  }
-  @include media-breakpoint-only(lg) {
-    min-height: 548px;
-    min-width: 833px;
-  }
-  @include media-breakpoint-up(xl) {
-    min-height: 680px;
-    min-width: 1034px;
-  }
 }
 
 

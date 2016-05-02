@@ -64,7 +64,6 @@
     left: 0;
     right: 0;
     position: absolute;
-    bottom: -25%;
   }
 
   .in & {
@@ -133,7 +132,7 @@
   display: flex;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   position: absolute;
   top: 0;
   left: 0;
@@ -148,6 +147,7 @@
 
 .carousel-item-scroll-teaser-icon {
   position: absolute;
+  top: 50px;
   left: 20px;
   right: 20px;
   display: flex;

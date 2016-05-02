@@ -5220,8 +5220,7 @@ body {
     .carousel-indicators {
       left: 0;
       right: 0;
-      position: absolute;
-      bottom: -25%; } }
+      position: absolute; } }
   @media (max-width: 767px) {
     .in .carousel-indicators {
       left: 60px;
@@ -5257,7 +5256,7 @@ body {
   display: flex;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   position: absolute;
   top: 0;
   left: 0;
@@ -5270,6 +5269,7 @@ body {
 
 .carousel-item-scroll-teaser-icon {
   position: absolute;
+  top: 50px;
   left: 20px;
   right: 20px;
   display: flex;
@@ -5383,26 +5383,6 @@ body {
     .modal-content {
       width: 100%;
       height: 100%; } }
-  @media (min-width: 768px) {
-    .modal-content {
-      min-width: 768px;
-      min-height: 504px;
-      width: 100vw;
-      height: 65.6vw;
-      /* height:width ratio = 10.5/16 = .656  */
-      max-height: 100vh;
-      max-width: 152vh;
-      /* 16/10.5 = 1.52 */
-      margin: auto; } }
-
-@media (min-width: 1245px) and (max-width: 1564px) {
-  .modal-content {
-    min-height: 548px;
-    min-width: 833px; } }
-  @media (min-width: 1565px) {
-    .modal-content {
-      min-height: 680px;
-      min-width: 1034px; } }
 
 .modal-close-button {
   color: #666;
@@ -6814,11 +6794,42 @@ body {
     font-size: 1.4rem;
     letter-spacing: 0.06rem; } }
 
+@media (min-width: 768px) {
+  .projects-item-modal-notebook-mobile .modal-content {
+    min-width: 768px;
+    min-height: 504px;
+    width: 100vw;
+    height: 56.2vw;
+    /* height:width ratio = 9/16 = .562  */
+    max-height: 100vh;
+    max-width: 177vh;
+    /* 16/9 = 1.77 */
+    margin: auto; } }
+
+@media (min-width: 1245px) and (max-width: 1564px) {
+  .projects-item-modal-notebook-mobile .modal-content {
+    min-height: 548px;
+    min-width: 969px; } }
+
+@media (min-width: 1565px) {
+  .projects-item-modal-notebook-mobile .modal-content {
+    min-height: 680px;
+    min-width: 1203px; } }
+
+.projects-item-modal-notebook-mobile .modal-devices-wrapper {
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  padding-top: 48%; }
+  @media (max-width: 767px) {
+    .projects-item-modal-notebook-mobile .modal-devices-wrapper {
+      display: none; } }
+
 .projects-item-modal-notebook-mobile .projects-item-notebook {
   position: absolute;
   top: 50%;
   bottom: auto;
-  margin-top: -21%;
+  margin-top: -24%;
   left: 17%;
   width: 79.5%;
   z-index: 1;
@@ -6834,8 +6845,18 @@ body {
   .projects-item-modal-notebook-mobile .projects-item-notebook .wrapper {
     width: 100%;
     height: 100%; }
-  .projects-item-modal-notebook-mobile .projects-item-notebook .carousel-item-scroll-teaser-icon {
-    top: 40px; }
+
+.projects-item-modal-notebook-mobile .carousel-labels {
+  position: relative;
+  left: 7%; }
+
+@media (min-width: 768px) and (max-width: 1244px) {
+  .projects-item-modal-notebook-mobile .carousel-indicators {
+    bottom: -24%; } }
+
+@media (min-width: 1245px) {
+  .projects-item-modal-notebook-mobile .carousel-indicators {
+    bottom: -20%; } }
 
 .projects-item-modal-notebook-mobile .projects-item-mobile {
   position: absolute; }
@@ -6853,7 +6874,7 @@ body {
     .projects-item-modal-notebook-mobile .projects-item-mobile {
       top: 50%;
       bottom: auto;
-      margin-top: -2%;
+      margin-top: -5%;
       left: 9%;
       width: 12.7%;
       z-index: 2;
@@ -6882,12 +6903,32 @@ body {
   @media (min-width: 768px) {
     .projects-item-modal-notebook-mobile .projects-item-mobile .carousel-indicators {
       display: none; } }
-  .projects-item-modal-notebook-mobile .projects-item-mobile .carousel-item-scroll-teaser-icon {
-    top: 30px; }
 
 @media (min-width: 768px) and (max-width: 1244px) {
   .projects-item-modal-notebook-mobile .projects-item-mobile .carousel-item-scroll-teaser-icon {
     top: 15px; } }
+
+@media (min-width: 768px) {
+  .projects-item-modal-tv .modal-content {
+    min-width: 768px;
+    min-height: 504px;
+    width: 100vw;
+    height: 65.6vw;
+    /* height:width ratio = 10.5/16 = .656  */
+    max-height: 100vh;
+    max-width: 152vh;
+    /* 16/10.5 = 1.52 */
+    margin: auto; } }
+
+@media (min-width: 1245px) and (max-width: 1564px) {
+  .projects-item-modal-tv .modal-content {
+    min-height: 548px;
+    min-width: 833px; } }
+
+@media (min-width: 1565px) {
+  .projects-item-modal-tv .modal-content {
+    min-height: 680px;
+    min-width: 1034px; } }
 
 .projects-item-modal-tv .projects-item-samsung-tv {
   width: 77.5%;
@@ -6910,8 +6951,9 @@ body {
 .projects-item-modal-tv .carousel-control {
   top: 44%; }
 
-.projects-item-modal-tv .carousel-indicators {
-  bottom: -25%; }
+@media (min-width: 768px) {
+  .projects-item-modal-tv .carousel-indicators {
+    bottom: -25%; } }
 
 .projects-item-modal-tv .line-breaker {
   display: block; }
@@ -6919,11 +6961,42 @@ body {
 .projects-item-modal-tv .tse-content {
   cursor: default; }
 
+@media (min-width: 768px) {
+  .projects-item-modal-notebook .modal-content {
+    min-width: 768px;
+    min-height: 504px;
+    width: 100vw;
+    height: 56.2vw;
+    /* height:width ratio = 9/16 = .562  */
+    max-height: 100vh;
+    max-width: 177vh;
+    /* 16/9 = 1.77 */
+    margin: auto; } }
+
+@media (min-width: 1245px) and (max-width: 1564px) {
+  .projects-item-modal-notebook .modal-content {
+    min-height: 548px;
+    min-width: 969px; } }
+
+@media (min-width: 1565px) {
+  .projects-item-modal-notebook .modal-content {
+    min-height: 680px;
+    min-width: 1203px; } }
+
+.projects-item-modal-notebook .modal-devices-wrapper {
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  padding-top: 48%; }
+  @media (max-width: 767px) {
+    .projects-item-modal-notebook .modal-devices-wrapper {
+      display: none; } }
+
 .projects-item-modal-notebook .projects-item-notebook {
   position: absolute;
   top: 50%;
   bottom: auto;
-  margin-top: -21%;
+  margin-top: -24%;
   left: 17%;
   width: 79.5%;
   z-index: 1;
@@ -6939,8 +7012,18 @@ body {
   .projects-item-modal-notebook .projects-item-notebook .wrapper {
     width: 100%;
     height: 100%; }
-  .projects-item-modal-notebook .projects-item-notebook .carousel-item-scroll-teaser-icon {
-    top: 40px; }
+
+.projects-item-modal-notebook .carousel-labels {
+  position: relative;
+  left: 7%; }
+
+@media (min-width: 768px) and (max-width: 1244px) {
+  .projects-item-modal-notebook .carousel-indicators {
+    bottom: -24%; } }
+
+@media (min-width: 1245px) {
+  .projects-item-modal-notebook .carousel-indicators {
+    bottom: -20%; } }
 
 .projects-item-modal-notebook .projects-item-notebook {
   left: -41%; }
